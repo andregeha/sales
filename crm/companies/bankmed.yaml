@@ -44,5 +44,15 @@ fit:
     the resolution-status gate and uncertainty about who currently leads the bank operationally - re-verify
     leadership before any approach.'
   disqualified_reason: null
-activities: []
-next_action: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced from BDL bank list. Named Chairperson Raya Haffar El Hassan (since Oct 2020); Executive
+    GM name found (Michel Accad, 2020) not re-verified as current. Resolution-track status not publicly
+    confirmed.
+  link: null
+next_action:
+  who: Andre Geha
+  what: Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation)
+    before any outreach
+  due: '2026-10-31'

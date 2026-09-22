@@ -42,5 +42,11 @@ fit:
     do not re-research it.'
   disqualified_reason: Retail forex/CFD trading platform for individual consumer traders, not a portfolio/fund
     management buyer - matches the ICP's explicit retail-brokerage disqualification criterion.
-activities: []
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced via amanacapital.com. Confirmed to be a retail forex/CFD trading platform (part of
+    a UK/Cyprus/Dubai/Lebanon group), not a portfolio/fund-management buyer. Disqualified per ICP retail-brokerage
+    criterion; recorded so we do not re-research it.
+  link: null
 next_action: null

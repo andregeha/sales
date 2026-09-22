@@ -90,3 +90,20 @@ and a World Bank Lebanon tax-administration system (out of scope). French public
 The binding constraint is the blocked egress, not agent effort: estimated coverage is well under 10%
 of live tender flow. Learned filters written into `playbooks/rfp-radar.md`; measured performance
 recorded in `memory/facts.md` so a future nil return is read correctly.
+
+### Lebanon + France passes; laptop route opened — 2026-09-22
+- **Lebanon: 17 records.** Twelve commercial banks, two investment banks/wealth managers, two asset
+  managers, one disqualified retail forex app. **Every bank is `nurture`, not `qualified`** — no
+  public source resolves which Law 23/2025 track any individual bank is on (Parliament only passed
+  the amended restructuring law in August 2026 and no "viable banks" list exists). Scores were held
+  down from their mechanical total to reflect that, and each carries a next action for Andre to
+  confirm the track before any outreach.
+- **First competitor sighting recorded** — Amwal Capital (DIFC) went live on Broadridge IMS in May
+  2024. Not a prospect; real intelligence. `knowledge/positioning/competitors.md` is no longer empty.
+- **CLI bug found and fixed:** `crm.py add --website null` stored the literal string `"null"` rather
+  than a null. That quietly corrupts the one rule that matters most — unknown must *look* unknown —
+  so the CLI now treats "null"/"none"/"n/a"/"" as a real null. Audited every existing record: clean.
+- **Andre approved running from his laptop.** Wrote `RUN-ON-LAPTOP.md` (five steps plus a paste-ready
+  prompt) and `tools/connectors/README.md` (the register-connector spec, in build order, with the
+  hard requirement that a connector must **fail loudly** in the cloud rather than return an empty
+  diff that reads as a quiet day).

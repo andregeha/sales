@@ -43,5 +43,15 @@ fit:
     Nadim Kassar, Chairman-GM of the SAL entity) but no direct contact route found = 3/15. Total mechanically
     ~73, held to 52 pending viability-track confirmation - do not treat as outreach-ready.'
   disqualified_reason: null
-activities: []
-next_action: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced from BDL bank list and CMA Lebanon register. Named leaders Adnan Kassar (Group Chairman/CEO)
+    and Nadim Kassar (Chairman-GM, Fransabank SAL). Resolution-track status not publicly confirmed. Recommend
+    Andre check before outreach.
+  link: null
+next_action:
+  who: Andre Geha
+  what: Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation)
+    before any outreach
+  due: '2026-10-31'

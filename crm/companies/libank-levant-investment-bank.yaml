@@ -49,5 +49,15 @@ fit:
     given the missing named contact and the open resolution-track question; a genuine fit on paper (small,
     growing, multi-asset, family-office-facing) that needs a leadership-name enrichment pass.'
   disqualified_reason: null
-activities: []
-next_action: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced from CMA Lebanon register and libank.com.lb. Genuine family-office/HNW/institutional
+    fit; acquired Optimum Invest S.A.L. 100% in 2020 (separate CRM record). No current named leader found
+    - needs enrichment pass.
+  link: null
+next_action:
+  who: Andre Geha
+  what: Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation)
+    before any outreach
+  due: '2026-10-31'

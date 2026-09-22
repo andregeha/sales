@@ -52,5 +52,16 @@ fit:
     Total 73 by table mechanics, deliberately held down to 52 (worth a look, not strong) pending the viability-track
     question -- Andre must confirm which track Byblos is on before any outreach effort.'
   disqualified_reason: null
-activities: []
-next_action: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'Sourced from BDL bank list and CMA Lebanon approved-institutions register (search-confirmed).
+    Named Chairman/GM Semaan Bassil, no direct contact found. Core open question: which Law 23/2025 restructuring
+    track Byblos is on - not publicly confirmed. Recommend Andre check for viability confirmation before
+    any outreach.'
+  link: null
+next_action:
+  who: Andre Geha
+  what: Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation)
+    before any outreach
+  due: '2026-10-31'

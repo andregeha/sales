@@ -122,6 +122,18 @@ def normalize_dates(value: Any) -> Any:
     return value
 
 
+def nullish(value: Any) -> Any:
+    """Treat the literal strings "null"/"none"/"n/a"/"" as a real null.
+
+    Agents and humans alike pass `--website null` to mean "we don't know", which argparse hands over
+    as the four-character string "null". Storing that is worse than storing nothing: it reads as a
+    value, and the rule that an unknown must be null is what stops anyone inventing a detail later.
+    """
+    if isinstance(value, str) and value.strip().lower() in {"null", "none", "n/a", "na", "-", ""}:
+        return None
+    return value
+
+
 def load_yaml(path: Path) -> dict:
     with path.open("r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
@@ -226,8 +238,8 @@ def new_company_record(args: argparse.Namespace) -> dict:
         "city": args.city,
         "segment": args.segment,
         "regulator": args.regulator,
-        "website": args.website,
-        "linkedin": args.linkedin,
+        "website": nullish(args.website),
+        "linkedin": nullish(args.linkedin),
         "size": {
             "aum": args.aum,
             "employees": args.employees,
@@ -604,7 +616,7 @@ def cmd_contact(args: argparse.Namespace) -> int:
             "role": args.role or "unknown",
             "email": args.email,
             "phone": args.phone,
-            "linkedin": args.linkedin,
+            "linkedin": nullish(args.linkedin),
             "language": args.language or "en",
             "notes": args.notes,
             "source": args.source,
@@ -614,7 +626,7 @@ def cmd_contact(args: argparse.Namespace) -> int:
     else:
         for field, val in (
             ("title", args.title), ("role", args.role), ("email", args.email),
-            ("phone", args.phone), ("linkedin", args.linkedin),
+            ("phone", nullish(args.phone)), ("linkedin", nullish(args.linkedin)),
             ("language", args.language), ("notes", args.notes), ("source", args.source),
         ):
             if val is not None:

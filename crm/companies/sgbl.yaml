@@ -42,5 +42,14 @@ fit:
     confirmation. The Fidus Wealth Management arm is worth a separate look if SGBL clears the resolution
     question - closer to our family-office/private-banking pitch than the retail bank itself.'
   disqualified_reason: null
-activities: []
-next_action: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced from BDL bank list. Named Chairman/CEO/main shareholder Antoun Sehnaoui. Group includes
+    Fidus Wealth Management arm, worth separate note. Resolution-track status not publicly confirmed.
+  link: null
+next_action:
+  who: Andre Geha
+  what: Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation)
+    before any outreach
+  due: '2026-10-31'

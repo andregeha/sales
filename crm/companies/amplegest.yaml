@@ -1,0 +1,71 @@
+slug: amplegest
+name: Amplegest
+legal_name: null
+country: France
+city: Paris
+segment: asset_manager
+regulator: AMF
+website: null
+linkedin: null
+size:
+  aum: 'EUR 5.2bn (30 June 2025: EUR 2.5bn private wealth management + EUR 2.7bn asset management)'
+  employees: null
+  portfolios: null
+description: 'AMF-approved entrepreneurial asset manager (approval GP-07000044), created 2007, wholly
+  owned by Groupe Cyrus. Two business lines: private wealth management for a high-end clientele (including
+  family offices as a client segment) and asset management (European/international equity, flexible international,
+  value-oriented bond strategies). Underwent a leadership transition: Marie Vandermarcq-Saltiel became
+  President in January 2024 and Gilles Constantini was named deputy general director for asset management,
+  as long-standing President Arnaud de Langautier and General Director Olivier Lazar (in role since 2010/2012)
+  stepped back.'
+source:
+  channel: web_search
+  detail: Web search 2026-09-22 (queries on Amplegest AMF encours and dirigeant) surfaced optionfinance.fr,
+    easybourse.com, clubpatrimoine.com and professioncgp.com coverage of AUM and the 2024 leadership transition.
+    AMF GECO register not click-verified (egress blocked).
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- france
+- amf
+- asset-manager
+- leadership-change
+- private-wealth
+- cyrus-group
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Marie Vandermarcq-Saltiel
+  title: Presidente
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: fr
+  notes: Became President of Amplegest in January 2024, succeeding Arnaud de Langautier. Pronouns not
+    stated - use they/them. No email/phone/LinkedIn found; none invented.
+  source: Web search 2026-09-22, optionfinance.fr / easybourse.com coverage
+fit:
+  score: 63
+  reasoning: 'Fit 60/60 (max): priority segment asset manager (20) + priority market France (15) + multi-asset
+    across equity, flexible international and bond strategies plus a private-wealth line (10) + third-party
+    client money, private and institutional (10) + AMF-regulated, GP-07000044 (5). Trigger 8/25: closest
+    table row is a senior leadership change - a new President (Marie Vandermarcq-Saltiel) took over in
+    January 2024 from a President/General Director pairing in place since 2010/2012 - but this is a President/board-level
+    change rather than a COO/CIO/Head of Ops/Compliance hire as the table specifies, and it is now roughly
+    two years old, so scored well below the 12-point new-hire band. Access 8/15: named current President
+    (Vandermarcq-Saltiel) and deputy general director for asset management (Constantini) identified via
+    press, not yet confirmed reachable. Total 76, moderated to 63 given the leadership signal is dated
+    and the exact operational trigger for a systems review is not established - also part of the Cyrus
+    Herez group (see cyrus-herez.yaml) so any pursuit should be coordinated rather than duplicated.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced via web search on Amplegest scale and 2024 leadership transition (2026-09-22). Part
+    of Groupe Cyrus (see cyrus-herez.yaml). Genuine multi-asset, third-party-money fit; leadership-change
+    trigger is dated (Jan 2024) rather than fresh.
+  link: null
+next_action: null

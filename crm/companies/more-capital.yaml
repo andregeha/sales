@@ -65,5 +65,17 @@ fit:
     in this batch and its business genuinely matches our asset-manager ICP - status set to researching
     (not qualified) pending corroboration of the compliance contact and a clearer read on AUM/client base.'
   disqualified_reason: null
-activities: []
-next_action: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced via altss.com Beirut asset-manager directory and morecapital.com. Regulated as a BDL
+    'financial institution' (same bucket as leasing/factoring, generally deprioritised per our market
+    map) but its actual business (asset management + VC) matches our segment on substance. One named compliance
+    contact (Alia Hariz) found only via a third-party aggregator (ZoomInfo), not independently corroborated
+    - logged as an unverified contact.
+  link: null
+next_action:
+  who: Andre Geha
+  what: Corroborate named compliance contact (Alia Hariz) via LinkedIn or the firm directly before any
+    route-in attempt
+  due: '2026-10-31'

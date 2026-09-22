@@ -1,0 +1,69 @@
+slug: eternam
+name: Eternam
+legal_name: null
+country: France
+city: Paris
+segment: fund_manager
+regulator: AMF
+website: https://www.eternam.fr/
+linkedin: null
+size:
+  aum: EUR 1.4bn (2024)
+  employees: null
+  portfolios: null
+description: 'AMF-approved portfolio management company (real estate), created 2011, wholly owned subsidiary
+  of Groupe Cyrus (France''s largest independent wealth-management/CGPI group). Covers the full real-estate
+  value chain: real-estate investment funds, club deals, SCPI allocation advisory, and residential lot
+  investments across office, hospitality, logistics and residential. ~30 staff. Leadership: Jose Zaraya
+  (Group Cyrus Directeur General since 2013, President of Eternam since 2015), with Jonathan Donio and
+  Frederic Maxwell recently promoted to President and Directeur General Delegue of Eternam respectively.'
+source:
+  channel: web_search
+  detail: 'Web search 2026-09-22 (query: Eternam societe de gestion Groupe Cyrus immobilier activite dirigeant)
+    surfaced professioncgp.com, bv-experts.fr, businessimmo.com and eternam.fr for scale, activity and
+    leadership changes. AMF GECO register not click-verified (egress blocked).'
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- france
+- amf
+- fund-manager
+- real-estate
+- cyrus-group
+- leadership-change
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Jose Zaraya
+  title: President of Eternam; Directeur General of Groupe Cyrus
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: fr
+  notes: Joined Groupe Cyrus as Directeur General in 2013, President of Eternam since 2015. Pronouns not
+    stated - use they/them. No email/phone/LinkedIn found; none invented.
+  source: Web search 2026-09-22, professioncgp.com coverage
+fit:
+  score: 60
+  reasoning: 'Fit 50/60: priority segment fund manager (20) + priority market France (15) + third-party
+    client money via funds/club deals/SCPI advisory serving Cyrus''s high-net-worth and institutional
+    client base (10) + AMF-regulated (5); no multi-asset credit (0), real-estate-only specialist. Trigger
+    12/25: a recent leadership promotion (Jonathan Donio to President, Frederic Maxwell to Directeur General
+    Delegue) is a genuine senior change, scored at the lower end of the new-hire band since it reads as
+    an internal promotion rather than an external senior-ops/compliance hire, and the exact date is not
+    confirmed. Access 8/15: named leadership (Jose Zaraya, Jonathan Donio, Frederic Maxwell) identified
+    via press, not yet confirmed reachable. Total 70, moderated to 60: part of the Cyrus Herez group (see
+    cyrus-herez.yaml) - coordinate any pursuit across Amplegest/Eternam/Cyrus Herez rather than treating
+    as three unrelated firms, and real-estate-only specialists often already run dedicated REIM/SCPI tooling.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced via web search on Eternam's scale and recent leadership changes (2026-09-22). Real-estate-focused
+    AMF SGP within Groupe Cyrus; recent internal promotions (Donio, Maxwell) are a mild trigger, not independently
+    confirmed with a date.
+  link: null
+next_action: null

@@ -43,5 +43,15 @@ fit:
     mechanically ~70, held to 40 (worth a look) reflecting both the unresolved viability question and
     the complete absence of a named route in - needs a dedicated enrichment pass before it is outreach-ready.'
   disqualified_reason: null
-activities: []
-next_action: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced from CMA Lebanon register. No current (2026) named leader or working corporate website
+    confirmed in this session - needs a dedicated enrichment pass. Resolution-track status not publicly
+    confirmed.
+  link: null
+next_action:
+  who: Andre Geha
+  what: Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation)
+    before any outreach
+  due: '2026-10-31'

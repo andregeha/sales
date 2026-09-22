@@ -40,5 +40,15 @@ fit:
     viability confirmation. Note: the bank''s own research unit is actively publishing 2026 sector data,
     a mild going-concern signal, not a solvency claim.'
   disqualified_reason: null
-activities: []
-next_action: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced from BDL bank list. Named Chairman-GM Dr Joseph Torbey (with bank since 1988). Bank's
+    own economic research unit actively publishing 2026 sector data (mild going-concern signal, not a
+    solvency claim). Resolution-track status not publicly confirmed.
+  link: null
+next_action:
+  who: Andre Geha
+  what: Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation)
+    before any outreach
+  due: '2026-10-31'

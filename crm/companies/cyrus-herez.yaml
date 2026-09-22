@@ -1,0 +1,86 @@
+slug: cyrus-herez
+name: Cyrus Herez (Groupe Cyrus)
+legal_name: null
+country: France
+city: Paris
+segment: mfo
+regulator: AMF
+website: https://www.cyrus-herez.fr/
+linkedin: null
+size:
+  aum: EUR 5bn advised (Maison Herez, at time of 2024 merger)
+  employees: null
+  portfolios: null
+description: 'France''s largest independent wealth-management/CGPI group, combining private wealth management,
+  asset management and family office services. Formed April 2024 by the merger of Cyrus Conseil and Maison
+  Herez, present in four major French cities plus Brussels and Tel Aviv. Owns AMF-approved asset-management
+  subsidiaries Amplegest (GP-07000044, EUR 5.2bn) and Eternam (real estate, EUR 1.4bn) - see separate
+  CRM records. Executive committee: Meyer Azogui (Group President), Patrick Ganansia (Group Vice-President),
+  David Intins (CEO, Cyrus Herez).'
+source:
+  channel: web_search
+  detail: Web search 2026-09-22 (queries on Herez family office and multi-family office France) surfaced
+    fr.wikipedia.org (Cyrus Herez), cyrus-herez.fr, groupe-cyrus.fr and herez.fr for the April 2024 merger,
+    footprint and executive committee. AMF GECO / group-level regulatory status of the holding itself
+    not click-verified (egress blocked) - regulatory status recorded here reflects the AMF-approved subsidiaries
+    (Amplegest, Eternam), not necessarily the holding entity directly.
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- france
+- mfo
+- family-office
+- cyrus-group
+- merger
+- wealth-management
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: David Intins
+  title: CEO, Cyrus Herez
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: fr
+  notes: Named CEO of the merged Cyrus Herez entity. Pronouns not stated - use they/them. No email/phone/LinkedIn
+    found; none invented.
+  source: Web search 2026-09-22, cyrus-herez.fr / groupe-cyrus.fr
+- name: Meyer Azogui
+  title: Group President
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: fr
+  notes: Named Group President of Groupe Cyrus. Pronouns not stated - use they/them. No email/phone/LinkedIn
+    found; none invented.
+  source: Web search 2026-09-22, groupe-cyrus.fr
+fit:
+  score: 62
+  reasoning: 'Fit 55/60: priority segment family office/MFO (20) + priority market France (15) + multi-asset
+    across its subsidiaries'' equity/bond/real-estate/private-management offering (10) + third-party client
+    money by definition of wealth/family-office management (10) + regulated indirectly through AMF-approved
+    subsidiaries rather than a single group-level licence, so a partial 5 rather than full confidence.
+    Trigger 12/25: the April 2024 Cyrus Conseil/Maison Herez merger is a genuine consolidation event -
+    two wealth-management platforms combining almost certainly means reconciling client reporting and
+    possibly back-office systems across the merged entity and its subsidiaries - but it does not map cleanly
+    onto a single table row (closest: new entity from a merger, similar in spirit to a spin-out) and is
+    now roughly 18 months old, so scored below the 20-point new-entity band. Access 8/15: named CEO David
+    Intins and Group President Meyer Azogui identified via multiple press sources, not yet confirmed reachable.
+    Total 75, moderated to 62: this is a large, already-sophisticated group (likely running established
+    systems across its subsidiaries already) rather than a firm professionalising for the first time -
+    qualify what, if anything, is actually still fragmented post-merger before assuming a live systems-review
+    trigger. Coordinate with the Amplegest and Eternam records rather than pursuing all three independently.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced via web search on French multi-family offices and the Cyrus Conseil/Maison Herez merger
+    (2026-09-22). Largest independent French wealth/family-office group; owns AMF-approved Amplegest and
+    Eternam (separate CRM records). Merger (April 2024) is a plausible but dated consolidation trigger
+    - qualify what remains fragmented post-merger before pursuing.
+  link: null
+next_action: null

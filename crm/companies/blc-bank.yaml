@@ -43,5 +43,16 @@ fit:
     ~70, held to 45 - also flag that a group-level approach via Fransabank may be more efficient than
     treating BLC as a fully separate buyer; Andre to decide whether to pursue as one relationship or two.'
   disqualified_reason: null
-activities: []
-next_action: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced from BDL bank list. Majority owned by Fransabank; named Chairman-GM Nadim Kassar (same
+    person as Fransabank SAL). Still trading on Beirut Stock Exchange per 2026 pricing data (going-concern
+    signal only). Any approach likely routes through Fransabank group, not BLC independently. Resolution-track
+    status not publicly confirmed.
+  link: null
+next_action:
+  who: Andre Geha
+  what: Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation)
+    before any outreach
+  due: '2026-10-31'

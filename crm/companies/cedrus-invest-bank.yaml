@@ -53,5 +53,16 @@ fit:
     the resolution-track question, though this is one of the more promising non-mass-retail names in the
     batch.'
   disqualified_reason: null
-activities: []
-next_action: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced from CMA Lebanon register and pitchbook/cfi.co profiles. Genuine family-office/HNW
+    wealth-management fit. Leadership attribution conflicts between two sources (Fadi Assali vs Raed Khoury)
+    and was not reconciled. Being an investment bank rather than a deposit-taking commercial bank may
+    reduce (not eliminate) exposure to the Law 23/2025 resolution question - inference, not confirmed.
+  link: null
+next_action:
+  who: Andre Geha
+  what: Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation)
+    before any outreach
+  due: '2026-10-31'

@@ -44,5 +44,15 @@ fit:
     which restructuring track the bank is on - the in-house fund administration angle (NAV, subscriptions/redemptions)
     is a genuine product fit worth flagging to Andre once/if cleared.'
   disqualified_reason: null
-activities: []
-next_action: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced from BDL bank list. Named founder/Chairman/CEO Dr Salim Sfeir (also ABL chairman, high
+    public visibility). Bank runs in-house investment funds (Beirut Preferred Fund II, Optimal Investment
+    Fund) - a genuine fund-administration angle if cleared. Resolution-track status not publicly confirmed.
+  link: null
+next_action:
+  who: Andre Geha
+  what: Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation)
+    before any outreach
+  due: '2026-10-31'

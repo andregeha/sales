@@ -52,5 +52,16 @@ fit:
     and the reputational flag both argue for caution rather than active pursuit; if pursued at all, do
     it through LIBANK.'
   disqualified_reason: null
-activities: []
-next_action: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced via optimumlb.com and CMA Lebanon register. Now a 100%-owned LIBANK subsidiary since
+    2020 - not an independent buying centre. Public reporting (The National, Sept 2024) on a 2015-2018
+    embezzlement/fraud investigation allegedly linked to former BDL governor Riad Salameh is a genuine
+    governance flag, recorded factually and neutrally; not an OFS assertion about current conduct or solvency.
+  link: null
+next_action:
+  who: Andre Geha
+  what: Decide whether to pursue via LIBANK (parent) given Optimum's subsidiary status and reputational
+    history
+  due: '2026-10-31'

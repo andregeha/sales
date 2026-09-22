@@ -43,5 +43,15 @@ fit:
     on BBAC''s own site, no contact route = 3/15. Total mechanically ~73, held to 50 pending viability
     confirmation and a stronger source for the named contact.'
   disqualified_reason: null
-activities: []
-next_action: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced from BDL bank list and CMA Lebanon register. Named Chairman/GM Sheikh Ghassan Assaf
+    (per ABL Almanac 2024-2025, not independently cross-checked). Resolution-track status not publicly
+    confirmed.
+  link: null
+next_action:
+  who: Andre Geha
+  what: Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation)
+    before any outreach
+  due: '2026-10-31'

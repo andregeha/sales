@@ -1,0 +1,81 @@
+slug: turgot-asset-management
+name: Turgot Asset Management
+legal_name: null
+country: France
+city: Paris
+segment: asset_manager
+regulator: AMF
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: 'AMF-regulated asset-management arm of Turgot Capital, an independent French financial group
+  founded in 2003 that vertically integrates three businesses: financial and real-estate asset management
+  (Turgot Asset Management), life-insurance solution design/brokerage (Turgot Life), and investment/asset-allocation
+  advisory (Turgot Wealth). Turgot Capital joined Groupe Magellim in February 2022. Recent leadership
+  change: Guillaume Hilaire became President on 2025-02-24, succeeding Francois Grandvoinnet; Sonia Raimbault
+  is Directeur General.'
+source:
+  channel: web_search
+  detail: Web search 2026-09-22 (queries on Turgot Asset Management dirigeant and Cyrus/family-office
+    adjacent names) surfaced newsassetpro.com, professioncgp.com and pappers.fr for the Magellim acquisition
+    and the February 2025 presidency change. AMF GECO register entry found via search snippet (geco.amf-france.org/Bio/info_SG.aspx?NumSg=14522)
+    but not click-verified (egress blocked).
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- france
+- amf
+- asset-manager
+- leadership-change
+- real-estate
+- magellim-group
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Guillaume Hilaire
+  title: President (since 2025-02-24)
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: fr
+  notes: Became President of Turgot Asset Management on 2025-02-24, succeeding Francois Grandvoinnet.
+    Pronouns not stated - use they/them. No email/phone/LinkedIn found; none invented.
+  source: Web search 2026-09-22, newsassetpro.com
+- name: Sonia Raimbault
+  title: Directeur General
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: fr
+  notes: Named Directeur General of Turgot Asset Management. Pronouns not stated - use they/them. No email/phone/LinkedIn
+    found; none invented.
+  source: Web search 2026-09-22
+fit:
+  score: 62
+  reasoning: 'Fit 55/60: priority segment asset manager (20) + priority market France (15) + multi-asset
+    via combined financial and real-estate asset management (10) + third-party client money implied by
+    an advisory/allocation and asset-management client base (10) + AMF-regulated, but exact scope/GP number
+    not independently confirmed this session, so partial confidence (5, not reduced further since GECO
+    listing was located). Trigger 12/25: a new President (Guillaume Hilaire) took over on 2025-02-24,
+    a genuine and fairly recent senior leadership change, though President is not explicitly one of the
+    COO/CIO/Head of Ops/Compliance titles the table specifies, so scored below the full 12-point band.
+    Access 8/15: named current President (Hilaire) and Directeur General (Raimbault) identified via press,
+    not yet confirmed reachable. Total 75, moderated to 62 pending direct confirmation of Turgot Asset
+    Management''s AMF authorisation scope and AUM (neither independently verified beyond the GECO search
+    snippet).'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced via web search on Turgot Asset Management leadership (2026-09-22). Part of Groupe Magellim
+    since Feb 2022. New President (Guillaume Hilaire, Feb 2025) is the trigger; AMF authorisation scope
+    and AUM not independently confirmed.
+  link: null
+next_action: null
