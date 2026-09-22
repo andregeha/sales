@@ -2,20 +2,32 @@
 
 > Anything unknown, unverified, or needing Andre's approval. Nothing gets guessed.
 > Status: 🔴 blocking · 🟠 needed soon · ⚪ nice to have. Newest first.
+>
+> **Stage model**: defined in `pipeline/pipeline.md` (2026-09-22) — change it if it does not match
+> how you think about deals.
 
-## For Andre — workspace setup (asked 2026-09-22)
+## ✅ Answered by Andre 2026-09-22
+1. **Scope** → **new business only**. Existing clients are context/proof, not pipeline.
+2. **Deliverables** → the full engine: find clients, find every RFP, automated lead pipeline,
+   inbound + outbound outreach, daily and continuous, log everything, own CRM. Plus pipeline & forecast.
+3. **Autonomy** → agents draft freely; **Andre approves and sends**. Give him fast, automated ways to send.
+4. **System of record** → **this repo**. No external CRM.
+5. **Markets** → **UAE, KSA, Lebanon, France**.
+6. **Segments** → **family offices & MFOs, private/investment banks, asset & fund managers**.
+7. **Media** → email, LinkedIn, and anything else sensible.
+8. **Cadence** → **daily scheduled run**.
+
+## For Andre — still open
 | # | Question | Status |
 |---|---|---|
-| 1 | Scope: is this sales team for **new business only**, or also **existing-client expansion and renewals**? | 🔴 |
-| 2 | Which **accounts are live right now** and what is the next action on each? (Finance House, Bank Audi, BLOM, Dassault/GIMD, AGPM, Khaled Zeidan — plus any not in the marketing repo.) | 🔴 |
-| 3 | What should the team **actually produce**? (briefs, outreach, proposals, RFP answers, pricing models, forecast, CRM hygiene, competitive intel…) | 🔴 |
-| 4 | Is there a **CRM or system of record** we must integrate with or mirror, or is this repo the system of record? | 🟠 |
-| 5 | **Pricing** — is there a price book / list price / discount policy I may hold here, even internal-only? | 🟠 |
+| 5 | **Pricing** — is there a price book, list price or discount policy I may hold here, even internal-only? Without it I cannot qualify on budget, and every commercial question bounces to you. | 🟠 |
+| 5a | **Is there an email-sending or sequencing tool** you would connect (Outlook send, a sequencer), or does every message go out by hand from your mailbox? This changes how I build the approval queue. | 🟠 |
+| 5b | **Do you have a LinkedIn Sales Navigator seat?** It would materially improve lead sourcing and contact discovery in all four markets. | 🟠 |
+| 5c | **Any markets, firms or people that are off-limits** — conflicts, existing partner territories, someone we must not approach? | 🟠 |
+| 5d | **Inbound** — is there a website, a form, or any inbound flow today that I should be capturing and routing? You asked for inbound marketing; right now I have no inbound surface to work with. | 🟠 |
 | 6 | **Competitors** — who do we actually meet, where do we win and lose? (`knowledge/positioning/competitors.md` is an empty placeholder.) | 🟠 |
-| 7 | **Sales process & stages** — is there an existing stage model, or should I define one? | 🟠 |
-| 8 | **Autonomy** — may agents draft client-facing material freely for your review, or must they ask before drafting? | 🟠 |
-| 9 | **Languages** — English + French confirmed. Do we need **Arabic** client-facing material? | 🟠 |
-| 10 | **Referenceable clients** — which names may we say out loud, to whom, and under what conditions? | 🟠 |
+| 9 | **Arabic** — do we need Arabic client-facing material for the Gulf, or is English sufficient there? (Gaia and the portal support Arabic/RTL, so it is a real option.) | 🟠 |
+| 10 | **Referenceable clients** — which names may we say out loud, to whom, and under what conditions? This is the single most useful thing I am missing for outreach credibility. | 🟠 |
 | 11 | **Team** — is anyone else going to use this repo, or is it you plus the agents? | ⚪ |
 | 12 | **Targets** — is there a revenue/quota number the pipeline should be measured against? | ⚪ |
 

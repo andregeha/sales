@@ -1,35 +1,40 @@
 # Pipeline
 
-> The live deal board. **One line per opportunity**, not per account.
-> ⚠ **Provisional.** Reconstructed from the marketing workspace on 2026-09-22 — stages, values and
-> dates are **inferred, not confirmed**. Needs a working session with Andre before it is trusted.
+> ⚠ **The CRM is the system of record.** The live numbers come from `crm/`, not from this file:
+> ```bash
+> python3 tools/crm.py stats
+> python3 tools/crm.py list --status qualified,contacted,engaged,opportunity
+> python3 tools/crm.py next
+> ```
+> This file holds the **narrative** — the stage model, the standards, and anything a table cannot say.
 
-## Stage model (proposed — confirm with Andre)
-| # | Stage | Exit criterion |
+## Scope
+**New business only.** Existing clients (Finance House, GIMD/Dassault, Bank Audi, BLOM, AGPM) are
+**not pipeline** — see `accounts/README.md`. Putting them here would flatter the numbers and hide
+the fact that the new-business engine is only just starting.
+
+## Stage model
+| Stage | What it means | Exit criterion |
 |---|---|---|
-| 0 | **Identified** | A named entity worth pursuing, with a reason to believe |
-| 1 | **Engaged** | A real conversation has happened with someone who matters |
-| 2 | **Qualified** | Need, decision process, timeline and budget owner understood |
-| 3 | **Solution agreed** | They agree what we would deliver and why it works for them |
-| 4 | **Proposed** | Written proposal / quote with them |
-| 5 | **Negotiating** | Commercial and contractual terms in discussion |
-| 6 | **Won** / **Lost** / **Parked** | Signed · declined · no longer active |
+| `new` | Sourced, not yet looked at | Someone has actually read it |
+| `researching` | Being enriched and scored | Scored, with a route in identified |
+| `qualified` | Fits the ICP, has a trigger, has a reachable person | Ready to contact |
+| `contacted` | Outreach sent by Andre | A reply, or the sequence completes |
+| `engaged` | They replied and a conversation is live | A real meeting happens |
+| `opportunity` | A defined thing we could win, with a decision process | Proposal issued |
+| `won` / `lost` / `disqualified` / `nurture` | Signed · declined · not a fit · watch for a trigger | — |
 
-## The board
-| Account | Opportunity | Stage | Value | Next action | Owner | Confidence |
-|---|---|---|---|---|---|---|
-| **Finance House** | Approve move to the **latest Gaia** (unlocks 5 pending projects) | 3–4? | ? | ⚠ Refresh status — record ends 2026-07-24 | Andre | Unknown |
-| **Finance House** | Crypto product | 3–4? | ? | Awaiting FH specs + confirmation (as of Jul) | Andre | Unknown |
-| **Finance House** | Loan on Gold | Delivery | ? | Was due in UAT first week of August — confirm landed | Andre | Unknown |
-| **GIMD (Dassault)** | Infrastructure change + upgrade to latest | 4–5? | ? | ⚠ Refresh — contract V3 Jul, client wanted to sign fast, 3 Sep review | Andre | Unknown |
-| **Bank Audi** | New Gaia direction / retention | 1–2? | ? | Confirm what followed the roadmap presentation | Andre | Unknown |
-| **BLOM** | Unknown — deck built for a meeting | 1? | ? | Confirm who BLOM is to us and what the meeting produced | Andre | Unknown |
-| **AGPM** | Unknown — architecture/connectivity deck exists | ? | ? | Confirm who AGPM is before any action | Andre | Unknown |
-| **Khaled Zeidan** | New financial company — modules TBD | 1–2? | ? | Confirm what the "new company" actually is | Andre | Unknown |
+## Standards
+1. **Next action is a person, a verb and a date.** "Follow up" is not a next action. A record
+   without all three is **parked**, and says so.
+2. **Stage is evidence-based.** It moves when the exit criterion is met, not when we feel good
+   about a conversation.
+3. **Value and probability come from Andre**, never from an agent. Unknown is written as unknown.
+4. **Disqualify out loud, with the reason.** It is the cheapest thing in sales and the most skipped.
+5. **Update in the same session as the event.** A pipeline reconstructed from memory a week later
+   is fiction.
 
-## Rules
-1. **Next action is always a person, a verb and a date.** "Follow up" is not a next action.
-2. A deal with no next action is **parked** — say so rather than letting it rot on the board.
-3. Stage is evidence-based. It moves when the exit criterion is met, not when we feel good.
-4. Value and confidence come from **Andre**, never from an agent's imagination.
-5. Update the board in the same session as the event that changed it.
+## Current state
+**The new-business pipeline is empty — the engine was built on 2026-09-22 and has not yet run.**
+First real leads arrive with the first daily run. This line should be replaced with a date and a
+count the moment that is no longer true.

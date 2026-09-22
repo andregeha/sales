@@ -1,0 +1,19 @@
+slug: EXAMPLE-mfo-portfolio-system-rfp
+title: Portfolio management system — RFP
+issuer: Oasis Family Office
+country: UAE
+segment: family_office
+source_url: https://example.invalid/rfp/oasis-pms-2026
+published_date: '2026-09-01'
+deadline: '2026-10-15'
+status: skipped
+fit_assessment: SCHEMA EXAMPLE — fictional tender used only to validate rfp record structure.
+decision:
+  outcome: no_bid
+  reason: schema example, not a real RFP
+documents:
+- label: RFP document (example)
+  link: null
+owner: Andre Geha
+created: '2026-09-22'
+updated: '2026-09-22'

@@ -1,0 +1,48 @@
+slug: EXAMPLE-oasis-family-office
+name: Oasis Family Office
+legal_name: Oasis Family Office Ltd
+country: UAE
+city: Dubai
+segment: family_office
+regulator: DFSA
+website: https://example.invalid/oasis-fo
+linkedin: https://www.linkedin.com/company/example-oasis-fo
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: SCHEMA EXAMPLE — NOT A REAL LEAD. A fictional single-family office used to demonstrate and
+  validate the CRM schema and tooling. Do not treat any field on this record as real data.
+source:
+  channel: web_research
+  detail: Fabricated for schema demonstration — see disqualified_reason.
+  date: '2026-09-22'
+status: disqualified
+stage: parked
+owner: Andre Geha
+tags:
+- schema-example
+- do-not-contact
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Fictional Person
+  title: Chief Investment Officer
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: SCHEMA EXAMPLE — fictional contact, not a real person. Never invent contact details.
+  source: Fabricated for schema demonstration
+fit:
+  score: 0
+  reasoning: Not a real company — no ICP scoring applies.
+  disqualified_reason: schema example, not a real lead
+activities:
+- date: '2026-09-22'
+  type: note
+  summary: Record created to demonstrate and validate crm.py and crm_report.py. Never edit past activity
+    entries — append a new one instead.
+  link: null
+next_action: null
