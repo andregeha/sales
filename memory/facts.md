@@ -51,6 +51,46 @@
   central-bank and regulator procurement. Say this plainly rather than implying coverage is
   complete. — research 2026-09-22, high.
 
+## Live buying triggers (as at 2026-09-22)
+> ⚠ All of these are **search-verified only** — the environment blocked page loads. Confirm before
+> citing any of them to a prospect. They are strong enough to *prioritise* work, not to quote.
+
+- 🔥 **Lebanon — the strongest trigger in our whole territory.** Banking secrecy was lifted
+  (2025-04-24) and a **bank-resolution law (Law 23/2025, July 2025)** forces every Lebanese bank onto
+  a viability, recapitalisation or liquidation track; a further "financial gap" law was drafted in
+  Dec 2025. Combined with our **ready-made CMA/BDL regulatory pack**, a Beirut office and existing
+  bank clients, this is unusually well-matched.
+  ⚠ **But qualification matters more than need here**: a bank on the resolution track buys nothing.
+  Establish which track a bank is on *before* spending effort. Also: the widely-quoted "61 Lebanese
+  banks" figure is from 2022 and is stale — do not use it.
+- 🔥 **Saudi Arabia — the fastest-growing enumerable population.** Licensed Capital Market
+  Institutions went from **188 (Feb 2025) to 215 (end-2025)** — 32 new licences in a year. Small,
+  fully enumerable, and every new licence is a firm that needs systems and has no incumbent.
+  Local-content rules (a 30% minimum on government-linked procurement) are real friction — and our
+  **Riyadh office is the answer to it**.
+- **UAE — CBUAE Decree-Law 6/2025** carried a compliance deadline of **2026-09-16**, six days ago.
+  Worth investigating as a live driver.
+- **France — DORA has applied since 2025-01-17**, with the AMF requiring documented digital-resilience
+  arrangements. An ongoing, system-touching obligation. The French market is mature and slowly
+  consolidating (roughly 700 → 697 sociétés de gestion, 2023 → 2024) — steady, not fast.
+- **Vendor consolidation:** Temenos sold Multifonds to Montagu (Feb 2025, ~$400m). Vendor ownership
+  changes unsettle installed bases and are worth watching as displacement opportunities.
+
+## Market structure notes
+- **The UAE has four separate regulators whose registers do not overlap** — SCA/CMA (onshore),
+  **DFSA (DIFC)**, **FSRA (ADGM)** and **CBUAE**. Never conflate them; which one licenses a firm
+  determines how we approach it. Published firm counts for DIFC and ADGM **conflict between sources**
+  — do not average them, and do not quote a number we have not verified.
+- **Family offices are invisible by design.** DIFC exempts single-family offices above a $50m
+  net-asset threshold, ADGM above $10m — so only **multi-family offices** appear on registers.
+  No Gulf family-office association with a public directory was found.
+  **AFFO** (France, est. 2001, 100+ member structures, publishes an annual barometer with EY) is the
+  one genuinely usable family-office association across all four markets.
+- **Where the density is** — the researched recommendation: work **Saudi CMIs hardest**, then
+  **Lebanese banks** (with hard survivor/resolution qualification), then **UAE DIFC family offices
+  and MFOs**, then **France** as a steady lower-intensity lane. Deprioritise Lebanese BDL "financial
+  institutions" and Saudi consumer-finance companies — adjacent, not our segments.
+
 ## Product
 - **The New Gaia runs on the unchanged database.** This is the single most valuable sentence we have
   for an existing client: no data migration, additive changes only, legacy rights model reused,

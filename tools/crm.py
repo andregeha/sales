@@ -612,20 +612,25 @@ def cmd_contact(args: argparse.Namespace) -> int:
 # Subcommand: next (work queue)
 # ---------------------------------------------------------------------------
 
-def cmd_next(args: argparse.Namespace) -> int:
-    recs = load_all_companies()
+def compute_next(days: int = 14, companies: Optional[list[dict]] = None) -> list[dict]:
+    """The work queue: due/overdue next actions, plus stalled contacted/engaged deals.
+
+    Pure data function — importable by other tools (e.g. crm_report.py) so the daily brief and
+    the CLI can never drift out of sync on what counts as "needs attention".
+    """
+    recs = companies if companies is not None else load_all_companies()
     d_today = date.today()
     rows = []
     for r in recs:
         na = r.get("next_action")
         if na and na.get("due") and is_valid_date(na["due"]):
             due = parse_date(na["due"])
-            days = (d_today - due).days
-            if days >= 0:
+            due_days = (d_today - due).days
+            if due_days >= 0:
                 rows.append({
-                    "slug": r.get("slug"), "name": r.get("name"), "reason": "due" if days == 0 else "overdue",
+                    "slug": r.get("slug"), "name": r.get("name"), "reason": "due" if due_days == 0 else "overdue",
                     "who": na.get("who"), "what": na.get("what"), "due": na.get("due"),
-                    "days_overdue": days, "status": r.get("status"),
+                    "days_overdue": due_days, "status": r.get("status"),
                 })
         # stalled check
         if r.get("status") in STALLED_STATUSES:
@@ -635,10 +640,10 @@ def cmd_next(args: argparse.Namespace) -> int:
             )
             last_date = parse_date(acts[-1]["date"]) if acts else None
             stalled_days = (d_today - last_date).days if last_date else None
-            if last_date is None or stalled_days >= args.days:
+            if last_date is None or stalled_days >= days:
                 rows.append({
                     "slug": r.get("slug"), "name": r.get("name"),
-                    "reason": f"stalled (no activity in {args.days}+ days)" if last_date
+                    "reason": f"stalled (no activity in {days}+ days)" if last_date
                               else "stalled (no activity logged)",
                     "who": r.get("owner"), "what": "re-engage", "due": "",
                     "days_overdue": stalled_days if stalled_days is not None else 9999,
@@ -646,6 +651,11 @@ def cmd_next(args: argparse.Namespace) -> int:
                 })
 
     rows.sort(key=lambda r: -r["days_overdue"])
+    return rows
+
+
+def cmd_next(args: argparse.Namespace) -> int:
+    rows = compute_next(days=args.days)
     return _emit_rows(
         rows, args.format,
         columns=["slug", "name", "status", "reason", "who", "what", "due", "days_overdue"],
@@ -778,9 +788,13 @@ def cmd_rfp_update(args: argparse.Namespace) -> int:
 # Subcommand: stats
 # ---------------------------------------------------------------------------
 
-def cmd_stats(args: argparse.Namespace) -> int:
-    companies = load_all_companies()
-    rfps = load_all_rfps()
+def compute_stats(companies: Optional[list[dict]] = None, rfps: Optional[list[dict]] = None) -> dict:
+    """Counts by status/segment/country + approaching RFP deadlines, as a plain dict.
+
+    Pure data function — importable by other tools (e.g. crm_report.py).
+    """
+    companies = companies if companies is not None else load_all_companies()
+    rfps = rfps if rfps is not None else load_all_rfps()
 
     def counts(items: list[dict], field: str) -> dict:
         out: dict[str, int] = {}
@@ -809,6 +823,12 @@ def cmd_stats(args: argparse.Namespace) -> int:
             upcoming.append({"slug": r.get("slug"), "title": r.get("title"), "deadline": dl, "days_left": days})
     upcoming.sort(key=lambda u: u["days_left"])
     result["rfp_deadlines_approaching"] = upcoming
+    return result
+
+
+def cmd_stats(args: argparse.Namespace) -> int:
+    result = compute_stats()
+    upcoming = result["rfp_deadlines_approaching"]
 
     if args.format == "json":
         print_out(json.dumps(result, indent=2))
