@@ -12,6 +12,13 @@ function subscribe(cb: () => void) {
   return () => window.removeEventListener("hashchange", cb);
 }
 
+/** The route WITHOUT its query string — what the router matches on. */
+export function useRoutePath(): string {
+  const r = useRoute();
+  const i = r.indexOf("?");
+  return i === -1 ? r : r.slice(0, i);
+}
+
 export function useRoute(): string {
   const hash = useSyncExternalStore(
     subscribe,

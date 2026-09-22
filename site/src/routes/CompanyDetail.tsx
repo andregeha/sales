@@ -15,7 +15,6 @@ import {
   ScoreBadge,
   SegmentTag,
   StatusBadge,
-  TriggerLine,
 } from "../design/domain";
 import {
   Callout,
@@ -34,6 +33,17 @@ import { getCompany } from "../lib/data";
 import { Link } from "../lib/router";
 import { useAsync } from "../lib/useAsync";
 
+/**
+ * Pull the register-snapshot path out of `source.detail` (F13). `plan/website.md` §4 promises a
+ * link to the evidence; the detail string carries it as free text like
+ * `"... Snapshot: crm/registers/amf-france/2026-09-22.json."` — never fabricated when absent.
+ */
+function parseSnapshotPath(detail: string | null | undefined): string | null {
+  if (!detail) return null;
+  const match = detail.match(/Snapshot:\s*(\S+\.json)/);
+  return match?.[1] ?? null;
+}
+
 export function CompanyDetail({ slug }: { slug: string }) {
   const state = useAsync(() => getCompany(slug), [slug]);
 
@@ -51,6 +61,7 @@ export function CompanyDetail({ slug }: { slug: string }) {
   const fit = c.fit ?? {};
   const contacts = c.contacts ?? [];
   const activities = [...(c.activities ?? [])].sort((a, b) => b.date.localeCompare(a.date));
+  const snapshotPath = parseSnapshotPath(c.source?.detail);
 
   return (
     <Page>
@@ -74,6 +85,21 @@ export function CompanyDetail({ slug }: { slug: string }) {
         }
       />
 
+      {/* F12: "why now" is the single most important fact on this page — it gets heading
+          weight, directly under the title, before anything else. */}
+      <div className="mb-6">
+        <div className="text-micro tracking-wide text-subtle uppercase">Why now</div>
+        {c.trigger ? (
+          <p className="mt-1 text-[length:var(--text-h2)] font-semibold leading-snug text-text">
+            {c.trigger}
+          </p>
+        ) : (
+          <p className="mt-1 text-[length:var(--text-h2)] font-semibold leading-snug text-subtle">
+            No current trigger — this is market coverage, not a lead.
+          </p>
+        )}
+      </div>
+
       {c.status === "disqualified" && fit.disqualified_reason ? (
         <Section>
           <Callout tone="caution" title="Disqualified — and the reason is the point">
@@ -94,26 +120,25 @@ export function CompanyDetail({ slug }: { slug: string }) {
 
       <div className="grid gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
         <div className="min-w-0">
-          <Section title="Why now">
-            <Panel className="px-4 py-3">
-              <TriggerLine trigger={c.trigger} />
-            </Panel>
-          </Section>
-
-          <Section
-            title="How this score was reached"
-            description="Scored against knowledge/market/icp.md."
-          >
-            {fit.reasoning ? (
-              <Panel className="px-4 py-3">
-                <Prose>{fit.reasoning}</Prose>
-              </Panel>
-            ) : (
-              <EmptyState title="No reasoning recorded">
-                A score without its reasoning is not trustworthy — the reasoning is the part that
-                matters.
-              </EmptyState>
-            )}
+          <Section>
+            <details className="group rounded-[var(--radius)] border bg-surface">
+              <summary className="cursor-pointer select-none rounded-[var(--radius)] px-4 py-3 text-small font-medium text-muted marker:content-none group-open:text-text hover:text-text">
+                How this score was reached
+              </summary>
+              <div className="border-t px-4 py-3">
+                <p className="mb-2 text-micro text-subtle">
+                  Scored against knowledge/market/icp.md.
+                </p>
+                {fit.reasoning ? (
+                  <Prose>{fit.reasoning}</Prose>
+                ) : (
+                  <EmptyState title="No reasoning recorded">
+                    A score without its reasoning is not trustworthy — the reasoning is the part
+                    that matters.
+                  </EmptyState>
+                )}
+              </div>
+            </details>
           </Section>
 
           <Section
@@ -198,6 +223,11 @@ export function CompanyDetail({ slug }: { slug: string }) {
                 <Field label="Detail">
                   <span className="text-small text-muted">{c.source?.detail ?? <Unknown />}</span>
                 </Field>
+                {snapshotPath ? (
+                  <Field label="Evidence">
+                    <SourceLink href={snapshotPath}>register snapshot</SourceLink>
+                  </Field>
+                ) : null}
               </dl>
             </Panel>
           </Section>

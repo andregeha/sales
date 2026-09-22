@@ -11,7 +11,11 @@
  *   4. Reachability — the binding constraint, shown as a problem.
  */
 import { AlertTriangle, CalendarClock, Inbox } from "lucide-react";
-import { BarSeries, Chart } from "../design/Chart";
+import { lazy, Suspense } from "react";
+
+/** Lazy so Recharts stays out of the first load — see ReachChart. */
+const ReachChart = lazy(() => import("../features/ReachChart"));
+
 import { DataTable, Td, Tr } from "../design/DataGrid";
 import { ContactRoute, MarketTag, ScoreBadge, SegmentTag, TriggerLine } from "../design/domain";
 import {
@@ -201,13 +205,9 @@ export function Today() {
         {routeData.length === 0 ? (
           <EmptyState icon={AlertTriangle} title="No coverage data yet" />
         ) : (
-          <Chart
-            title="Share of records with a contact route, by market"
-            caption="A route means an email, phone or LinkedIn profile we actually hold — never a guessed address. A switchboard number counts as a route but converts far worse than a named person."
-            height={200}
-          >
-            <BarSeries data={routeData} x="country" y="reachable" colorByIndex />
-          </Chart>
+          <Suspense fallback={<div className="h-[200px]" />}>
+            <ReachChart data={routeData} />
+          </Suspense>
         )}
       </Section>
     </Page>

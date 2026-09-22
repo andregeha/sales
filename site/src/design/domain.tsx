@@ -73,22 +73,38 @@ export function StatusBadge({ status }: { status: string }) {
   );
 }
 
-/** Fit score, banded exactly as `knowledge/market/icp.md` defines the bands. */
-export function ScoreBadge({ score }: { score: number | null | undefined }) {
+/**
+ * Fit score, banded exactly as `knowledge/market/icp.md` defines the bands.
+ *
+ * The score alone overstates its own precision — 88% of register-sourced records sit in the
+ * 50–59/60–69 pair because register signals all earn identical fit points (F4). Showing the band
+ * label alongside the number is a standing reminder that the number is directional, not a rank.
+ */
+export function ScoreBadge({
+  score,
+  compact = false,
+}: {
+  score: number | null | undefined;
+  /** Number only — for a narrow column, where the tone and tooltip still carry the band. */
+  compact?: boolean;
+}) {
   if (score === null || score === undefined) {
     return <span className="text-subtle italic text-micro">unscored</span>;
   }
   const band =
     score >= 80
-      ? { tone: "positive" as const, title: "80–100 — work it now" }
+      ? { tone: "positive" as const, label: "work now", title: "80–100 — work it now" }
       : score >= 60
-        ? { tone: "accent" as const, title: "60–79 — active queue" }
+        ? { tone: "accent" as const, label: "strong", title: "60–79 — active queue" }
         : score >= 40
-          ? { tone: "caution" as const, title: "40–59 — worth a look" }
-          : { tone: "neutral" as const, title: "under 40 — nurture or skip" };
+          ? { tone: "caution" as const, label: "worth a look", title: "40–59 — worth a look" }
+          : score >= 20
+            ? { tone: "neutral" as const, label: "nurture", title: "20–39 — nurture" }
+            : { tone: "neutral" as const, label: "skip", title: "under 20 — skip" };
   return (
     <Badge tone={band.tone} title={band.title}>
       <span className="tnum">{score}</span>
+      {compact ? null : <> · {band.label}</>}
     </Badge>
   );
 }

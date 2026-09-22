@@ -11,11 +11,15 @@ import {
   type ColumnDef,
   columnSizingFeature,
   columnVisibilityFeature,
+  createSortedRowModel,
   flexRender,
   type RowData,
   rowSortingFeature,
   type SortingState,
-  type TableFeatures,
+  sortFn_alphanumeric,
+  sortFn_basic,
+  sortFn_text,
+  tableFeatures,
   useTable,
 } from "@tanstack/react-table";
 import { useVirtualizer } from "@tanstack/react-virtual";
@@ -27,17 +31,28 @@ const ROW_HEIGHT = 44;
 
 /**
  * TanStack Table v9 opts INTO features rather than shipping them all, so a grid only pays for what
- * it uses — and the compiler refuses any API belonging to a feature you did not declare. These
- * three are exactly what this grid calls: sorting, column widths, visible cells.
+ * it uses — and the compiler refuses any API belonging to a feature you did not declare.
+ *
+ * ⚠ `sortedRowModel` and `sortFns` are NOT optional extras. Declaring `rowSortingFeature` alone
+ * gives you the sort *API* — `getToggleSortingHandler`, `getIsSorted` — with no row model behind
+ * it, so headers render arrows, respond to clicks, update state, and **the rows never move**.
+ * That shipped once: five sortable columns, none of which sorted, and it typechecked perfectly.
+ * A grid that lies about sorting is worse than a grid without it.
  */
-const FEATURES = {
+export const GRID_FEATURES = tableFeatures({
   rowSortingFeature,
   columnSizingFeature,
   columnVisibilityFeature,
-} satisfies TableFeatures;
+  sortedRowModel: createSortedRowModel(),
+  sortFns: {
+    alphanumeric: sortFn_alphanumeric,
+    text: sortFn_text,
+    basic: sortFn_basic,
+  },
+});
 
 /** The column type views should use — features are fixed here so callers never spell them out. */
-export type GridColumn<T extends RowData> = ColumnDef<typeof FEATURES, T>;
+export type GridColumn<T extends RowData> = ColumnDef<typeof GRID_FEATURES, T>;
 
 export function DataGrid<T extends RowData>({
   data,
@@ -58,8 +73,8 @@ export function DataGrid<T extends RowData>({
   const [sorting, setSorting] = useState<SortingState>(initialSorting);
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const table = useTable<typeof FEATURES, T>({
-    features: FEATURES,
+  const table = useTable<typeof GRID_FEATURES, T>({
+    features: GRID_FEATURES,
     data,
     columns,
     state: { sorting },
@@ -95,6 +110,15 @@ export function DataGrid<T extends RowData>({
                   return (
                     <th
                       key={header.id}
+                      aria-sort={
+                        !sortable
+                          ? undefined
+                          : dir === "asc"
+                            ? "ascending"
+                            : dir === "desc"
+                              ? "descending"
+                              : "none"
+                      }
                       style={{ width: header.getSize() === 150 ? undefined : header.getSize() }}
                       className="border-b px-3 py-2 text-left text-micro font-semibold tracking-wide text-muted uppercase"
                     >
@@ -138,6 +162,8 @@ export function DataGrid<T extends RowData>({
                   className={cn(
                     "border-b last:border-0",
                     onRowClick && "cursor-pointer hover:bg-surface-raised",
+                    // The keyboard cursor. Without this, j/k moves something invisible.
+                    "data-[selected=true]:bg-accent-weak data-[selected=true]:shadow-[inset_2px_0_0_0_var(--accent)]",
                   )}
                   style={{ height: ROW_HEIGHT }}
                 >

@@ -33,6 +33,27 @@ const SEGMENT_LABEL: Record<(typeof SEGMENTS)[number], string> = {
   fund_manager: "Fund manager",
 };
 
+/**
+ * The two largest *adjacent* numeric bands — the plateau F4 found. Computed from whatever
+ * distribution the data holds, never assumed to be any particular pair of bands.
+ */
+function largestAdjacentPair(
+  bands: Array<{ band: string; count: number }>,
+): { count: number; labels: [string, string] } | null {
+  const numeric = bands.filter((b) => b.band !== "unscored");
+  let best: { count: number; labels: [string, string] } | null = null;
+  for (let i = 0; i < numeric.length - 1; i++) {
+    const a = numeric[i];
+    const b = numeric[i + 1];
+    if (!a || !b) continue;
+    const combined = a.count + b.count;
+    if (!best || combined > best.count) {
+      best = { count: combined, labels: [a.band, b.band] };
+    }
+  }
+  return best;
+}
+
 export function Markets() {
   const state = useAsync(getStats, []);
 
@@ -63,6 +84,10 @@ export function Markets() {
   }));
 
   const scoreData = stats.score_distribution.map((b) => ({ band: b.band, count: b.count }));
+  const scoredTotal = scoreData.reduce((sum, b) => sum + b.count, 0);
+  const plateau = largestAdjacentPair(scoreData);
+  const plateauPct =
+    plateau && scoredTotal > 0 ? Math.round((plateau.count / scoredTotal) * 100) : 0;
 
   return (
     <Page>
@@ -124,13 +149,28 @@ export function Markets() {
         {scoreData.length === 0 ? (
           <EmptyState icon={AlertTriangle} title="No score data yet" />
         ) : (
-          <Chart
-            title="Active records by fit-score band"
-            caption="A pile in the low bands can mean the ICP is filtering hard, or that sourcing has not yet reached the firms that would score higher — this chart cannot tell you which."
-            height={220}
-          >
-            <BarSeries data={scoreData} x="band" y="count" colorByIndex />
-          </Chart>
+          <>
+            {plateau && plateauPct > 0 ? (
+              <div className="mb-3">
+                <Callout
+                  tone="caution"
+                  title={`${plateauPct}% of scored records sit in two adjacent bands: ${plateau.labels[0]} and ${plateau.labels[1]}`}
+                >
+                  That concentration means the fit score is currently a poor ranking signal on its
+                  own — register-sourced records all earn identical fit points, so most of the list
+                  clusters within twenty points of each other. Treat status and trigger as the
+                  primary signal; read the score as directional, not as a rank.
+                </Callout>
+              </div>
+            ) : null}
+            <Chart
+              title="Active records by fit-score band"
+              caption="A pile in the low bands can mean the ICP is filtering hard, or that sourcing has not yet reached the firms that would score higher — this chart cannot tell you which."
+              height={220}
+            >
+              <BarSeries data={scoreData} x="band" y="count" colorByIndex />
+            </Chart>
+          </>
         )}
       </Section>
     </Page>

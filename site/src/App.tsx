@@ -18,26 +18,45 @@ import {
   ServerCog,
   Sun,
 } from "lucide-react";
-import { Suspense, useEffect, useState } from "react";
-import { cn } from "./design/primitives";
-import { Link, useRoute } from "./lib/router";
-import { Companies } from "./routes/Companies";
-import { CompanyDetail } from "./routes/CompanyDetail";
-import { Events } from "./routes/Events";
-import { Markets } from "./routes/Markets";
-import { Pipeline } from "./routes/Pipeline";
-import { Questions } from "./routes/Questions";
-import { Rfps } from "./routes/Rfps";
-import { Runs } from "./routes/Runs";
-import { Sources } from "./routes/Sources";
+import { lazy, Suspense, useEffect, useState } from "react";
+
+/**
+ * Only Today is eager. Everything else is fetched when it is opened, which keeps Recharts and the
+ * grid off the first load for a reader who just wants today's brief (finding F6).
+ */
+const Companies = lazy(() => import("./routes/Companies").then((m) => ({ default: m.Companies })));
+const CompanyDetail = lazy(() =>
+  import("./routes/CompanyDetail").then((m) => ({ default: m.CompanyDetail })),
+);
+const Events = lazy(() => import("./routes/Events").then((m) => ({ default: m.Events })));
+const Markets = lazy(() => import("./routes/Markets").then((m) => ({ default: m.Markets })));
+const Pipeline = lazy(() => import("./routes/Pipeline").then((m) => ({ default: m.Pipeline })));
+const Questions = lazy(() => import("./routes/Questions").then((m) => ({ default: m.Questions })));
+const Rfps = lazy(() => import("./routes/Rfps").then((m) => ({ default: m.Rfps })));
+const Runs = lazy(() => import("./routes/Runs").then((m) => ({ default: m.Runs })));
+const Sources = lazy(() => import("./routes/Sources").then((m) => ({ default: m.Sources })));
+
+import { cn, Kbd } from "./design/primitives";
+import { Link, useRoutePath } from "./lib/router";
+import { useKeyboard } from "./lib/useKeyboard";
 import { Today } from "./routes/Today";
 
-const NAV = [
+/**
+ * Two groups, separated visually rather than by a menu (finding F11).
+ *
+ * "The work" is what Andre opens daily. "The machine" is how the engine reports on itself — it
+ * belongs in the nav rather than hidden in settings, because a dead connector must stay one click
+ * away, but it should not compete with the work for attention.
+ */
+const NAV_WORK = [
   { to: "/", label: "Today", icon: LayoutGrid },
   { to: "/companies", label: "Companies", icon: Building2 },
   { to: "/triggers", label: "Triggers", icon: Activity },
   { to: "/pipeline", label: "Pipeline", icon: Radio },
   { to: "/rfps", label: "RFPs", icon: FileText },
+] as const;
+
+const NAV_MACHINE = [
   { to: "/markets", label: "Markets", icon: Globe2 },
   { to: "/sources", label: "Sources", icon: ServerCog },
   { to: "/runs", label: "Runs", icon: History },
@@ -63,6 +82,31 @@ function ThemeToggle() {
   );
 }
 
+function NavItem({
+  item,
+  route,
+}: {
+  item: { to: string; label: string; icon: typeof LayoutGrid };
+  route: string;
+}) {
+  const { to, label, icon: Icon } = item;
+  const active = to === "/" ? route === "/" : route.startsWith(to);
+  return (
+    <Link
+      to={to}
+      className={cn(
+        "flex shrink-0 items-center gap-1.5 border-b-2 px-2.5 py-3 text-small whitespace-nowrap transition-colors",
+        active
+          ? "border-[var(--accent)] text-text"
+          : "border-transparent text-muted hover:text-text",
+      )}
+    >
+      <Icon className="size-4" aria-hidden />
+      {label}
+    </Link>
+  );
+}
+
 function Nav({ route }: { route: string }) {
   return (
     <nav className="sticky top-0 z-20 border-b bg-surface/85 backdrop-blur-sm">
@@ -73,29 +117,44 @@ function Nav({ route }: { route: string }) {
         >
           OFS <span className="text-muted">Sales</span>
         </Link>
-        {NAV.map(({ to, label, icon: Icon }) => {
-          const active = to === "/" ? route === "/" : route.startsWith(to);
-          return (
-            <Link
-              key={to}
-              to={to}
-              className={cn(
-                "flex shrink-0 items-center gap-1.5 border-b-2 px-2.5 py-3 text-small whitespace-nowrap transition-colors",
-                active
-                  ? "border-[var(--accent)] text-text"
-                  : "border-transparent text-muted hover:text-text",
-              )}
-            >
-              <Icon className="size-4" aria-hidden />
-              {label}
-            </Link>
-          );
-        })}
+        {NAV_WORK.map((item) => (
+          <NavItem key={item.to} item={item} route={route} />
+        ))}
+        <span className="mx-2 h-4 w-px shrink-0 bg-[var(--border-strong)]" aria-hidden />
+        {NAV_MACHINE.map((item) => (
+          <NavItem key={item.to} item={item} route={route} />
+        ))}
         <div className="ml-auto shrink-0 pl-3">
           <ThemeToggle />
         </div>
       </div>
     </nav>
+  );
+}
+
+/** Discoverability for the keyboard layer. Hidden on touch, where it would be noise. */
+function KeyboardHint() {
+  return (
+    <footer className="mx-auto hidden max-w-[1400px] items-center gap-3 px-5 pb-8 text-micro text-subtle sm:flex sm:px-8">
+      <span className="flex items-center gap-1">
+        <Kbd>/</Kbd> search
+      </span>
+      <span className="flex items-center gap-1">
+        <Kbd>j</Kbd>
+        <Kbd>k</Kbd> move
+      </span>
+      <span className="flex items-center gap-1">
+        <Kbd>↵</Kbd> open
+      </span>
+      <span className="flex items-center gap-1">
+        <Kbd>g</Kbd> then <Kbd>t</Kbd>
+        <Kbd>c</Kbd>
+        <Kbd>s</Kbd>
+        <Kbd>m</Kbd>
+        <Kbd>r</Kbd>
+        <Kbd>q</Kbd> jump
+      </span>
+    </footer>
   );
 }
 
@@ -119,7 +178,8 @@ function render(route: string) {
 }
 
 export function App() {
-  const route = useRoute();
+  const route = useRoutePath();
+  useKeyboard();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -127,6 +187,7 @@ export function App() {
     <>
       <Nav route={route} />
       <Suspense fallback={<Loading />}>{render(route)}</Suspense>
+      <KeyboardHint />
     </>
   );
 }
