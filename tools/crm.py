@@ -104,10 +104,28 @@ def slugify(name: str) -> str:
     return s or "record"
 
 
+def normalize_dates(value: Any) -> Any:
+    """Recursively turn PyYAML's auto-parsed date/datetime objects back into ISO strings.
+
+    PyYAML resolves an unquoted ``2026-09-22`` into a ``datetime.date``. Records are meant to be
+    hand-editable, and writing the date unquoted is the natural thing for a human (or an agent) to
+    do — so accept both forms and normalize here, rather than making every caller defend itself.
+    """
+    if isinstance(value, datetime):
+        return value.date().isoformat()
+    if isinstance(value, date):
+        return value.isoformat()
+    if isinstance(value, dict):
+        return {k: normalize_dates(v) for k, v in value.items()}
+    if isinstance(value, list):
+        return [normalize_dates(v) for v in value]
+    return value
+
+
 def load_yaml(path: Path) -> dict:
     with path.open("r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
-    return data or {}
+    return normalize_dates(data or {})
 
 
 def dump_yaml(data: dict) -> str:

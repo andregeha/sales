@@ -13,6 +13,10 @@ scratch/
 tmp/
 *.tmp
 
+# CRM — generated daily brief + local run state (source of truth is crm/companies, crm/rfps)
+crm/reports/
+crm/.report_state.json
+
 # OS / editor
 .DS_Store
 Thumbs.db
