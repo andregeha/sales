@@ -2,6 +2,19 @@
 
 > Dated decisions and *why*. Including decisions not to do something. Newest first.
 
+## 2026-09-22 — The laptop is the primary environment
+- **This workspace runs on Andre's laptop**, not in the cloud. *Why:* the cloud environment's
+  network policy blocks every regulator register and tender portal. That is not a detail — register
+  diffing and real RFP scanning are the highest-value automation in the whole design, and both are
+  impossible there. Search-only sourcing still produced 57 companies, so the cloud is degraded
+  rather than useless, but the ceiling is low.
+- **Git is the spine, deliberately.** Every session works the same repo and branch, so the choice of
+  machine is reversible and costs nothing. If the cloud network policy is ever widened, moving back
+  (or running both) is a non-event.
+- **The trade-off, stated honestly:** a laptop only runs when it is on. The unattended daily run is
+  the thing we give up, and that is the one real cost of this decision. Worth it while the cloud
+  cannot see the sources that matter.
+
 ## 2026-09-22 — Mission set: a continuous new-business engine
 Andre's answers to the setup questions, and what follows from them.
 

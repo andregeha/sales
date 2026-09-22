@@ -53,6 +53,17 @@ Full detail → `knowledge/`. If a claim is not grounded there, it is not a clai
 | `.claude/skills/` | Invocable workflows. |
 | `tools/` | `crm.py` (the CLI) · `crm_report.py` (Andre's daily brief). |
 
+## Where this runs
+**Primary: Andre's laptop** (Claude Code desktop app, Windows). Decided 2026-09-22.
+The cloud environment's network policy blocks every regulator register and tender portal — which is
+most of the job — while the laptop has normal internet. See `RUN-ON-LAPTOP.md`.
+
+**Git is the spine.** Every session, wherever it runs, works the same repository and branch. Commit
+and push at the end of any working session and the next one — laptop, cloud, anywhere — resumes with
+the full mission, memory and CRM intact. Nothing is tied to a machine.
+
+⚠ **Windows notes:** the command is `python`, not `python3`. Anything we write must work on Windows.
+
 ## Related repo — `ofs-marketing`
 `andregeha/ofs-marketing` is the **marketing/deck-production** workspace (brand kit, pptx build
 scripts, QA gates, prospect decks). Sales **consumes** its product knowledge and **commissions**

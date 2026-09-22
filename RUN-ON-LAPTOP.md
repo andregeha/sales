@@ -1,8 +1,11 @@
-# Running this on your laptop
+# Running this on your laptop — the primary way to run this workspace
 
-> **Why:** the cloud environment blocks access to regulator websites, so the register pulls and the
-> RFP radar can't work there. Your laptop has normal internet, so they can.
-> **Who this is for:** Andre. Five minutes, once.
+> **Decided 2026-09-22: the laptop is where this runs.** The cloud environment blocks every
+> regulator register and tender portal, which is most of the job. The laptop has normal internet.
+>
+> **Git is the spine.** Both environments use the same repository and the same branch, so nothing is
+> tied to a machine — commit and push, and any session anywhere picks up exactly where you left off.
+> That is why moving is cheap and reversible.
 
 ## Easiest route — the Claude Code desktop app
 Claude Code ships as a **desktop app for Windows and Mac** — same tool, no terminal.
