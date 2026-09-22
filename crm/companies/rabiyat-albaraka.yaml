@@ -1,0 +1,50 @@
+slug: rabiyat-albaraka
+name: Rabiyat Albaraka
+legal_name: null
+country: Saudi Arabia
+city: null
+segment: asset_manager
+regulator: CMA (Saudi Arabia)
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: 'Saudi CMA register of licensed Financial Market Institutions (https://cma.gov.sa/en/Market/AuthorisedPersons/Pages/default.aspx);
+    licence 250 dated 2026-06-24. Snapshot: crm/registers/cma-saudi/2026-09-22.json.'
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- cma-saudi
+- register-sourced
+- new-licence
+- asset-manager
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 60
+  reasoning: 'Fit 40/60: priority segment asset_manager (20) + priority market Saudi Arabia (15) + regulated
+    by CMA (Saudi Arabia) (5). Trigger 20/25: register entry last updated 2026-06-24 (90 days ago), no
+    incumbent to displace (20) — ⚠ this is the CMA''s ''last update'' date for the entry, which is the
+    licence date for a new firm but may be an amendment for an existing one. Confirm before using it as
+    a reason to write. Access 0/15: no contact route published (0). Scored automatically from the Saudi
+    CMA register of licensed Financial Market Institutions at first sighting. Fit points are awarded only
+    where the register itself states the fact; anything it is silent on scores zero rather than being
+    assumed. Enrich before outreach.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'Appeared as a new entry in the Saudi CMA register of licensed Financial Market Institutions.
+    Licence 250, authorised 2026-06-24, Managing Investments and Operating Funds; Arranging; Advising
+    (register note: Has not commenced yet). Detected by the automated register diff; every field here
+    is as the register publishes it and nothing has been inferred. Not yet researched or enriched.'
+  link: https://cma.gov.sa/en/Market/AuthorisedPersons/Pages/default.aspx
+next_action: null

@@ -152,6 +152,90 @@ class TestDiffing(ConnectorHarness):
         self.assertEqual(self.companies(), [])
 
 
+class TestPartialSources(ConnectorHarness):
+    """A source that returns only a slice of a register must not report the rest as delisted."""
+
+    def test_partial_source_does_not_report_disappearances(self):
+        class Partial(StubConnector):
+            partial_source = True
+
+        day1 = [mk_entry("A", "Alpha"), mk_entry("B", "Beta"), mk_entry("C", "Gamma")]
+        Partial(entries=day1).run(baseline_window_days=0)
+        self.snapshots()[0].rename(self.snapshots()[0].parent / "2026-01-01.json")
+
+        # Day 2 the slice only contains one of them — that is not evidence anything was delisted.
+        res = Partial(entries=[mk_entry("A", "Alpha")]).run()
+        self.assertEqual(res["disappeared"], [])
+        self.assertTrue(res["partial"])
+
+    def test_partial_source_skips_the_truncation_guard(self):
+        """The slice size is not the register size, so a shrinking slice is not a broken download."""
+        class Partial(StubConnector):
+            partial_source = True
+
+        day1 = [mk_entry(f"K{i}", f"Firm {i}") for i in range(50)]
+        Partial(entries=day1).run(baseline_window_days=0)
+        self.snapshots()[0].rename(self.snapshots()[0].parent / "2026-01-01.json")
+        # Would raise for a complete source; must not here.
+        res = Partial(entries=day1[:5]).run()
+        self.assertTrue(res["ok"])
+
+    def test_complete_source_still_guards(self):
+        day1 = [mk_entry(f"K{i}", f"Firm {i}") for i in range(50)]
+        StubConnector(entries=day1).run(baseline_window_days=0)
+        self.snapshots()[0].rename(self.snapshots()[0].parent / "2026-01-01.json")
+        with self.assertRaises(ConnectorError):
+            StubConnector(entries=day1[:5]).run()
+
+
+class TestUnsegmentableEntries(ConnectorHarness):
+    def test_entry_with_no_segment_is_skipped_with_a_reason(self):
+        """The CRM requires a segment; a firm whose licensed activities are not ours is not a lead."""
+        e = mk_entry("A", "Advisory Only Ltd", licence_type="Advising")
+        e.segment = None
+        res = StubConnector(entries=[e]).run(baseline_window_days=9999)
+        self.assertEqual(res["created"], [])
+        self.assertEqual(len(res["skipped"]), 1)
+        self.assertIn("no segment", res["skipped"][0]["reason"])
+        self.assertIn("Advising", res["skipped"][0]["reason"])
+        self.assertEqual(self.companies(), [])
+
+
+class TestCMASaudiMapping(unittest.TestCase):
+    """Pure mapping logic for the Saudi connector — no network."""
+
+    def setUp(self):
+        from cma_saudi import CMASaudiConnector
+        self.c = CMASaudiConnector()
+
+    def test_activity_codes_and_full_names_both_normalise(self):
+        from cma_saudi import _normalise_activity
+        self.assertEqual(_normalise_activity("MI"), "MI")
+        self.assertEqual(_normalise_activity("Managing Investments"), "MI")
+        self.assertEqual(_normalise_activity("Custody"), "C")
+        self.assertEqual(_normalise_activity("Dealing"), "D")
+
+    def test_segment_mapping_matches_the_registers_own_legend(self):
+        self.assertEqual(self.c._segment(["MI"]), "asset_manager")
+        self.assertEqual(self.c._segment(["MIOF", "Arr"]), "asset_manager")
+        self.assertEqual(self.c._segment(["C"]), "custodian")
+        self.assertEqual(self.c._segment(["D", "Arr"]), "broker")
+        # Advisory/arranging only is not a segment we sell to.
+        self.assertIsNone(self.c._segment(["Adv", "Arr"]))
+
+    def test_date_is_converted_from_ddmmyyyy(self):
+        body = '<span class="date">16/09/2026</span>'
+        self.assertEqual(self.c._last_update(body), "2026-09-16")
+        self.assertIsNone(self.c._last_update("no date here"))
+
+    def test_trigger_reasoning_says_what_the_date_actually_means(self):
+        e = mk_entry("A", "X", licence_date=base.crm.today())
+        pts, why = self.c._trigger_points(e)
+        self.assertEqual(pts, 20)
+        self.assertIn("last updated", why)
+        self.assertNotIn("new licence granted", why)
+
+
 class TestDeduplication(ConnectorHarness):
     def test_existing_crm_record_is_not_duplicated(self):
         rec = {"slug": "alpha-gestion", "name": "Alpha Gestion SAS", "country": "France",

@@ -1,0 +1,67 @@
+slug: aarna-fund-management-limited
+name: Aarna Fund Management Limited
+legal_name: Aarna Fund Management Limited
+country: UAE
+city: Dubai
+segment: fund_manager
+regulator: DFSA
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: 'Small DIFC-licensed venture-capital fund manager (DFSA ref F007347, licensed 19-Jun-2023).
+  Restricted by licence to Managing a Collective Investment Fund and Advising on Financial Products for
+  Qualified Investor Funds and Exempt Funds structured as Venture Capital Funds only — a single asset
+  class, not the multi-asset front-to-back case Gaia leads with. Authorised individuals on the DFSA record:
+  Alankar Bisaria and Jaidev Parthasarathy (both effective 19-Jun-2023).'
+source:
+  channel: register_search
+  detail: DFSA public register (dfsa.ae/public-register/firms/aarna-fund-management-limited), ref F007347,
+    fetched via curl 2026-09-22; authorised-individual names and dates confirmed on the same register
+    page.
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- uae
+- difc
+- dfsa
+- fund-manager
+- venture-capital
+- single-asset-class
+- thin-profile
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Alankar Bisaria
+  title: Authorised Individual, Aarna Fund Management Limited (LinkedIn shows Partner, Aarna Investments
+    Limited)
+  role: unknown
+  email: null
+  phone: null
+  linkedin: https://www.linkedin.com/in/alankar-bisaria-b40190b/
+  language: en
+  notes: Listed as an Authorised Individual on Aarna Fund Management Limited's DFSA record (ref I016029,
+    effective 19-Jun-2023). His LinkedIn headline references 'Aarna Investments Limited' — unclear if
+    that is the same entity, a rebrand, or a related but distinct company; needs confirmation before outreach.
+    No email/phone found.
+  source: DFSA public register (dfsa.ae/public-register/firms/aarna-fund-management-limited) and LinkedIn
+    (linkedin.com/in/alankar-bisaria-b40190b), checked 2026-09-22.
+fit:
+  score: 38
+  reasoning: 'Fit 25/60: priority segment fund manager (20) + priority market UAE (15) minus most other
+    fit rows — licence is explicitly restricted to Venture Capital Funds only, so no multi-asset credit,
+    and a single-strategy VC vehicle''s back-office need (a handful of closed-end positions, no NAV-per-share-class
+    complexity) is a weak match for Gaia''s front-to-back multi-asset pitch; regulated (already counted)
+    but no confirmed third-party AUM scale found. Timing 5/25: licence is now over two years old (Jun-2023)
+    with no fresh trigger found — not a new-licence trigger in the sense that matters now. Access 8/15:
+    two named authorised individuals on the public record (Alankar Bisaria, LinkedIn found, though his
+    current headline says ''Aarna Investments Limited'' which may be a related/rebranded entity — flagged,
+    not resolved). Total 38 — worth a look, not worth outreach effort yet; watch for a broadened licence
+    (beyond VC-only) or a fund-launch announcement as the real trigger.'
+  disqualified_reason: null
+activities: []
+next_action: null

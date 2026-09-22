@@ -1,0 +1,46 @@
+slug: international-investment-bank-limited-difc-representative-office
+name: International Investment Bank Limited (DIFC Representative Office)
+legal_name: International Investment Bank Limited (DIFC Representative Office)
+country: UAE
+city: Dubai
+segment: bank
+regulator: DFSA
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: DIFC representative office of International Investment Bank Limited (head office in the Bahamas),
+  DFSA-licensed 26-Sep-2024 (ref F009345). Restricted by licence to 'Operating a Representative Office'
+  — marketing only, for the products/services of its Bahamas head office. Cannot itself hold client assets,
+  manage portfolios or transact locally.
+source:
+  channel: register_search
+  detail: DFSA public register (dfsa.ae/public-register/firms/international-investment-bank-limited-difc-representative-office),
+    ref F009345, fetched via curl 2026-09-22.
+  date: '2026-09-22'
+status: disqualified
+stage: parked
+owner: Andre Geha
+tags:
+- uae
+- difc
+- dfsa
+- bank
+- representative-office
+- disqualified
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 8
+  reasoning: 'Fit and access rows barely apply: a representative office by definition does no portfolio
+    management, fund administration or client-money holding of its own — all real operational decisions
+    and systems sit with the Bahamas head office, not this DIFC shell. Regulated and in a priority market
+    are the only rows with any substance.'
+  disqualified_reason: Marketing-only DIFC representative office (restricted by DFSA licence to promoting
+    its Bahamas head office's products); no local portfolio management, fund administration or client-money
+    function that Gaia would serve. Record kept so we do not re-find and re-research it.
+activities: []
+next_action: null

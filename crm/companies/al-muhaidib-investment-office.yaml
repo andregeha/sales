@@ -70,5 +70,12 @@ fit:
     no dated trigger. Worth a light watch for a reported new mandate type, additional hire, or reporting-consolidation
     initiative.'
   disqualified_reason: null
-activities: []
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced via Praxis Rock's 22-firm Saudi family-office directory plus web search identifying
+    a named, dedicated CIO (Junaid Jafar) overseeing both the family office and financial-investments
+    vertical - a professionalising signal per icp.md, but undated, so not credited as a hard trigger.
+    Single-family, proprietary vehicle; genuinely worth a light watch rather than active pursuit.
+  link: null
 next_action: null

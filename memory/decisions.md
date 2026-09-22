@@ -2,6 +2,37 @@
 
 > Dated decisions and *why*. Including decisions not to do something. Newest first.
 
+## 2026-09-22 (laptop) — How the register connectors behave, and what we will not do
+
+- **A connector that cannot read its source raises and writes nothing.** Zero entries from a live
+  register is treated as a bug, not news. *Why:* an empty diff and a dead source look identical in a
+  morning brief, and the second one is a lie that gets trusted. This is the single most important
+  property of the design and must not be softened for convenience.
+- **A collapsed row count is refused as a truncated download, not diffed as a mass delisting** —
+  but only when the drop is both proportionally large and bigger than ordinary churn, so a small
+  register losing one name still works.
+- **A baseline run does not dump the register's back catalogue into the CRM.** Only firms licensed
+  within 180 days become records; the rest go into the snapshot so the next diff is still correct.
+  *Why:* 666 French firms would bury the ten that matter, and most of the back catalogue has an
+  incumbent anyway.
+- **Fit points are awarded only where the register itself states the fact.** The AMF publishes each
+  firm's authorised activities and instrument classes, so "multi-asset" and "manages third-party
+  money" are scored from quoted evidence. Where a register is silent, the points are zero rather
+  than assumed. *Why:* a score inflated by an invented fact is worse than a low score.
+- **🔴 We do not attempt to defeat bot protection, WAFs or geo-restrictions.** Etimad and the Saudi
+  CMA both block automated access. The answer is to report the gap honestly, and to route around it
+  with a human or a Saudi network — never to disguise what we are. *Why:* these are public
+  regulators in markets where our reputation is the asset, and we identify ourselves honestly in
+  every request. A blocked source is a known unknown; a spoofed one is a liability.
+- **Regulator-published contact details are usable; guessed ones never are.** The AMF publishes
+  websites and switchboard numbers, so we store them and cite the register. We still do not
+  construct an address from a pattern. *Why:* the rule was never "no contact details" — it was
+  "nothing invented".
+- **Deliberately NOT built:** a Lebanon connector (no usable public register exists — Lebanon stays
+  relationship-driven), and any headless-browser scraper for the JS tender portals. The latter is a
+  real gap, but **free saved-search email alerts on BOAMP, PLACE and TED are a better mechanism than
+  scraping** and should be set up first.
+
 ## 2026-09-22 — The laptop is the primary environment
 - **This workspace runs on Andre's laptop**, not in the cloud. *Why:* the cloud environment's
   network policy blocks every regulator register and tender portal. That is not a detail — register

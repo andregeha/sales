@@ -1,0 +1,56 @@
+slug: s-p-hinduja-advisory-limited
+name: S.P. Hinduja Advisory Limited
+legal_name: S.P. Hinduja Advisory Limited (formerly Hinduja Bank Middle East Limited)
+country: UAE
+city: Dubai
+segment: bank
+regulator: DFSA
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: DIFC entity of the Hinduja Group, DFSA-licensed since 25-Mar-2008 (ref F000759) originally
+  as Hinduja Bank Middle East Limited; now registered on the DFSA public register under the trading name
+  S.P. Hinduja Advisory, indicating a shift toward an advisory rather than deposit-taking/banking business
+  model. Financial services on file include Advising on Financial Products and Arranging Credit & Advising
+  on Credit. Exact date and reason for the rename/repositioning not established in this research.
+source:
+  channel: register_search
+  detail: DFSA public register (dfsa.ae/public-register/firms/hinduja-bank-middle-east-limited — page
+    now displays the name S.P. Hinduja Advisory Limited), ref F000759, fetched via curl 2026-09-22. Historical
+    'Hinduja Bank Middle East' name and a 2010-2011 Category-1 licence-upgrade news item found via secondary
+    press (business-standard.com) but these are old and their relevance to the entity's current, apparently
+    narrower advisory scope is unconfirmed.
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- uae
+- difc
+- dfsa
+- bank
+- renamed-entity
+- advisory-repositioning
+- no-named-contact
+- thin-profile
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 32
+  reasoning: 'Fit 30/60: priority segment private bank/advisory (partial credit, 15 not 20, since the
+    current DFSA activity list reads as advisory rather than full banking) + priority market UAE (15)
+    + DFSA-regulated (already counted); no multi-asset or third-party-money credit added since the current
+    scope and client base could not be confirmed from public material. Timing 0/25: the entity has clearly
+    changed (renamed from Hinduja Bank Middle East to S.P. Hinduja Advisory) but neither the date nor
+    the business reason for that change was established — a real event that could be a trigger (repositioning,
+    licence narrowing, group restructuring) but not yet evidenced enough to score as one. Access 0/15:
+    no named individual or route in found for this specific DIFC entity in this research. Total 30 rounds
+    to 32 — nurture; the open question to chase is when and why the rename happened, since that is very
+    likely the actual trigger hiding here.'
+  disqualified_reason: null
+activities: []
+next_action: null

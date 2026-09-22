@@ -191,6 +191,12 @@ class Connector:
     #: than this many entries.
     normal_churn: int = 5
 
+    #: True when the source hands us only a slice of the register rather than the whole of it —
+    #: for example a "most recently updated" feed. A partial source must NOT be diffed for
+    #: disappearances (everything outside the slice would look delisted) and must not be
+    #: retention-checked (the slice size is not the register size).
+    partial_source: bool = False
+
     #: On the very first run, create records only for firms licensed within this many days.
     #: The rest are recorded in the snapshot so tomorrow's diff works, but not written to the CRM —
     #: a register's full back-catalogue is mostly established firms with incumbents, and dumping
@@ -355,7 +361,7 @@ class Connector:
         prev_path = previous_snapshot(self.register, run_date)
         prev = load_snapshot(prev_path) if prev_path else None
 
-        if prev:
+        if prev and not self.partial_source:
             prev_count = len(prev["entries"])
             kept = len(entries) / max(prev_count, 1)
             lost = prev_count - len(entries)
@@ -369,9 +375,10 @@ class Connector:
 
         prev_keys = {e["key"] for e in prev["entries"]} if prev else set()
         new_entries = [e for e in entries if e.key not in prev_keys]
-        gone = sorted(prev_keys - {e.key for e in entries}) if prev else []
+        # A partial source cannot tell us that anything has gone — only that it is not in the slice.
+        gone = sorted(prev_keys - {e.key for e in entries}) if (prev and not self.partial_source) else []
         gone_named = []
-        if prev:
+        if prev and not self.partial_source:
             by_key = {e["key"]: e for e in prev["entries"]}
             gone_named = [{"key": k, "name": by_key[k]["name"]} for k in gone]
 
@@ -393,6 +400,17 @@ class Connector:
             hit = by_name.get(normalize_name(e.name))
             if hit:
                 skipped.append({"name": e.name, "key": e.key, "reason": f"already in CRM as {hit}"})
+                continue
+            if not e.segment:
+                # The register states this firm's authorised activities and none of them map onto a
+                # segment we sell to. Recording it would create an unsegmented record (which the CRM
+                # schema rejects) and would bury the real leads. Skipping with the reason is the
+                # honest outcome — and the reason is what stops us re-finding it next month.
+                skipped.append({
+                    "name": e.name, "key": e.key,
+                    "reason": f"no segment — authorised activities ({e.licence_type or 'none stated'}) "
+                              f"do not map to a segment we sell to",
+                })
                 continue
             rec = self.build_record(e, f"crm/registers/{self.register}/{run_date}.json")
             if not dry_run:
@@ -425,6 +443,7 @@ class Connector:
             "source": self.source_name,
             "ok": True,
             "baseline": baseline,
+            "partial": self.partial_source,
             "total": len(entries),
             "previous": len(prev["entries"]) if prev else None,
             "previous_file": prev_path.name if prev_path else None,
@@ -445,6 +464,11 @@ def format_report(result: dict) -> str:
     lines = []
     head = f"[{result['register']}] {result['source']}"
     lines.append(head)
+    if result.get("partial"):
+        lines.append(
+            "  ⚠ PARTIAL SOURCE — this reads the most-recently-updated slice of the register, not "
+            "all of it. New names are caught; disappearances are NOT detected and are not reported."
+        )
     if result.get("baseline"):
         lines.append(
             f"  BASELINE run — {result['total']} entries recorded. Records created only for firms "

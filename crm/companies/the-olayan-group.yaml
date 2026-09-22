@@ -1,0 +1,63 @@
+slug: the-olayan-group
+name: The Olayan Group
+legal_name: null
+country: Saudi Arabia
+city: Riyadh
+segment: family_office
+regulator: null
+website: https://www.olayan.com/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: Saudi Arabia's largest and oldest disclosed single-family office (est. 1947, Riyadh), USD
+  10bn+ AUM across listed equities, private equity, debt and real estate globally. The most prominent
+  name in Praxis Rock's 22-firm Saudi family-office directory.
+source:
+  channel: web_research
+  detail: Praxis Rock's '22 Family Offices in Saudi Arabia' directory (praxisrock.com), the single most
+    prominent and highest-AUM entry (USD 10bn+ disclosed).
+  date: '2026-09-22'
+status: disqualified
+stage: parked
+owner: Andre Geha
+tags:
+- ksa
+- family-office
+- single-family
+- disqualified
+- proprietary
+- largest-in-directory
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 12
+  reasoning: 'Fit 30/60: priority segment family_office (20) + priority market KSA (15) - wait, recompute:
+    20+15=35, then multi-asset yes (10) = 45, but 0 for third-party money (purely proprietary global family
+    capital, explicitly disclosed as USD 10bn+ of its own wealth) and 0 for named regulator (none found
+    - a private investment company, not a CMA-licensed entity). Fit subtotal 45/60 on the table, but disqualified
+    per icp.md''s explicit criterion: ''purely proprietary trading with no third-party money and no compliance
+    driver'' - Olayan''s scale does not change that it is a private, unregulated holding vehicle for one
+    family, structurally the clearest case of the disqualify list in the entire Saudi directory. Trigger
+    0/25, access 0/15 (no named contact found; a company this private and long-established is very unlikely
+    to grant a route in without a warm referral). Recorded at 12 (not 0) only to reflect its real multi-asset
+    scale if circumstances ever change (e.g. it opens to external mandates or spins out a CMA-licensed
+    arm, as SEDCO and Al Rajhi branches have done).'
+  disqualified_reason: Purely proprietary single-family capital (USD 10bn+, one family, since 1947); no
+    third-party money, no named regulator, no compliance driver, and no public route in. Recorded so we
+    do not re-research the most obvious name in every Saudi family-office list. Re-open only if it spins
+    out a CMA-regulated arm managing external money (the pattern seen at SEDCO Holding->SEDCO Capital
+    and Come->Come Asset Management).
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'Sourced via Praxis Rock''s Saudi family-office directory as the largest and most prominent
+    named single-family office in the Kingdom. Disqualified: purely proprietary capital, no third-party
+    money, no named regulator, no public contact route. Recorded explicitly so this obvious name is not
+    re-researched in a future pass; the general pattern (large Saudi merchant-family conglomerates are
+    invisible/proprietary unless they spin out a CMA-licensed arm) applies to the rest of Praxis Rock''s
+    22-firm list too - not individually re-added here to avoid padding the CRM with near-identical disqualifications.'
+  link: null
+next_action: null

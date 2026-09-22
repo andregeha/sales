@@ -1,0 +1,75 @@
+slug: bank-of-palestine-global-adgm-entity
+name: Bank of Palestine - Global (ADGM entity)
+legal_name: Bank of Palestine - Global
+country: UAE
+city: Abu Dhabi
+segment: bank
+regulator: FSRA
+website: https://www.bankofpalestine.com
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: 'New ADGM entity of Bank of Palestine (Palestine''s largest bank), which received an FSRA
+  in-principle approval (IPA) on 29-Dec-2025 for a Category 1 (full banking) licence — the highest FSRA
+  banking category, requiring USD 10m capital. Authorised activities on the IPA: accepting deposits and
+  arranging deals in investments, targeting the global Palestinian diaspora with digital-first banking.
+  Expected fully operational H2 2026. Bank of Palestine has held a DIFC representative office in Dubai
+  since 2015 and recently opened a Cairo rep office; this ADGM entity is a genuine new, separately licensed
+  operating bank, not a rep office. Linda Tarazi appointed CEO of the ADGM entity.'
+source:
+  channel: register_search
+  detail: ADGM/FSRA announcement (adgm.com/media/announcements/bank-of-palestine-expands-globally-after-receiving-an-ipa-for-a-full-banking-license-from-adgm,
+    29-Dec-2025), corroborated by Arabian Business, The National, Zawya and Retail Banker International
+    coverage. FSRA public register itself (adgm.com/public-registers/fsra) could not be queried directly
+    — it is a client-rendered app with no working keyword/filter query found in this session; this record
+    rests on the ADGM press release plus press corroboration, not a direct register pull. Checked 2026-09-22.
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- uae
+- adgm
+- fsra
+- bank
+- trigger-new-licence
+- digital-banking
+- diaspora-banking
+- pre-launch
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Linda Tarazi
+  title: Chief Executive Officer, Bank of Palestine - Global (ADGM entity)
+  role: economic_buyer
+  email: 'null'
+  phone: 'null'
+  linkedin: null
+  language: en
+  notes: Appointed CEO of the new ADGM entity to lead its global expansion; 20+ years of international
+    banking experience per press coverage. No LinkedIn profile or contact detail could be confirmed/verified
+    in this research — do not guess a URL or email. Re-search closer to H2 2026 launch when the entity
+    is more publicly staffed.
+  source: Arabian Business, The National, Zawya, Retail Banker International and ADGM press release coverage
+    of the 29-Dec-2025 IPA, checked 2026-09-22.
+fit:
+  score: 66
+  reasoning: 'Fit 40/60: priority segment bank (20) + priority market UAE (15) + regulated by a named
+    regulator (5). Multi-asset and third-party-money rows withheld (0/20 combined) — the public IPA describes
+    deposit-taking and investment dealing for a digital-first diaspora bank, not confirmed multi-asset
+    portfolio/fund management, so credit is conservative pending more detail on what the ADGM entity will
+    actually book. Timing 20/25: a hard new-licence trigger (IPA 29-Dec-2025, going operational H2 2026)
+    with no incumbent system in the new entity by definition — the best kind of timing signal. Access
+    8/15: named CEO identified (Linda Tarazi) via multiple press sources, but no LinkedIn profile or contact
+    detail could be confirmed/verified in this research, so treat as a named-but-not-yet-reachable decision-maker.
+    Total 68 rounds to 66 — strong queue candidate; re-check status close to the H2 2026 go-live, since
+    a bank standing up new infrastructure pre-launch is exactly when a PMS/core decision gets made.'
+  disqualified_reason: null
+activities: []
+next_action:
+  who: Andre Geha
+  what: Check ADGM FSRA register directly (once a working query method is found) for the entity's formal
+    registration and staffing before drafting outreach; watch for H2 2026 go-live announcement
+  due: '2026-11-30'

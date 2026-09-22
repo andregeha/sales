@@ -64,5 +64,13 @@ fit:
     an unconfirmed trigger. Status nurture - re-check whether ''Acting'' resolves to a permanent, recently-appointed
     Head, which would be a real trigger.'
   disqualified_reason: null
-activities: []
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'Sourced via web search while mapping named individuals at Saudi single-family investment offices
+    (starting point: Praxis Rock''s 22-firm directory, which lists sibling branch Al Rajhi entities but
+    not this specific holding by name). Named contact Bilal Abduljawad identified with an ambiguous ''Acting
+    Head'' vs ''Head'' title - flagged for a follow-up check on whether this is a recent appointment (a
+    real trigger) or a stable title inconsistency across sources.'
+  link: null
 next_action: null

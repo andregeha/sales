@@ -1,5 +1,46 @@
 # Changelog
 
+## 2026-09-22 (laptop) — The network block is gone; the register engine is built and running
+
+The first session on Andre's Windows laptop. Its whole purpose was to test the premise that moving
+off the cloud unblocks the job. **It does.**
+
+**Verified first, rather than assumed.** `geco.amf-france.org`, `data.gouv.fr`, `cma.org.sa`,
+`tenders.etimad.sa`, `boamp.fr`, `ted.europa.eu`, `dfsa.ae` and `adgm.com` all reachable. Python
+3.13.0 and PyYAML were already installed; `crm.py validate` exits 0.
+
+**Register connectors — built, tested and live.** `base.py` + `amf_france.py` + `cma_saudi.py` +
+`run_all.py` + `enrich_from_registers.py`, with 17 tests that need no network.
+- **AMF France is live**: the AMF's own daily CSV on data.gouv.fr, 666 licensed firms. The first run
+  created **10 new French asset/fund managers**, all licensed within six months, scoring 70-83, and
+  correctly recognised two that were already in the CRM.
+- **Saudi CMA is written but blocked**: every `/api/` call times out at the TCP layer from Europe.
+  It fails loudly and says so. Retry from the Riyadh office.
+- **Enrichment**: 6 existing French records gained a regulator-published switchboard number.
+
+**RFP radar — the first trustworthy run.** TED and BOAMP were searched through their real APIs
+(15 and 11 query variants, EN + FR, 2025+). **France is a measured zero**, which is a real result
+rather than the previous "found nothing indexable". **Saudi Arabia is still zero COVERAGE** — Etimad
+serves its own bot challenge, which we do not attempt to defeat. The best finding was not a tender:
+**free saved-search email alerts on BOAMP, PLACE and TED**, which beat any scraper we could write.
+
+**A correction that mattered.** The handover named Barjeel Geojit as "the one lead with a fund open
+for subscription right now". It is not — the BGIOF NFO closed **2026-02-13**, seven months ago, and
+the "open for subscription" banner still on their homepage is leftover launch copy. Outreach was
+re-grounded on the umbrella/sub-fund administration workload instead. Also captured their real
+published office email and phone.
+
+**Sourcing.** Lead sourcing run against the unsourced market x segment combinations, working from
+registers and company sites directly rather than search snippets.
+
+**Outreach drafted** for the four best leads. Only one has a real published email route, and it is a
+switchboard inbox — the draft says so rather than pretending otherwise. **Contact routes, not lead
+volume, remain the binding constraint.**
+
+**Housekeeping:** `python3` fixed to `python` across every file an agent actually executes (it would
+have failed on Windows); `slugify` now folds accents; two display-path helpers no longer raise.
+
+
 ## 2026-09-22 — Workspace initialized
 - Created `CLAUDE.md` (operating constitution, golden rules, deck conventions, approval gates).
 - Built `knowledge/`: company profile, Gaia current product (full five-step workflow + compliance

@@ -1,211 +1,207 @@
 #!/usr/bin/env python
 """CMA (Saudi Arabia) — licensed Financial Market Institutions.
 
-Saudi Arabia is our highest-priority market: a small, fully enumerable population that grew from
-~188 to ~215 licensed institutions in a year. Every new licence is a firm that needs systems and has
-no incumbent.
+Saudi Arabia is our highest-priority market: a small, enumerable population that grew from ~188 to
+~215 licensed institutions in a year, and **242 as at 2026-09-22**. Every new licence is a firm that
+needs systems and has no incumbent.
 
-Source: the CMA's own Open Data API, ``https://opendataapi.cma.gov.sa``, documented at
-``/swagger/index.html``. Endpoint ``/api/Licenses/GetAllOrganizations?lang=en`` — the CMA's Arabic
-summary for it is "استرجاع مؤسسات السوق المالية" (retrieve the financial market institutions).
+Source: the CMA's public register page, *Financial Market Institutions* (what the CMA used to call
+"Authorised Persons"), at ``/en/Market/AuthorisedPersons/Pages/default.aspx``. The entries are
+server-rendered into the HTML, so no JavaScript is needed to read them.
 
-⚠ **STATUS AS AT 2026-09-22: the API endpoint could not be reached from France/Europe.**
-``GET /swagger/v1/swagger.json`` on that host succeeded (which is how the endpoints below are known
-to be correct), but every call to ``/api/...`` times out at the TCP layer after ~21s — a SYN with no
-response, repeated over several minutes with backoff. That is the signature of a firewall or
-geo-restriction on the API backend, not of a rate limit or a bad request.
+⚠ **This is a PARTIAL source, deliberately.** The page ships the **36 most-recently-updated
+entries** of 242 (it paginates the rest in with client-side JavaScript, "Total 41 Pages"). That is
+enough for this connector's actual purpose, because **the list is ordered by last-update date,
+newest first — so a newly licensed firm always appears at the top.** What it cannot do is notice a
+firm *leaving* the register, so disappearance reporting is disabled for this source rather than
+producing 200 false "gone" lines every morning.
 
-Consequences, stated plainly:
-- **This connector has never run against live data.** The field mapping below is written against the
-  endpoint's documented purpose, not against an observed payload.
-- It is therefore written to **fail loudly and specifically**: if the payload arrives but does not
-  contain a recognisable name field, it raises with the actual keys it received, so the first
-  successful run tells us exactly what to correct instead of quietly writing junk into the CRM.
-- **Do not report "no new Saudi firms today" on the strength of this connector until it has
-  succeeded at least once.** Until then a failure here means *we did not look*, not *nothing
-  happened*.
+**Why not the Open Data API.** ``opendataapi.cma.gov.sa`` publishes a swagger with a
+``/api/Licenses/GetAllOrganizations`` endpoint that would give the full 242 in one call. Its
+swagger file is fetchable, but **every ``/api/...`` call times out at the TCP layer after ~21s**
+from Europe, repeated with backoff — the signature of a geo-restriction on the backend, not a rate
+limit. If this connector is ever run from the Riyadh office or another Saudi network, **try the API
+first**: it would make this a complete source and let disappearance detection be turned back on.
 
-Routes worth trying to make it work: run it from the Riyadh office or any Saudi network; or ask the
-CMA whether the Open Data API is intended to be reachable from outside the Kingdom. The
-alternative published files (``/AboutCMA/ResearchAndReports/opendata/...``) were checked and are
-**aggregate statistics** — workforce and capital-adequacy indicators — not a register of named
-firms, so they cannot substitute.
+Also checked and rejected: the CMA's downloadable open-data files are aggregate workforce and
+capital-adequacy statistics, not a register of named firms.
 
-We do not attempt to work around the CMA's bot protection or its network restrictions. These are
-public registers being read once a day, with an honest user agent.
+⚠ Two traps recorded so nobody rediscovers them: the CMA's domain moved from **cma.org.sa to
+cma.gov.sa**, and its SharePoint returns a **styled error page with HTTP 200** for a wrong URL — so
+this connector checks the content, never the status code.
 """
 
 from __future__ import annotations
 
-import json
-from typing import Any, Optional
+import html
+import re
+from typing import Optional
 
 try:
     from .base import Connector, ConnectorError, Entry, http_get
 except ImportError:  # run directly, not as a package
     from base import Connector, ConnectorError, Entry, http_get
 
-API_ROOT = "https://opendataapi.cma.gov.sa"
-ORGANIZATIONS_URL = f"{API_ROOT}/api/Licenses/GetAllOrganizations?lang=en"
-SWAGGER_URL = f"{API_ROOT}/swagger/index.html"
+REGISTER_URL = "https://cma.gov.sa/en/Market/AuthorisedPersons/Pages/default.aspx"
 
-# Field-name candidates. The API's payload shape is not yet observed (see the module docstring), so
-# each of these is a guess at a conventional spelling — and if none of them match, we raise rather
-# than fall back to something arbitrary.
-_NAME_KEYS = ("name", "organizationName", "entityName", "companyName", "nameEn", "englishName",
-              "OrganizationName", "Name")
-_LICENCE_KEYS = ("licenseNumber", "licenceNumber", "licenseNo", "license_number", "number",
-                 "LicenseNumber", "id", "Id")
-_DATE_KEYS = ("licenseDate", "licenceDate", "issueDate", "licenseIssueDate", "date",
-              "LicenseDate", "IssueDate")
-_WEBSITE_KEYS = ("website", "webSite", "url", "Website")
-_PHONE_KEYS = ("phone", "telephone", "phoneNumber", "Phone")
-_ACTIVITY_KEYS = ("activities", "licensedActivities", "activity", "services", "Activities")
-_CITY_KEYS = ("city", "cityName", "City")
+# One card per firm. `data-id` is the CMA's own stable identifier for the entry.
+_CARD_RE = re.compile(
+    r'<div class="col-12 page page-\d+" data-id="(?P<id>\d+)" data-page="\d+">'
+    r'(?P<body>.*?)(?=<div class="col-12 page page-\d+" data-id=|\Z)',
+    re.S,
+)
+_NAME_RE = re.compile(r"<h3[^>]*>(.*?)</h3>", re.S)
+_DATE_RE = re.compile(r'<span class="date">(\d{2})/(\d{2})/(\d{4})</span>')
+_NOTES_RE = re.compile(r"<p[^>]*>\s*Notes\s*:\s*(.*?)</p>", re.S)
+_ACT_RE = re.compile(r'fw-medium[^>]*">\s*([^<]+?)\s*</li>')
+_COUNT_RE = re.compile(r"Count=\s*(\d+)")
+
+# The CMA's activity abbreviations, taken from the legend printed on the register page itself:
+# "Arranging (Arr)  Advising (Adv)  Custody (C)  Dealing (D)
+#  Managing Investments and Operating Funds (MIOF)  Managing Investments (MI)".
+# ⚠ The cards render these inconsistently — some show the code, some the full name — so both forms
+# are accepted and normalised to the code.
+ACTIVITY_NAMES = {
+    "MI": "Managing Investments",
+    "MIOF": "Managing Investments and Operating Funds",
+    "Arr": "Arranging",
+    "Adv": "Advising",
+    "D": "Dealing",
+    "C": "Custody",
+}
+_BY_FULL_NAME = {v.lower(): k for k, v in ACTIVITY_NAMES.items()}
+
+# The activities that make a firm one of ours.
+_MANAGING = {"MI", "MIOF"}      # our segment: asset & fund managers
+_CUSTODY = {"C"}                # adjacent
+_DEALING = {"D"}                # adjacent
 
 
-def _first(d: dict, keys: tuple[str, ...]) -> Optional[Any]:
-    for k in keys:
-        if k in d and d[k] not in (None, "", []):
-            return d[k]
-    # case-insensitive second pass
-    lower = {str(k).lower(): v for k, v in d.items()}
-    for k in keys:
-        v = lower.get(k.lower())
-        if v not in (None, "", []):
-            return v
-    return None
+def _normalise_activity(raw: str) -> str:
+    """Return the CMA's code for an activity, whether the card printed the code or the full name."""
+    s = raw.strip()
+    return _BY_FULL_NAME.get(s.lower(), s)
 
 
 class CMASaudiConnector(Connector):
     register = "cma-saudi"
     regulator = "CMA (Saudi Arabia)"
     country = "Saudi Arabia"
-    source_name = "Saudi CMA register of licensed Financial Market Institutions (Open Data API)"
-    source_url = SWAGGER_URL
+    source_name = "Saudi CMA register of licensed Financial Market Institutions"
+    source_url = REGISTER_URL
 
-    # The Saudi population is small (~215), so ordinary churn is a smaller absolute number than for
-    # a 666-firm register. Keep the proportional floor but tighten the churn allowance.
-    normal_churn = 3
+    #: See the module docstring — we read the newest slice, not the whole register.
+    partial_source = True
 
     def fetch(self) -> list[Entry]:
-        raw = http_get(
-            ORGANIZATIONS_URL,
-            accept="application/json",
-            timeout=90,
-        )
-        try:
-            payload = json.loads(raw.decode("utf-8-sig"))
-        except (UnicodeDecodeError, json.JSONDecodeError) as e:
-            raise ConnectorError(
-                f"Saudi CMA Open Data API returned something that is not JSON ({e}). "
-                f"First 200 bytes: {raw[:200]!r}"
-            ) from e
+        raw = http_get(REGISTER_URL, timeout=90)
+        text = raw.decode("utf-8", errors="replace")
 
-        records = self._unwrap(payload)
-        if not records:
+        # ⚠ HTTP 200 is not success on this site. Check the content.
+        if "<title>" in text[:2000] and re.search(r"<title>\s*Error\s*</title>", text[:2000], re.I):
             raise ConnectorError(
-                f"Saudi CMA Open Data API returned no records. The licensed-institution register is "
-                f"never empty, so this is a fetch or schema problem — not a quiet day."
+                f"{REGISTER_URL} returned a SharePoint error page with HTTP 200. The register URL "
+                f"has probably moved again (it already moved from cma.org.sa to cma.gov.sa)."
+            )
+        if "requested URL was rejected" in text:
+            raise ConnectorError(
+                f"{REGISTER_URL} was rejected by the CMA's WAF. We do not attempt to work around "
+                f"bot protection — this needs a human with a browser."
             )
 
-        sample = records[0]
-        if not isinstance(sample, dict) or _first(sample, _NAME_KEYS) is None:
+        cards = list(_CARD_RE.finditer(text))
+        if not cards:
             raise ConnectorError(
-                f"Saudi CMA payload parsed, but no recognisable firm-name field was found. "
-                f"This connector has never seen live data from this endpoint (see the module "
-                f"docstring), so the mapping needs correcting against what actually arrived. "
-                f"Observed keys on the first record: "
-                f"{sorted(sample.keys()) if isinstance(sample, dict) else type(sample).__name__}. "
-                f"Refusing to create records from a mapping we cannot trust."
+                f"{REGISTER_URL} loaded but no register entries could be parsed from it. The page "
+                f"markup has changed. Refusing to report zero — that would read as a quiet day when "
+                f"in fact we cannot read the register at all."
             )
 
-        return [self._to_entry(r) for r in records if isinstance(r, dict)]
+        declared = _COUNT_RE.search(text)
+        self._declared_total = int(declared.group(1)) if declared else None
 
-    @staticmethod
-    def _unwrap(payload: Any) -> list:
-        """The API may return a bare list or wrap it in a envelope. Accept either; invent neither."""
-        if isinstance(payload, list):
-            return payload
-        if isinstance(payload, dict):
-            for key in ("data", "result", "items", "Data", "Result", "records"):
-                v = payload.get(key)
-                if isinstance(v, list):
-                    return v
-            # a dict of one list value is unambiguous enough to accept
-            lists = [v for v in payload.values() if isinstance(v, list)]
-            if len(lists) == 1:
-                return lists[0]
-        return []
+        entries = [self._to_entry(m) for m in cards]
+        return [e for e in entries if e.name]
 
-    def _to_entry(self, r: dict) -> Entry:
-        name = str(_first(r, _NAME_KEYS) or "").strip()
-        key = str(_first(r, _LICENCE_KEYS) or name).strip()
-        activities = _first(r, _ACTIVITY_KEYS)
-        if isinstance(activities, list):
-            acts = [str(a) for a in activities if a]
-        elif activities:
-            acts = [str(activities)]
-        else:
-            acts = []
+    # -- mapping ----------------------------------------------------------
+
+    def _to_entry(self, m: re.Match) -> Entry:
+        body = m.group("body")
+        name = self._clean(_NAME_RE.search(body))
+        notes = self._clean(_NOTES_RE.search(body))
+        acts = [_normalise_activity(a) for a in _ACT_RE.findall(body) if a.strip()]
+
+        licence_type = "; ".join(ACTIVITY_NAMES.get(a, a) for a in acts) or None
+        if notes:
+            licence_type = f"{licence_type} (register note: {notes})" if licence_type else \
+                f"register note: {notes}"
 
         return Entry(
-            key=key,
+            key=m.group("id"),
             name=name,
             country="Saudi Arabia",
             segment=self._segment(acts),
-            city=(str(_first(r, _CITY_KEYS)).strip() if _first(r, _CITY_KEYS) else None),
-            website=self._website(_first(r, _WEBSITE_KEYS)),
-            phone=(str(_first(r, _PHONE_KEYS)).strip() or None) if _first(r, _PHONE_KEYS) else None,
-            licence_date=self._date(_first(r, _DATE_KEYS)),
-            licence_type="; ".join(acts) or None,
+            city=None,                       # the register card does not publish an address
+            website=None,                    # nor a website
+            phone=None,                      # nor a phone number
+            licence_date=self._last_update(body),
+            licence_type=licence_type,
             legal_name=None,
-            # Deliberately not set: the register's activity vocabulary is unobserved, so asserting
-            # multi-asset or third-party money here would be inventing evidence. Enrichment can
-            # raise the score once a human or a researcher has seen the data.
+            # The register states the authorised activities but not the asset classes or whose money
+            # is managed, so neither flag is set. Awarding those points would be inventing evidence.
             multi_asset=None,
             third_party=None,
             evidence={},
-            raw={"api_record": r},
+            raw={"activities": acts, "notes": notes, "cma_entry_id": m.group("id")},
         )
 
     @staticmethod
-    def _segment(acts: list[str]) -> Optional[str]:
-        """Map CMA licensed activities onto our segments.
-
-        The CMA's licensed activities are Dealing, Arranging, Managing, Advising and Custody.
-        "Managing" is the one that matters to us. This mapping is written against the CMA's
-        published activity vocabulary but has NOT been checked against a live payload.
-        """
-        joined = " | ".join(acts).lower()
-        if not joined:
+    def _clean(match: Optional[re.Match]) -> Optional[str]:
+        if not match:
             return None
-        if "manag" in joined or "إدارة" in joined:
+        s = html.unescape(re.sub(r"<[^>]+>", "", match.group(1)))
+        s = " ".join(s.split())
+        return s or None
+
+    @staticmethod
+    def _last_update(body: str) -> Optional[str]:
+        """The card's 'Last update' date, dd/mm/yyyy, as ISO.
+
+        ⚠ This is the date the CMA last **updated the entry**, which for a new firm is effectively
+        its licence date but for an existing firm may be any amendment. It is stored in
+        ``licence_date`` because that is what drives the trigger score, and the scoring reasoning
+        says plainly what the date means.
+        """
+        m = _DATE_RE.search(body)
+        if not m:
+            return None
+        dd, mm, yyyy = m.groups()
+        return f"{yyyy}-{mm}-{dd}"
+
+    @staticmethod
+    def _segment(acts: list[str]) -> Optional[str]:
+        s = set(acts)
+        if s & _MANAGING:
             return "asset_manager"
-        if "custod" in joined or "حفظ" in joined:
+        if s & _CUSTODY:
             return "custodian"
-        if "deal" in joined or "broker" in joined or "تعامل" in joined:
+        if s & _DEALING:
             return "broker"
         return None
 
-    @staticmethod
-    def _website(value: Any) -> Optional[str]:
-        v = str(value or "").strip()
-        if not v:
-            return None
-        if not v.lower().startswith(("http://", "https://")):
-            v = "https://" + v.lstrip("/")
-        return v
+    # -- scoring ----------------------------------------------------------
 
-    @staticmethod
-    def _date(value: Any) -> Optional[str]:
-        """Accept an ISO-ish date; return None rather than guessing at an unfamiliar format."""
-        v = str(value or "").strip()
-        if not v:
-            return None
-        if len(v) >= 10 and v[4] == "-" and v[7] == "-":
-            return v[:10]
-        return None
+    def _trigger_points(self, entry: Entry) -> tuple[int, str]:
+        """Same age bands as the base class, but honest about what the date actually means."""
+        pts, why = super()._trigger_points(entry)
+        if pts:
+            why = why.replace("new licence granted", "register entry last updated")
+            why += (
+                " — ⚠ this is the CMA's 'last update' date for the entry, which is the licence date "
+                "for a new firm but may be an amendment for an existing one. Confirm before using "
+                "it as a reason to write"
+            )
+        return pts, why
 
 
 CONNECTOR = CMASaudiConnector

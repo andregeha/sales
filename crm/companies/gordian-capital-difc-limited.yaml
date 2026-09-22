@@ -1,0 +1,71 @@
+slug: gordian-capital-difc-limited
+name: Gordian Capital (DIFC) Limited
+legal_name: Gordian Capital (DIFC) Limited
+country: UAE
+city: Dubai
+segment: fund_manager
+regulator: DFSA
+website: https://www.gordiancapital.com
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: APAC's first and largest institutional cross-border fund platform and fund-solutions provider
+  (est. 2005, acquired by IQ-EQ July 2025); DFSA-licensed 23-Apr-2026 to open a seventh global office
+  in DIFC after Singapore, Tokyo, Hong Kong, Shanghai and Melbourne. Licensed for Managing a Collective
+  Investment Fund, Advising on Financial Products, Arranging Custody, Arranging Deals in Investments and
+  Managing Assets, with a 'Use a Fund Platform' endorsement. Runs ~USD 22bn across 115+ launched funds
+  (hedge, PE, VC, real estate, private credit) since 2005 as an outsourced AIFM/fund-hosting platform
+  for third-party managers.
+source:
+  channel: register_search
+  detail: DFSA public register (dfsa.ae/public-register/firms/gordian-capital-difc-limited), ref F011301,
+    Date of Licence 23-Apr-2026, fetched via curl 2026-09-22; corroborated by IQ-EQ press release (iqeq.com/news,
+    published 20-21 May 2026) and DIFC news (difc.com/whats-on/news).
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- uae
+- difc
+- dfsa
+- fund-manager
+- trigger-new-licence
+- fund-platform
+- aifm-as-a-service
+- multi-strategy
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Mark Voumard
+  title: Founder, Gordian Capital; Managing Director & Head of Fund Platform and Solutions, Asia and Middle
+    East, IQ-EQ
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: https://www.linkedin.com/in/markvoumard/
+  language: en
+  notes: Founded Gordian Capital in 2005; led its DFSA/DIFC launch (licensed 23-Apr-2026). Now at IQ-EQ
+    (acquired Gordian July 2025) leading Asia/Middle East fund-platform business. No email or phone published
+    for him or the DIFC entity found in this research — do not guess one.
+  source: LinkedIn profile (linkedin.com/in/markvoumard) and IQ-EQ press release (iqeq.com/news, 20-21
+    May 2026), cross-checked 2026-09-22.
+fit:
+  score: 85
+  reasoning: 'Fit 55/60: priority segment fund manager (20) + priority market UAE (15) + genuinely multi-asset
+    across hedge/PE/VC/real-estate/private-credit strategies for many underlying clients (10) + manages
+    third-party money by design as a fund platform (10) + DFSA-regulated (5) — wealth & asset management
+    sub-segment fit is very strong given fund administration/NAV/multi-strategy need. Timing 20/25: brand-new
+    DFSA licence (23-Apr-2026), a hard new-entity trigger, no incumbent system yet in DIFC. Access 8/15:
+    named decision-maker identified (Mark Voumard, Gordian founder and Head of Fund Platform & Solutions,
+    Asia & Middle East at IQ-EQ, LinkedIn verified) but no warm relationship and no published email/phone
+    for the DIFC entity yet, so 8 not 15. Total 85 — work it now.'
+  disqualified_reason: null
+activities: []
+next_action:
+  who: Andre Geha
+  what: Research whether Gordian's DIFC operation is fully staffed and identify a DIFC-based operations/compliance
+    contact before drafting outreach to Mark Voumard
+  due: '2026-10-15'
