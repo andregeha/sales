@@ -1,0 +1,17 @@
+# Objection handling
+
+> Answer honestly, ground in `knowledge/`, never over-claim. If the honest answer is
+> "let me confirm", say that and log it in `memory/open-questions.md`.
+
+| Objection | Response |
+|---|---|
+| **"Your product is a desktop application in 2026."** | Two answers. The **web portal is live today** for clients, managers and branches — we can demo it now. And the full web platform is built: the foundation is done, first demo January 2027, alpha June 2027, deployment from Q4 2027 — **on the same database**, with the desktop running alongside, so you move at your pace with no migration event. |
+| **"A re-platform means a migration project and risk."** | The database does not change. The New Gaia runs on the same SQL Server database with its existing procedures, triggers and history; changes are additive only. Your rights model is reused, not rebuilt. Desktop and web coexist during the transition. |
+| **"We're already committed to <tier-one vendor>."** | Then the question is what you pay for what you actually use. We are modular — you buy the essentials and add. And ask what their answer is on your local regulatory obligations; our constraint library is maintained as product, including a ready-made CMA/BDL pack. |
+| **"Can you handle our asset classes?"** | Equity, fixed income, funds, futures, options, FX, commodities, plus **private equity and repos** in the same portfolio view — with the fixed-income analytics (accrued interest, yield, duration, sensitivity, cash-flow schedules) underneath. |
+| **"Do you integrate with our core banking / custodian / data provider?"** | Bloomberg, Reuters and Six Telekurs for prices, characteristics and corporate actions; FIX for order routing; SWIFT MT540–543 for settlement and MT300 for FX confirmations; core-banking interfaces; web services, REST/SOAP and an open SQL schema. File-based custodian instructions where SWIFT is not available. |
+| **"How do we know compliance is really enforced?"** | It fires at save on every channel — front office, simple orders, bloc orders, transactions, simulations and the client portal — against calculated positions plus pending orders plus the order being saved. Breach action is warning, password-forced, or blocking, with optional four-eyes escalation, a mandatory justification comment and a complete ex-ante and ex-post audit trail. |
+| **"What about security?"** | In the current product: Windows or SQL authentication, rights by operator and group, client-name encryption, full audit logging down to login attempts and query execution. In the New Gaia: tokens never reach the browser (BFF), two-factor via a standard identity provider, HTTPS end-to-end, deny-by-default authorization decided in the database, field-level masking, and audit on every request and every denial. |
+| **"You're a small vendor."** | Twenty years building this product, offices in Paris, Riyadh, Beirut and Dubai, clients across France, Lebanon, Morocco, Saudi Arabia, the UAE, Egypt and Cyprus — and you get a finance-expert team that answers, not a ticket number. |
+| **"Price?"** | ⚠ **Never quote. Ever.** Establish scope and modules, then take it to Andre. The framing to use: modular, you pay only for what you need, starting with the essentials. |
+| **"Can you do <feature we are not sure about>?"** | Do not guess. "Let me confirm that precisely rather than give you an approximate answer" — then log it in `memory/open-questions.md` and ask Andre or R&D. |

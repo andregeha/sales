@@ -1,0 +1,27 @@
+# Never commit these
+*.env
+.env*
+**/credentials*
+**/secrets*
+**/*password*
+**/*.ocf
+**/portal-access.md
+
+# Scratch
+work/
+scratch/
+tmp/
+*.tmp
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Node / Python
+node_modules/
+__pycache__/
+*.pyc
+.venv/
