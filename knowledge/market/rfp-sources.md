@@ -41,6 +41,39 @@ always will be. It is worth running because a missed public tender is unrecovera
 are free — but **the main engine is the licence registers plus trigger-based outbound**, which is
 where the build effort went. Do not let a clean radar report read as "the market is quiet".
 
+### BOAMP vs PLACE — they are not the same thing (verified live 2026-09-22)
+
+Andre asked whether what is on BOAMP is also on PLACE. **No — they are different kinds of thing,
+and neither contains the other.**
+
+| | **BOAMP** | **PLACE** |
+|---|---|---|
+| What it is | The **legal advertising bulletin** (*Bulletin Officiel des Annonces des Marchés Publics*), run by DILA. Where a notice is **published**. | A **dematerialisation platform** where the consultation is actually **hosted and run** — documents, questions, bid submission. |
+| Who appears | **Every** public buyer required to advertise above threshold — State, **local authorities**, hospitals, public establishments. | Per PLACE's own scope statement: State central and deconcentrated services, State public establishments, independent public and administrative authorities, GIPs, GIEs with a national public-service mission, **social security bodies**, UCANSS, and the **Caisse des Dépôts et Consignations**. |
+| Not there | Consultation documents (it is a notice, not a dossier). | **Local authorities** — communes, départements, régions — which mostly use other platforms (Maximilien, AWS-achat, e-marchespublics, achatpublic.com, Klekoon…). |
+
+**So:** a local-authority tender appears on **BOAMP but not PLACE**. A State sub-threshold
+consultation can appear on **PLACE but never on BOAMP**. Watching one does not cover the other.
+
+**Caisse des Dépôts being on PLACE matters to us** — it is one of the few genuinely
+portfolio-running public buyers in France.
+
+### Using PLACE in practice (tested 2026-09-22)
+- ✅ **No account is needed to search or browse.** An anonymous visitor gets full results —
+  reference, object, buyer, deadline — and can even **download the *règlement de consultation***.
+- 🔑 **An account IS needed for three things:** saved-search **email alerts** ("Mes alertes"), the
+  *panier*, and actually **responding** to a consultation.
+- ⚠ **The keyword search is NOT automatable by URL.** PLACE runs on PRADO with a stateful
+  postback (`PRADO_PAGESTATE`): `…&keyWord=gestion+de+portefeuille` looks like it should work and
+  **silently returns the unfiltered list instead**. Verified — three different keywords all returned
+  the identical 121 results. **Do not build a scraper on that URL; it would report false positives
+  forever.**
+- 📉 **PLACE carried only ~121 open consultations in total** on 2026-09-22 — across every buyer and
+  category. Small enough that a human can simply scan the lot periodically. That is a far better use
+  of time than automating it.
+- ✅ **BOAMP, by contrast, HAS a genuine Opendatasoft API** and is properly automatable — which is
+  how the radar searched it. **Automate BOAMP; alert-or-eyeball PLACE.**
+
 **Searched successfully, via each portal's real API (high confidence):**
 | Portal | How | Coverage achieved |
 |---|---|---|
