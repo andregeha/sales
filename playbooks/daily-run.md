@@ -32,6 +32,15 @@ should keep saying so until it is fixed.
 Expected volume: France runs at roughly **two new licences a month**, so most days are legitimately
 "no change". That is a real quiet day and should be reported as one.
 
+**The connectors also diff EXISTING firms, not just new ones** — and that is where most triggers
+come from, because a register's population turns over slowly while its entries are amended
+constantly. A firm that **gains an authorised activity** has expanded what it is allowed to do,
+which is a business change and a reason to write. When that happens to a record sitting at
+`nurture`, the connector **wakes it to `qualified`** and logs the regulator as the source.
+It will **never** move a record a human has already advanced (`contacted` and beyond), and never
+touches `disqualified`. A register amendment is evidence, not a verdict — so anything woken this
+way still needs researching before outreach.
+
 ## 1. RFP radar — first, because deadlines are unforgiving
 Work `knowledge/market/rfp-sources.md` — read its **UPDATE 2026-09-22** block first, which says
 which portals are genuinely searchable and which are walls.

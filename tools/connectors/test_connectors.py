@@ -201,6 +201,102 @@ class TestUnsegmentableEntries(ConnectorHarness):
         self.assertEqual(self.companies(), [])
 
 
+class TestChangeDetection(ConnectorHarness):
+    """Field-level diffing: the firms that were already there and changed.
+
+    This is where most real triggers live — a register's population turns over slowly, but its
+    entries are amended constantly. It also WRITES to CRM records, so the guardrails matter.
+    """
+
+    def _seed(self, rec_overrides=None):
+        rec = {"slug": "alpha-gestion", "name": "Alpha Gestion", "country": "France",
+               "segment": "asset_manager", "status": "nurture", "stage": "identified",
+               "owner": "Andre Geha", "activities": []}
+        rec.update(rec_overrides or {})
+        base.crm.save_yaml(base.crm.COMPANIES_DIR / f"{rec['slug']}.yaml", rec)
+        return rec
+
+    def _two_days(self, day1, day2, **kw):
+        StubConnector(entries=day1).run(baseline_window_days=0)
+        self.snapshots()[0].rename(self.snapshots()[0].parent / "2026-01-01.json")
+        return StubConnector(entries=day2).run(**kw)
+
+    def test_new_authorised_activity_wakes_a_nurture_record(self):
+        self._seed()
+        d1 = [mk_entry("A", "Alpha Gestion", licence_type="Advising")]
+        d2 = [mk_entry("A", "Alpha Gestion", licence_type="Advising; Managing Assets")]
+        res = self._two_days(d1, d2)
+        self.assertEqual(len(res["changes_applied"]), 1)
+        self.assertTrue(res["changes_applied"][0]["woke"])
+        rec = base.crm.load_yaml(base.crm.COMPANIES_DIR / "alpha-gestion.yaml")
+        self.assertEqual(rec["status"], "qualified")
+        self.assertIn("Register change detected", rec["activities"][-1]["summary"])
+
+    def test_a_live_deal_is_never_overwritten(self):
+        """A human moved this record down the pipeline. A register amendment is not grounds to undo that."""
+        for status in ("contacted", "engaged", "opportunity", "won", "lost", "disqualified"):
+            with self.subTest(status=status):
+                extra = {"fit": {"score": None, "reasoning": None,
+                                 "disqualified_reason": "x" if status == "disqualified" else None}}
+                self._seed({"status": status, **extra})
+                d1 = [mk_entry("A", "Alpha Gestion", licence_type="Advising")]
+                d2 = [mk_entry("A", "Alpha Gestion", licence_type="Advising; Managing Assets")]
+                res = self._two_days(d1, d2)
+                self.assertFalse(res["changes_applied"][0]["woke"])
+                rec = base.crm.load_yaml(base.crm.COMPANIES_DIR / "alpha-gestion.yaml")
+                self.assertEqual(rec["status"], status, "status must not move")
+                # ...but the change is still recorded, because it is still information.
+                self.assertIn("Register change detected", rec["activities"][-1]["summary"])
+                shutil.rmtree(self.tmp, ignore_errors=True)
+                self.setUp()
+
+    def test_housekeeping_is_logged_but_does_not_wake(self):
+        """A published phone number is information, not a reason to write."""
+        self._seed()
+        d1 = [mk_entry("A", "Alpha Gestion", licence_type="Managing Assets")]
+        d2 = [mk_entry("A", "Alpha Gestion", licence_type="Managing Assets", phone="+33 1 23")]
+        res = self._two_days(d1, d2)
+        self.assertEqual(len(res["changes_applied"]), 1)
+        self.assertFalse(res["changes_applied"][0]["woke"])
+        rec = base.crm.load_yaml(base.crm.COMPANIES_DIR / "alpha-gestion.yaml")
+        self.assertEqual(rec["status"], "nurture")
+
+    def test_a_value_the_register_drops_is_not_reported(self):
+        """Registers blank fields routinely; that is noise, not an event."""
+        self._seed()
+        d1 = [mk_entry("A", "Alpha Gestion", licence_type="Managing Assets", phone="+33 1 23")]
+        d2 = [mk_entry("A", "Alpha Gestion", licence_type="Managing Assets")]
+        res = self._two_days(d1, d2)
+        self.assertEqual(res["changes_applied"], [])
+
+    def test_unchanged_entries_produce_nothing(self):
+        self._seed()
+        d1 = [mk_entry("A", "Alpha Gestion", licence_type="Managing Assets")]
+        res = self._two_days(d1, list(d1))
+        self.assertEqual(res["changes"], [])
+        self.assertEqual(res["changes_applied"], [])
+
+    def test_dry_run_detects_but_does_not_write(self):
+        self._seed()
+        d1 = [mk_entry("A", "Alpha Gestion", licence_type="Advising")]
+        d2 = [mk_entry("A", "Alpha Gestion", licence_type="Advising; Managing Assets")]
+        res = self._two_days(d1, d2, dry_run=True)
+        self.assertTrue(res["changes_applied"][0]["woke"])
+        rec = base.crm.load_yaml(base.crm.COMPANIES_DIR / "alpha-gestion.yaml")
+        self.assertEqual(rec["status"], "nurture", "dry run must not write")
+
+    def test_change_on_a_firm_not_in_the_crm_is_counted_not_dropped(self):
+        d1 = [mk_entry("A", "Unknown Ltd", licence_type="Advising")]
+        d2 = [mk_entry("A", "Unknown Ltd", licence_type="Advising; Managing Assets")]
+        res = self._two_days(d1, d2)
+        self.assertEqual(res["changes_applied"], [])
+        self.assertEqual(len(res["changes"]), 1)
+
+    def test_baseline_run_detects_no_changes(self):
+        res = StubConnector(entries=[mk_entry("A", "Alpha Gestion")]).run(baseline_window_days=0)
+        self.assertEqual(res["changes"], [])
+
+
 class TestPrepareCandidateHook(ConnectorHarness):
     """Regression: a connector that learns its segment per-candidate must not be skipped first.
 

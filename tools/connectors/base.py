@@ -173,6 +173,55 @@ def _display_path(path: Path) -> str:
 # The connector
 # ---------------------------------------------------------------------------
 
+#: Register fields whose change is worth telling Andre about, and why.
+#: The first is the one that matters: a firm that gains an authorised activity has just expanded
+#: what it is allowed to do, which is a business change and therefore a reason to write.
+WATCHED_FIELDS = {
+    "licence_type": "authorised activities changed",
+    "segment": "segment reclassified",
+    "name": "renamed",
+    "website": "website published or changed",
+    "phone": "telephone published or changed",
+}
+
+#: Changes that count as a buying TRIGGER rather than mere housekeeping. A firm adding an activity
+#: is growing; a firm publishing a phone number is not.
+TRIGGER_FIELDS = {"licence_type", "segment"}
+
+
+def detect_changes(prev_entries: list[dict], current: list[Entry]) -> list[dict]:
+    """Field-level diff of firms present in BOTH snapshots.
+
+    The key-level diff catches firms arriving and leaving. This catches the ones that were already
+    there and *changed* — which is where most real triggers live, because a register's population
+    turns over slowly but its entries are amended all the time.
+    """
+    before = {e["key"]: e for e in prev_entries}
+    out = []
+    for e in current:
+        old = before.get(e.key)
+        if not old:
+            continue
+        now = e.to_snapshot()
+        for field, label in WATCHED_FIELDS.items():
+            a, b = old.get(field), now.get(field)
+            if a == b:
+                continue
+            # A field going from unknown to known is new information, not a change of fact.
+            if a in (None, "") and b not in (None, ""):
+                label_used = f"{field} published (was unknown)"
+            elif b in (None, ""):
+                # The register dropping a value it used to publish is usually noise, not news.
+                continue
+            else:
+                label_used = label
+            out.append({
+                "key": e.key, "name": e.name, "field": field, "label": label_used,
+                "before": a, "after": b, "is_trigger": field in TRIGGER_FIELDS,
+            })
+    return out
+
+
 class Connector:
     """Base class. A subclass implements :meth:`fetch` and sets the class attributes."""
 
@@ -362,6 +411,73 @@ class Connector:
 
     # -- the pipeline -----------------------------------------------------
 
+    #: Statuses we will wake on a new trigger. Anything further along the pipeline is a human's
+    #: judgement about a live deal, and a register amendment is not grounds to overwrite it.
+    WAKEABLE = {"nurture", "new"}
+
+    def _apply_changes(self, changes: list[dict], *, dry_run: bool) -> list[dict]:
+        """Log each register change on the matching CRM record, and wake the dormant ones.
+
+        This is the payoff for holding a register's whole population. Most of those records sit at
+        `nurture` because nothing was happening at the firm. When the register says something HAS
+        happened, the record stops being background and becomes a lead — automatically, with the
+        regulator as the source.
+
+        Two things it deliberately does not do: it never advances a record a human has already
+        moved down the pipeline, and it never touches `disqualified` (we decided that, with a
+        reason). A register amendment is evidence, not a verdict.
+        """
+        if not changes:
+            return []
+        by_name: dict[str, str] = {}
+        for rec in crm.load_all_companies():
+            for candidate in (rec.get("name"), rec.get("legal_name")):
+                if candidate:
+                    by_name.setdefault(normalize_name(candidate), rec["slug"])
+
+        applied = []
+        grouped: dict[str, list[dict]] = {}
+        for ch in changes:
+            grouped.setdefault(ch["name"], []).append(ch)
+
+        for name, items in grouped.items():
+            slug = by_name.get(normalize_name(name))
+            if not slug:
+                continue
+            path = crm.company_path(slug)
+            if not path.exists():
+                continue
+            rec = crm.load_yaml(path)
+            triggers = [c for c in items if c["is_trigger"]]
+
+            detail = "; ".join(
+                f"{c['label']}: {c['before']!r} -> {c['after']!r}" for c in items
+            )
+            summary = (
+                f"Register change detected by the automated {self.source_name} diff. {detail}. "
+                f"Every value here is as the regulator publishes it."
+            )
+            woke = False
+            if triggers and rec.get("status") in self.WAKEABLE:
+                rec["status"] = "qualified"
+                woke = True
+                summary += (
+                    " ⚠ Status raised from nurture to qualified on the strength of this change — "
+                    "an authorisation or segment change means the firm's business has moved, which "
+                    "is a reason to write. NOT yet researched; confirm before any outreach."
+                )
+
+            rec.setdefault("activities", []).append({
+                "date": crm.today(), "type": "research",
+                "summary": summary, "link": self.source_url or None,
+            })
+            rec["updated"] = crm.today()
+            if not dry_run:
+                crm.save_yaml(path, rec)
+            applied.append({"slug": slug, "name": name, "woke": woke,
+                            "fields": [c["field"] for c in items]})
+        return applied
+
     def run(self, *, dry_run: bool = False, baseline_window_days: Optional[int] = None,
             backfill: bool = False) -> dict:
         """Fetch, diff, create, snapshot, report.
@@ -404,6 +520,9 @@ class Connector:
         if prev and not self.partial_source:
             by_key = {e["key"]: e for e in prev["entries"]}
             gone_named = [{"key": k, "name": by_key[k]["name"]} for k in gone]
+
+        # --- firms that were already here and changed ---
+        changes = detect_changes(prev["entries"], entries) if prev else []
 
         # --- what actually becomes a CRM record ---
         if backfill:
@@ -451,6 +570,9 @@ class Connector:
             created.append({"slug": rec["slug"], "name": e.name, "score": rec["fit"]["score"],
                             "licence_date": e.licence_date})
 
+        # --- write the changes onto the matching CRM records ---
+        applied_changes = self._apply_changes(changes, dry_run=dry_run)
+
         # --- snapshot last, and only on success ---
         snap = {
             "register": self.register,
@@ -483,6 +605,8 @@ class Connector:
             "created": created,
             "skipped": skipped,
             "disappeared": gone_named,
+            "changes": changes,
+            "changes_applied": applied_changes,
             "snapshot": _display_path(snap_path),
             "dry_run": dry_run,
         }
@@ -520,9 +644,16 @@ def format_report(result: dict) -> str:
         lines.append(f"  + CREATED {c['name']}  [{c['slug']}]  score={c['score']}  licensed={c['licence_date']}")
     for s in result["skipped"]:
         lines.append(f"  = skipped {s['name']} — {s['reason']}")
+    for c in result.get("changes_applied", []):
+        flag = "WOKE  " if c["woke"] else "change"
+        lines.append(f"  ~ {flag}  {c['name']}  [{c['slug']}]  ({', '.join(c['fields'])})")
+    unmatched = len(result.get("changes", [])) - sum(
+        len(c["fields"]) for c in result.get("changes_applied", []))
+    if unmatched > 0:
+        lines.append(f"  ~ {unmatched} further register change(s) on firms not in the CRM")
     for g in result["disappeared"]:
         lines.append(f"  - GONE    {g['name']} ({g['key']}) — licence surrendered, renamed or acquired? Worth a look.")
-    if not result["created"] and not result["disappeared"]:
+    if not result["created"] and not result["disappeared"] and not result.get("changes_applied"):
         lines.append("  no change")
     lines.append(f"  snapshot: {result['snapshot']}" + ("  (DRY RUN — nothing written)" if result["dry_run"] else ""))
     return "\n".join(lines)

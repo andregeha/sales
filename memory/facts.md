@@ -146,6 +146,14 @@
 - ⚠ **The Saudi CMA domain moved: `cma.org.sa` → `cma.gov.sa`**, and its term for a licensed firm is
   **"Authorised Persons" / "Financial Market Institutions"**, not "CMI", in its own navigation.
   — 2026-09-22, high.
+- 🎯 **The highest-yield trigger source is the register diff on EXISTING firms, not new ones.**
+  A register's population turns over slowly (France: ~2 new licences a month) but its entries are
+  amended constantly. **A firm gaining an authorised activity has expanded its business** — that is
+  a buying trigger, it is fully automatable from snapshots we already keep, and it is what makes
+  holding the full register population worthwhile rather than just the new names.
+  The connectors detect it and **wake a `nurture` record to `qualified`**, never moving a record a
+  human has already advanced past `new`/`nurture`, and never touching `disqualified`.
+  — built 2026-09-22, high.
 - **Design rule that must not be softened:** a connector that cannot read its source **raises and
   writes nothing**; zero entries from a live register is treated as a **bug, not a quiet day**; and a
   collapsed row count is refused as a truncated download rather than diffed as a mass delisting.
