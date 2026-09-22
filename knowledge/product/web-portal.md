@@ -1,6 +1,10 @@
-# Gaia Web Customer Portal — feature map (live today)
+# Web Customer Portal — feature map (live today)
 
-> The modern web layer on top of Gaia, for **clients, managers/EAMs and branches**.
+> ⚠ **A SEPARATE PRODUCT from Gaia** — sold and positioned in its own right. It runs on the
+> **same database** as Gaia, which is why the two stay in step with no integration project.
+> Never describe it as a Gaia module or as part of Gaia. (Confirmed by Andre, 2026-09-22.)
+>
+> For **clients, managers/EAMs and branches**.
 > This is our proof that "Gaia becomes a fast web app" — it exists now, not in 2027.
 > Verified by live exploration of the test portal. Last synced: 2026-09-22.
 

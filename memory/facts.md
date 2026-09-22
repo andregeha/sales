@@ -92,6 +92,12 @@
   institutions" and Saudi consumer-finance companies — adjacent, not our segments.
 
 ## Product
+- ⚠ **The Web Customer Portal is a SEPARATE PRODUCT from Gaia** — not a module, not a layer of it.
+  It runs on the **same database** as Gaia, which is why the two stay in step with no integration
+  project (and that is the selling point). Positioned and sold in its own right.
+  I had it wrong and wrote it into the knowledge base as a Gaia module; corrected across
+  `CLAUDE.md`, `knowledge/product/gaia-current.md` and `knowledge/product/web-portal.md`.
+  — corrected by Andre 2026-09-22, high.
 - **The New Gaia runs on the unchanged database.** This is the single most valuable sentence we have
   for an existing client: no data migration, additive changes only, legacy rights model reused,
   desktop and web coexist during migration. — `knowledge/product/gaia-new.md`, 2026-09-22, high.

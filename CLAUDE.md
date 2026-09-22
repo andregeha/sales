@@ -33,7 +33,8 @@ direct profile links, zero retyping.
 management platform** by OFS (French software house; Paris · Riyadh · Beirut · Dubai).
 Three things can be sold, and they must never be blurred:
 1. **Gaia (current/latest)** — WPF/.NET + SQL Server. Shipping today. What we sell now.
-2. **Gaia Web Customer Portal** — the modern web layer for clients, managers/EAMs and branches. Live today.
+2. **Web Customer Portal** — a **separate product**, running on the **same database** as Gaia.
+   For clients, managers/EAMs and branches. Live today. ⚠ Never call it a Gaia module or part of Gaia.
 3. **New Gaia** — the web re-platform (.NET 10 API + React 19). **Roadmap**: Jan 2027 demo ·
    Jun 2027 alpha · Q4 2027 deploy. Sell it as direction, never as shipped.
 

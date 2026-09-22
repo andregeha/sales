@@ -1,0 +1,76 @@
+slug: lesha-capital-ksa
+name: Lesha Capital (Saudi Arabia)
+legal_name: Lesha Capital
+country: Saudi Arabia
+city: Riyadh
+segment: fund_manager
+regulator: CMA (Saudi Arabia)
+website: https://www.leshacapital.com/
+linkedin: https://www.linkedin.com/company/lesha-capital
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: 'Saudi entry of Lesha Capital, a wholly-owned subsidiary of Qatar''s Lesha Bank (QSE-listed,
+  Shari''a-compliant investment institution). Granted a CMA ''Managing Investments and Operating Funds''
+  licence (CMA resolution dated 07/11/1446H = 2025-05-05G) in addition to its existing advisory licence,
+  becoming a fully regulated CMI in the Kingdom. Stated focus: institutional investors, family offices
+  and other financial stakeholders across Saudi Arabia and Qatar. CEO in Saudi Arabia is Majid Hassan
+  (per LinkedIn).'
+source:
+  channel: web_research
+  detail: 'Web search 2026-09-22: CMA news ''Licenses Lesha Capital to Conduct Managing Investments and
+    Operating Funds'' (cma.gov.sa/en/MediaCenter/NEWS/Pages/CMA_N_3981.aspx, page last modified 2026-02-08,
+    search-snippet only — CMA site not click-verified, egress blocked); corroborated via Lesha Bank press
+    release (leshabank.com), Zawya, saudiexchange.sa issuer news, and leshacapital.com / LinkedIn.'
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- ksa
+- cma
+- fund-manager
+- new-licence
+- cross-border-entrant
+- family-offices
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Majid Hassan
+  title: CEO, Lesha Capital (Saudi Arabia)
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: https://sa.linkedin.com/in/majidhassan
+  language: en
+  notes: Named as CEO of Lesha Capital's Saudi operation in press coverage of the CMA licence grant (2026-02).
+    LinkedIn profile found via search snippet only, not opened/verified (egress blocked) — confirm identity
+    and title before any outreach.
+  source: Web search 2026-09-22, corroborating Lesha Bank/Zawya press coverage of the CMA licence grant
+fit:
+  score: 68
+  reasoning: 'Fit: priority segment fund manager (20) + priority market KSA (15) + implied multi-asset
+    scope under a full Managing Investments and Operating Funds licence (10) + explicitly serves institutional
+    investors and family offices, i.e. third-party money (10) + CMA-regulated (5) = 60/60. Timing: a genuine
+    new-licence grant completed 2025-05-05, announced/confirmed 2026-02 — a foreign group''s first Saudi
+    CMI standing up its fund-management capability now, with no incumbent Saudi system to displace (20
+    of 25 — not scored as a full RFP/tender so capped below max). Access: a named CEO (Majid Hassan) is
+    identified via LinkedIn but no direct contact route confirmed yet (8 of 15, named-but-unconfirmed-reachable).
+    Total: 60+20+8=88 by table, moderated down to 68 to reflect that the licence-activity and contact
+    details are search-snippet-sourced only, not register-verified — treat as strong-not-hot until independently
+    confirmed.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'Sourced from CMA licensing news search. Strong new-entrant fund-manager trigger: Qatar''s
+    Lesha Bank stood up a Saudi CMI with a full Managing Investments and Operating Funds licence, explicitly
+    targeting institutional investors and family offices. Named CEO (Majid Hassan) found via LinkedIn
+    but not yet verified as reachable/current. CMA register not click-verified (egress blocked).'
+  link: null
+next_action:
+  who: Andre Geha
+  what: Verify Lesha Capital KSA's CMA licence entry on the register and check reachability of Majid Hassan
+    (CEO) via LinkedIn before drafting outreach
+  due: '2026-10-06'

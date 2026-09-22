@@ -27,13 +27,17 @@ shareholder registry, subscriptions/redemptions and NAV. Covers all verticals of
 | **Reporting Toolbox** | Customizable analytical views, multi-criteria inventory analysis, client & stakeholder reports. |
 | **Connectivity** | Interfaces, **SWIFT**, open SQL schema, FIX, web services, SMS, email confirmations, **core-banking** links. |
 | **Fund Administration** | Subscriptions/redemptions, shareholder registry, **NAV calculation**, multi-share & multi-currency, fund accounting, **management & performance fees**. |
-| **Web Customer Portal** | The modern web layer — see `web-portal.md`. |
+
+> ⚠ **The Web Portal is a SEPARATE PRODUCT, not a Gaia module.** It runs on the **same database**
+> as Gaia. Sold and positioned as its own product — see `web-portal.md`. Do not list it as a Gaia
+> module, and do not describe Gaia as "including" it. (Corrected by Andre, 2026-09-22.)
 
 ## The five workflow steps (how we tell the story)
 **① ONBOARD** (CIF/KYC/CRM) → **② MANAGE** (front office, valuation, performance) →
 **③ EXECUTE** (OMS, FIX, SWIFT, rebalancing) → **④ PROCESS** (recon, fees, custody, accounting,
 confirmations, audit) → **⑤ ANALYSE** (performance, attribution, AUM & profitability reporting),
-with **compliance** and the **web portal** running across all five.
+with **compliance** running across all five. The **Web Portal is a separate product** on the same
+database — it is the client/manager-facing channel onto this lifecycle, not a layer of Gaia.
 
 ### ① ONBOARD — CIF/KYC/CRM
 Multi-channel client creation (manually, **API**, **web portal self-onboarding**, core system,
