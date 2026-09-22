@@ -1,0 +1,54 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": "https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf",
+      "summary": "Appeared as a new entry in the AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr). Licence GP-20230019, authorised 2023-10-11, 2 - Gestion de FIA; 2a - Gestionnaire au-delà des seuils de la Directive AIFM ou ayant opté pour l'application de la Directive AIFM; 3 - Conseil en investissement. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched.",
+      "type": "research"
+    }
+  ],
+  "city": null,
+  "contacts": [],
+  "country": "France",
+  "created": "2026-09-22",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 60/60: priority segment fund_manager (20) + priority market France (15) + multi-asset — AMF-authorised across 4 instrument classes including 2 - OPCVM et FIA européens ouverts à une clientèle non professionnelle; 3 - FIA européens destinés à une clientèle professionnelle et FIA des pays tiers; 4 - Instruments financiers non admis à la négociation sur un marché réglementé ou organisé (10) + manages third-party money — AMF-authorised for 2 - Gestion de FIA; 2a - Gestionnaire au-delà des seuils de la Directive AIFM ou ayant opté pour l'application de la Directive AIFM; 3 - Conseil en investissement (10) + regulated by AMF (5). Trigger 0/25: licence granted 2023-10-11, too long ago to count as a trigger. Access 0/15: no contact route published (0). Scored automatically from the AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "score": 60
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "REED MANAGEMENT",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "AMF",
+  "score": 60,
+  "segment": "fund_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "reed-management",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-22",
+    "detail": "AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr) (https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf); licence GP-20230019 dated 2023-10-11. Snapshot: crm/registers/amf-france/2026-09-22.json."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "amf-france",
+    "register-sourced",
+    "new-licence",
+    "fund-manager"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": null
+}

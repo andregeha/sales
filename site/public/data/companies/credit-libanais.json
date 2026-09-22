@@ -1,0 +1,58 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced from BDL bank list. Named Chairman-GM Dr Joseph Torbey (with bank since 1988). Bank's own economic research unit actively publishing 2026 sector data (mild going-concern signal, not a solvency claim). Resolution-track status not publicly confirmed.",
+      "type": "research"
+    }
+  ],
+  "city": "Beirut",
+  "contacts": [],
+  "country": "Lebanon",
+  "created": "2026-09-22",
+  "description": "Lebanese commercial bank with an active in-house Economic Research Unit publishing regular Lebanese financial-sector data (bank/investment-bank/financial-institution balance-sheet series), retail/corporate/private banking. Chairman-General Manager: Dr Joseph Torbey (with the bank since 1988).",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit: bank segment (20) + Lebanon (15) + multi-asset retail/corporate/private banking (10) + third-party deposits (10) + BDL regulated (5) = 60/60. Timing: sector-wide pressure only (10/25) - no individual viability confirmation, gating question unresolved. Access: long-tenured, named Chairman-GM (Joseph Torbey) identified but no contact route = 3/15. Total mechanically ~73, held to 50 pending viability confirmation. Note: the bank's own research unit is actively publishing 2026 sector data, a mild going-concern signal, not a solvency claim.",
+    "score": 50
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": "Credit Libanais S.A.L.",
+  "linkedin": "https://www.linkedin.com/company/credit-libanais",
+  "name": "Credit Libanais",
+  "next_action": {
+    "due": "2026-10-31",
+    "what": "Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation) before any outreach",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "Banque du Liban (BDL) / Banking Control Commission",
+  "score": 50,
+  "segment": "bank",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "credit-libanais",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: Wikipedia 'Joseph Torbey' and 'Credit Libanais'; creditlibanais.com.lb press releases; economics.creditlibanais.com sector data series (2026). No public confirmation found of Credit Libanais's individual viability/recapitalisation status under Law 23/2025."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "lebanon",
+    "bdl",
+    "bank",
+    "resolution-status-unknown"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.creditlibanais.com.lb"
+}

@@ -5,12 +5,26 @@
  * so the grid is virtualised and the filters are cheap. Filter state lives in the URL hash, so a
  * view can be shared or bookmarked and reproduces exactly.
  */
-import type { ColumnDef } from "@tanstack/react-table";
 import { SearchX } from "lucide-react";
 import { useMemo, useState } from "react";
-import { DataGrid } from "../design/DataGrid";
-import { ContactRoute, MarketTag, ScoreBadge, SegmentTag, StatusBadge, TriggerLine } from "../design/domain";
-import { Button, EmptyState, ErrorState, Page, PageHeader, Toolbar, cn } from "../design/primitives";
+import { DataGrid, type GridColumn } from "../design/DataGrid";
+import {
+  ContactRoute,
+  MarketTag,
+  ScoreBadge,
+  SegmentTag,
+  StatusBadge,
+  TriggerLine,
+} from "../design/domain";
+import {
+  Button,
+  cn,
+  EmptyState,
+  ErrorState,
+  Page,
+  PageHeader,
+  Toolbar,
+} from "../design/primitives";
 import type { CompanyIndexRow } from "../lib/data";
 import { getIndex } from "../lib/data";
 import { navigate } from "../lib/router";
@@ -94,14 +108,15 @@ export function Companies() {
       if (f.triggerOnly && !r.trigger) return false;
       if (f.reachableOnly && !r.has_contact_route) return false;
       if (q) {
-        const hay = `${r.name} ${r.slug} ${r.city ?? ""} ${r.regulator ?? ""} ${r.tags.join(" ")}`.toLowerCase();
+        const hay =
+          `${r.name} ${r.slug} ${r.city ?? ""} ${r.regulator ?? ""} ${r.tags.join(" ")}`.toLowerCase();
         if (!hay.includes(q)) return false;
       }
       return true;
     });
   }, [rows, f]);
 
-  const columns = useMemo<ColumnDef<CompanyIndexRow, unknown>[]>(
+  const columns = useMemo<GridColumn<CompanyIndexRow>[]>(
     () => [
       {
         accessorKey: "name",
@@ -139,7 +154,6 @@ export function Companies() {
         header: "Fit",
         size: 70,
         cell: (ctx) => <ScoreBadge score={ctx.row.original.score} />,
-        sortingFn: (a, b) => (a.original.score ?? -1) - (b.original.score ?? -1),
       },
       {
         id: "trigger",
@@ -194,10 +208,18 @@ export function Companies() {
           placeholder="Search name, city, regulator, tag…"
           className="h-9 w-full max-w-sm rounded-[var(--radius-sm)] border bg-surface px-3 text-small placeholder:text-subtle"
         />
-        <Chip active={f.triggerOnly} tone="accent" onClick={() => setF({ ...f, triggerOnly: !f.triggerOnly })}>
+        <Chip
+          active={f.triggerOnly}
+          tone="accent"
+          onClick={() => setF({ ...f, triggerOnly: !f.triggerOnly })}
+        >
           has a trigger
         </Chip>
-        <Chip active={f.reachableOnly} tone="accent" onClick={() => setF({ ...f, reachableOnly: !f.reachableOnly })}>
+        <Chip
+          active={f.reachableOnly}
+          tone="accent"
+          onClick={() => setF({ ...f, reachableOnly: !f.reachableOnly })}
+        >
           reachable
         </Chip>
         {dirty ? (
@@ -209,19 +231,31 @@ export function Companies() {
 
       <Toolbar>
         {countries.map((c) => (
-          <Chip key={c} active={f.country === c} onClick={() => setF({ ...f, country: f.country === c ? null : c })}>
+          <Chip
+            key={c}
+            active={f.country === c}
+            onClick={() => setF({ ...f, country: f.country === c ? null : c })}
+          >
             {c}
           </Chip>
         ))}
         <span className="mx-1 text-subtle">·</span>
         {segments.map((s) => (
-          <Chip key={s} active={f.segment === s} onClick={() => setF({ ...f, segment: f.segment === s ? null : s })}>
+          <Chip
+            key={s}
+            active={f.segment === s}
+            onClick={() => setF({ ...f, segment: f.segment === s ? null : s })}
+          >
             <SegmentTag segment={s} />
           </Chip>
         ))}
         <span className="mx-1 text-subtle">·</span>
         {statuses.map((s) => (
-          <Chip key={s} active={f.status === s} onClick={() => setF({ ...f, status: f.status === s ? null : s })}>
+          <Chip
+            key={s}
+            active={f.status === s}
+            onClick={() => setF({ ...f, status: f.status === s ? null : s })}
+          >
             {s}
           </Chip>
         ))}
@@ -234,7 +268,9 @@ export function Companies() {
         onRowClick={(r) => navigate(`/companies/${r.slug}`)}
         empty={
           <EmptyState icon={SearchX} title="Nothing matches those filters">
-            {rows.length > 0 ? "Try clearing a filter — the universe is still there." : "The index is empty."}
+            {rows.length > 0
+              ? "Try clearing a filter — the universe is still there."
+              : "The index is empty."}
           </EmptyState>
         }
       />

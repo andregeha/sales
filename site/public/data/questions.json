@@ -1,0 +1,202 @@
+[
+  {
+    "id": "1",
+    "priority": "soon",
+    "question": "Which existing client names may we reference, and to whom? Finance House, GIMD/Dassault, Bank Audi, BLOM, AGPM — which may be named, in which markets, and under what conditions?",
+    "section": "🔝 The four to answer first (2026-09-22)",
+    "status": "🟠",
+    "unblocks": "Worth more for outreach credibility than anything else we could write. Every draft currently says \"asset managers and banks across France and the Gulf\" because naming anyone needs your approval."
+  },
+  {
+    "id": "2",
+    "priority": "soon",
+    "question": "Which Lebanese banks are on the survivor track under Law 23/2025?",
+    "section": "🔝 The four to answer first (2026-09-22)",
+    "status": "🟠",
+    "unblocks": "All 17 Lebanese bank records are frozen at `nurture` because no public source resolves this, and a bank in resolution buys nothing. This is the single biggest block of stalled pipeline we have."
+  },
+  {
+    "id": "3",
+    "priority": "soon",
+    "question": "Would you take a LinkedIn Sales Navigator seat?",
+    "section": "🔝 The four to answer first (2026-09-22)",
+    "status": "🟠",
+    "unblocks": "We now hold many named decision-makers with a verified LinkedIn profile and no email. A seat turns names into reachable people. Contact routes — not lead volume — are the binding constraint on the whole engine."
+  },
+  {
+    "id": "4",
+    "priority": "soon",
+    "question": "Pricing guidance · any off-limits firms · do we control the OFS website?",
+    "section": "🔝 The four to answer first (2026-09-22)",
+    "status": "🟠",
+    "unblocks": "Without pricing every commercial question bounces to you; without an off-limits list we may approach someone we shouldn't; without the website there is no inbound surface at all."
+  },
+  {
+    "id": "5",
+    "priority": "soon",
+    "question": "Pricing — is there a price book, list price or discount policy I may hold here, even internal-only? Without it I cannot qualify on budget, and every commercial question bounces to you.",
+    "section": "For Andre — still open",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "5a",
+    "priority": "soon",
+    "question": "Is there an email-sending or sequencing tool you would connect (Outlook send, a sequencer), or does every message go out by hand from your mailbox? This changes how I build the approval queue.",
+    "section": "For Andre — still open",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "5b",
+    "priority": "soon",
+    "question": "Do you have a LinkedIn Sales Navigator seat? It would materially improve lead sourcing and contact discovery in all four markets.",
+    "section": "For Andre — still open",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "5c",
+    "priority": "soon",
+    "question": "Any markets, firms or people that are off-limits — conflicts, existing partner territories, someone we must not approach?",
+    "section": "For Andre — still open",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "5d",
+    "priority": "soon",
+    "question": "Inbound — do we control the OFS website enough to add pages, a lead form and analytics? Right now I have no inbound surface at all, so \"inbound marketing\" produces nothing. See `playbooks/inbound.md`.",
+    "section": "For Andre — still open",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "5e",
+    "priority": "soon",
+    "question": "Will you publish on LinkedIn under your own name at a regular cadence? It is the cheapest, highest-leverage inbound channel we have, and the material is already written in `knowledge/`.",
+    "section": "For Andre — still open",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "5f",
+    "priority": "nice",
+    "question": "Budget for events or paid search, or organic only?",
+    "section": "For Andre — still open",
+    "status": "⚪",
+    "unblocks": null
+  },
+  {
+    "id": "5g",
+    "priority": "nice",
+    "question": "Who answers an inbound enquiry within the hour? An inbound lead that waits a day is lost.",
+    "section": "For Andre — still open",
+    "status": "⚪",
+    "unblocks": null
+  },
+  {
+    "id": "6",
+    "priority": "soon",
+    "question": "Competitors — who do we actually meet, where do we win and lose? (`knowledge/positioning/competitors.md` is an empty placeholder.)",
+    "section": "For Andre — still open",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "9",
+    "priority": "soon",
+    "question": "Arabic — do we need Arabic client-facing material for the Gulf, or is English sufficient there? (Gaia and the portal support Arabic/RTL, so it is a real option.)",
+    "section": "For Andre — still open",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "10",
+    "priority": "soon",
+    "question": "Referenceable clients — which names may we say out loud, to whom, and under what conditions? This is the single most useful thing I am missing for outreach credibility.",
+    "section": "For Andre — still open",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "11",
+    "priority": "nice",
+    "question": "Team — is anyone else going to use this repo, or is it you plus the agents?",
+    "section": "For Andre — still open",
+    "status": "⚪",
+    "unblocks": null
+  },
+  {
+    "id": "12",
+    "priority": "nice",
+    "question": "Targets — is there a revenue/quota number the pipeline should be measured against?",
+    "section": "For Andre — still open",
+    "status": "⚪",
+    "unblocks": null
+  },
+  {
+    "id": "13",
+    "priority": "soon",
+    "question": "Exact FIX venue/broker coverage we can claim in writing (beyond Bloomberg EMSX + direct broker integration).",
+    "section": "Product gaps to confirm with R&D",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "14",
+    "priority": "nice",
+    "question": "Whether a dedicated profitability/RoA view exists beyond the profitability report, for a client asking specifically.",
+    "section": "Product gaps to confirm with R&D",
+    "status": "⚪",
+    "unblocks": null
+  },
+  {
+    "id": "15",
+    "priority": "soon",
+    "question": "The digital onboarding flow screens in the portal — we have not seen them; get access before demoing onboarding end to end.",
+    "section": "Product gaps to confirm with R&D",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "16",
+    "priority": "soon",
+    "question": "Will you set up the free saved-search email alerts on BOAMP and PLACE (and My TED)? They are free, they take minutes, and a push alert beats any scraper we could write. They need an account in your name, so I cannot do it. Links in `knowledge/market/rfp-sources.md`.",
+    "section": "🆕 New, from this session",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "17",
+    "priority": "soon",
+    "question": "Should the daily run be scheduled on this laptop, and at what time? Nothing is scheduled right now. Weekday mornings was the plan. ⚠ A laptop only runs when it is on — a missed morning is a genuinely missed day.",
+    "section": "🆕 New, from this session",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "18",
+    "priority": "nice",
+    "question": "Can anyone run the Saudi CMA connector from the Riyadh office (or any Saudi network)? Its Open Data API times out from Europe. From inside the Kingdom it would probably work, and would upgrade Saudi from a partial source (36 of 242 firms) to a complete one.",
+    "section": "🆕 New, from this session",
+    "status": "⚪",
+    "unblocks": null
+  },
+  {
+    "id": "19",
+    "priority": "soon",
+    "question": "Does anyone at OFS have an Etimad supplier account? Etimad blocks automated access with its own bot protection, which we will not try to defeat. Saudi tender coverage is therefore zero. A human with an account could set up its notifications.",
+    "section": "🆕 New, from this session",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "20",
+    "priority": "nice",
+    "question": "Do we want records for adjacent segments — custodians and brokers — or only our three core segments? The Saudi register surfaces them and they currently land as low-scoring records.",
+    "section": "🆕 New, from this session",
+    "status": "⚪",
+    "unblocks": null
+  }
+]

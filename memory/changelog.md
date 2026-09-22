@@ -163,3 +163,94 @@ from 2024 and were **scored down as dated rather than inflated**.
 
 **Totals across all four markets: 57 companies · 24 qualified or researching · 20 of those with at
 least one named person · 0 invented contact details.**
+
+## 2026-09-22 (site) — `/markets`, `/triggers`, `/pipeline` routes built
+Built the three P2/P3 route components for the sales website (`plan/website.md` §4, §5, §6c),
+matching the idiom set by `site/src/routes/Today.tsx` and `Companies.tsx`:
+- **`site/src/routes/Markets.tsx`** (`Markets`) — market × segment coverage via `CoverageMatrix`
+  (rows: UAE/Saudi Arabia/Lebanon/France, cols: our five priority segments), a one-line summary
+  naming every empty combination (gaps are the point, so this is additive to the matrix's own loud
+  "none" cells, not a replacement), plus contact-route coverage and score-distribution `BarSeries`
+  charts, each with an honest `caption`.
+- **`site/src/routes/Events.tsx`** (`Events`, mounted at `/triggers`) — the reverse-chronological
+  change feed from `getEvents()`, in a `DataGrid`: date, company (linked only when `company_slug`
+  is set), what changed, before → after, and a "woke" indicator made visually prominent (accent
+  badge + accent text) since a woken record is the whole reason this page exists. A "triggers
+  only" vs "all changes" filter chip. Lede states plainly that a register amendment is evidence,
+  not a verdict.
+- **`site/src/routes/Pipeline.tsx`** (`Pipeline`) — filters `getIndex()` to
+  contacted/engaged/opportunity/won/lost, grouped by `stage`, rendered as one `DataTable` per
+  stage. Honest `EmptyState` ("no live deals yet; the engine is still building the top of the
+  funnel") when there are none — not padded.
+
+All three handle loading/error/empty per `useAsync`, use only design-system components and token
+classes (no raw colour, no raw `<table>`), and pass Biome format/lint clean.
+
+**Found, not fixed (out of scope for this task, flagged for whoever owns the dependency
+versions):** the installed `@tanstack/react-table@9.2.4` does not match the v8-style API
+`site/src/design/DataGrid.tsx` is written against (`useReactTable`, `getCoreRowModel`,
+`ColumnDef<T, unknown>` no longer exist in that shape), so `tsc --noEmit` fails inside
+`DataGrid.tsx` itself and cascades into every route that uses `DataGrid` — this reproduces
+identically on the already-existing `Companies.tsx`, so it predates and is independent of this
+change. `Markets.tsx` and `Pipeline.tsx` (which don't use `DataGrid`) type-check clean in
+isolation; `Events.tsx` inherits the same pre-existing cascade as `Companies.tsx`, nothing new.
+Also noted: `src/lib/data.ts`'s `import.meta.env` needs a `vite/client` types reference that isn't
+present yet.
+
+## 2026-09-22 (site, P0) — the JSON data contract: `tools/site_data.py` + three new entities
+Built P0 of the website plan (`plan/website.md` §3, §6b, §7): the pure-Python layer that turns
+`crm/` into the JSON the site reads. No frontend code — the boundary the plan draws at "nothing is
+authored in `site/`" stays a Python/Node split, enforced at the JSON contract.
+
+**Three append-only entities that did not exist before:**
+- **`Run`** — `crm/runs/<YYYY-MM-DD-HHMMSS>.json`, written by `tools/connectors/run_all.py` on
+  every invocation, success or failure (`write_run_record`/`build_run_record`), never overwritten
+  (a filename collision gets a `-2` suffix). Records started/finished/duration, the commit sha
+  (`git rev-parse HEAD`, `None` if it cannot be read), and per connector: ok/failed, the error
+  message, total/new-on-register/created/skipped/changes counts, and baseline/backfill/partial
+  flags. A failed connector still gets a full record — the point, after today's ADGM near-miss.
+- **`ChangeEvent`** — `crm/events/<YYYY-MM>.jsonl`, appended by `base.Connector._apply_changes` for
+  **every** register change, including on firms not yet in the CRM (`company_slug: null` — still a
+  real market event). Dry runs write neither a run record nor an event.
+- **`SourceHealth`** — deliberately *not* stored. `site_data.compute_source_health()` derives
+  last-success date, consecutive failures, latest count and a run history purely from `Run` records
+  plus register snapshots — no wall clock involved, so it stays deterministic. A register failing
+  3 runs in a row flips to `failing`; 1–2 is `stale`; never-run is `stale`.
+
+**`tools/site_data.py`** emits `site/public/data/`: the slim `index.json` (~784KB for 1,298
+companies — larger than the plan's 307KB estimate, taken from before the CRM's 22× growth; each
+row is documented and there is no low-hanging fat to cut), one `companies/<slug>.json` per firm,
+`rfps.json`, `runs.json`, `events.json`, `sources.json`, `stats.json` (counts, market×segment
+coverage, score-distribution bands, contact-route coverage by market), `questions.json` (parses
+every markdown table in `memory/open-questions.md` into `{id, question, unblocks, status,
+priority, section}` — the narrative "Answered"/"Resolved" sections are prose, not tables, and are
+correctly left unparsed), and `build.json` (`schema_version`, `commit`, `company_count` — the one
+place a commit sha appears). `EXAMPLE-*` records are excluded from every output (a fictional
+schema-demo RFP was otherwise rendering as a real deadline).
+
+**Determinism (plan §7) is enforced, not hoped for**: sorted keys and stable row ordering
+everywhere, no wall-clock reads outside `build.json`. `tools/test_site_data.py` builds twice into
+separate directories and asserts every file is byte-identical, plus asserts every emitted file is
+actually written with `sort_keys=True`. 22 tests total, covering the index/detail shape, the
+EXAMPLE- exclusion, SourceHealth's failing/stale/ok transitions, and the questions parser.
+
+**A live contract, verified against its real consumer, not just its own tests.** `site/src/lib/
+data.ts` (built concurrently in the same session by another agent) already defines the Zod schema
+the site validates against — field names were reconciled against it (`has_phone`/`has_linkedin`
+added; `sources.json` renamed to `latest_count`/`regulator`/`partial`/`note`; `stats.json` to
+`coverage`/`score_distribution` as bands/`contact_route_by_market`; `questions.json` to
+`priority`/`unblocks`; `runs.json` given a stable `id`). Verified for real: copied `data.ts`'s own
+Zod schemas into a throwaway Node script and ran them against the actual generated files —
+**all 1,298 company records, plus every other file, validate cleanly.**
+
+**Also fixed in `tools/connectors/`:** `run_all.py`'s failure summary now reports `created`/
+`skipped`/`changes`/`new_on_register` as `0` rather than `null` for a connector that never ran
+(`total`/`baseline`/`backfill`/`partial` stay `null` — genuinely unknown) — a `null` there failed
+Zod's `.default(0)`, which only fires on a missing key, not an explicit `null`.
+
+**Verified:** `python tools/crm.py validate` exits 0 (1,298 real companies, 1 RFP); all 41
+`tools/connectors/test_connectors.py` tests, 9 `test_run_all.py` tests and 22
+`tools/test_site_data.py` tests pass; two consecutive real builds of `site/public/data/` are
+byte-identical; the real output validates against the site's actual Zod contract via Node.
+**Not verified:** the site itself rendering this data in a browser (P1/frontend, being built in a
+parallel session) — this task was data-contract only.

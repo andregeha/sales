@@ -45,7 +45,9 @@ export function Questions() {
           <DataTable head={["Priority", "Question", "What it unblocks"]}>
             {rows.map((q) => (
               <Tr key={q.id}>
-                <Td className={`whitespace-nowrap text-micro uppercase tracking-wide ${TONE[q.priority]}`}>
+                <Td
+                  className={`whitespace-nowrap text-micro uppercase tracking-wide ${TONE[q.priority]}`}
+                >
                   {LABEL[q.priority]}
                 </Td>
                 <Td>{q.question}</Td>

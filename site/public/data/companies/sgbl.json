@@ -1,0 +1,59 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced from BDL bank list. Named Chairman/CEO/main shareholder Antoun Sehnaoui. Group includes Fidus Wealth Management arm, worth separate note. Resolution-track status not publicly confirmed.",
+      "type": "research"
+    }
+  ],
+  "city": "Beirut",
+  "contacts": [],
+  "country": "Lebanon",
+  "created": "2026-09-22",
+  "description": "Major Lebanese universal bank (founded 1953), retail, corporate and private banking, part of the SGBL Group alongside Société Générale de Banque en Jordanie (SGBJ) and a wealth-management arm, Fidus Wealth Management. Chairman, CEO and main shareholder: Antoun Sehnaoui.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit: bank segment (20) + Lebanon (15) + multi-asset via group wealth-management arm Fidus (10) + third-party deposits and private wealth clients (10) + BDL regulated (5) = 60/60. Timing: sector-wide pressure only (10/25) - no bank-specific viability confirmation, gating question unresolved. Access: named Chairman/CEO/main shareholder (Antoun Sehnaoui) is a well-documented public figure, improving reachability odds even without a direct route = 5/15. Total mechanically ~75, held to 53 pending viability-track confirmation. The Fidus Wealth Management arm is worth a separate look if SGBL clears the resolution question - closer to our family-office/private-banking pitch than the retail bank itself.",
+    "score": 53
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": "Société Générale de Banque au Liban S.A.L.",
+  "linkedin": "https://www.linkedin.com/company/sgblbank",
+  "name": "SGBL",
+  "next_action": {
+    "due": "2026-10-31",
+    "what": "Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation) before any outreach",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "Banque du Liban (BDL) / Banking Control Commission",
+  "score": 53,
+  "segment": "bank",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "sgbl",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: Wikipedia 'Société Générale de Banque au Liban' and 'Antoun Sehnaoui'; sgbl.com; L'Orient Today profile of Sehnaoui (2026). No public confirmation found of SGBL's individual viability/recapitalisation status under Law 23/2025."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "lebanon",
+    "bdl",
+    "bank",
+    "wealth-management-arm",
+    "resolution-status-unknown"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.sgbl.com"
+}

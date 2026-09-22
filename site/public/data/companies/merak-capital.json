@@ -1,0 +1,58 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced from web search on CMA licensing news (Saudi asset/fund manager pass). Confirmed CMI status, multi-asset fund manager profile, and a 2026-05-03 CMA commencement notice for Managing Investments and Operating Funds activity. Could not click-verify the CMA register itself (egress blocked); relied on search snippets from merak.capital, Preqin, Crunchbase, MAGNiTT. No named contact found yet — watch for a named CIO/COO/Head of Ops before drafting outreach.",
+      "type": "research"
+    }
+  ],
+  "city": "Riyadh",
+  "contacts": [],
+  "country": "Saudi Arabia",
+  "created": "2026-09-22",
+  "description": "Riyadh-based multi-strategy investment institution founded 2018 by Abdullah Altamami, Othman Alhokail and Abdulrahman Bin Mutrib, investing across venture capital, private equity, private credit, real assets and special projects with a technology-sector focus across KSA/MENA (Merak Gaming Fund, Exel by Merak, and named investments incl. Jisr, SHIFT, Arsann). CMA-licensed CMI, licence no. 18194-32 (originally issued 2018-10-30).",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit: priority segment fund manager (20) + priority market KSA (15) + multi-asset across VC/PE/private credit/real assets (10) + manages third-party fund capital, not proprietary (10) + CMA-regulated (5) = 60/60. Timing: CMA confirmed Merak completed commencement-of-business requirements for a 'Managing Investments and Operating Funds' licence activity with an approval date of 2026-05-03 — genuinely ambiguous whether this is a new fund-launch-type mandate expansion at an already-operating 2018-vintage firm or a technical re-filing of an existing scope; scored conservatively at 0 pending clarification rather than claiming the 15-20 points a confirmed new licence/fund launch would earn. Access: no named contact identified yet (0). Total 60 — 'Strong' band on fit alone, but the trigger needs verification and there is no route in yet, so this is research-further rather than active-queue in practice.",
+    "score": 60
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": "https://www.linkedin.com/company/merakcapital",
+  "name": "Merak Capital",
+  "next_action": {
+    "due": "2026-10-15",
+    "what": "Confirm the 2026-05-03 CMA licence-activity item on the CMA register and identify a named operations/compliance contact",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "CMA (Saudi Arabia)",
+  "score": 60,
+  "segment": "fund_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "merak-capital",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: CMA news release re: Merak Capital completing commencement-of-business requirements for 'Managing Investments and Operating Funds' activity, CMA approval dated 16/11/1447H = 2026-05-03G (search snippet only, CMA site itself not click-verified — egress blocked); corroborated via merak.capital, Preqin, Crunchbase, MAGNiTT company profiles."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "ksa",
+    "cma",
+    "fund-manager",
+    "new-licence-activity"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://merak.capital/"
+}

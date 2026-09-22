@@ -59,8 +59,8 @@ class TestBuildRunRecord(unittest.TestCase):
         self.assertEqual(c["register"], "cma-saudi")
         self.assertFalse(c["ok"])
         self.assertEqual(c["error"], "cma.org.sa unreachable: timed out")
-        self.assertIsNone(c["total"])
-        self.assertIsNone(c["created"])
+        self.assertIsNone(c["total"], "total is genuinely unknown for a source never read")
+        self.assertEqual(c["created"], 0, "a connector that never ran created exactly nothing")
 
     def test_mixed_success_and_failure_sorted_by_register(self):
         ok = {"register": "dfsa-difc", "source": "DFSA", "total": 5, "new_on_register": 0,

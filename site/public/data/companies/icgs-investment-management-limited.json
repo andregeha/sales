@@ -1,0 +1,69 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": "https://www.adgm.com/public-registers/fsra",
+      "summary": "Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 190017, authorised 2020-09-21, Managing A Collective Investment Fund. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Reem Island, Office 3111, Level 31, Tamouh Tower, Tamouh",
+      "type": "research"
+    }
+  ],
+  "city": "Abu Dhabi",
+  "contacts": [
+    {
+      "email": "zeid.zabian@gccasia.com",
+      "language": "en",
+      "linkedin": null,
+      "name": "ICGS Investment Management Limited — contact published on the FSRA register",
+      "notes": "Email and/or telephone exactly as the FSRA publishes them on its own public register — not guessed, not pattern-inferred. ⚠ The address the regulator holds is often a named individual's work address rather than a general inbox; check who it belongs to before writing, and treat it as a real person.",
+      "phone": "+962 777205060",
+      "role": "unknown",
+      "source": "FSRA public register, https://www.adgm.com/public-registers/fsra/firms/financial-firms/icgs-investment-management-limited-190017",
+      "title": "General enquiries"
+    }
+  ],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 50/60: priority segment fund_manager (20) + priority market UAE (15) + manages third-party money — FSRA-authorised for Managing A Collective Investment Fund (10) + regulated by FSRA (ADGM) (5). Trigger 0/25: licence granted 2020-09-21, too long ago to count as a trigger. Access 3/15: generic company contact published on the register (3). Scored automatically from the FSRA public register of financial firms (ADGM) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "score": 53
+  },
+  "has_contact_route": true,
+  "has_email": true,
+  "has_linkedin": false,
+  "has_phone": true,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "ICGS Investment Management Limited",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "FSRA (ADGM)",
+  "score": 53,
+  "segment": "fund_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "icgs-investment-management-limited",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-22",
+    "detail": "FSRA public register of financial firms (ADGM) (https://www.adgm.com/public-registers/fsra); licence 190017 dated 2020-09-21. Snapshot: crm/registers/fsra-adgm/2026-09-22.json."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "fsra-adgm",
+    "register-sourced",
+    "new-licence",
+    "fund-manager",
+    "uae",
+    "adgm",
+    "fsra"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": null
+}

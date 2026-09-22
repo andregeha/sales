@@ -1,0 +1,55 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "New Managing Investments licence activity completed 2025-05-13 for the Saudi arm of Dubai-HQ'd Arqaam Capital. Real trigger, but qualification risk flagged: the parent group likely already runs some group-wide investment/portfolio infrastructure, so 'new licence' may not mean 'no incumbent system' here the way it would for a true de novo entrant. Only a generic company contact (info@arqaamcapital.com) found, no named person.",
+      "type": "research"
+    }
+  ],
+  "city": "Riyadh",
+  "contacts": [],
+  "country": "Saudi Arabia",
+  "created": "2026-09-22",
+  "description": "Saudi arm of Arqaam Capital, a full-service investment bank and financial services group founded 2004, headquartered in Dubai with offices across the UAE, Saudi Arabia, Egypt and Lebanon. Arqaam Capital Financial (KSA) is CMA-authorised for Advising, Arranging and Managing Investments, covering fund and discretionary portfolio management (DPM) for clients. Completed CMA commencement-of-business requirements for the Managing Investments activity under a resolution dated 2025-05-13. Riyadh office: Olaya Business Centre, Olaya Street.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit: priority segment asset manager (20) + priority market KSA (15) + multi-asset via fund and discretionary portfolio management (10) + manages third-party client capital, not proprietary (10) + CMA-regulated (5) = 60/60. Timing: a Managing Investments licence activity completed 2025-05-13 — a regional investment bank standing up onshore Saudi fund/portfolio management capability for the first time is a genuine new-mandate-type trigger (15/25), though moderated because the parent group (Arqaam Capital, Dubai) likely already runs some form of investment/portfolio system group-wide that the Saudi entity may inherit rather than buy fresh — worth qualifying directly. Access: no named contact found for the Riyadh office in this pass, only a general company phone/email (info@arqaamcapital.com) (3/15, generic contact only). Total 78 by table, moderated to 63 given the real risk that this entity runs on a group-wide platform already, which is the kind of 'already mid-implementation, no dissatisfaction signal' pattern the ICP flags to qualify carefully rather than assume displacement is easy.",
+    "score": 63
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": "Arqaam Capital Financial Company",
+  "linkedin": "https://www.linkedin.com/company/arqaam-capital",
+  "name": "Arqaam Capital Financial Company (Saudi Arabia)",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "CMA (Saudi Arabia)",
+  "score": 63,
+  "segment": "asset_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "arqaam-capital-financial-ksa",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: Argaam 'CMA licenses Arqaam Capital Financial to conduct managing investments activity in securities business'; CMA news CMA_N_3886 (cma.gov.sa, search-snippet only, not click-verified — egress blocked); corroborated via arqaamcapital.com/saudiarabia (Managing Investments, Investor Relations, contact pages) and Mubasher Info."
+  },
+  "stage": "identified",
+  "status": "qualified",
+  "tags": [
+    "ksa",
+    "cma",
+    "asset-manager",
+    "new-licence-activity",
+    "regional-group"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.arqaamcapital.com/saudiarabia/en/"
+}

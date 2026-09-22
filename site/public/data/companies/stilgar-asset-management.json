@@ -1,0 +1,54 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": "https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf",
+      "summary": "Appeared as a new entry in the AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr). Licence GP-20260015, authorised 2026-08-24, 1 - Gestion de portefeuille pour le compte de tiers (Gestion des mandats); 1 - OPCVM; 3 - Conseil en investissement. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched.",
+      "type": "research"
+    }
+  ],
+  "city": null,
+  "contacts": [],
+  "country": "France",
+  "created": "2026-09-22",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 60/60: priority segment asset_manager (20) + priority market France (15) + multi-asset — AMF-authorised across 3 instrument classes including 1 - Instruments négociés sur un marché réglementé ou organisé (Instruments financiers cotés, TCN,...); 2 - OPCVM et FIA européens ouverts à une clientèle non professionnelle; 7 - Contrats financiers et titres financiers comportant un contrat financier, lorsqu'ils sont simples (10) + manages third-party money — AMF-authorised for 1 - Gestion de portefeuille pour le compte de tiers (Gestion des mandats); 1 - OPCVM; 3 - Conseil en investissement (10) + regulated by AMF (5). Trigger 20/25: new licence granted 2026-08-24 (29 days ago), no incumbent to displace (20). Access 0/15: no contact route published (0). Scored automatically from the AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "score": 80
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "STILGAR ASSET MANAGEMENT",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "AMF",
+  "score": 80,
+  "segment": "asset_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "stilgar-asset-management",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-22",
+    "detail": "AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr) (https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf); licence GP-20260015 dated 2026-08-24. Snapshot: crm/registers/amf-france/2026-09-22.json."
+  },
+  "stage": "identified",
+  "status": "qualified",
+  "tags": [
+    "amf-france",
+    "register-sourced",
+    "new-licence",
+    "asset-manager"
+  ],
+  "trigger": "new licence granted 2026-08-24 (29 days ago), no incumbent to displace (20)",
+  "updated": "2026-09-22",
+  "website": null
+}

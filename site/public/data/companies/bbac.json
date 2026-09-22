@@ -1,0 +1,59 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced from BDL bank list and CMA Lebanon register. Named Chairman/GM Sheikh Ghassan Assaf (per ABL Almanac 2024-2025, not independently cross-checked). Resolution-track status not publicly confirmed.",
+      "type": "research"
+    }
+  ],
+  "city": "Beirut",
+  "contacts": [],
+  "country": "Lebanon",
+  "created": "2026-09-22",
+  "description": "Top-ten Lebanese commercial bank (est. 1956), retail, corporate, private banking, trade finance and treasury/capital markets services, with branches in Cyprus and Iraq and representative offices in the UAE and Nigeria. Listed on CMA Lebanon's approved-institutions register. Chairman & General Manager per the Association of Banks in Lebanon's 2024-2025 Almanac: Sheikh Ghassan Assaf.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit: bank segment (20) + Lebanon (15) + multi-asset via treasury/capital-markets and private banking (10) + third-party deposits (10) + BDL/CMA regulated (5) = 60/60. Timing: sector-wide pressure only (10/25); no bank-specific viability confirmation - gating question unresolved. Access: named Chairman/GM (Sheikh Ghassan Assaf) from a secondary industry almanac, not independently cross-checked on BBAC's own site, no contact route = 3/15. Total mechanically ~73, held to 50 pending viability confirmation and a stronger source for the named contact.",
+    "score": 50
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": "Bank of Beirut and the Arab Countries S.A.L.",
+  "linkedin": "https://www.linkedin.com/company/bbac-bank",
+  "name": "BBAC",
+  "next_action": {
+    "due": "2026-10-31",
+    "what": "Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation) before any outreach",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "Banque du Liban (BDL) / Banking Control Commission; CMA Lebanon for securities activities",
+  "score": 50,
+  "segment": "bank",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "bbac",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: Wikipedia 'Bank of Beirut and the Arab Countries'; bbacbank.com; ABL Almanac of Banks 2024-2025 (secondary citation); CMA approved-institutions listing (search-confirmed, not click-verified). No public confirmation found of BBAC's individual viability/recapitalisation status under Law 23/2025."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "lebanon",
+    "bdl",
+    "cma-lebanon",
+    "bank",
+    "resolution-status-unknown"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.bbacbank.com"
+}

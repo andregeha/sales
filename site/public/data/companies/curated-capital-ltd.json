@@ -1,0 +1,56 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "UAE ADGM sourcing pass: only a bare FSRA register hit found, no website, leadership or business description surfaced via web search. Recorded to avoid re-searching the same thin lead; needs a direct register check or a name-specific search before any further work.",
+      "type": "research"
+    }
+  ],
+  "city": "Abu Dhabi",
+  "contacts": [],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": "ADGM-registered financial firm found only on the FSRA public register (entity page confirms it is not permitted to deal with Retail Clients). No website, leadership, licence category, or business description could be established from search snippets in this pass — flagged explicitly as thin rather than padded with assumptions.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit ~25/60: segment, multi-asset coverage and third-party-money status are all unconfirmed — scored conservatively (assume priority segment 15/20 partial credit given the ADGM financial-firm registration, market 15, multi-asset 0, third-party 0, regulated 5) pending real information. Trigger 0/25: nothing found. Access 0/15: no named contact. Total ~35 (Nurture band, borderline skip) — recorded purely so we do not re-search the same thin snippet next quarter. Needs a proper website/LinkedIn find before any further effort is justified.",
+    "score": 35
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Curated Capital Ltd",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "FSRA",
+  "score": 35,
+  "segment": "asset_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "curated-capital-ltd",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "adgm.com/public-registers/fsra/firms/financial-firms/curated-capital-ltd-220104 (search-confirmed via snippet only; no further detail found via 'Curated Capital wealth Abu Dhabi UHNW private clients' or similar queries). Searched 2026-09-22."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "uae",
+    "adgm",
+    "fsra",
+    "thin-profile",
+    "no-trigger",
+    "no-named-contact"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": null
+}

@@ -82,16 +82,19 @@ def _connector_run_summary(res: dict) -> dict:
 
 
 def _connector_failure_summary(fail: dict) -> dict:
+    # `total`/`baseline`/`backfill`/`partial` are genuinely unknown — the source was never read, so
+    # `null` is the honest value. `created`/`skipped`/`changes`/`new_on_register` are true zeros: a
+    # connector that never ran created, skipped and changed exactly nothing.
     return {
         "register": fail["register"],
         "source": fail["source"],
         "ok": False,
         "error": fail["error"],
         "total": None,
-        "new_on_register": None,
-        "created": None,
-        "skipped": None,
-        "changes": None,
+        "new_on_register": 0,
+        "created": 0,
+        "skipped": 0,
+        "changes": 0,
         "baseline": None,
         "backfill": None,
         "partial": None,

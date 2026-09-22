@@ -1,0 +1,59 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced from BDL bank list (no.10) and CMA Lebanon register. Named Chairman-GM Walid Raphael. Historical Credit Agricole/Caylon minority stake status not re-confirmed as current. Resolution-track status not publicly confirmed.",
+      "type": "research"
+    }
+  ],
+  "city": "Beirut",
+  "contacts": [],
+  "country": "Lebanon",
+  "created": "2026-09-22",
+  "description": "Established Lebanese bank (1967), no.10 on BDL's bank list, retail/corporate/private banking with a subsidiary Libano-Française Finance (LFF) and historical minority shareholding by Credit Agricole/Caylon. Listed on CMA Lebanon's approved-institutions register. Chairman-General Manager: Walid Raphael.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit: bank segment (20) + Lebanon (15) + multi-asset via LFF finance subsidiary and private banking (10) + third-party deposits (10) + BDL/CMA regulated (5) = 60/60. Timing: sector-wide pressure only (10/25) - no individual viability confirmation, gating question unresolved. Access: named Chairman-GM (Walid Raphael) identified but no contact route = 3/15. Total mechanically ~73, held to 50 pending viability confirmation.",
+    "score": 50
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": "Banque Libano-Française S.A.L.",
+  "linkedin": "https://www.linkedin.com/company/banque-libano-francaise",
+  "name": "Banque Libano-Française",
+  "next_action": {
+    "due": "2026-10-31",
+    "what": "Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation) before any outreach",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "Banque du Liban (BDL) / Banking Control Commission; CMA Lebanon for securities activities",
+  "score": 50,
+  "segment": "bank",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "banque-libano-fran-aise",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: Wikipedia 'Banque Libano-Française S.A.L.'; eblf.com; CMA approved-institutions listing (search-confirmed, not click-verified). No public confirmation found of BLF's individual viability/recapitalisation status under Law 23/2025, and no current information on whether Credit Agricole retains any stake."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "lebanon",
+    "bdl",
+    "cma-lebanon",
+    "bank",
+    "resolution-status-unknown"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.eblf.com"
+}

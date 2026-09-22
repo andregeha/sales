@@ -30,6 +30,12 @@ __pycache__/
 *.pyc
 .venv/
 
+# The sales website (plan/website.md) — Node build artefacts only. `site/public/data/` (the JSON
+# data contract emitted by tools/site_data.py) IS committed deliberately: it is diffable and a
+# `git diff` on it is a meaningful record of what a run changed.
+site/node_modules/
+site/dist/
+
 # Stray files from tools that mangle Windows temp paths
 Usersageha*
 

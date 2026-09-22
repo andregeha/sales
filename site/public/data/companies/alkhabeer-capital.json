@@ -1,0 +1,73 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Established Jeddah multi-asset alternative investment manager (~SAR 9bn AUM, 38+ funds), CEO Ahmed Saud Ghouth named on the firm's own site. Active 2026 fund launch/restructuring signal found. No incumbent-system information found — this needs qualifying before treating as a greenfield opportunity, since a 20-year-old firm this size likely already runs some PMS.",
+      "type": "research"
+    }
+  ],
+  "city": "Jeddah",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Ahmed Saud Ghouth",
+      "notes": "Named as CEO on Alkhabeer Capital's own Executive Management page (alkhabeer.com). No email, phone or individual LinkedIn URL found in this pass — do not guess.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "Web search 2026-09-22, alkhabeer.com/executive-management",
+      "title": "Chief Executive Officer, Alkhabeer Capital"
+    }
+  ],
+  "country": "Saudi Arabia",
+  "created": "2026-09-22",
+  "description": "Jeddah-headquartered asset management and investment banking firm (branch in Riyadh), CMA licence no. 07074-37, CEO Ahmed Saud Ghouth. Specialises in Shariah-compliant alternative investments for institutions, family offices and qualified HNW investors — over 38 investment funds launched across real estate, private equity and capital markets, plus Shariah-compliant capital raising and M&A advisory. Reported AUM exceeds SAR 9bn.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit: priority segment asset manager (20) + priority market KSA (15) + multi-asset (real estate, PE, capital markets, traded funds) (10) + explicitly serves institutions and family offices, i.e. third-party capital (10) + CMA-regulated (5) = 60/60. Timing: an active 2026 fund launch (Diversified Income Traded Fund) plus a fundamental restructuring of an existing traded fund effective 2026-06-29 — a live fund-launch/new-mandate signal (15/25); with 38+ funds under management, ongoing NAV/subscription-redemption/shareholder-registry complexity is a standing operational fact, not a one-off. Access: named CEO identified (Ahmed Saud Ghouth) via the firm's own executive management page, but no direct contact route confirmed (8/15). Total 83 by table, moderated to 63 given the firm's scale and 20-year history make an existing incumbent PMS likely — qualify what system they run today before assuming greenfield opportunity.",
+    "score": 63
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": "https://www.linkedin.com/company/alkhabeercap",
+  "name": "Alkhabeer Capital",
+  "next_action": {
+    "due": "2026-10-31",
+    "what": "Research what portfolio/fund administration system Alkhabeer Capital currently runs before drafting any outreach angle",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "CMA (Saudi Arabia)",
+  "score": 63,
+  "segment": "asset_manager",
+  "size": {
+    "aum": "SAR 9bn+ (reported, source dated 2026)",
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "alkhabeer-capital",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: alkhabeer.com (home, board, executive management, contact pages), ZoomInfo, Private Equity International institution profile. Fund-activity trigger: 2026 media briefing/launch for the Alkhabeer Diversified Income Traded Fund and a 'fundamental change' to the Alkhabeer Growth and Income Traded Fund effective 2026-06-29 (Alkhabeer press releases, search-snippet only, not click-verified)."
+  },
+  "stage": "identified",
+  "status": "qualified",
+  "tags": [
+    "ksa",
+    "cma",
+    "asset-manager",
+    "multi-asset",
+    "fund-launch",
+    "family-offices",
+    "established"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.alkhabeer.com/"
+}

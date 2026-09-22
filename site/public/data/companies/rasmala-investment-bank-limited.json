@@ -1,0 +1,68 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "UAE DIFC sourcing pass: DFSA register listing search-confirmed. Genuine 2024 CEO/SEO change plus a large, recent, publicised fund exit (Poseidon Fund, Oct 2025). Established group — before drafting outreach, need to establish current PMS/back-office stack and whether the CEO change signals any technology review. No incumbent-system information found in this pass.",
+      "type": "research"
+    }
+  ],
+  "city": "Dubai",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Zak Hydari",
+      "notes": "Joined Rasmala Holdings 2012; Group CEO until 2021, regained the title 2024; appointed Senior Executive Officer of Rasmala Investment Bank Ltd in June 2024. Named on Forbes Middle East Top 40 Asset Managers 2025 and Top 50 Asset Managers 2026.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "rasmala.com press releases, forbesmiddleeast.com lists, theofficialboard.com bio. Web search 2026-09-22.",
+      "title": "Chief Executive Officer, Rasmala Investment Bank & Group CEO, Rasmala Holdings"
+    }
+  ],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": "DIFC-domiciled investment bank and asset manager (DFSA reference F000132, licensed 2005-12-13), part of the Rasmala group established 1999 — a leading alternative-investment firm investing directly and alongside Gulf-based banks, pension funds, endowments, family offices, corporations and government institutions. Licensed for advising, arranging, custody, dealing as agent/principal and managing assets across certificates, debentures, futures, options, shares, structured products, warrants and units, with an Islamic-window endorsement. Group AUM ~USD 1.5bn (2025); in October 2025 exited its Poseidon Fund at USD 500m, delivering an 8x+ return to shareholders. A separate DFSA-registered joint-venture entity, Rasmala CBD Asset Management Limited (with Commercial Bank of Dubai, est. 2007), also exists but was not added separately to avoid double-counting the same group.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 60/60: priority segment investment bank/asset manager (20) + UAE (15) + genuinely multi-asset across listed instruments and alternatives (10) + manages third-party/institutional and family-office money by way of business (10) + DFSA-regulated (5). Trigger 20/25: Zak Hydari was appointed Senior Executive Officer of Rasmala Investment Bank in June 2024 having regained the Group CEO title, a genuine senior-leadership change (12) plus visible growth — USD 1.5bn group AUM in 2025 and an October 2025 USD 500m fund exit at 8x+ returns (8). Access 8/15: named, high-profile CEO (Zak Hydari, Forbes Middle East Top 50 Asset Managers 2026) — a real, reachable decision-maker though no warm intro. Total 88 — an established, well-known DIFC investment bank/asset manager with a recent leadership change and real momentum; worth working now, though as an established group it may already run mature systems — qualify further on incumbent stack before drafting outreach.",
+    "score": 88
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Rasmala Investment Bank Limited",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "DFSA",
+  "score": 88,
+  "segment": "bank",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "rasmala-investment-bank-limited",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "dfsa.ae/public-register/firms/rasmala-investment-bank-limited (search-confirmed via snippet quoting DFSA ref F000132); rasmala.com press releases on Zak Hydari's Forbes Middle East Top 40/50 Asset Managers listings (2025, 2026) and the October 2025 Poseidon Fund exit. Searched 2026-09-22."
+  },
+  "stage": "identified",
+  "status": "qualified",
+  "tags": [
+    "uae",
+    "difc",
+    "dfsa",
+    "investment-bank",
+    "trigger-senior-hire",
+    "trigger-growth"
+  ],
+  "trigger": "Zak Hydari was appointed Senior Executive Officer of Rasmala Investment Bank in June 2024 having regained the Group CEO title, a genuine senior-leadership change (12) plus visible growth — USD 1",
+  "updated": "2026-09-22",
+  "website": "https://www.rasmala.com/"
+}

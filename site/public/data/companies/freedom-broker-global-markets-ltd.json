@@ -1,0 +1,69 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": "https://www.adgm.com/public-registers/fsra",
+      "summary": "Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 250006, authorised 2025-12-29, Managing Assets; Providing Custody; Dealing In Investments. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Maryah Island, Office 1165, 11, Al Maqam Tower, Abu Dhabi Global Market Square",
+      "type": "research"
+    }
+  ],
+  "city": "Abu Dhabi",
+  "contacts": [
+    {
+      "email": "zubin@ffin.ae",
+      "language": "en",
+      "linkedin": null,
+      "name": "Freedom Broker Global Markets Ltd — contact published on the FSRA register",
+      "notes": "Email and/or telephone exactly as the FSRA publishes them on its own public register — not guessed, not pattern-inferred. ⚠ The address the regulator holds is often a named individual's work address rather than a general inbox; check who it belongs to before writing, and treat it as a real person.",
+      "phone": "+971 507283298",
+      "role": "unknown",
+      "source": "FSRA public register, https://www.adgm.com/public-registers/fsra/firms/financial-firms/freedom-broker-global-markets-ltd-250006",
+      "title": "General enquiries"
+    }
+  ],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 50/60: priority segment asset_manager (20) + priority market UAE (15) + manages third-party money — FSRA-authorised for Managing Assets; Providing Custody; Dealing In Investments (10) + regulated by FSRA (ADGM) (5). Trigger 20/25: new licence granted 2025-12-29 (267 days ago), no incumbent to displace (20). Access 3/15: generic company contact published on the register (3). Scored automatically from the FSRA public register of financial firms (ADGM) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "score": 73
+  },
+  "has_contact_route": true,
+  "has_email": true,
+  "has_linkedin": false,
+  "has_phone": true,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Freedom Broker Global Markets Ltd",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "FSRA (ADGM)",
+  "score": 73,
+  "segment": "asset_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "freedom-broker-global-markets-ltd",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-22",
+    "detail": "FSRA public register of financial firms (ADGM) (https://www.adgm.com/public-registers/fsra); licence 250006 dated 2025-12-29. Snapshot: crm/registers/fsra-adgm/2026-09-22.json."
+  },
+  "stage": "identified",
+  "status": "qualified",
+  "tags": [
+    "fsra-adgm",
+    "register-sourced",
+    "new-licence",
+    "asset-manager",
+    "uae",
+    "adgm",
+    "fsra"
+  ],
+  "trigger": "new licence granted 2025-12-29 (267 days ago), no incumbent to displace (20)",
+  "updated": "2026-09-22",
+  "website": null
+}

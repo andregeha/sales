@@ -1,0 +1,139 @@
+{
+  "active_total": 1292,
+  "by_country": {
+    "France": 675,
+    "Lebanon": 17,
+    "Saudi Arabia": 37,
+    "UAE": 569
+  },
+  "by_segment": {
+    "asset_manager": 675,
+    "bank": 49,
+    "broker": 23,
+    "custodian": 13,
+    "family_office": 3,
+    "fund_manager": 524,
+    "mfo": 11
+  },
+  "by_status": {
+    "disqualified": 6,
+    "new": 1,
+    "nurture": 1109,
+    "qualified": 180,
+    "researching": 2
+  },
+  "companies_total": 1298,
+  "contact_route_by_market": [
+    {
+      "country": "France",
+      "total": 675,
+      "with_route": 459
+    },
+    {
+      "country": "Lebanon",
+      "total": 17,
+      "with_route": 0
+    },
+    {
+      "country": "Saudi Arabia",
+      "total": 37,
+      "with_route": 2
+    },
+    {
+      "country": "UAE",
+      "total": 569,
+      "with_route": 443
+    }
+  ],
+  "coverage": {
+    "France": {
+      "asset_manager": 326,
+      "bank": 0,
+      "broker": 0,
+      "custodian": 0,
+      "family_office": 0,
+      "fund_manager": 343,
+      "insurer": 0,
+      "mfo": 6
+    },
+    "Lebanon": {
+      "asset_manager": 2,
+      "bank": 14,
+      "broker": 1,
+      "custodian": 0,
+      "family_office": 0,
+      "fund_manager": 0,
+      "insurer": 0,
+      "mfo": 0
+    },
+    "Saudi Arabia": {
+      "asset_manager": 27,
+      "bank": 0,
+      "broker": 1,
+      "custodian": 0,
+      "family_office": 3,
+      "fund_manager": 5,
+      "insurer": 0,
+      "mfo": 1
+    },
+    "UAE": {
+      "asset_manager": 320,
+      "bank": 35,
+      "broker": 21,
+      "custodian": 13,
+      "family_office": 0,
+      "fund_manager": 176,
+      "insurer": 0,
+      "mfo": 4
+    }
+  },
+  "rfp_deadlines_approaching": [],
+  "rfps_by_status": {},
+  "rfps_total": 0,
+  "score_distribution": [
+    {
+      "band": "0-9",
+      "count": 1
+    },
+    {
+      "band": "10-19",
+      "count": 3
+    },
+    {
+      "band": "20-29",
+      "count": 2
+    },
+    {
+      "band": "30-39",
+      "count": 25
+    },
+    {
+      "band": "40-49",
+      "count": 49
+    },
+    {
+      "band": "50-59",
+      "count": 487
+    },
+    {
+      "band": "60-69",
+      "count": 648
+    },
+    {
+      "band": "70-79",
+      "count": 61
+    },
+    {
+      "band": "80-89",
+      "count": 21
+    },
+    {
+      "band": "90-100",
+      "count": 0
+    },
+    {
+      "band": "unscored",
+      "count": 0
+    }
+  ]
+}

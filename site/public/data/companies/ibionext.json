@@ -1,0 +1,54 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": "https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf",
+      "summary": "Appeared as a new entry in the AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr). Licence GP-15000031, authorised 2016-01-04, 2 - Gestion de FIA; 2b - Gestionnaire en-dessous des seuils et ne souhaitant pas opter pour l'application de la Directive AIFM; 3 - Conseil en investissement. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched.",
+      "type": "research"
+    }
+  ],
+  "city": null,
+  "contacts": [],
+  "country": "France",
+  "created": "2026-09-22",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 50/60: priority segment fund_manager (20) + priority market France (15) + manages third-party money — AMF-authorised for 2 - Gestion de FIA; 2b - Gestionnaire en-dessous des seuils et ne souhaitant pas opter pour l'application de la Directive AIFM; 3 - Conseil en investissement (10) + regulated by AMF (5). Trigger 0/25: licence granted 2016-01-04, too long ago to count as a trigger. Access 3/15: generic company contact published on the register (3). Scored automatically from the AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "score": 53
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "IBIONEXT",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "AMF",
+  "score": 53,
+  "segment": "fund_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "ibionext",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-22",
+    "detail": "AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr) (https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf); licence GP-15000031 dated 2016-01-04. Snapshot: crm/registers/amf-france/2026-09-22.json."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "amf-france",
+    "register-sourced",
+    "new-licence",
+    "fund-manager"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://ibionext.com/"
+}

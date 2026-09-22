@@ -1,0 +1,65 @@
+{
+  "commit": "bb7d2d7fe24d5efc8d13ce6793de79deaf3f8002",
+  "connectors": [
+    {
+      "backfill": false,
+      "baseline": true,
+      "changes": 0,
+      "created": 0,
+      "error": null,
+      "new_on_register": 666,
+      "ok": true,
+      "partial": false,
+      "register": "amf-france",
+      "skipped": 12,
+      "source": "AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr)",
+      "total": 666
+    },
+    {
+      "backfill": false,
+      "baseline": true,
+      "changes": 0,
+      "created": 0,
+      "error": null,
+      "new_on_register": 36,
+      "ok": true,
+      "partial": true,
+      "register": "cma-saudi",
+      "skipped": 30,
+      "source": "Saudi CMA register of licensed Financial Market Institutions",
+      "total": 36
+    },
+    {
+      "backfill": false,
+      "baseline": true,
+      "changes": 0,
+      "created": 0,
+      "error": null,
+      "new_on_register": 319,
+      "ok": true,
+      "partial": false,
+      "register": "dfsa-difc",
+      "skipped": 0,
+      "source": "DFSA public register of authorised firms (DIFC)",
+      "total": 319
+    },
+    {
+      "backfill": false,
+      "baseline": true,
+      "changes": 0,
+      "created": 0,
+      "error": null,
+      "new_on_register": 412,
+      "ok": true,
+      "partial": false,
+      "register": "fsra-adgm",
+      "skipped": 44,
+      "source": "FSRA public register of financial firms (ADGM)",
+      "total": 412
+    }
+  ],
+  "duration_s": 147.142,
+  "finished_at": "2026-09-22T15:39:01+00:00",
+  "ok": true,
+  "started_at": "2026-09-22T15:36:34+00:00"
+}

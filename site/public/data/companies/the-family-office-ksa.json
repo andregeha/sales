@@ -1,0 +1,63 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Strong structural fit (family-wealth manager, multi-custodian consolidation pitch) but the only confirmed regulatory event (licence upgrade to Managing Investments and Operating Funds) dates to 2021 — no current trigger found. Group LinkedIn page found but no named Riyadh-office contact. Watch for a new fund launch or senior Riyadh hire before treating as active.",
+      "type": "research"
+    },
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Segment corrected from asset_manager to mfo while working the Saudi family-offices/MFOs sourcing pass (2026-09-22): this is explicitly a multi-family-office business model (bespoke portfolios for multiple GCC families, min ticket USD 300,000), even though its CMA licence is the generic 'Managing Investments and Operating Funds' category. No new trigger found in this pass beyond what was already recorded.",
+      "type": "research"
+    }
+  ],
+  "city": "Riyadh",
+  "contacts": [],
+  "country": "Saudi Arabia",
+  "created": "2026-09-22",
+  "description": "Wholly owned Saudi subsidiary of Bahrain-based The Family Office Company B.S.C. (c), a wealth manager serving GCC individuals and families since 2004, managing over USD 2.3bn in tailored portfolio solutions group-wide (min. ticket USD 300,000), incl. Shariah-compliant options, sourced from leading global asset managers. The Saudi entity is a closed joint-stock company (paid-up capital SR 20m) first licensed by the CMA for Arranging and Advisory in 2017, then upgraded to a full Managing Investments and Operating Funds licence in 2021, giving Saudi clients access to the group's full investment-management service range. Riyadh office: Signature Center, Hittin district.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Re-scored 2026-09-22 after segment correction to mfo. Fit 55/60: priority segment mfo (20, corrected from asset_manager) + priority market KSA (15) + multi-asset via curated third-party global manager solutions (10) + manages third-party family capital explicitly, not proprietary (10) + CMA-regulated (5) - wait, that sums to 60; scored 55 to hold back 5 points because the CMA licence itself (Managing Investments and Operating Funds) is a generic asset-management category, not an MFO-specific licence, so the regulatory fit is real but indirect. Trigger 0/25: no current trigger - the licence upgrade is from 2021 (stale) and no 2025/2026 fund launch or hire was found in this pass. Access 0/15: still no named Riyadh contact found, only a group LinkedIn page. Total 55; status remains nurture - watch for a new Saudi fund, a reported Riyadh hire, or AUM disclosure.",
+    "score": 55
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": "The Family Office International Investment Company",
+  "linkedin": "https://www.linkedin.com/company/the-family-office",
+  "name": "The Family Office International Investment Company (Saudi Arabia)",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "CMA (Saudi Arabia)",
+  "score": 55,
+  "segment": "mfo",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "the-family-office-ksa",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: Argaam 'The Family Office Gets Full Asset Management License in Saudi Arabia'; tfoco.com press release and Bloomberg Asharq piece corroborate the Managing Investments and Operating Funds licence (dated 2021-05-25 in one source). CMA register not click-verified (egress blocked)."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "ksa",
+    "cma",
+    "asset-manager",
+    "family-wealth",
+    "cross-border-entrant",
+    "mfo",
+    "segment-corrected-from-asset-manager"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://tfoco.com/en/sa"
+}

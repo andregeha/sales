@@ -1,0 +1,68 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "UAE MFO sourcing pass: DFSA register listing search-confirmed. No local Dubai decision-maker identified beyond the Geneva-based founder. No trigger found. Watch for: a named Dubai/DIFC head, a new UAE mandate, or a hire.",
+      "type": "research"
+    }
+  ],
+  "city": "Dubai",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Milan S. Morjaria",
+      "notes": "Founded MSM in 2010 after a career in investment management and private banking. Geneva-based; unclear if he is the right contact for the DIFC entity specifically or if a local Dubai head exists — not established in this pass.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "Web search 'MSM Investment Advisors DIFC founder managing partner name team', 2026-09-22.",
+      "title": "Founder"
+    }
+  ],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": "Multi-family office founded 2010 by Milan S. Morjaria, headquartered in Geneva with affiliated entities in London and Dubai. The DIFC entity (DFSA reference F005790, licensed 2020-10-18) is authorised for Advising on Financial Products, Arranging Credit & Advising on Credit, Arranging Custody, Arranging Deals in Investments, Managing Assets, and Holding/Controlling Client Assets. Investment activity spans private equity buyouts, real estate, private credit, hedge funds, commodities and collectibles, plus philanthropic advisory.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 60/60: priority MFO segment (20) + UAE (15) + genuinely multi-asset (PE, real estate, private credit, hedge funds, commodities, collectibles — 10) + third-party family money (10) + DFSA-regulated (5). Trigger 0/25: DIFC licence dates to 2020, no recent hire/launch/expansion news found in this pass. Access 8/15: named founder Milan S. Morjaria identified, but he is Geneva-based — reachable in principle, no warm intro, and unclear who runs the Dubai affiliate day-to-day. Total 68 (Strong band), held to nurture for lack of a trigger — worth a look if a DIFC-specific hire or mandate surfaces.",
+    "score": 68
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "MSM Investment Advisors (DIFC) Limited",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "DFSA",
+  "score": 68,
+  "segment": "mfo",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "msm-investment-advisors-difc-limited",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "dfsa.ae/public-register/firms/msm-investment-advisors-difc-limited (search-confirmed via snippet quoting DFSA ref F005790 and licence date, egress-blocked from direct fetch); msmdifc.com; altss.com/pitchbook.com profiles. Searched 2026-09-22."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "uae",
+    "difc",
+    "dfsa",
+    "mfo",
+    "geneva-hq",
+    "no-trigger"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://msmdifc.com/"
+}

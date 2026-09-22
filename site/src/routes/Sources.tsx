@@ -51,7 +51,10 @@ export function Sources() {
 
       {failing.length > 0 ? (
         <Section>
-          <Callout tone="critical" title={`${failing.length} of ${sources.length} source${sources.length === 1 ? "" : "s"} failing`}>
+          <Callout
+            tone="critical"
+            title={`${failing.length} of ${sources.length} source${sources.length === 1 ? "" : "s"} failing`}
+          >
             {failing
               .map(
                 (s) =>
@@ -64,7 +67,10 @@ export function Sources() {
         </Section>
       ) : stale.length > 0 ? (
         <Section>
-          <Callout tone="caution" title={`${stale.length} source${stale.length === 1 ? "" : "s"} has not refreshed recently`}>
+          <Callout
+            tone="caution"
+            title={`${stale.length} source${stale.length === 1 ? "" : "s"} has not refreshed recently`}
+          >
             {stale.map((s) => s.register).join(", ")}. Not failing outright, but due a look.
           </Callout>
         </Section>
@@ -89,17 +95,14 @@ export function Sources() {
 
 function SourceCard({ source }: { source: SourceRow }) {
   return (
-    <Panel
-      className={cn(
-        "p-4",
-        source.status === "failing" && "border-[var(--critical)]",
-      )}
-    >
+    <Panel className={cn("p-4", source.status === "failing" && "border-[var(--critical)]")}>
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div className="min-w-0">
           <div className="flex flex-wrap items-center gap-2">
             <span className="font-medium">{source.register}</span>
-            {source.regulator ? <span className="text-small text-subtle">{source.regulator}</span> : null}
+            {source.regulator ? (
+              <span className="text-small text-subtle">{source.regulator}</span>
+            ) : null}
             <SourceHealth status={source.status} detail={source.note ?? undefined} />
             {source.partial ? (
               <span
@@ -110,15 +113,17 @@ function SourceCard({ source }: { source: SourceRow }) {
               </span>
             ) : null}
           </div>
-          {source.partial ? (
-            <p className="mt-1.5 max-w-[62ch] text-small text-muted">
-              Partial source: it catches names that are newly added to the register, but it cannot
-              tell us when a name disappears from it.
-            </p>
+          {/* The emitter already supplies the explanation for a partial source in `note`, so
+              this renders that rather than restating it — one source of truth for the wording. */}
+          {source.note ? (
+            <p className="mt-1.5 max-w-[62ch] text-small text-muted">{source.note}</p>
           ) : null}
-          {source.note ? <p className="mt-1.5 max-w-[62ch] text-small text-subtle">{source.note}</p> : null}
         </div>
-        <Sparkline data={source.history} y="count" tone={source.status === "failing" ? "var(--critical)" : "var(--chart-1)"} />
+        <Sparkline
+          data={source.history}
+          y="count"
+          tone={source.status === "failing" ? "var(--critical)" : "var(--chart-1)"}
+        />
       </div>
 
       <StatRow>
@@ -135,7 +140,11 @@ function SourceCard({ source }: { source: SourceRow }) {
         <Stat
           label="latest entry count"
           value={source.latest_count ?? "unknown"}
-          hint={source.history.length > 0 ? `${source.history.length} runs of history` : "no history yet"}
+          hint={
+            source.history.length > 0
+              ? `${source.history.length} runs of history`
+              : "no history yet"
+          }
         />
       </StatRow>
     </Panel>

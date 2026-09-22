@@ -19,7 +19,11 @@ export function cn(...parts: Array<string | undefined | null | false>) {
 /* ------------------------------------------------------------------ layout */
 
 export function Page({ children, className }: { children: ReactNode; className?: string }) {
-  return <div className={cn("mx-auto w-full max-w-[1400px] px-5 pb-24 sm:px-8", className)}>{children}</div>;
+  return (
+    <div className={cn("mx-auto w-full max-w-[1400px] px-5 pb-24 sm:px-8", className)}>
+      {children}
+    </div>
+  );
 }
 
 export function PageHeader({
@@ -61,7 +65,9 @@ export function Section({
       {title ? (
         <div className="mb-3 flex flex-wrap items-baseline justify-between gap-3">
           <div>
-            <h2 className="text-[length:var(--text-h2)] font-semibold tracking-[-0.01em]">{title}</h2>
+            <h2 className="text-[length:var(--text-h2)] font-semibold tracking-[-0.01em]">
+              {title}
+            </h2>
             {description ? <p className="mt-0.5 text-small text-muted">{description}</p> : null}
           </div>
           {actions}
@@ -79,9 +85,7 @@ export function Panel({ children, className }: { children: ReactNode; className?
 }
 
 export function Toolbar({ children, className }: { children: ReactNode; className?: string }) {
-  return (
-    <div className={cn("flex flex-wrap items-center gap-2 pb-3", className)}>{children}</div>
-  );
+  return <div className={cn("flex flex-wrap items-center gap-2 pb-3", className)}>{children}</div>;
 }
 
 /* -------------------------------------------------------------------- data */
@@ -110,7 +114,9 @@ export function Stat({
   }[tone];
   return (
     <div className="min-w-[8rem]">
-      <div className={cn("tnum text-[length:var(--text-h1)] font-semibold leading-none", toneClass)}>
+      <div
+        className={cn("tnum text-[length:var(--text-h1)] font-semibold leading-none", toneClass)}
+      >
         {typeof value === "number" ? value.toLocaleString("en-GB") : value}
       </div>
       <div className="mt-1.5 text-small text-muted">{label}</div>

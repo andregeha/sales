@@ -1,0 +1,67 @@
+{
+  "activities": [],
+  "city": "Dubai",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": "https://www.linkedin.com/in/james-bruce-1a85a346/",
+      "name": "James Bruce",
+      "notes": "Appointed MD of the DIFC entity to build CFM's Middle East business; previously CEO of a multi-family office and a London long/short equity fund, and worked at Morgan Stanley Prime Brokerage. No email/phone published in this research — do not guess one; generic Dubai office email is on capricornfundmanagers.com/dubai-2/ if a company-level route is preferred.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "LinkedIn profile (linkedin.com/in/james-bruce-1a85a346) and company post capricornfundmanagers.com/looking-back-at-2024-and-ahead-at-2025, checked 2026-09-22.",
+      "title": "Managing Director, Capricorn Fund Managers (DIFC) Limited"
+    }
+  ],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": "London-headquartered fund-platform/regulatory-hosting provider; DFSA-licensed 23-Sep-2024 as DIFC's first dedicated investment-management regulatory-hosting solution, structured as an Incorporated Cell Company. Lets third-party managers (hedge, long-only, real estate, private equity, venture capital) run funds from DIFC under Capricorn's licence instead of obtaining their own. Endorsements: Holding or Controlling Client Assets, Use a Fund Platform. James Bruce appointed Managing Director of the DIFC entity to build the Middle East business.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 55/60: priority segment fund manager (20) + priority market UAE (15) + multi-asset across hedge/long-only/real-estate/PE/VC for many underlying funds (10) + manages third-party client assets by construction, an ICC hosting other managers' money (10) + DFSA-regulated with a Holding/Controlling Client Assets endorsement (5). Timing 20/25: new DFSA licence 23-Sep-2024, still a young DIFC entity actively building its book (James Bruce hired specifically to grow it) — a genuine incumbent-free build-out. Access 8/15 — named, reachable decision-maker (James Bruce, MD, LinkedIn verified) but no warm route and no published direct email/phone for him. Total 83 rounds to 82 — work it now; a fund-hosting platform is precisely the multi-manager NAV/fund-administration workload Gaia is built for.",
+    "score": 82
+  },
+  "has_contact_route": true,
+  "has_email": false,
+  "has_linkedin": true,
+  "has_phone": false,
+  "legal_name": "Capricorn Fund Managers (DIFC) Limited",
+  "linkedin": null,
+  "name": "Capricorn Fund Managers (DIFC) Limited",
+  "next_action": {
+    "due": "2026-10-15",
+    "what": "Draft a warm intro note to James Bruce referencing Capricorn's DIFC fund-hosting model and Gaia's fund-administration/NAV module",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "DFSA",
+  "score": 82,
+  "segment": "fund_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "capricorn-fund-managers-difc-limited",
+  "source": {
+    "channel": "register_search",
+    "date": "2026-09-22",
+    "detail": "DFSA public register (dfsa.ae/public-register/firms/capricorn-fund-managers-difc-limited), ref F008633, Date of Licence 23-Sep-2024, fetched via curl 2026-09-22; corroborated by capricornfundmanagers.com/dubai-2/ and company news post on James Bruce's MD appointment (capricornfundmanagers.com/looking-back-at-2024-and-ahead-at-2025)."
+  },
+  "stage": "identified",
+  "status": "qualified",
+  "tags": [
+    "uae",
+    "difc",
+    "dfsa",
+    "fund-manager",
+    "trigger-new-licence",
+    "fund-platform",
+    "aifm-as-a-service",
+    "multi-strategy"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://capricornfundmanagers.com/dubai-2/"
+}

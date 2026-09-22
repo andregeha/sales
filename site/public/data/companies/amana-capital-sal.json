@@ -1,0 +1,54 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced via amanacapital.com. Confirmed to be a retail forex/CFD trading platform (part of a UK/Cyprus/Dubai/Lebanon group), not a portfolio/fund-management buyer. Disqualified per ICP retail-brokerage criterion; recorded so we do not re-research it.",
+      "type": "research"
+    }
+  ],
+  "city": "Beirut",
+  "contacts": [],
+  "country": "Lebanon",
+  "created": "2026-09-22",
+  "description": "Beirut-established (2010) entity within the Amana Capital Group, an online forex/CFD/commodities retail trading platform group also comprising Amana Financial Services (UK), Amana Financial Services (Dubai), Amana Capital (Cyprus) and TradeCaptain.com. A mobile-first multi-asset retail trading app, not an investment-management or fund-administration platform.",
+  "fit": {
+    "disqualified_reason": "Retail forex/CFD trading platform for individual consumer traders, not a portfolio/fund management buyer - matches the ICP's explicit retail-brokerage disqualification criterion.",
+    "reasoning": "Fit: adjacent segment broker (10, not a priority segment) + Lebanon (15) + single-asset-class-facing retail trading product rather than genuine multi-asset portfolio management (0) + serves retail traders' own accounts, not third-party discretionary/advisory capital (0) + CMA regulated (5) = 30/60. Timing: no relevant trigger (0/25). Access: no named contact sought given the segment mismatch (0/15). Disqualified per ICP: 'a retail brokerage ... wanting a consumer product, not a management platform' - Amana is a retail FX/CFD trading app, not a front-to-back portfolio/fund management buyer. Recorded so we do not re-research it.",
+    "score": 10
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": "Amana Capital SAL",
+  "linkedin": null,
+  "name": "Amana Capital SAL",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "CMA Lebanon (Financial Intermediary Institution, authorisation no. 26)",
+  "score": 10,
+  "segment": "broker",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "amana-capital-sal",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: amanacapital.com regulatory-environment and company pages; brokersview.com and 55brokers.com broker-review sites."
+  },
+  "stage": "parked",
+  "status": "disqualified",
+  "tags": [
+    "lebanon",
+    "cma-lebanon",
+    "retail-broker",
+    "disqualified"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.amanacapital.com"
+}

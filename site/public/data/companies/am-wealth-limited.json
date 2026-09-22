@@ -1,0 +1,56 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "UAE ADGM sourcing pass: FSRA register listing search-confirmed. Segment (asset manager vs. broker) and exact licence category not confirmed from search snippets alone. Only a first name ('Maria') found for the CEO, no surname or title confirmed — not recorded as a contact per the no-invented-details rule. Watch for a fuller leadership page or LinkedIn confirmation before treating as a named route in.",
+      "type": "research"
+    }
+  ],
+  "city": "Abu Dhabi",
+  "contacts": [],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": "ADGM-regulated wealth manager/brokerage (Al Sila Tower, ADGM Square) describing itself as delivering 'institutional-grade wealth management' and 'specialized brokerage services to institutional and professional clients', blending portfolio and risk management with data-driven/AI-assisted methods. Segment classification is uncertain from public sources — the firm's own language mixes 'brokerage' and 'wealth management', and its exact FSRA licence category was not confirmed in this pass.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit ~35/60: segment is ambiguous — described as brokerage as much as wealth manager, so scored as adjacent (10) rather than priority, pending confirmation of licence category + UAE market (15) + multi-asset not established (0) + serves institutional/professional third-party clients (10) + FSRA-regulated (5). Trigger 0/25: no dated event found. Access 3/15: CEO's first name ('Maria') found in an about-us snippet but no surname or verifiable title established — treated as a generic-contact-equivalent, not a named reachable decision-maker, since we cannot confirm identity. Total ~43 (Worth a look band) — needs direct confirmation of licence category and a full contact name before it moves further.",
+    "score": 43
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "AM Wealth Limited",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "FSRA",
+  "score": 43,
+  "segment": "asset_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "am-wealth-limited",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "adgm.com/public-registers/fsra/firms/financial-firms/am-wealth-limited-220135 (search-confirmed, not click-verified); amwealth.ae/about-us. Searched 2026-09-22."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "uae",
+    "adgm",
+    "fsra",
+    "asset-manager",
+    "segment-uncertain",
+    "no-trigger"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://amwealth.ae/"
+}

@@ -1,0 +1,74 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": "https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf",
+      "summary": "Appeared as a new entry in the AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr). Licence GP-20260010, authorised 2026-07-09, 1 - Gestion de portefeuille pour le compte de tiers (Gestion des mandats); 1 - OPCVM; 2 - Gestion de FIA; 2 - Réception et transmission d'ordres pour le compte de tiers; 2a - Gestionnaire au-delà des seuils de la Directive AIFM ou ayant opté pour l'application de la Directive AIFM; 3 - Conseil en investissement. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched.",
+      "type": "research"
+    },
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Cross-referenced against Come, le Family Office (slug cote-le-family-office): this AMF licence is the multi-family office's newly launched, wholly-owned asset-management subsidiary, not an unrelated new entrant. Charles Brunswick (co-founder/Deputy CEO of the MFO) directs it. Coordinate any outreach across both records - do not approach independently.",
+      "type": "research"
+    }
+  ],
+  "city": null,
+  "contacts": [
+    {
+      "email": null,
+      "language": "fr",
+      "linkedin": "https://www.linkedin.com/in/charlesbrunswick/",
+      "name": "Charles Brunswick",
+      "notes": "Leads the new AMF-authorised asset-management arm of multi-family office Come, le Family Office (separate CRM record: cote-le-family-office). Pronouns not stated - use they/them. No email or phone published; none invented.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "newsassetpro.com (Come se dote d'un asset manager) and comemaisonfinanciere.com, found 2026-09-22",
+      "title": "Director, Come Asset Management; co-founder & Deputy CEO, Come Maison Financiere"
+    }
+  ],
+  "country": "France",
+  "created": "2026-09-22",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 60/60: priority segment asset_manager (20) + priority market France (15) + multi-asset — AMF-authorised across 5 instrument classes including 1 - Instruments négociés sur un marché réglementé ou organisé (Instruments financiers cotés, TCN,...); 2 - OPCVM et FIA européens ouverts à une clientèle non professionnelle; 3 - FIA européens destinés à une clientèle professionnelle et FIA des pays tiers (10) + manages third-party money — AMF-authorised for 1 - Gestion de portefeuille pour le compte de tiers (Gestion des mandats); 1 - OPCVM; 2 - Gestion de FIA (10) + regulated by AMF (5). Trigger 20/25: new licence granted 2026-07-09 (75 days ago), no incumbent to displace (20). Access 0/15: no contact route published (0). Scored automatically from the AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "score": 80
+  },
+  "has_contact_route": true,
+  "has_email": false,
+  "has_linkedin": true,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "COME ASSET MANAGEMENT",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "AMF",
+  "score": 80,
+  "segment": "asset_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "come-asset-management",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-22",
+    "detail": "AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr) (https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf); licence GP-20260010 dated 2026-07-09. Snapshot: crm/registers/amf-france/2026-09-22.json."
+  },
+  "stage": "identified",
+  "status": "qualified",
+  "tags": [
+    "amf-france",
+    "register-sourced",
+    "new-licence",
+    "asset-manager",
+    "mfo-parent-cote-le-family-office",
+    "family-office-professionalising"
+  ],
+  "trigger": "new licence granted 2026-07-09 (75 days ago), no incumbent to displace (20)",
+  "updated": "2026-09-22",
+  "website": null
+}

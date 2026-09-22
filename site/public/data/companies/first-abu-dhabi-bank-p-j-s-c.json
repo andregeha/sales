@@ -1,0 +1,69 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": "https://www.adgm.com/public-registers/fsra",
+      "summary": "Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 210051, authorised 2022-03-28, Accepting Deposits; Providing Custody. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Reem Island, Office Units 5608,5609,5610, 56th Floor, Addax Port Office Tower, Al Rayfa Street",
+      "type": "research"
+    }
+  ],
+  "city": "Abu Dhabi",
+  "contacts": [
+    {
+      "email": "ahmed.hashem@bankfab.com",
+      "language": "en",
+      "linkedin": null,
+      "name": "First Abu Dhabi Bank P.J.S.C. — contact published on the FSRA register",
+      "notes": "Email and/or telephone exactly as the FSRA publishes them on its own public register — not guessed, not pattern-inferred. ⚠ The address the regulator holds is often a named individual's work address rather than a general inbox; check who it belongs to before writing, and treat it as a real person.",
+      "phone": null,
+      "role": "unknown",
+      "source": "FSRA public register, https://www.adgm.com/public-registers/fsra/firms/financial-firms/first-abu-dhabi-bank-pjsc-210051",
+      "title": "General enquiries"
+    }
+  ],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 40/60: priority segment bank (20) + priority market UAE (15) + regulated by FSRA (ADGM) (5). Trigger 0/25: licence granted 2022-03-28, too long ago to count as a trigger. Access 0/15: no contact route published (0). Scored automatically from the FSRA public register of financial firms (ADGM) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "score": 40
+  },
+  "has_contact_route": true,
+  "has_email": true,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "First Abu Dhabi Bank P.J.S.C.",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "FSRA (ADGM)",
+  "score": 40,
+  "segment": "bank",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "first-abu-dhabi-bank-p-j-s-c",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-22",
+    "detail": "FSRA public register of financial firms (ADGM) (https://www.adgm.com/public-registers/fsra); licence 210051 dated 2022-03-28. Snapshot: crm/registers/fsra-adgm/2026-09-22.json."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "fsra-adgm",
+    "register-sourced",
+    "new-licence",
+    "bank",
+    "uae",
+    "adgm",
+    "fsra"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": null
+}

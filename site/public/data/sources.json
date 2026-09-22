@@ -1,0 +1,70 @@
+[
+  {
+    "consecutive_failures": 0,
+    "history": [
+      {
+        "count": 666,
+        "date": "2026-09-22"
+      }
+    ],
+    "last_success_date": "2026-09-22",
+    "latest_count": 666,
+    "note": null,
+    "partial": false,
+    "register": "amf-france",
+    "regulator": "AMF",
+    "runs_seen": 1,
+    "status": "ok"
+  },
+  {
+    "consecutive_failures": 0,
+    "history": [
+      {
+        "count": 36,
+        "date": "2026-09-22"
+      }
+    ],
+    "last_success_date": "2026-09-22",
+    "latest_count": 36,
+    "note": "Partial source — reads a slice of the register, not all of it. New names are caught; disappearances are not detected.",
+    "partial": true,
+    "register": "cma-saudi",
+    "regulator": "CMA (Saudi Arabia)",
+    "runs_seen": 1,
+    "status": "ok"
+  },
+  {
+    "consecutive_failures": 0,
+    "history": [
+      {
+        "count": 319,
+        "date": "2026-09-22"
+      }
+    ],
+    "last_success_date": "2026-09-22",
+    "latest_count": 319,
+    "note": null,
+    "partial": false,
+    "register": "dfsa-difc",
+    "regulator": "DFSA (DIFC)",
+    "runs_seen": 1,
+    "status": "ok"
+  },
+  {
+    "consecutive_failures": 0,
+    "history": [
+      {
+        "count": 412,
+        "date": "2026-09-22"
+      }
+    ],
+    "last_success_date": "2026-09-22",
+    "latest_count": 412,
+    "note": null,
+    "partial": false,
+    "register": "fsra-adgm",
+    "regulator": "FSRA (ADGM)",
+    "runs_seen": 1,
+    "status": "ok"
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced from CMA licensing news search. Strong new-entrant fund-manager trigger: Qatar's Lesha Bank stood up a Saudi CMI with a full Managing Investments and Operating Funds licence, explicitly targeting institutional investors and family offices. Named CEO (Majid Hassan) found via LinkedIn but not yet verified as reachable/current. CMA register not click-verified (egress blocked).",
+      "type": "research"
+    }
+  ],
+  "city": "Riyadh",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": "https://sa.linkedin.com/in/majidhassan",
+      "name": "Majid Hassan",
+      "notes": "Named as CEO of Lesha Capital's Saudi operation in press coverage of the CMA licence grant (2026-02). LinkedIn profile found via search snippet only, not opened/verified (egress blocked) — confirm identity and title before any outreach.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "Web search 2026-09-22, corroborating Lesha Bank/Zawya press coverage of the CMA licence grant",
+      "title": "CEO, Lesha Capital (Saudi Arabia)"
+    }
+  ],
+  "country": "Saudi Arabia",
+  "created": "2026-09-22",
+  "description": "Saudi entry of Lesha Capital, a wholly-owned subsidiary of Qatar's Lesha Bank (QSE-listed, Shari'a-compliant investment institution). Granted a CMA 'Managing Investments and Operating Funds' licence (CMA resolution dated 07/11/1446H = 2025-05-05G) in addition to its existing advisory licence, becoming a fully regulated CMI in the Kingdom. Stated focus: institutional investors, family offices and other financial stakeholders across Saudi Arabia and Qatar. CEO in Saudi Arabia is Majid Hassan (per LinkedIn).",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit: priority segment fund manager (20) + priority market KSA (15) + implied multi-asset scope under a full Managing Investments and Operating Funds licence (10) + explicitly serves institutional investors and family offices, i.e. third-party money (10) + CMA-regulated (5) = 60/60. Timing: a genuine new-licence grant completed 2025-05-05, announced/confirmed 2026-02 — a foreign group's first Saudi CMI standing up its fund-management capability now, with no incumbent Saudi system to displace (20 of 25 — not scored as a full RFP/tender so capped below max). Access: a named CEO (Majid Hassan) is identified via LinkedIn but no direct contact route confirmed yet (8 of 15, named-but-unconfirmed-reachable). Total: 60+20+8=88 by table, moderated down to 68 to reflect that the licence-activity and contact details are search-snippet-sourced only, not register-verified — treat as strong-not-hot until independently confirmed.",
+    "score": 68
+  },
+  "has_contact_route": true,
+  "has_email": false,
+  "has_linkedin": true,
+  "has_phone": false,
+  "legal_name": "Lesha Capital",
+  "linkedin": "https://www.linkedin.com/company/lesha-capital",
+  "name": "Lesha Capital (Saudi Arabia)",
+  "next_action": {
+    "due": "2026-10-06",
+    "what": "Verify Lesha Capital KSA's CMA licence entry on the register and check reachability of Majid Hassan (CEO) via LinkedIn before drafting outreach",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "CMA (Saudi Arabia)",
+  "score": 68,
+  "segment": "fund_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "lesha-capital-ksa",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: CMA news 'Licenses Lesha Capital to Conduct Managing Investments and Operating Funds' (cma.gov.sa/en/MediaCenter/NEWS/Pages/CMA_N_3981.aspx, page last modified 2026-02-08, search-snippet only — CMA site not click-verified, egress blocked); corroborated via Lesha Bank press release (leshabank.com), Zawya, saudiexchange.sa issuer news, and leshacapital.com / LinkedIn."
+  },
+  "stage": "identified",
+  "status": "qualified",
+  "tags": [
+    "ksa",
+    "cma",
+    "fund-manager",
+    "new-licence",
+    "cross-border-entrant",
+    "family-offices"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.leshacapital.com/"
+}

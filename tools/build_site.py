@@ -13,7 +13,6 @@ from __future__ import annotations
 
 import argparse
 import hashlib
-import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -69,14 +68,14 @@ def main(argv=None) -> int:
     print(f"built {dist.relative_to(ROOT)}  sha256={first[:16]}")
 
     if args.check:
-        keep = SITE / ".dist-first"
-        if keep.exists():
-            shutil.rmtree(keep)
-        shutil.copytree(dist, keep)
+        # ⚠ Do NOT stash a copy of the output anywhere under site/. Tailwind 4 auto-detects its
+        # content sources by scanning the project, so a copy of the built CSS/JS inside the source
+        # tree gets scanned for class names and changes the CSS the next build emits. An earlier
+        # version of this checker copied dist to site/.dist-first and was itself the only source of
+        # nondeterminism it ever found. Comparing hashes needs no copy at all.
         build_data()
         build_app()
         second = hash_tree(dist)
-        shutil.rmtree(keep, ignore_errors=True)
         if first != second:
             print(f"NOT DETERMINISTIC: {first[:16]} != {second[:16]}", file=sys.stderr)
             return 1

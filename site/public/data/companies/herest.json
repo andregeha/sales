@@ -1,0 +1,68 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced via AFFO homepage testimonial and confirmed via herest.fr, LinkedIn and Decideurs Magazine coverage. Established, well-regarded independent MFO (11-50 employees) with no discoverable current trigger; genuinely worth watching rather than a false negative - the 2022 regional-expansion story and 2025 award are both too old or the wrong kind of signal to count as a trigger under icp.md.",
+      "type": "research"
+    }
+  ],
+  "city": "Marcq-en-Baroeul",
+  "contacts": [
+    {
+      "email": null,
+      "language": "fr",
+      "linkedin": "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-jambert-4a13336b/",
+      "name": "Jerome Jambert",
+      "notes": "Co-founded Herest in 2011 with Aymeric Mary; previously ran Indosuez Wealth Management and chaired Milleis Banque's board. AFFO board administrator. Pronouns not stated - use they/them. No email/phone published; none invented.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "LinkedIn and decideurs-magazine.com interview, found 2026-09-22",
+      "title": "Co-founder & Gerant"
+    }
+  ],
+  "country": "France",
+  "created": "2026-09-22",
+  "description": "Independent multi-family office founded 2011 (originally Lille/Marcq-en-Baroeul), now present on the Paris-Brussels axis and Auvergne-Rhone-Alpes. Neither clients, banks nor investment funds hold capital in the firm. Named best French multi-family office (Sommet du Patrimoine et de la Performance award, cited for 2025). 11-50 employees per LinkedIn. Co-founder Jerome Jambert sits on the AFFO board.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 55/60: priority segment mfo (20) + priority market France (15) + multi-asset (wealth structuring, real estate, private capital, insurance) (10) + third-party family money (10) + regulated 0/5 - no named regulator confirmed (CIF/ORIAS status implied by service description but not verified on a register in this session, so not credited). Trigger 0/25: no current trigger found - the Auvergne-Rhone-Alpes regional launch is dated to 2022 (via Decideurs interview) and the 2025 best-MFO award is recognition, not a buying event; both are stale or not a system-replacement signal. Access 8/15: named, reachable co-founder Jerome Jambert with a public LinkedIn profile (no email/phone published). Total 63, but status set to nurture per the no-trigger rule (CLAUDE.md/icp.md): watch for a new office launch, a senior hire, or a reported system/compliance project before treating this as active pipeline.",
+    "score": 63
+  },
+  "has_contact_route": true,
+  "has_email": false,
+  "has_linkedin": true,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": "https://fr.linkedin.com/company/herest",
+  "name": "Herest",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": null,
+  "score": 63,
+  "segment": "mfo",
+  "size": {
+    "aum": null,
+    "employees": "11-50",
+    "portfolios": null
+  },
+  "slug": "herest",
+  "source": {
+    "channel": "web_search",
+    "date": "2026-09-22",
+    "detail": "Web search on French multi-family offices, cross-checked against AFFO board (Jerome Jambert is an AFFO administrator). WebFetch of herest.fr and LinkedIn company page. Not click-verified beyond those two fetches."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "france",
+    "mfo",
+    "family-office",
+    "affo-member",
+    "no-current-trigger",
+    "established"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.herest.fr/"
+}

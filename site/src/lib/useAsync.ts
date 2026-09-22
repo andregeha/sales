@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 
-type State<T> = { status: "loading" } | { status: "ok"; data: T } | { status: "error"; error: Error };
+type State<T> =
+  | { status: "loading" }
+  | { status: "ok"; data: T }
+  | { status: "error"; error: Error };
 
 /**
  * Minimal async loader. No TanStack Query: there is no server, no cache invalidation and no

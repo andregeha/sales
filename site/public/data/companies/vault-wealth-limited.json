@@ -1,0 +1,55 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "UAE ADGM sourcing pass: identified and disqualified as a direct-to-consumer digital wealth app rather than an institutional/family-office asset manager. Recorded with reasoning so this firm is not re-evaluated as a lead next quarter.",
+      "type": "research"
+    }
+  ],
+  "city": "Abu Dhabi",
+  "contacts": [],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": "ADGM-regulated (FSRA Category 3C for managing assets, also Category 4 for advising/arranging) digital wealth platform, secured its licence mid-2023. Client assets are held at Interactive Brokers (IBKR), segregated, with SIPC/FDIC protection cited; delivery is via an app/digital platform to individual investors, with CFA/CFP-certified advisors described as fiduciaries. The business model (app-based, third-party custody, consumer-facing marketing comparing itself to a UAE retail bank's wealth offering) reads as a direct-to-consumer digital wealth/robo-advisory product rather than an institutional or family-office book-of-business needing a front-to-back PMS.",
+  "fit": {
+    "disqualified_reason": "Direct-to-consumer digital wealth/robo-advisory app (assets custodied at IBKR, marketed to the general public, compared against a retail bank's offering) rather than an institutional or family-office asset manager needing a front-to-back PMS — matches the ICP's retail/neobank consumer-product disqualifier. Revisit only if it pivots to a B2B/institutional model.",
+    "reasoning": "Fit ~20/60: FSRA-regulated (5) and UAE market (15) are real, but the business is structured as a direct-to-consumer digital wealth app (client assets at IBKR, general-public marketing, comparison pages against a retail bank) rather than a firm managing pooled or discretionary books for family offices/institutions in the sense the ICP targets — scored 0 for priority segment, multi-asset and third-party-by-way-of-business criteria. This matches the ICP's explicit disqualifier: 'a retail brokerage or neobank wanting a consumer product, not a management platform.'",
+    "score": 20
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Vault Wealth Limited",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "FSRA",
+  "score": 20,
+  "segment": "asset_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "vault-wealth-limited",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "adgm.com/public-registers/fsra/firms/financial-firms/vault-wealth-limited-220092 (search-confirmed); vaultwealth.com/about, /vs/adcb (consumer-comparison marketing), finextra.com 'Mena wealth platform Vault opens to the general public'. Searched 2026-09-22."
+  },
+  "stage": "parked",
+  "status": "disqualified",
+  "tags": [
+    "uae",
+    "adgm",
+    "fsra",
+    "disqualified",
+    "retail-wealthtech"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://vaultwealth.com/"
+}

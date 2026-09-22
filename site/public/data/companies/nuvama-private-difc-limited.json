@@ -1,0 +1,67 @@
+{
+  "activities": [],
+  "city": "Dubai",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": "https://ae.linkedin.com/in/vishwajit-patil",
+      "name": "Vishwajit Patil",
+      "notes": "20+ years in banking/wealth management; previously Head Director, Key Initiatives & Global Private Wealth at InCred Global Wealth, and VP/Senior Relationship Manager, Private Banking at Credit Suisse. No verified email/phone found — ZoomInfo shows only a masked address pattern (v***@nuvama.com), which is not a confirmed contact and was not used.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "LinkedIn (ae.linkedin.com/in/vishwajit-patil), Wealthbriefing and Hubbis coverage of the Aug 2024 DIFC launch, checked 2026-09-22.",
+      "title": "Senior Executive Officer, Nuvama Private (DIFC) Limited"
+    }
+  ],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": "Dubai arm of Nuvama Private, the PAG-backed Indian wealth manager (formerly Edelweiss Wealth Management, India-listed). DFSA-licensed 19-Jul-2024 (CAT 3C) with a Holding/Controlling Client Assets endorsement, to serve non-resident Indians and global clients from DIFC, distributing investment products and advising on wealth. Officially launched operations 6-Aug-2024; plans to build a team of up to four bankers in Dubai. Vishwajit Patil appointed Senior Executive Officer of the DIFC entity.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 45/60: priority segment asset/wealth manager (20) + priority market UAE (15) + regulated with client-asset endorsement (5) — multi-asset and third-party-money points are not separately certain from public material (advisory/distribution model, likely does hold third-party assets given the endorsement, so partial credit only, +5 not full 20 for those two rows) — kept deliberately conservative pending direct confirmation of what it actually books in DIFC. Timing 20/25: new DFSA licence (19-Jul-2024) plus a well-documented public launch (Aug 2024) building a fresh Dubai team — a genuine greenfield build with no incumbent. Access 8/15: named, reachable decision-maker (Vishwajit Patil, Senior Executive Officer, LinkedIn verified) but no published direct email/phone found (ZoomInfo shows only a masked pattern, not a real found address — not used). Total 73 rounds to 74 — strong queue candidate, though worth confirming during outreach prep whether the DIFC entity actually needs a portfolio/fund system locally or leans mainly on group-wide Nuvama India infrastructure.",
+    "score": 74
+  },
+  "has_contact_route": true,
+  "has_email": false,
+  "has_linkedin": true,
+  "has_phone": false,
+  "legal_name": "Nuvama Private (DIFC) Limited",
+  "linkedin": null,
+  "name": "Nuvama Private (DIFC) Limited",
+  "next_action": {
+    "due": "2026-10-20",
+    "what": "Confirm via a DIFC-side conversation whether Nuvama Private's DIFC book runs on group (India) infrastructure or needs a local portfolio/reporting system before drafting outreach",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "DFSA",
+  "score": 74,
+  "segment": "asset_manager",
+  "size": {
+    "aum": "USD 20bn (UHNW book) + USD 7-8bn (HNW book), group-wide per 2024 launch press, not DIFC-entity-specific",
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "nuvama-private-difc-limited",
+  "source": {
+    "channel": "register_search",
+    "date": "2026-09-22",
+    "detail": "DFSA public register (dfsa.ae/public-register/firms/nuvama-wealth-management-difc-limited — registered name shown as Nuvama Private (DIFC) Limited), ref F009457, Date of Licence 19-Jul-2024, fetched via curl 2026-09-22; corroborated by DIFC news, WAM, FinanceAsia, Wealthbriefing and Hubbis coverage of the 6-Aug-2024 launch."
+  },
+  "stage": "identified",
+  "status": "qualified",
+  "tags": [
+    "uae",
+    "difc",
+    "dfsa",
+    "asset-manager",
+    "trigger-new-licence",
+    "wealth-management",
+    "nri-focus",
+    "cross-border-entrant"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.nuvama.com"
+}

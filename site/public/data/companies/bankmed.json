@@ -1,0 +1,58 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced from BDL bank list. Named Chairperson Raya Haffar El Hassan (since Oct 2020); Executive GM name found (Michel Accad, 2020) not re-verified as current. Resolution-track status not publicly confirmed.",
+      "type": "research"
+    }
+  ],
+  "city": "Beirut",
+  "contacts": [],
+  "country": "Lebanon",
+  "created": "2026-09-22",
+  "description": "Major Lebanese commercial bank (Hariri-family-linked ownership history), full-service retail, corporate, private and correspondent banking, part of the wider Hariri/M1 Group financial network. Chairperson of the Board since October 2020: Raya Haffar El Hassan (former Lebanese finance and interior minister); Executive General Manager historically Michel Accad (2020) - current 2026 incumbent not independently confirmed in this research.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit: priority segment bank (20) + Lebanon (15) + multi-asset commercial/private/correspondent banking (10) + third-party deposits (10) + BDL regulated (5) = 60/60. Timing: sector-wide regulatory pressure only (10/25), no individual viability confirmation found - gating question unresolved. Access: named Chairperson (Raya Haffar El Hassan) identified but her current 2026 role not re-confirmed, no contact route, and the Executive GM name found (Michel Accad) dates to 2020 and was not re-verified as current = 3/15 (stale/uncertain named contact only). Total mechanically ~73, held to 48 given both the resolution-status gate and uncertainty about who currently leads the bank operationally - re-verify leadership before any approach.",
+    "score": 48
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": "BankMed S.A.L.",
+  "linkedin": "https://www.linkedin.com/company/bankmed",
+  "name": "BankMed",
+  "next_action": {
+    "due": "2026-10-31",
+    "what": "Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation) before any outreach",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "Banque du Liban (BDL) / Banking Control Commission",
+  "score": 48,
+  "segment": "bank",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "bankmed",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: Equilar ExecAtlas BankMed executive bios; businessnews.com.lb; bankmed.com.lb. No public confirmation found of BankMed's individual viability/recapitalisation status under Law 23/2025; current (2026) Executive General Manager not confirmed beyond a 2020 appointment record."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "lebanon",
+    "bdl",
+    "bank",
+    "resolution-status-unknown"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.bankmed.com.lb"
+}

@@ -1,0 +1,67 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced via vasco.fund's cartography of French CGP/family-office players; confirmed via agorafinance.fr and LinkedIn company page. Founder Aurelien Guichard named on the company site but no verified direct contact route found in this session. No trigger identified.",
+      "type": "research"
+    }
+  ],
+  "city": "Paris",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Aurelien Guichard",
+      "notes": "Founded Agora Finance in 2007; member of the Chambre Nationale des Conseils en Gestion de Patrimoine. No LinkedIn/email/phone confirmed in this session; none invented. Pronouns not stated - use they/them.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "agorafinance.fr and infonet.fr director listing, found 2026-09-22",
+      "title": "Founder"
+    }
+  ],
+  "country": "France",
+  "created": "2026-09-22",
+  "description": "Independent multi-family office founded 2007 in Paris by Aurelien Guichard, covering financial, real-estate and tax engineering for entrepreneurs and wealthy families. 11-50 employees per LinkedIn. Awards from Decideurs magazine (best wealth-management cabinet) and a Green Finance trophy; no AUM figure published.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 55/60: priority segment mfo (20) + priority market France (15) + multi-asset (financial, real estate, tax engineering) (10) + third-party family money (10) + regulated 0/5 - no named regulator confirmed in this session. Trigger 0/25: no current trigger found - firm appears stable since 2007 with no reported hire, launch or incident. Access 3/15: only a generic company contact route plus a named founder (Aurelien Guichard) without a confirmed reachable profile (no LinkedIn/email/phone found and verified) - scored as generic-contact-only rather than the higher named-decision-maker band. Total 58; status nurture per the no-trigger rule - re-check for a launch, hire or press mention before spending outreach effort.",
+    "score": 58
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": "https://fr.linkedin.com/company/agora-finance",
+  "name": "Agora Finance",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": null,
+  "score": 58,
+  "segment": "mfo",
+  "size": {
+    "aum": null,
+    "employees": "11-50",
+    "portfolios": null
+  },
+  "slug": "agora-finance",
+  "source": {
+    "channel": "web_search",
+    "date": "2026-09-22",
+    "detail": "Web search on French multi-family offices (vasco.fund cartography article) plus WebFetch of agorafinance.fr and LinkedIn company page. Not click-verified beyond those fetches."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "france",
+    "mfo",
+    "family-office",
+    "no-current-trigger",
+    "established"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://agorafinance.fr/"
+}

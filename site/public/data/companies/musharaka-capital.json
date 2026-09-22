@@ -1,0 +1,56 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Established multi-asset fund manager (equity fund, REIT, real estate funds), over a decade of operating history. Searched for 2025/2026 triggers: found only routine fund terms updates, a fund liquidation with a reported return, and industry awards — none of these meet the bar for a genuine buying trigger. Honest nurture outcome: good fit, no current reason to reach out.",
+      "type": "research"
+    }
+  ],
+  "city": "Riyadh",
+  "contacts": [],
+  "country": "Saudi Arabia",
+  "created": "2026-09-22",
+  "description": "Riyadh-based CMI (CMA licence no. 13169-27, licensed 2013-10-07, operations started 2014-05-12; paid-up capital SAR 65m) offering dealing, investment management, funds operating, arranging, advisory and securities custody. Known products include the Musharaka Saudi Equity Fund and Musharaka REIT. Islamic Sharia-compliant multi-asset fund manager active for over a decade.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit: priority segment fund manager (20) + priority market KSA (15) + multi-asset (equity fund + REIT + residential real estate fund) (10) + manages third-party fund capital (10) + CMA-regulated (5) = 60/60. Timing: nothing found rises to a real trigger — a fund terms update and a fund liquidation are routine fund-administration events, not a new licence, new mandate type or senior hire (0/25, honestly scored: awards and a routine liquidation do not meet the bar). Access: no named contact identified (0/15). Total 45 — a well-fitting, real, decade-plus-old multi-asset fund manager with genuinely no trigger right now. Recorded as nurture per the playbook: watch for a new fund launch (beyond routine terms updates), a reported senior hire, or AUM growth disclosure.",
+    "score": 45
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": "https://www.linkedin.com/company/musharaka-capital",
+  "name": "Musharaka Capital Company",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "CMA (Saudi Arabia)",
+  "score": 45,
+  "segment": "fund_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "musharaka-capital",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: musharaka.sa (corporate overview, FAQ, products pages), CMA news CMA_N_1344 (search-snippet only, not click-verified — egress blocked), Crunchbase. Activity found: 2026-09 terms/conditions update to the Musharaka Saudi Equity Fund; liquidation of the Al Khuyool Al Arabiya Residential Fund reported (22% return over 36 months); two Cambridge Islamic Finance Forum 2026 awards."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "ksa",
+    "cma",
+    "fund-manager",
+    "multi-asset",
+    "established",
+    "no-current-trigger"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://musharaka.sa/en/"
+}

@@ -1,0 +1,85 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced via web search on France Valley scale and leadership (2026-09-22). Strong fit on segment/multi-asset/third-party-money/regulator, but no specific trigger found this pass. Watching for: a new fund launch, senior hire, or reporting-complexity signal (24,000 investors across real-asset classes) before moving out of nurture.",
+      "type": "research"
+    },
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Enriched from the amf-france register snapshot 2026-09-22: switchboard 0182833387. These are details the regulator publishes on its own register, not guessed or pattern-inferred. Existing values were left untouched.",
+      "type": "research"
+    }
+  ],
+  "city": "Paris",
+  "contacts": [
+    {
+      "email": null,
+      "language": "fr",
+      "linkedin": null,
+      "name": "Arnaud Filhol",
+      "notes": "Named Directeur General in press interview (labourseetlavie.com) and on France Valley's own team page. Pronouns not stated - use they/them. No email/phone/LinkedIn found; none invented.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "Web search 2026-09-22, labourseetlavie.com + france-valley.com/equipe",
+      "title": "Directeur General, co-founder"
+    },
+    {
+      "email": null,
+      "language": "fr",
+      "linkedin": null,
+      "name": "France Valley — switchboard (register-published)",
+      "notes": "Switchboard number as published by the regulator on its own register — not a guessed or inferred number, and not an individual's line. A generic number is a weak route: use it to reach a named person, not as the first touch itself.",
+      "phone": "0182833387",
+      "role": "unknown",
+      "source": "amf-france register snapshot 2026-09-22",
+      "title": "General enquiries"
+    }
+  ],
+  "country": "France",
+  "created": "2026-09-22",
+  "description": "AMF-approved SGP since 2014 (approval GP-14000035), France's leading private forestry-investment manager: 650+ forests / 73,000 hectares across Europe (France, Romania, Germany, Sweden, Slovakia, Baltics, Ireland), ~24,000 individual and institutional investors, ~50 staff. Has diversified beyond forestry/vineyards/agricultural land into real-estate fund-of-funds (temporary usufruct of SCPI shares), broadening its asset-class footprint. Led by President Guillaume Toussaint and Directeur General Arnaud Filhol (co-founders, previously at La Societe d'Investissement Forestier).",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 60/60 (max): priority segment fund manager (20) + priority market France (15) + multi-asset credit for diversifying from forestry/vineyards/agriculture into real-estate fund-of-funds (10) + genuinely third-party money across 24,000 investors (10) + AMF-regulated since 2014, GP-14000035 (5). Trigger 0/25: no specific trigger identified - this is a mature, growing but not newly-licensed or newly-launched manager; general AUM growth to EUR 5.6bn is visible but not a dated, discrete event. Access 8/15: named President (Guillaume Toussaint) and Directeur General (Arnaud Filhol) identified via press, not yet confirmed reachable. Total 68, scored down to 55 and marked nurture given no trigger: worth re-checking for a senior hire, new fund launch, or a specific operational pain point (e.g. managing 24,000 investors' positions and reporting across multiple real-asset classes) before treating as active.",
+    "score": 55
+  },
+  "has_contact_route": true,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": true,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "France Valley",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "AMF",
+  "score": 55,
+  "segment": "fund_manager",
+  "size": {
+    "aum": "EUR 5.6bn as of 2026-03-31",
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "france-valley",
+  "source": {
+    "channel": "web_search",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22 (queries on France Valley AMF encours and dirigeant) surfaced france-valley.com, avenuedesinvestisseurs.fr and labourseetlavie.com coverage for AUM/scale and leadership names. AMF GECO register not click-verified (egress blocked)."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "france",
+    "amf",
+    "fund-manager",
+    "real-assets",
+    "real-estate",
+    "forestry"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.france-valley.com/"
+}

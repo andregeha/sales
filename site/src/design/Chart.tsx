@@ -102,8 +102,17 @@ export function BarSeries({
 }) {
   return (
     <ResponsiveContainer width="100%" height="100%">
-      <BarChart data={data} layout={horizontal ? "vertical" : "horizontal"} margin={{ top: 4, right: 8, bottom: 0, left: 0 }}>
-        <CartesianGrid stroke="var(--border)" vertical={!horizontal} horizontal={horizontal} strokeDasharray="2 4" />
+      <BarChart
+        data={data}
+        layout={horizontal ? "vertical" : "horizontal"}
+        margin={{ top: 4, right: 8, bottom: 0, left: 0 }}
+      >
+        <CartesianGrid
+          stroke="var(--border)"
+          vertical={!horizontal}
+          horizontal={horizontal}
+          strokeDasharray="2 4"
+        />
         {horizontal ? (
           <>
             <XAxis type="number" {...axis} />
@@ -142,7 +151,13 @@ export function AreaSeries({ data, x, y }: { data: Datum[]; x: string; y: string
         <XAxis dataKey={x} {...axis} />
         <YAxis {...axis} width={40} />
         <ChartTooltip />
-        <Area type="monotone" dataKey={y} stroke="var(--chart-1)" strokeWidth={2} fill="url(#areaFill)" />
+        <Area
+          type="monotone"
+          dataKey={y}
+          stroke="var(--chart-1)"
+          strokeWidth={2}
+          fill="url(#areaFill)"
+        />
       </AreaChart>
     </ResponsiveContainer>
   );
@@ -170,7 +185,14 @@ export function Sparkline({
     <div style={{ height, width: 120 }}>
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data} margin={{ top: 2, right: 2, bottom: 2, left: 2 }}>
-          <Line type="monotone" dataKey={y} stroke={tone} strokeWidth={1.75} dot={false} isAnimationActive={false} />
+          <Line
+            type="monotone"
+            dataKey={y}
+            stroke={tone}
+            strokeWidth={1.75}
+            dot={false}
+            isAnimationActive={false}
+          />
         </LineChart>
       </ResponsiveContainer>
     </div>
@@ -203,7 +225,10 @@ export function CoverageMatrix({
           <tr>
             <th className="px-2 py-1" />
             {cols.map((c) => (
-              <th key={c} className="px-2 py-1 text-left text-micro font-semibold text-muted uppercase">
+              <th
+                key={c}
+                className="px-2 py-1 text-left text-micro font-semibold text-muted uppercase"
+              >
                 {colLabel?.(c) ?? c}
               </th>
             ))}
@@ -229,7 +254,9 @@ export function CoverageMatrix({
                       style={
                         n === 0
                           ? undefined
-                          : { background: `color-mix(in oklch, var(--accent) ${intensity * 100}%, transparent)` }
+                          : {
+                              background: `color-mix(in oklch, var(--accent) ${intensity * 100}%, transparent)`,
+                            }
                       }
                     >
                       {n === 0 ? "none" : n}

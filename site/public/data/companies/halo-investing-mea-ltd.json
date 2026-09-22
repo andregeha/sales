@@ -1,0 +1,69 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": "https://www.adgm.com/public-registers/fsra",
+      "summary": "Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 220081, authorised 2023-01-19, Dealing In Investments. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Maryah Island, Office 502, Level 5, Al Sarab Tower, Abu Dhabi Global Market Square",
+      "type": "research"
+    }
+  ],
+  "city": "Abu Dhabi",
+  "contacts": [
+    {
+      "email": "compliance@haloinvesting.ae",
+      "language": "en",
+      "linkedin": null,
+      "name": "Halo Investing MEA Ltd — contact published on the FSRA register",
+      "notes": "Email and/or telephone exactly as the FSRA publishes them on its own public register — not guessed, not pattern-inferred. ⚠ The address the regulator holds is often a named individual's work address rather than a general inbox; check who it belongs to before writing, and treat it as a real person.",
+      "phone": "+971 25832482",
+      "role": "unknown",
+      "source": "FSRA public register, https://www.adgm.com/public-registers/fsra/firms/financial-firms/halo-investing-mea-ltd-220081",
+      "title": "General enquiries"
+    }
+  ],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 30/60: adjacent segment broker (10) + priority market UAE (15) + regulated by FSRA (ADGM) (5). Trigger 0/25: licence granted 2023-01-19, too long ago to count as a trigger. Access 3/15: generic company contact published on the register (3). Scored automatically from the FSRA public register of financial firms (ADGM) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "score": 33
+  },
+  "has_contact_route": true,
+  "has_email": true,
+  "has_linkedin": false,
+  "has_phone": true,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Halo Investing MEA Ltd",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "FSRA (ADGM)",
+  "score": 33,
+  "segment": "broker",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "halo-investing-mea-ltd",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-22",
+    "detail": "FSRA public register of financial firms (ADGM) (https://www.adgm.com/public-registers/fsra); licence 220081 dated 2023-01-19. Snapshot: crm/registers/fsra-adgm/2026-09-22.json."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "fsra-adgm",
+    "register-sourced",
+    "new-licence",
+    "broker",
+    "uae",
+    "adgm",
+    "fsra"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": null
+}

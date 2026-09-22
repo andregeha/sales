@@ -13,12 +13,14 @@ import {
   Globe2,
   History,
   LayoutGrid,
+  Moon,
   Radio,
   ServerCog,
   Sun,
-  Moon,
 } from "lucide-react";
 import { Suspense, useEffect, useState } from "react";
+import { cn } from "./design/primitives";
+import { Link, useRoute } from "./lib/router";
 import { Companies } from "./routes/Companies";
 import { CompanyDetail } from "./routes/CompanyDetail";
 import { Events } from "./routes/Events";
@@ -29,8 +31,6 @@ import { Rfps } from "./routes/Rfps";
 import { Runs } from "./routes/Runs";
 import { Sources } from "./routes/Sources";
 import { Today } from "./routes/Today";
-import { Link, useRoute } from "./lib/router";
-import { cn } from "./design/primitives";
 
 const NAV = [
   { to: "/", label: "Today", icon: LayoutGrid },
@@ -67,7 +67,10 @@ function Nav({ route }: { route: string }) {
   return (
     <nav className="sticky top-0 z-20 border-b bg-surface/85 backdrop-blur-sm">
       <div className="mx-auto flex max-w-[1400px] items-center gap-1 overflow-x-auto px-3 sm:px-6">
-        <Link to="/" className="mr-3 shrink-0 py-3 font-semibold tracking-[-0.01em] whitespace-nowrap">
+        <Link
+          to="/"
+          className="mr-3 shrink-0 py-3 font-semibold tracking-[-0.01em] whitespace-nowrap"
+        >
           OFS <span className="text-muted">Sales</span>
         </Link>
         {NAV.map(({ to, label, icon: Icon }) => {
@@ -102,7 +105,8 @@ function Loading() {
 
 function render(route: string) {
   if (route === "/") return <Today />;
-  if (route.startsWith("/companies/")) return <CompanyDetail slug={decodeURIComponent(route.slice("/companies/".length))} />;
+  if (route.startsWith("/companies/"))
+    return <CompanyDetail slug={decodeURIComponent(route.slice("/companies/".length))} />;
   if (route.startsWith("/companies")) return <Companies />;
   if (route.startsWith("/triggers")) return <Events />;
   if (route.startsWith("/pipeline")) return <Pipeline />;
@@ -116,7 +120,6 @@ function render(route: string) {
 
 export function App() {
   const route = useRoute();
-  // biome-ignore lint/correctness/useHookAtTopLevel: effect is unconditional
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

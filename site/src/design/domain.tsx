@@ -46,10 +46,17 @@ function Badge({
  * because something is happening, `nurture` is deliberately quiet because nothing is.
  */
 export function StatusBadge({ status }: { status: string }) {
-  const map: Record<string, { tone: Parameters<typeof Badge>[0]["tone"]; label: string; title: string }> = {
+  const map: Record<
+    string,
+    { tone: Parameters<typeof Badge>[0]["tone"]; label: string; title: string }
+  > = {
     new: { tone: "info", label: "new", title: "Recorded, not yet assessed" },
     researching: { tone: "info", label: "researching", title: "Being worked up" },
-    qualified: { tone: "accent", label: "qualified", title: "Has a real trigger — a reason to write now" },
+    qualified: {
+      tone: "accent",
+      label: "qualified",
+      title: "Has a real trigger — a reason to write now",
+    },
     contacted: { tone: "accent", label: "contacted", title: "We have reached out" },
     engaged: { tone: "positive", label: "engaged", title: "They replied" },
     opportunity: { tone: "positive", label: "opportunity", title: "A live deal" },
@@ -100,7 +107,9 @@ const SEGMENT_LABELS: Record<string, string> = {
 /** Our three priority segments read normally; adjacent ones are visually quieter. */
 export function SegmentTag({ segment }: { segment: string | null | undefined }) {
   if (!segment) return <span className="text-subtle italic text-micro">no segment</span>;
-  const priority = ["family_office", "mfo", "bank", "asset_manager", "fund_manager"].includes(segment);
+  const priority = ["family_office", "mfo", "bank", "asset_manager", "fund_manager"].includes(
+    segment,
+  );
   return (
     <span className={cn("whitespace-nowrap text-small", priority ? "text-text" : "text-subtle")}>
       {SEGMENT_LABELS[segment] ?? segment}
@@ -130,7 +139,10 @@ export function ContactRoute({
 }) {
   if (!hasEmail && !hasPhone && !hasLinkedin) {
     return (
-      <span className="inline-flex items-center gap-1 text-micro text-critical" title="No way to reach this firm — the binding constraint on the whole engine">
+      <span
+        className="inline-flex items-center gap-1 text-micro text-critical"
+        title="No way to reach this firm — the binding constraint on the whole engine"
+      >
         no route
       </span>
     );

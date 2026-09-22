@@ -11,7 +11,7 @@
  *   4. Reachability — the binding constraint, shown as a problem.
  */
 import { AlertTriangle, CalendarClock, Inbox } from "lucide-react";
-import { Chart, BarSeries } from "../design/Chart";
+import { BarSeries, Chart } from "../design/Chart";
 import { DataTable, Td, Tr } from "../design/DataGrid";
 import { ContactRoute, MarketTag, ScoreBadge, SegmentTag, TriggerLine } from "../design/domain";
 import {
@@ -63,10 +63,12 @@ export function Today() {
   const reachable = actionable.filter((c) => c.has_contact_route);
   const blocked = actionable.length - reachable.length;
 
-  const routeData = stats.contact_route_by_market.map((m) => ({
-    country: m.country,
-    reachable: m.total === 0 ? 0 : Math.round((m.with_route / m.total) * 100),
-  }));
+  const routeData = stats.contact_route_by_market
+    .map((m) => ({
+      country: m.country,
+      reachable: m.total === 0 ? 0 : Math.round((m.with_route / m.total) * 100),
+    }))
+    .sort((a, b) => b.reachable - a.reachable);
 
   return (
     <Page>
@@ -79,8 +81,9 @@ export function Today() {
       {failing.length > 0 ? (
         <Section>
           <Callout tone="critical" title={`${failing.length} source could not be read`}>
-            {failing.map((s) => s.register).join(", ")} — this means <strong>we did not look</strong>,
-            not that nothing happened. Do not read any zero below as a quiet day.{" "}
+            {failing.map((s) => s.register).join(", ")} — this means{" "}
+            <strong>we did not look</strong>, not that nothing happened. Do not read any zero below
+            as a quiet day.{" "}
             <Link to="/sources" className="underline">
               See sources
             </Link>
@@ -99,8 +102,17 @@ export function Today() {
 
       <Section>
         <StatRow>
-          <Stat label="with a reason to write" value={actionable.length} tone="accent" hint={`of ${stats.active_total.toLocaleString("en-GB")} active records`} />
-          <Stat label="of those we can reach" value={reachable.length} tone={reachable.length > 0 ? "positive" : "critical"} />
+          <Stat
+            label="with a reason to write"
+            value={actionable.length}
+            tone="accent"
+            hint={`of ${stats.active_total.toLocaleString("en-GB")} active records`}
+          />
+          <Stat
+            label="of those we can reach"
+            value={reachable.length}
+            tone={reachable.length > 0 ? "positive" : "critical"}
+          />
           <Stat
             label="blocked on a contact route"
             value={blocked}
@@ -112,7 +124,10 @@ export function Today() {
       </Section>
 
       {/* 2. Deadlines. */}
-      <Section title="Closing soon" description="A missed deadline is the worst thing this workspace can produce.">
+      <Section
+        title="Closing soon"
+        description="A missed deadline is the worst thing this workspace can produce."
+      >
         {soon.length === 0 ? (
           <EmptyState icon={CalendarClock} title="No open deadlines on record">
             That is a real result for the public portals — but note they only carry <em>public</em>{" "}

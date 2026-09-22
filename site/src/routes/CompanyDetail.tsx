@@ -55,7 +55,10 @@ export function CompanyDetail({ slug }: { slug: string }) {
   return (
     <Page>
       <div className="pt-6">
-        <Link to="/companies" className="inline-flex items-center gap-1.5 text-small text-muted hover:text-accent">
+        <Link
+          to="/companies"
+          className="inline-flex items-center gap-1.5 text-small text-muted hover:text-accent"
+        >
           <ArrowLeft className="size-3.5" /> all companies
         </Link>
       </div>
@@ -82,8 +85,9 @@ export function CompanyDetail({ slug }: { slug: string }) {
       {!c.has_contact_route ? (
         <Section>
           <Callout tone="critical" title="No contact route">
-            We hold no email, phone or LinkedIn profile for anyone here. Until that changes this firm
-            cannot be worked, whatever its score. <strong>Never guess an address to fill the gap.</strong>
+            We hold no email, phone or LinkedIn profile for anyone here. Until that changes this
+            firm cannot be worked, whatever its score.{" "}
+            <strong>Never guess an address to fill the gap.</strong>
           </Callout>
         </Section>
       ) : null}
@@ -96,19 +100,26 @@ export function CompanyDetail({ slug }: { slug: string }) {
             </Panel>
           </Section>
 
-          <Section title="How this score was reached" description="Scored against knowledge/market/icp.md.">
+          <Section
+            title="How this score was reached"
+            description="Scored against knowledge/market/icp.md."
+          >
             {fit.reasoning ? (
               <Panel className="px-4 py-3">
                 <Prose>{fit.reasoning}</Prose>
               </Panel>
             ) : (
               <EmptyState title="No reasoning recorded">
-                A score without its reasoning is not trustworthy — the reasoning is the part that matters.
+                A score without its reasoning is not trustworthy — the reasoning is the part that
+                matters.
               </EmptyState>
             )}
           </Section>
 
-          <Section title="Timeline" description={`${activities.length} recorded ${activities.length === 1 ? "entry" : "entries"}.`}>
+          <Section
+            title="Timeline"
+            description={`${activities.length} recorded ${activities.length === 1 ? "entry" : "entries"}.`}
+          >
             {activities.length === 0 ? (
               <EmptyState title="Nothing recorded yet" />
             ) : (
@@ -121,7 +132,9 @@ export function CompanyDetail({ slug }: { slug: string }) {
                   >
                     <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                       <span className="tnum text-small text-muted">{a.date}</span>
-                      <span className="text-micro tracking-wide text-subtle uppercase">{a.type.replace(/_/g, " ")}</span>
+                      <span className="text-micro tracking-wide text-subtle uppercase">
+                        {a.type.replace(/_/g, " ")}
+                      </span>
                       {a.link ? (
                         <SourceLink href={a.link}>
                           source <ExternalLink className="inline size-3" />
@@ -151,7 +164,8 @@ export function CompanyDetail({ slug }: { slug: string }) {
                 <Field label="Website">
                   {c.website ? (
                     <SourceLink href={c.website}>
-                      {c.website.replace(/^https?:\/\//, "")} <ExternalLink className="inline size-3" />
+                      {c.website.replace(/^https?:\/\//, "")}{" "}
+                      <ExternalLink className="inline size-3" />
                     </SourceLink>
                   ) : (
                     <Unknown />
@@ -160,11 +174,18 @@ export function CompanyDetail({ slug }: { slug: string }) {
                 <Field label="Stage">{c.stage ?? <Unknown />}</Field>
                 <Field label="Owner">{c.owner ?? <Unknown />}</Field>
                 <Field label="Reach">
-                  <ContactRoute hasEmail={c.has_email} hasPhone={c.has_phone} hasLinkedin={c.has_linkedin} />
+                  <ContactRoute
+                    hasEmail={c.has_email}
+                    hasPhone={c.has_phone}
+                    hasLinkedin={c.has_linkedin}
+                  />
                 </Field>
                 <Field label="Record">
                   <Mono>{c.slug}</Mono>
-                  <span className="text-micro text-subtle"> · created {c.created} · updated {c.updated}</span>
+                  <span className="text-micro text-subtle">
+                    {" "}
+                    · created {c.created} · updated {c.updated}
+                  </span>
                 </Field>
               </dl>
             </Panel>
@@ -183,7 +204,9 @@ export function CompanyDetail({ slug }: { slug: string }) {
 
           <Section title={`Contacts (${contacts.length})`}>
             {contacts.length === 0 ? (
-              <EmptyState title="No named contact">Nothing has been invented to fill this.</EmptyState>
+              <EmptyState title="No named contact">
+                Nothing has been invented to fill this.
+              </EmptyState>
             ) : (
               <div className="space-y-3">
                 {contacts.map((k) => (
@@ -192,7 +215,10 @@ export function CompanyDetail({ slug }: { slug: string }) {
                     {k.title ? <div className="text-small text-muted">{k.title}</div> : null}
                     <div className="mt-2 flex flex-wrap items-center gap-3 text-small">
                       {k.email ? (
-                        <a href={`mailto:${k.email}`} className="inline-flex items-center gap-1 text-accent hover:underline">
+                        <a
+                          href={`mailto:${k.email}`}
+                          className="inline-flex items-center gap-1 text-accent hover:underline"
+                        >
                           <Mail className="size-3.5" /> {k.email}
                         </a>
                       ) : null}
@@ -201,9 +227,7 @@ export function CompanyDetail({ slug }: { slug: string }) {
                           <Phone className="size-3.5" /> {k.phone}
                         </span>
                       ) : null}
-                      {k.linkedin ? (
-                        <SourceLink href={k.linkedin}>LinkedIn</SourceLink>
-                      ) : null}
+                      {k.linkedin ? <SourceLink href={k.linkedin}>LinkedIn</SourceLink> : null}
                     </div>
                     {k.notes ? <p className="mt-2 text-micro text-subtle">{k.notes}</p> : null}
                     {k.source ? (

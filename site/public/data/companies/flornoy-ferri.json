@@ -1,0 +1,85 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced via web search on societe de gestion M&A/consolidation activity (2026-09-22). Flornoy Ferri (GP-12000007) is actively rolling up regional private-wealth practices (GDP Conseil, more planned in Bordeaux) - worth qualifying which back-office platform it runs today.",
+      "type": "research"
+    },
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Enriched from the amf-france register snapshot 2026-09-22: switchboard 0142865300. These are details the regulator publishes on its own register, not guessed or pattern-inferred. Existing values were left untouched.",
+      "type": "research"
+    }
+  ],
+  "city": "Paris",
+  "contacts": [
+    {
+      "email": null,
+      "language": "fr",
+      "linkedin": null,
+      "name": "Teddy Dewitte",
+      "notes": "Named as Directeur general delegue / COO in press coverage. Pronouns not stated - use they/them. No email/phone/LinkedIn found; none invented.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "Web search 2026-09-22, press coverage of Flornoy Ferri leadership",
+      "title": "Directeur general delegue (COO)"
+    },
+    {
+      "email": null,
+      "language": "fr",
+      "linkedin": null,
+      "name": "Flornoy Ferri — switchboard (register-published)",
+      "notes": "Switchboard number as published by the regulator on its own register — not a guessed or inferred number, and not an individual's line. A generic number is a weak route: use it to reach a named person, not as the first touch itself.",
+      "phone": "0142865300",
+      "role": "unknown",
+      "source": "amf-france register snapshot 2026-09-22",
+      "title": "General enquiries"
+    }
+  ],
+  "country": "France",
+  "created": "2026-09-22",
+  "description": "AMF-approved asset and wealth manager (approval GP-12000007, issued 2012-02-16), part of Groupe Premium, born of the Flornoy / Ferri Gestion merger (itself preceded by a Fox/Flornoy merger in 2020). Runs collective, private and institutional management, with private/family wealth management (~EUR 1.4bn) roughly a third of total AUM. Actively acquiring smaller regional wealth-management practices - GDP Conseil (Aix-en-Provence) completed, another operation under consideration in Bordeaux - to consolidate client books onto its platform. Directeur general delegue: Teddy Dewitte.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 60/60 (max): priority segment asset manager (20) + priority market France (15) + multi-asset across collective/private/institutional management lines (10) + third-party client money (10) + AMF-regulated, approval GP-12000007 (5). Trigger: no perfect table row - closest is 'visible growth' (8 of 25) - but the operational reality is a rolling series of regional wealth-management acquisitions (GDP Conseil done, Bordeaux next) that each bring a new client book onto Flornoy Ferri's systems, a genuine consolidation need. Access 8/15: named Directeur general delegue Teddy Dewitte identified via press, not yet confirmed reachable. Total 60+8+8=76, moderated to 66: the acquisitions so far look like small private-client practices (tens of millions each) being folded into an existing platform rather than a full system replacement - confirm what platform Flornoy Ferri already runs before assuming displacement opportunity.",
+    "score": 66
+  },
+  "has_contact_route": true,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": true,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Flornoy Ferri",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "AMF",
+  "score": 66,
+  "segment": "asset_manager",
+  "size": {
+    "aum": "EUR 4.3bn total AUM/advice, ~EUR 1.4bn in private/family wealth management",
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "flornoy-ferri",
+  "source": {
+    "channel": "web_search",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22 (queries on societe de gestion croissance externe/fusion 2025 2026) surfaced zoominvest.fr and flornoyferri.com coverage of the GDP Conseil acquisition and Bordeaux plans, plus geco.amf-france.org bio-page search snippet giving the GP-12000007 approval number/date. AMF GECO register not click-verified (egress blocked)."
+  },
+  "stage": "identified",
+  "status": "qualified",
+  "tags": [
+    "france",
+    "amf",
+    "asset-manager",
+    "m-and-a",
+    "consolidation",
+    "private-wealth"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.flornoyferri.com/"
+}

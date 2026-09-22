@@ -9,11 +9,14 @@
  */
 import {
   type ColumnDef,
-  type SortingState,
+  columnSizingFeature,
+  columnVisibilityFeature,
   flexRender,
-  getCoreRowModel,
-  getSortedRowModel,
-  useReactTable,
+  type RowData,
+  rowSortingFeature,
+  type SortingState,
+  type TableFeatures,
+  useTable,
 } from "@tanstack/react-table";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { ArrowDown, ArrowUp, ChevronsUpDown } from "lucide-react";
@@ -22,7 +25,21 @@ import { cn } from "./primitives";
 
 const ROW_HEIGHT = 44;
 
-export function DataGrid<T>({
+/**
+ * TanStack Table v9 opts INTO features rather than shipping them all, so a grid only pays for what
+ * it uses — and the compiler refuses any API belonging to a feature you did not declare. These
+ * three are exactly what this grid calls: sorting, column widths, visible cells.
+ */
+const FEATURES = {
+  rowSortingFeature,
+  columnSizingFeature,
+  columnVisibilityFeature,
+} satisfies TableFeatures;
+
+/** The column type views should use — features are fixed here so callers never spell them out. */
+export type GridColumn<T extends RowData> = ColumnDef<typeof FEATURES, T>;
+
+export function DataGrid<T extends RowData>({
   data,
   columns,
   empty,
@@ -31,7 +48,7 @@ export function DataGrid<T>({
   maxHeight = "calc(100vh - 20rem)",
 }: {
   data: T[];
-  columns: ColumnDef<T, unknown>[];
+  columns: GridColumn<T>[];
   /** Required: what this grid says when it has nothing to show. */
   empty: ReactNode;
   onRowClick?: (row: T) => void;
@@ -41,13 +58,12 @@ export function DataGrid<T>({
   const [sorting, setSorting] = useState<SortingState>(initialSorting);
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const table = useReactTable({
+  const table = useTable<typeof FEATURES, T>({
+    features: FEATURES,
     data,
     columns,
     state: { sorting },
     onSortingChange: setSorting,
-    getCoreRowModel: getCoreRowModel(),
-    getSortedRowModel: getSortedRowModel(),
   });
 
   const rows = table.getRowModel().rows;
@@ -150,13 +166,7 @@ export function DataGrid<T>({
 }
 
 /** A small static table for a handful of rows, where virtualisation would be silly. */
-export function DataTable({
-  head,
-  children,
-}: {
-  head: ReactNode[];
-  children: ReactNode;
-}) {
+export function DataTable({ head, children }: { head: ReactNode[]; children: ReactNode }) {
   return (
     <div className="overflow-hidden rounded-[var(--radius)] border bg-surface">
       <table className="w-full border-collapse text-small">
@@ -183,15 +193,12 @@ export function Td({ children, className }: { children?: ReactNode; className?: 
   return <td className={cn("border-b px-3 py-2 align-middle", className)}>{children}</td>;
 }
 
-export function Tr({
-  children,
-  onClick,
-}: {
-  children: ReactNode;
-  onClick?: () => void;
-}) {
+export function Tr({ children, onClick }: { children: ReactNode; onClick?: () => void }) {
   return (
-    <tr onClick={onClick} className={cn("last:[&>td]:border-0", onClick && "cursor-pointer hover:bg-surface-raised")}>
+    <tr
+      onClick={onClick}
+      className={cn("last:[&>td]:border-0", onClick && "cursor-pointer hover:bg-surface-raised")}
+    >
       {children}
     </tr>
   );

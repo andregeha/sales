@@ -1,0 +1,72 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": "https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf",
+      "summary": "Appeared as a new entry in the AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr). Licence GP-10000005, authorised 2010-02-01, 2 - Gestion de FIA; 2a - Gestionnaire au-delà des seuils de la Directive AIFM ou ayant opté pour l'application de la Directive AIFM; 3 - Conseil en investissement. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched.",
+      "type": "research"
+    },
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Enriched from the amf-france register snapshot 2026-09-22: switchboard 0140060000. These are details the regulator publishes on its own register, not guessed or pattern-inferred. Existing values were left untouched.",
+      "type": "research"
+    }
+  ],
+  "city": null,
+  "contacts": [
+    {
+      "email": null,
+      "language": "fr",
+      "linkedin": null,
+      "name": "EDMOND DE ROTHSCHILD REIM (FRANCE) — switchboard (register-published)",
+      "notes": "Switchboard number as published by the regulator on its own register — not a guessed or inferred number, and not an individual's line. A generic number is a weak route: use it to reach a named person, not as the first touch itself.",
+      "phone": "0140060000",
+      "role": "unknown",
+      "source": "amf-france register snapshot 2026-09-22",
+      "title": "General enquiries"
+    }
+  ],
+  "country": "France",
+  "created": "2026-09-22",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 60/60: priority segment fund_manager (20) + priority market France (15) + multi-asset — AMF-authorised across 6 instrument classes including 1 - Instruments négociés sur un marché réglementé ou organisé (Instruments financiers cotés, TCN,...); 2 - OPCVM et FIA européens ouverts à une clientèle non professionnelle; 3 - FIA européens destinés à une clientèle professionnelle et FIA des pays tiers (10) + manages third-party money — AMF-authorised for 2 - Gestion de FIA; 2a - Gestionnaire au-delà des seuils de la Directive AIFM ou ayant opté pour l'application de la Directive AIFM; 3 - Conseil en investissement (10) + regulated by AMF (5). Trigger 0/25: licence granted 2010-02-01, too long ago to count as a trigger. Access 3/15: generic company contact published on the register (3). Scored automatically from the AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "score": 63
+  },
+  "has_contact_route": true,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": true,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "EDMOND DE ROTHSCHILD REIM (FRANCE)",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "AMF",
+  "score": 63,
+  "segment": "fund_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "edmond-de-rothschild-reim-france",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-22",
+    "detail": "AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr) (https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf); licence GP-10000005 dated 2010-02-01. Snapshot: crm/registers/amf-france/2026-09-22.json."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "amf-france",
+    "register-sourced",
+    "new-licence",
+    "fund-manager"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.cleaveland.fr"
+}

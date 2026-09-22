@@ -1,0 +1,57 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": "https://www.adgm.com/public-registers/fsra",
+      "summary": "Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 220056, authorised 2022-09-01, Managing A Collective Investment Fund. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Maryah Island, DD-16-118-020, 16, Al Khatem Tower , Wework Hub 71, Abu Dhabi Global Market Square",
+      "type": "research"
+    }
+  ],
+  "city": "Abu Dhabi",
+  "contacts": [],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 50/60: priority segment fund_manager (20) + priority market UAE (15) + manages third-party money — FSRA-authorised for Managing A Collective Investment Fund (10) + regulated by FSRA (ADGM) (5). Trigger 0/25: licence granted 2022-09-01, too long ago to count as a trigger. Access 0/15: no contact route published (0). Scored automatically from the FSRA public register of financial firms (ADGM) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "score": 50
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "AG (Australian Gulf) Capital Limited",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "FSRA (ADGM)",
+  "score": 50,
+  "segment": "fund_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "ag-australian-gulf-capital-limited",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-22",
+    "detail": "FSRA public register of financial firms (ADGM) (https://www.adgm.com/public-registers/fsra); licence 220056 dated 2022-09-01. Snapshot: crm/registers/fsra-adgm/2026-09-22.json."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "fsra-adgm",
+    "register-sourced",
+    "new-licence",
+    "fund-manager",
+    "uae",
+    "adgm",
+    "fsra"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": null
+}

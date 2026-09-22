@@ -1,0 +1,59 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced from BDL bank list and CMA Lebanon register. Named leaders Adnan Kassar (Group Chairman/CEO) and Nadim Kassar (Chairman-GM, Fransabank SAL). Resolution-track status not publicly confirmed. Recommend Andre check before outreach.",
+      "type": "research"
+    }
+  ],
+  "city": "Beirut",
+  "contacts": [],
+  "country": "Lebanon",
+  "created": "2026-09-22",
+  "description": "One of Lebanon's largest banks by branch network, full-service retail/corporate/private banking, part of the wider Fransabank Group (incl. Fransabank France, regional subsidiaries) and majority owner of BLC Bank. Listed on CMA Lebanon's approved-institutions register. Group Chairman & CEO: Adnan Kassar; Chairman-General Manager of Fransabank S.A.L. specifically: Nadim Kassar.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit: priority segment bank (20) + Lebanon (15) + multi-asset via group's cross-border retail/corporate/investment activity (10) + third-party deposits and private banking (10) + BDL/CMA regulated (5) = 60/60. Timing: sector-wide Law 23/2025 restructuring pressure (10/25) - not scored as a positive trigger specifically for Fransabank because no individual viable/recapitalising confirmation was found; survivor-vs-resolution status unconfirmed and is the gating question. Access: two named leaders (Adnan Kassar, Group Chairman/CEO; Nadim Kassar, Chairman-GM of the SAL entity) but no direct contact route found = 3/15. Total mechanically ~73, held to 52 pending viability-track confirmation - do not treat as outreach-ready.",
+    "score": 52
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": "Fransabank S.A.L.",
+  "linkedin": "https://www.linkedin.com/company/fransabank",
+  "name": "Fransabank",
+  "next_action": {
+    "due": "2026-10-31",
+    "what": "Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation) before any outreach",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "Banque du Liban (BDL) / Banking Control Commission; CMA Lebanon for securities activities",
+  "score": 52,
+  "segment": "bank",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "fransabank",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: Wikipedia 'Fransabank'; fransabank.com board-of-directors page; CMA approved-institutions listing (search-confirmed, not click-verified). No public confirmation found of Fransabank's individual viability/recapitalisation status under Law 23/2025."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "lebanon",
+    "bdl",
+    "cma-lebanon",
+    "bank",
+    "resolution-status-unknown"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.fransabank.com"
+}

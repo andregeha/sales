@@ -1,0 +1,56 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Global entrant with a 2024-vintage Riyadh CMI licence for Managing Investments and Operating Funds. No 2025/2026 trigger found. Very likely runs a global group platform already — flagged as low-probability displacement unless a Saudi-specific regulatory reporting gap can be identified. Recorded as nurture rather than pursued.",
+      "type": "research"
+    }
+  ],
+  "city": "Riyadh",
+  "contacts": [],
+  "country": "Saudi Arabia",
+  "created": "2026-09-22",
+  "description": "Saudi onshore entity of global asset manager Franklin Templeton, launched March 2024 with a new Riyadh office (Northern Ring Rd, Hittin district). A single-shareholder closed joint stock company (unified registration 7036955537, paid-up capital SAR 30m), licensed by the CMA (licence no. 23265-22) for 'Managing Investments and Operating Funds' and 'Advising' activities in securities.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit: priority segment fund manager (20) + priority market KSA (15) + multi-asset (global manager's full product range) (10) + manages third-party institutional/retail fund capital (10) + CMA-regulated (5) = 60/60 on paper. Timing: the Riyadh launch and CMA licence date to March 2024 — over two years old now, so no current trigger (0/25); no 2025/2026 fund launch, hire or expansion news found for the Saudi entity specifically in this pass. Access: no named local contact found (0/15). Total held to 40 (well below the naive 60 fit-only figure) because this is almost certainly the weakest access/timing case in the batch: a global top-tier asset manager standing up a local CMI very likely runs on a global group-wide investment/fund platform it is not about to replace for one onshore entity, and OFS's Riyadh-office/local-content story is more relevant to the licensing/procurement side than to a systems sale here. Recorded as nurture, not skipped, because a genuinely local systems need (e.g. Saudi-specific regulatory reporting the global platform does not cover) is plausible and worth a specific-angle check, not a blanket dismissal.",
+    "score": 40
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": "Franklin Templeton Financial Company",
+  "linkedin": null,
+  "name": "Franklin Templeton Financial Company (Saudi Arabia)",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "CMA (Saudi Arabia)",
+  "score": 40,
+  "segment": "fund_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "franklin-templeton-financial-company-ksa",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: Arab News 'Franklin Templeton launches operations in Saudi Arabia' (2024-03), Zawya press release, ftinstitutionalemea.com press release, franklintempleton.sa. CMA register not click-verified (egress blocked)."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "ksa",
+    "cma",
+    "fund-manager",
+    "global-entrant",
+    "local-content",
+    "likely-incumbent-platform"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.franklintempleton.sa/en-sa"
+}

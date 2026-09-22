@@ -13,9 +13,7 @@
     "verbatimModuleSyntax": true,
     "skipLibCheck": true,
     "noEmit": true,
-    "allowImportingTsExtensions": true,
-    "baseUrl": ".",
-    "paths": { "@/*": ["./src/*"] }
+    "allowImportingTsExtensions": true
   },
   "include": ["src"]
 }

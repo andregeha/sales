@@ -1,0 +1,70 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Reviewed DFSA's own 2-Nov-2023 enforcement notice (dfsa.ae/news) fining FFA Private Bank USD 373,842 for market-abuse monitoring system failures 2018-2021, and the May-2021 restriction that preceded it (lifted Jul-2021). DFSA states the matter is closed and weaknesses were remediated. No current/live trigger identified; recorded as nurture pending a fresh signal.",
+      "type": "research"
+    }
+  ],
+  "city": "Dubai",
+  "contacts": [
+    {
+      "email": "null",
+      "language": "en",
+      "linkedin": null,
+      "name": "Jean Riachi",
+      "notes": "Founder/Chairman/CEO of the whole FFA Private Bank group (Beirut and Dubai); Lebanese, HEC Paris graduate, also founded Investment & Capital Bank in Lebanon. Widely profiled in press (CFI.co, Executive Magazine, Global Finance) but no confirmed LinkedIn URL or direct email/phone found in this research — do not guess. ZoomInfo shows only a masked email pattern, not a verified address, so not recorded.",
+      "phone": "null",
+      "role": "economic_buyer",
+      "source": "CFI.co profile, Wikipedia, Executive Magazine, Global Finance Magazine coverage of Jean Riachi, checked 2026-09-22.",
+      "title": "Founder, Chairman & CEO, FFA Private Bank Group"
+    }
+  ],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": "DIFC-based private bank founded 2006 as a wholly owned subsidiary of FFA Group (Beirut-headquartered), offering private wealth management, asset management, online trading and capital markets across MENA from Beirut and Dubai. DFSA-licensed (ref F000240, 04-Oct-2006), endorsements include Carrying on authorised Financial Services with or for Retail Clients and Holding or Controlling Client Assets. Jean Riachi is Founder, Chairman and CEO of the FFA Private Bank group.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 45/60: priority segment private bank (20) + priority market UAE (15) + genuinely multi-line (private wealth, asset management, capital markets — 10) + third-party client money via Holding/Controlling Client Assets endorsement (already reflected) + DFSA-regulated (5); no separate multi-asset credit added beyond the multi-line note to stay conservative. Timing 0/25: no current trigger found — established since 2006, no new licence, hire or launch identified. Worth recording, though: DFSA fined FFA Private Bank USD 373,842 on 2-Nov-2023 for systemic failures in market-abuse monitoring (2018-2021), following a May-2021 order-handling restriction that was lifted Jul-2021 after remediation (confirmed directly on dfsa.ae/news, not just a secondary source) — a real, DFSA-published compliance history, now over two years closed per DFSA's own statement, so not treated as a live trigger, but relevant context on this firm's control environment and a possible future conversation opener about systems and controls. Access 8/15: named, reachable decision-maker (Jean Riachi, Founder/Chairman/CEO, widely profiled) but no direct email/phone found and no LinkedIn profile confirmed in this research. Total 53 rounds to 50 — nurture; watch for a fresh compliance or systems story, or a senior operations hire, before treating as active.",
+    "score": 50
+  },
+  "has_contact_route": true,
+  "has_email": true,
+  "has_linkedin": false,
+  "has_phone": true,
+  "legal_name": "FFA Private Bank (Dubai) Limited",
+  "linkedin": null,
+  "name": "FFA Private Bank (Dubai) Limited",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "DFSA",
+  "score": 50,
+  "segment": "bank",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "ffa-private-bank-dubai-limited",
+  "source": {
+    "channel": "register_search",
+    "date": "2026-09-22",
+    "detail": "DFSA public register (dfsa.ae/public-register/firms/ffa-private-bank-dubai-limited), ref F000240, fetched via curl 2026-09-22; corroborated by ffaprivatebank.com, Wikipedia and CFI.co profile of Jean Riachi."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "uae",
+    "difc",
+    "dfsa",
+    "bank",
+    "private-bank",
+    "lebanon-linked",
+    "no-current-trigger",
+    "compliance-history"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.ffaprivatebank.com"
+}

@@ -1,0 +1,107 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "UAE onshore sourcing pass: strong dual trigger — live BGIOF fund NFO (2026-01-14 to 2026-02-13) and a 2025-08-01 CEO-Designate appointment. Onshore SCA licence is transitioning to the federal CMA from 2026-01-01 (Federal Decree-Law No. 32 of 2025) — a regulatory-change signal worth watching across all onshore UAE prospects, not unique to this firm. Next: confirm a direct contact route for Dwivedi before drafting outreach.",
+      "type": "research"
+    },
+    {
+      "date": "2026-09-22",
+      "link": "https://www.barjeel.ae/",
+      "summary": "CORRECTION to the handover's premise. The handover named Barjeel Geojit as 'the one lead with a fund open for subscription right now'. That is stale: the BGIOF NFO window was 2026-01-14 to 2026-02-13 and closed seven months ago. Verified live on barjeel.ae 2026-09-22 - the homepage banner still reads 'now open for subscription' but the footer is (c) 2025, so that is leftover NFO copy. The defensible reading is that BGIOF is an OPEN-ENDED umbrella fund still accepting subscriptions, which is a different and weaker hook. Do NOT write 'I see your NFO is open' - it would be wrong and visibly so. The real hook is that they launched a UAE-domiciled USD umbrella fund with SEGREGATED SUB-FUNDS this year and are now operating it: NAV per sub-fund, subscriptions/redemptions and shareholder registry are exactly the fund-administration workload. Also captured a real published contact route (dubai@barjeel.ae, +971 4 3060 900) from their own site - generic, not guessed. Also confirmed they now describe themselves as a 'CMA Regulated Company', corroborating the SCA-to-CMA rename.",
+      "type": "research"
+    },
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Drafted first-touch to Surendra Dwivedi (CEO-Designate) on the BGIOF umbrella/sub-fund fund-administration workload. No direct email/LinkedIn on file for Dwivedi, so the draft routes via the firm's published general inbox (dubai@barjeel.ae) as a fallback, Attn: Dwivedi. Does NOT claim the NFO is open (corrected per prior activity entry). Full draft with mailto link: outreach/2026-09-22-top-leads.md. Awaiting Andre's review before send.",
+      "type": "email_drafted"
+    }
+  ],
+  "city": "Dubai",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Surendra Dwivedi",
+      "notes": "Joined as CEO-Designate 2025-08-01 per LinkedIn/Facebook posts; background in retail banking, wealth management and NRI services.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "LinkedIn, Facebook (barjeelgeojitae), ZoomInfo. Web search 2026-09-22.",
+      "title": "Chief Executive Officer, Designate"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "K.V. Shamsudheen",
+      "notes": "Founder Director of Barjeel Geojit since the 2001 JV.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "Facebook (barjeelgeojitae) post on Dwivedi's CEO appointment. Web search 2026-09-22.",
+      "title": "Founder Director"
+    },
+    {
+      "email": "dubai@barjeel.ae",
+      "language": "en",
+      "linkedin": null,
+      "name": "Barjeel Geojit — Dubai office (general)",
+      "notes": "Generic company contact PUBLISHED BY THE FIRM on its own site - not a guessed pattern and not an individual's address. Use only as a fallback route if no named contact can be reached; a first touch to a switchboard address converts far worse than a named one. Postal: Suite 308/309, 3rd Floor, The Business Centre Building, Khalid bin Al Waleed Street, Bur Dubai, Dubai.",
+      "phone": "+971 4 3060 900",
+      "role": "unknown",
+      "source": "Published on barjeel.ae homepage/contact block, fetched live 2026-09-22",
+      "title": "Dubai head office, general enquiries"
+    }
+  ],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": "Onshore UAE mainland financial intermediary (est. 2001, a JV between Sheikh Sultan Sooud Al Qasimi and India's Geojit Financial Services), offices in Dubai, Abu Dhabi and Sharjah, serving 50,000+ NRI investors. Holds an SCA licence for promotion/introduction services and full Investment Fund Management. Launched the Barjeel Geojit India Opportunities Fund (BGIOF), a UAE-domiciled USD-denominated umbrella fund with segregated sub-funds targeting India-focused equities; NFO subscription window 2026-01-14 to 2026-02-13. Surendra Dwivedi joined as CEO-Designate on 2025-08-01 (per LinkedIn/Facebook posts); founder-director K.V. Shamsudheen remains involved.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 50/60: priority asset-manager/fund-manager segment (20) + UAE onshore (15) + third-party fund investors, 50,000+ retail NRI base (10) + SCA-regulated (5); multi-asset scored 0 since BGIOF is an India-equities umbrella fund, not evidence of cross-asset-class breadth. Trigger 25/25 (capped): fund launch with a live NFO window spanning Jan-Feb 2026 — exactly the NAV/subscriptions-redemptions/shareholder-registry trigger Gaia's fund-administration module maps onto (15) plus a new CEO-Designate (Surendra Dwivedi, appointed per social posts) (12). Access 8/15: named CEO-Designate and founder-director identified. Total 83 — hot: a live fund launch with subscriptions open right now is as concrete a fund-administration hook as this pass found. Dwivedi's appointment date (2025-08-01) is search-confirmed via LinkedIn/Facebook posts but not cross-verified against a company filing; treat as reasonably reliable but confirm before using in outreach.",
+    "score": 83
+  },
+  "has_contact_route": true,
+  "has_email": true,
+  "has_linkedin": false,
+  "has_phone": true,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Barjeel Geojit Financial Services L.L.C",
+  "next_action": {
+    "due": "2026-10-10",
+    "what": "Confirm a direct contact route to Surendra Dwivedi and draft a fund-launch-hook first touch",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "SCA (transitioning to federal CMA from 2026-01-01 per Federal Decree-Law No. 32 of 2025)",
+  "score": 83,
+  "segment": "asset_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "barjeel-geojit-financial-services-l-l-c",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Khaleej Times 'Barjeel Geojit gets SCA nod to manage investment funds'; PR Newswire/Zawya/Yahoo Finance 'Barjeel Geojit launches India Opportunities Fund' (NFO window 2026-01-14 to 2026-02-13); LinkedIn/Facebook posts on Surendra Dwivedi's CEO appointment. Searched 2026-09-22."
+  },
+  "stage": "identified",
+  "status": "qualified",
+  "tags": [
+    "uae",
+    "onshore",
+    "sca",
+    "asset-manager",
+    "trigger-fund-launch",
+    "trigger-senior-hire",
+    "fund-administration-fit"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.barjeel.ae/"
+}

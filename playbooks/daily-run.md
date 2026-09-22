@@ -41,6 +41,18 @@ It will **never** move a record a human has already advanced (`contacted` and be
 touches `disqualified`. A register amendment is evidence, not a verdict — so anything woken this
 way still needs researching before outreach.
 
+## 0.6. Rebuild the website — it must never go stale
+```bash
+python tools/build_site.py
+```
+Regenerates the JSON contract from the CRM and rebuilds the app into `site/dist/`. **Run it at the
+END of the session too**, after every record has been written, so what Andre opens reflects what
+actually happened today.
+
+The site is **derived** — it is never a source of truth, and nothing is ever authored in `site/`.
+If the build fails, say so in the brief rather than leaving yesterday's site in place looking
+current. `python tools/build_site.py --check` proves the build is deterministic.
+
 ## 1. RFP radar — first, because deadlines are unforgiving
 Work `knowledge/market/rfp-sources.md` — read its **UPDATE 2026-09-22** block first, which says
 which portals are genuinely searchable and which are walls.

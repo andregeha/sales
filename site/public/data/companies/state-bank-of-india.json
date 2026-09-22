@@ -1,0 +1,66 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": "https://www.dfsa.ae/public-register/firms",
+      "summary": "Appeared as a new entry in the DFSA public register of authorised firms (DIFC). Licence F000239, Accepting Deposits (Authorised Firms). Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the DFSA): Unit No 9 & 10, Level 7, Gate Precinct Building 3, DIFC, PO Box 482033, Dubai, UAE",
+      "type": "research"
+    }
+  ],
+  "city": "Dubai",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "State Bank of India — switchboard (register-published)",
+      "notes": "Telephone number as published by the DFSA on its own public register — not a guessed number and not an individual's line. Use it to reach a named person, not as the first touch itself.",
+      "phone": "971 4 323 0203",
+      "role": "unknown",
+      "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/state-bank-india",
+      "title": "General enquiries"
+    }
+  ],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 40/60: priority segment bank (20) + priority market UAE (15) + regulated by DFSA (DIFC) (5). Trigger 0/25: no licence date published, so no datable trigger. Access 3/15: generic company contact published on the register (3). Scored automatically from the DFSA public register of authorised firms (DIFC) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "score": 43
+  },
+  "has_contact_route": true,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": true,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "State Bank of India",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "DFSA (DIFC)",
+  "score": 43,
+  "segment": "bank",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "state-bank-of-india",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-22",
+    "detail": "DFSA public register of authorised firms (DIFC) (https://www.dfsa.ae/public-register/firms); licence F000239. Snapshot: crm/registers/dfsa-difc/2026-09-22.json."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "dfsa-difc",
+    "register-sourced",
+    "new-licence",
+    "bank"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": null
+}

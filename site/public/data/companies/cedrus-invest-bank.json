@@ -1,0 +1,61 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced from CMA Lebanon register and pitchbook/cfi.co profiles. Genuine family-office/HNW wealth-management fit. Leadership attribution conflicts between two sources (Fadi Assali vs Raed Khoury) and was not reconciled. Being an investment bank rather than a deposit-taking commercial bank may reduce (not eliminate) exposure to the Law 23/2025 resolution question - inference, not confirmed.",
+      "type": "research"
+    }
+  ],
+  "city": "Beirut",
+  "contacts": [],
+  "country": "Lebanon",
+  "created": "2026-09-22",
+  "description": "Boutique Lebanese investment bank founded in Beirut in 2011, focused on wealth management, capital markets and investment banking (M&A advisory, fundraising) for high-net-worth individuals, family offices and corporates across MENA. A licensed investment bank rather than a deposit-taking retail bank, which may place it differently relative to the commercial-bank resolution framework, though this is not confirmed. Listed on CMA Lebanon's approved-institutions register. Leadership named in sources as Chairman-General Manager, with some conflicting attribution between co-founders Fadi Assali (named in a 2017 profile) and Raed Khoury (named in a more recent Craft.co listing) - current incumbent not independently reconciled.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit: priority segment private/investment bank serving family offices and HNWIs (20) + Lebanon (15) + multi-asset (wealth mgmt, capital markets, corporate finance) (10) + explicitly manages third-party/client capital, not proprietary (10) + BDL/CMA regulated (5) = 60/60 - a strong structural fit, closer to our family-office/HNW pitch than a mass retail bank. Timing: sector-wide pressure (10/25); being an investment bank rather than a deposit-heavy commercial bank may mean lighter exposure to the FX-deposit/correspondent-banking crisis at the core of Law 23/2025, but this is inference, not a confirmed fact, so it is not scored as a positive trigger - Andre should treat the resolution-track question as open here too. Access: named leadership exists but is unreconciled between two conflicting sources = 3/15 (uncertain named contact). Total mechanically ~73, held to 55 given the leadership-name conflict needs resolving and the resolution-track question, though this is one of the more promising non-mass-retail names in the batch.",
+    "score": 55
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": "Cedrus Invest Bank S.A.L.",
+  "linkedin": "https://www.linkedin.com/company/cedrus-invest-bank",
+  "name": "Cedrus Invest Bank",
+  "next_action": {
+    "due": "2026-10-31",
+    "what": "Confirm which Law 23/2025 restructuring track this bank is on (survivor/recapitalising vs resolution/liquidation) before any outreach",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "Banque du Liban (BDL) / Banking Control Commission; CMA Lebanon",
+  "score": 55,
+  "segment": "bank",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "cedrus-invest-bank",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: cfi.co 2017 profile of Fadi Assali; craft.co executive listing naming Raed Khoury; cma.gov.lb/approved_institution/ listing (search-confirmed, not click-verified); PitchBook profile. Leadership attribution conflicts between sources and was not resolved in this session."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "lebanon",
+    "bdl",
+    "cma-lebanon",
+    "investment-bank",
+    "wealth-management",
+    "family-office-fit",
+    "resolution-status-unknown"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.cedrusbank.com"
+}

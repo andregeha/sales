@@ -1,0 +1,55 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced via web search on RockFi's growth and DG France appointment (2026-09-22); disqualified after confirming it is ORIAS/CIF-registered rather than AMF-authorised, and has already built its own back/middle-office tech. Recorded to avoid re-researching it as a lookalike asset/fund manager.",
+      "type": "research"
+    }
+  ],
+  "city": "Paris",
+  "contacts": [],
+  "country": "France",
+  "created": "2026-09-22",
+  "description": "Fintech/network operator for private wealth advisors, created 2023, positioning itself as reinventing private asset management via a network of independent managers plus proprietary back- and middle-office technology. Registered at ORIAS as a Conseiller en Investissements Financiers (CIF) head-network (no. 23 004 556), member of Anacofi (an AMF-recognised professional association) - not itself an AMF-authorised portfolio management company or investment services provider. Present in 18 French cities, serves 1,000+ families, targeting EUR 1bn AUM by end-2026, monthly collection reportedly growing 20%+. Appointed Germain Michou-Tonning as Directeur General France in 2026 (also referenced elsewhere as Directeur des Operations) to lead structuring for that growth.",
+  "fit": {
+    "disqualified_reason": "RockFi is a CIF (financial investment adviser) network/fintech platform for independent wealth advisors, not itself an AMF-authorised asset manager, fund manager, bank or licensed family office - it coordinates advisors rather than running portfolios or funds on Gaia's kind of front-to-back system. It also states it has already built its own proprietary back- and middle-office technology, reducing appetite for a third-party platform. Recording so we do not re-surface it as a lookalike fund/asset manager lead.",
+    "reasoning": "Fit ~30/60: adjacent-segment credit only (10, a CIF advisor network/broker-like model rather than a direct asset manager, fund manager or licensed family office) + priority market France (15) + third-party money exists at the level of underlying advised clients but RockFi itself does not manage positions/funds directly + not AMF-authorised as an SGP/PSI, only ORIAS/CIF-registered via Anacofi (partial credit only). Trigger and access are secondary to the structural mismatch.",
+    "score": 25
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "RockFi",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "ORIAS (CIF, via Anacofi)",
+  "score": 25,
+  "segment": "mfo",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "rockfi",
+  "source": {
+    "channel": "web_search",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22 (queries on RockFi and its DG France appointment) surfaced boursorama.com, professioncgp.com, zoominvest.fr and finyear.com for the growth story and appointment, and a targeted search for RockFi's regulatory status returning rockfi.fr's own mentions-legales page describing it as an ORIAS-registered CIF network, not an AMF-authorised SGP or PSI. Not click-verified beyond search snippets (egress blocked)."
+  },
+  "stage": "parked",
+  "status": "disqualified",
+  "tags": [
+    "france",
+    "cif",
+    "fintech",
+    "network",
+    "disqualified"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.rockfi.fr/"
+}

@@ -1,0 +1,49 @@
+{
+  "activities": [],
+  "city": "Dubai",
+  "contacts": [],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": "DIFC representative office of International Investment Bank Limited (head office in the Bahamas), DFSA-licensed 26-Sep-2024 (ref F009345). Restricted by licence to 'Operating a Representative Office' — marketing only, for the products/services of its Bahamas head office. Cannot itself hold client assets, manage portfolios or transact locally.",
+  "fit": {
+    "disqualified_reason": "Marketing-only DIFC representative office (restricted by DFSA licence to promoting its Bahamas head office's products); no local portfolio management, fund administration or client-money function that Gaia would serve. Record kept so we do not re-find and re-research it.",
+    "reasoning": "Fit and access rows barely apply: a representative office by definition does no portfolio management, fund administration or client-money holding of its own — all real operational decisions and systems sit with the Bahamas head office, not this DIFC shell. Regulated and in a priority market are the only rows with any substance.",
+    "score": 8
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": "International Investment Bank Limited (DIFC Representative Office)",
+  "linkedin": null,
+  "name": "International Investment Bank Limited (DIFC Representative Office)",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "DFSA",
+  "score": 8,
+  "segment": "bank",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "international-investment-bank-limited-difc-representative-office",
+  "source": {
+    "channel": "register_search",
+    "date": "2026-09-22",
+    "detail": "DFSA public register (dfsa.ae/public-register/firms/international-investment-bank-limited-difc-representative-office), ref F009345, fetched via curl 2026-09-22."
+  },
+  "stage": "parked",
+  "status": "disqualified",
+  "tags": [
+    "uae",
+    "difc",
+    "dfsa",
+    "bank",
+    "representative-office",
+    "disqualified"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": null
+}

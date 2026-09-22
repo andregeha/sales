@@ -1,0 +1,59 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced via web search on CMA CMI licence announcements. Multi-asset real-assets fund manager, licensed 2023, commenced 2024 — a young, actively-building fund manager with no visible incumbent PMS mentioned in public material. No named contact found yet; faad.sa lists a leadership team page not yet reviewed for named individuals with public contact routes.",
+      "type": "research"
+    }
+  ],
+  "city": "Riyadh",
+  "contacts": [],
+  "country": "Saudi Arabia",
+  "created": "2026-09-22",
+  "description": "Saudi CMI licensed by the CMA (licence no. 23270-32, issued 2023-08-15; commencement letter 2024-07-09) to conduct Managing Investments and Operating Funds, Arranging, and Advising activities. Described in press as the first 'non-traditional' Saudi investment firm licensed by the CMA, focused on real estate, private equity, infrastructure, growth equity, private debt and other real assets — i.e. multi-asset fund management for third-party/institutional capital.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit: priority segment fund manager (20) + priority market KSA (15) + genuinely multi-asset (real estate, PE, infrastructure, growth equity, private debt) (10) + manages third-party/institutional capital via operated funds (10) + CMA-regulated (5) = 60/60. Timing: licence issued 2023, commencement completed 2024-07 and reconfirmed in a 2025 CMA notice — a fund manager still in its first 1-2 operating years with funds actively being raised/operated across several asset classes, exactly the point spreadsheets stop working (15/25 for fund launch/new asset class, not full new-licence points since the original grant is ~2 years old). Access: no named contact identified (0/15). Total 75 by table; kept at 65 given no route in yet and reliance on search snippets for the licence dates.",
+    "score": 65
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "FAAD Capital Partners Company",
+  "next_action": {
+    "due": "2026-10-20",
+    "what": "Identify a named operations/compliance contact at FAAD Capital Partners via LinkedIn or the firm's leadership page",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "CMA (Saudi Arabia)",
+  "score": 65,
+  "segment": "fund_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "faad-capital-partners",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: CMA news 'Licenses FAAD Capital Partners Company...' (cma.gov.sa/en/MediaCenter/NEWS/Pages/CMA_N_3596.aspx, dated ~2025-07-11 per search snippet; CMA site not click-verified, egress blocked); corroborated via Argaam and faad.sa (About/Leadership pages)."
+  },
+  "stage": "identified",
+  "status": "qualified",
+  "tags": [
+    "ksa",
+    "cma",
+    "fund-manager",
+    "new-licence",
+    "multi-asset"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://faad.sa/en/home/"
+}

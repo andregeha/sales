@@ -1,0 +1,90 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced via web search on recent AMF authorisations and fund launches (2026-09-22). Strongest lead in this pass: new AMF licence + genuinely multi-asset fund launch (Hope4Seasons) + named, findable founders. Recommend prioritising route-in verification and an outreach draft once a real contact route (email/phone) can be confirmed.",
+      "type": "research"
+    },
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Drafted first-touch (in French) to Francois Berthou (Co-founder) on the new AMF licence and the Hope4Seasons multi-asset fund launch. No email on file; route is Berthou's LinkedIn profile, with Yannick Gaudel's LinkedIn noted as a second option. Full draft: outreach/2026-09-22-top-leads.md. Awaiting Andre's review before send.",
+      "type": "email_drafted"
+    }
+  ],
+  "city": "Saint-Cyr-au-Mont-d'Or",
+  "contacts": [
+    {
+      "email": null,
+      "language": "fr",
+      "linkedin": "https://www.linkedin.com/in/fran%C3%A7ois-berthou-inco/",
+      "name": "Francois Berthou",
+      "notes": "Co-founder of Hope Asset Management, previously behind the INCO club deal. Pronouns not stated - use they/them. LinkedIn found via search snippet only, not opened/verified (egress blocked). No email/phone found or invented.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "Web search 2026-09-22, LinkedIn profile snippet + brefeco.com coverage",
+      "title": "Co-founder"
+    },
+    {
+      "email": null,
+      "language": "fr",
+      "linkedin": "https://fr.linkedin.com/in/yannick-gaudel",
+      "name": "Yannick Gaudel",
+      "notes": "Co-founder of Hope Asset Management. Pronouns not stated - use they/them. LinkedIn found via search snippet only, not opened/verified (egress blocked). No email/phone found or invented.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "Web search 2026-09-22, LinkedIn profile snippet + brefeco.com coverage",
+      "title": "Co-founder"
+    }
+  ],
+  "country": "France",
+  "created": "2026-09-22",
+  "description": "Newly AMF-authorised, manager-owned independent asset management company (Lyon area), co-founded by Francois Berthou and Yannick Gaudel (also behind the earlier INCO club deal). Explicitly adapts institutional-style strategic asset allocation for private investors. First fund, Hope4Seasons, is a genuinely multi-asset evergreen vehicle spanning private equity, infrastructure, real estate, listed assets and commodities, entry ticket EUR 100k, targeting EUR 20m/year and EUR 100m over five years.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 60/60 (max): priority segment fund manager (20) + priority market France (15) + genuinely multi-asset - the Hope4Seasons fund explicitly spans private equity, infrastructure, real estate, listed assets and commodities (10) + manages third-party/private-investor money by design (10) + AMF-regulated (5). Trigger: both a brand-new AMF licence (20) and a fund launch (15) apply; capped at the table max of 25. Access 8/15: named co-founders Francois Berthou and Yannick Gaudel identified via press and LinkedIn, not yet confirmed reachable (no email/phone). Total 60+25+8=93, moderated slightly to 88 to reflect the firm is very new with no confirmed AUM yet beyond the fund's launch target. This is the strongest fit in this batch: exactly the multi-asset, third-party-money, brand-new-licence profile Gaia is built for, and a live fund launch (NAV, subscriptions, shareholder registry, fee calc) is the direct trigger.",
+    "score": 88
+  },
+  "has_contact_route": true,
+  "has_email": false,
+  "has_linkedin": true,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Hope Asset Management",
+  "next_action": {
+    "due": "2026-10-06",
+    "what": "Verify a reachable contact route (email or LinkedIn InMail) for Francois Berthou or Yannick Gaudel and confirm Hope Asset Management's AMF GECO listing before drafting outreach",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "AMF",
+  "score": 88,
+  "segment": "fund_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "hope-asset-management",
+  "source": {
+    "channel": "web_search",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22 (queries: 'AMF nouvel agrement societe de gestion de portefeuille 2025 2026 boutique' and 'Hope Asset Management site web Hope4Seasons Francois Berthou Yannick Gaudel') surfaced gestiondefortune.com and brefeco.com coverage of the AMF approval and Hope4Seasons fund launch. AMF GECO register and underlying articles not click-verified (egress blocked)."
+  },
+  "stage": "identified",
+  "status": "qualified",
+  "tags": [
+    "france",
+    "amf",
+    "new-licence",
+    "fund-manager",
+    "fund-launch",
+    "multi-asset",
+    "private-markets"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": null
+}

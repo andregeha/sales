@@ -1,0 +1,72 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced via altss.com Beirut asset-manager directory and morecapital.com. Regulated as a BDL 'financial institution' (same bucket as leasing/factoring, generally deprioritised per our market map) but its actual business (asset management + VC) matches our segment on substance. One named compliance contact (Alia Hariz) found only via a third-party aggregator (ZoomInfo), not independently corroborated - logged as an unverified contact.",
+      "type": "research"
+    }
+  ],
+  "city": "Beirut",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Alia Hariz",
+      "notes": "Named via ZoomInfo employee-directory listing only (third-party data aggregator), not independently corroborated on More Capital's own site or LinkedIn in this session. Treat as unverified until confirmed; no email/phone recorded since none was independently found (never invent a pattern).",
+      "phone": null,
+      "role": "compliance",
+      "source": "ZoomInfo profile, found via web search 2026-09-22",
+      "title": "Group Head, Compliance"
+    }
+  ],
+  "country": "Lebanon",
+  "created": "2026-09-22",
+  "description": "Lebanese financial institution founded 2010 providing asset management and advisory services to corporate and affluent clients, with a dedicated venture-capital arm (Phoenician Funds) and a presence in ten cities across four continents (incl. Beirut, Tel Aviv-Yafo, Oslo, Singapore, Munich, Palo Alto, Austin, New York, Herzliya). Regulated under BDL's 'financial institution' category (the same license bucket as leasing/factoring firms, which our market map otherwise deprioritises) but its actual business - discretionary/advisory asset management for affluent and corporate clients plus a VC arm - matches our asset-manager segment on substance, not label. A named Group Head of Compliance, Alia Hariz, surfaced via a third-party data aggregator (ZoomInfo); not independently corroborated on the firm's own site in this session.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit: priority segment asset manager (20) + Lebanon (15) + multi-asset (advisory asset management plus VC arm) (10) + manages third-party/affluent-client and corporate capital (10) + regulated (BDL + CMA) (5) = 60/60. Timing: no specific licence/hire/fund-launch trigger found beyond the general sector-wide regulatory-pressure signal (10/25) - unlike the deposit-taking banks in this batch, More Capital is not a commercial bank so the Law 23/2025 bank-resolution question is less directly applicable to it, though this distinction is inference and Andre should still sanity-check it. Access: one named compliance contact surfaced via a third-party aggregator only, not independently corroborated, so treated cautiously = 3/15 (uncertain named contact, no verified route). Total 48 by strict table mechanics; nudged to 58 given this firm sits outside the bank-resolution ambiguity that caps every bank record in this batch and its business genuinely matches our asset-manager ICP - status set to researching (not qualified) pending corroboration of the compliance contact and a clearer read on AUM/client base.",
+    "score": 58
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": "More Capital SAL",
+  "linkedin": null,
+  "name": "More Capital",
+  "next_action": {
+    "due": "2026-10-31",
+    "what": "Corroborate named compliance contact (Alia Hariz) via LinkedIn or the firm directly before any route-in attempt",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "Banque du Liban (BDL, listed on the Financial Institutions register, no.58) / Banking Control Commission (BCCL) / Special Investigation Commission (SIC) / CMA Lebanon",
+  "score": 58,
+  "segment": "asset_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "more-capital",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: altss.com Beirut asset-manager profile; morecapital.com About/People pages; ZoomInfo employee-directory listing (naming Alia Hariz, Group Head Compliance - third-party aggregator, not independently corroborated). Founders/principals not disclosed in public sources found."
+  },
+  "stage": "identified",
+  "status": "researching",
+  "tags": [
+    "lebanon",
+    "bdl",
+    "cma-lebanon",
+    "asset-manager",
+    "family-office-adjacent",
+    "venture-capital"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://www.morecapital.com"
+}

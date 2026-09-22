@@ -1,0 +1,68 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "UAE MFO sourcing pass: confirmed DFSA DIFC-branch registration (Cat 4, entity ref 6567) via search snippet of dfsa.ae public register; no direct register fetch possible (egress blocked). No trigger identified — watch for a DIFC-specific hire, a new UAE mandate, or expansion of the digital investing platform into the UAE.",
+      "type": "research"
+    }
+  ],
+  "city": "Dubai",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Rayan Sleem",
+      "notes": "Named via press interviews (The National advertorial, tfoco.com management-views pieces) discussing the firm's Dubai/DIFC wealth-management strategy. No email/phone found — do not guess.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "Web search 'The Family Office Company DIFC Dubai branch manager head named', 2026-09-22 (thenationalnews.com, tfoco.com).",
+      "title": "Senior Executive Officer, DIFC Branch"
+    }
+  ],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": "Bahrain-headquartered multi-family office (Central Bank of Bahrain Category 1 Investment Firm) operating a DIFC branch (DFSA registration/entity ref 6567) as a Category 4 licensee for Arranging and Advising services, not permitted to deal with Retail Clients. Serves GCC families from Bahrain, Dubai (DIFC) and Riyadh offices; runs an investment forum and a 'fintech lab' digital-investing platform. This is the one genuinely GCC-wide MFO confirmed on the DFSA public register in this pass.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 60/60: priority segment (MFO, 20) + priority market UAE (15) + multi-asset advisory/arranging across instrument types (10) + manages third-party family money by way of business (10) + DFSA-regulated (5). Trigger 0/25: long-established (Bahrain HQ since 2004, DIFC branch pre-existing) — no new licence, hire, or fund event found in this pass; the 'fintech lab' and investment-forum activity found are not dated recent UAE-specific events. Access 8/15: named Senior Executive Officer (Rayan Sleem) identified via press interviews, no warm relationship. Total 68 (Strong band) but held to status=nurture per the no-trigger rule — a decent fit sitting idle until something changes.",
+    "score": 68
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": "The Family Office Company B.S.C. (c)",
+  "linkedin": null,
+  "name": "The Family Office Company B.S.C. (c) (DIFC Branch)",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "DFSA",
+  "score": 68,
+  "segment": "mfo",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "the-family-office-company-b-s-c-c-difc-branch",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Search-confirmed via dfsa.ae public register snippet ('The Family Office Company BSC (c)', dfsa.ae/public-register/firms/family-office-company-bsc-c) and tfoco.com press releases; query 'DFSA authorised firm multi-family office DIFC register' and 'The Family Office Company DIFC Bahrain', 2026-09-22. DFSA register page itself not click-verified (egress blocked)."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "uae",
+    "difc",
+    "dfsa",
+    "mfo",
+    "gcc-wide",
+    "no-trigger"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": "https://tfoco.com/"
+}

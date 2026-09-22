@@ -58,11 +58,19 @@ export const Company = CompanyIndexRow.extend({
   description: nullableStr,
   owner: nullableStr,
   size: z
-    .object({ aum: z.unknown().nullable(), employees: z.unknown().nullable(), portfolios: z.unknown().nullable() })
+    .object({
+      aum: z.unknown().nullable(),
+      employees: z.unknown().nullable(),
+      portfolios: z.unknown().nullable(),
+    })
     .partial()
     .nullable()
     .optional(),
-  source: z.object({ channel: nullableStr, detail: nullableStr, date: nullableStr }).partial().nullable().optional(),
+  source: z
+    .object({ channel: nullableStr, detail: nullableStr, date: nullableStr })
+    .partial()
+    .nullable()
+    .optional(),
   fit: z
     .object({
       score: z.number().nullable(),
@@ -99,12 +107,15 @@ export type Rfp = z.infer<typeof Rfp>;
 export const SourceRow = z.object({
   register: z.string(),
   regulator: nullableStr,
+  /** True when the source only exposes a slice of its register — it catches new names but
+      cannot see a firm leave. Saudi CMA is one. */
+  partial: z.boolean().default(false),
+  note: nullableStr,
   status: z.enum(["ok", "stale", "failing"]),
   last_success_date: nullableStr,
   consecutive_failures: z.number().default(0),
   latest_count: z.number().nullable().optional(),
-  partial: z.boolean().default(false),
-  note: nullableStr,
+  runs_seen: z.number().default(0),
   history: z.array(z.object({ date: z.string(), count: z.number() })).default([]),
 });
 export type SourceRow = z.infer<typeof SourceRow>;
@@ -154,25 +165,29 @@ export const QuestionRow = z.object({
 });
 export type QuestionRow = z.infer<typeof QuestionRow>;
 
+/** Shapes mirror exactly what `tools/site_data.py` emits — Python owns this contract. */
 export const Stats = z.object({
   companies_total: z.number(),
-  active_total: z.number(),
+  active_total: z.number().default(0),
+  rfps_total: z.number().default(0),
   by_status: z.record(z.string(), z.number()).default({}),
   by_segment: z.record(z.string(), z.number()).default({}),
   by_country: z.record(z.string(), z.number()).default({}),
+  /** country -> segment -> count */
   coverage: z.record(z.string(), z.record(z.string(), z.number())).default({}),
   score_distribution: z.array(z.object({ band: z.string(), count: z.number() })).default([]),
   contact_route_by_market: z
     .array(z.object({ country: z.string(), total: z.number(), with_route: z.number() }))
     .default([]),
+  rfps_by_status: z.record(z.string(), z.number()).default({}),
+  rfp_deadlines_approaching: z.array(z.unknown()).default([]),
 });
 export type Stats = z.infer<typeof Stats>;
 
 export const Build = z.object({
   schema_version: z.number(),
   commit: nullableStr,
-  generated_from: nullableStr,
-  companies: z.number().optional(),
+  company_count: z.number().optional(),
 });
 export type Build = z.infer<typeof Build>;
 
@@ -190,7 +205,9 @@ async function loadJson<T>(path: string, schema: z.ZodType<T>): Promise<T> {
   const raw = await res.json();
   const parsed = schema.safeParse(raw);
   if (!parsed.success) {
-    throw new Error(`${path} does not match the expected contract: ${parsed.error.issues[0]?.message ?? "unknown"}`);
+    throw new Error(
+      `${path} does not match the expected contract: ${parsed.error.issues[0]?.message ?? "unknown"}`,
+    );
   }
   return parsed.data;
 }

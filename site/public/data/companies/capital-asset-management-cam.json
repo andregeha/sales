@@ -1,0 +1,88 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "UAE DIFC sourcing pass: new-licence trigger confirmed via PR Newswire (2024-03-04) and DFSA CAT3C reference. Two named founders with public bios. Strongest new-entrant lead in this pass — no incumbent system to displace. Next: find a direct contact route (email/LinkedIn message via Andre) before drafting outreach.",
+      "type": "research"
+    },
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Drafted first-touch to Meshal Alothman (CEO & Co-founder) on the March 2024 DFSA Cat3C licence and CAM's from-scratch operating setup. No email on file; route is Alothman's LinkedIn profile. Full draft: outreach/2026-09-22-top-leads.md. Awaiting Andre's review before send.",
+      "type": "email_drafted"
+    }
+  ],
+  "city": "Dubai",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": "https://www.linkedin.com/in/meshal-alothman-8a572957/",
+      "name": "Meshal Alothman",
+      "notes": "Co-founded CAM in 2024. LinkedIn profile confirmed.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "LinkedIn, rocketreach.co, prnewswire.com. Web search 2026-09-22.",
+      "title": "CEO & Co-founder"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Raed Alnusf",
+      "notes": "25+ years' experience; formerly Deputy Director for Investments and Operations at Kuwait's Public Institution for Social Security (PIFSS).",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "PR Newswire, rocketreach.co. Web search 2026-09-22.",
+      "title": "CIO & Co-founder"
+    }
+  ],
+  "country": "UAE",
+  "created": "2026-09-22",
+  "description": "Newly established (2024) independent boutique investment management and advisory firm based in DIFC, founded by Meshal Alothman (CEO) and Raed Alnusf (CIO), granted a DFSA Category 3C licence in March 2024. Serves family offices, private clients, sovereigns and institutions across Outsourced CIO services, private & public markets, Sharia-compliant investing, wealth management, capital introduction and hedge funds. Alnusf previously restructured and grew Kuwait's Public Institution for Social Security (PIFSS) portfolio; the founders cite a track record managing a USD 150bn portfolio.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 60/60: priority asset-manager segment (20) + UAE (15) + genuinely multi-asset (private & public markets, hedge funds, Sharia-compliant class — 10) + serves family offices/sovereigns/institutions as third-party money (10) + DFSA CAT3C regulated (5). Trigger 20/25: a brand-new DFSA licence (granted March 2024, ~2.5 years old, still effectively a new entrant with no incumbent system) is exactly the 'new licence granted, new entity' signal the ICP weights highest. Access 8/15: two named co-founders with public bios and a clear CEO/CIO split — a real, reachable decision-maker pair, no warm intro. Total 88 — work it now: a boutique multi-asset manager that set up its own operations from scratch in 2024 has no legacy system to migrate away from, which is the easiest kind of sale.",
+    "score": 88
+  },
+  "has_contact_route": true,
+  "has_email": false,
+  "has_linkedin": true,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Capital Asset Management (CAM)",
+  "next_action": {
+    "due": "2026-10-06",
+    "what": "Draft a first-touch note to Meshal Alothman referencing the 2024 DFSA licence and the firm's from-scratch operating setup",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "DFSA",
+  "score": 88,
+  "segment": "asset_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "capital-asset-management-cam",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "PR Newswire 'Capital Asset Management sets up in Dubai, granted DFSA CAT3C License' (2024-03-04, prnewswire.com/prnewswire.co.uk); capitalam.com/en/news and /en/team; rocketreach.co bios of Meshal Alothman (CEO/Co-founder) and Raed Alnusf (CIO/Co-founder). Searched 2026-09-22."
+  },
+  "stage": "identified",
+  "status": "qualified",
+  "tags": [
+    "uae",
+    "difc",
+    "dfsa",
+    "asset-manager",
+    "trigger-new-licence"
+  ],
+  "trigger": "a brand-new DFSA licence (granted March 2024, ~2",
+  "updated": "2026-09-22",
+  "website": "https://capitalam.com/"
+}

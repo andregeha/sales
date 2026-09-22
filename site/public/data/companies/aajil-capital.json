@@ -1,0 +1,59 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced via web search on new CMA licensing activity. Genuine brand-new-licence trigger (2026-06-22 Board resolution) but firm is pre-commencement — no live operations yet. No dedicated corporate website found distinct from sister BNPL brand aajil.sa; leadership named (Abdulla Sheikh, Faisal Chowdhry) but no contact details found. Re-check in ~6-8 weeks for commencement confirmation.",
+      "type": "research"
+    }
+  ],
+  "city": "Riyadh",
+  "contacts": [],
+  "country": "Saudi Arabia",
+  "created": "2026-09-22",
+  "description": "Newly formed Saudi joint stock company, sister firm to Aajil (aajil.sa), an AI-driven B2B 'buy now, pay later' platform supplying industrial SMEs with raw materials on deferred terms (SAR 600m supplied as of 2026-08-31). Aajil Capital received a CMA licence (Board resolution dated 2026-06-22, licence no. 26358-02) to conduct the Managing Investments activity, and has not yet commenced regulated operations pending completion of commencement-of-business requirements. Once live, plans to offer Shariah-compliant investment management giving investors exposure to Saudi industrial SMEs, building on sister-company origination data. Chaired by Abdulla Sheikh; CEO/CIO is Faisal Chowdhry, a former Goldman Sachs executive.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit: priority segment asset manager (20) + priority market KSA (15) + likely single-strategy at launch (private credit/SME exposure) rather than clearly multi-asset yet (0) + will manage third-party investor capital, not proprietary (10) + CMA-regulated (5) = 50/60 (docked the multi-asset points until the fund/mandate structure is public). Timing: a brand-new CMA licence (2026-06-22), pre-commencement — the single cleanest 'new licence, no incumbent system' trigger in this batch (20/25). Access: two named leaders identified (Chairman Abdulla Sheikh; CEO/CIO Faisal Chowdhry) but no verified contact route, and the firm has not commenced operations so there is nobody to sell to yet operationally (8/15, named-not-reachable). Total 78 by table, moderated to 62 given the firm is pre-launch — a real trigger, but timing means outreach should wait for commencement confirmation, not happen now.",
+    "score": 62
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Aajil Capital",
+  "next_action": {
+    "due": "2026-11-15",
+    "what": "Check CMA register / press for Aajil Capital's commencement-of-business completion before treating as outreach-ready",
+    "who": "Andre Geha"
+  },
+  "owner": "Andre Geha",
+  "regulator": "CMA (Saudi Arabia)",
+  "score": 62,
+  "segment": "asset_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "aajil-capital",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22: Wamda 'Aajil Capital secures CMA licence for investment management in Saudi Arabia' (2026-09), citing CMA Board resolution 2026-06-22. Company/entity not independently confirmed on a dedicated website beyond sister-brand aajil.sa; CMA register not click-verified (egress blocked)."
+  },
+  "stage": "identified",
+  "status": "qualified",
+  "tags": [
+    "ksa",
+    "cma",
+    "asset-manager",
+    "new-licence",
+    "pre-launch"
+  ],
+  "trigger": null,
+  "updated": "2026-09-22",
+  "website": null
+}

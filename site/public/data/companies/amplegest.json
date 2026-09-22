@@ -1,0 +1,85 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Sourced via web search on Amplegest scale and 2024 leadership transition (2026-09-22). Part of Groupe Cyrus (see cyrus-herez.yaml). Genuine multi-asset, third-party-money fit; leadership-change trigger is dated (Jan 2024) rather than fresh.",
+      "type": "research"
+    },
+    {
+      "date": "2026-09-22",
+      "link": null,
+      "summary": "Enriched from the amf-france register snapshot 2026-09-22: website https://www.amplegest.com, switchboard 0140670840. These are details the regulator publishes on its own register, not guessed or pattern-inferred. Existing values were left untouched.",
+      "type": "research"
+    }
+  ],
+  "city": "Paris",
+  "contacts": [
+    {
+      "email": null,
+      "language": "fr",
+      "linkedin": null,
+      "name": "Marie Vandermarcq-Saltiel",
+      "notes": "Became President of Amplegest in January 2024, succeeding Arnaud de Langautier. Pronouns not stated - use they/them. No email/phone/LinkedIn found; none invented.",
+      "phone": null,
+      "role": "economic_buyer",
+      "source": "Web search 2026-09-22, optionfinance.fr / easybourse.com coverage",
+      "title": "Presidente"
+    },
+    {
+      "email": null,
+      "language": "fr",
+      "linkedin": null,
+      "name": "Amplegest — switchboard (register-published)",
+      "notes": "Switchboard number as published by the regulator on its own register — not a guessed or inferred number, and not an individual's line. A generic number is a weak route: use it to reach a named person, not as the first touch itself.",
+      "phone": "0140670840",
+      "role": "unknown",
+      "source": "amf-france register snapshot 2026-09-22",
+      "title": "General enquiries"
+    }
+  ],
+  "country": "France",
+  "created": "2026-09-22",
+  "description": "AMF-approved entrepreneurial asset manager (approval GP-07000044), created 2007, wholly owned by Groupe Cyrus. Two business lines: private wealth management for a high-end clientele (including family offices as a client segment) and asset management (European/international equity, flexible international, value-oriented bond strategies). Underwent a leadership transition: Marie Vandermarcq-Saltiel became President in January 2024 and Gilles Constantini was named deputy general director for asset management, as long-standing President Arnaud de Langautier and General Director Olivier Lazar (in role since 2010/2012) stepped back.",
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 60/60 (max): priority segment asset manager (20) + priority market France (15) + multi-asset across equity, flexible international and bond strategies plus a private-wealth line (10) + third-party client money, private and institutional (10) + AMF-regulated, GP-07000044 (5). Trigger 8/25: closest table row is a senior leadership change - a new President (Marie Vandermarcq-Saltiel) took over in January 2024 from a President/General Director pairing in place since 2010/2012 - but this is a President/board-level change rather than a COO/CIO/Head of Ops/Compliance hire as the table specifies, and it is now roughly two years old, so scored well below the 12-point new-hire band. Access 8/15: named current President (Vandermarcq-Saltiel) and deputy general director for asset management (Constantini) identified via press, not yet confirmed reachable. Total 76, moderated to 63 given the leadership signal is dated and the exact operational trigger for a systems review is not established - also part of the Cyrus Herez group (see cyrus-herez.yaml) so any pursuit should be coordinated rather than duplicated.",
+    "score": 63
+  },
+  "has_contact_route": true,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": true,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Amplegest",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "AMF",
+  "score": 63,
+  "segment": "asset_manager",
+  "size": {
+    "aum": "EUR 5.2bn (30 June 2025: EUR 2.5bn private wealth management + EUR 2.7bn asset management)",
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "amplegest",
+  "source": {
+    "channel": "web_search",
+    "date": "2026-09-22",
+    "detail": "Web search 2026-09-22 (queries on Amplegest AMF encours and dirigeant) surfaced optionfinance.fr, easybourse.com, clubpatrimoine.com and professioncgp.com coverage of AUM and the 2024 leadership transition. AMF GECO register not click-verified (egress blocked)."
+  },
+  "stage": "identified",
+  "status": "qualified",
+  "tags": [
+    "france",
+    "amf",
+    "asset-manager",
+    "leadership-change",
+    "private-wealth",
+    "cyrus-group"
+  ],
+  "trigger": "closest table row is a senior leadership change - a new President (Marie Vandermarcq-Saltiel) took over in January 2024 from a President/General Director pairing in place since 2010/2012 - but this is a President/board-level change rather than a COO/CIO/Head of Ops/Compliance hire as the table specifies, and it is now roughly two years old, so scored well below the 12-point new-hire band",
+  "updated": "2026-09-22",
+  "website": "https://www.amplegest.com"
+}
