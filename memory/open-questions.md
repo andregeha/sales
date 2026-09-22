@@ -20,6 +20,7 @@
 ## For Andre — still open
 | # | Question | Status |
 |---|---|---|
+| 0 | 🔴 **The environment blocks general web access** — only package registries are allowed; every other host is refused by the egress policy. Agents can search, but cannot open a tender portal or a regulator register. **The RFP radar and lead sourcing cannot work properly until this is widened.** Can you change the environment's network policy? (https://code.claude.com/docs/en/claude-code-on-the-web) | 🔴 |
 | 5 | **Pricing** — is there a price book, list price or discount policy I may hold here, even internal-only? Without it I cannot qualify on budget, and every commercial question bounces to you. | 🟠 |
 | 5a | **Is there an email-sending or sequencing tool** you would connect (Outlook send, a sequencer), or does every message go out by hand from your mailbox? This changes how I build the approval queue. | 🟠 |
 | 5b | **Do you have a LinkedIn Sales Navigator seat?** It would materially improve lead sourcing and contact discovery in all four markets. | 🟠 |
