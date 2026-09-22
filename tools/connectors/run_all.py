@@ -33,6 +33,8 @@ from base import ConnectorError, format_report  # noqa: E402
 CONNECTOR_MODULES = [
     "amf_france",
     "cma_saudi",
+    "dfsa_difc",
+    "fsra_adgm",
 ]
 
 

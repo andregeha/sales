@@ -1,0 +1,5385 @@
+{
+  "register": "dfsa-difc",
+  "regulator": "DFSA (DIFC)",
+  "source_url": "https://www.dfsa.ae/public-register/firms",
+  "fetched_at": "2026-09-22T14:21:22+00:00",
+  "run_date": "2026-09-22",
+  "count": 319,
+  "entries": [
+    {
+      "key": "F000003",
+      "name": "Standard Chartered Bank",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 508 3232",
+      "licence_date": null,
+      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F000045",
+      "name": "Deutsche Bank AG",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 361 1700",
+      "licence_date": null,
+      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F000064",
+      "name": "GFH Partners Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 365 1500",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000068",
+      "name": "ICICI Bank Limited",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 369 6400",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F000075",
+      "name": "EFG-Hermes UAE Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 363 4000",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000132",
+      "name": "Rasmala Investment Bank Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000163",
+      "name": "Emirates NBD Asset Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 343 6060",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000164",
+      "name": "DBS Bank Ltd. (DIFC Branch)",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 364 1800",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F000178",
+      "name": "Mashreq Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 363 2143",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000223",
+      "name": "Sumitomo Mitsui Banking Corporation",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 428 8000",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F000239",
+      "name": "State Bank of India",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 323 0203",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F000240",
+      "name": "FFA Private Bank (Dubai) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000253",
+      "name": "Emirates NBD Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 303 2800",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000255",
+      "name": "Apex Fund Services (Dubai) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 428 9221",
+      "licence_date": null,
+      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F000314",
+      "name": "MENA Infrastructure Fund (GP) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 352 9901",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000320",
+      "name": "Franklin Templeton Investments (ME) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 428 4100",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000326",
+      "name": "Axis Bank Limited",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 373 5555",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F000357",
+      "name": "NATIXIS",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 702 6777",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F000407",
+      "name": "Arqaam Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 507 1700",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000470",
+      "name": "MUFG Bank, Ltd.",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 387 5000",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F000505",
+      "name": "Mirabaud (Middle East) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 426 6777",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000513",
+      "name": "Schroder Investment Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 323 0305",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000534",
+      "name": "Credit Agricole Corporate and Investment Bank",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 376 1100",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F000553",
+      "name": "ES Bankers (Dubai) Limited (In Liquidation)",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 709 0194",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000567",
+      "name": "Lazard Gulf Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 372 8252",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000631",
+      "name": "Alcazar Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 706 0300",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000633",
+      "name": "SinoGulf (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 447 0795",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000734",
+      "name": "The Emirates Capital Limited (In Liquidation)",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 447 7672",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000762",
+      "name": "Maples Fund Services (Middle East) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 511 4200",
+      "licence_date": null,
+      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F000768",
+      "name": "SNB Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 318 4800",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000787",
+      "name": "Union Bank of India",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 388 7200",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F000852",
+      "name": "Industrial and Commercial Bank of China Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 703 1111",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000902",
+      "name": "Intesa Sanpaolo S.p.A",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 372 9100",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F000913",
+      "name": "Woori Bank",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 325 8365",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F000930",
+      "name": "Rasameel Investment House Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 345 0295",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000944",
+      "name": "Levant Investment Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 386 3286",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000959",
+      "name": "Frontier Investment Management Partners Ltd.",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 237 9200",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F000986",
+      "name": "Citibank, N.A.",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 509 9790",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F001039",
+      "name": "ASAS Capital Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 346 4700",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F001087",
+      "name": "Punjab National Bank",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 325 7727",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F001118",
+      "name": "Gateway Investment Management Services (DIFC) Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 323 1234",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F001127",
+      "name": "Tabarak Investment Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 359 3700",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F001376",
+      "name": "Prometheus Capital Finance Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 378 4200",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F001383",
+      "name": "CIMD (Dubai) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 371 6900",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F001402",
+      "name": "Union Bancaire Privée (Middle East) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 818 4800",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F001417",
+      "name": "Dar Al Mal Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 363 7165",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F001419",
+      "name": "Al Ahli Bank of Kuwait K.S.C.P",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 607 5660",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F001426",
+      "name": "Agricultural Bank of China",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 567 6900",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F001451",
+      "name": "Al Ahly Financial (DIFC) Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 376 0500",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F001473",
+      "name": "Investbridge Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 451 3234",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F001582",
+      "name": "Fajr Capital Asset Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 373 5900",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F001595",
+      "name": "Amicorp Capital (DIFC) Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F001640",
+      "name": "Ajeej Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 433 6513",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F001649",
+      "name": "Bank of Baroda",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 404 1100",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F001693",
+      "name": "Probus Pleion Middle East Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 305 8000",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F001786",
+      "name": "Canara Bank (DIFC Branch)",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 359 1668",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F001845",
+      "name": "Cheyne Capital (MENA) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Fax Number",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F001860",
+      "name": "Samena Capital Investments Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 436 4900",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F001883",
+      "name": "Reyl Finance (MEA) Ltd.",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 274 9000",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F001913",
+      "name": "Quantic Private Wealth Management (Middle East) Ltd.",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 342 1163",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002025",
+      "name": "Alpen Asset Advisors Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 363 4300",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002026",
+      "name": "Klay Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 434 1891",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002166",
+      "name": "Azimut (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 703 8111",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002214",
+      "name": "Ark Capital Management (Dubai) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 352 3233",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002231",
+      "name": "Bank of China Limited",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 381 9105",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F002308",
+      "name": "Picard Angst MEA Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 378 5111",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002331",
+      "name": "Invesense Asset Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 554 6741",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002345",
+      "name": "Dalma Capital Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 427 8772",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002384",
+      "name": "Vy Capital Management Company Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 270 1400",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002385",
+      "name": "Oaktree Capital Management (Dubai) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 401 9877",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002418",
+      "name": "Tilad Investment Company Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002419",
+      "name": "BankMed SAL",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 388 9808",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F002425",
+      "name": "Market Securities (Dubai) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002462",
+      "name": "RUSD Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 355 0049",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002475",
+      "name": "Kitara Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 422 6080",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002497",
+      "name": "Capital Investments (DIFC) Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 316 1900",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002498",
+      "name": "Dar Global Capital Partners Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 518 9111",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002528",
+      "name": "Safanad (Dubai) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 312 9700",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002531",
+      "name": "Bank of India",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 327 3437",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F002609",
+      "name": "Latitude Capital Partners Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 334 5600",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002620",
+      "name": "Shinhan Bank Co. Ltd",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 551 2866",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F002641",
+      "name": "Index & Cie Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 563 8501",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002650",
+      "name": "ABS (Middle East) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 448 6363",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002656",
+      "name": "iSCF Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 385 8030",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002709",
+      "name": "Audacia Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 277 1122",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002897",
+      "name": "ENTO Capital Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 269 9560",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002906",
+      "name": "Himmah Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 456 6243",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002929",
+      "name": "Tavira Financial Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 279 0722",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003077",
+      "name": "Tell Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 266 2204",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003116",
+      "name": "Mizuho Gulf Capital Partners Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 552 8333",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003142",
+      "name": "BlueFiveSidra Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 596 7600",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003214",
+      "name": "Taurus Wealth Advisors Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 320 5727",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003251",
+      "name": "KHK & Partners Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 456 5273",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003297",
+      "name": "Amwal Capital Partners Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003379",
+      "name": "BTA Finance Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 457 3171",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003383",
+      "name": "Habib Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 369 7727",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003409",
+      "name": "China Construction Bank Corporation",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 567 4825",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F003434",
+      "name": "NOIA Capital (DIFC) Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 327 9999",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003452",
+      "name": "HSBC Bank Middle East Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 562 3465",
+      "licence_date": null,
+      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F003478",
+      "name": "Neuberger Berman Europe Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 428 8460",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003497",
+      "name": "GWP Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 518 5999",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003515",
+      "name": "Harbour Wealth Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 224 4245",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003530",
+      "name": "Saray Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 272 8166",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003575",
+      "name": "Wealth Plus Asset Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 355 9666",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003602",
+      "name": "Mabledon Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 442 8846",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003606",
+      "name": "Novus Capital Advisors Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 388 0686 Ext 401",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003607",
+      "name": "Sarwa Investment Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 546 9440",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003637",
+      "name": "Kuwait Finance House B.S.C. (c)",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 563 8751",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003661",
+      "name": "GTN Middle East Financial Services (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 524 6444",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003667",
+      "name": "SAYACORP CAPITAL LTD",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 329 8825",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003776",
+      "name": "Lakemore Partners (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 430 9911",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F003899",
+      "name": "Citium Wealth (MENA) Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 401 9420",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004068",
+      "name": "Lighthouse Canton Capital (DIFC) Pte Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 586 1500",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004155",
+      "name": "Patronus Wealth Privé (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 309 2111",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004167",
+      "name": "Safa Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 347 1337",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004209",
+      "name": "Humania Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 246 4900",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004321",
+      "name": "Trident Fund Services (DIFC) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 277 1191",
+      "licence_date": null,
+      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F004365",
+      "name": "Sancta Capital Advisors Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 359 5852",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004441",
+      "name": "Synergy Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 379 7188",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004535",
+      "name": "Fiducia Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 222 2906",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004559",
+      "name": "BLUEFIVE PRIVATE WEALTH Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 331 1222",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004610",
+      "name": "Aditum Investment Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004659",
+      "name": "Soor Capital Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004667",
+      "name": "Sigma Capital Partners MENA Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 425 2886",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004721",
+      "name": "ARP Global Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 317 7000",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004732",
+      "name": "IStar Capital Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 327 1020",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004737",
+      "name": "Integra Asset Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 329 1700",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004766",
+      "name": "InCred Global Wealth (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 396 6949",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004818",
+      "name": "PriceEarnings Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 401 9156",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004874",
+      "name": "Entrust Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 875 2600",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004884",
+      "name": "Introspect Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 458 3680",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004893",
+      "name": "Halkin Investments Middle East Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 350 4300",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004911",
+      "name": "Coinvesting Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 836 1888",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004938",
+      "name": "Jadwa Investment (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 333 0944",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004958",
+      "name": "Three Comma Capital Advisors Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 580 7838",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004980",
+      "name": "The Ultima World (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 439 6755",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005081",
+      "name": "Kesbridge Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 312 8998",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005129",
+      "name": "Africap Middle East Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 585 6211",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005205",
+      "name": "Colchester Global Investors Middle East Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 408 4888",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005207",
+      "name": "Century Private Wealth Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 557 2008",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005234",
+      "name": "Plutus Associates Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 222 5191",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005331",
+      "name": "KCT CAPITAL LTD",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F005341",
+      "name": "G CAPITAL Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 401 9282",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005367",
+      "name": "Ad Diriyah Asset Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 401 9515",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005375",
+      "name": "Pearl Advisory Asset Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 575 2422",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005530",
+      "name": "Omega Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 423 3667",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005541",
+      "name": "CES Investments Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 515 5511",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005648",
+      "name": "Kane LPI Solutions Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 568 6333",
+      "licence_date": null,
+      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F005782",
+      "name": "Millennium Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 410 6613",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005786",
+      "name": "Oxford Bridge Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 201 3555",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005790",
+      "name": "MSM Investment Advisors (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005797",
+      "name": "Bank of Communications Co., Ltd.",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F005894",
+      "name": "BlueGold Capital Asset Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 566 4879",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005895",
+      "name": "Embassy Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Fax Number",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005919",
+      "name": "Prudential Private Wealth Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 401 9662",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005980",
+      "name": "LUMIX Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 58 502 2202",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006028",
+      "name": "Brookfield Private Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 597 0160",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006312",
+      "name": "StashAway Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 358 9202",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006321",
+      "name": "GSB Capital Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 251 6111",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006325",
+      "name": "Nuwa Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006373",
+      "name": "Greenback Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 245 4050",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006421",
+      "name": "ARX FINANCIAL ENGINEERING Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 279 5800",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006430",
+      "name": "FinMark Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 221 4888",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006462",
+      "name": "Lamer Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 238 8886",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006496",
+      "name": "Falcon Global Capital Limited (Suspended)",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006586",
+      "name": "Baraka Financial Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 44 397 613",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006653",
+      "name": "Global Partners Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006655",
+      "name": "NAV Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 439 6771",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006733",
+      "name": "UCap Asset Management (Middle East) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006774",
+      "name": "JAR Capital (DIFC) Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006813",
+      "name": "Imani Wealth Management Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 580 9450",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006816",
+      "name": "FMP Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 336 6682",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006868",
+      "name": "ADIB Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 437 2062",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006884",
+      "name": "HBS Middle East Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 576 3106",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006911",
+      "name": "Galaxy Capital Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 353 5200",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006943",
+      "name": "EGS Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006981",
+      "name": "Frere Hall Capital Management (DIFC) Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 56 130 3292",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007049",
+      "name": "Azura Middle East Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 231 5000",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007050",
+      "name": "Ambit Global Private Client (MENA) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007053",
+      "name": "FIG Investments Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007054",
+      "name": "Alben Capital Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007064",
+      "name": "Asanga Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007207",
+      "name": "WRise Wealth Management Middle East Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 267 5002",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007292",
+      "name": "Octogone Middle East Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007304",
+      "name": "Point72 (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007315",
+      "name": "HK Asset Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007328",
+      "name": "Schonfeld Strategic Advisors (DIFC) Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007371",
+      "name": "CapThrone Investments International Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007406",
+      "name": "Mensa Investments Corporation (DIFC) Ltd.",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007419",
+      "name": "BlueRock Capital Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007426",
+      "name": "Jupiter Wealth Advisors Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007452",
+      "name": "Merlyn Advisors DIFC Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007477",
+      "name": "Menhir Capital Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 327 3382",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007488",
+      "name": "AMP Partners (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 834 7666",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007522",
+      "name": "LMR Partners (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007537",
+      "name": "ASCA Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007540",
+      "name": "Madura Capital Management Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007571",
+      "name": "Brevan Howard Investment Products Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007576",
+      "name": "Audere Capital Partners Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007593",
+      "name": "ExodusPoint Capital Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007613",
+      "name": "Nuqi Digital Wealth Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 50 535 0182",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007615",
+      "name": "Alpha Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007640",
+      "name": "DTL Investment Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 265 3990",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007746",
+      "name": "Aquilla Nummus (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 323 0800",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007772",
+      "name": "Qube Research and Technologies DIFC Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007781",
+      "name": "Amicorp Fund Services (DIFC) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "9714304 2900",
+      "licence_date": null,
+      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F007828",
+      "name": "ONS FinServ (DIFC) Ltd",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F007834",
+      "name": "Verition Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007926",
+      "name": "Ominvest Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007937",
+      "name": "Asia Research & Capital Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 56 938 1118",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007994",
+      "name": "Farro Capital Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F008038",
+      "name": "Carrhae Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 43 230 205",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F008051",
+      "name": "Balyasny Asset Management (Middle East) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F008072",
+      "name": "Theia Investments Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 570 0793",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F008092",
+      "name": "Octave Asset Management Ltd.",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 285 7711",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F008157",
+      "name": "Cresen Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F008167",
+      "name": "Access Technologies OPCO Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F008232",
+      "name": "Hudson Bay Capital Management (DIFC) Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F008552",
+      "name": "Aramid Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F008604",
+      "name": "Capital Asset Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F008633",
+      "name": "Capricorn Fund Managers (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F008681",
+      "name": "Caxton Asset Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F008743",
+      "name": "Profision Shipping Capital Management Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F008819",
+      "name": "Walleye Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F008868",
+      "name": "Noventa Capital Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 448 3400",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F008936",
+      "name": "Arna Assets Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F008968",
+      "name": "Emperors Capital Services Ltd.",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009005",
+      "name": "Amaltas Partners Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009043",
+      "name": "Welwing Capital Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009048",
+      "name": "Astute Asset Managers Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009080",
+      "name": "IQ EQ (DIFC) Fund Services Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F009120",
+      "name": "Kinetic Asset Management Ltd.",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 554 1324",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009145",
+      "name": "Ascent Fund Services (DIFC) Ltd",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F009189",
+      "name": "Westbeck Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009244",
+      "name": "JTC Institutional Fiduciary (DIFC) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F009299",
+      "name": "Money Protects Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009302",
+      "name": "Naya Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009354",
+      "name": "Magellan Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009362",
+      "name": "Tudor Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009405",
+      "name": "Taula Capital Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009425",
+      "name": "Capton Energy (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009440",
+      "name": "National Bank of Kuwait S.A.K.P. DIFC Branch",
+      "country": "UAE",
+      "segment": "bank",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F009493",
+      "name": "RnD Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 458 1669",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009510",
+      "name": "Tree Capital (DIFC) Ltd.",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009511",
+      "name": "Fort Capital Asset Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009513",
+      "name": "Giove Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009543",
+      "name": "Ayn Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009759",
+      "name": "Motilal Oswal International Wealth Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009825",
+      "name": "North of South Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009926",
+      "name": "ASB Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 503 7777",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010010",
+      "name": "Whitegate Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010044",
+      "name": "Quantum Partners (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010056",
+      "name": "Spark Global PWM Private Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010073",
+      "name": "Aster Capital Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010121",
+      "name": "Apricot Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010171",
+      "name": "Copernicus Wealth Management (Middle East) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010272",
+      "name": "Dymon Asia Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 395 2335",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010340",
+      "name": "Hilbert Investment Solutions Limited (DIFC Branch)",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "44 07895544347",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010362",
+      "name": "Astero Falcon DIFC Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 58 930 7190",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010436",
+      "name": "Squarepoint (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010442",
+      "name": "Revanta Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010448",
+      "name": "Renaissance Asset Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010521",
+      "name": "Binghatti Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010524",
+      "name": "InvestIn Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 591 2271",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010525",
+      "name": "Sovereign Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010586",
+      "name": "Jetha Global (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010604",
+      "name": "BlueCrest Capital Management DIFC Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010624",
+      "name": "Prospera Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 570 4884",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010696",
+      "name": "Spera Services (DIFC) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F010823",
+      "name": "JJJ Capital Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "44 0203 839 4612",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010865",
+      "name": "Anatole DB Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010906",
+      "name": "Interpolitan Money (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010927",
+      "name": "BellRock Asset Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010952",
+      "name": "Marigold Capital Advisors Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 834 8070",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010985",
+      "name": "Sigma Private Office Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010989",
+      "name": "Geojit Private Wealth (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F011002",
+      "name": "Wealthbrix Capital Partners Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F011301",
+      "name": "IQ EQ Fund Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F011359",
+      "name": "Climate Transition Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F011371",
+      "name": "Esterad Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F011418",
+      "name": "Profectus (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F011439",
+      "name": "Lighthouse Asset Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F011441",
+      "name": "Halston Street (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F011667",
+      "name": "Fair Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F011669",
+      "name": "Patrimium Asset Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F011765",
+      "name": "National Investments Company (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F011809",
+      "name": "Apis Partners Group (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F011816",
+      "name": "ABK Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F011915",
+      "name": "Sanatan Dharma Private Wealth Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F011950",
+      "name": "North Rock Capital Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F011955",
+      "name": "Aurium Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012030",
+      "name": "Ocorian Fund Services (DIFC) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F012244",
+      "name": "Cognit Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012260",
+      "name": "Blu Stone Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012262",
+      "name": "Sky Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012320",
+      "name": "TMF Services (DIFC) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F012337",
+      "name": "Nine Masts Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012339",
+      "name": "Welf Advisory Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012346",
+      "name": "Opulous Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012347",
+      "name": "PC Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012364",
+      "name": "Capital Partners Corp Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012378",
+      "name": "Prologis Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012465",
+      "name": "Rimal Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012473",
+      "name": "Varenne Capital Ltd",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012513",
+      "name": "Infracorp Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012573",
+      "name": "Trellen Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012577",
+      "name": "Al Tariq Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012599",
+      "name": "Theleme Partners (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012649",
+      "name": "Mirae Asset Investment Managers (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012707",
+      "name": "Nuvanta Capital Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012713",
+      "name": "Elephant Asset Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012792",
+      "name": "Energy Equation Partners (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012819",
+      "name": "AIP Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012903",
+      "name": "Aurora FundAdmin Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F012932",
+      "name": "Symmetra Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012982",
+      "name": "Continuum Capital Management Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F013145",
+      "name": "Symmetry Investments (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F013344",
+      "name": "Citadel Advisors (DIFC) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F013542",
+      "name": "Catalyst Funds Management (EMEA) Limited",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing Assets (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing Assets"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+slug: rnd-capital-limited
+name: RnD Capital Limited
+legal_name: null
+country: UAE
+city: Dubai
+segment: asset_manager
+regulator: DFSA (DIFC)
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: 'DFSA public register of authorised firms (DIFC) (https://www.dfsa.ae/public-register/firms);
+    licence F009493. Snapshot: crm/registers/dfsa-difc/2026-09-22.json.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- dfsa-difc
+- register-sourced
+- new-licence
+- asset-manager
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: RnD Capital Limited — switchboard (register-published)
+  title: General enquiries
+  role: unknown
+  email: null
+  phone: 971 4 458 1669
+  linkedin: null
+  language: en
+  notes: Telephone number as published by the DFSA on its own public register — not a guessed number and
+    not an individual's line. Use it to reach a named person, not as the first touch itself.
+  source: DFSA public register, https://www.dfsa.ae/public-register/firms/rnd-capital-limited
+fit:
+  score: 53
+  reasoning: 'Fit 50/60: priority segment asset_manager (20) + priority market UAE (15) + manages third-party
+    money — DFSA-authorised for Managing Assets (10) + regulated by DFSA (DIFC) (5). Trigger 0/25: no
+    licence date published, so no datable trigger. Access 3/15: generic company contact published on the
+    register (3). Scored automatically from the DFSA public register of authorised firms (DIFC) at first
+    sighting. Fit points are awarded only where the register itself states the fact; anything it is silent
+    on scores zero rather than being assumed. Enrich before outreach.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'Appeared as a new entry in the DFSA public register of authorised firms (DIFC). Licence F009493,
+    Managing Assets (Authorised Firms). Detected by the automated register diff; every field here is as
+    the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered
+    address (per the DFSA): Unit 306, Level 3, Liberty House, DIFC, PO Box 32440, Dubai, UAE'
+  link: https://www.dfsa.ae/public-register/firms
+next_action: null
