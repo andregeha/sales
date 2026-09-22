@@ -24,7 +24,10 @@
 | 5a | **Is there an email-sending or sequencing tool** you would connect (Outlook send, a sequencer), or does every message go out by hand from your mailbox? This changes how I build the approval queue. | 🟠 |
 | 5b | **Do you have a LinkedIn Sales Navigator seat?** It would materially improve lead sourcing and contact discovery in all four markets. | 🟠 |
 | 5c | **Any markets, firms or people that are off-limits** — conflicts, existing partner territories, someone we must not approach? | 🟠 |
-| 5d | **Inbound** — is there a website, a form, or any inbound flow today that I should be capturing and routing? You asked for inbound marketing; right now I have no inbound surface to work with. | 🟠 |
+| 5d | **Inbound — do we control the OFS website** enough to add pages, a lead form and analytics? Right now I have no inbound surface at all, so "inbound marketing" produces nothing. See `playbooks/inbound.md`. | 🟠 |
+| 5e | **Will you publish on LinkedIn** under your own name at a regular cadence? It is the cheapest, highest-leverage inbound channel we have, and the material is already written in `knowledge/`. | 🟠 |
+| 5f | **Budget for events or paid search**, or organic only? | ⚪ |
+| 5g | **Who answers an inbound enquiry within the hour?** An inbound lead that waits a day is lost. | ⚪ |
 | 6 | **Competitors** — who do we actually meet, where do we win and lose? (`knowledge/positioning/competitors.md` is an empty placeholder.) | 🟠 |
 | 9 | **Arabic** — do we need Arabic client-facing material for the Gulf, or is English sufficient there? (Gaia and the portal support Arabic/RTL, so it is a real option.) | 🟠 |
 | 10 | **Referenceable clients** — which names may we say out loud, to whom, and under what conditions? This is the single most useful thing I am missing for outreach credibility. | 🟠 |
