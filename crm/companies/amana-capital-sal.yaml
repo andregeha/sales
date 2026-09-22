@@ -1,0 +1,46 @@
+slug: amana-capital-sal
+name: Amana Capital SAL
+legal_name: Amana Capital SAL
+country: Lebanon
+city: Beirut
+segment: broker
+regulator: CMA Lebanon (Financial Intermediary Institution, authorisation no. 26)
+website: https://www.amanacapital.com
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: Beirut-established (2010) entity within the Amana Capital Group, an online forex/CFD/commodities
+  retail trading platform group also comprising Amana Financial Services (UK), Amana Financial Services
+  (Dubai), Amana Capital (Cyprus) and TradeCaptain.com. A mobile-first multi-asset retail trading app,
+  not an investment-management or fund-administration platform.
+source:
+  channel: web_research
+  detail: 'Web search 2026-09-22: amanacapital.com regulatory-environment and company pages; brokersview.com
+    and 55brokers.com broker-review sites.'
+  date: '2026-09-22'
+status: disqualified
+stage: parked
+owner: Andre Geha
+tags:
+- lebanon
+- cma-lebanon
+- retail-broker
+- disqualified
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 10
+  reasoning: 'Fit: adjacent segment broker (10, not a priority segment) + Lebanon (15) + single-asset-class-facing
+    retail trading product rather than genuine multi-asset portfolio management (0) + serves retail traders''
+    own accounts, not third-party discretionary/advisory capital (0) + CMA regulated (5) = 30/60. Timing:
+    no relevant trigger (0/25). Access: no named contact sought given the segment mismatch (0/15). Disqualified
+    per ICP: ''a retail brokerage ... wanting a consumer product, not a management platform'' - Amana
+    is a retail FX/CFD trading app, not a front-to-back portfolio/fund management buyer. Recorded so we
+    do not re-research it.'
+  disqualified_reason: Retail forex/CFD trading platform for individual consumer traders, not a portfolio/fund
+    management buyer - matches the ICP's explicit retail-brokerage disqualification criterion.
+activities: []
+next_action: null

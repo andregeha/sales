@@ -1,0 +1,69 @@
+slug: france-valley
+name: France Valley
+legal_name: null
+country: France
+city: Paris
+segment: fund_manager
+regulator: AMF
+website: https://www.france-valley.com/
+linkedin: null
+size:
+  aum: EUR 5.6bn as of 2026-03-31
+  employees: null
+  portfolios: null
+description: 'AMF-approved SGP since 2014 (approval GP-14000035), France''s leading private forestry-investment
+  manager: 650+ forests / 73,000 hectares across Europe (France, Romania, Germany, Sweden, Slovakia, Baltics,
+  Ireland), ~24,000 individual and institutional investors, ~50 staff. Has diversified beyond forestry/vineyards/agricultural
+  land into real-estate fund-of-funds (temporary usufruct of SCPI shares), broadening its asset-class
+  footprint. Led by President Guillaume Toussaint and Directeur General Arnaud Filhol (co-founders, previously
+  at La Societe d''Investissement Forestier).'
+source:
+  channel: web_search
+  detail: Web search 2026-09-22 (queries on France Valley AMF encours and dirigeant) surfaced france-valley.com,
+    avenuedesinvestisseurs.fr and labourseetlavie.com coverage for AUM/scale and leadership names. AMF
+    GECO register not click-verified (egress blocked).
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- france
+- amf
+- fund-manager
+- real-assets
+- real-estate
+- forestry
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Arnaud Filhol
+  title: Directeur General, co-founder
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: fr
+  notes: Named Directeur General in press interview (labourseetlavie.com) and on France Valley's own team
+    page. Pronouns not stated - use they/them. No email/phone/LinkedIn found; none invented.
+  source: Web search 2026-09-22, labourseetlavie.com + france-valley.com/equipe
+fit:
+  score: 55
+  reasoning: 'Fit 60/60 (max): priority segment fund manager (20) + priority market France (15) + multi-asset
+    credit for diversifying from forestry/vineyards/agriculture into real-estate fund-of-funds (10) +
+    genuinely third-party money across 24,000 investors (10) + AMF-regulated since 2014, GP-14000035 (5).
+    Trigger 0/25: no specific trigger identified - this is a mature, growing but not newly-licensed or
+    newly-launched manager; general AUM growth to EUR 5.6bn is visible but not a dated, discrete event.
+    Access 8/15: named President (Guillaume Toussaint) and Directeur General (Arnaud Filhol) identified
+    via press, not yet confirmed reachable. Total 68, scored down to 55 and marked nurture given no trigger:
+    worth re-checking for a senior hire, new fund launch, or a specific operational pain point (e.g. managing
+    24,000 investors'' positions and reporting across multiple real-asset classes) before treating as
+    active.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'Sourced via web search on France Valley scale and leadership (2026-09-22). Strong fit on segment/multi-asset/third-party-money/regulator,
+    but no specific trigger found this pass. Watching for: a new fund launch, senior hire, or reporting-complexity
+    signal (24,000 investors across real-asset classes) before moving out of nurture.'
+  link: null
+next_action: null

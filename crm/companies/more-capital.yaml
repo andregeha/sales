@@ -39,7 +39,18 @@ tags:
 - venture-capital
 created: '2026-09-22'
 updated: '2026-09-22'
-contacts: []
+contacts:
+- name: Alia Hariz
+  title: Group Head, Compliance
+  role: compliance
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Named via ZoomInfo employee-directory listing only (third-party data aggregator), not independently
+    corroborated on More Capital's own site or LinkedIn in this session. Treat as unverified until confirmed;
+    no email/phone recorded since none was independently found (never invent a pattern).
+  source: ZoomInfo profile, found via web search 2026-09-22
 fit:
   score: 58
   reasoning: 'Fit: priority segment asset manager (20) + Lebanon (15) + multi-asset (advisory asset management

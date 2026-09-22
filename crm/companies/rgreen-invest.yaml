@@ -1,0 +1,71 @@
+slug: rgreen-invest
+name: Rgreen Invest
+legal_name: null
+country: France
+city: Paris
+segment: fund_manager
+regulator: AMF
+website: https://www.rgreeninvest.com/
+linkedin: null
+size:
+  aum: EUR 3.4bn+ raised since inception (2013)
+  employees: null
+  portfolios: null
+description: AMF-approved independent asset manager founded in 2013 by Nicolas Rochon, dedicated to energy-transition
+  infrastructure (renewable energy production, EV charging, agrivoltaics) across Europe. Runs an equity
+  strategy (Infragreen) and a debt strategy (Infrabridge), plus an evergreen fund combining equity, debt
+  and co-investment/direct exposure. Member of France Invest, entreprise a mission, B Corp certified,
+  Greenfin-labelled funds, PRI score 97/100 (2023). Recently opened its institutional strategies to private
+  investors.
+source:
+  channel: web_search
+  detail: 'Web search 2026-09-22 (query: Rgreen Invest societe de gestion AMF infrastructures transition
+    energetique encours) surfaced clubpatrimoine.com, bv-experts.fr and finyear.com coverage, including
+    a final closing above EUR 900m for fund INFRAGREEN V. AMF GECO register not click-verified (egress
+    blocked).'
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- france
+- amf
+- fund-manager
+- infrastructure
+- energy-transition
+- fund-launch
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Nicolas Rochon
+  title: Founder (2013); current day-to-day role not verified
+  role: unknown
+  email: null
+  phone: null
+  linkedin: null
+  language: fr
+  notes: Founded Rgreen Invest in 2013; still referenced as founder in current company material but current
+    title/operational role not independently confirmed this session. Pronouns not stated - use they/them.
+    No email/phone/LinkedIn found; none invented. Treat as a starting point for identifying the real current
+    decision-maker, not a confirmed route in.
+  source: Web search 2026-09-22, rgreeninvest.com and secondary coverage
+fit:
+  score: 65
+  reasoning: 'Fit 60/60 (max): priority segment fund manager (20) + priority market France (15) + multi-asset
+    via combined equity and debt strategies plus co-investment/direct exposure (10) + institutional third-party
+    money by design (10) + AMF-regulated (5). Trigger 15/25: a fund launch/final closing (INFRAGREEN V,
+    >EUR 900m) plus a stated new-mandate-type move (opening institutional strategies to private investors)
+    both point to ''fund launch or new mandate type'' (15). Access 3/15: no named, individually reachable
+    contact found this pass beyond the 2013 founder Nicolas Rochon mentioned in older company-history
+    material - treat as generic-company-contact-only until a current decision-maker is confirmed. Total
+    78, moderated to 65 pending confirmation of a current, reachable named contact (Rochon''s continued
+    day-to-day role not verified in this session).'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced via web search on Rgreen Invest's scale and fund activity (2026-09-22). Genuine multi-asset
+    (equity+debt) energy-transition infrastructure manager with a recent large fund closing and a new
+    private-investor mandate type - real trigger, but no confirmed current reachable contact yet.
+  link: null
+next_action: null
