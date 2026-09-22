@@ -1,0 +1,59 @@
+slug: awaed-alosool-capital
+name: Awaed Alosool Capital
+legal_name: Awaed Alosool Capital CJSC
+country: Saudi Arabia
+city: Riyadh
+segment: asset_manager
+regulator: CMA (Saudi Arabia)
+website: https://awaed.capital/en
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: Saudi fintech founded 2021, closed joint-stock company (paid-up capital SAR 112m, CR 1010734817),
+  operating the 'Awaed' digital investment platform. Licensed by the CMA (March 2023) for Dealing, Asset
+  Management and Custody activities; marketed as the first fully CMA-licensed, commission-free trading
+  app in Saudi Arabia, targeting retail investors with Sharia-compliant products. Partnered with Investcorp
+  (Feb 2025) to distribute the Investcorp Saudi Pre-IPO Growth Fund to its retail user base.
+source:
+  channel: web_research
+  detail: 'Web search 2026-09-22: Dealroom, CMA news CMA_N_3481 (Amendment to Business Profile, search-snippet
+    only, not click-verified — egress blocked), Islamic Finance News, Zawya, awaed.capital (about/FAQ
+    pages).'
+  date: '2026-09-22'
+status: disqualified
+stage: parked
+owner: Andre Geha
+tags:
+- ksa
+- cma
+- retail-fintech
+- disqualified
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 15
+  reasoning: 'Fit: holds a CMA Asset Management licence, so nominal segment credit (10, halved from 20
+    given the retail-consumer product framing) + priority market KSA (15) + single product line, retail
+    equities/commission-free trading, not clearly multi-asset in the institutional sense (0) + serves
+    a large number of small retail clients rather than the third-party institutional/family/fund mandates
+    Gaia targets (0) + CMA-regulated (5) = 30/60. Timing: a 2025 distribution partnership with Investcorp
+    is a retail-distribution deal, not a systems trigger (0/25). Access: no named contact (0/15). Total
+    nominally 30, marked down to 15 and disqualified: this is squarely the ICP''s explicit disqualifier
+    -- ''a retail brokerage or neobank wanting a consumer product, not a management platform'' -- despite
+    technically holding an asset-management CMA licence, the actual business is a mass-market commission-free
+    trading app, not a portfolio/fund manager needing front-to-back institutional infrastructure.'
+  disqualified_reason: Retail digital brokerage / commission-free consumer trading app despite holding
+    a CMA asset-management licence -- matches the ICP's explicit disqualification criterion for retail
+    brokerages wanting a consumer product rather than a management platform. Recording this so we do not
+    re-research the same firm next quarter.
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Investigated as a CMA asset-management-licensed CMI, but the actual business is a mass-market
+    commission-free retail trading app (Awaed), not an institutional portfolio/fund manager. Disqualified
+    per ICP's retail-brokerage exclusion despite the licence technically covering asset management.
+  link: null
+next_action: null

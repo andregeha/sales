@@ -1,0 +1,56 @@
+slug: corecam-family-office-ltd
+name: Corecam Family Office Ltd
+legal_name: null
+country: UAE
+city: Abu Dhabi
+segment: mfo
+regulator: FSRA
+website: https://www.corecam.com/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: Multi-family office headquartered in Zurich and Singapore (Corecam Investment Group's family-office
+  arm) serving affluent families and companies across Europe and Asia, with an ADGM branch (Al Sarab Tower,
+  ADGM Square, Al Maryah Island) holding an FSRA Category 3C licence. Not permitted to deal with Retail
+  Clients. The Abu Dhabi presence appears to be a GCC extension of a European/Asian MFO rather than a
+  locally-originated one.
+source:
+  channel: web_research
+  detail: adgm.com/public-registers/fsra/firms/financial-firms/corecam-family-office-ltd-220087 and adgm.com/public-registers/fsra/fsf/corecam-family-office-ltd
+    (search-confirmed via snippets, direct fetch blocked); corecam.com; swfinstitute.org profile. Searched
+    2026-09-22.
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- uae
+- adgm
+- fsra
+- mfo
+- foreign-hq
+- no-trigger
+- no-named-contact
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 60
+  reasoning: 'Fit 60/60 (assuming multi-asset coverage typical of a Swiss/Singapore MFO — not independently
+    confirmed for the ADGM branch specifically): priority MFO segment (20) + UAE market (15) + multi-asset
+    (10, inferred not confirmed) + third-party family money (10) + FSRA-regulated (5). Trigger 0/25: no
+    ADGM-specific licence date, hire, or event found — cannot even establish how long the branch has existed.
+    Access 0/15: no named local contact found in this pass. Total 60 but genuinely thin — this is a foreign
+    MFO''s GCC outpost, not a locally rooted target; watch for a named Abu Dhabi head or a local hire
+    before spending more effort.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'UAE ADGM MFO sourcing pass: FSRA register listing search-confirmed (Cat 3C, Al Sarab Tower).
+    No named local contact and no dated trigger found — this is a Zurich/Singapore-HQ''d MFO''s Abu Dhabi
+    branch. Watch for a named Abu Dhabi head or local hire before further investment.'
+  link: null
+next_action: null

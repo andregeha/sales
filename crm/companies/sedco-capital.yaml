@@ -1,0 +1,66 @@
+slug: sedco-capital
+name: SEDCO Capital
+legal_name: null
+country: Saudi Arabia
+city: Jeddah
+segment: asset_manager
+regulator: CMA (Saudi Arabia)
+website: https://sedcocapital.com/
+linkedin: https://www.linkedin.com/company/sedco-capital
+size:
+  aum: SAR 48bn (reported total AUM, source dated 2026)
+  employees: null
+  portfolios: null
+description: Established Jeddah-headquartered Shariah-compliant asset manager (relaunched as a standalone
+  asset manager in 2010, tracing to 1976), with offices in Riyadh and Luxembourg. Offers a full range
+  of asset management across asset allocation, real estate, private equity, public equity, liquidity instruments,
+  agriculture, timber and commodities, all Shariah-screened. Listed among Forbes Middle East's 30 biggest
+  regional asset managers. Reported total AUM > SAR 48bn.
+source:
+  channel: web_research
+  detail: 'Web search 2026-09-22: sedcocapital.com (Overview page), Forbes Middle East ''The Middle East''s
+    30 Biggest Asset Managers'' profile, LinkedIn. Fund-launch trigger: SEDCO Capital Alawaly Fund (real
+    estate fund) reported inception date 2026-12-01 (search snippet, sedcocapital.com/products page) —
+    treat inception date as forward-looking/near-term, not click-verified.'
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- ksa
+- cma
+- asset-manager
+- multi-asset
+- fund-launch
+- established
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 65
+  reasoning: 'Fit: priority segment asset manager (20) + priority market KSA (15) + genuinely multi-asset
+    (real estate, PE, public equity, liquidity, agriculture, timber, commodities) (10) + manages third-party
+    institutional/family capital across multiple funds, not proprietary (10) + CMA-regulated (5) = 60/60
+    — one of the strongest fit scores in this batch given the breadth of asset classes, which is exactly
+    Gaia''s front-to-back, multi-asset pitch. Timing: a new real-estate fund (SEDCO Capital Alawaly Fund)
+    with a near-term/late-2026 inception date is an active fund-launch signal (15/25) — new fund means
+    new NAV, subscriptions/redemptions and shareholder-registry work, precisely our fund-administration
+    module. Access: no named contact identified in this pass (0/15) — this is an established, well-known
+    regional firm so a named CIO/COO/Head of Ops should be findable with more effort. Total 75 by table,
+    kept at 65 pending confirmation of the fund-launch date and identification of a named contact; established
+    firms of this size are also more likely to have an incumbent PMS already, which should be qualified
+    before outreach.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'Established Jeddah multi-asset Shariah asset manager, ~SAR 48bn AUM. Fund-launch trigger found:
+    SEDCO Capital Alawaly Fund (real estate), reported inception near end-2026. No named contact found
+    yet despite being a well-known, sizeable firm — worth further LinkedIn/press digging given the strength
+    of fit.'
+  link: null
+next_action:
+  who: Andre Geha
+  what: Identify a named Head of Operations/CIO/Compliance contact at SEDCO Capital and confirm the Alawaly
+    Fund launch date
+  due: '2026-10-31'

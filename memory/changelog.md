@@ -78,3 +78,15 @@ and fixed — both would have broken the first scheduled run:
 Verified end to end: `crm.py validate` exits 0; the work queue reports due and overdue correctly;
 the generated brief's `mailto:` link decodes to the right recipient, the real subject, and a clean
 body. ⚠ Still **not** visually checked in a browser — no headless browser in this environment.
+
+### First live RFP radar run — 2026-09-22 — nil return
+Searched all four markets in English, French and Arabic (~19 queries). **Zero qualifying open
+tenders found and none recorded** — reported plainly rather than padding the CRM with a speculative
+match. Two candidates investigated and correctly rejected: an Abu Dhabi education-authority
+"corporate portfolio management" RFQ (already closed, and project-portfolio not investment-portfolio),
+and a World Bank Lebanon tax-administration system (out of scope). French public pension-fund
+*appels d'offres* were correctly identified as selecting asset managers, not software.
+
+The binding constraint is the blocked egress, not agent effort: estimated coverage is well under 10%
+of live tender flow. Learned filters written into `playbooks/rfp-radar.md`; measured performance
+recorded in `memory/facts.md` so a future nil return is read correctly.

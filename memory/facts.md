@@ -30,6 +30,21 @@
   ⚠ Do not tell Andre "just open it in PowerPoint" — **PDF and print double too**.
   — `ofs-marketing/notes/ppt-wrap-doubling.md`, 2026-09-22, high.
 
+## RFP radar — measured performance
+- **First live run (2026-09-22) found zero qualifying open tenders** across all four markets,
+  ~19 searches in English, French and Arabic. This is a **"found nothing indexable"** result, not a
+  confident zero: with page-fetching blocked the radar sees only what a search engine has indexed
+  *about* tender portals, and Etimad/BOAMP/TED tender pages appear not to be indexed at all.
+  Estimated coverage **well under 10%** of live flow, ~0% of invitation-only processes.
+  **A nil return from this radar currently means almost nothing.** — measured 2026-09-22, high.
+- **Useful negative signals learned:** "corporate portfolio management" in a public-authority RFQ
+  means *project* portfolio management, not investment; French public pension funds' *appels
+  d'offres* select asset **managers**, not software — but the firms bidding are our buyers, and
+  **winning a new institutional mandate is a trigger** worth feeding to lead sourcing.
+- **Recommended fix beyond egress:** BOAMP, PLACE, TED and Etimad all support **free saved-search
+  email alerts** once reachable. That is a far better mechanism than scraping, and worth setting up
+  on day one after the block is lifted.
+
 ## Markets & regulators
 - ⚠ **Three different regulators share the acronym "CMA"** — Lebanon's Capital Markets Authority
   (`cma.gov.lb`), Saudi Arabia's Capital Market Authority (`cma.org.sa`), and now the UAE's.

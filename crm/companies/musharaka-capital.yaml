@@ -1,0 +1,57 @@
+slug: musharaka-capital
+name: Musharaka Capital Company
+legal_name: null
+country: Saudi Arabia
+city: Riyadh
+segment: fund_manager
+regulator: CMA (Saudi Arabia)
+website: https://musharaka.sa/en/
+linkedin: https://www.linkedin.com/company/musharaka-capital
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: Riyadh-based CMI (CMA licence no. 13169-27, licensed 2013-10-07, operations started 2014-05-12;
+  paid-up capital SAR 65m) offering dealing, investment management, funds operating, arranging, advisory
+  and securities custody. Known products include the Musharaka Saudi Equity Fund and Musharaka REIT. Islamic
+  Sharia-compliant multi-asset fund manager active for over a decade.
+source:
+  channel: web_research
+  detail: 'Web search 2026-09-22: musharaka.sa (corporate overview, FAQ, products pages), CMA news CMA_N_1344
+    (search-snippet only, not click-verified — egress blocked), Crunchbase. Activity found: 2026-09 terms/conditions
+    update to the Musharaka Saudi Equity Fund; liquidation of the Al Khuyool Al Arabiya Residential Fund
+    reported (22% return over 36 months); two Cambridge Islamic Finance Forum 2026 awards.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- ksa
+- cma
+- fund-manager
+- multi-asset
+- established
+- no-current-trigger
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 45
+  reasoning: 'Fit: priority segment fund manager (20) + priority market KSA (15) + multi-asset (equity
+    fund + REIT + residential real estate fund) (10) + manages third-party fund capital (10) + CMA-regulated
+    (5) = 60/60. Timing: nothing found rises to a real trigger — a fund terms update and a fund liquidation
+    are routine fund-administration events, not a new licence, new mandate type or senior hire (0/25,
+    honestly scored: awards and a routine liquidation do not meet the bar). Access: no named contact identified
+    (0/15). Total 45 — a well-fitting, real, decade-plus-old multi-asset fund manager with genuinely no
+    trigger right now. Recorded as nurture per the playbook: watch for a new fund launch (beyond routine
+    terms updates), a reported senior hire, or AUM growth disclosure.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'Established multi-asset fund manager (equity fund, REIT, real estate funds), over a decade
+    of operating history. Searched for 2025/2026 triggers: found only routine fund terms updates, a fund
+    liquidation with a reported return, and industry awards — none of these meet the bar for a genuine
+    buying trigger. Honest nurture outcome: good fit, no current reason to reach out.'
+  link: null
+next_action: null

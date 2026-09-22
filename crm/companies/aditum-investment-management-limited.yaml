@@ -1,0 +1,65 @@
+slug: aditum-investment-management-limited
+name: Aditum Investment Management Limited
+legal_name: null
+country: UAE
+city: Dubai
+segment: asset_manager
+regulator: DFSA
+website: https://www.aditumim.com/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: Independent, privately-owned DIFC asset manager (DFSA reference F004610, licensed 2018-09-23)
+  offering GCC investors conventional and Sharia-compliant asset-management solutions to institutions,
+  wealth managers, family offices and savings platforms. Part of the Aditum Group, which also operates
+  in KAFD Riyadh, Luxembourg and the Cayman Islands. Appointed Ali El Adou as CIO in April 2023 (Bloomberg-reported,
+  described then as a ~USD 5bn manager) and established a strategic Saudi Arabia presence in 2024.
+source:
+  channel: web_research
+  detail: dfsa.ae/public-register/firms/aditum-investment-management-limited (search-confirmed via snippet
+    quoting DFSA ref F004610); Bloomberg 'Dubai's $5 Billion Asset Manager Aditum Appoints Ali El Adou
+    as CIO' (2023-04-13); aditumim.com. Searched 2026-09-22.
+  date: '2026-09-22'
+status: researching
+stage: identified
+owner: Andre Geha
+tags:
+- uae
+- difc
+- dfsa
+- asset-manager
+- trigger-growth-dated
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Ali El Adou
+  title: Chief Investment Officer
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Appointed CIO April 2023 per Bloomberg; firm described then as a ~USD 5bn Dubai asset manager.
+    Current tenure/role not re-verified beyond that announcement.
+  source: bloomberg.com 2023-04-13 article, web search 2026-09-22.
+fit:
+  score: 76
+  reasoning: 'Fit 60/60: priority asset-manager segment (20) + UAE (15) + multi-asset, conventional and
+    Sharia-compliant (10) + manages third-party/institutional and family-office money (10) + DFSA-regulated
+    (5). Trigger 8/25: the CIO hire (Ali El Adou, April 2023) is now over two years old and no longer
+    counts as ''new''; the 2024 Saudi expansion is the more current signal and scored as visible growth
+    (8). Access 8/15: Ali El Adou is a named, public CIO, though his exact current role/tenure was not
+    re-verified beyond the 2023 appointment announcement. Total 76 (Strong band) — good fit, trigger has
+    gone stale; research further for a fresher signal (a 2025/2026 hire, fund launch, or Riyadh-Dubai
+    integration story) before treating as a hot lead.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'UAE DIFC sourcing pass: DFSA register listing search-confirmed. Trigger (CIO hire) is dated
+    (2023); 2024 Saudi expansion is the more current signal. Watch for a fresher 2025/2026 event before
+    drafting outreach.'
+  link: null
+next_action: null

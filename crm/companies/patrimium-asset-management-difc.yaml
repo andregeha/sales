@@ -1,0 +1,83 @@
+slug: patrimium-asset-management-difc
+name: Patrimium Asset Management (DIFC)
+legal_name: Patrimium Asset Management Limited
+country: UAE
+city: Dubai
+segment: mfo
+regulator: DFSA
+website: https://www.patrimiummfo.com/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: Dubai-based multi-family office, formed in 2023 by converting a single-family office (Kimera-linked
+  lineage) established in 2017, managed by Managing Partners Zaid Al-Qaimi and Amine Bentaleb. Runs institutional-standard
+  infrastructure across public equities, private equity, venture capital, fixed income, real estate and
+  hedge funds. In 2024/2025 closed a USD 100m NAV facility from Ares Alternative Credit funds structured
+  against a diversified pool of private-market investments — a sign of real balance-sheet and portfolio
+  complexity, not a spreadsheet operation.
+source:
+  channel: web_research
+  detail: dfsa.ae/public-register/firms/patrimium-asset-management-limited (search-confirmed, not click-verified
+    — egress blocked); wealthbriefing.com/familywealthreport.com 'Dubai-Based Multi-Family Office Wraps
+    Up $100 Million NAV Facility'; theorg.com/salt.org/investopia.ae bios of Zaid Al-Qaimi. Searched 2026-09-22.
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- uae
+- difc
+- dfsa
+- mfo
+- trigger-sfo-to-mfo
+- trigger-growth
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Zaid Al-Qaimi
+  title: Managing Partner
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: https://www.linkedin.com/in/zaid-al-qaimi-2997a68/
+  language: en
+  notes: Ex-CIO of Kimera (Dubai SFO) for 6 years; 16 years at ADIA before that. LinkedIn profile confirmed.
+    Pronouns not stated — use they/them if referenced.
+  source: LinkedIn + salt.org/investopia.ae speaker bios, web search 2026-09-22.
+- name: Amine Bentaleb
+  title: Managing Partner
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Co-Managing Partner of Patrimium alongside Zaid Al-Qaimi. Limited public bio found beyond co-founder
+    mentions.
+  source: wealthbriefing.com/familywealthreport.com coverage, web search 2026-09-22.
+fit:
+  score: 93
+  reasoning: 'Fit 60/60: priority segment MFO (20) + UAE (15) + genuinely multi-asset (public/private
+    equity, VC, fixed income, real estate, hedge funds — 10) + manages third-party/multi-family money
+    (10) + DFSA-regulated (5). Trigger 25/25 (capped): a textbook SFO-to-MFO conversion (2017 SFO -> 2023
+    MFO, exactly the ''family office professionalising'' signal the ICP calls out, 20 pts) plus a USD
+    100m NAV facility from Ares closing in 2024/2025 showing active balance-sheet growth and increasing
+    operational complexity (8 pts, capped). Access 8/15: two named Managing Partners (Zaid Al-Qaimi, ex-CIO
+    of Kimera and 16 years at ADIA; Amine Bentaleb) with public LinkedIn profiles — a real, reachable
+    decision-maker, no warm intro. Total 93 — work it now: an MFO that just grew out of single-family
+    status and just took on a complex credit facility is exactly the moment spreadsheets stop working.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'UAE MFO sourcing pass: confirmed via search-snippet DFSA register listing + press coverage
+    of the SFO->MFO conversion and the 2024/2025 Ares NAV facility. Strong trigger, named decision-makers,
+    no route in yet beyond public LinkedIn. Next: identify a warm path or event where Al-Qaimi/Bentaleb
+    are speaking (Al-Qaimi has SALT/Investopia speaker profiles) before drafting outreach.'
+  link: null
+next_action:
+  who: Andre Geha
+  what: Identify a conference/panel where Zaid Al-Qaimi or Amine Bentaleb is speaking, or another warm
+    route in, before drafting outreach
+  due: '2026-10-15'
