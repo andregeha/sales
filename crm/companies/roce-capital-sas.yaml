@@ -1,0 +1,66 @@
+slug: roce-capital-sas
+name: ROCE CAPITAL SAS
+legal_name: null
+country: France
+city: null
+segment: fund_manager
+regulator: AMF
+website: https://www.rocecapital.com
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: 'AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr) (https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf);
+    licence GP-20000008 dated 2020-04-01. Snapshot: crm/registers/amf-france/2026-09-22.json.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- amf-france
+- register-sourced
+- new-licence
+- fund-manager
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: ROCE CAPITAL SAS — switchboard (register-published)
+  title: General enquiries
+  role: unknown
+  email: null
+  phone: 01 55 27 27 90
+  linkedin: null
+  language: fr
+  notes: 'Switchboard number as published by the regulator on its own register — not a guessed or inferred
+    number, and not an individual''s line. A generic number is a weak route: use it to reach a named person,
+    not as the first touch itself.'
+  source: amf-france register snapshot 2026-09-22
+fit:
+  score: 53
+  reasoning: 'Fit 50/60: priority segment fund_manager (20) + priority market France (15) + manages third-party
+    money — AMF-authorised for 1 - OPCVM; 3 - Conseil en investissement (10) + regulated by AMF (5). Trigger
+    0/25: licence granted 2020-04-01, too long ago to count as a trigger. Access 3/15: generic company
+    contact published on the register (3). Scored automatically from the AMF register of licensed sociétés
+    de gestion de portefeuille (via data.gouv.fr) at first sighting. Fit points are awarded only where
+    the register itself states the fact; anything it is silent on scores zero rather than being assumed.
+    Enrich before outreach.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Appeared as a new entry in the AMF register of licensed sociétés de gestion de portefeuille
+    (via data.gouv.fr). Licence GP-20000008, authorised 2020-04-01, 1 - OPCVM; 3 - Conseil en investissement.
+    Detected by the automated register diff; every field here is as the register publishes it and nothing
+    has been inferred. Not yet researched or enriched.
+  link: https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf
+- date: '2026-09-22'
+  type: research
+  summary: 'Enriched from the amf-france register snapshot 2026-09-22: switchboard 01 55 27 27 90. These
+    are details the regulator publishes on its own register, not guessed or pattern-inferred. Existing
+    values were left untouched.'
+  link: null
+next_action: null

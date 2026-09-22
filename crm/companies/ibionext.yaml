@@ -1,0 +1,51 @@
+slug: ibionext
+name: IBIONEXT
+legal_name: null
+country: France
+city: null
+segment: fund_manager
+regulator: AMF
+website: https://ibionext.com/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: 'AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr) (https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf);
+    licence GP-15000031 dated 2016-01-04. Snapshot: crm/registers/amf-france/2026-09-22.json.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- amf-france
+- register-sourced
+- new-licence
+- fund-manager
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 53
+  reasoning: 'Fit 50/60: priority segment fund_manager (20) + priority market France (15) + manages third-party
+    money — AMF-authorised for 2 - Gestion de FIA; 2b - Gestionnaire en-dessous des seuils et ne souhaitant
+    pas opter pour l''application de la Directive AIFM; 3 - Conseil en investissement (10) + regulated
+    by AMF (5). Trigger 0/25: licence granted 2016-01-04, too long ago to count as a trigger. Access 3/15:
+    generic company contact published on the register (3). Scored automatically from the AMF register
+    of licensed sociétés de gestion de portefeuille (via data.gouv.fr) at first sighting. Fit points are
+    awarded only where the register itself states the fact; anything it is silent on scores zero rather
+    than being assumed. Enrich before outreach.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Appeared as a new entry in the AMF register of licensed sociétés de gestion de portefeuille
+    (via data.gouv.fr). Licence GP-15000031, authorised 2016-01-04, 2 - Gestion de FIA; 2b - Gestionnaire
+    en-dessous des seuils et ne souhaitant pas opter pour l'application de la Directive AIFM; 3 - Conseil
+    en investissement. Detected by the automated register diff; every field here is as the register publishes
+    it and nothing has been inferred. Not yet researched or enriched.
+  link: https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf
+next_action: null

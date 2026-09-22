@@ -287,7 +287,14 @@ class Connector:
     def build_record(self, entry: Entry, snapshot_file: str) -> dict:
         today = crm.today()
         score, reasoning = self.score(entry)
-        status = "qualified" if score >= 60 else "new"
+        # ⚠ Status follows the TRIGGER, not the raw score. Reading a register gives a firm full
+        # fit marks — segment, market, multi-asset, third-party money, regulated — so essentially
+        # every licensed société de gestion scores in the 60s on fit alone. That is a statement
+        # about how well it *fits*, not about whether there is any reason to write to it today.
+        # Calling 600 firms "qualified" because they exist would make the word meaningless and
+        # bury the handful that have actually just done something.
+        trigger_points, _ = self._trigger_points(entry)
+        status = "qualified" if trigger_points > 0 else "nurture"
         detail = (
             f"{self.source_name} ({self.source_url}); licence {entry.key}"
             + (f" dated {entry.licence_date}" if entry.licence_date else "")
@@ -347,7 +354,15 @@ class Connector:
 
     # -- the pipeline -----------------------------------------------------
 
-    def run(self, *, dry_run: bool = False, baseline_window_days: Optional[int] = None) -> dict:
+    def run(self, *, dry_run: bool = False, baseline_window_days: Optional[int] = None,
+            backfill: bool = False) -> dict:
+        """Fetch, diff, create, snapshot, report.
+
+        ``backfill=True`` records **every** firm currently on the register that is not already in
+        the CRM, regardless of licence date or of whether it is new since the last snapshot. Use it
+        once per register, to establish market coverage: knowing a firm exists is not the same as
+        deciding to work it, and the ``status``/``fit.score`` fields are what separate those.
+        """
         window = self.baseline_window_days if baseline_window_days is None else baseline_window_days
         run_date = crm.today()
 
@@ -383,7 +398,10 @@ class Connector:
             gone_named = [{"key": k, "name": by_key[k]["name"]} for k in gone]
 
         # --- what actually becomes a CRM record ---
-        if prev is None:
+        if backfill:
+            candidates = entries
+            baseline = False
+        elif prev is None:
             cutoff = (date.today() - timedelta(days=window)).isoformat()
             candidates = [
                 e for e in entries
@@ -443,6 +461,7 @@ class Connector:
             "source": self.source_name,
             "ok": True,
             "baseline": baseline,
+            "backfill": backfill,
             "partial": self.partial_source,
             "total": len(entries),
             "previous": len(prev["entries"]) if prev else None,
@@ -468,6 +487,11 @@ def format_report(result: dict) -> str:
         lines.append(
             "  ⚠ PARTIAL SOURCE — this reads the most-recently-updated slice of the register, not "
             "all of it. New names are caught; disappearances are NOT detected and are not reported."
+        )
+    if result.get("backfill"):
+        lines.append(
+            f"  BACKFILL — recording every firm on the register not already in the CRM, for market "
+            f"coverage. Status follows the trigger, so most land in 'nurture'."
         )
     if result.get("baseline"):
         lines.append(

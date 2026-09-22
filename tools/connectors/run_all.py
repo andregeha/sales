@@ -57,13 +57,17 @@ def main(argv=None) -> int:
     ap.add_argument("--dry-run", action="store_true", help="fetch and diff, but write nothing")
     ap.add_argument("--baseline-window-days", type=int, default=None,
                     help="on a first run, create records for firms licensed within this many days")
+    ap.add_argument("--backfill", action="store_true",
+                    help="record EVERY firm on the register not already in the CRM, regardless of "
+                         "licence date — run once per register to establish market coverage")
     ap.add_argument("--json", action="store_true", help="emit JSON instead of text")
     args = ap.parse_args(argv)
 
     results, failures = [], []
     for c in load_connectors(args.only):
         try:
-            res = c.run(dry_run=args.dry_run, baseline_window_days=args.baseline_window_days)
+            res = c.run(dry_run=args.dry_run, baseline_window_days=args.baseline_window_days,
+                        backfill=args.backfill)
             results.append(res)
         except ConnectorError as e:
             failures.append({"register": c.register, "source": c.source_name, "ok": False,
