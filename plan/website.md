@@ -1,7 +1,7 @@
 # The sales website — design plan
 
-> Status: **plan, not built.** Written 2026-09-22. Needs three decisions from Andre (§10) before
-> any code is written.
+> Status: **plan, not built.** Written 2026-09-22; stack revised the same day.
+> **All three decisions are settled (§10) — this is ready to build.**
 >
 > This replaces the single generated `crm/reports/brief-*.html` with a real, durable surface over
 > everything this workspace knows.
@@ -39,8 +39,8 @@ CRM agent-native, and means the site can be deleted and rebuilt from scratch at 
 identical output.
 
 ```
-crm/*.yaml  ──►  tools/site_data.py  ──►  site/src/data/*.json  ──►  Astro build  ──►  site/dist/
-memory/*.md      (Python owns data)       (the contract)            (Node owns UI)     (the site)
+crm/*.yaml  ──►  tools/site_data.py  ──►  site/public/data/*.json ──►  Vite build  ──►  site/dist/
+memory/*.md      (Python owns data)       (the contract)             (React owns UI)    (the site)
 git history
 ```
 
@@ -141,21 +141,55 @@ Andre said this three times, so it gets its own section with real rules rather t
 10. **Every claim traceable.** A score shows its reasoning; a fact shows its source; a register
     entry links to the snapshot that proves it. This is the workspace's constitution applied to UI.
 
-## 6. Stack
+## 6. Stack — React 19 + TypeScript + Vite
 
-**Astro 5 + TypeScript + Tailwind 4.** Node 22.21.1 and npm 10.9.4 are **already installed** on the
-laptop, so this adds no new runtime dependency.
+> **Revised 2026-09-22** after Andre asked "why not React and more modern?". He was right, and the
+> deciding argument is one I should have weighted first: **OFS already builds on this stack.**
+> New Gaia is `React 19 + TypeScript + Vite` (`knowledge/product/gaia-new.md`). A sales tool on the
+> house stack is maintainable by OFS engineers; one on a different framework is mine alone.
 
-| Choice | Why | What was rejected and why |
+First, a correction of framing: Astro is not *older* or *less modern* than React — Astro renders
+React, and they are not competitors. The real question is whether this is a **document site** or an
+**application**, and the honest answer is that it is an application.
+
+### Why React wins here specifically
+
+| Factor | Verdict |
+|---|---|
+| **It is local and private** | Astro's headline advantages — zero JS, per-route static HTML, cold-start first paint, SEO — are worth approximately **nothing** when the only reader opens it from `localhost` on the machine that built it. I was optimising for constraints this project does not have. |
+| **It behaves like an app, not a document** | Filtering 1,299 rows, sorting, cross-navigating between a firm and its trigger feed and its register snapshot. That is application behaviour, and React's model fits it directly. |
+| **House stack** | React 19 + TS + Vite is what OFS engineers already write. |
+| **The dense-data tooling is genuinely best-in-class** | TanStack Table + Virtual for the grid; Radix primitives under shadcn/ui for accessible, unopinionated components. Since **UI/UX is the stated priority**, using the best tools for dense data UI is the point, not a detail. |
+
+**What we give up, stated plainly:** per-route static HTML, and a JS bundle instead of zero JS.
+Both are irrelevant served from disk to one reader. If this ever becomes public or
+multi-user, that trade is worth revisiting — and it would be a real revisit, not a formality.
+
+### The stack
+
+| Layer | Choice | Note |
 |---|---|---|
-| **Astro** | Content-driven, **ships zero JS by default**, static output, islands only where interactivity is genuinely needed (the company filter). Generates 1,299 static pages happily. | **Next.js** — built for a server we do not want and will not have. **SvelteKit** — fine, but Astro's zero-JS default matches a read-only site better. **Plain HTML from Python** — cannot hit the UI bar he set. |
-| **TypeScript** | The JSON contract gets real types; a data-shape change breaks the build instead of the page. | — |
-| **Tailwind 4** | Design tokens in one place; no CSS drift across ten views. | Hand-rolled CSS — drifts. Component libraries — heavy, generic, and they *look* like component libraries. |
-| **Client-side filtering** | The slim index is **307 KB** (~70 KB gzipped) — small enough to ship and filter in the browser with no server. | A search service — needless infrastructure for one reader. |
-| **Python for data** | Agents already write Python; `crm.py` owns the schema. | Rewriting the data layer in Node — pointless churn and a second schema. |
+| UI | **React 19** | Same major as New Gaia. |
+| Language | **TypeScript**, strict | The JSON contract gets real types; a data-shape change breaks the build, not the page. |
+| Build | **Vite** | Same as New Gaia. Fast, deterministic output, static bundle. |
+| Routing | **TanStack Router** | Type-safe routes and params — a typo in a link is a compile error. |
+| Data grid | **TanStack Table + TanStack Virtual** | 1,299 rows virtualised; only visible rows render. |
+| Styling | **Tailwind 4** | Design tokens in one place, no CSS drift across ten views. |
+| Components | **shadcn/ui** (Radix) | Copied into the repo, not a dependency — so it is ours to shape rather than a library to fight. Accessible and keyboard-navigable by default, which §5.7 requires. |
+| Validation | **Zod** | Validates the JSON contract at load. A malformed build fails loudly rather than rendering wrong. |
 
-⚠ **Measured, not assumed:** full JSON export is 3.7 MB, so it is **never shipped whole**. The list
-view gets the 307 KB slim index; each company's full detail is baked into its own static page.
+⚠ **No chart library yet.** The markets coverage matrix is a CSS grid. Adding a charting dependency
+before there is a chart worth drawing is exactly the speculative weight this plan should avoid.
+
+### Data loading
+
+Measured, not assumed: full export **3.7 MB**, slim index **307 KB**.
+
+- `index.json` (307 KB) loads at boot → powers the list, search and every filter.
+- `companies/<slug>.json` is fetched on demand for a detail view.
+
+Loading all 3.7 MB at once would work fine from disk, but splitting keeps the app honest at ten
+times this size — and this CRM has grown 22× in one day.
 
 ## 7. The determinism contract
 
@@ -189,7 +223,7 @@ Each phase is independently useful. Nothing is built that a later phase throws a
 | Phase | What lands | Why this order |
 |---|---|---|
 | **P0 — the contract** | `site_data.py`, the JSON schema, the `Run`/`ChangeEvent`/`SourceHealth` entities, the determinism test. **No UI.** | Everything depends on it, and it is where the genuinely new work is. It also improves the engine on its own: run records exist whether or not a site is ever built. |
-| **P1 — the core loop** | Astro skeleton, `/`, `/companies`, `/companies/[slug]`, `/sources`. | The daily loop, end to end, plus the honesty surface. Replaces the current brief. |
+| **P1 — the core loop** | App shell, `/`, `/companies`, `/companies/[slug]`, `/sources`. | The daily loop, end to end, plus the honesty surface. Replaces the current brief. |
 | **P2 — memory** | `/triggers`, `/runs`, `/markets`. | This is where R4 becomes visible — the engine's history becomes browsable. |
 | **P3 — deal work** | `/pipeline`, `/rfps`, `/questions`, the outreach queue with its `mailto:` links. | Depends on P1's shell; less urgent while the pipeline is young. |
 | **P4 — polish** | Keyboard navigation, search refinement, print/mobile, dark mode. | Deliberately last: polish on the wrong structure is wasted. |
@@ -197,21 +231,25 @@ Each phase is independently useful. Nothing is built that a later phase throws a
 Wiring into the daily run (R3) happens at the end of **P1**: `run_all.py` → `site_data.py` →
 `npm run build` → commit. One command, no manual step.
 
-## 10. Decisions needed from Andre
+## 10. Decisions — settled 2026-09-22
 
-| # | Question | Recommendation |
+| # | Question | Decision |
 |---|---|---|
-| 1 | **Stack** — Astro + TypeScript + Tailwind, building a static site? | **Yes.** Node is already installed, so the cost is a `node_modules` folder and nothing else. |
-| 2 | **Where does it live?** Local-only to start, or do you want it reachable from your phone? | **Local first.** Phone access means the data leaves the laptop and needs a deliberate decision, not a default. |
-| 3 | **Brand** — should it use OFS brand (the kit lives in `ofs-marketing`), or stay neutral and functional? | **Neutral to start.** This is an internal tool, not a client artifact; brand can be applied in P4 without rework. |
+| 1 | **Stack** | ✅ **React 19 + TypeScript + Vite** (+ TanStack Router/Table, Tailwind 4, shadcn/ui). Revised from Astro after Andre's challenge — see §6. |
+| 2 | **Where it lives** | ✅ **Local first.** Built to `site/dist/`, served on `localhost`. Nothing leaves the laptop. Remote access stays a separate, deliberate decision. |
+| 3 | **Brand** | ✅ **Neutral.** Internal tool, not a client artifact. OFS brand can be applied later without rework. |
 
 ## 11. Risks, named honestly
 
 - **Determinism drifts silently.** One `datetime.now()` and R2 is gone. → the double-build test.
 - **Two toolchains** (Python + Node) is real complexity. Mitigated by the hard boundary at the JSON
   contract: neither side needs to understand the other.
-- **Build time at 1,299 pages.** Astro handles this scale, but it must be *measured* in P1, not
-  assumed. If it is slow, detail pages can be rendered on demand from the index.
+- **Rendering 1,299 rows.** Not a build-time problem any more — it is a runtime one, and the answer
+  is TanStack Virtual so only visible rows mount. It must be *measured* in P1 on the real dataset,
+  not assumed. The CRM grew 22× in a day; assume it grows again.
+- **Bundle weight creeping.** A React app makes it easy to add a dependency per problem. Every one
+  is a tax on a tool with a single reader. The chart-library line in §6 is the standing example:
+  add it when there is a chart worth drawing, not before.
 - **The site quietly becoming a second source of truth.** The single most damaging failure mode
   available. → nothing is ever authored in `site/`.
 - **Scope creep toward a web app.** Andre explicitly does not want to input data. Every form is a
