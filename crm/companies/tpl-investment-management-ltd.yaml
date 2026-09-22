@@ -1,0 +1,52 @@
+slug: tpl-investment-management-ltd
+name: TPL Investment Management Ltd
+legal_name: null
+country: UAE
+city: Abu Dhabi
+segment: fund_manager
+regulator: FSRA (ADGM)
+website: https://tplfunds.com
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: 'FSRA public register of financial firms (ADGM) (https://www.adgm.com/public-registers/fsra);
+    licence 210062 dated 2022-05-26. Snapshot: crm/registers/fsra-adgm/2026-09-22.json.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- fsra-adgm
+- register-sourced
+- new-licence
+- fund-manager
+- uae
+- adgm
+- fsra
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 53
+  reasoning: 'Fit 50/60: priority segment fund_manager (20) + priority market UAE (15) + manages third-party
+    money — FSRA-authorised for Managing A Collective Investment Fund (10) + regulated by FSRA (ADGM)
+    (5). Trigger 0/25: licence granted 2022-05-26, too long ago to count as a trigger. Access 3/15: generic
+    company contact published on the register (3). Scored automatically from the FSRA public register
+    of financial firms (ADGM) at first sighting. Fit points are awarded only where the register itself
+    states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 210062,
+    authorised 2022-05-26, Managing A Collective Investment Fund. Detected by the automated register diff;
+    every field here is as the register publishes it and nothing has been inferred. Not yet researched
+    or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Reem Island, Unit
+    3503-S3, 35th Floor, Tamouh, Addax Port Office Tower, Al Rayfa Street'
+  link: https://www.adgm.com/public-registers/fsra
+next_action: null

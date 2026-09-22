@@ -192,13 +192,17 @@ class FSRAADGMConnector(Connector):
         self._activities[url] = found
         return found
 
-    def build_record(self, entry: Entry, snapshot_file: str) -> dict:
+    def prepare_candidate(self, entry: Entry) -> None:
+        """Read this firm's detail page to establish its regulated activities and segment.
+
+        ⚠ This must happen HERE and not in ``build_record``: the pipeline checks for a segment
+        before it builds a record, so a segment filled in later would never be seen and every ADGM
+        firm would be skipped as unsegmentable.
+        """
         acts = self._load_activities(entry)
         if acts is None:
-            # Unknown, not absent. It will be skipped for lack of a segment, and the reason will
-            # say why — so a transient network failure is never mistaken for a firm we assessed.
             entry.licence_type = "⚠ detail page unreachable — activities NOT established"
-            return super().build_record(entry, snapshot_file)
+            return
         for needle, seg in ACTIVITY_SEGMENTS:
             if needle in acts:
                 entry.segment = seg
@@ -208,6 +212,8 @@ class FSRAADGMConnector(Connector):
             entry.third_party = True
             entry.evidence = {"third_party": f"FSRA-authorised for {entry.licence_type}"}
 
+    def build_record(self, entry: Entry, snapshot_file: str) -> dict:
+        # prepare_candidate() has already resolved activities, segment and evidence.
         rec = super().build_record(entry, snapshot_file)
 
         addr = entry.raw.get("address")

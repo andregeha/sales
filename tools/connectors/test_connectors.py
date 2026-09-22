@@ -201,6 +201,43 @@ class TestUnsegmentableEntries(ConnectorHarness):
         self.assertEqual(self.companies(), [])
 
 
+class TestPrepareCandidateHook(ConnectorHarness):
+    """Regression: a connector that learns its segment per-candidate must not be skipped first.
+
+    ADGM only discovers what a firm is authorised to do by reading its detail page. That happens in
+    prepare_candidate(), which the pipeline must call BEFORE the missing-segment skip — otherwise
+    every such firm is discarded before its detail page is ever fetched. That bug shipped once and
+    silently created nothing from a 412-firm register.
+    """
+
+    def test_segment_filled_by_hook_is_honoured(self):
+        class Deferred(StubConnector):
+            def prepare_candidate(self, entry):
+                entry.segment = "asset_manager"
+                entry.licence_type = "Managing Assets"
+
+        e = mk_entry("A", "Deferred Segment Ltd")
+        e.segment = None
+        res = Deferred(entries=[e]).run(baseline_window_days=9999)
+        self.assertEqual(len(res["created"]), 1, "hook-supplied segment must prevent the skip")
+        self.assertEqual(res["skipped"], [])
+
+    def test_hook_that_cannot_resolve_still_skips(self):
+        class Unresolved(StubConnector):
+            def prepare_candidate(self, entry):
+                entry.licence_type = "detail page unreachable"
+
+        e = mk_entry("A", "Unknown Ltd")
+        e.segment = None
+        res = Unresolved(entries=[e]).run(baseline_window_days=9999)
+        self.assertEqual(res["created"], [])
+        self.assertIn("unreachable", res["skipped"][0]["reason"])
+
+    def test_default_hook_is_a_noop(self):
+        res = StubConnector(entries=[mk_entry("A", "Normal Ltd")]).run(baseline_window_days=9999)
+        self.assertEqual(len(res["created"]), 1)
+
+
 class TestCMASaudiMapping(unittest.TestCase):
     """Pure mapping logic for the Saudi connector — no network."""
 

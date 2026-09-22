@@ -1,0 +1,64 @@
+slug: aliph-capital-limited
+name: Aliph Capital Limited
+legal_name: null
+country: UAE
+city: Abu Dhabi
+segment: fund_manager
+regulator: FSRA (ADGM)
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: 'FSRA public register of financial firms (ADGM) (https://www.adgm.com/public-registers/fsra);
+    licence 210053 dated 2022-05-09. Snapshot: crm/registers/fsra-adgm/2026-09-22.json.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- fsra-adgm
+- register-sourced
+- new-licence
+- fund-manager
+- uae
+- adgm
+- fsra
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Aliph Capital Limited — contact published on the FSRA register
+  title: General enquiries
+  role: unknown
+  email: huda@aliph.capital
+  phone: +971 561795499
+  linkedin: null
+  language: en
+  notes: Email and/or telephone exactly as the FSRA publishes them on its own public register — not guessed,
+    not pattern-inferred. ⚠ The address the regulator holds is often a named individual's work address
+    rather than a general inbox; check who it belongs to before writing, and treat it as a real person.
+  source: FSRA public register, https://www.adgm.com/public-registers/fsra/firms/financial-firms/aliph-capital-limited-210053
+fit:
+  score: 53
+  reasoning: 'Fit 50/60: priority segment fund_manager (20) + priority market UAE (15) + manages third-party
+    money — FSRA-authorised for Managing A Collective Investment Fund; Managing Assets (10) + regulated
+    by FSRA (ADGM) (5). Trigger 0/25: licence granted 2022-05-09, too long ago to count as a trigger.
+    Access 3/15: generic company contact published on the register (3). Scored automatically from the
+    FSRA public register of financial firms (ADGM) at first sighting. Fit points are awarded only where
+    the register itself states the fact; anything it is silent on scores zero rather than being assumed.
+    Enrich before outreach.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 210053,
+    authorised 2022-05-09, Managing A Collective Investment Fund; Managing Assets. Detected by the automated
+    register diff; every field here is as the register publishes it and nothing has been inferred. Not
+    yet researched or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Maryah
+    Island, Office 311, 15th Floor, Al Sarab Tower, Adgm Square'
+  link: https://www.adgm.com/public-registers/fsra
+next_action: null

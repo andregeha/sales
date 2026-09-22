@@ -1,0 +1,52 @@
+slug: crosswind-capital-fund-management-limited
+name: Crosswind Capital Fund Management Limited
+legal_name: null
+country: UAE
+city: Abu Dhabi
+segment: fund_manager
+regulator: FSRA (ADGM)
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: 'FSRA public register of financial firms (ADGM) (https://www.adgm.com/public-registers/fsra);
+    licence 220171 dated 2024-09-02. Snapshot: crm/registers/fsra-adgm/2026-09-22.json.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- fsra-adgm
+- register-sourced
+- new-licence
+- fund-manager
+- uae
+- adgm
+- fsra
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 50
+  reasoning: 'Fit 50/60: priority segment fund_manager (20) + priority market UAE (15) + manages third-party
+    money — FSRA-authorised for Managing A Collective Investment Fund (10) + regulated by FSRA (ADGM)
+    (5). Trigger 0/25: licence granted 2024-09-02, too long ago to count as a trigger. Access 0/15: no
+    contact route published (0). Scored automatically from the FSRA public register of financial firms
+    (ADGM) at first sighting. Fit points are awarded only where the register itself states the fact; anything
+    it is silent on scores zero rather than being assumed. Enrich before outreach.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 220171,
+    authorised 2024-09-02, Managing A Collective Investment Fund. Detected by the automated register diff;
+    every field here is as the register publishes it and nothing has been inferred. Not yet researched
+    or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Maryah Island, Unit
+    28, Level 7, Al Maryah Tower, Abu Dhabi Global Market Square'
+  link: https://www.adgm.com/public-registers/fsra
+next_action: null

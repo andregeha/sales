@@ -2,7 +2,7 @@
   "register": "fsra-adgm",
   "regulator": "FSRA (ADGM)",
   "source_url": "https://www.adgm.com/public-registers/fsra",
-  "fetched_at": "2026-09-22T14:22:55+00:00",
+  "fetched_at": "2026-09-22T14:32:31+00:00",
   "run_date": "2026-09-22",
   "count": 412,
   "entries": [
@@ -25,31 +25,35 @@
       "key": "160009",
       "name": "Equitativa (AD) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 26948588",
       "licence_date": "2016-08-23",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "160011",
       "name": "Frontera Capital Group Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 24187638",
       "licence_date": "2016-12-05",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Dealing In Investments"
+      }
     },
     {
       "key": "160012",
@@ -100,31 +104,35 @@
       "key": "160019",
       "name": "Al Dhabi Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 24120999",
       "licence_date": "2017-02-22",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "160020",
       "name": "Mubadala Capital (RS) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 22361000",
       "licence_date": "2017-03-23",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "160021",
@@ -145,27 +153,29 @@
       "key": "160022",
       "name": "Banque Richelieu GCC Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 24107000",
       "licence_date": "2017-07-25",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets; Accepting Deposits; Providing Custody; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets; Accepting Deposits; Providing Custody; Dealing In Investments"
+      }
     },
     {
       "key": "160024",
       "name": "Marex Capital (AD) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "custodian",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 24187580",
       "licence_date": "2017-06-08",
-      "licence_type": null,
+      "licence_type": "Providing Custody; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -175,31 +185,35 @@
       "key": "170001",
       "name": "VPE Capital (Middle East) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 22367744",
       "licence_date": "2017-09-11",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "170002",
       "name": "MTAN Commercial Investment Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 24187571",
       "licence_date": "2017-11-26",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "170003",
@@ -250,12 +264,12 @@
       "key": "170015",
       "name": "BNP Paribas S.A.",
       "country": "UAE",
-      "segment": null,
+      "segment": "bank",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 22454666",
       "licence_date": "2018-01-10",
-      "licence_type": null,
+      "licence_type": "Accepting Deposits",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -265,12 +279,12 @@
       "key": "170016",
       "name": "Vision Bank Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "bank",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 24175808",
       "licence_date": "2018-12-04",
-      "licence_type": null,
+      "licence_type": "Accepting Deposits",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -280,12 +294,12 @@
       "key": "170018",
       "name": "Finior Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 581089096",
       "licence_date": "2018-06-12",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -295,31 +309,35 @@
       "key": "170025",
       "name": "ADS Investment Solutions Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2017-12-28",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "170026",
       "name": "AFD Fund Management Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2017-12-28",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "170031",
@@ -355,31 +373,35 @@
       "key": "170036",
       "name": "ADCB Asset Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 2 6973322",
       "licence_date": "2018-04-17",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "180001",
       "name": "Lunate Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2018-05-10",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "180002",
@@ -400,31 +422,35 @@
       "key": "180005",
       "name": "RS Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 26948600",
       "licence_date": "2018-07-18",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "180006",
       "name": "Shuaa GMC Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 22083800",
       "licence_date": "2018-04-22",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "180010",
@@ -505,31 +531,35 @@
       "key": "180021",
       "name": "Ajeej Capital (AD) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2018-10-14",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "180022",
       "name": "ACM Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 22344570",
       "licence_date": "2019-04-28",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "180024",
@@ -565,16 +595,18 @@
       "key": "180036",
       "name": "FinaMaze Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 585388757",
       "licence_date": "2020-11-24",
-      "licence_type": null,
+      "licence_type": "Managing Assets; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets; Dealing In Investments"
+      }
     },
     {
       "key": "180038",
@@ -610,16 +642,18 @@
       "key": "180041",
       "name": "Abu Dhabi Catalyst Partners Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 2413 0000",
       "licence_date": "2019-04-23",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "180042",
@@ -640,16 +674,18 @@
       "key": "180043",
       "name": "Azimut (ME) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 26740063",
       "licence_date": "2019-06-24",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "180044",
@@ -670,16 +706,18 @@
       "key": "180048",
       "name": "Wealthface Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 24187566",
       "licence_date": "2020-02-20",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "190002",
@@ -700,27 +738,29 @@
       "key": "190004",
       "name": "Shorooq Partners Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 44107533",
       "licence_date": "2019-05-23",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "190005",
       "name": "Key Way Markets Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 22455101",
       "licence_date": "2020-03-01",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -745,12 +785,12 @@
       "key": "190014",
       "name": "Ousoul Assets Custodian and Trading Facilities Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "custodian",
       "city": "Abu Dhabi",
       "website": "https://www.ousoul.com",
       "phone": "+971 2 419 5037",
       "licence_date": "2020-07-28",
-      "licence_type": null,
+      "licence_type": "Providing Custody",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -760,27 +800,29 @@
       "key": "190017",
       "name": "ICGS Investment Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+962 777205060",
       "licence_date": "2020-09-21",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "190018",
       "name": "Ava Trade Middle East Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 544313777",
       "licence_date": "2020-02-06",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -850,31 +892,35 @@
       "key": "190032",
       "name": "Key Capital Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 566030088",
       "licence_date": "2020-04-30",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "190033",
       "name": "Salica Ventures Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 26451881",
       "licence_date": "2019-12-29",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "190034",
@@ -895,31 +941,35 @@
       "key": "190037",
       "name": "Sarwa Digital Wealth (Capital) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2020-02-20",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "190041",
       "name": "Zilla Capital for Investments Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2021-07-18",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "190043",
@@ -940,12 +990,12 @@
       "key": "190045",
       "name": "Foris Capital ME Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 503611409",
       "licence_date": "2020-10-15",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -955,61 +1005,69 @@
       "key": "200001",
       "name": "Alterra Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 26927400",
       "licence_date": "2020-04-30",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "200004",
       "name": "Bridge Nine Capital Partners Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2020-05-25",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "200005",
       "name": "Olive Rock Partners Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2020-04-09",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "200006",
       "name": "Access Bridge Ventures Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 45876645",
       "licence_date": "2020-05-27",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "200010",
@@ -1030,16 +1088,18 @@
       "key": "200011",
       "name": "MSA Capital ETM LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 563497457",
       "licence_date": "2020-06-24",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "200013",
@@ -1060,12 +1120,12 @@
       "key": "200015",
       "name": "Exinity ME Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 24180300",
       "licence_date": "2021-04-04",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -1075,27 +1135,29 @@
       "key": "200017",
       "name": "Venturesouq Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 529249883",
       "licence_date": "2020-07-09",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "200020",
       "name": "Dhabi LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "bank",
       "city": "Abu Dhabi",
       "website": "https://www.dhabi.com",
       "phone": "+971 26194444",
       "licence_date": "2025-04-08",
-      "licence_type": null,
+      "licence_type": "Accepting Deposits",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -1105,91 +1167,103 @@
       "key": "200021",
       "name": "Phoenician Invest Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+961 1999161",
       "licence_date": "2020-08-13",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "200022",
       "name": "Fundrock Investment Management Services (ME) Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 26726327",
       "licence_date": "2020-11-12",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "200023",
       "name": "Xanara ME LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 24187545",
       "licence_date": "2020-11-14",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "200028",
       "name": "Sirius Aviation Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2022-01-14",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "200029",
       "name": "Plus VC Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2020-09-28",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "200031",
       "name": "Raed Ventures Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+966 138198146",
       "licence_date": "2020-12-16",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "200033",
@@ -1210,12 +1284,12 @@
       "key": "200034",
       "name": "Lunaro Markets Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 26759400",
       "licence_date": "2021-08-18",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -1240,12 +1314,12 @@
       "key": "200039",
       "name": "Copper Securities (ME) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 26289071",
       "licence_date": "2022-04-07",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -1255,42 +1329,46 @@
       "key": "200040",
       "name": "Peregrine Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2021-06-02",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "200041",
       "name": "B&Y Venture Partners Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 543881731",
       "licence_date": "2021-04-13",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "200043",
       "name": "J.P. MORGAN MIDDLE EAST LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "bank",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 26980502",
       "licence_date": "2021-03-25",
-      "licence_type": null,
+      "licence_type": "Accepting Deposits",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -1300,31 +1378,35 @@
       "key": "200045",
       "name": "Talos Investment Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2020-11-09",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "200047",
       "name": "Ruya Partners Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 529229772",
       "licence_date": "2020-12-09",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "200051",
@@ -1360,46 +1442,52 @@
       "key": "210001",
       "name": "High Water Venture Partners Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 505792645",
       "licence_date": "2021-04-04",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "210002",
       "name": "Bridgefort Maritime Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2022-09-19",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "210003",
       "name": "FinFlx Investment Management Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2022-08-08",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "210006",
@@ -1420,46 +1508,52 @@
       "key": "210008",
       "name": "OurCrowd Management (Arabia) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2021-07-25",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "210009",
       "name": "Carlyle MENA Advisors Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2022-04-06",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "210010",
       "name": "Anamcara Capital Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+44 7771788072",
       "licence_date": "2021-05-16",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "210012",
@@ -1480,16 +1574,18 @@
       "key": "210013",
       "name": "Beaufort Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2021-06-01",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "210015",
@@ -1555,31 +1651,35 @@
       "key": "210024",
       "name": "Axight Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2021-11-29",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "210025",
       "name": "Altus Fund Management Company Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 26212005",
       "licence_date": "2022-06-30",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "210027",
@@ -1615,76 +1715,86 @@
       "key": "210031",
       "name": "Flat6Labs Arabia Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2021-11-28",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "210032",
       "name": "Investcorp (Abu Dhabi) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2021-09-28",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "210033",
       "name": "Peak Capital Management LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2021-12-05",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "210035",
       "name": "ARECA Capital LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 24475592",
       "licence_date": "2021-11-04",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Dealing In Investments"
+      }
     },
     {
       "key": "210041",
       "name": "Modus MENA Manager Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2022-02-17",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "210043",
@@ -1705,27 +1815,29 @@
       "key": "210044",
       "name": "Iliad Partners Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2022-06-28",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "210045",
       "name": "ICM Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2022-10-12",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -1735,16 +1847,18 @@
       "key": "210046",
       "name": "Piper Sandler MENA LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2022-03-14",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "210048",
@@ -1765,12 +1879,12 @@
       "key": "210051",
       "name": "First Abu Dhabi Bank P.J.S.C.",
       "country": "UAE",
-      "segment": null,
+      "segment": "bank",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2022-03-28",
-      "licence_type": null,
+      "licence_type": "Accepting Deposits; Providing Custody",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -1780,57 +1894,63 @@
       "key": "210052",
       "name": "Bunat Ventures Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2022-02-17",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "210053",
       "name": "Aliph Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 561795499",
       "licence_date": "2022-05-09",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "210062",
       "name": "TPL Investment Management Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": "https://tplfunds.com",
       "phone": null,
       "licence_date": "2022-05-26",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "210063",
       "name": "Rain Trading Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "custodian",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2022-12-22",
-      "licence_type": null,
+      "licence_type": "Providing Custody; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -1840,61 +1960,69 @@
       "key": "220055",
       "name": "Assets Under Management Ventures Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 561761953",
       "licence_date": "2022-04-26",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220056",
       "name": "AG (Australian Gulf) Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2022-09-01",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220059",
       "name": "EQIQ Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+964 7807109039",
       "licence_date": "2022-06-28",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220060",
       "name": "Vantage Point Capital Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-01-19",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220061",
@@ -1915,46 +2043,52 @@
       "key": "220065",
       "name": "Wahed Invest Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-04-06",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "220066",
       "name": "Further Ventures Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 508600020",
       "licence_date": "2022-07-22",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220068",
       "name": "Zeta Asset Management Company Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-08-11",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220069",
@@ -1975,12 +2109,12 @@
       "key": "220070",
       "name": "Klickl International Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-04-16",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -1990,31 +2124,35 @@
       "key": "220073",
       "name": "eToro (ME) Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-10-16",
-      "licence_type": null,
+      "licence_type": "Managing Assets; Providing Custody; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets; Providing Custody; Dealing In Investments"
+      }
     },
     {
       "key": "220075",
       "name": "Louvre Wealth Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-02-01",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "220077",
@@ -2035,27 +2173,29 @@
       "key": "220080",
       "name": "Neovision Wealth Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2022-10-24",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "220081",
       "name": "Halo Investing MEA Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 25832482",
       "licence_date": "2023-01-19",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -2065,31 +2205,35 @@
       "key": "220083",
       "name": "Polyvalent Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2022-11-28",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "220084",
       "name": "Oros Asset Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-01-08",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "220087",
@@ -2110,16 +2254,18 @@
       "key": "220088",
       "name": "Gulf Capital Investments Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-01-24",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "220089",
@@ -2140,16 +2286,18 @@
       "key": "220091",
       "name": "F9 Capital Management Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-02-23",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220092",
@@ -2170,46 +2318,52 @@
       "key": "220093",
       "name": "Andermatt Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 24130011",
       "licence_date": "2023-03-10",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "220095",
       "name": "One Investment Management Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-03-30",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220097",
       "name": "Prosperity Capital Management (ME) Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-02-05",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "220098",
@@ -2230,16 +2384,18 @@
       "key": "220099",
       "name": "Global Ventures ME Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-04-18",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220100",
@@ -2260,16 +2416,18 @@
       "key": "220101",
       "name": "X12 Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-09-08",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "220103",
@@ -2335,16 +2493,18 @@
       "key": "220110",
       "name": "Cohesion Asset Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-07-02",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220111",
@@ -2365,31 +2525,35 @@
       "key": "220112",
       "name": "Venturerock Global Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-06-15",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220114",
       "name": "Delta Wealth Partners Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-10-23",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220115",
@@ -2425,106 +2589,120 @@
       "key": "220117",
       "name": "Kristal.AI Middle East Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-06-24",
-      "licence_type": null,
+      "licence_type": "Managing Assets; Providing Custody; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets; Providing Custody; Dealing In Investments"
+      }
     },
     {
       "key": "220119",
       "name": "Klub Capital Technologies Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-12-14",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220120",
       "name": "Prospect Asset Management Company Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-02-16",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220122",
       "name": "Jasoor Ventures Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-06-23",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220124",
       "name": "Signet Capital Management (ME) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-07-07",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "220126",
       "name": "Daliz Finance Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-04-25",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220127",
       "name": "Klumi Ventures Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-04-04",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220128",
@@ -2545,12 +2723,12 @@
       "key": "220129",
       "name": "Tungsten Custody Solutions Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "custodian",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-11-27",
-      "licence_type": null,
+      "licence_type": "Providing Custody",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -2575,12 +2753,12 @@
       "key": "220132",
       "name": "Zodia Markets (AME) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-12-10",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -2590,16 +2768,18 @@
       "key": "220133",
       "name": "Natural Ventures Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-08-23",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220134",
@@ -2665,27 +2845,29 @@
       "key": "220138",
       "name": "Fund+ Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-01-16",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "220140",
       "name": "Stark Securities Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "custodian",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-11-13",
-      "licence_type": null,
+      "licence_type": "Providing Custody; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -2710,12 +2892,12 @@
       "key": "220142",
       "name": "Changer.ae Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "custodian",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-09-15",
-      "licence_type": null,
+      "licence_type": "Providing Custody",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -2725,16 +2907,18 @@
       "key": "220144",
       "name": "Phoenix Venture Partners Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-03-07",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220145",
@@ -2755,16 +2939,18 @@
       "key": "220146",
       "name": "ARTE Capital Middle East Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-11-21",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220147",
@@ -2785,46 +2971,52 @@
       "key": "220148",
       "name": "Finstreet Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-09-04",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220149",
       "name": "Janus Henderson Investors Middle East Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-02-21",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220150",
       "name": "Joy Global Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-03-22",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220151",
@@ -2845,16 +3037,18 @@
       "key": "220152",
       "name": "Vibrant Capital Partners International Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-10-27",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220153",
@@ -2875,61 +3069,69 @@
       "key": "220154",
       "name": "Stride Ventures Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-05-06",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220155",
       "name": "Rudo Digital Wealth Private Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-08-28",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "220156",
       "name": "Gemcorp Capital Management (Middle East) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-09-30",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220157",
       "name": "SDF Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-11-15",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "220158",
@@ -2950,42 +3152,46 @@
       "key": "220159",
       "name": "Hashgraph Ventures Manager Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-07-18",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220164",
       "name": "ALTNovel Capital Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2023-11-24",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220165",
       "name": "Onchain Marketplace Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "custodian",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-05-26",
-      "licence_type": null,
+      "licence_type": "Providing Custody",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -2995,12 +3201,12 @@
       "key": "220166",
       "name": "Paxos Middle East Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "custodian",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-10-17",
-      "licence_type": null,
+      "licence_type": "Providing Custody; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -3055,16 +3261,18 @@
       "key": "220171",
       "name": "Crosswind Capital Fund Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-09-02",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "220172",
@@ -3115,12 +3323,12 @@
       "key": "240002",
       "name": "Thndr Financial Ltd.",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-01-31",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -3145,27 +3353,29 @@
       "key": "240004",
       "name": "Florin Court Capital LLP",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-01-23",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240006",
       "name": "Barrenjoey Markets Pty Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-04-25",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -3175,31 +3385,35 @@
       "key": "240007",
       "name": "9Unicorns Global Capital Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-07-15",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240008",
       "name": "Nomad Invest Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-06-27",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "240009",
@@ -3220,162 +3434,182 @@
       "key": "240010",
       "name": "Morgan Stanley Investment Management",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-04-01",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "240011",
       "name": "VIZIER ASSET MANAGEMENT COMPANY LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-02-26",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "240013",
       "name": "Infini Capital Management (ME) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 26275852",
       "licence_date": "2025-02-27",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "240014",
       "name": "Alteia Investment Management Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-03-05",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240015",
       "name": "GQG Partners Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-03-08",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "240016",
       "name": "I Squared Capital Advisors (ME) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-10-04",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240017",
       "name": "TRITON LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-12-11",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240018",
       "name": "Marcuard Heritage (Middle East) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-11-06",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "240019",
       "name": "Balmoral Partners Investment Management Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-08-30",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240020",
       "name": "Token Bay Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-03-21",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240022",
       "name": "BurjX MENA Ltd.",
       "country": "UAE",
-      "segment": null,
+      "segment": "custodian",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-06-11",
-      "licence_type": null,
+      "licence_type": "Providing Custody; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -3430,12 +3664,12 @@
       "key": "240027",
       "name": "Tradition (Dubai) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-01-21",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -3445,31 +3679,35 @@
       "key": "240028",
       "name": "Investindustrial Advisors (MENA) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-01-10",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240029",
       "name": "Laser Digital (AD) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-06-07",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets; Dealing In Investments"
+      }
     },
     {
       "key": "240030",
@@ -3490,16 +3728,18 @@
       "key": "240031",
       "name": "Vantage Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-08-22",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "240032",
@@ -3520,31 +3760,35 @@
       "key": "240034",
       "name": "Aspen Digital Financial Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-12-11",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets; Providing Custody; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets; Providing Custody; Dealing In Investments"
+      }
     },
     {
       "key": "240035",
       "name": "Arcapita Investment Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-12-09",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "240036",
@@ -3565,31 +3809,35 @@
       "key": "240037",
       "name": "REEM PARTNERS LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-10-16",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240038",
       "name": "YELLOWFIN CAPITAL PARTNERS LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-12-10",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240040",
@@ -3670,16 +3918,18 @@
       "key": "240045",
       "name": "Liwa Capital Advisors Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-01-20",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240046",
@@ -3700,16 +3950,18 @@
       "key": "240047",
       "name": "McKinsey Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-07-11",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240048",
@@ -3760,12 +4012,12 @@
       "key": "240056",
       "name": "Finstreet Global Clearing and Settlement Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "custodian",
       "city": "Abu Dhabi",
       "website": "https://www.finstreet.ae",
       "phone": "+971 585126831",
       "licence_date": "2024-07-19",
-      "licence_type": null,
+      "licence_type": "Providing Custody",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -3775,12 +4027,12 @@
       "key": "240057",
       "name": "GMB LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "custodian",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-04-05",
-      "licence_type": null,
+      "licence_type": "Providing Custody",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -3790,27 +4042,29 @@
       "key": "240058",
       "name": "MARSHALL WACE MIDDLE EAST LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-10-01",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "240059",
       "name": "Capital Union Bank (Middle East) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "bank",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-07-24",
-      "licence_type": null,
+      "licence_type": "Accepting Deposits; Providing Custody; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -3850,61 +4104,69 @@
       "key": "240062",
       "name": "Hafeet Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-03-24",
-      "licence_type": null,
+      "licence_type": "Managing Assets; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets; Dealing In Investments"
+      }
     },
     {
       "key": "240063",
       "name": "Kirkoswald Global Management Services (MENA) Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-04-30",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "240066",
       "name": "Chenavari Investment Management (Middle East) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-07-24",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "240067",
       "name": "MGX Fund Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-10-18",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240068",
@@ -3955,12 +4217,12 @@
       "key": "240072",
       "name": "XBTO Middle East Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "custodian",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-05-14",
-      "licence_type": null,
+      "licence_type": "Providing Custody; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -3985,16 +4247,18 @@
       "key": "240075",
       "name": "Spectra Asset Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2024-09-17",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240076",
@@ -4015,46 +4279,52 @@
       "key": "240077",
       "name": "Fortress Investment Group (ME) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-05-09",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "240078",
       "name": "NewReef Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-08-26",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "240079",
       "name": "Ap3x Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-06-25",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240080",
@@ -4180,31 +4450,35 @@
       "key": "240091",
       "name": "POLEN CAPITAL MIDDLE EAST LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-01-29",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "240092",
       "name": "Ula Capital Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-05-05",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240093",
@@ -4225,31 +4499,35 @@
       "key": "240094",
       "name": "ORYX GLOBAL PARTNERS MANAGEMENT LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-07-01",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240095",
       "name": "TAU CAPITAL LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 0585179900",
       "licence_date": "2025-03-18",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "240096",
@@ -4300,16 +4578,18 @@
       "key": "240099",
       "name": "BlackRock Advisors (UK) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-03-13",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "240100",
@@ -4330,31 +4610,35 @@
       "key": "240101",
       "name": "Amberstone Capital Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 028124036",
       "licence_date": "2025-10-23",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "240102",
       "name": "Premier Investment Partners Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-08-20",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "240103",
@@ -4390,31 +4674,35 @@
       "key": "250001",
       "name": "ARAM CAPITAL PARTNERS LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 55 544 2311",
       "licence_date": "2026-02-06",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "250002",
       "name": "Blantyre Capital II Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-01-21",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "250004",
@@ -4435,61 +4723,69 @@
       "key": "250005",
       "name": "Arab Dragon Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-05-23",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "250006",
       "name": "Freedom Broker Global Markets Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 507283298",
       "licence_date": "2025-12-29",
-      "licence_type": null,
+      "licence_type": "Managing Assets; Providing Custody; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets; Providing Custody; Dealing In Investments"
+      }
     },
     {
       "key": "250007",
       "name": "Arolla Finance Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-08-20",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "250008",
       "name": "Sandrock Capital Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-07-04",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "250009",
@@ -4510,16 +4806,18 @@
       "key": "250011",
       "name": "I.M. Mamlouk & Company Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 58 590 9068",
       "licence_date": "2025-11-07",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "250012",
@@ -4555,16 +4853,18 @@
       "key": "250014",
       "name": "ACP ME MANAGEMENT LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-09-03",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "250015",
@@ -4585,16 +4885,18 @@
       "key": "250016",
       "name": "Freedom Asset Management (Middle East) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-03-04",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "250018",
@@ -4630,46 +4932,52 @@
       "key": "250021",
       "name": "MIDBAR ADVISORS LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-03-26",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "250022",
       "name": "IMX FUNDS LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+61 448811337",
       "licence_date": "2025-10-15",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "250024",
       "name": "Brevan Howard Capital Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-04-29",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "250025",
@@ -4690,57 +4998,63 @@
       "key": "250026",
       "name": "Liongevity Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 581199683",
       "licence_date": "2026-05-14",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "250027",
       "name": "M CAPITAL LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-05-14",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "250028",
       "name": "Demeter Tactical Investments (ME) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-05-23",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "250029",
       "name": "QMM Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 2585 9963",
       "licence_date": "2025-09-16",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -4780,12 +5094,12 @@
       "key": "250032",
       "name": "TABADULAT LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": "https://tabadulat.com",
       "phone": null,
       "licence_date": "2025-11-19",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -4795,27 +5109,29 @@
       "key": "250033",
       "name": "Brummer & Partners Asset Management (UK) Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-05-13",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "250034",
       "name": "Hidden Road Partners CIV (Middle East) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": "https://hiddenroad.com/",
       "phone": null,
       "licence_date": "2025-12-15",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -4840,46 +5156,52 @@
       "key": "250037",
       "name": "Primrose Capital Management (Middle East) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-12-10",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "250038",
       "name": "NAVIGER CAPITAL LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+44 7834081585",
       "licence_date": "2026-03-02",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "250039",
       "name": "ARDEEVIN CAPITAL LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 50 917 6269",
       "licence_date": "2026-09-03",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "250040",
@@ -4915,12 +5237,12 @@
       "key": "250042",
       "name": "RIIB LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 025842415",
       "licence_date": "2026-01-23",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -4930,12 +5252,12 @@
       "key": "250043",
       "name": "BTCS (MIDDLE EAST) LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "custodian",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 50 657 6627",
       "licence_date": "2026-07-01",
-      "licence_type": null,
+      "licence_type": "Providing Custody; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -5005,12 +5327,12 @@
       "key": "250048",
       "name": "QCP Trading Middle East Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-05-27",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -5035,31 +5357,35 @@
       "key": "250051",
       "name": "Waha Investments Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 56 616 3681",
       "licence_date": "2025-10-13",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "250052",
       "name": "Hokma IQ Ltd",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-08-29",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "250053",
@@ -5095,16 +5421,18 @@
       "key": "250055",
       "name": "Arini Capital Management (ME) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": null,
       "licence_date": "2025-08-19",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "250056",
@@ -5155,61 +5483,69 @@
       "key": "250061",
       "name": "VENTUREWAVE CAPITAL LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 26275852",
       "licence_date": "2026-05-12",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "250064",
       "name": "FAB ASSET MANAGEMENT LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 971585793433",
       "licence_date": "2026-05-22",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "250067",
       "name": "Pharo Manarah Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 25561349",
       "licence_date": "2025-10-03",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "250069",
       "name": "NAHDA CAPITAL PARTNERS LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 55 403 9406",
       "licence_date": "2025-12-16",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "250070",
@@ -5230,16 +5566,18 @@
       "key": "250071",
       "name": "Callisto Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 52367 7944",
       "licence_date": "2026-02-03",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "250072",
@@ -5305,27 +5643,29 @@
       "key": "250077",
       "name": "Hashed Global Management Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": "https://www.hashed.com/",
       "phone": "+971 00000000000",
       "licence_date": "2026-01-29",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "250078",
       "name": "CROWN AGENTS GLOBAL MARKETS LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+44 2039032451",
       "licence_date": "2026-01-29",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -5335,31 +5675,35 @@
       "key": "250079",
       "name": "Two7 Capital Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 0506897610",
       "licence_date": "2025-11-14",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "250080",
       "name": "ALDAR CAPITAL LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 22361001",
       "licence_date": "2026-03-13",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "250082",
@@ -5380,16 +5724,18 @@
       "key": "250083",
       "name": "ALPHA WAVE GLOBAL LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+65 92767191",
       "licence_date": "2026-03-16",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "250084",
@@ -5425,16 +5771,18 @@
       "key": "250086",
       "name": "BLUEFIVE ASSET MANAGEMENT LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+44 77 6652 6094",
       "licence_date": "2025-12-24",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "250087",
@@ -5560,31 +5908,35 @@
       "key": "250099",
       "name": "KKR (AD) LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+44 2071042506",
       "licence_date": "2026-01-14",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "250105",
       "name": "NEXSTONE CAPITAL LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi, United Arab Emirates",
       "website": null,
       "phone": "+971 52 731 3904",
       "licence_date": "2026-04-03",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "250107",
@@ -5605,16 +5957,18 @@
       "key": "250108",
       "name": "Partners Capital (ME) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 26275852",
       "licence_date": "2026-05-07",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "250109",
@@ -5635,27 +5989,29 @@
       "key": "250110",
       "name": "PLENARY ME INFRASTRUCTURE PARTNERS LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 524394779",
       "licence_date": "2026-06-26",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "250112",
       "name": "CANTOR FITZGERALD EUROPE",
       "country": "UAE",
-      "segment": null,
+      "segment": "broker",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 45071100",
       "licence_date": "2026-05-19",
-      "licence_type": null,
+      "licence_type": "Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -5680,61 +6036,69 @@
       "key": "250115",
       "name": "ZHAO CAPITAL LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 565820341",
       "licence_date": "2026-09-02",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "250117",
       "name": "FASANARA CAPITAL (AD) LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+44 2034302482",
       "licence_date": "2026-06-12",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "250118",
       "name": "ROKOS CAPITAL MANAGEMENT (MIDDLE EAST) LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+44 2037640617",
       "licence_date": "2026-03-09",
-      "licence_type": null,
+      "licence_type": "Managing Assets; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets; Dealing In Investments"
+      }
     },
     {
       "key": "250119",
       "name": "HANWHA ASSET MANAGEMENT (MENA) LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 561068083",
       "licence_date": "2026-05-20",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "250120",
@@ -5770,16 +6134,18 @@
       "key": "250122",
       "name": "YOLO III LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+44 77 8140 0043",
       "licence_date": "2026-05-19",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "250124",
@@ -5845,31 +6211,35 @@
       "key": "260003",
       "name": "INSIGHT CAPITAL MANAGEMENT LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 506676016",
       "licence_date": "2026-01-16",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "260004",
       "name": "CAPULA INVESTMENT MANAGEMENT (ME) LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+44 2070710944",
       "licence_date": "2026-02-06",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "260005",
@@ -5890,16 +6260,18 @@
       "key": "260006",
       "name": "LQDX LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 523749675",
       "licence_date": "2026-06-24",
-      "licence_type": null,
+      "licence_type": "Managing Assets; Dealing In Investments",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets; Dealing In Investments"
+      }
     },
     {
       "key": "260007",
@@ -5935,61 +6307,69 @@
       "key": "260011",
       "name": "TUDOR CAPITAL (MIDDLE EAST) LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+44 2070710944",
       "licence_date": "2026-06-09",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "260016",
       "name": "GB MEDIA MANAGEMENT LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 0501443284",
       "licence_date": "2026-05-14",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "260017",
       "name": "HUDSON BAY CAPITAL MANAGEMENT (GOC) LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 585110192",
       "licence_date": "2026-07-06",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "260018",
       "name": "Gaw Capital Advisors (ME) Limited",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+852 91678709",
       "licence_date": "2026-09-17",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "260024",
@@ -6040,31 +6420,35 @@
       "key": "260028",
       "name": "GRAVITY INVESTMENT MANAGEMENT LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 971 52 693 2984",
       "licence_date": "2026-08-05",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "260029",
       "name": "AMONFA CAPITAL LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": "https://www.company.com",
       "phone": "+971 585380210",
       "licence_date": "2026-07-06",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund"
+      }
     },
     {
       "key": "260036",
@@ -6085,16 +6469,18 @@
       "key": "260037",
       "name": "SC VENTURES FUND MANAGEMENT LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 45083232",
       "licence_date": "2026-09-14",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "260039",
@@ -6115,16 +6501,18 @@
       "key": "260041",
       "name": "BALYASNY ASSET MANAGEMENT (AD) LIMITED",
       "country": "UAE",
-      "segment": null,
+      "segment": "asset_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+44 2081643693",
       "licence_date": "2026-06-30",
-      "licence_type": null,
+      "licence_type": "Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing Assets"
+      }
     },
     {
       "key": "260046",
@@ -6145,31 +6533,35 @@
       "key": "260052",
       "name": "AXIOS CAPITAL LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 509380273",
       "licence_date": "2026-09-16",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "260059",
       "name": "STONE CAPITAL LTD",
       "country": "UAE",
-      "segment": null,
+      "segment": "fund_manager",
       "city": "Abu Dhabi",
       "website": null,
       "phone": "+971 0529677940",
       "licence_date": "2026-08-22",
-      "licence_type": null,
+      "licence_type": "Managing A Collective Investment Fund; Managing Assets",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": null,
-      "evidence": null
+      "third_party": true,
+      "evidence": {
+        "third_party": "FSRA-authorised for Managing A Collective Investment Fund; Managing Assets"
+      }
     },
     {
       "key": "260070",

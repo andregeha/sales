@@ -284,6 +284,14 @@ class Connector:
                     by_name.setdefault(normalize_name(candidate), slug)
         return slugs, by_name
 
+    def prepare_candidate(self, entry: Entry) -> None:
+        """Hook: enrich one entry just before it is considered for creation.
+
+        Default does nothing. Override where a segment (or anything else the skip checks depend on)
+        can only be established by a further request — and note that it is called *before* the
+        segment check, which is the whole point.
+        """
+
     def build_record(self, entry: Entry, snapshot_file: str) -> dict:
         today = crm.today()
         score, reasoning = self.score(entry)
@@ -419,6 +427,11 @@ class Connector:
             if hit:
                 skipped.append({"name": e.name, "key": e.key, "reason": f"already in CRM as {hit}"})
                 continue
+            # Give the connector a chance to fill in fields it can only learn per-candidate —
+            # ADGM, for instance, has to read a detail page to find out what a firm is authorised
+            # to do. This runs ONLY for candidates (new firms), never for the whole register, which
+            # is what keeps the two-stage design cheap.
+            self.prepare_candidate(e)
             if not e.segment:
                 # The register states this firm's authorised activities and none of them map onto a
                 # segment we sell to. Recording it would create an unsegmented record (which the CRM

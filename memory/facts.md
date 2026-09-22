@@ -93,6 +93,28 @@
   but it closed 2025-06-06. KfW (Germany, deadline 2026-08-10) is real but outside our markets.
 
 ## Register connectors — built and measured
+- ✅ **FSRA (ADGM) is the best source we have found anywhere.** A single JSON API,
+  `POST /api/fsrac/firms/listing/filter` with `{"currentPage":N,"itemsPerPage":100}` — five requests
+  return all **497 firms**, with name, permission number, status, full address, **the date the
+  permission was granted**, legal status, telephone **and an email address for over half of them**.
+  Regulator-published, so usable. ⚠ Its listing does **not** carry regulated activities, so the
+  segment comes from the firm's detail page. — built 2026-09-22, high.
+- ✅ **DFSA (DIFC) is searchable by financial service**, which maps almost onto our segments:
+  Managing Assets **396** · Accepting Deposits **38** · Providing Fund Administration **33**.
+  Read through its own AJAX API (`getTotal`, then paged listings) with a CSRF token taken from the
+  register page. Detail pages carry address, telephone and date of registration.
+- 🔴 **DIFC single family offices are NOT on the DFSA register any more.** All 41 entries under its
+  "Single Family Office" service are **withdrawn** — DIFC moved SFOs out of the DNFBP regime to the
+  separate **Family Wealth Centre** framework in 2023. ⚠ The UAE family-office gap cannot be closed
+  from the DFSA; look at the DIFC Family Wealth Centre instead. — established 2026-09-22, high.
+- ⚠ **Withdrawn/revoked entries are excluded everywhere.** A firm that handed its licence back is
+  not a lead, and both UAE registers list them alongside live ones.
+- ⚠ **A connector that learns its segment per-candidate must do it in `prepare_candidate()`,
+  not `build_record()`.** The pipeline checks for a segment *before* building a record, so a segment
+  filled in later is never seen. This shipped once and silently created **nothing** from a 412-firm
+  register while reporting them all as "no segment". There is a regression test for it now.
+  — 2026-09-22, high.
+
 - ✅ **AMF France is live and is our best lead source.** The AMF publishes its register of licensed
   sociétés de gestion as a **daily-updated CSV on data.gouv.fr** (dataset `651427eaf6eab90fa3db2da3`).
   **666 live firms.** ⚠ The download URL is **timestamped and changes every day** — resolve it

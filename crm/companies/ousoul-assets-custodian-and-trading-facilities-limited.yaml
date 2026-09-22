@@ -1,0 +1,62 @@
+slug: ousoul-assets-custodian-and-trading-facilities-limited
+name: Ousoul Assets Custodian and Trading Facilities Limited
+legal_name: null
+country: UAE
+city: Abu Dhabi
+segment: custodian
+regulator: FSRA (ADGM)
+website: https://www.ousoul.com
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: 'FSRA public register of financial firms (ADGM) (https://www.adgm.com/public-registers/fsra);
+    licence 190014 dated 2020-07-28. Snapshot: crm/registers/fsra-adgm/2026-09-22.json.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- fsra-adgm
+- register-sourced
+- new-licence
+- custodian
+- uae
+- adgm
+- fsra
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Ousoul Assets Custodian and Trading Facilities Limited — contact published on the FSRA register
+  title: General enquiries
+  role: unknown
+  email: info@ousoul.com
+  phone: +971 2 419 5037
+  linkedin: null
+  language: en
+  notes: Email and/or telephone exactly as the FSRA publishes them on its own public register — not guessed,
+    not pattern-inferred. ⚠ The address the regulator holds is often a named individual's work address
+    rather than a general inbox; check who it belongs to before writing, and treat it as a real person.
+  source: FSRA public register, https://www.adgm.com/public-registers/fsra/firms/financial-firms/ousoul-assets-custodian-and-trading-facilities-limited-190014
+fit:
+  score: 33
+  reasoning: 'Fit 30/60: adjacent segment custodian (10) + priority market UAE (15) + regulated by FSRA
+    (ADGM) (5). Trigger 0/25: licence granted 2020-07-28, too long ago to count as a trigger. Access 3/15:
+    generic company contact published on the register (3). Scored automatically from the FSRA public register
+    of financial firms (ADGM) at first sighting. Fit points are awarded only where the register itself
+    states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 190014,
+    authorised 2020-07-28, Providing Custody. Detected by the automated register diff; every field here
+    is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered
+    address (per the FSRA): United Arab Emirates, Abu Dhabi, Maryah Island, Units 5 & 35, Level 12, Al
+    Sila Tower, Abu Dhabi Global Market Square'
+  link: https://www.adgm.com/public-registers/fsra
+next_action: null

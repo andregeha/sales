@@ -9,7 +9,9 @@
 > |---|---|---|
 > | **AMF France** | ✅ **Live** | 666 firms, daily CSV. First run created 10 new leads (scores 70-83). |
 > | **CMA Saudi** | ✅ **Live (partial)** | Reads the register *page*, which server-renders 36 of 242 entries, newest-first. Catches new names; cannot see disappearances. Its API would be better but times out from Europe — try it from Riyadh. |
-> | UAE CMA / DFSA / FSRA | ⬜ Not built | Next in line. |
+> | **DFSA (DIFC)** | ✅ **Live** | Searchable by financial service. 396 Managing Assets + 38 banks + 33 fund admin. Telephone for most. |
+> | **FSRA (ADGM)** | ✅ **Live** | A clean JSON API — 497 firms with licence date, address, phone **and an email for over half**. The best source we have. |
+> | UAE CMA (onshore, ex-SCA) | ⬜ Not built | The remaining UAE regulator. |
 > | ACPR REGAFI | ⬜ Not built | Adjacent segments, low priority. |
 >
 > **Run them:** `python tools/connectors/run_all.py` (add `--dry-run` to write nothing,

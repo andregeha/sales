@@ -1,0 +1,63 @@
+slug: hidden-road-partners-civ-middle-east-limited
+name: Hidden Road Partners CIV (Middle East) Limited
+legal_name: null
+country: UAE
+city: Abu Dhabi
+segment: broker
+regulator: FSRA (ADGM)
+website: https://hiddenroad.com/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: 'FSRA public register of financial firms (ADGM) (https://www.adgm.com/public-registers/fsra);
+    licence 250034 dated 2025-12-15. Snapshot: crm/registers/fsra-adgm/2026-09-22.json.'
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- fsra-adgm
+- register-sourced
+- new-licence
+- broker
+- uae
+- adgm
+- fsra
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Hidden Road Partners CIV (Middle East) Limited — contact published on the FSRA register
+  title: General enquiries
+  role: unknown
+  email: compliance@hiddenroad.com
+  phone: null
+  linkedin: null
+  language: en
+  notes: Email and/or telephone exactly as the FSRA publishes them on its own public register — not guessed,
+    not pattern-inferred. ⚠ The address the regulator holds is often a named individual's work address
+    rather than a general inbox; check who it belongs to before writing, and treat it as a real person.
+  source: FSRA public register, https://www.adgm.com/public-registers/fsra/firms/financial-firms/hidden-road-partners-civ-middle-east-limited-250034
+fit:
+  score: 53
+  reasoning: 'Fit 30/60: adjacent segment broker (10) + priority market UAE (15) + regulated by FSRA (ADGM)
+    (5). Trigger 20/25: new licence granted 2025-12-15 (281 days ago), no incumbent to displace (20).
+    Access 3/15: generic company contact published on the register (3). Scored automatically from the
+    FSRA public register of financial firms (ADGM) at first sighting. Fit points are awarded only where
+    the register itself states the fact; anything it is silent on scores zero rather than being assumed.
+    Enrich before outreach.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 250034,
+    authorised 2025-12-15, Dealing In Investments. Detected by the automated register diff; every field
+    here is as the register publishes it and nothing has been inferred. Not yet researched or enriched.
+    Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Reem Island, Suite 503, Office
+    3602, Floor 36, Sky Tower, Shams Abu Dhabi'
+  link: https://www.adgm.com/public-registers/fsra
+next_action: null
