@@ -17,10 +17,32 @@
 7. **Media** → email, LinkedIn, and anything else sensible.
 8. **Cadence** → **daily scheduled run**.
 
+## ✅ Resolved 2026-09-22 (laptop)
+- **Q0 — the network block.** Resolved by moving to the laptop. Every regulator register and tender
+  portal we need is reachable. The register connectors are built and running as a result.
+
+## 🔝 The four to answer first (2026-09-22)
+These are ordered by what they unblock, not by how easy they are.
+
+| # | Question | Why it matters | Status |
+|---|---|---|---|
+| 1 | **Which existing client names may we reference, and to whom?** Finance House, GIMD/Dassault, Bank Audi, BLOM, AGPM — which may be named, in which markets, and under what conditions? | Worth more for outreach credibility than anything else we could write. Every draft currently says "asset managers and banks across France and the Gulf" because naming anyone needs your approval. | 🟠 |
+| 2 | **Which Lebanese banks are on the survivor track under Law 23/2025?** | **All 17 Lebanese bank records are frozen at `nurture`** because no public source resolves this, and a bank in resolution buys nothing. This is the single biggest block of stalled pipeline we have. | 🟠 |
+| 3 | **Would you take a LinkedIn Sales Navigator seat?** | We now hold **many named decision-makers with a verified LinkedIn profile and no email**. A seat turns names into reachable people. Contact routes — not lead volume — are the binding constraint on the whole engine. | 🟠 |
+| 4 | **Pricing guidance · any off-limits firms · do we control the OFS website?** | Without pricing every commercial question bounces to you; without an off-limits list we may approach someone we shouldn't; without the website there is **no inbound surface at all**. | 🟠 |
+
+## 🆕 New, from this session
+| # | Question | Status |
+|---|---|---|
+| 16 | **Will you set up the free saved-search email alerts on BOAMP and PLACE** (and My TED)? They are free, they take minutes, and **a push alert beats any scraper we could write**. They need an account in your name, so I cannot do it. Links in `knowledge/market/rfp-sources.md`. | 🟠 |
+| 17 | **Should the daily run be scheduled on this laptop, and at what time?** Nothing is scheduled right now. Weekday mornings was the plan. ⚠ A laptop only runs when it is on — a missed morning is a genuinely missed day. | 🟠 |
+| 18 | **Can anyone run the Saudi CMA connector from the Riyadh office** (or any Saudi network)? Its Open Data API times out from Europe. From inside the Kingdom it would probably work, and would upgrade Saudi from a partial source (36 of 242 firms) to a complete one. | ⚪ |
+| 19 | **Does anyone at OFS have an Etimad supplier account?** Etimad blocks automated access with its own bot protection, which we will not try to defeat. **Saudi tender coverage is therefore zero.** A human with an account could set up its notifications. | 🟠 |
+| 20 | **Do we want records for adjacent segments** — custodians and brokers — or only our three core segments? The Saudi register surfaces them and they currently land as low-scoring records. | ⚪ |
+
 ## For Andre — still open
 | # | Question | Status |
 |---|---|---|
-| 0 | 🔴 **The environment blocks general web access** — only package registries are allowed; every other host is refused by the egress policy. Agents can search, but cannot open a tender portal or a regulator register. **The RFP radar and lead sourcing cannot work properly until this is widened.** Can you change the environment's network policy? (https://code.claude.com/docs/en/claude-code-on-the-web) | 🔴 |
 | 5 | **Pricing** — is there a price book, list price or discount policy I may hold here, even internal-only? Without it I cannot qualify on budget, and every commercial question bounces to you. | 🟠 |
 | 5a | **Is there an email-sending or sequencing tool** you would connect (Outlook send, a sequencer), or does every message go out by hand from your mailbox? This changes how I build the approval queue. | 🟠 |
 | 5b | **Do you have a LinkedIn Sales Navigator seat?** It would materially improve lead sourcing and contact discovery in all four markets. | 🟠 |

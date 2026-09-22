@@ -92,10 +92,24 @@
   The dataset also publishes **licence date, authorised activities, authorised instrument classes,
   and for many firms a website and switchboard number** — regulator-published contact routes, which
   is the one legitimate source of contact detail we have. — built and run 2026-09-22, high.
-- 🔴 **The Saudi CMA Open Data API is unreachable from Europe.** `opendataapi.cma.gov.sa` serves its
-  swagger, but every `/api/...` call **times out at the TCP layer after ~21s** with backoff — a
-  geo-restriction or firewall on the backend, not a rate limit. The connector is written and fails
-  loudly. **Worth retrying from the Riyadh office or any Saudi network.**
+- ✅ **The Saudi CMA register IS readable — via its web page, not its API.** ⚠ I got this wrong
+  first time and the correction is the useful part: *the API being dead does not mean the register
+  is unreachable.* The **Financial Market Institutions** page (still on the old `AuthorisedPersons`
+  URL) **server-renders its entries into the HTML** — no JavaScript needed. **242 licensed firms.**
+  ⚠ It ships only the **36 most-recently-updated** of them; the rest paginate in via JavaScript
+  ("Total 41 Pages"). That is a **partial source**: it catches every new name, because the list is
+  ordered newest-first, but it **cannot detect a firm leaving** the register.
+  Its activity legend is printed on the page: **Arranging (Arr) · Advising (Adv) · Custody (C) ·
+  Dealing (D) · Managing Investments and Operating Funds (MIOF) · Managing Investments (MI)** — and
+  the cards mix codes with full names. **MI/MIOF is what makes a firm ours.**
+  ⚠ The card's date is the CMA's **"last update" for the entry** — the licence date for a new firm,
+  but possibly an amendment for an existing one. Do not quote it as a licence date unchecked.
+  — built and run 2026-09-22, high.
+- 🟠 **The Saudi CMA Open Data API is unreachable from Europe**, though it would be the better
+  source if it worked (it would give all 242 in one call and allow disappearance detection).
+  `opendataapi.cma.gov.sa` serves its swagger, but every `/api/...` call **times out at the TCP
+  layer after ~21s** with backoff — a geo-restriction on the backend, not a rate limit.
+  **Try it first from the Riyadh office or any Saudi network.**
   Its downloadable open-data files were checked and are **aggregate statistics**, not a register of
   named firms — they cannot substitute. — 2026-09-22, high.
 - ⚠ **The Saudi CMA domain moved: `cma.org.sa` → `cma.gov.sa`**, and its term for a licensed firm is

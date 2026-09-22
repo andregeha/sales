@@ -8,7 +8,7 @@
 > | Source | State | Note |
 > |---|---|---|
 > | **AMF France** | ✅ **Live** | 666 firms, daily CSV. First run created 10 new leads (scores 70-83). |
-> | **CMA Saudi** | 🔴 **Blocked** | Every `/api/` call times out at the TCP layer from Europe. Retry from the Riyadh office or any Saudi network. |
+> | **CMA Saudi** | ✅ **Live (partial)** | Reads the register *page*, which server-renders 36 of 242 entries, newest-first. Catches new names; cannot see disappearances. Its API would be better but times out from Europe — try it from Riyadh. |
 > | UAE CMA / DFSA / FSRA | ⬜ Not built | Next in line. |
 > | ACPR REGAFI | ⬜ Not built | Adjacent segments, low priority. |
 >
