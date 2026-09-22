@@ -26,6 +26,7 @@ import io
 import json
 import re
 import sys
+import unicodedata
 from datetime import date, datetime
 from pathlib import Path
 from typing import Any, Optional
@@ -98,7 +99,10 @@ def is_valid_date(s: Any) -> bool:
 
 
 def slugify(name: str) -> str:
-    s = name.strip().lower()
+    # Fold accents first, so "45degres capital" does not become "45degr-s-capital".
+    s = unicodedata.normalize("NFKD", name.strip())
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    s = s.lower()
     s = re.sub(r"[^a-z0-9]+", "-", s)
     s = re.sub(r"-+", "-", s).strip("-")
     return s or "record"
@@ -164,6 +168,14 @@ def all_rfp_files() -> list[Path]:
     return sorted(RFPS_DIR.glob("*.yaml"))
 
 
+def _rel(p: Path) -> str:
+    """Repo-relative display path. Falls back to the absolute path rather than raising."""
+    try:
+        return str(p.relative_to(REPO_ROOT))
+    except ValueError:
+        return str(p)
+
+
 def load_all_companies() -> list[dict]:
     out = []
     for p in all_company_files():
@@ -172,7 +184,7 @@ def load_all_companies() -> list[dict]:
         except yaml.YAMLError as e:
             sys.stderr.write(f"warning: could not parse {p}: {e}\n")
             continue
-        d["_path"] = str(p.relative_to(REPO_ROOT))
+        d["_path"] = _rel(p)
         out.append(d)
     return out
 
@@ -185,7 +197,7 @@ def load_all_rfps() -> list[dict]:
         except yaml.YAMLError as e:
             sys.stderr.write(f"warning: could not parse {p}: {e}\n")
             continue
-        d["_path"] = str(p.relative_to(REPO_ROOT))
+        d["_path"] = _rel(p)
         out.append(d)
     return out
 
