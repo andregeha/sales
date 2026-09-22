@@ -14,6 +14,33 @@ live-verified" caveat **no longer applies to everything**. A radar pass run from
 with normal internet, established the following. Treat this block as authoritative where it
 conflicts with the older text.
 
+### ⚠ What a "zero" on these portals actually means — read before quoting the result
+
+**BOAMP, PLACE and TED carry PUBLIC procurement only.** BOAMP is the *Bulletin Officiel des Annonces
+des Marchés Publics*: notices from *acheteurs publics* under the Code de la commande publique — the
+State, local authorities, hospitals, public establishments, and *entités adjudicatrices* (network and
+utility operators). PLACE is the State's own platform. TED is EU-wide public procurement.
+
+**Our buyers are private firms.** Family offices, MFOs, private and investment banks, and asset and
+fund managers are under no obligation to publish anything, and they do not. **No amount of coverage
+on these portals will ever see them.** A "measured zero" on BOAMP and TED is therefore a genuine
+zero *of French and EU public-sector tenders for this software category* — it says almost nothing
+about the market we actually sell into.
+
+Two further limits even inside the public sector: **sub-threshold purchases need not be published**
+at all, and a public body can buy through an existing framework agreement (*accord-cadre*) or a
+central purchasing body (UGAP) without a new notice ever appearing.
+
+**Who this channel CAN see, and it is a short list:** public and para-public investors that genuinely
+run portfolios — Caisse des Dépôts, FRR, ERAFP, Ircantec, CNBF, CAVAMAC, CIPAV, FGDR, Banque de
+France, the AMF itself — plus donor-funded public-financial-management projects. Real buyers, but a
+narrow and slow-moving set.
+
+**The strategic consequence, stated plainly:** the RFP radar is a **minority channel** for us and
+always will be. It is worth running because a missed public tender is unrecoverable and the alerts
+are free — but **the main engine is the licence registers plus trigger-based outbound**, which is
+where the build effort went. Do not let a clean radar report read as "the market is quiet".
+
 **Searched successfully, via each portal's real API (high confidence):**
 | Portal | How | Coverage achieved |
 |---|---|---|

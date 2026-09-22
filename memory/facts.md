@@ -64,7 +64,16 @@
 - ✅ **Second run (2026-09-22, from the laptop) is the first trustworthy one.** TED and BOAMP were
   searched through their **real APIs** — 15 and 11 query variants respectively, English and French,
   date-filtered to 2025+. **The France result is a genuine, measured zero**, not "nothing indexable".
-  That is a real and useful negative: this category is almost entirely direct-invitation.
+- 🔴 **But BOAMP, PLACE and TED are PUBLIC-procurement only** — *acheteurs publics* under the Code de
+  la commande publique, and EU public procurement. ⚠ **Our buyers are private firms with no
+  obligation to publish, so these portals can never see them.** Andre made this point 2026-09-22 and
+  it is the correct frame: a zero there is a zero *of public-sector tenders*, which says almost
+  nothing about our actual market. Even within the public sector, **sub-threshold buys need not be
+  published** and a body can buy through an existing *accord-cadre* or UGAP with no new notice.
+  **Consequence: the RFP radar is a minority channel and always will be. The main engine is the
+  licence registers plus trigger-based outbound.** Run the radar because a missed public tender is
+  unrecoverable and the alerts are free — but never let a clean radar report read as "quiet market".
+  — Andre 2026-09-22, high.
 - 🔴 **Saudi Arabia still has ZERO tender-search coverage.** Etimad serves its **own bot-detection
   challenge** (F5 TSPD / `APM_DO_NOT_TOUCH`) instead of content, to every endpoint and user agent.
   This is the site blocking automation, not a network policy. **We do not attempt to defeat bot
