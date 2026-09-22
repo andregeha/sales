@@ -20,14 +20,17 @@ from __future__ import annotations
 import argparse
 import importlib
 import json
+import subprocess
 import sys
 import traceback
+from datetime import datetime, timezone
 from pathlib import Path
+from typing import Optional
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
-from base import ConnectorError, format_report  # noqa: E402
+from base import REPO_ROOT, ConnectorError, format_report  # noqa: E402
 
 # Add a module here as each connector is built. Order is the build order in README.md.
 CONNECTOR_MODULES = [
@@ -36,6 +39,102 @@ CONNECTOR_MODULES = [
     "dfsa_difc",
     "fsra_adgm",
 ]
+
+#: The engine's memory of itself — one file per invocation, never overwritten. See `plan/website.md`
+#: §3.1: "was the radar actually looking last Tuesday?" must always be answerable, including on a
+#: run that failed outright.
+RUNS_DIR = REPO_ROOT / "crm" / "runs"
+
+
+def git_commit_sha() -> Optional[str]:
+    """The commit this run's output belongs to, or `None` if it cannot be determined.
+
+    Never guessed — an unreadable git state is recorded as `null`, not a stale or invented sha.
+    """
+    try:
+        out = subprocess.run(
+            ["git", "rev-parse", "HEAD"], cwd=REPO_ROOT,
+            capture_output=True, text=True, timeout=10,
+        )
+        if out.returncode == 0:
+            sha = out.stdout.strip()
+            return sha or None
+    except (OSError, subprocess.SubprocessError):
+        pass
+    return None
+
+
+def _connector_run_summary(res: dict) -> dict:
+    return {
+        "register": res["register"],
+        "source": res["source"],
+        "ok": True,
+        "error": None,
+        "total": res["total"],
+        "new_on_register": res["new_on_register"],
+        "created": len(res["created"]),
+        "skipped": len(res["skipped"]),
+        "changes": len(res["changes"]),
+        "baseline": res["baseline"],
+        "backfill": res["backfill"],
+        "partial": res["partial"],
+    }
+
+
+def _connector_failure_summary(fail: dict) -> dict:
+    return {
+        "register": fail["register"],
+        "source": fail["source"],
+        "ok": False,
+        "error": fail["error"],
+        "total": None,
+        "new_on_register": None,
+        "created": None,
+        "skipped": None,
+        "changes": None,
+        "baseline": None,
+        "backfill": None,
+        "partial": None,
+    }
+
+
+def build_run_record(started_at: datetime, finished_at: datetime,
+                     results: list[dict], failures: list[dict]) -> dict:
+    """Assemble the structured `Run` record. Pure function — no filesystem access — so it is testable
+    without a real connector or a real clock."""
+    connectors = [_connector_run_summary(r) for r in results] + \
+                 [_connector_failure_summary(f) for f in failures]
+    connectors.sort(key=lambda c: c["register"])
+    return {
+        "started_at": started_at.isoformat(timespec="seconds"),
+        "finished_at": finished_at.isoformat(timespec="seconds"),
+        "duration_s": round((finished_at - started_at).total_seconds(), 3),
+        "commit": git_commit_sha(),
+        "ok": not failures,
+        "connectors": connectors,
+    }
+
+
+def write_run_record(record: dict, runs_dir: Optional[Path] = None) -> Path:
+    """Write the record under `crm/runs/<YYYY-MM-DD-HHMMSS>.json`. Never overwrites an existing
+    file — on the rare collision (two runs in the same second, e.g. in tests) a numeric suffix is
+    added instead.
+
+    ``runs_dir`` defaults to the *current* value of the module-level ``RUNS_DIR`` (looked up at call
+    time, not import time) so tests can redirect it by monkeypatching ``run_all.RUNS_DIR``.
+    """
+    if runs_dir is None:
+        runs_dir = RUNS_DIR
+    runs_dir.mkdir(parents=True, exist_ok=True)
+    stamp = record["started_at"][:19].replace(":", "").replace("T", "-")
+    path = runs_dir / f"{stamp}.json"
+    n = 2
+    while path.exists():
+        path = runs_dir / f"{stamp}-{n}.json"
+        n += 1
+    path.write_text(json.dumps(record, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+                    encoding="utf-8")
+    return path
 
 
 def load_connectors(only: str | None) -> list:
@@ -65,6 +164,7 @@ def main(argv=None) -> int:
     ap.add_argument("--json", action="store_true", help="emit JSON instead of text")
     args = ap.parse_args(argv)
 
+    started_at = datetime.now(timezone.utc)
     results, failures = [], []
     for c in load_connectors(args.only):
         try:
@@ -78,9 +178,19 @@ def main(argv=None) -> int:
             failures.append({"register": c.register, "source": c.source_name, "ok": False,
                              "error": f"unexpected {type(e).__name__}: {e}",
                              "traceback": traceback.format_exc()})
+    finished_at = datetime.now(timezone.utc)
+
+    # Every run leaves a record, success or failure — a dry run is a preview and leaves none,
+    # matching the rule that a dry run writes nothing else either (no snapshot, no CRM record).
+    run_path = None
+    if not args.dry_run:
+        record = build_run_record(started_at, finished_at, results, failures)
+        run_path = write_run_record(record)
 
     if args.json:
-        print(json.dumps({"results": results, "failures": failures}, ensure_ascii=False, indent=2))
+        print(json.dumps({"results": results, "failures": failures,
+                          "run_record": str(run_path) if run_path else None},
+                         ensure_ascii=False, indent=2))
     else:
         for r in results:
             print(format_report(r))
@@ -91,6 +201,8 @@ def main(argv=None) -> int:
             print(f"  No snapshot written and no records created. This is NOT a quiet day —")
             print(f"    the source could not be read. Do not report zero new leads from it.")
             print()
+        if run_path:
+            print(f"run record: {run_path.relative_to(REPO_ROOT)}".replace("\\", "/"))
 
     if failures:
         print(f"{len(failures)} of {len(results) + len(failures)} connectors FAILED.", file=sys.stderr)

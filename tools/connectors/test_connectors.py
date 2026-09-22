@@ -54,15 +54,16 @@ class ConnectorHarness(unittest.TestCase):
 
     def setUp(self):
         self.tmp = Path(tempfile.mkdtemp())
-        self._orig = (base.REGISTERS_DIR, base.crm.COMPANIES_DIR, base.crm.RFPS_DIR)
+        self._orig = (base.REGISTERS_DIR, base.EVENTS_DIR, base.crm.COMPANIES_DIR, base.crm.RFPS_DIR)
         base.REGISTERS_DIR = self.tmp / "registers"
+        base.EVENTS_DIR = self.tmp / "events"
         base.crm.COMPANIES_DIR = self.tmp / "companies"
         base.crm.RFPS_DIR = self.tmp / "rfps"
-        for d in (base.REGISTERS_DIR, base.crm.COMPANIES_DIR, base.crm.RFPS_DIR):
+        for d in (base.REGISTERS_DIR, base.EVENTS_DIR, base.crm.COMPANIES_DIR, base.crm.RFPS_DIR):
             d.mkdir(parents=True, exist_ok=True)
 
     def tearDown(self):
-        base.REGISTERS_DIR, base.crm.COMPANIES_DIR, base.crm.RFPS_DIR = self._orig
+        base.REGISTERS_DIR, base.EVENTS_DIR, base.crm.COMPANIES_DIR, base.crm.RFPS_DIR = self._orig
         shutil.rmtree(self.tmp, ignore_errors=True)
 
     def snapshots(self, register="test-register"):
@@ -71,6 +72,17 @@ class ConnectorHarness(unittest.TestCase):
 
     def companies(self):
         return sorted(base.crm.COMPANIES_DIR.glob("*.yaml"))
+
+    def events(self):
+        return sorted(base.EVENTS_DIR.glob("*.jsonl")) if base.EVENTS_DIR.exists() else []
+
+    def event_lines(self):
+        lines = []
+        for p in self.events():
+            for raw in p.read_text(encoding="utf-8").splitlines():
+                if raw.strip():
+                    lines.append(json.loads(raw))
+        return lines
 
 
 class TestFailsLoudly(ConnectorHarness):
@@ -295,6 +307,77 @@ class TestChangeDetection(ConnectorHarness):
     def test_baseline_run_detects_no_changes(self):
         res = StubConnector(entries=[mk_entry("A", "Alpha Gestion")]).run(baseline_window_days=0)
         self.assertEqual(res["changes"], [])
+
+
+class TestChangeEvents(ConnectorHarness):
+    """The structured event feed emitted by `_apply_changes` — `crm/events/<YYYY-MM>.jsonl`."""
+
+    def _seed(self, rec_overrides=None):
+        rec = {"slug": "alpha-gestion", "name": "Alpha Gestion", "country": "France",
+               "segment": "asset_manager", "status": "nurture", "stage": "identified",
+               "owner": "Andre Geha", "activities": []}
+        rec.update(rec_overrides or {})
+        base.crm.save_yaml(base.crm.COMPANIES_DIR / f"{rec['slug']}.yaml", rec)
+        return rec
+
+    def _two_days(self, day1, day2, **kw):
+        StubConnector(entries=day1).run(baseline_window_days=0)
+        self.snapshots()[0].rename(self.snapshots()[0].parent / "2026-01-01.json")
+        return StubConnector(entries=day2).run(**kw)
+
+    def test_event_written_for_a_matched_crm_record(self):
+        self._seed()
+        d1 = [mk_entry("A", "Alpha Gestion", licence_type="Advising")]
+        d2 = [mk_entry("A", "Alpha Gestion", licence_type="Advising; Managing Assets")]
+        self._two_days(d1, d2)
+        lines = self.event_lines()
+        self.assertEqual(len(lines), 1)
+        ev = lines[0]
+        self.assertEqual(ev["company_slug"], "alpha-gestion")
+        self.assertEqual(ev["company_name"], "Alpha Gestion")
+        self.assertEqual(ev["field"], "licence_type")
+        self.assertTrue(ev["is_trigger"])
+        self.assertTrue(ev["woke"])
+        self.assertEqual(ev["register"], "test-register")
+
+    def test_event_written_with_null_slug_for_a_firm_not_in_the_crm(self):
+        d1 = [mk_entry("A", "Unknown Ltd", licence_type="Advising")]
+        d2 = [mk_entry("A", "Unknown Ltd", licence_type="Advising; Managing Assets")]
+        self._two_days(d1, d2)
+        lines = self.event_lines()
+        self.assertEqual(len(lines), 1)
+        self.assertIsNone(lines[0]["company_slug"])
+        self.assertEqual(lines[0]["company_name"], "Unknown Ltd")
+        self.assertFalse(lines[0]["woke"], "no CRM record to wake")
+
+    def test_dry_run_does_not_write_events(self):
+        self._seed()
+        d1 = [mk_entry("A", "Alpha Gestion", licence_type="Advising")]
+        d2 = [mk_entry("A", "Alpha Gestion", licence_type="Advising; Managing Assets")]
+        self._two_days(d1, d2, dry_run=True)
+        self.assertEqual(self.events(), [], "a dry run must leave no event trail")
+
+    def test_events_append_across_runs_rather_than_overwrite(self):
+        self._seed()
+        d1 = [mk_entry("A", "Alpha Gestion", licence_type="Advising")]
+        d2 = [mk_entry("A", "Alpha Gestion", licence_type="Advising; Managing Assets")]
+        d3 = [mk_entry("A", "Alpha Gestion", licence_type="Advising; Managing Assets; Custody")]
+        self._two_days(d1, d2)
+        self.assertEqual(len(self.event_lines()), 1)
+        self.snapshots()[0].rename(self.snapshots()[0].parent / "2026-01-02.json")
+        StubConnector(entries=d3).run()
+        lines = self.event_lines()
+        self.assertEqual(len(lines), 2, "the second run's event must be appended, not replace the first")
+
+    def test_housekeeping_change_is_still_logged_as_a_non_trigger_event(self):
+        self._seed()
+        d1 = [mk_entry("A", "Alpha Gestion", licence_type="Managing Assets")]
+        d2 = [mk_entry("A", "Alpha Gestion", licence_type="Managing Assets", phone="+33 1 23")]
+        self._two_days(d1, d2)
+        lines = self.event_lines()
+        self.assertEqual(len(lines), 1)
+        self.assertFalse(lines[0]["is_trigger"])
+        self.assertFalse(lines[0]["woke"])
 
 
 class TestPrepareCandidateHook(ConnectorHarness):

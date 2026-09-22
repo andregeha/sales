@@ -32,3 +32,7 @@ __pycache__/
 
 # Stray files from tools that mangle Windows temp paths
 Usersageha*
+
+# Website build artifacts (the site is DERIVED — never a source of truth)
+site/node_modules/
+site/dist/

@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+/*
+  The charte graphique. Every colour, size and shape in this product is defined HERE and nowhere
+  else. No component may use a raw hex, an rgb(), or a Tailwind palette name like `bg-blue-500`.
+
+  Light and dark are the same tokens redefined, so no component ever branches on theme.
+
+  Charts read the same --chart-* variables as everything else, which is why a Recharts series and
+  a table row are literally the same palette.
+*/
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", "SF Mono", Menlo, monospace;
+
+  /* Type scale. Hierarchy comes from here and from space — not from borders or colour. */
+  --text-micro: 0.6875rem;   /* 11px — table meta, keyboard hints */
+  --text-small: 0.8125rem;   /* 13px — secondary text, dense tables */
+  --text-body: 0.9375rem;    /* 15px — default */
+  --text-h3: 1.0625rem;      /* 17px */
+  --text-h2: 1.375rem;       /* 22px */
+  --text-h1: 1.875rem;       /* 30px */
+  --text-display: 2.5rem;    /* 40px — one per page, at most */
+
+  --radius: 0.5rem;
+  --radius-sm: 0.3125rem;
+
+  --dur-fast: 120ms;
+  --dur: 200ms;
+  --ease: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+:root {
+  color-scheme: light;
+
+  /* Surface */
+  --bg: oklch(99% 0.002 260);
+  --surface: oklch(100% 0 0);
+  --surface-raised: oklch(97.5% 0.003 260);
+  --border: oklch(91% 0.004 260);
+  --border-strong: oklch(84% 0.006 260);
+
+  /* Text */
+  --text: oklch(24% 0.012 260);
+  --text-muted: oklch(50% 0.010 260);
+  --text-subtle: oklch(64% 0.008 260);
+
+  /* Exactly one accent. */
+  --accent: oklch(52% 0.148 258);
+  --accent-fg: oklch(99% 0 0);
+  --accent-weak: oklch(95% 0.028 258);
+
+  /* Semantic — meaning, never decoration. */
+  --positive: oklch(52% 0.115 158);
+  --positive-weak: oklch(95% 0.035 158);
+  --caution: oklch(62% 0.130 75);
+  --caution-weak: oklch(96% 0.050 85);
+  --critical: oklch(54% 0.180 25);
+  --critical-weak: oklch(96% 0.035 25);
+  --info: oklch(54% 0.100 235);
+  --info-weak: oklch(96% 0.028 235);
+
+  /* The only colours a chart may use. */
+  --chart-1: oklch(52% 0.148 258);
+  --chart-2: oklch(58% 0.115 190);
+  --chart-3: oklch(60% 0.125 145);
+  --chart-4: oklch(65% 0.130 75);
+  --chart-5: oklch(56% 0.150 320);
+  --chart-6: oklch(54% 0.130 25);
+
+  --shadow-sm: 0 1px 2px oklch(20% 0.02 260 / 0.06);
+  --shadow: 0 2px 8px oklch(20% 0.02 260 / 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    --bg: oklch(17% 0.008 260);
+    --surface: oklch(20.5% 0.009 260);
+    --surface-raised: oklch(24% 0.010 260);
+    --border: oklch(29% 0.010 260);
+    --border-strong: oklch(37% 0.012 260);
+
+    --text: oklch(95% 0.004 260);
+    --text-muted: oklch(72% 0.008 260);
+    --text-subtle: oklch(57% 0.008 260);
+
+    --accent: oklch(70% 0.135 258);
+    --accent-fg: oklch(17% 0.008 260);
+    --accent-weak: oklch(29% 0.055 258);
+
+    --positive: oklch(74% 0.125 158);
+    --positive-weak: oklch(28% 0.045 158);
+    --caution: oklch(80% 0.130 80);
+    --caution-weak: oklch(31% 0.050 80);
+    --critical: oklch(70% 0.150 25);
+    --critical-weak: oklch(30% 0.060 25);
+    --info: oklch(74% 0.100 235);
+    --info-weak: oklch(28% 0.045 235);
+
+    --chart-1: oklch(70% 0.135 258);
+    --chart-2: oklch(74% 0.105 190);
+    --chart-3: oklch(76% 0.115 145);
+    --chart-4: oklch(80% 0.120 75);
+    --chart-5: oklch(72% 0.135 320);
+    --chart-6: oklch(70% 0.130 25);
+
+    --shadow-sm: 0 1px 2px oklch(0% 0 0 / 0.30);
+    --shadow: 0 2px 10px oklch(0% 0 0 / 0.38);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: oklch(17% 0.008 260);
+  --surface: oklch(20.5% 0.009 260);
+  --surface-raised: oklch(24% 0.010 260);
+  --border: oklch(29% 0.010 260);
+  --border-strong: oklch(37% 0.012 260);
+  --text: oklch(95% 0.004 260);
+  --text-muted: oklch(72% 0.008 260);
+  --text-subtle: oklch(57% 0.008 260);
+  --accent: oklch(70% 0.135 258);
+  --accent-fg: oklch(17% 0.008 260);
+  --accent-weak: oklch(29% 0.055 258);
+  --positive: oklch(74% 0.125 158);
+  --positive-weak: oklch(28% 0.045 158);
+  --caution: oklch(80% 0.130 80);
+  --caution-weak: oklch(31% 0.050 80);
+  --critical: oklch(70% 0.150 25);
+  --critical-weak: oklch(30% 0.060 25);
+  --info: oklch(74% 0.100 235);
+  --info-weak: oklch(28% 0.045 235);
+  --chart-1: oklch(70% 0.135 258);
+  --chart-2: oklch(74% 0.105 190);
+  --chart-3: oklch(76% 0.115 145);
+  --chart-4: oklch(80% 0.120 75);
+  --chart-5: oklch(72% 0.135 320);
+  --chart-6: oklch(70% 0.130 25);
+  --shadow-sm: 0 1px 2px oklch(0% 0 0 / 0.30);
+  --shadow: 0 2px 10px oklch(0% 0 0 / 0.38);
+}
+
+/* Expose the tokens to Tailwind utilities: bg-surface, text-muted, border-border … */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-text: var(--text);
+  --color-muted: var(--text-muted);
+  --color-subtle: var(--text-subtle);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-weak: var(--accent-weak);
+  --color-positive: var(--positive);
+  --color-positive-weak: var(--positive-weak);
+  --color-caution: var(--caution);
+  --color-caution-weak: var(--caution-weak);
+  --color-critical: var(--critical);
+  --color-critical-weak: var(--critical-weak);
+  --color-info: var(--info);
+  --color-info-weak: var(--info-weak);
+}
+
+* { border-color: var(--border); }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Tabular figures everywhere a number is compared to another number. */
+.tnum { font-variant-numeric: tabular-nums; }
+
+::selection { background: var(--accent-weak); color: var(--text); }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

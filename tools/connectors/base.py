@@ -33,6 +33,7 @@ sys.path.insert(0, str(REPO_ROOT / "tools"))
 import crm  # noqa: E402  (path set above so the connector reuses the CRM's own code path)
 
 REGISTERS_DIR = REPO_ROOT / "crm" / "registers"
+EVENTS_DIR = REPO_ROOT / "crm" / "events"
 
 # We identify ourselves honestly. These are public registers being read once a day.
 USER_AGENT = (
@@ -159,6 +160,27 @@ def previous_snapshot(register: str, before: str) -> Optional[Path]:
 
 def load_snapshot(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+# ---------------------------------------------------------------------------
+# Change events — the structured trigger feed (`crm/events/<YYYY-MM>.jsonl`)
+# ---------------------------------------------------------------------------
+
+def append_events(events: list[dict]) -> Optional[Path]:
+    """Append one JSON object per line to this month's event log. Never overwrites; never truncates.
+
+    A change on a firm not yet in the CRM (``company_slug: null``) is still appended — it is real
+    information about the market even before we have a record for it.
+    """
+    if not events:
+        return None
+    month = events[0]["date"][:7]
+    path = EVENTS_DIR / f"{month}.jsonl"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as f:
+        for ev in events:
+            f.write(json.dumps(ev, ensure_ascii=False, sort_keys=True) + "\n")
+    return path
 
 
 def _display_path(path: Path) -> str:
@@ -436,46 +458,67 @@ class Connector:
                     by_name.setdefault(normalize_name(candidate), rec["slug"])
 
         applied = []
+        events = []
         grouped: dict[str, list[dict]] = {}
         for ch in changes:
             grouped.setdefault(ch["name"], []).append(ch)
 
-        for name, items in grouped.items():
+        # Sorted rather than insertion order, so the event log and report are stable run to run.
+        for name, items in sorted(grouped.items()):
             slug = by_name.get(normalize_name(name))
-            if not slug:
-                continue
-            path = crm.company_path(slug)
-            if not path.exists():
-                continue
-            rec = crm.load_yaml(path)
-            triggers = [c for c in items if c["is_trigger"]]
-
-            detail = "; ".join(
-                f"{c['label']}: {c['before']!r} -> {c['after']!r}" for c in items
-            )
-            summary = (
-                f"Register change detected by the automated {self.source_name} diff. {detail}. "
-                f"Every value here is as the regulator publishes it."
-            )
             woke = False
-            if triggers and rec.get("status") in self.WAKEABLE:
-                rec["status"] = "qualified"
-                woke = True
-                summary += (
-                    " ⚠ Status raised from nurture to qualified on the strength of this change — "
-                    "an authorisation or segment change means the firm's business has moved, which "
-                    "is a reason to write. NOT yet researched; confirm before any outreach."
-                )
 
-            rec.setdefault("activities", []).append({
-                "date": crm.today(), "type": "research",
-                "summary": summary, "link": self.source_url or None,
-            })
-            rec["updated"] = crm.today()
-            if not dry_run:
-                crm.save_yaml(path, rec)
-            applied.append({"slug": slug, "name": name, "woke": woke,
-                            "fields": [c["field"] for c in items]})
+            if slug and crm.company_path(slug).exists():
+                path = crm.company_path(slug)
+                rec = crm.load_yaml(path)
+                triggers = [c for c in items if c["is_trigger"]]
+
+                detail = "; ".join(
+                    f"{c['label']}: {c['before']!r} -> {c['after']!r}" for c in items
+                )
+                summary = (
+                    f"Register change detected by the automated {self.source_name} diff. {detail}. "
+                    f"Every value here is as the regulator publishes it."
+                )
+                if triggers and rec.get("status") in self.WAKEABLE:
+                    rec["status"] = "qualified"
+                    woke = True
+                    summary += (
+                        " ⚠ Status raised from nurture to qualified on the strength of this change — "
+                        "an authorisation or segment change means the firm's business has moved, which "
+                        "is a reason to write. NOT yet researched; confirm before any outreach."
+                    )
+
+                rec.setdefault("activities", []).append({
+                    "date": crm.today(), "type": "research",
+                    "summary": summary, "link": self.source_url or None,
+                })
+                rec["updated"] = crm.today()
+                if not dry_run:
+                    crm.save_yaml(path, rec)
+                applied.append({"slug": slug, "name": name, "woke": woke,
+                                "fields": [c["field"] for c in items]})
+            else:
+                # Not (yet) a CRM record. Still a real market event — recorded with a null slug
+                # rather than dropped, so "everything that changed this week" is a complete feed.
+                slug = None
+
+            for c in items:
+                events.append({
+                    "date": crm.today(),
+                    "register": self.register,
+                    "company_slug": slug,
+                    "company_name": name,
+                    "field": c["field"],
+                    "label": c["label"],
+                    "before": c["before"],
+                    "after": c["after"],
+                    "is_trigger": c["is_trigger"],
+                    "woke": woke,
+                })
+
+        if not dry_run:
+            append_events(events)
         return applied
 
     def run(self, *, dry_run: bool = False, baseline_window_days: Optional[int] = None,
