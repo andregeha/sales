@@ -10,6 +10,11 @@
   — observed 2026-09-22, high.
 - **Andre prefers the Claude Code desktop app to the terminal.** Default to giving him the
   desktop-app route first and the terminal only as an alternative. — stated 2026-09-22, high.
+- **The cloud daily schedule (`trig_01R44y3zto5gaxgBChoFxy1L`) was DISABLED 2026-09-22** when the
+  laptop became primary — to avoid two sessions committing to the same branch. **Disabled, not
+  deleted**, so it can be re-enabled if the cloud network policy is ever widened.
+  ⚠ **Nothing is scheduled right now.** The daily run must be set up on the laptop to resume.
+  — 2026-09-22, high.
 - **Running on Andre's laptop is the approved workaround for the blocked cloud network.** The
   desktop app runs locally, so it has his internet and can reach regulator and tender sites.
   Runbook: `RUN-ON-LAPTOP.md`. — approved by Andre 2026-09-22.

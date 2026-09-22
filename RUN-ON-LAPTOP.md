@@ -71,12 +71,22 @@ contact anyone — Andre approves and sends; log everything in the CRM; update m
 - **A real RFP radar.** Searching *inside* Etimad, BOAMP and TED instead of hoping a search engine
   indexed them.
 
-## The one catch, so it isn't a surprise
-The **7am scheduled run still happens in the cloud**, where the sites stay blocked. So:
-- Connectors run properly **when you run them on your laptop**.
-- In the cloud they will **say clearly in your brief that the registers were unreachable** — they
-  will not fail silently or pretend they found nothing.
+## Setting up the daily run here
+The cloud schedule was **disabled on 2026-09-22** when the laptop became primary, so nothing runs
+automatically right now. To get the daily cycle back, ask the laptop session:
 
-If you later get the cloud environment's network restriction lifted
-(https://code.claude.com/docs/en/claude-code-on-the-web), everything runs unattended and the laptop
-stops being necessary.
+> *"Set up the daily run on this machine — weekday mornings, running the /daily-run skill.
+> Use Windows Task Scheduler or whatever is most reliable here, and tell me how to check it ran."*
+
+It only fires when the laptop is on and awake. That is the trade-off of running locally, and it is
+why the cloud schedule existed. If the cloud network policy is ever widened, re-enable that schedule
+and you get unattended runs back.
+
+## The old catch (now historical)
+This mattered while the cloud ran the schedule. It is now disabled, so it is moot — but the design
+requirement stands: **a connector that cannot reach its source must fail loudly**, saying so in the
+brief, never returning an empty result that reads as a quiet day.
+
+If the cloud network restriction is ever lifted
+(https://code.claude.com/docs/en/claude-code-on-the-web), re-enable the schedule and you get
+unattended daily runs back on top of the laptop work.
