@@ -1,0 +1,68 @@
+slug: sulaiman-alrajhi-holding-financial-investments
+name: Sulaiman Alrajhi Holding - Financial Investments
+legal_name: Sulaiman bin Abdulaziz Alrajhi Holding Company
+country: Saudi Arabia
+city: Riyadh
+segment: family_office
+regulator: null
+website: https://srh.sa/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: Single-family holding company of the Sulaiman bin Abdulaziz Al Rajhi branch of the Al Rajhi
+  family (distinct from Al Rajhi Bank's public shareholder family branch). Its Financial Investments division
+  is led by Bilal Abduljawad (CFA, CAIA), whose LinkedIn/company title is given as both 'Acting Head'
+  (search snippet) and 'Head' (srh.sa leadership page) of Financial Investment - the 'Acting' framing
+  suggests a recent or unsettled leadership transition, but no appointment date could be confirmed in
+  this session. Abduljawad previously held investment roles at SEDCO Capital, Sanabil Investments and
+  Kun Investment Holding.
+source:
+  channel: web_research
+  detail: WebSearch surfaced Bilal Abduljawad's role via LinkedIn (sa.linkedin.com/in/bilalabduljawad)
+    and srh.sa/en/leadership listing him as Head of Financial Investment; not independently click-verified
+    on srh.sa in this session.
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- ksa
+- family-office
+- single-family
+- proprietary
+- named-contact
+- no-dated-trigger
+- acting-role
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Bilal Abduljawad
+  title: Head of Financial Investment (also cited as Acting Head)
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: https://sa.linkedin.com/in/bilalabduljawad
+  language: en
+  notes: Leads Financial Investments at Sulaiman bin Abdulaziz Alrajhi Holding Company; CFA and CAIA (2019);
+    previously at SEDCO Capital, Sanabil Investments and Kun Investment Holding (Director of Investments
+    overseeing financial investments and M&A); co-founder of Blomal. Title given as 'Acting Head' in some
+    sources and 'Head' on the company's own leadership page - appointment date not confirmed. Pronouns
+    not stated - use they/them. No email/phone published; none invented.
+  source: sa.linkedin.com/in/bilalabduljawad and srh.sa/en/leadership, found 2026-09-22
+fit:
+  score: 40
+  reasoning: 'Fit 45/60: priority segment family_office (20) + priority market KSA (15) + multi-asset
+    implied by a ''Financial Investments'' division alongside the group''s operating businesses (10) +
+    0 for third-party money (proprietary family capital) + 0 for a named regulator (none confirmed for
+    this division). Trigger 0/25: the ''Acting Head'' title is a possible leadership-transition signal
+    but no appointment date could be confirmed, so this is not scored as a dated hire trigger - flagged
+    for a follow-up check rather than credited. Access 8/15: named, identifiable decision-maker (Bilal
+    Abduljawad) with a public LinkedIn profile, no direct email/phone confirmed. Total 53 by arithmetic,
+    moderated down to 40 for the same reasons as Al Muhaidib: a proprietary single-family vehicle with
+    an unconfirmed trigger. Status nurture - re-check whether ''Acting'' resolves to a permanent, recently-appointed
+    Head, which would be a real trigger.'
+  disqualified_reason: null
+activities: []
+next_action: null

@@ -15,7 +15,7 @@ Follow `playbooks/daily-run.md` in full. In short:
 5. **Research** the top of the queue. Delegate to `ofs-researcher`.
 6. **Draft outreach** for qualified records that have a real trigger. Delegate to `ofs-writer`.
 7. **Move the pipeline** — chase, re-angle, or park honestly.
-8. **Produce the brief** — `python3 tools/crm_report.py`.
+8. **Produce the brief** — `python tools/crm_report.py`.
 9. **Persist** — changelog, facts, open questions, `crm.py validate` (must exit 0), commit and push.
 
 ## The standard

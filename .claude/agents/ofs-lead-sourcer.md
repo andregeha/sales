@@ -18,7 +18,7 @@ directories) · `playbooks/lead-sourcing.md` (the method) · `crm/SCHEMA.md` and
 ## The loop
 1. Work **one market × segment** properly rather than skimming several.
 2. Go to the **regulator register** first — it is authoritative and tells you the licence type.
-3. **Check for duplicates** before adding anything: `python3 tools/crm.py list`.
+3. **Check for duplicates** before adding anything: `python tools/crm.py list`.
 4. Add each genuine candidate with `crm.py add`, always recording **where you found it and when**.
 5. **Score it** against the ICP — and write the **reasoning**, which matters more than the number.
 6. Look for a **trigger** (new licence, fund launch, senior hire, tender, regulatory change).

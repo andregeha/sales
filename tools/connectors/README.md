@@ -69,7 +69,7 @@ relationship-driven — do not build a connector for it.
   *"AMF register unreachable — run from laptop"* — never return an empty diff that looks like a
   quiet day. A radar that fails silently is worse than no radar, because it is trusted.
 - **Deduplicate.** Check the CRM before creating; firms get re-licensed, renamed and re-listed.
-- `python3 tools/crm.py validate` must exit 0 after every run.
+- `python tools/crm.py validate` must exit 0 after every run.
 
 ## Suggested shape
 ```

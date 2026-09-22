@@ -3,7 +3,7 @@ name: The Family Office International Investment Company (Saudi Arabia)
 legal_name: The Family Office International Investment Company
 country: Saudi Arabia
 city: Riyadh
-segment: asset_manager
+segment: mfo
 regulator: CMA (Saudi Arabia)
 website: https://tfoco.com/en/sa
 linkedin: https://www.linkedin.com/company/the-family-office
@@ -34,20 +34,22 @@ tags:
 - asset-manager
 - family-wealth
 - cross-border-entrant
+- mfo
+- segment-corrected-from-asset-manager
 created: '2026-09-22'
 updated: '2026-09-22'
 contacts: []
 fit:
-  score: 50
-  reasoning: 'Fit: priority segment asset manager (20) + priority market KSA (15) + multi-asset via curated
-    third-party global manager solutions (10) + manages third-party HNW/family capital, not proprietary
-    (10) + CMA-regulated (5) = 60/60 — a strong fit on paper: a wealth manager for families with an explicit
-    consolidated-reporting/multi-custodian need, our family-office-adjacent pitch applies directly even
-    though the CMA classifies it as an asset manager. Timing: the licence upgrade itself is from 2021,
-    now stale as a trigger (0/25) — no 2025/2026-dated event found (no new fund, no reported senior hire).
-    Access: no named contact found in this pass beyond a group LinkedIn page (0/15, generic company page
-    only, not scored as a named contact). Total 60, but marked nurture because there is no current trigger
-    — watch for a new Saudi fund launch, a reported senior Riyadh hire, or AUM growth disclosure.'
+  score: 55
+  reasoning: 'Re-scored 2026-09-22 after segment correction to mfo. Fit 55/60: priority segment mfo (20,
+    corrected from asset_manager) + priority market KSA (15) + multi-asset via curated third-party global
+    manager solutions (10) + manages third-party family capital explicitly, not proprietary (10) + CMA-regulated
+    (5) - wait, that sums to 60; scored 55 to hold back 5 points because the CMA licence itself (Managing
+    Investments and Operating Funds) is a generic asset-management category, not an MFO-specific licence,
+    so the regulatory fit is real but indirect. Trigger 0/25: no current trigger - the licence upgrade
+    is from 2021 (stale) and no 2025/2026 fund launch or hire was found in this pass. Access 0/15: still
+    no named Riyadh contact found, only a group LinkedIn page. Total 55; status remains nurture - watch
+    for a new Saudi fund, a reported Riyadh hire, or AUM disclosure.'
   disqualified_reason: null
 activities:
 - date: '2026-09-22'
@@ -56,5 +58,13 @@ activities:
     only confirmed regulatory event (licence upgrade to Managing Investments and Operating Funds) dates
     to 2021 — no current trigger found. Group LinkedIn page found but no named Riyadh-office contact.
     Watch for a new fund launch or senior Riyadh hire before treating as active.
+  link: null
+- date: '2026-09-22'
+  type: research
+  summary: 'Segment corrected from asset_manager to mfo while working the Saudi family-offices/MFOs sourcing
+    pass (2026-09-22): this is explicitly a multi-family-office business model (bespoke portfolios for
+    multiple GCC families, min ticket USD 300,000), even though its CMA licence is the generic ''Managing
+    Investments and Operating Funds'' category. No new trigger found in this pass beyond what was already
+    recorded.'
   link: null
 next_action: null

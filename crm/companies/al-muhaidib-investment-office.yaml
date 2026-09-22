@@ -1,0 +1,74 @@
+slug: al-muhaidib-investment-office
+name: Al Muhaidib Investment Office
+legal_name: Al Muhaidib Group
+country: Saudi Arabia
+city: Dammam
+segment: family_office
+regulator: null
+website: https://muhaidib.com/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: Single-family investment office of Al Muhaidib Group, a diversified Dammam-based conglomerate
+  (est. 1943) spanning food/consumer goods, industrial and infrastructure, real estate and financial investments
+  across four continents. Has a dedicated Chief Investment Officer (Junaid Jafar, ~30 years in investment
+  banking/management, ex-J.P. Morgan, Henderson Global Investors, Tadhamon Capital) responsible for both
+  the Family Office and the Financial Investments vertical, covering international private markets and
+  local/international public markets - a sign of a professionalising single-family office with its own
+  investment function, not a compliance-driven third-party manager.
+source:
+  channel: web_research
+  detail: Praxis Rock's '22 Family Offices in Saudi Arabia' directory (praxisrock.com) plus WebSearch
+    on named CIOs of Saudi family investment offices; corroborated via informaconnect.com SuperReturn
+    Saudi Arabia speaker bio and muhaidib.com executive-management page. Not click-verified on muhaidib.com
+    beyond the search snippet.
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- ksa
+- family-office
+- single-family
+- proprietary
+- named-cio
+- no-dated-trigger
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Junaid Jafar
+  title: Chief Investment Officer, Muhaidib Investment Office
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: CIO responsible for the Family Office and Financial Investments vertical at Al Muhaidib Group;
+    ~30 years in investment banking/management (J.P. Morgan, Henderson Global Investors, Tadhamon Capital
+    co-founder). Also an independent board member at Sigma Lithium Corp (appointed 2025-03-13, per SEC
+    filing). Speaker bio via informaconnect.com (SuperReturn Saudi Arabia). Tenure at Al Muhaidib not
+    dated - could not confirm this is a recent hire. Pronouns not stated - use they/them. No email/phone/LinkedIn
+    URL confirmed in this session; none invented.
+  source: informaconnect.com/superreturn-saudi-arabia/speakers/junaid-jafar/ and muhaidib.com executive-management
+    page, found 2026-09-22
+fit:
+  score: 42
+  reasoning: 'Fit 35/60: priority segment family_office (20) + priority market KSA (15) + multi-asset
+    across international private markets and local/international public markets (10, but see below) -
+    subtotal already 45; corrected: no points for third-party money (0, proprietary family capital only)
+    and no points for a named regulator (0, no CMA/SAMA licence found for the investment office itself
+    as distinct from group entities) = Fit 45/60. Trigger 0/25: a dedicated CIO exists and is active in
+    industry circles (SuperReturn speaker, Sigma Lithium board seat 2025), which is a professionalising-family-office
+    signal in spirit, but no appointment/hire date could be confirmed, so it cannot be scored as a dated
+    ''new CIO hired'' trigger (12 pts) under icp.md''s own standard of a genuine reason-why-now. Access
+    8/15: named, identifiable decision-maker (Junaid Jafar, CIO) via a public conference bio, though no
+    direct contact route (email/phone/LinkedIn) was confirmed. Total 53 by arithmetic, moderated down
+    to 42 given this is a purely proprietary single-family vehicle - real fit but weak on both the third-party-money
+    and regulatory-obligation dimensions that usually justify Gaia''s compliance-led pitch. Status nurture:
+    no dated trigger. Worth a light watch for a reported new mandate type, additional hire, or reporting-consolidation
+    initiative.'
+  disqualified_reason: null
+activities: []
+next_action: null

@@ -2,9 +2,9 @@
 
 > ⚠ **The CRM is the system of record.** The live numbers come from `crm/`, not from this file:
 > ```bash
-> python3 tools/crm.py stats
-> python3 tools/crm.py list --status qualified,contacted,engaged,opportunity
-> python3 tools/crm.py next
+> python tools/crm.py stats
+> python tools/crm.py list --status qualified,contacted,engaged,opportunity
+> python tools/crm.py next
 > ```
 > This file holds the **narrative** — the stage model, the standards, and anything a table cannot say.
 
