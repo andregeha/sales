@@ -248,6 +248,66 @@ Measured, not assumed: full export **3.7 MB**, slim index **307 KB**.
 Loading all 3.7 MB at once would work fine from disk, but splitting keeps the app honest at ten
 times this size — and this CRM grew 22× in a single day.
 
+## 6c. The design system — the charte graphique
+
+> Andre: *"You will of course create a graphic chart, components for everything, save them and have
+> rules to always use them."* Yes — and it is built **before** any view, because the alternative is
+> ten screens that each invent their own dialect.
+
+Everything visual lives in `site/src/design/`. Nothing outside it defines a colour, a size or a
+shape.
+
+### Tokens — one file, `design/tokens.css`
+
+CSS custom properties, consumed by Tailwind 4's CSS-first config **and** by Recharts, so a chart and
+a table are literally the same palette.
+
+| Group | Contents |
+|---|---|
+| **Surface** | `--bg`, `--surface`, `--surface-raised`, `--border`, `--border-strong` |
+| **Text** | `--text`, `--text-muted`, `--text-subtle` |
+| **Accent** | `--accent`, `--accent-fg` — exactly one accent. |
+| **Semantic** | `--positive`, `--caution`, `--critical`, `--info` — meaning, never decoration. |
+| **Data** | `--chart-1 … --chart-6` — the only colours a chart may use. |
+| **Type** | `--font-sans`, `--font-mono`, and a scale: display · h1 · h2 · h3 · body · small · micro |
+| **Shape** | `--radius`, and *two* shadows only. Hierarchy comes from type and space (§5.2). |
+| **Motion** | `--dur-fast` 120ms, `--dur` 200ms, `--ease` — used sparingly. |
+
+Light and dark are the same tokens redefined. No component ever branches on theme.
+
+### Components — `design/` , every one of them
+
+**Layout** · `AppShell` `Page` `PageHeader` `Section` `Toolbar` `Split`
+**Data** · `DataGrid` (TanStack Table + Virtual) `DataTable` (small, static) `Stat` `Sparkline`
+`Chart` (the only Recharts entry point) `CoverageMatrix`
+**Content** · `Field` `Timeline` `Prose` `SourceLink` `EmptyState` `ErrorState` `Callout`
+**Controls** · `Button` `SearchInput` `Select` `FilterChip` `CommandPalette` `Kbd`
+**Domain** — the ones that make the app feel like one product:
+`StatusBadge` `ScoreBadge` `SegmentTag` `MarketTag` `ContactRoute` `TriggerLine` `SourceHealth`
+`RecordLink`
+
+A domain component means a score looks identical on `/`, `/companies` and `/companies/[slug]` —
+because it is the same component, not three implementations that agree today.
+
+### The rules — enforced, not suggested
+
+These are repeated in `CLAUDE.md` so every agent inherits them:
+
+1. **No raw colour, ever.** No hex, no `rgb()`, no Tailwind palette names (`bg-blue-500`). Only tokens.
+2. **No raw `<table>`.** Use `DataGrid` or `DataTable`.
+3. **No chart except through `<Chart>`.** Recharts is never imported directly, so theming stays uniform.
+4. **Never render a number without its meaning** (§5.3). `Stat` requires a label; there is no way to use it wrong.
+5. **A status, score, segment, market or contact-route is always its domain component.** Never an ad-hoc span.
+6. **Every data view declares its empty and error states.** `EmptyState` and `ErrorState` are required props on `DataGrid`, not afterthoughts — a screen that says nothing when it has nothing is the bug.
+7. **No new dependency without a line in this plan.** Including "just this one small one".
+8. **Nothing is authored in `site/`** (§2). The design system renders data; it never owns a fact.
+
+### Why this is not over-engineering for a one-reader tool
+
+Because the reader is the one person whose time this whole workspace exists to protect, and because
+this thing has to be built by parallel agents. A design system is what makes that produce **one
+product** rather than ten pages that happen to be in the same folder.
+
 ## 7. The determinism contract
 
 R2 is a promise that has to be enforced, not hoped for.

@@ -100,6 +100,27 @@ never assume it is on disk. Anything we must not lose gets copied into `knowledg
   (`check_overflow.py`, `check_repeats.py`) must exit 0, and a **visual render check** is mandatory
   (the gates cannot catch PowerPoint's wrap-boundary word-doubling).
 
+## The website (`site/`) — rules every agent inherits
+Full design in `plan/website.md`. The short version, which is not optional:
+
+1. **The site is DERIVED. Nothing is ever authored in `site/`.** The CRM is the system of record;
+   the website renders it. A fact that exists only in the website means we have two truths.
+2. **Use the design system in `site/src/design/`. Always.**
+   - **No raw colour** — no hex, no `rgb()`, no `bg-blue-500`. Tokens only.
+   - **No raw `<table>`** — `DataGrid` or `DataTable`.
+   - **No Recharts import** — charts go through `<Chart>`, so theming stays uniform.
+   - **A status, score, segment, market or contact-route is always its domain component**, never an
+     ad-hoc span. That is what makes it look like one product.
+   - **Never render a number without its meaning.** "1,299 companies" is noise; "166 with a reason
+     to write" is information.
+   - **Every data view declares its empty and error state.** A screen that says nothing when it has
+     nothing is a bug.
+3. **No new npm dependency without a line in `plan/website.md`.** Including small ones.
+4. **The build is deterministic.** Same data in, byte-identical site out. Nothing may introduce a
+   wall-clock timestamp or unstable ordering into generated output.
+5. **Failure renders as loudly as success.** A dead connector, a firm with no contact route, an
+   unsourced market — these are the things Andre most needs to see.
+
 ## How I work (the orchestrator loop)
 1. **Load context** — this file, `memory/`, `crm/` (via `tools/crm.py next`).
 2. **Plan** — say what I am going to do before doing it.
