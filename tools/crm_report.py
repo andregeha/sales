@@ -41,12 +41,12 @@ the company's `economic_buyer` or `champion` contact with a non-null email/linke
 and says so on the card. If no such contact exists, it says exactly that instead of guessing.
 
 Usage:
-    python3 tools/crm_report.py                       # writes crm/reports/brief-YYYY-MM-DD.html
-    python3 tools/crm_report.py --out /path/to/out.html
-    python3 tools/crm_report.py --stalled-days 21      # passed through to `crm.py next`
-    python3 tools/crm_report.py --since 2026-09-15     # override "new leads" cutoff
-    python3 tools/crm_report.py --no-state             # do not read/update the last-run marker
-    python3 tools/crm_report.py --open                 # also print the file:// URL for convenience
+    python tools/crm_report.py                       # writes crm/reports/brief-YYYY-MM-DD.html
+    python tools/crm_report.py --out /path/to/out.html
+    python tools/crm_report.py --stalled-days 21      # passed through to `crm.py next`
+    python tools/crm_report.py --since 2026-09-15     # override "new leads" cutoff
+    python tools/crm_report.py --no-state             # do not read/update the last-run marker
+    python tools/crm_report.py --open                 # also print the file:// URL for convenience
 
 Standard library only, except that it imports `crm.py` (also standard-library-only, PyYAML aside)
 from this same directory. Read-only against every client system — this script only ever reads
@@ -58,6 +58,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import re
 import sys
 from datetime import date, datetime
 from pathlib import Path
@@ -232,10 +233,56 @@ def compute_pending_outreach(companies: list[dict]) -> list[dict]:
     return items
 
 
+#: Never print more than this many rows in a single brief section. A brief is something Andre
+#: actions in ten minutes; past this it is a database dump and stops being read at all.
+SECTION_CAP = 25
+
+
+def has_contact_route(c: dict) -> bool:
+    """Can we actually reach this firm? A website alone is not a route to a person."""
+    for k in (c.get("contacts") or []):
+        if k.get("email") or k.get("linkedin") or k.get("phone"):
+            return True
+    return False
+
+
+def trigger_line(c: dict) -> Optional[str]:
+    """The 'why now' for this firm, if it has one.
+
+    Status is set from the trigger by the register connectors, so `qualified` means something
+    happened. The reasoning carries the detail; we surface its trigger clause.
+    """
+    if c.get("status") not in {"qualified", "researching", "contacted", "engaged", "opportunity"}:
+        return None
+    reasoning = ((c.get("fit") or {}).get("reasoning") or "")
+    m = re.search(r"Trigger \d+/25:\s*([^.]+)", reasoning)
+    if m:
+        return m.group(1).strip()
+    return None
+
+
 def compute_new_leads(companies: list[dict], since: str) -> list[dict]:
+    """Records created since the cutoff, best first.
+
+    ⚠ This is 'newly RECORDED', which is not the same as 'newly licensed'. A register backfill
+    records hundreds of long-established firms in one go; none of them is a new opportunity.
+    :func:`split_new_leads` is what separates the two, and the brief must show that split rather
+    than implying every new row is a lead.
+    """
     out = [c for c in companies if (c.get("created") or "") >= since]
-    out.sort(key=lambda c: c.get("created") or "", reverse=True)
+    out.sort(key=lambda c: ((c.get("fit") or {}).get("score") or 0), reverse=True)
     return out
+
+
+def split_new_leads(leads: list[dict]) -> tuple[list[dict], list[dict]]:
+    """(actionable, background) — the ones with a reason to write, and the rest.
+
+    Actionable means the record carries a real trigger. Everything else is market coverage: worth
+    having in the CRM so a future trigger has something to attach to, not worth Andre's morning.
+    """
+    actionable = [c for c in leads if trigger_line(c)]
+    background = [c for c in leads if not trigger_line(c)]
+    return actionable, background
 
 
 # ---------------------------------------------------------------------------
@@ -331,6 +378,7 @@ def render_rfp_table(upcoming: list[dict]) -> str:
 
 
 def render_queue_table(rows: list[dict]) -> str:
+    rows, _overflow = rows[:SECTION_CAP], rows[SECTION_CAP:]
     if not rows:
         return '<p class="muted">Nothing due, overdue or stalled. The queue is clear.</p>'
     out = []
@@ -352,25 +400,43 @@ def render_queue_table(rows: list[dict]) -> str:
 
 
 def render_new_leads(leads: list[dict]) -> str:
+    """The actionable new leads only, capped, with the reason to write and whether we can reach them."""
     if not leads:
-        return '<p class="muted">No new leads since the last run.</p>'
+        return '<p class="muted">Nothing new with a reason to write to it. That is a normal day.</p>'
+    shown, rest = leads[:SECTION_CAP], leads[SECTION_CAP:]
     out = []
-    for c in leads:
-        src = c.get("source") or {}
+    for c in shown:
         fit = c.get("fit") or {}
+        route = "yes" if has_contact_route(c) else '<span class="muted">no route</span>'
         out.append(f'<tr>'
                    f'<td><code>{esc(c["slug"])}</code><br>{esc(c["name"])}</td>'
                    f'<td>{esc(c.get("country"))}</td>'
                    f'<td>{esc(c.get("segment"))}</td>'
                    f'<td>{esc(fit.get("score"))}</td>'
-                   f'<td>{esc(src.get("channel"))} — {esc(src.get("detail"))}</td>'
-                   f'<td>{esc(c.get("created"))}</td>'
+                   f'<td>{esc(trigger_line(c))}</td>'
+                   f'<td>{route}</td>'
                    f'</tr>')
+    more = (f'<p class="muted">+{len(rest)} more with a trigger, not shown. '
+            f'<code>python tools/crm.py list --status qualified</code></p>') if rest else ""
     return f"""
     <table>
-      <thead><tr><th>Company</th><th>Country</th><th>Segment</th><th>Fit</th><th>Source</th><th>Added</th></tr></thead>
+      <thead><tr><th>Company</th><th>Country</th><th>Segment</th><th>Fit</th><th>Why now</th><th>Reachable</th></tr></thead>
       <tbody>{''.join(out)}</tbody>
-    </table>"""
+    </table>{more}"""
+
+
+def render_background_leads(leads: list[dict]) -> str:
+    """Market coverage recorded this run — counted, never listed."""
+    if not leads:
+        return ""
+    by_country: dict = {}
+    for c in leads:
+        by_country[c.get("country") or "?"] = by_country.get(c.get("country") or "?", 0) + 1
+    bits = ", ".join(f"{v} {k}" for k, v in sorted(by_country.items(), key=lambda x: -x[1]))
+    return (f'<p class="muted"><b>{len(leads)}</b> further firms were recorded for market coverage '
+            f'({bits}) — licensed firms with no current trigger. They are in the CRM so a future '
+            f'trigger has a record to attach to. <b>They are not opportunities and are not listed '
+            f'here.</b></p>')
 
 
 def render_breakdown(title: str, counts: dict) -> str:
@@ -509,6 +575,7 @@ def render_page(ctx: dict) -> str:
     stats = ctx["stats"]
     queue = ctx["queue"]
     new_leads = ctx["new_leads"]
+    actionable, background = split_new_leads(new_leads)
     upcoming = stats["rfp_deadlines_approaching"]
 
     pending_html = ("\n".join(render_pending_card(it, i) for i, it in enumerate(pending))
@@ -519,7 +586,7 @@ def render_page(ctx: dict) -> str:
       <div class="stat"><b>{len(pending)}</b> waiting on your approval</div>
       <div class="stat"><b>{len(queue)}</b> in the work queue</div>
       <div class="stat"><b>{stats['rfps_total']}</b> RFPs on record</div>
-      <div class="stat"><b>{len(new_leads)}</b> new leads since last run</div>
+      <div class="stat"><b>{len(actionable)}</b> new with a reason to write</div>
     """
 
     breakdowns = f"""
@@ -564,8 +631,9 @@ def render_page(ctx: dict) -> str:
   </section>
 
   <section id="new-leads">
-    <h2>New leads since last run{f" ({esc(ctx['since'])})" if ctx.get('since') else ""}</h2>
-    {render_new_leads(new_leads)}
+    <h2>New since last run{f" ({esc(ctx['since'])})" if ctx.get('since') else ""} — with a reason to write</h2>
+    {render_new_leads(actionable)}
+    {render_background_leads(background)}
   </section>
 
   <section id="pipeline">
@@ -576,7 +644,7 @@ def render_page(ctx: dict) -> str:
 </div>
 <footer class="foot">
   Generated by <code>tools/crm_report.py</code> from <code>crm/</code>. Nothing on this page was sent —
-  every send action is yours. Regenerate any time with <code>python3 tools/crm_report.py</code>.
+  every send action is yours. Regenerate any time with <code>python tools/crm_report.py</code>.
 </footer>
 <script>{PAGE_JS}</script>
 </body>
