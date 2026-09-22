@@ -191,10 +191,54 @@ problem:
 - **TanStack Query** — there is no server, no cache invalidation and no refetching. `fetch` plus
   React 19's `use()` covers on-demand detail JSON.
 - **Motion** (13.4.0) — tasteful transitions are a P4 question, not a foundation.
-- **Any chart library** — the markets matrix is a CSS grid. Add one when there is a chart worth
-  drawing.
 
-### Data loading
+## 6a. Charts and grids
+
+> Added 2026-09-22 on Andre's instruction: *"we will need graphs and top notch grids for info."*
+> That is a requirement, so the earlier "no chart library" line is withdrawn. What follows is a
+> choice, not an omission — and deliberately **one** chart library, not two.
+
+### Charts — Recharts, through shadcn/ui's chart components
+
+| Candidate | Version · licence · size | Verdict |
+|---|---|---|
+| **Recharts** | 3.10.1 · MIT · 7.5 MB | ✅ **Chosen.** It is what **shadcn/ui's chart components are built on**, so charts theme off the *same CSS variables* as every other component. Design-system consistency is precisely what "simple, elegant, clear, pure" demands — a chart that looks like a different product is the failure mode here. |
+| **Observable Plot** | 0.6.17 · ISC · 1.5 MB | Smallest and the most concise grammar for analytical charts, with better statistical defaults. Rejected **only** to avoid a second visual language. Reconsider if we hit something Recharts genuinely cannot draw well. |
+| **ECharts** | 6.1.0 · Apache-2.0 · **60 MB** | The most capable, and the right answer for very large or highly interactive datasets. Overkill at this scale, and it brings its own theming world. |
+| **visx** | 4.0.0 · MIT | Maximum control, most work. Only for a bespoke visual Recharts cannot express. |
+
+⚠ **The markets coverage matrix stays a CSS grid**, not a charting component. A heatmap of
+market × segment is a styled table; routing it through a chart library would make it less clear,
+not more.
+
+### The charts that actually earn their place
+
+Named up front so this stays a design, not a licence to add charts:
+
+| Visualisation | Answers | Where | Phase |
+|---|---|---|---|
+| **Contact-route coverage** by market | *What fraction can we actually reach?* | `/` and `/markets` | P1 |
+| **Source health sparklines** | *Is each register alive?* A line that flattens and stops is a dead connector — visible at a glance. | `/sources` | P1 |
+| **Score distribution** | *Where is the mass?* Are we sitting on a pile of 40s? | `/companies` | P2 |
+| **Coverage matrix** (CSS grid) | *Where are we thin?* Gaps render loud. | `/markets` | P2 |
+| **Pipeline over time** | *Is this growing or churning?* Built from `Run` records. | `/runs` | P2 |
+| **Trigger volume by week** | *Is the engine finding reasons to write, or drifting?* | `/triggers` | P2 |
+
+The first two matter most, and both exist to make a *problem* visible rather than a success:
+contact routes are the binding constraint on the whole engine, and a silently dead connector is the
+failure mode this workspace has already hit once.
+
+### Grids — TanStack Table + Virtual, kept
+
+| Candidate | Version · licence · size | Verdict |
+|---|---|---|
+| **TanStack Table + Virtual** | 9.2.4 · 3.14.13 · MIT | ✅ **Kept.** Headless, so the grid is styled by *our* design system and looks like the rest of the app. Virtualised, so only visible rows mount. Column resize, reorder and CSV export are small amounts of code on top. |
+| **AG Grid Community** | 36.2.0 · MIT · 21.6 MB | The enterprise gold standard, and genuinely excellent. Rejected because it brings its own visual language that must then be fought back into line with Tailwind and shadcn — and design control is the stated priority. ⚠ Also worth knowing before anyone suggests it later: **row grouping, pivoting and aggregation are AG Grid *Enterprise*, not Community** — the free tier would not give us the features it is usually recommended for. |
+
+**Escape hatch, stated honestly:** if we ever genuinely need pivoting or aggregated grouping, that
+is a real reason to revisit AG Grid — and a paid one. Not before.
+
+## 6b. Data loading
 
 Measured, not assumed: full export **3.7 MB**, slim index **307 KB**.
 
