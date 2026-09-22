@@ -4,28 +4,38 @@
 > RFP radar can't work there. Your laptop has normal internet, so they can.
 > **Who this is for:** Andre. Five minutes, once.
 
-## What you need once
-1. **Claude Code on your laptop** — https://claude.com/claude-code (if you already use it, skip).
-2. **Git** — almost certainly already installed.
+## Easiest route — the Claude Code desktop app
+Claude Code ships as a **desktop app for Windows and Mac** — same tool, no terminal.
+Get it at https://claude.com/claude-code, open it, and point it at the `sales` folder.
+Then paste the prompt below. That's it.
 
-## The five steps
-Open a terminal and run these, one at a time:
+The desktop app runs **on your machine**, so it has your internet connection — which is the entire
+reason for doing this.
 
+## Or the terminal, if you prefer
 ```bash
 git clone https://github.com/andregeha/sales
 cd sales
 git checkout claude/dreamy-rubin-v70dkq
-python3 -m pip install pyyaml
 claude
 ```
 
-That last command starts Claude Code inside the project. It will read `CLAUDE.md` automatically and
-know the whole mission, the territory, the rules and everything decided so far.
+## ⚠ Windows: Python
+The CRM tooling needs Python, and Windows does not ship it. If you see
+*"Python was not found; run without arguments to install from the Microsoft Store"*, that is this.
+**You do not need to fix it yourself** — the prompt below tells the session to sort it out.
+If you would rather do it once and forget: install from https://www.python.org/downloads/ and tick
+**"Add Python to PATH"** during setup. Note that on Windows the command is `python`, not `python3`.
 
 ## Then paste this
 
 ```
 Read CLAUDE.md, memory/ and tools/connectors/README.md.
+
+First: this is a Windows machine and Python may not be installed. Check, and if it is
+missing, install it (and PyYAML) so tools/crm.py runs. On Windows the command is
+usually `python`, not `python3` — if you add any scripts or docs, make them work on
+both.
 
 You are running on Andre's laptop, which has full internet access — unlike the cloud
 environment, where regulator and tender websites are blocked. That is the whole reason

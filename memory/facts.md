@@ -4,6 +4,15 @@
 > Format: **fact** — source, date, confidence.
 
 ## Workspace & tooling
+- **Andre works on Windows.** Practical consequences: the command is `python`, not `python3`; Python
+  is not installed by default (the "install from the Microsoft Store" message means it is missing);
+  and paths use backslashes. Any script or instruction we give him must work on Windows.
+  — observed 2026-09-22, high.
+- **Andre prefers the Claude Code desktop app to the terminal.** Default to giving him the
+  desktop-app route first and the terminal only as an alternative. — stated 2026-09-22, high.
+- **Running on Andre's laptop is the approved workaround for the blocked cloud network.** The
+  desktop app runs locally, so it has his internet and can reach regulator and tender sites.
+  Runbook: `RUN-ON-LAPTOP.md`. — approved by Andre 2026-09-22.
 - 🔴 **This session's environment blocks general web access.** The egress policy allows package
   registries (pypi, npm, crates) and Anthropic APIs only; every other host gets a **403 on CONNECT**
   from the proxy. Verified 2026-09-22: `pypi.org` → 200, `amf-france.org` → blocked,
