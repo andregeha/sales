@@ -47,6 +47,17 @@ contacts:
   notes: Named as Directeur general delegue / COO in press coverage. Pronouns not stated - use they/them.
     No email/phone/LinkedIn found; none invented.
   source: Web search 2026-09-22, press coverage of Flornoy Ferri leadership
+- name: Flornoy Ferri — switchboard (register-published)
+  title: General enquiries
+  role: unknown
+  email: null
+  phone: 0142865300
+  linkedin: null
+  language: fr
+  notes: 'Switchboard number as published by the regulator on its own register — not a guessed or inferred
+    number, and not an individual''s line. A generic number is a weak route: use it to reach a named person,
+    not as the first touch itself.'
+  source: amf-france register snapshot 2026-09-22
 fit:
   score: 66
   reasoning: 'Fit 60/60 (max): priority segment asset manager (20) + priority market France (15) + multi-asset
@@ -66,5 +77,11 @@ activities:
   summary: Sourced via web search on societe de gestion M&A/consolidation activity (2026-09-22). Flornoy
     Ferri (GP-12000007) is actively rolling up regional private-wealth practices (GDP Conseil, more planned
     in Bordeaux) - worth qualifying which back-office platform it runs today.
+  link: null
+- date: '2026-09-22'
+  type: research
+  summary: 'Enriched from the amf-france register snapshot 2026-09-22: switchboard 0142865300. These are
+    details the regulator publishes on its own register, not guessed or pattern-inferred. Existing values
+    were left untouched.'
   link: null
 next_action: null

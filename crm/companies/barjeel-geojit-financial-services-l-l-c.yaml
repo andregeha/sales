@@ -57,6 +57,18 @@ contacts:
   language: en
   notes: Founder Director of Barjeel Geojit since the 2001 JV.
   source: Facebook (barjeelgeojitae) post on Dwivedi's CEO appointment. Web search 2026-09-22.
+- name: Barjeel Geojit — Dubai office (general)
+  title: Dubai head office, general enquiries
+  role: unknown
+  email: dubai@barjeel.ae
+  phone: +971 4 3060 900
+  linkedin: null
+  language: en
+  notes: 'Generic company contact PUBLISHED BY THE FIRM on its own site - not a guessed pattern and not
+    an individual''s address. Use only as a fallback route if no named contact can be reached; a first
+    touch to a switchboard address converts far worse than a named one. Postal: Suite 308/309, 3rd Floor,
+    The Business Centre Building, Khalid bin Al Waleed Street, Bur Dubai, Dubai.'
+  source: Published on barjeel.ae homepage/contact block, fetched live 2026-09-22
 fit:
   score: 83
   reasoning: 'Fit 50/60: priority asset-manager/fund-manager segment (20) + UAE onshore (15) + third-party
@@ -79,6 +91,20 @@ activities:
     all onshore UAE prospects, not unique to this firm. Next: confirm a direct contact route for Dwivedi
     before drafting outreach.'
   link: null
+- date: '2026-09-22'
+  type: research
+  summary: 'CORRECTION to the handover''s premise. The handover named Barjeel Geojit as ''the one lead
+    with a fund open for subscription right now''. That is stale: the BGIOF NFO window was 2026-01-14
+    to 2026-02-13 and closed seven months ago. Verified live on barjeel.ae 2026-09-22 - the homepage banner
+    still reads ''now open for subscription'' but the footer is (c) 2025, so that is leftover NFO copy.
+    The defensible reading is that BGIOF is an OPEN-ENDED umbrella fund still accepting subscriptions,
+    which is a different and weaker hook. Do NOT write ''I see your NFO is open'' - it would be wrong
+    and visibly so. The real hook is that they launched a UAE-domiciled USD umbrella fund with SEGREGATED
+    SUB-FUNDS this year and are now operating it: NAV per sub-fund, subscriptions/redemptions and shareholder
+    registry are exactly the fund-administration workload. Also captured a real published contact route
+    (dubai@barjeel.ae, +971 4 3060 900) from their own site - generic, not guessed. Also confirmed they
+    now describe themselves as a ''CMA Regulated Company'', corroborating the SCA-to-CMA rename.'
+  link: https://www.barjeel.ae/
 next_action:
   who: Andre Geha
   what: Confirm a direct contact route to Surendra Dwivedi and draft a fund-launch-hook first touch

@@ -1,0 +1,65 @@
+slug: marquis-family-office
+name: Marquis Family Office
+legal_name: null
+country: France
+city: Rennes
+segment: mfo
+regulator: null
+website: https://marquisfamilyoffice.fr/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: 'Independent multi-family office founded 2017 in Rennes by Yuna Marquis (tax lawyer, AFFO/AUREP-certified
+  family officer, first 2021 cohort). Small, human-scale team across advisory, administrative and compliance
+  poles; deliberately limited client roster. Services: family governance, tax/succession planning, real
+  estate and financial investment, philanthropy. AFFO member.'
+source:
+  channel: web_search
+  detail: Surfaced via AFFO homepage testimonial (Yuna Marquis, Founder); cross-checked with pappers.fr,
+    WebFetch of marquisfamilyoffice.fr/a-propos/. Not click-verified beyond those.
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- france
+- mfo
+- family-office
+- affo-member
+- small-team
+- no-current-trigger
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Yuna Marquis
+  title: Founder
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Founded Marquis Family Office in 2017; tax lawyer by background, teaches at Universite de Rennes,
+    active AFFO member. No LinkedIn URL, email or phone confirmed in this session; none invented. Pronouns
+    not stated - use they/them.
+  source: AFFO homepage testimonial, pappers.fr and marquisfamilyoffice.fr, found 2026-09-22
+fit:
+  score: 48
+  reasoning: 'Fit 55/60: priority segment mfo (20) + priority market France (15) + multi-asset (real estate,
+    financial investment across the family book) (10) + third-party family money (10) + regulated 0/5
+    - no named regulator/CIF registration confirmed in this session. Trigger 0/25: no trigger found -
+    a small, stable, deliberately limited-roster practice with no reported launch, hire or incident. Access
+    3/15: named founder (Yuna Marquis) but no confirmed reachable contact route (no LinkedIn/email/phone
+    verified in this session) - generic-contact-only band. Total 48; status nurture. Genuinely small (advisory
+    + admin + compliance poles, human-scale by design) - worth a light touch, not a priority push; re-score
+    if it professionalises further or takes on a named CIO/COO.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced via AFFO homepage testimonial (Yuna Marquis quoted as Founder). Confirmed via pappers.fr
+    and marquisfamilyoffice.fr. Small, human-scale independent MFO in Rennes; no trigger and no verified
+    direct contact route found.
+  link: null
+next_action: null

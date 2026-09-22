@@ -13,14 +13,14 @@ size:
   portfolios: null
 description: Independent multi-family office founded 2016 by Julien Magitteri and Charles Brunswick. Serves
   200+ entrepreneurial families across listed assets, private equity and real estate via specialised divisions
-  (Multi Family Office, Gestion Privee, Athlete Office, Barnes Family Office by Come, AntCo by Come).
+  (Multi Family Office, Gestion Privée, Athlète Office, Barnes Family Office by Côme, AntCo by Côme).
   Offices in Paris, Nice, Rouen, Lorient plus Geneva, Luxembourg and New York. In 2026 launched its own
-  AMF-authorised asset-management arm, Come Asset Management (licence GP-20260010, dated 2026-07-09) -
-  already a separate CRM record - led by co-founder Charles Brunswick.
+  AMF-authorised asset-management arm, Côme Asset Management (licence GP-20260010, dated 2026-07-09) -
+  already a separate CRM record (slug come-asset-management) - led by co-founder Charles Brunswick.
 source:
   channel: web_search
   detail: Web search on French multi-family offices; comemaisonfinanciere.com, newsassetpro.com and decideurs
-    coverage of Come's 2025-09-17 'Incontournable' ranking and 2026 AMF-authorised subsidiary launch.
+    coverage of Côme's 2025-09-17 'Incontournable' ranking and 2026 AMF-authorised subsidiary launch.
     Not click-verified beyond WebFetch of comemaisonfinanciere.com article and newsassetpro.com search
     snippets.
   date: '2026-09-22'
@@ -37,10 +37,56 @@ tags:
 - private-equity
 created: '2026-09-22'
 updated: '2026-09-22'
-contacts: []
+contacts:
+- name: Julien Magitteri
+  title: Founder & CEO
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: https://www.linkedin.com/in/julien-magitteri/
+  language: fr
+  notes: Founder and CEO of Côme, le Family Office (2016). Named across Crunchbase, LinkedIn and trade
+    press (newsassetpro, decideurs-patrimoine). Pronouns not stated - use they/them. No email or phone
+    published; none invented.
+  source: LinkedIn profile and press (crunchbase.com/person/julien-magitteri, decideurs-patrimoine.com),
+    found 2026-09-22
+- name: Charles Brunswick
+  title: Co-founder & Deputy CEO; Director, Come Asset Management
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: https://www.linkedin.com/in/charlesbrunswick/
+  language: fr
+  notes: Co-founder of Côme Maison Financière and director of its new AMF-authorised subsidiary Côme Asset
+    Management. Pronouns not stated - use they/them. No email or phone published; none invented.
+  source: LinkedIn profile and comemaisonfinanciere.com/en/membres/charles-brunswick/, found 2026-09-22
 fit:
-  score: null
-  reasoning: null
+  score: 88
+  reasoning: 'Fit 60/60: priority segment mfo (20) + priority market France (15) + multi-asset across
+    listed, private equity and real estate divisions (10) + manages third-party money for 200+ entrepreneurial
+    families (10) + regulated - partial 5, not the full 5, awarded because the group itself holds no direct
+    AMF licence but wholly owns and controls a newly AMF-authorised subsidiary (Come Asset Management,
+    GP-20260010) rather than merely investing through third-party funds. Trigger 20/25: new entity/licence
+    - Come Asset Management was authorised 2026-07-09 (about 2.5 months ago), a direct case of a family
+    office professionalising into a licensed asset manager, the exact hot signal named in icp.md. Access
+    8/15: named, reachable decision-makers identified - founder/CEO Julien Magitteri and co-founder/Deputy
+    CEO Charles Brunswick, both with public LinkedIn profiles (no email/phone published, none invented).
+    Total 88. Lead with the professionalising story and the new asset-management arm; coordinate outreach
+    with the come-asset-management record rather than approaching both independently.'
   disqualified_reason: null
-activities: []
-next_action: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced via web search while working France family offices/MFOs. Come, le Family Office is
+    the parent multi-family office behind Come Asset Management (already in CRM, AMF licence GP-20260010,
+    dated 2026-07-09) - confirmed via newsassetpro.com coverage that Come 'se dote d'un asset manager'
+    led by co-founder Charles Brunswick. This is a professionalising-family-office trigger, not a standalone
+    new asset manager. Named founder Julien Magitteri and Charles Brunswick identified via LinkedIn and
+    comemaisonfinanciere.com. Scale (40+ employees, 200+ families, offices in Paris/Nice/Rouen/Lorient/Geneva/Luxembourg/New
+    York) per comemaisonfinanciere.com 'incontournable' article, 2025-09-17.
+  link: null
+next_action:
+  who: Andre Geha
+  what: 'Enrich: find a direct email/contact route for Julien Magitteri or Charles Brunswick before drafting
+    outreach on the professionalising/new-AM-licence trigger'
+  due: '2026-10-15'

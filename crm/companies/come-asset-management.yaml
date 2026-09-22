@@ -25,9 +25,22 @@ tags:
 - register-sourced
 - new-licence
 - asset-manager
+- mfo-parent-cote-le-family-office
+- family-office-professionalising
 created: '2026-09-22'
 updated: '2026-09-22'
-contacts: []
+contacts:
+- name: Charles Brunswick
+  title: Director, Come Asset Management; co-founder & Deputy CEO, Come Maison Financiere
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: https://www.linkedin.com/in/charlesbrunswick/
+  language: fr
+  notes: 'Leads the new AMF-authorised asset-management arm of multi-family office Come, le Family Office
+    (separate CRM record: cote-le-family-office). Pronouns not stated - use they/them. No email or phone
+    published; none invented.'
+  source: newsassetpro.com (Come se dote d'un asset manager) and comemaisonfinanciere.com, found 2026-09-22
 fit:
   score: 80
   reasoning: 'Fit 60/60: priority segment asset_manager (20) + priority market France (15) + multi-asset
@@ -53,4 +66,11 @@ activities:
     register diff; every field here is as the register publishes it and nothing has been inferred. Not
     yet researched or enriched.
   link: https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf
+- date: '2026-09-22'
+  type: research
+  summary: 'Cross-referenced against Come, le Family Office (slug cote-le-family-office): this AMF licence
+    is the multi-family office''s newly launched, wholly-owned asset-management subsidiary, not an unrelated
+    new entrant. Charles Brunswick (co-founder/Deputy CEO of the MFO) directs it. Coordinate any outreach
+    across both records - do not approach independently.'
+  link: null
 next_action: null

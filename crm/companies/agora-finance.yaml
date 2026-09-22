@@ -1,0 +1,63 @@
+slug: agora-finance
+name: Agora Finance
+legal_name: null
+country: France
+city: Paris
+segment: mfo
+regulator: null
+website: https://agorafinance.fr/
+linkedin: https://fr.linkedin.com/company/agora-finance
+size:
+  aum: null
+  employees: 11-50
+  portfolios: null
+description: Independent multi-family office founded 2007 in Paris by Aurelien Guichard, covering financial,
+  real-estate and tax engineering for entrepreneurs and wealthy families. 11-50 employees per LinkedIn.
+  Awards from Decideurs magazine (best wealth-management cabinet) and a Green Finance trophy; no AUM figure
+  published.
+source:
+  channel: web_search
+  detail: Web search on French multi-family offices (vasco.fund cartography article) plus WebFetch of
+    agorafinance.fr and LinkedIn company page. Not click-verified beyond those fetches.
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- france
+- mfo
+- family-office
+- no-current-trigger
+- established
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Aurelien Guichard
+  title: Founder
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Founded Agora Finance in 2007; member of the Chambre Nationale des Conseils en Gestion de Patrimoine.
+    No LinkedIn/email/phone confirmed in this session; none invented. Pronouns not stated - use they/them.
+  source: agorafinance.fr and infonet.fr director listing, found 2026-09-22
+fit:
+  score: 58
+  reasoning: 'Fit 55/60: priority segment mfo (20) + priority market France (15) + multi-asset (financial,
+    real estate, tax engineering) (10) + third-party family money (10) + regulated 0/5 - no named regulator
+    confirmed in this session. Trigger 0/25: no current trigger found - firm appears stable since 2007
+    with no reported hire, launch or incident. Access 3/15: only a generic company contact route plus
+    a named founder (Aurelien Guichard) without a confirmed reachable profile (no LinkedIn/email/phone
+    found and verified) - scored as generic-contact-only rather than the higher named-decision-maker band.
+    Total 58; status nurture per the no-trigger rule - re-check for a launch, hire or press mention before
+    spending outreach effort.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced via vasco.fund's cartography of French CGP/family-office players; confirmed via agorafinance.fr
+    and LinkedIn company page. Founder Aurelien Guichard named on the company site but no verified direct
+    contact route found in this session. No trigger identified.
+  link: null
+next_action: null
