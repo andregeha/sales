@@ -107,3 +107,18 @@ recorded in `memory/facts.md` so a future nil return is read correctly.
   prompt) and `tools/connectors/README.md` (the register-connector spec, in build order, with the
   hard requirement that a connector must **fail loudly** in the cloud rather than return an empty
   diff that reads as a quiet day).
+
+### France pass complete — all four markets now sourced — 2026-09-22
+14 French records. Best: **Hope Asset Management** (88, new AMF licence + a genuinely multi-asset
+fund launch spanning PE, infrastructure, real estate, listed and commodities — named founders) and
+**Fundcraft France** (78, new AIFM licence, and structurally interesting because a ManCo-as-a-service
+is itself a multi-fund, multi-client administration buyer).
+
+Discipline worth keeping: the **Cyrus group entities** (Amplegest, Eternam, Cyrus Herez) are
+cross-referenced in each other's reasoning so we do not pursue one group three times.
+**RockFi disqualified** — a CIF/ORIAS network, not AMF-authorised, and has already built its own
+back/middle office — recorded so it is not re-found later as a lookalike. Several triggers used are
+from 2024 and were **scored down as dated rather than inflated**.
+
+**Totals across all four markets: 57 companies · 24 qualified or researching · 20 of those with at
+least one named person · 0 invented contact details.**
