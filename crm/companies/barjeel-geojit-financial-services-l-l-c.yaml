@@ -37,7 +37,26 @@ tags:
 - fund-administration-fit
 created: '2026-09-22'
 updated: '2026-09-22'
-contacts: []
+contacts:
+- name: Surendra Dwivedi
+  title: Chief Executive Officer, Designate
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Joined as CEO-Designate 2025-08-01 per LinkedIn/Facebook posts; background in retail banking,
+    wealth management and NRI services.
+  source: LinkedIn, Facebook (barjeelgeojitae), ZoomInfo. Web search 2026-09-22.
+- name: K.V. Shamsudheen
+  title: Founder Director
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Founder Director of Barjeel Geojit since the 2001 JV.
+  source: Facebook (barjeelgeojitae) post on Dwivedi's CEO appointment. Web search 2026-09-22.
 fit:
   score: 83
   reasoning: 'Fit 50/60: priority asset-manager/fund-manager segment (20) + UAE onshore (15) + third-party
@@ -47,9 +66,20 @@ fit:
     trigger Gaia''s fund-administration module maps onto (15) plus a new CEO-Designate (Surendra Dwivedi,
     appointed per social posts) (12). Access 8/15: named CEO-Designate and founder-director identified.
     Total 83 — hot: a live fund launch with subscriptions open right now is as concrete a fund-administration
-    hook as this pass found. Note: one source (LinkedIn/Facebook post) gives Dwivedi''s appointment date
-    as 2026-08-01, which is in the future relative to some other snippets implying a 2025 appointment
-    — flagging this date inconsistency rather than asserting a precise date; confirm before using in outreach.'
+    hook as this pass found. Dwivedi''s appointment date (2025-08-01) is search-confirmed via LinkedIn/Facebook
+    posts but not cross-verified against a company filing; treat as reasonably reliable but confirm before
+    using in outreach.'
   disqualified_reason: null
-activities: []
-next_action: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'UAE onshore sourcing pass: strong dual trigger — live BGIOF fund NFO (2026-01-14 to 2026-02-13)
+    and a 2025-08-01 CEO-Designate appointment. Onshore SCA licence is transitioning to the federal CMA
+    from 2026-01-01 (Federal Decree-Law No. 32 of 2025) — a regulatory-change signal worth watching across
+    all onshore UAE prospects, not unique to this firm. Next: confirm a direct contact route for Dwivedi
+    before drafting outreach.'
+  link: null
+next_action:
+  who: Andre Geha
+  what: Confirm a direct contact route to Surendra Dwivedi and draft a fund-launch-hook first touch
+  due: '2026-10-10'
