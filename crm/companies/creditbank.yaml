@@ -1,0 +1,47 @@
+slug: creditbank
+name: CreditBank
+legal_name: Creditbank S.A.L.
+country: Lebanon
+city: Dekwaneh (Sin El Fil), Beirut area
+segment: bank
+regulator: Banque du Liban (BDL) / Banking Control Commission; CMA Lebanon for securities activities
+website: null
+linkedin: https://www.linkedin.com/company/creditbank-sal
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: Lebanese bank established 1981 (as Credit Bancaire, renamed Creditbank after acquiring Credit
+  Lyonnais S.A.L. in 2002), historically an 'Alpha Bank' (deposits > USD 2bn) with a 15-branch network.
+  Listed on CMA Lebanon's approved-institutions register. No current (2026) named chairman/CEO independently
+  confirmed in this research.
+source:
+  channel: web_research
+  detail: 'Web search 2026-09-22: Wikipedia ''Creditbank''; zawya.com company profile; CMA approved-institutions
+    listing (search-confirmed, not click-verified). No public confirmation found of Creditbank''s individual
+    viability/recapitalisation status under Law 23/2025; no working website URL confirmed in this session
+    (searches returned only third-party profile pages).'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- lebanon
+- bdl
+- cma-lebanon
+- bank
+- resolution-status-unknown
+- no-named-contact
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 40
+  reasoning: 'Fit: bank segment (20) + Lebanon (15) + multi-asset commercial banking (10) + third-party
+    deposits (10) + BDL/CMA regulated (5) = 60/60. Timing: sector-wide pressure only (10/25), no individual
+    confirmation. Access: no current named leader or contact route found in this research = 0/15. Total
+    mechanically ~70, held to 40 (worth a look) reflecting both the unresolved viability question and
+    the complete absence of a named route in - needs a dedicated enrichment pass before it is outreach-ready.'
+  disqualified_reason: null
+activities: []
+next_action: null

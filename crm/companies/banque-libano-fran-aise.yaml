@@ -1,0 +1,45 @@
+slug: banque-libano-fran-aise
+name: Banque Libano-Française
+legal_name: Banque Libano-Française S.A.L.
+country: Lebanon
+city: Beirut
+segment: bank
+regulator: Banque du Liban (BDL) / Banking Control Commission; CMA Lebanon for securities activities
+website: https://www.eblf.com
+linkedin: https://www.linkedin.com/company/banque-libano-francaise
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: 'Established Lebanese bank (1967), no.10 on BDL''s bank list, retail/corporate/private banking
+  with a subsidiary Libano-Française Finance (LFF) and historical minority shareholding by Credit Agricole/Caylon.
+  Listed on CMA Lebanon''s approved-institutions register. Chairman-General Manager: Walid Raphael.'
+source:
+  channel: web_research
+  detail: 'Web search 2026-09-22: Wikipedia ''Banque Libano-Française S.A.L.''; eblf.com; CMA approved-institutions
+    listing (search-confirmed, not click-verified). No public confirmation found of BLF''s individual
+    viability/recapitalisation status under Law 23/2025, and no current information on whether Credit
+    Agricole retains any stake.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- lebanon
+- bdl
+- cma-lebanon
+- bank
+- resolution-status-unknown
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 50
+  reasoning: 'Fit: bank segment (20) + Lebanon (15) + multi-asset via LFF finance subsidiary and private
+    banking (10) + third-party deposits (10) + BDL/CMA regulated (5) = 60/60. Timing: sector-wide pressure
+    only (10/25) - no individual viability confirmation, gating question unresolved. Access: named Chairman-GM
+    (Walid Raphael) identified but no contact route = 3/15. Total mechanically ~73, held to 50 pending
+    viability confirmation.'
+  disqualified_reason: null
+activities: []
+next_action: null

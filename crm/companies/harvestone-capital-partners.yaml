@@ -1,0 +1,67 @@
+slug: harvestone-capital-partners
+name: Harvestone Capital Partners
+legal_name: null
+country: France
+city: Paris
+segment: fund_manager
+regulator: AMF
+website: https://www.harvestonecapital.com/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: Newly AMF-authorised Paris-based alternative investment manager specialised in commodity
+  derivatives (agricultural commodities), founded by Gregory Merran (20+ years derivatives trading, ex-Sucden
+  Groupe Sucres et Denrees, ex-Exane, HEC Paris MBA/Harvard Business School), reportedly backed by Millennium.
+  Single-strategy, quant/derivatives-driven shop rather than a broad multi-asset manager.
+source:
+  channel: web_search
+  detail: 'Web search 2026-09-22 (query: AMF nouvel agrement societe de gestion de portefeuille 2025 2026
+    boutique) surfaced newsassetpro.com article dated 2026-05-05 confirming AMF portfolio-management-company
+    approval; corroborated via harvestonecapital.com and a LinkedIn post referencing Millennium backing
+    a new Paris-based activity. AMF GECO register entry not click-verified (egress blocked).'
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- france
+- amf
+- new-licence
+- fund-manager
+- commodities
+- single-strategy
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Gregory Merran
+  title: Co-Founder, CEO and CIO
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: https://www.linkedin.com/in/gregory-merran-611927207/
+  language: fr
+  notes: Named as co-founder/CEO/CIO in press coverage and on LinkedIn. Pronouns not stated - use they/them
+    if referenced. Not verified as reachable; no email or phone found or invented.
+  source: Web search 2026-09-22, LinkedIn profile snippet + newsassetpro.com coverage
+fit:
+  score: 65
+  reasoning: 'Fit 50/60: priority segment fund manager (20) + priority market France (15) + third-party/outside
+    capital implied by Millennium backing and a fund structure (10) + AMF-regulated (5); no multi-asset
+    credit (0) since the strategy is single-asset-class commodity derivatives. Trigger 20/25: brand-new
+    AMF licence (2026), no incumbent system to displace. Access 8/15: named founder/CEO/CIO Gregory Merran
+    identified via press and LinkedIn, not yet confirmed reachable. Raw total 78, moderated to 65: a single-strategy
+    quant/derivatives boutique may already run on specialised trading/risk tooling rather than needing
+    Gaia''s broad multi-asset front-to-back administration - worth qualifying its actual operational stack
+    before assuming fit.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'Sourced via web search for recent AMF authorisations (query: ''AMF nouvel agrement societe
+    de gestion de portefeuille 2025 2026 boutique'', 2026-09-22). Confirmed new AMF portfolio-management-company
+    approval for a single-strategy commodity-derivatives boutique founded by Gregory Merran. AMF GECO
+    register not click-verified (egress blocked to amf-france.org domains in this session).'
+  link: null
+next_action: null

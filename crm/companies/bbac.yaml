@@ -1,0 +1,47 @@
+slug: bbac
+name: BBAC
+legal_name: Bank of Beirut and the Arab Countries S.A.L.
+country: Lebanon
+city: Beirut
+segment: bank
+regulator: Banque du Liban (BDL) / Banking Control Commission; CMA Lebanon for securities activities
+website: https://www.bbacbank.com
+linkedin: https://www.linkedin.com/company/bbac-bank
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: 'Top-ten Lebanese commercial bank (est. 1956), retail, corporate, private banking, trade
+  finance and treasury/capital markets services, with branches in Cyprus and Iraq and representative offices
+  in the UAE and Nigeria. Listed on CMA Lebanon''s approved-institutions register. Chairman & General
+  Manager per the Association of Banks in Lebanon''s 2024-2025 Almanac: Sheikh Ghassan Assaf.'
+source:
+  channel: web_research
+  detail: 'Web search 2026-09-22: Wikipedia ''Bank of Beirut and the Arab Countries''; bbacbank.com; ABL
+    Almanac of Banks 2024-2025 (secondary citation); CMA approved-institutions listing (search-confirmed,
+    not click-verified). No public confirmation found of BBAC''s individual viability/recapitalisation
+    status under Law 23/2025.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- lebanon
+- bdl
+- cma-lebanon
+- bank
+- resolution-status-unknown
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 50
+  reasoning: 'Fit: bank segment (20) + Lebanon (15) + multi-asset via treasury/capital-markets and private
+    banking (10) + third-party deposits (10) + BDL/CMA regulated (5) = 60/60. Timing: sector-wide pressure
+    only (10/25); no bank-specific viability confirmation - gating question unresolved. Access: named
+    Chairman/GM (Sheikh Ghassan Assaf) from a secondary industry almanac, not independently cross-checked
+    on BBAC''s own site, no contact route = 3/15. Total mechanically ~73, held to 50 pending viability
+    confirmation and a stronger source for the named contact.'
+  disqualified_reason: null
+activities: []
+next_action: null

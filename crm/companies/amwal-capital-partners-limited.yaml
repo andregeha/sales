@@ -1,0 +1,70 @@
+slug: amwal-capital-partners-limited
+name: Amwal Capital Partners Limited
+legal_name: null
+country: UAE
+city: Dubai
+segment: asset_manager
+regulator: DFSA
+website: https://amwalcp.com/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: Independent, investment-team-owned MENA asset manager established 2014 (with roots in Amwal
+  AlKhaleej), DIFC-regulated by the DFSA and, via a Riyadh subsidiary (Amwal Capital Almaliyah, set up
+  2023), CMA-regulated in Saudi Arabia. Manages capital for global sovereign wealth funds, funds of funds,
+  multi-family offices, pensions, endowments, insurers and foundations, with a long-biased MENA public-equities
+  strategy plus alternative-investment lines. In May 2024 the firm went live on Broadridge's investment
+  management platform (portfolio, order and risk management, analytics and performance attribution) —
+  a recently deployed incumbent system.
+source:
+  channel: web_research
+  detail: amwalcp.com/our-team; swfinstitute.org profile; Broadridge press release 'Dubai-based Amwal
+    Capital Partners Updates Tech to Drive Growth with Broadridge's Investment Management Solutions' (2024-05-07,
+    broadridge.com/assetservicingtimes.com/finextra.com/globaltrading.net). Searched 2026-09-22.
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- uae
+- difc
+- dfsa
+- asset-manager
+- incumbent-broadridge
+- no-current-trigger
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Samer Sarraf
+  title: Founding Partner, Senior Executive Officer & Director
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Founding Partner and Fund Manager since Jan 2014; quoted in Broadridge's May 2024 press release
+    on the firm's new IMS deployment.
+  source: theorg.com, signalhire.com, broadridge.com press release. Web search 2026-09-22.
+fit:
+  score: 68
+  reasoning: 'Fit 60/60: priority asset-manager segment (20) + UAE (15) + MENA public equities plus alternatives,
+    reasonably multi-asset (10) + manages third-party institutional/SWF/MFO money (10) + DFSA-regulated
+    (5). Trigger 0/25: no positive trigger — the one dated event found (May 2024) is a competitor implementation:
+    Amwal went live on Broadridge''s portfolio/order/risk-management platform, which is a negative signal
+    for near-term displacement, not a buying trigger. Per the ICP''s disqualify guidance (''already mid-implementation
+    of a competitor, with no dissatisfaction signal''), this is not a live opportunity today. Access 8/15:
+    named Founding Partner/COO (Samer Sarraf) quoted directly in the Broadridge release. Total 68 (Strong
+    fit) but nurture — watch for any sign of dissatisfaction with the Broadridge deployment 18-24 months
+    on, or for the separate Riyadh entity''s own technology decisions.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'UAE DIFC sourcing pass: good fit but disqualified as a near-term opportunity by a recent (May
+    2024) Broadridge IMS go-live with no dissatisfaction signal found. Recorded as nurture rather than
+    pursued now, per the ICP''s ''mid-implementation of a competitor'' disqualify guidance. Revisit in
+    12-18 months or if a complaint/departure signal surfaces.'
+  link: null
+next_action: null

@@ -1,0 +1,44 @@
+slug: credit-libanais
+name: Credit Libanais
+legal_name: Credit Libanais S.A.L.
+country: Lebanon
+city: Beirut
+segment: bank
+regulator: Banque du Liban (BDL) / Banking Control Commission
+website: https://www.creditlibanais.com.lb
+linkedin: https://www.linkedin.com/company/credit-libanais
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: 'Lebanese commercial bank with an active in-house Economic Research Unit publishing regular
+  Lebanese financial-sector data (bank/investment-bank/financial-institution balance-sheet series), retail/corporate/private
+  banking. Chairman-General Manager: Dr Joseph Torbey (with the bank since 1988).'
+source:
+  channel: web_research
+  detail: 'Web search 2026-09-22: Wikipedia ''Joseph Torbey'' and ''Credit Libanais''; creditlibanais.com.lb
+    press releases; economics.creditlibanais.com sector data series (2026). No public confirmation found
+    of Credit Libanais''s individual viability/recapitalisation status under Law 23/2025.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- lebanon
+- bdl
+- bank
+- resolution-status-unknown
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 50
+  reasoning: 'Fit: bank segment (20) + Lebanon (15) + multi-asset retail/corporate/private banking (10)
+    + third-party deposits (10) + BDL regulated (5) = 60/60. Timing: sector-wide pressure only (10/25)
+    - no individual viability confirmation, gating question unresolved. Access: long-tenured, named Chairman-GM
+    (Joseph Torbey) identified but no contact route = 3/15. Total mechanically ~73, held to 50 pending
+    viability confirmation. Note: the bank''s own research unit is actively publishing 2026 sector data,
+    a mild going-concern signal, not a solvency claim.'
+  disqualified_reason: null
+activities: []
+next_action: null

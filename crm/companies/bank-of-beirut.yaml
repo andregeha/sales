@@ -1,0 +1,48 @@
+slug: bank-of-beirut
+name: Bank of Beirut
+legal_name: Bank of Beirut S.A.L.
+country: Lebanon
+city: Beirut
+segment: bank
+regulator: Banque du Liban (BDL) / Banking Control Commission
+website: https://www.bankofbeirut.com
+linkedin: https://www.linkedin.com/company/bank-of-beirut
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: 'Lebanese commercial bank offering retail, corporate, private and investment/asset management
+  services (incl. in-house funds such as the Beirut Preferred Fund II and Optimal Investment Fund). Founder,
+  Chairman and CEO: Dr Salim Sfeir, who also chairs the Association of Banks in Lebanon (reappointed for
+  a fourth consecutive ABL term reported 2026).'
+source:
+  channel: web_research
+  detail: 'Web search 2026-09-22: Wikipedia ''Salim Sfeir''; bankofbeirut.com asset management/funds pages;
+    L''Orient Today on Sfeir''s ABL reappointment (2026). No public confirmation found of Bank of Beirut''s
+    individual viability/recapitalisation status under Law 23/2025.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- lebanon
+- bdl
+- bank
+- asset-management-arm
+- resolution-status-unknown
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 53
+  reasoning: 'Fit: bank segment (20) + Lebanon (15) + genuinely multi-asset (retail/private banking plus
+    in-house investment funds, e.g. Beirut Preferred Fund II) (10) + manages third-party deposits and
+    fund investor money (10) + BDL regulated (5) = 60/60. Timing: sector-wide pressure only (10/25) -
+    no individual viability confirmation, gating question unresolved. Access: named Chairman/CEO (Salim
+    Sfeir) is a highly public figure (also ABL chairman) which slightly improves reachability odds even
+    without a direct contact route = 5/15. Total mechanically ~75, held to 53 pending confirmation of
+    which restructuring track the bank is on - the in-house fund administration angle (NAV, subscriptions/redemptions)
+    is a genuine product fit worth flagging to Andre once/if cleared.'
+  disqualified_reason: null
+activities: []
+next_action: null

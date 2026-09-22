@@ -1,0 +1,56 @@
+slug: byblos-bank
+name: Byblos Bank
+legal_name: Byblos Bank S.A.L.
+country: Lebanon
+city: Beirut
+segment: bank
+regulator: Banque du Liban (BDL) / Banking Control Commission; CMA Lebanon for securities activities
+website: https://www.byblosbank.com
+linkedin: https://www.linkedin.com/company/byblos-bank
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: 'One of Lebanon''s largest listed commercial banks (est. 1950), full-service retail, corporate,
+  private and correspondent banking with a regional branch network (Cyprus, Iraq, Armenia, Belgium, UK,
+  Nigeria/rep offices, Syria) and its own investment-bank subsidiary (Byblos Invest Bank). Listed on the
+  CMA Lebanon approved-institutions register for securities/investment activities. Chairman & General
+  Manager: Semaan François Bassil (since 2015). Continues visible digital investment (launched ''BO2''
+  digital bank platform, Feb 2025).'
+source:
+  channel: web_research
+  detail: 'Web search 2026-09-22: Wikipedia ''Byblos Bank''; byblosbank.com; CMA Lebanon approved-institutions
+    listing (search-confirmed, cma.gov.lb/approved-institutions/, page not click-verified - egress blocked);
+    BDL bank list PDF (search-confirmed). No public confirmation found of Byblos Bank''s individual viability/recapitalisation
+    status under Law 23/2025.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- lebanon
+- bdl
+- cma-lebanon
+- bank
+- resolution-status-unknown
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 52
+  reasoning: 'Fit: priority segment private/investment bank (20) + priority market Lebanon (15) + multi-asset
+    via investment-bank subsidiary and correspondent/treasury activity (10) + manages third-party deposits
+    and private-banking assets (10) + regulated by BDL and CMA Lebanon (5) = 60/60. Timing: Lebanon-wide
+    regulatory trigger is real (secrecy lift Apr-2025, Law 23/2025 bank-resolution framework forcing every
+    bank to re-prove books to a regulator with new oversight powers) = 10/25 for ''regulatory change creating
+    reporting pressure'' - NOT scored as a positive buying trigger because Byblos''s individual survivor-vs-resolution
+    status under Law 23/2025 is not publicly confirmed as of this research (2026-09-22); a bank on the
+    liquidation track buys nothing, so this is a gating question, not a tailwind, until resolved. Continued
+    digital investment (BO2 launch, Feb 2025) is a mild going-concern signal but not proof of survivor-track
+    status. Access: named Chairman/GM identified (Semaan Bassil) but no direct contact route or LinkedIn
+    profile found for him, and no other named operations/compliance contact = 3/15 (generic route only).
+    Total 73 by table mechanics, deliberately held down to 52 (worth a look, not strong) pending the viability-track
+    question -- Andre must confirm which track Byblos is on before any outreach effort.'
+  disqualified_reason: null
+activities: []
+next_action: null

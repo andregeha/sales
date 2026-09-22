@@ -1,0 +1,53 @@
+slug: libank-levant-investment-bank
+name: LIBANK (Levant Investment Bank)
+legal_name: LIBANK S.A.L. (Levant Investment Bank)
+country: Lebanon
+city: Beirut
+segment: bank
+regulator: Banque du Liban (BDL); CMA Lebanon
+website: https://libank.com.lb
+linkedin: https://www.linkedin.com/company/libank-levant-investment-bank
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: Boutique Lebanese investment bank founded 2012 by senior bankers and strategic investors,
+  USD 40m capital, regulated by BDL. Offers investment banking (capital transactions, M&A advisory, debt-equity
+  structuring), private banking for HNWI/family-office/institutional clients, and asset management with
+  international reach (Beirut and UK teams). Acquired 100% of Optimum Invest S.A.L. in 2020 (see separate
+  record). Listed on CMA Lebanon's approved-institutions register.
+source:
+  channel: web_research
+  detail: 'Web search 2026-09-22: libank.com.lb; LinkedIn company page; bouncewatch.com startup profile;
+    cma.gov.lb/approved_institution/libank-s-a-l-levant-investment-bank/ (search-confirmed, not click-verified).
+    No named current CEO/chairman independently confirmed in this research. No public confirmation of
+    LIBANK''s individual viability/recapitalisation status under Law 23/2025.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- lebanon
+- bdl
+- cma-lebanon
+- investment-bank
+- wealth-management
+- family-office-fit
+- resolution-status-unknown
+- no-named-contact
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 50
+  reasoning: 'Fit: priority segment investment bank serving family offices/HNWI/institutional clients
+    (20) + Lebanon (15) + multi-asset (investment banking, private banking, asset management) (10) + manages
+    third-party capital including via the Optimum Invest acquisition (10) + BDL/CMA regulated (5) = 60/60.
+    Timing: sector-wide pressure only (10/25); as with Cedrus, an investment-bank license may carry different
+    resolution exposure than a deposit-taking commercial bank, but this is not confirmed - open question.
+    Access: no named current leader found in this research = 0/15. Total mechanically ~70, held to 50
+    given the missing named contact and the open resolution-track question; a genuine fit on paper (small,
+    growing, multi-asset, family-office-facing) that needs a leadership-name enrichment pass.'
+  disqualified_reason: null
+activities: []
+next_action: null

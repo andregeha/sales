@@ -1,0 +1,80 @@
+slug: auris-gestion
+name: Auris Gestion
+legal_name: null
+country: France
+city: Paris
+segment: asset_manager
+regulator: AMF
+website: https://www.aurisgestion.com/
+linkedin: null
+size:
+  aum: EUR 5.3bn (end-2025, per Option Finance/Funds360 coverage)
+  employees: null
+  portfolios: null
+description: Independent, collectively-led French asset manager (Marc de Saint-Denis, President; Philippe
+  Krier and Sebastien Grasset, Directeurs Generaux) pursuing an active external-growth strategy. Acquired
+  Trusteam Finance in 2025 (AMF-approved operation completed 2025-04-30, +EUR 600m AUM), following earlier
+  acquisitions of Salamandre AM (2020, EUR 500m) and Phi IM plus IDAM (2024, ~EUR 140m combined). Reached
+  ~EUR 5.3bn AUM end-2025 and has stated it intends to keep combining organic and external growth.
+source:
+  channel: web_search
+  detail: Web search 2026-09-22 (queries on societe de gestion croissance externe / spin-off 2026 and
+    Auris Gestion dirigeant) surfaced Option Finance/Funds360/Funds Magazine coverage of the Trusteam
+    Finance, Salamandre AM, Phi IM and IDAM acquisitions, and aurisgestion.com team page for leadership
+    names. AMF GECO register not click-verified (egress blocked).
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- france
+- amf
+- asset-manager
+- m-and-a
+- consolidation
+- growth
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Marc de Saint-Denis
+  title: President
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: fr
+  notes: Named President on Auris Gestion's own team page. Pronouns not stated - use they/them. No email/phone/LinkedIn
+    found; none invented.
+  source: aurisgestion.com team page, web search 2026-09-22
+- name: Philippe Krier
+  title: Directeur General
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: fr
+  notes: Named as a co-Directeur General (collective leadership) on Auris Gestion's own team page. Pronouns
+    not stated - use they/them. No email/phone/LinkedIn found; none invented.
+  source: aurisgestion.com team page, web search 2026-09-22
+fit:
+  score: 68
+  reasoning: 'Fit 60/60 (max): priority segment asset manager (20) + priority market France (15) + multi-asset
+    via combined equity/multi-strategy expertise across acquired boutiques (10) + manages third-party
+    client money (10) + AMF-regulated (5). Trigger: no single row is a perfect fit - closest is ''visible
+    growth'' (8 of 25) - but the real, better-than-the-table hook is operational: four acquisitions since
+    2020 (Salamandre AM, Phi IM, IDAM, Trusteam Finance) means Auris is very likely running several legacy
+    books/systems inherited from each target and actively needs to consolidate them onto one platform,
+    which is exactly a front-to-back, single-database pitch. Access 8/15: named collective leadership
+    (President and two Directeurs Generaux) identified via the company''s own team page, not yet individually
+    confirmed reachable. Total 60+8+8=76, moderated to 68 pending confirmation of which back-office systems
+    the acquired entities currently run and whether a consolidation project is actually underway or already
+    completed.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced via web search on societe de gestion consolidation/M&A activity (2026-09-22). Auris
+    Gestion has made four acquisitions since 2020 (Salamandre AM, Phi IM, IDAM, Trusteam Finance) reaching
+    ~EUR 5.3bn AUM end-2025 - a plausible systems-consolidation opportunity worth qualifying directly.
+  link: null
+next_action: null

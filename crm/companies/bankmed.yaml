@@ -1,0 +1,48 @@
+slug: bankmed
+name: BankMed
+legal_name: BankMed S.A.L.
+country: Lebanon
+city: Beirut
+segment: bank
+regulator: Banque du Liban (BDL) / Banking Control Commission
+website: https://www.bankmed.com.lb
+linkedin: https://www.linkedin.com/company/bankmed
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: 'Major Lebanese commercial bank (Hariri-family-linked ownership history), full-service retail,
+  corporate, private and correspondent banking, part of the wider Hariri/M1 Group financial network. Chairperson
+  of the Board since October 2020: Raya Haffar El Hassan (former Lebanese finance and interior minister);
+  Executive General Manager historically Michel Accad (2020) - current 2026 incumbent not independently
+  confirmed in this research.'
+source:
+  channel: web_research
+  detail: 'Web search 2026-09-22: Equilar ExecAtlas BankMed executive bios; businessnews.com.lb; bankmed.com.lb.
+    No public confirmation found of BankMed''s individual viability/recapitalisation status under Law
+    23/2025; current (2026) Executive General Manager not confirmed beyond a 2020 appointment record.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- lebanon
+- bdl
+- bank
+- resolution-status-unknown
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 48
+  reasoning: 'Fit: priority segment bank (20) + Lebanon (15) + multi-asset commercial/private/correspondent
+    banking (10) + third-party deposits (10) + BDL regulated (5) = 60/60. Timing: sector-wide regulatory
+    pressure only (10/25), no individual viability confirmation found - gating question unresolved. Access:
+    named Chairperson (Raya Haffar El Hassan) identified but her current 2026 role not re-confirmed, no
+    contact route, and the Executive GM name found (Michel Accad) dates to 2020 and was not re-verified
+    as current = 3/15 (stale/uncertain named contact only). Total mechanically ~73, held to 48 given both
+    the resolution-status gate and uncertainty about who currently leads the bank operationally - re-verify
+    leadership before any approach.'
+  disqualified_reason: null
+activities: []
+next_action: null

@@ -1,0 +1,46 @@
+slug: sgbl
+name: SGBL
+legal_name: Société Générale de Banque au Liban S.A.L.
+country: Lebanon
+city: Beirut
+segment: bank
+regulator: Banque du Liban (BDL) / Banking Control Commission
+website: https://www.sgbl.com
+linkedin: https://www.linkedin.com/company/sgblbank
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: 'Major Lebanese universal bank (founded 1953), retail, corporate and private banking, part
+  of the SGBL Group alongside Société Générale de Banque en Jordanie (SGBJ) and a wealth-management arm,
+  Fidus Wealth Management. Chairman, CEO and main shareholder: Antoun Sehnaoui.'
+source:
+  channel: web_research
+  detail: 'Web search 2026-09-22: Wikipedia ''Société Générale de Banque au Liban'' and ''Antoun Sehnaoui'';
+    sgbl.com; L''Orient Today profile of Sehnaoui (2026). No public confirmation found of SGBL''s individual
+    viability/recapitalisation status under Law 23/2025.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- lebanon
+- bdl
+- bank
+- wealth-management-arm
+- resolution-status-unknown
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 53
+  reasoning: 'Fit: bank segment (20) + Lebanon (15) + multi-asset via group wealth-management arm Fidus
+    (10) + third-party deposits and private wealth clients (10) + BDL regulated (5) = 60/60. Timing: sector-wide
+    pressure only (10/25) - no bank-specific viability confirmation, gating question unresolved. Access:
+    named Chairman/CEO/main shareholder (Antoun Sehnaoui) is a well-documented public figure, improving
+    reachability odds even without a direct route = 5/15. Total mechanically ~75, held to 53 pending viability-track
+    confirmation. The Fidus Wealth Management arm is worth a separate look if SGBL clears the resolution
+    question - closer to our family-office/private-banking pitch than the retail bank itself.'
+  disqualified_reason: null
+activities: []
+next_action: null

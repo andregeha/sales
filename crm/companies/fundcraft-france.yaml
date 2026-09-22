@@ -1,0 +1,74 @@
+slug: fundcraft-france
+name: Fundcraft France
+legal_name: null
+country: France
+city: Paris
+segment: fund_manager
+regulator: AMF
+website: https://www.fundcraft.fr/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: French branch of Luxembourg-headquartered fundcraft, a digital AIFM / fund-operations platform
+  providing management-company-as-a-service to third-party fund promoters and GPs. Opened a Paris office
+  in January 2026 with Thomas Ibanez (ex-AMF) as Country Head France, then obtained AMF authorisation
+  as an AIFM portfolio management company on 2026-06-24, allowing it to manage alternative investment
+  funds in France. As a ManCo running many underlying client funds on one operational backbone, it is
+  itself a direct buyer for multi-fund, multi-client NAV, subscriptions/redemptions, shareholder registry
+  and fee administration - precisely Gaia's fund-administration module.
+source:
+  channel: web_search
+  detail: Web search 2026-09-22 (queries on Fundcraft AMF agrement and NewsManagers-style new-licence
+    searches) surfaced fundcraft.fr/fundcraft.lu press releases and ffnews.com coverage confirming the
+    2026-01-29 Paris office/Country Head announcement and the 2026-06-24 AMF AIFM authorisation. AMF GECO
+    register not click-verified (egress blocked).
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- france
+- amf
+- new-licence
+- fund-manager
+- manco-as-a-service
+- fund-administration
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Thomas Ibanez
+  title: Country Head France
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: https://www.linkedin.com/in/thomas-ibanez-50794013/
+  language: fr
+  notes: Appointed Country Head France (announced 2026-01-29) to lead the Paris office and French expansion;
+    previously worked at the AMF, giving direct familiarity with the French regulatory environment. Pronouns
+    not stated - use they/them. LinkedIn found via search snippet only, not opened/verified (egress blocked).
+    No email/phone found or invented.
+  source: Web search 2026-09-22, fundcraft.fr/fundcraft.lu press releases + LinkedIn snippet
+fit:
+  score: 78
+  reasoning: 'Fit 55/60: priority segment fund manager acting as a super-ManCo (20) + priority market
+    France (15) + serves a diverse multi-asset-class client base of AIFs by nature of an AIFM-as-a-service
+    model (10) + manages funds squarely for third parties, i.e. GPs/promoters, not proprietary money (10)
+    + AMF-regulated (5, capped since the description leans more corporate-services than a classic asset
+    manager, small discount not applied - kept at 5). Trigger 20/25: brand-new AMF licence (2026-06-24),
+    no incumbent French system to displace yet. Access 8/15: named, reachable-profile Country Head France
+    Thomas Ibanez (ex-AMF, so plausibly well-connected) identified via press and LinkedIn. Raw total 83,
+    moderated to 78 pending confirmation of exactly how many underlying funds/clients it services in France
+    today (self-reported ambition, not yet a confirmed book of business).'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced via web search on Fundcraft's AMF authorisation (2026-09-22). New AIFM licence (2026-06-24)
+    following a January 2026 Paris office opening. As a fund-operations/ManCo-as-a-service platform, Fundcraft
+    itself needs a multi-fund, multi-client administration backbone - a good structural fit for Gaia's
+    fund-administration module, though this is a services provider rather than a classic asset manager
+    and should be qualified on those terms.
+  link: null
+next_action: null

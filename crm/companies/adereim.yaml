@@ -1,0 +1,74 @@
+slug: adereim
+name: Adereim
+legal_name: null
+country: France
+city: Asnieres-sur-Seine
+segment: fund_manager
+regulator: AMF
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: Newly AMF-authorised portfolio management company specialised in institutional residential
+  real estate investment, co-founded by Laurent Ghelfi (President) and Aymeric Oudin (General Director).
+  Positions itself in institutional residential ('residentiel institutionnel') investment vehicles.
+source:
+  channel: web_search
+  detail: 'Web search 2026-09-22 (query: NewsManagers nouvelle societe de gestion agrement AMF 2026) surfaced
+    Business Immo / CFNEWS IMMO / Costar coverage headlined ''Specialisee dans l investissement residentiel,
+    Adereim obtient l agrement AMF''. Exact publication date not visible in search snippets; treat as
+    recent. AMF GECO register and the source articles not click-verified (egress blocked).'
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- france
+- amf
+- new-licence
+- fund-manager
+- real-estate
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Laurent Ghelfi
+  title: President, co-founder
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: fr
+  notes: Named as President/co-founder in Business Immo bio page and CFNEWS IMMO/Costar coverage of the
+    AMF approval. Pronouns not stated - use they/them. No email/phone/LinkedIn found; none invented.
+  source: Web search 2026-09-22, Business Immo annuaire bio + CFNEWS IMMO/Costar coverage
+- name: Aymeric Oudin
+  title: General Director, co-founder
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: fr
+  notes: Named as General Director/co-founder in press coverage of the AMF approval. Pronouns not stated
+    - use they/them. No email/phone/LinkedIn found; none invented.
+  source: Web search 2026-09-22, CFNEWS IMMO/Costar/Business Immo coverage
+fit:
+  score: 58
+  reasoning: 'Fit 50/60: priority segment fund manager (20) + priority market France (15) + third-party/institutional
+    capital implied by an institutional residential investment focus (10) + AMF-regulated (5); no multi-asset
+    credit (0), single asset class (residential real estate). Trigger 20/25: brand-new AMF licence, no
+    incumbent to displace. Access 8/15: named President (Laurent Ghelfi) and General Director (Aymeric
+    Oudin) identified via press bios, not yet confirmed reachable, no LinkedIn or email found. Raw total
+    78, moderated to 58: pure real-estate fund managers often already run on specialised REIM/SCPI administration
+    tools rather than a broad multi-asset PMS, and the firm is brand new with unconfirmed AUM - qualify
+    its actual back-office stack before assuming displacement opportunity.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: Sourced via web search on recent AMF authorisations (2026-09-22). New AMF-approved SGP specialised
+    in institutional residential real estate, founders Laurent Ghelfi and Aymeric Oudin. AMF GECO register
+    not click-verified (egress blocked).
+  link: null
+next_action: null

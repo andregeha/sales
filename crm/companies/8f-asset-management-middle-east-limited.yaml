@@ -1,0 +1,65 @@
+slug: 8f-asset-management-middle-east-limited
+name: 8F Asset Management Middle East Limited
+legal_name: null
+country: UAE
+city: Abu Dhabi
+segment: asset_manager
+regulator: FSRA
+website: https://8f-am.com/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: ADGM-based asset manager (Reem Island, Tamouh Tower), FSRA-registered 2021-10-11 (FSP 210027)
+  with a Category 3C licence for Managing a Collective Investment Fund; not permitted to deal with Retail
+  Clients or hold/control Client Assets. Part of the 8F Investment Partners global group with offices
+  in London and Frankfurt, positioned around an 'institutional framework' for impact and alternative investment
+  strategies.
+source:
+  channel: web_research
+  detail: adgm.com/public-registers/fsra/fsf/8f-asset-management-middle-east-limited and the FSRA firm-profile
+    PDF (search-confirmed via snippet quoting FSP 210027 and registration date; direct fetch blocked);
+    8f-am.com; LinkedIn profile of Shiblee Alam. Searched 2026-09-22.
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- uae
+- adgm
+- fsra
+- asset-manager
+- no-trigger
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Shiblee Alam
+  title: Managing Director – Business Development and Investor Relations
+  role: champion
+  email: null
+  phone: null
+  linkedin: https://ae.linkedin.com/in/shibleealam
+  language: en
+  notes: Also described as a Board Member; CAIA charterholder per YouTube bio. Business-development-facing
+    role, a natural first contact rather than the final economic buyer.
+  source: LinkedIn (ae.linkedin.com/in/shibleealam), rocketreach.co, 8f-am.com. Web search 2026-09-22.
+fit:
+  score: 68
+  reasoning: 'Fit 60/60: priority asset-manager segment, Cat 3C fund manager (20) + UAE (15) + part of
+    a global multi-strategy group, assumed multi-asset (10, not independently itemised for the ADGM entity)
+    + manages a collective investment fund for third parties (10) + FSRA-regulated (5). Trigger 0/25:
+    registered in 2021, no recent hire/launch/expansion news found for the ADGM entity specifically. Access
+    8/15: named Managing Director for Business Development & Investor Relations (Shiblee Alam) — a natural,
+    reachable first point of contact for a vendor conversation even without a fresh trigger. Total 68
+    (Strong band), nurture for lack of a trigger — the accessible BD contact makes this worth a light-touch
+    check-in if a trigger appears.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'UAE ADGM sourcing pass: FSRA register listing search-confirmed (Cat 3C, FSP 210027, registered
+    2021). No dated trigger found. Named BD/IR contact is a real access point despite the lack of a trigger
+    — worth a light check-in rather than a full outreach push.'
+  link: null
+next_action: null

@@ -1,0 +1,47 @@
+slug: blc-bank
+name: BLC Bank
+legal_name: B.L.C. Bank S.A.L.
+country: Lebanon
+city: Beirut
+segment: bank
+regulator: Banque du Liban (BDL) / Banking Control Commission
+website: https://www.blcbank.com
+linkedin: https://www.linkedin.com/company/blc-bank
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: 'Lebanese commercial bank (founded 1949), majority-owned subsidiary of Fransabank S.A.L.,
+  listed on the Beirut Stock Exchange (still trading in 2026 per Investing.com pricing data). Retail and
+  corporate banking. Chairman and General Manager: Nadim Kassar (also Chairman-GM of parent Fransabank
+  S.A.L.).'
+source:
+  channel: web_research
+  detail: 'Web search 2026-09-22: Wikipedia ''BLC Bank''; blcbank.com; Investing.com BLC/BLCPD stock pages
+    (2026 pricing data, market cap ~USD 179m). No public confirmation found of BLC Bank''s individual
+    viability/recapitalisation status under Law 23/2025.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- lebanon
+- bdl
+- bank
+- fransabank-subsidiary
+- resolution-status-unknown
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 45
+  reasoning: 'Fit: bank segment (20) + Lebanon (15) + moderately multi-asset retail/corporate banking
+    (10) + third-party deposits (10) + BDL regulated (5) = 60/60. Timing: sector-wide pressure only (10/25)
+    - no individual viability confirmation. Access: named Chairman-GM (Nadim Kassar) identified but he
+    is primarily reachable via Fransabank, the parent, not as an independent contact, and buying decisions
+    for a subsidiary bank likely route through the group = 0/15 (no independent route). Total mechanically
+    ~70, held to 45 - also flag that a group-level approach via Fransabank may be more efficient than
+    treating BLC as a fully separate buyer; Andre to decide whether to pursue as one relationship or two.'
+  disqualified_reason: null
+activities: []
+next_action: null

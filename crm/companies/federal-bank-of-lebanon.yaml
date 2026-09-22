@@ -1,0 +1,49 @@
+slug: federal-bank-of-lebanon
+name: Federal Bank of Lebanon
+legal_name: Federal Bank of Lebanon S.A.L.
+country: Lebanon
+city: Beirut
+segment: bank
+regulator: Banque du Liban (BDL) / Banking Control Commission; CMA Lebanon for securities activities
+website: https://www.fbl.com.lb
+linkedin: https://www.linkedin.com/company/federal-bank-of-lebanon
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: Smaller, wholly Lebanese-owned retail bank established 1952, 9 branches, owned entirely by
+  the founding Saab family (Ayoub Farid Michel Saab and Fadi Michel Saab). Offers commercial/trade/corporate
+  finance, retail banking and financial-market brokerage. Listed on CMA Lebanon's approved-institutions
+  register.
+source:
+  channel: web_research
+  detail: 'Web search 2026-09-22: fbl.com.lb; Tracxn company profile; CMA approved-institutions listing
+    (search-confirmed, not click-verified). No public confirmation found of Federal Bank of Lebanon''s
+    individual viability/recapitalisation status under Law 23/2025.'
+  date: '2026-09-22'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- lebanon
+- bdl
+- cma-lebanon
+- bank
+- resolution-status-unknown
+- small-bank
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: 42
+  reasoning: 'Fit: bank segment (20) + Lebanon (15) + some multi-asset via brokerage service line (10)
+    + third-party deposits (10) + BDL/CMA regulated (5) = 60/60, though this is a small, single-market
+    retail bank, likely lighter operational complexity than the larger names in this batch. Timing: sector-wide
+    pressure only (10/25) - no individual viability confirmation; being small and 100% family-owned could
+    cut either way on viability (less foreign-correspondent exposure, but also less capital buffer) -
+    genuinely unknown. Access: two named family owners identified but no contact route or individual LinkedIn
+    profiles found = 3/15. Total mechanically ~73, held to 42 given size uncertainty compounds the resolution-status
+    uncertainty.'
+  disqualified_reason: null
+activities: []
+next_action: null
