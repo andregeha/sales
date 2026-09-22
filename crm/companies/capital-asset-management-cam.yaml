@@ -1,0 +1,80 @@
+slug: capital-asset-management-cam
+name: Capital Asset Management (CAM)
+legal_name: null
+country: UAE
+city: Dubai
+segment: asset_manager
+regulator: DFSA
+website: https://capitalam.com/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: Newly established (2024) independent boutique investment management and advisory firm based
+  in DIFC, founded by Meshal Alothman (CEO) and Raed Alnusf (CIO), granted a DFSA Category 3C licence
+  in March 2024. Serves family offices, private clients, sovereigns and institutions across Outsourced
+  CIO services, private & public markets, Sharia-compliant investing, wealth management, capital introduction
+  and hedge funds. Alnusf previously restructured and grew Kuwait's Public Institution for Social Security
+  (PIFSS) portfolio; the founders cite a track record managing a USD 150bn portfolio.
+source:
+  channel: web_research
+  detail: PR Newswire 'Capital Asset Management sets up in Dubai, granted DFSA CAT3C License' (2024-03-04,
+    prnewswire.com/prnewswire.co.uk); capitalam.com/en/news and /en/team; rocketreach.co bios of Meshal
+    Alothman (CEO/Co-founder) and Raed Alnusf (CIO/Co-founder). Searched 2026-09-22.
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- uae
+- difc
+- dfsa
+- asset-manager
+- trigger-new-licence
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts:
+- name: Meshal Alothman
+  title: CEO & Co-founder
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: https://www.linkedin.com/in/meshal-alothman-8a572957/
+  language: en
+  notes: Co-founded CAM in 2024. LinkedIn profile confirmed.
+  source: LinkedIn, rocketreach.co, prnewswire.com. Web search 2026-09-22.
+- name: Raed Alnusf
+  title: CIO & Co-founder
+  role: economic_buyer
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: 25+ years' experience; formerly Deputy Director for Investments and Operations at Kuwait's Public
+    Institution for Social Security (PIFSS).
+  source: PR Newswire, rocketreach.co. Web search 2026-09-22.
+fit:
+  score: 88
+  reasoning: 'Fit 60/60: priority asset-manager segment (20) + UAE (15) + genuinely multi-asset (private
+    & public markets, hedge funds, Sharia-compliant class — 10) + serves family offices/sovereigns/institutions
+    as third-party money (10) + DFSA CAT3C regulated (5). Trigger 20/25: a brand-new DFSA licence (granted
+    March 2024, ~2.5 years old, still effectively a new entrant with no incumbent system) is exactly the
+    ''new licence granted, new entity'' signal the ICP weights highest. Access 8/15: two named co-founders
+    with public bios and a clear CEO/CIO split — a real, reachable decision-maker pair, no warm intro.
+    Total 88 — work it now: a boutique multi-asset manager that set up its own operations from scratch
+    in 2024 has no legacy system to migrate away from, which is the easiest kind of sale.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-22'
+  type: research
+  summary: 'UAE DIFC sourcing pass: new-licence trigger confirmed via PR Newswire (2024-03-04) and DFSA
+    CAT3C reference. Two named founders with public bios. Strongest new-entrant lead in this pass — no
+    incumbent system to displace. Next: find a direct contact route (email/LinkedIn message via Andre)
+    before drafting outreach.'
+  link: null
+next_action:
+  who: Andre Geha
+  what: Draft a first-touch note to Meshal Alothman referencing the 2024 DFSA licence and the firm's from-scratch
+    operating setup
+  due: '2026-10-06'
