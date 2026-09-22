@@ -141,45 +141,58 @@ Andre said this three times, so it gets its own section with real rules rather t
 10. **Every claim traceable.** A score shows its reasoning; a fact shows its source; a register
     entry links to the snapshot that proves it. This is the workspace's constitution applied to UI.
 
-## 6. Stack — React 19 + TypeScript + Vite
+## 6. Stack — chosen on merit, versions verified
 
-> **Revised 2026-09-22** after Andre asked "why not React and more modern?". He was right, and the
-> deciding argument is one I should have weighted first: **OFS already builds on this stack.**
-> New Gaia is `React 19 + TypeScript + Vite` (`knowledge/product/gaia-new.md`). A sales tool on the
-> house stack is maintainable by OFS engineers; one on a different framework is mine alone.
+> **Revised twice on 2026-09-22.** First from Astro to React; then again when Andre said to stop
+> anchoring on New Gaia and *"take the most recent stack and the best ever"*. The house-stack
+> argument is therefore withdrawn — this section stands on merit alone.
+>
+> **Every version below was checked against the npm registry on 2026-09-22, not recalled.**
 
-First, a correction of framing: Astro is not *older* or *less modern* than React — Astro renders
-React, and they are not competitors. The real question is whether this is a **document site** or an
-**application**, and the honest answer is that it is an application.
+### Is this a document site or an application?
 
-### Why React wins here specifically
+An application. Filtering 1,299 rows, sorting, cross-navigating between a firm, its trigger feed and
+the register snapshot that proves it. That rules out a content-first framework: Astro's headline
+advantages — zero JS, per-route static HTML, cold first paint, SEO — are worth approximately
+nothing when one reader opens it from `localhost` on the machine that built it.
 
-| Factor | Verdict |
-|---|---|
-| **It is local and private** | Astro's headline advantages — zero JS, per-route static HTML, cold-start first paint, SEO — are worth approximately **nothing** when the only reader opens it from `localhost` on the machine that built it. I was optimising for constraints this project does not have. |
-| **It behaves like an app, not a document** | Filtering 1,299 rows, sorting, cross-navigating between a firm and its trigger feed and its register snapshot. That is application behaviour, and React's model fits it directly. |
-| **House stack** | React 19 + TS + Vite is what OFS engineers already write. |
-| **The dense-data tooling is genuinely best-in-class** | TanStack Table + Virtual for the grid; Radix primitives under shadcn/ui for accessible, unopinionated components. Since **UI/UX is the stated priority**, using the best tools for dense data UI is the point, not a detail. |
+### Why React, having considered the alternatives honestly
 
-**What we give up, stated plainly:** per-route static HTML, and a JS bundle instead of zero JS.
-Both are irrelevant served from disk to one reader. If this ever becomes public or
-multi-user, that trade is worth revisiting — and it would be a real revisit, not a formality.
+**Solid 1.x** is faster with finer-grained reactivity, and **Svelte 5**'s runes are arguably the
+nicest DX available. Either would build this well. React wins on one specific lever that dominates
+here: **the TanStack suite is React-first**, and Table + Virtual is the single biggest determinant
+of whether a 1,299-row grid feels instant or sluggish — which is the central UI problem of this
+whole project. Add **Radix** (the deepest set of genuinely accessible primitives, which §5.7's
+keyboard-first requirement needs) and the ecosystem argument is decisive rather than lazy.
+
+**React Compiler 1.0** also removes React's main historical ergonomic complaint: memoization is
+automatic, so no `useMemo`/`useCallback` noise threaded through the code.
 
 ### The stack
 
-| Layer | Choice | Note |
-|---|---|---|
-| UI | **React 19** | Same major as New Gaia. |
-| Language | **TypeScript**, strict | The JSON contract gets real types; a data-shape change breaks the build, not the page. |
-| Build | **Vite** | Same as New Gaia. Fast, deterministic output, static bundle. |
-| Routing | **TanStack Router** | Type-safe routes and params — a typo in a link is a compile error. |
-| Data grid | **TanStack Table + TanStack Virtual** | 1,299 rows virtualised; only visible rows render. |
-| Styling | **Tailwind 4** | Design tokens in one place, no CSS drift across ten views. |
-| Components | **shadcn/ui** (Radix) | Copied into the repo, not a dependency — so it is ours to shape rather than a library to fight. Accessible and keyboard-navigable by default, which §5.7 requires. |
-| Validation | **Zod** | Validates the JSON contract at load. A malformed build fails loudly rather than rendering wrong. |
+| Layer | Choice | Version | Why this one |
+|---|---|---|---|
+| UI | **React** + **React Compiler** | 19.3.0 · 1.0.0 | Compiler is stable — automatic memoization, no manual memo plumbing. |
+| Language | **TypeScript** | **7.0.2** | The **native Go compiler** — an order of magnitude faster to typecheck than tsc 5. |
+| Build | **Vite** | **8.3.0** | **Rolldown** (Rust) is the bundler now; no separate `rolldown-vite` package needed. |
+| Routing | **TanStack Router** | 1.170.38 | Type-safe routes *and* type-safe search params — filter state lives in the URL, so a shared link reproduces a view exactly. |
+| Grid | **TanStack Table** + **Virtual** | 9.2.4 · 3.14.13 | Only visible rows mount. The reason the grid stays instant as the CRM grows. |
+| Styling | **Tailwind** | 4.3.3 | Oxide engine, CSS-first config, no `tailwind.config.js`. |
+| Components | **shadcn/ui** on Radix | — | Copied into the repo, not a dependency — ours to shape, not a library to fight. |
+| Icons | **Lucide** | 1.47.0 | One consistent set, tree-shaken. |
+| Validation | **Zod** | 4.6.5 | Validates the JSON contract at load; a malformed build fails loudly instead of rendering wrong. |
+| Lint + format | **Biome** | 2.5.14 | Rust. Replaces ESLint *and* Prettier with one fast tool and one config. |
+| Tests | **Vitest** | 5.0.1 | Same transform pipeline as the build. |
+| Packages | **pnpm** | 12.5.1 | Strict — no phantom dependencies. Enabled via `corepack`, which ships with Node, so nothing to install. |
 
-⚠ **No chart library yet.** The markets coverage matrix is a CSS grid. Adding a charting dependency
-before there is a chart worth drawing is exactly the speculative weight this plan should avoid.
+**Deliberately NOT included yet**, because a tool with one reader cannot afford a dependency per
+problem:
+
+- **TanStack Query** — there is no server, no cache invalidation and no refetching. `fetch` plus
+  React 19's `use()` covers on-demand detail JSON.
+- **Motion** (13.4.0) — tasteful transitions are a P4 question, not a foundation.
+- **Any chart library** — the markets matrix is a CSS grid. Add one when there is a chart worth
+  drawing.
 
 ### Data loading
 
@@ -189,7 +202,7 @@ Measured, not assumed: full export **3.7 MB**, slim index **307 KB**.
 - `companies/<slug>.json` is fetched on demand for a detail view.
 
 Loading all 3.7 MB at once would work fine from disk, but splitting keeps the app honest at ten
-times this size — and this CRM has grown 22× in one day.
+times this size — and this CRM grew 22× in a single day.
 
 ## 7. The determinism contract
 
@@ -235,7 +248,7 @@ Wiring into the daily run (R3) happens at the end of **P1**: `run_all.py` → `s
 
 | # | Question | Decision |
 |---|---|---|
-| 1 | **Stack** | ✅ **React 19 + TypeScript + Vite** (+ TanStack Router/Table, Tailwind 4, shadcn/ui). Revised from Astro after Andre's challenge — see §6. |
+| 1 | **Stack** | ✅ **React 19.3 + React Compiler · TypeScript 7 · Vite 8 (Rolldown) · TanStack Router/Table/Virtual · Tailwind 4 · shadcn/ui · Zod 4 · Biome 2 · Vitest 5 · pnpm.** Chosen on merit; all versions verified against npm. See §6. |
 | 2 | **Where it lives** | ✅ **Local first.** Built to `site/dist/`, served on `localhost`. Nothing leaves the laptop. Remote access stays a separate, deliberate decision. |
 | 3 | **Brand** | ✅ **Neutral.** Internal tool, not a client artifact. OFS brand can be applied later without rework. |
 
