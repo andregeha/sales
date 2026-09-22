@@ -7,6 +7,51 @@ administration/NAV, back office, reporting, client web portal) across OFS's four
 **This is a source registry, not a live scan.** It does not claim any specific tender exists
 today. Re-check before relying on any single line for an active pursuit.
 
+## ⚠ UPDATE 2026-09-22 (laptop run) — what is now LIVE-VERIFIED
+
+The access note below was written from the cloud sandbox and its blanket "nothing was
+live-verified" caveat **no longer applies to everything**. A radar pass run from Andre's laptop,
+with normal internet, established the following. Treat this block as authoritative where it
+conflicts with the older text.
+
+**Searched successfully, via each portal's real API (high confidence):**
+| Portal | How | Coverage achieved |
+|---|---|---|
+| **TED** (`api.ted.europa.eu`) | Live search API, 15 query variants, EN + FR, date-filtered to 2025+ | Full. A genuine, measured zero for France. |
+| **BOAMP** (Opendatasoft API) | Live API, 11 query variants in French, 2025+ | Full. A genuine, measured zero. |
+| **UAE Ministry of Finance** | Server-rendered listing, read directly | 9 open tenders, none relevant |
+
+**Blocked or unreachable (these are gaps, NOT zeros):**
+| Portal | What happened |
+|---|---|
+| **Etimad** (Saudi) | The site's **own bot-detection challenge** (F5 TSPD / `APM_DO_NOT_TOUCH`) is served instead of content, on every endpoint and user agent tried. ⚠ **Saudi Arabia therefore has ZERO real tender-search coverage.** The Arabic queries were never actually run against Etimad's search. Needs a human with a browser — ideally a registered Etimad supplier account. **We do not attempt to defeat bot protection.** |
+| **Abu Dhabi ADGPG**, **Dubai eSupply** | JavaScript single-page apps; a plain fetch sees no listing at all. Unreached, not checked. |
+| **Saudi CMA** (`cma.gov.sa`) | WAF rejects some paths; the Open Data **API backend is unreachable from Europe** (see `tools/connectors/cma_saudi.py`). Note the domain moved: **`cma.org.sa` → `cma.gov.sa`**. |
+
+**🎯 The most actionable finding: free saved-search EMAIL ALERTS exist and beat any scraper.**
+| Portal | Mechanism | Account | Cost | Where |
+|---|---|---|---|---|
+| **BOAMP** | "Service d'alerte" — up to 10 saved searches, emailed on publication | Yes (email or FranceConnect) | **Free** | https://compte.boamp.fr · https://www.boamp.fr/pages/entreprise-service-dalerte/ |
+| **PLACE** | "Mes alertes et recherches sauvegardées" — daily/weekly digest | Yes ("espace entreprise") | **Free** | marches-publics.gouv.fr → `?page=Entreprise.EntrepriseHome` |
+| **TED** | "My TED" — save a search, up to 25 alerts, daily digest | EU Login | **Free** | https://ted.europa.eu/en/help/ted-account — ⚠ steps corroborated second-hand; verify on first login |
+| **Etimad** | A notifications feature is reported to exist for registered suppliers | Supplier registration | Unconfirmed | ⚠ **Low confidence — unverified.** Do not automate against this until a human has logged in. |
+
+**Two false-positive classes to keep rejecting** (both cost real time this run):
+1. "**portefeuille**" in French public procurement usually means an **IP/patent portfolio** or
+   **project** portfolio management — not investment. Same trap as the English "corporate
+   portfolio management".
+2. Public pension funds (**FRR, ERAFP, CNBF, CAVAMAC, CIPAV, FGDR, Carpimko, CNAVPL, Ircantec**)
+   tender **asset-manager mandates and financial advisory**, never software. We do not bid on
+   these — but **whoever wins one is a buyer**, and a new mandate is a trigger for lead sourcing.
+
+**Near-misses, recorded so they are not re-found:**
+- **Council of Europe Development Bank** (Paris) — a real "capital markets and loan operations
+  management system" procurement, TED `140323-2025` and `288127-2025`. **Deadline 2025-06-06 —
+  closed over a year ago.** Proof that this category *does* surface on TED occasionally.
+- **KfW Bankengruppe** (Germany) — "Investment management software package — Portfolio Management
+  System", TED `479374-2026` / `498376-2026`, deadline 2026-08-10. **Germany is outside our
+  markets.** Awareness only.
+
 ## Verification / access note — read this first
 
 Every source below was identified and corroborated via web search on **2026-09-22**. In this

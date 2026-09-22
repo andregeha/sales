@@ -1,8 +1,28 @@
 # Regulator register connectors — specification
 
-> ⚠ **Not built yet.** They cannot be built or tested in the cloud environment, which blocks access
-> to every regulator website. Build and test them from Andre's laptop — see `RUN-ON-LAPTOP.md`.
-> This file is the spec so that session starts from a design, not a blank page.
+> ✅ **Built 2026-09-22.** `base.py` (shared pipeline) + `amf_france.py` (**live**) +
+> `cma_saudi.py` (**written, never yet run — its API is unreachable from Europe**) + `run_all.py`
+> + `test_connectors.py` (17 tests, no network needed).
+>
+> **Status per source**
+> | Source | State | Note |
+> |---|---|---|
+> | **AMF France** | ✅ **Live** | 666 firms, daily CSV. First run created 10 new leads (scores 70-83). |
+> | **CMA Saudi** | 🔴 **Blocked** | Every `/api/` call times out at the TCP layer from Europe. Retry from the Riyadh office or any Saudi network. |
+> | UAE CMA / DFSA / FSRA | ⬜ Not built | Next in line. |
+> | ACPR REGAFI | ⬜ Not built | Adjacent segments, low priority. |
+>
+> **Run them:** `python tools/connectors/run_all.py` (add `--dry-run` to write nothing,
+> `--only amf-france` for one, `--json` for the daily brief).
+> **Test them:** `python tools/connectors/test_connectors.py`.
+>
+> The spec below is unchanged and still governs. Two things learned in the build are worth adding
+> to it:
+> - ⚠ **A 200 does not mean success.** The Saudi CMA returns a styled SharePoint *error page* with
+>   HTTP 200, and Etimad returns a bot challenge the same way. Check the **content**, not the code.
+> - ⚠ **A baseline run must not dump the back catalogue into the CRM.** 666 French firms would bury
+>   the ten that matter. Only firms licensed within `baseline_window_days` (default 180) become
+>   records; everything else goes into the snapshot so the next day's diff is still correct.
 
 ## The idea, in one line
 **Every morning: pull each regulator's list of licensed firms, diff it against yesterday's, and

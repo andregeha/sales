@@ -1,0 +1,46 @@
+slug: cote-le-family-office
+name: Côme, le Family Office
+legal_name: Côme Maison Financière
+country: France
+city: Paris
+segment: mfo
+regulator: null
+website: https://comemaisonfinanciere.com/
+linkedin: https://fr.linkedin.com/company/come-le-family-office
+size:
+  aum: unknown - 200+ families served
+  employees: 40+
+  portfolios: null
+description: Independent multi-family office founded 2016 by Julien Magitteri and Charles Brunswick. Serves
+  200+ entrepreneurial families across listed assets, private equity and real estate via specialised divisions
+  (Multi Family Office, Gestion Privee, Athlete Office, Barnes Family Office by Come, AntCo by Come).
+  Offices in Paris, Nice, Rouen, Lorient plus Geneva, Luxembourg and New York. In 2026 launched its own
+  AMF-authorised asset-management arm, Come Asset Management (licence GP-20260010, dated 2026-07-09) -
+  already a separate CRM record - led by co-founder Charles Brunswick.
+source:
+  channel: web_search
+  detail: Web search on French multi-family offices; comemaisonfinanciere.com, newsassetpro.com and decideurs
+    coverage of Come's 2025-09-17 'Incontournable' ranking and 2026 AMF-authorised subsidiary launch.
+    Not click-verified beyond WebFetch of comemaisonfinanciere.com article and newsassetpro.com search
+    snippets.
+  date: '2026-09-22'
+status: qualified
+stage: identified
+owner: Andre Geha
+tags:
+- france
+- mfo
+- family-office
+- new-amf-subsidiary
+- professionalising
+- multi-office
+- private-equity
+created: '2026-09-22'
+updated: '2026-09-22'
+contacts: []
+fit:
+  score: null
+  reasoning: null
+  disqualified_reason: null
+activities: []
+next_action: null

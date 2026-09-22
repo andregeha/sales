@@ -4,10 +4,14 @@
 > Format: **fact** — source, date, confidence.
 
 ## Workspace & tooling
-- **Andre works on Windows.** Practical consequences: the command is `python`, not `python3`; Python
-  is not installed by default (the "install from the Microsoft Store" message means it is missing);
-  and paths use backslashes. Any script or instruction we give him must work on Windows.
-  — observed 2026-09-22, high.
+- **Andre works on Windows.** The command is `python`, not `python3`, and paths use backslashes.
+  Anything we write must work on Windows.
+  ✅ **Python 3.13.0 and PyYAML 6.0.2 are installed** on the laptop and `crm.py` runs — the earlier
+  note that Python was missing described a different machine. Two Pythons are on PATH (3.13 first,
+  then 3.11); `python` resolves to 3.13.0.
+  ⚠ **The Windows console is cp1252**, so a script printing accented or Arabic text will mangle it
+  or crash. Set `PYTHONIOENCODING=utf-8` when running anything that prints non-ASCII, and write
+  files with an explicit `encoding="utf-8"`. — verified 2026-09-22 on the laptop, high.
 - **Andre prefers the Claude Code desktop app to the terminal.** Default to giving him the
   desktop-app route first and the terminal only as an alternative. — stated 2026-09-22, high.
 - **The cloud daily schedule (`trig_01R44y3zto5gaxgBChoFxy1L`) was DISABLED 2026-09-22** when the
@@ -18,6 +22,18 @@
 - **Running on Andre's laptop is the approved workaround for the blocked cloud network.** The
   desktop app runs locally, so it has his internet and can reach regulator and tender sites.
   Runbook: `RUN-ON-LAPTOP.md`. — approved by Andre 2026-09-22.
+- ✅ **RESOLVED 2026-09-22 — the laptop has full internet.** Verified by live fetch:
+  `geco.amf-france.org`, `data.gouv.fr`, `cma.org.sa`, `tenders.etimad.sa`, `boamp.fr`,
+  `ted.europa.eu`, `dfsa.ae`, `adgm.com` all return 200. The block described below was a property
+  of the **cloud** environment only. ⚠ The fact below is kept because it explains why the first 57
+  CRM records are search-sourced and thinner than register-sourced ones — **it no longer describes
+  where we run.** — verified 2026-09-22 on the laptop, high.
+
+- ⚠ **A 200 does not mean success.** Three sites in our territory return HTTP 200 with a body that
+  is an error or a bot challenge: the Saudi CMA's SharePoint serves a styled error page for a wrong
+  URL, and Etimad serves an F5 bot-detection challenge. Any connector or scraper we write must check
+  the **content**, not the status code. — observed 2026-09-22, high.
+
 - 🔴 **This session's environment blocks general web access.** The egress policy allows package
   registries (pypi, npm, crates) and Anthropic APIs only; every other host gets a **403 on CONNECT**
   from the proxy. Verified 2026-09-22: `pypi.org` → 200, `amf-france.org` → blocked,
@@ -45,19 +61,50 @@
   — `ofs-marketing/notes/ppt-wrap-doubling.md`, 2026-09-22, high.
 
 ## RFP radar — measured performance
-- **First live run (2026-09-22) found zero qualifying open tenders** across all four markets,
-  ~19 searches in English, French and Arabic. This is a **"found nothing indexable"** result, not a
-  confident zero: with page-fetching blocked the radar sees only what a search engine has indexed
-  *about* tender portals, and Etimad/BOAMP/TED tender pages appear not to be indexed at all.
-  Estimated coverage **well under 10%** of live flow, ~0% of invitation-only processes.
-  **A nil return from this radar currently means almost nothing.** — measured 2026-09-22, high.
-- **Useful negative signals learned:** "corporate portfolio management" in a public-authority RFQ
-  means *project* portfolio management, not investment; French public pension funds' *appels
-  d'offres* select asset **managers**, not software — but the firms bidding are our buyers, and
-  **winning a new institutional mandate is a trigger** worth feeding to lead sourcing.
-- **Recommended fix beyond egress:** BOAMP, PLACE, TED and Etimad all support **free saved-search
-  email alerts** once reachable. That is a far better mechanism than scraping, and worth setting up
-  on day one after the block is lifted.
+- ✅ **Second run (2026-09-22, from the laptop) is the first trustworthy one.** TED and BOAMP were
+  searched through their **real APIs** — 15 and 11 query variants respectively, English and French,
+  date-filtered to 2025+. **The France result is a genuine, measured zero**, not "nothing indexable".
+  That is a real and useful negative: this category is almost entirely direct-invitation.
+- 🔴 **Saudi Arabia still has ZERO tender-search coverage.** Etimad serves its **own bot-detection
+  challenge** (F5 TSPD / `APM_DO_NOT_TOUCH`) instead of content, to every endpoint and user agent.
+  This is the site blocking automation, not a network policy. **We do not attempt to defeat bot
+  protection** — it needs a human with a browser and ideally a registered supplier account.
+  ⚠ Never report "no Saudi tenders" off this radar; we are not looking.
+- 🟠 **Abu Dhabi ADGPG and Dubai eSupply are JS single-page apps** — a plain fetch sees no listing.
+  Unreached, not checked. A headless browser would be needed.
+- 🎯 **Free saved-search email alerts are confirmed on BOAMP and PLACE, and exist on TED.** This is
+  a better mechanism than any scraper we could write and costs nothing. Andre (or whoever holds the
+  France supplier identity) should set them up — see `knowledge/market/rfp-sources.md`.
+- **Two false-positive classes, both expensive:** (1) French "portefeuille" usually means an
+  IP/patent or **project** portfolio, not investment; (2) public pension funds (FRR, ERAFP, CNBF,
+  CIPAV, FGDR, Carpimko, Ircantec…) tender **asset-manager mandates and advisory**, never software —
+  we never bid, but **the winner of one is a buyer** and the award is a trigger.
+- **Proof the category does appear on TED:** the Council of Europe Development Bank (Paris) ran a
+  genuine "capital markets and loan operations management system" procurement (TED `288127-2025`) —
+  but it closed 2025-06-06. KfW (Germany, deadline 2026-08-10) is real but outside our markets.
+
+## Register connectors — built and measured
+- ✅ **AMF France is live and is our best lead source.** The AMF publishes its register of licensed
+  sociétés de gestion as a **daily-updated CSV on data.gouv.fr** (dataset `651427eaf6eab90fa3db2da3`).
+  **666 live firms.** ⚠ The download URL is **timestamped and changes every day** — resolve it
+  through the dataset API each run, never hardcode it.
+  **Flow is ~2 new licences a month** (16 in 2026 to date) — a realistic, workable signal.
+  The dataset also publishes **licence date, authorised activities, authorised instrument classes,
+  and for many firms a website and switchboard number** — regulator-published contact routes, which
+  is the one legitimate source of contact detail we have. — built and run 2026-09-22, high.
+- 🔴 **The Saudi CMA Open Data API is unreachable from Europe.** `opendataapi.cma.gov.sa` serves its
+  swagger, but every `/api/...` call **times out at the TCP layer after ~21s** with backoff — a
+  geo-restriction or firewall on the backend, not a rate limit. The connector is written and fails
+  loudly. **Worth retrying from the Riyadh office or any Saudi network.**
+  Its downloadable open-data files were checked and are **aggregate statistics**, not a register of
+  named firms — they cannot substitute. — 2026-09-22, high.
+- ⚠ **The Saudi CMA domain moved: `cma.org.sa` → `cma.gov.sa`**, and its term for a licensed firm is
+  **"Authorised Persons" / "Financial Market Institutions"**, not "CMI", in its own navigation.
+  — 2026-09-22, high.
+- **Design rule that must not be softened:** a connector that cannot read its source **raises and
+  writes nothing**; zero entries from a live register is treated as a **bug, not a quiet day**; and a
+  collapsed row count is refused as a truncated download rather than diffed as a mass delisting.
+  A radar that fails silently is worse than no radar, because it is trusted.
 
 ## Markets & regulators
 - ⚠ **Three different regulators share the acronym "CMA"** — Lebanon's Capital Markets Authority
