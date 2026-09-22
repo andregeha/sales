@@ -54,9 +54,29 @@ export const GRID_FEATURES = tableFeatures({
 /** The column type views should use — features are fixed here so callers never spell them out. */
 export type GridColumn<T extends RowData> = ColumnDef<typeof GRID_FEATURES, T>;
 
+/**
+ * How wide a column is, and how its contents line up.
+ *
+ * ⚠ Widths are DECLARED, never measured. `table-layout: fixed` means the browser sizes columns from
+ * this list and not from the cells — which is the whole point: with `auto`, sorting reordered the
+ * rows, different text landed on screen, and every column re-solved. "Why now" swung between 126px
+ * and 1,166px as you clicked through sort states. Virtualisation made it worse, because the widths
+ * were being solved from the ~30 rows that happened to be mounted.
+ *
+ * `flex` columns share whatever is left after the fixed ones, so the table always fills its
+ * container exactly and never scrolls sideways on desktop.
+ */
+export type ColumnLayout = {
+  /** Fixed pixel width, or `flex` to share the remaining space by weight. */
+  width?: number;
+  flex?: number;
+  align?: "start" | "center" | "end";
+};
+
 export function DataGrid<T extends RowData>({
   data,
   columns,
+  layout,
   empty,
   onRowClick,
   initialSorting = [],
@@ -64,6 +84,8 @@ export function DataGrid<T extends RowData>({
 }: {
   data: T[];
   columns: GridColumn<T>[];
+  /** One entry per column, in order. Required — an undeclared width is how the old bug happened. */
+  layout: ColumnLayout[];
   /** Required: what this grid says when it has nothing to show. */
   empty: ReactNode;
   onRowClick?: (row: T) => void;
@@ -71,7 +93,11 @@ export function DataGrid<T extends RowData>({
   maxHeight?: string;
 }) {
   const [sorting, setSorting] = useState<SortingState>(initialSorting);
+  const [scrolled, setScrolled] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  // The sticky header should read as pinned, not as a row that got stuck.
+  const onScroll = () => setScrolled((scrollRef.current?.scrollTop ?? 0) > 0);
 
   const table = useTable<typeof GRID_FEATURES, T>({
     features: GRID_FEATURES,
@@ -97,14 +123,38 @@ export function DataGrid<T extends RowData>({
   const paddingBottom =
     items.length > 0 ? virtualizer.getTotalSize() - (items[items.length - 1]?.end ?? 0) : 0;
 
+  const align = (i: number) => {
+    const a = layout[i]?.align ?? "start";
+    return a === "center" ? "text-center" : a === "end" ? "text-right" : "text-left";
+  };
+
   return (
     <div className="overflow-hidden rounded-[var(--radius)] border bg-surface">
-      <div ref={scrollRef} className="overflow-auto" style={{ maxHeight }}>
-        <table className="w-full border-collapse text-small">
-          <thead className="sticky top-0 z-10 bg-surface-raised">
+      <div ref={scrollRef} onScroll={onScroll} className="overflow-auto" style={{ maxHeight }}>
+        {/* `table-fixed` + colgroup: widths come from the declaration, never from the cells. */}
+        <table className="w-full table-fixed border-collapse text-small">
+          <colgroup>
+            {layout.map((c, i) => (
+              <col
+                // biome-ignore lint/suspicious/noArrayIndexKey: columns are positional by definition
+                key={i}
+                style={
+                  c.width !== undefined
+                    ? { width: `${c.width}px` }
+                    : { width: `${(c.flex ?? 1) * 100}%` }
+                }
+              />
+            ))}
+          </colgroup>
+          <thead
+            className={cn(
+              "sticky top-0 z-10 bg-surface-raised",
+              scrolled && "shadow-[0_1px_0_0_var(--border-strong)]",
+            )}
+          >
             {table.getHeaderGroups().map((hg) => (
               <tr key={hg.id}>
-                {hg.headers.map((header) => {
+                {hg.headers.map((header, i) => {
                   const sortable = header.column.getCanSort();
                   const dir = header.column.getIsSorted();
                   return (
@@ -119,22 +169,30 @@ export function DataGrid<T extends RowData>({
                               ? "descending"
                               : "none"
                       }
-                      style={{ width: header.getSize() === 150 ? undefined : header.getSize() }}
-                      className="border-b px-3 py-2 text-left text-micro font-semibold tracking-wide text-muted uppercase"
+                      className={cn(
+                        "border-b px-3 py-2.5 text-micro font-semibold tracking-wide text-muted uppercase",
+                        align(i),
+                      )}
                     >
                       {sortable ? (
                         <button
                           type="button"
                           onClick={header.column.getToggleSortingHandler()}
-                          className="inline-flex items-center gap-1 hover:text-text"
+                          className={cn(
+                            "inline-flex w-full items-center gap-1 hover:text-text",
+                            layout[i]?.align === "center" && "justify-center",
+                            layout[i]?.align === "end" && "justify-end",
+                          )}
                         >
-                          {flexRender(header.column.columnDef.header, header.getContext())}
+                          <span className="truncate">
+                            {flexRender(header.column.columnDef.header, header.getContext())}
+                          </span>
                           {dir === "asc" ? (
-                            <ArrowUp className="size-3" />
+                            <ArrowUp className="size-3 shrink-0" />
                           ) : dir === "desc" ? (
-                            <ArrowDown className="size-3" />
+                            <ArrowDown className="size-3 shrink-0" />
                           ) : (
-                            <ChevronsUpDown className="size-3 opacity-30" />
+                            <ChevronsUpDown className="size-3 shrink-0 opacity-25" />
                           )}
                         </button>
                       ) : (
@@ -148,7 +206,7 @@ export function DataGrid<T extends RowData>({
           </thead>
           <tbody>
             {paddingTop > 0 ? (
-              <tr>
+              <tr aria-hidden>
                 <td style={{ height: paddingTop }} colSpan={columns.length} />
               </tr>
             ) : null}
@@ -162,21 +220,24 @@ export function DataGrid<T extends RowData>({
                   className={cn(
                     "border-b last:border-0",
                     onRowClick && "cursor-pointer hover:bg-surface-raised",
-                    // The keyboard cursor. Without this, j/k moves something invisible.
                     "data-[selected=true]:bg-accent-weak data-[selected=true]:shadow-[inset_2px_0_0_0_var(--accent)]",
                   )}
                   style={{ height: ROW_HEIGHT }}
                 >
-                  {row.getVisibleCells().map((cell) => (
-                    <td key={cell.id} className="px-3 align-middle">
-                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  {row.getVisibleCells().map((cell, i) => (
+                    <td key={cell.id} className={cn("overflow-hidden px-3 align-middle", align(i))}>
+                      {/* Fixed layout means content must clip — so it clips with an ellipsis and
+                          keeps the full value in `title`. Nothing becomes unreadable. */}
+                      <div className="truncate" title={plainText(cell.getValue())}>
+                        {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                      </div>
                     </td>
                   ))}
                 </tr>
               );
             })}
             {paddingBottom > 0 ? (
-              <tr>
+              <tr aria-hidden>
                 <td style={{ height: paddingBottom }} colSpan={columns.length} />
               </tr>
             ) : null}
@@ -185,10 +246,18 @@ export function DataGrid<T extends RowData>({
       </div>
       <div className="flex items-center justify-between border-t px-3 py-1.5 text-micro text-subtle">
         <span className="tnum">{rows.length.toLocaleString("en-GB")} rows</span>
-        <span>click a row to open it</span>
+        <span className="hidden sm:inline">click a row to open it</span>
       </div>
     </div>
   );
+}
+
+/** A cell's value as a tooltip string, when it is something a tooltip can usefully show. */
+function plainText(v: unknown): string | undefined {
+  if (v === null || v === undefined) return undefined;
+  if (typeof v === "string") return v || undefined;
+  if (typeof v === "number" || typeof v === "boolean") return String(v);
+  return undefined;
 }
 
 /** A small static table for a handful of rows, where virtualisation would be silly. */

@@ -85,15 +85,18 @@ function ThemeToggle() {
 function NavItem({
   item,
   route,
+  alwaysLabel = true,
 }: {
   item: { to: string; label: string; icon: typeof LayoutGrid };
   route: string;
+  alwaysLabel?: boolean;
 }) {
   const { to, label, icon: Icon } = item;
   const active = to === "/" ? route === "/" : route.startsWith(to);
   return (
     <Link
       to={to}
+      title={label}
       className={cn(
         "flex shrink-0 items-center gap-1.5 border-b-2 px-2.5 py-3 text-small whitespace-nowrap transition-colors",
         active
@@ -102,7 +105,9 @@ function NavItem({
       )}
     >
       <Icon className="size-4" aria-hidden />
-      {label}
+      {/* Below lg the machine group collapses to icons so the daily items keep their labels
+          rather than the whole bar scrolling sideways. */}
+      <span className={cn(alwaysLabel ? "inline" : "hidden lg:inline")}>{label}</span>
     </Link>
   );
 }
@@ -122,7 +127,7 @@ function Nav({ route }: { route: string }) {
         ))}
         <span className="mx-2 h-4 w-px shrink-0 bg-[var(--border-strong)]" aria-hidden />
         {NAV_MACHINE.map((item) => (
-          <NavItem key={item.to} item={item} route={route} />
+          <NavItem key={item.to} item={item} route={route} alwaysLabel={false} />
         ))}
         <div className="ml-auto shrink-0 pl-3">
           <ThemeToggle />

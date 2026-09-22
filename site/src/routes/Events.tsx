@@ -215,6 +215,13 @@ export function Events() {
       <DataGrid
         data={filtered}
         columns={columns}
+        layout={[
+          { width: 104 },
+          { flex: 0.34 },
+          { flex: 0.26 },
+          { flex: 0.4 },
+          { width: 88, align: "center" },
+        ]}
         initialSorting={[{ id: "date", desc: true }]}
         empty={
           <EmptyState icon={History} title="No changes recorded yet">

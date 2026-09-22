@@ -7,7 +7,7 @@
  */
 import { SearchX, SlidersHorizontal } from "lucide-react";
 import { useMemo, useState } from "react";
-import { DataGrid, type GridColumn } from "../design/DataGrid";
+import { type ColumnLayout, DataGrid, type GridColumn } from "../design/DataGrid";
 import {
   ContactRoute,
   MarketTag,
@@ -30,7 +30,7 @@ import { getIndex } from "../lib/data";
 import { navigate } from "../lib/router";
 import { useAsync } from "../lib/useAsync";
 import { useHashParams } from "../lib/useHashState";
-import { useIsNarrow } from "../lib/useMediaQuery";
+import { useIsMedium, useIsNarrow } from "../lib/useMediaQuery";
 
 type Filters = {
   q: string;
@@ -84,6 +84,7 @@ export function Companies() {
   const [params, setParams] = useHashParams();
   const [showFilters, setShowFilters] = useState(false);
   const narrow = useIsNarrow();
+  const medium = useIsMedium();
 
   // Filters are derived from the URL, so a filtered view is shareable and survives navigation.
   const f: Filters = {
@@ -250,6 +251,46 @@ export function Companies() {
     [narrow],
   );
 
+  /**
+   * At ~870px the seven-column layout technically fits but leaves the company name 136px, which is
+   * unreadable for "Patrimium Asset Management (DIFC)". The middle tier drops the two columns a
+   * reader can filter for instead — segment and status — and gives the space back to the name and
+   * the reason to write.
+   */
+  const shown = useMemo(
+    () =>
+      medium
+        ? columns.filter((c) => {
+            const id = "accessorKey" in c ? String(c.accessorKey) : c.id;
+            return id !== "segment" && id !== "status";
+          })
+        : columns,
+    [columns, medium],
+  );
+
+  const layout: ColumnLayout[] = narrow
+    ? [{ flex: 1 }, { width: 62, align: "center" }, { width: 66, align: "center" }]
+    : medium
+      ? [
+          { flex: 0.44 },
+          { width: 92 },
+          // Wide enough for the longest band label, "53 · worth a look" — measured, not guessed.
+          { width: 136, align: "center" },
+          { flex: 0.56 },
+          { width: 70, align: "center" },
+        ]
+      : [
+          // Company and "Why now" share whatever the fixed columns leave, so the table fills its
+          // container exactly and no column moves when the rows reorder.
+          { flex: 0.42 },
+          { width: 104 },
+          { width: 128 },
+          { width: 104 },
+          { width: 136, align: "center" },
+          { flex: 0.58 },
+          { width: 78, align: "center" },
+        ];
+
   if (state.status === "error") {
     return (
       <Page>
@@ -343,7 +384,8 @@ export function Companies() {
 
       <DataGrid
         data={filtered}
-        columns={columns}
+        columns={shown}
+        layout={layout}
         initialSorting={[{ id: "score", desc: true }]}
         onRowClick={(r) => navigate(`/companies/${r.slug}`)}
         empty={

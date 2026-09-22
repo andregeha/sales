@@ -255,10 +255,19 @@ def trigger_line(c: dict) -> Optional[str]:
     if c.get("status") not in {"qualified", "researching", "contacted", "engaged", "opportunity"}:
         return None
     reasoning = ((c.get("fit") or {}).get("reasoning") or "")
-    m = re.search(r"Trigger \d+/25:\s*([^.]+)", reasoning)
-    if m:
-        return m.group(1).strip()
-    return None
+    # The separator between the score and the reason varies with how each record was written:
+    # "Trigger 20/25: ...", "Trigger 25/25 (capped): ...". Requiring a bare colon missed the
+    # (capped) form entirely.
+    m = re.search(r"Trigger\s+(\d+)\s*/\s*25[^:]{0,40}:\s*([^.]+)", reasoning)
+    if not m:
+        return None
+    # A score of 0/25 means the scorer looked and found NO trigger - its clause reads
+    # "licence granted 2001-06-28, too long ago to count as a trigger". Returning that as a
+    # "why now" would put a firm with nothing happening onto the page reserved for firms that
+    # do. No trigger is no trigger.
+    if m.group(1) == "0":
+        return None
+    return m.group(2).strip()
 
 
 def compute_new_leads(companies: list[dict], since: str) -> list[dict]:
