@@ -98,3 +98,46 @@ scraped). Run it with `python tools/connectors/multilateral_rfp.py` (`--dry-run`
 Test it with `python tools/connectors/test_multilateral.py` (27 tests, no network). See
 `memory/changelog.md`, 2026-09-23, for the full build notes and the false positives it took to get
 the filtering right.
+
+## `site_contacts.py` — a third shape: enriching records we already hold
+
+Neither a register connector nor an RFP radar. It creates **no** records and proposes **no**
+candidates: it reads a firm's own website for the contact route it publishes, and writes that onto
+the record we already have.
+
+It exists because the CRM had 1,604 firms and 119 email addresses, all of them UAE — France had 986
+records and zero. A directory of firms we cannot write to is worth about the same however long it
+gets, so contact routes, not more names, were the bottleneck.
+
+**The contract, in one line: transcription, never inference.** An address is written only if it is
+printed on the firm's own site, and the URL it was read from goes into the record beside it. It will
+never construct `info@<domain>` or `firstname.lastname@<domain>`.
+
+Three rules that cost real work to get right, each now a test:
+
+- **Wrong doors are excluded.** `dpo@`, `rgpd@`, `careers@`, `press@`, `legal@` are real, published
+  and exactly the wrong people to sell to — emailing a data-protection officer to pitch software
+  generates a complaint, not a meeting. They are still recorded in the record's activity note; they
+  are never written as the route.
+- **A phone number must match the market's dialling code.** A French asset manager's page yielded
+  `+1 206…`, a Seattle number almost certainly belonging to a vendor widget in the markup.
+- **The national trunk prefix is stripped.** Firms print `+33 (0)1 56 88 33 00`; keeping every digit
+  gives `+330156883300`, which is one digit too many and will not dial. This was the common case,
+  not an edge case.
+
+`robots.txt` is fetched first and obeyed — a site that declines is recorded as *declined* and not
+retried. One request at a time, with a delay, a User-Agent naming us, GET only.
+
+```bash
+python tools/connectors/site_contacts.py --dry-run --country France --limit 20
+python tools/connectors/site_contacts.py --country France      # writes
+python tools/connectors/site_contacts.py --all --recheck       # revisit everything
+```
+
+⚠ **Not part of the daily run.** Like `sirene_france.py` and `gleif_enrich.py` it is a periodic
+sweep over hundreds of hosts, and putting it in `run_all.py` would make the daily pass take an hour
+and re-fetch other people's websites for no reason. Results are cached in
+`crm/site_contacts/checked.json`.
+
+⚠ **A contact route is not a reason to write.** This connector never touches status, stage or
+triggers. It only means that when we do have a reason, the message can leave.

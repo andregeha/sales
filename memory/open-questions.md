@@ -71,3 +71,10 @@ These are ordered by what they unblock, not by how easy they are.
 | 17 | **UNGM sees titles only.** The listing carries no description, so our classifier judges a title alone — a genuinely relevant notice with an uninformative title will be missed. Reading each notice's detail page would fix it at ~60 extra requests per run; not yet judged worth the load. | 🟠 |
 | 18 | **286 candidates are not in the CRM**, now scored so the queue sorts by likelihood. Nobody has reviewed them. The eight scoring 60+ are the ones worth Andre's eyes first. | 🟠 |
 | 19 | **France's 19,464 GLEIF funds have not been swept** for fund→manager relationships — hours at a polite rate. Saudi, UAE and Lebanon are done (17 candidates, incl. SNB Capital and Jadwa). | ⚪ |
+
+## Contact reachability (opened 2026-09-23)
+| # | Question | Status |
+|---|---|---|
+| 20 | **1,146 of 1,604 records publish no website we know of** (UAE 543 of 567, France 578 of 986), so the website sweep structurally cannot reach them. **Checked and ruled out as sources of a website:** the ADGM snapshot carries only 13, and DFSA, CMA, REGAFI and SIRENE carry none at all — SIRENE has no URL field of any kind. Finding one per firm would mean search, which is bot-protected and risks attributing the wrong firm's site. **No instrument exists for this today.** | 🔴 |
+| 21 | **Only 38 records have a real named human**; 887 "contacts" are switchboards. The website sweep collects published *routes*, not people. Named decision-makers need a different instrument — LinkedIn Sales Navigator is the obvious one and is blocked on a seat. | 🔴 |
+| 22 | **GDPR posture on published business addresses.** We collect role addresses (`contact@`) by preference, which are not personal data, and write a named individual's address only where a firm publishes no role address. Worth a decision from Andre on whether that line is where he wants it before any France outreach goes out. | 🟠 |
