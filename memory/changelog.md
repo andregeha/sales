@@ -750,3 +750,38 @@ you ask for, so anything trusting that field silently sees 10 of 340.
 The DFSA fund register (295 funds) stands as the investigation measured it — I could not verify it
 myself, its funds page uses a different token pattern from the firms page, and it is recorded as
 unverified rather than assumed.
+
+## 2026-09-23 — the DIFC firms we refused, actually written down
+
+I said the DFSA's broad service categories "belong in the candidate queue, not the CRM" and then did
+not write them there. That is the worst of both worlds: the firms are neither recorded nor visible,
+and a deliberate judgement looks like an oversight. Fixed — `dfsa_difc.py --candidates` proposes
+them with the reason attached. **1,134 written, 715 not already in the CRM.**
+
+| Service | Candidates | Why it is not a record |
+|---|---:|---|
+| Advising on Financial Products | 421 | mixes wealth managers with insurance and credit advisers |
+| Operating a Representative Office | 195 | **cannot conduct financial business** — a liaison presence |
+| Arranging Custody | 60 | arranging, not providing — a referral relationship |
+| Arranging Deals in Investments | 39 | same mix as advising |
+
+⚠ **And the queue did not sort.** All 715 landed in a 16-point band with 342 tied at exactly 20 —
+identical fields from one register, so the generic signals could not tell a representative office
+from an advisory firm. A queue where nothing is above anything else is a pile with a number on it.
+Candidates now carry optional `weak_signal` / `strong_signal` in `extra`, which the score moves ±12
+and names in the reasoning; the DFSA connector sets it for representative offices and arranging-
+custody. The spread is now 8–32 and the things we documented as near-worthless sit at the bottom.
+
+### France: checked, and the answer is no
+The DIFC lesson was that we under-read a source we already had, so I checked the AMF the same way.
+**It is fully read** — the AMF publishes exactly five datasets on data.gouv.fr (short positions,
+blacklists, the SGP list we take, the crypto PSAN whitelist, "biens divers") and only one is ours.
+No hidden categories, unlike DIFC.
+
+**ORIAS** (`orias.fr`) is the genuine remaining French gap — French MFOs and wealth advisers register
+as *conseillers en investissements financiers* rather than as SGPs, so they are invisible to the AMF
+list. Its advanced search is a CSRF-protected POST form (`SYNCHRONIZER_TOKEN`, `categorieIfinance`
+checkbox with value `CIF`); a first probe returned a page but no usable result count, so the required
+criteria are not yet understood. **Parked, not abandoned** — and worth noting the population is
+thousands of mostly small IFAs, so like *Advising on Financial Products* it should propose
+candidates, never create records.

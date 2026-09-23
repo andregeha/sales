@@ -50,6 +50,10 @@ NAME_SIGNALS = {
 #: How much a source's proposal is worth before anything else is known about the firm.
 SOURCE_WEIGHT = {
     "gleif": 30,           # it actually manages a registered fund — the strongest signal we have
+    # A DFSA-authorised firm in a category too broad to create from is still a REGULATED firm in
+    # the densest concentration of our buyers in the Gulf. That is far better evidence than a
+    # self-declared French industry code, and worse than actually managing a fund.
+    "dfsa-difc-broad": 20,
     "sirene-france": 10,   # it declared an industry code, which is a claim, not a fact
 }
 
@@ -131,6 +135,20 @@ class Candidate:
         if self.segment_guess in {"family_office", "mfo", "asset_manager", "fund_manager", "bank"}:
             pts += 8
             why.append(f"guessed segment {self.segment_guess} is one we sell to (8)")
+
+        # ⚠ A source may know something about a candidate that the generic signals cannot see. A
+        # DIFC representative office and a DIFC advisory firm arrive from the same register with
+        # the same fields, and are worth wildly different amounts: a representative office cannot
+        # conduct financial business at all. Without this the two tie, and a 715-row queue sorts
+        # into a 16-point band where nothing is above anything else.
+        weak = (self.extra or {}).get("weak_signal")
+        if weak:
+            pts -= 12
+            why.append(f"{weak} (-12)")
+        strong = (self.extra or {}).get("strong_signal")
+        if strong:
+            pts += 12
+            why.append(f"{strong} (+12)")
 
         if self.matched_slug:
             pts -= 20

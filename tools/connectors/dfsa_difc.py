@@ -51,9 +51,9 @@ from typing import Iterable, Optional
 from urllib.request import Request, urlopen
 
 try:
-    from .base import Connector, ConnectorError, Entry, http_get, USER_AGENT
+    from .base import Connector, ConnectorError, Entry, http_get, normalize_name, USER_AGENT
 except ImportError:  # run directly, not as a package
-    from base import Connector, ConnectorError, Entry, http_get, USER_AGENT
+    from base import Connector, ConnectorError, Entry, http_get, normalize_name, USER_AGENT
 
 BASE = "https://www.dfsa.ae"
 REGISTER_PAGE = f"{BASE}/public-register/firms"
@@ -330,3 +330,138 @@ class DFSADIFCConnector(Connector):
 
 
 CONNECTOR = DFSADIFCConnector
+
+# ---------------------------------------------------------------------------
+# The services we deliberately do NOT create records from — as candidates
+# ---------------------------------------------------------------------------
+
+#: DFSA services that are real, large, and too imprecise to create a record from — with the reason
+#: a human will need in order to judge each firm. These are proposed, never created.
+#:
+#: ⚠ Saying "these belong in the candidate queue" and then not writing them there would be the
+#: worst of both worlds: the firms are neither in the CRM nor visible anywhere, and the decision to
+#: exclude them looks like an oversight rather than a judgement. This function is what makes the
+#: exclusion honest.
+CANDIDATE_SERVICES = {
+    "Operating a Representative Office": (
+        "holds a DIFC representative office. ⚠ A representative office CANNOT conduct financial "
+        "business — it is a marketing and liaison presence, and the platform decision sits at the "
+        "parent abroad. Worth a look only if the parent is a regional firm using this as its Gulf "
+        "presence, not if it is a global brand"
+    ),
+    "Advising on Financial Products": (
+        "DFSA-authorised to advise on financial products. ⚠ This category mixes genuine wealth "
+        "managers with insurance advisers, credit advisers and corporate-finance boutiques"
+    ),
+    "Arranging Deals in Investments": (
+        "DFSA-authorised to arrange deals in investments. ⚠ Same mix as advising — arranging is a "
+        "referral relationship, not evidence that the firm runs portfolios"
+    ),
+    "Arranging Custody": (
+        "DFSA-authorised to arrange custody — arranging it, not providing it, so this is a "
+        "referral relationship rather than a custody operation of its own"
+    ),
+}
+
+
+def emit_candidates(*, dry_run: bool = False, limit_per_service: int = 1000) -> dict:
+    """Propose the firms we refuse to create records from, with the reason attached.
+
+    Run separately from the daily pass (`python tools/connectors/dfsa_difc.py --candidates`): these
+    categories change slowly and re-reading 2,200 rows every morning would be rude to the register
+    for no benefit.
+    """
+    import sys as _sys
+    from pathlib import Path as _Path
+    _sys.path.insert(0, str(_Path(__file__).resolve().parent.parent))
+    import candidates as cq
+    import crm as _crm
+
+    known: dict[str, str] = {}
+    for rec in _crm.load_all_companies():
+        for nm in (rec.get("name"), rec.get("legal_name")):
+            if nm:
+                known.setdefault(normalize_name(nm), rec["slug"])
+
+    c = DFSADIFCConnector()
+    c._open_session()
+    found: dict[str, cq.Candidate] = {}
+    for service, why in CANDIDATE_SERVICES.items():
+        page = 1
+        seen_here = 0
+        while seen_here < limit_per_service and page <= 120:
+            rows = list(_ROW_RE.finditer(c._get(c._query(service, page))))
+            if not rows:
+                break
+            for m in rows:
+                body = m.group("body")
+                name = _strip(r.group(1)) if (r := _FIELD_RE["name"].search(body)) else None
+                ref = _strip(r.group(1)) if (r := _FIELD_RE["ref"].search(body)) else None
+                if not name or not ref:
+                    continue
+                seen_here += 1
+                # A firm holding several of these appears once, with the first reason seen — the
+                # rest is in the register and a human can follow the evidence URL.
+                if ref in found:
+                    continue
+                found[ref] = cq.Candidate(
+                    source="dfsa-difc-broad",
+                    source_id=ref,
+                    name=name,
+                    country="UAE",
+                    city="Dubai",
+                    segment_guess=None,
+                    why=f"DFSA register: {why}",
+                    evidence_url=REGISTER_PAGE,
+                    matched_slug=known.get(normalize_name(name)),
+                    extra={
+                        "dfsa_service": service,
+                        "dfsa_reference": ref,
+                        **({"weak_signal": "a representative office cannot conduct financial "
+                                           "business; the platform decision sits at the parent"}
+                           if service == "Operating a Representative Office" else {}),
+                        **({"weak_signal": "arranging custody is a referral relationship, not a "
+                                           "custody operation"}
+                           if service == "Arranging Custody" else {}),
+                    },
+                )
+            page += 1
+    if not found:
+        raise ConnectorError(
+            "DFSA returned no rows for ANY of the broad service categories. Those categories held "
+            "2,200+ firms when measured — treating this as a fetch failure, not an empty register."
+        )
+    return cq.write("dfsa-difc-broad", list(found.values()), dry_run=dry_run)
+
+
+
+
+def main(argv=None) -> int:
+    """`--candidates` proposes the firms this connector deliberately refuses to create records from.
+
+    Kept out of the daily pass on purpose: those categories hold 2,200+ rows, they change slowly,
+    and re-reading them every morning would be rude to the register for no benefit.
+    """
+    import argparse
+
+    ap = argparse.ArgumentParser(description=__doc__,
+                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--candidates", action="store_true",
+                    help="propose the broad service categories into the candidate queue")
+    ap.add_argument("--dry-run", action="store_true", help="report what would be proposed, write nothing")
+    args = ap.parse_args(argv)
+    if not args.candidates:
+        ap.error("nothing to do: pass --candidates (the register pass runs via run_all.py)")
+
+    import sys as _sys
+    from pathlib import Path as _Path
+    _sys.path.insert(0, str(_Path(__file__).resolve().parent.parent))
+    import candidates as cq
+
+    rep = emit_candidates(dry_run=args.dry_run)
+    print(cq.format_report(rep))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
