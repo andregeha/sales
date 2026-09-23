@@ -573,3 +573,27 @@ snapshot carries 13, DFSA/CMA/REGAFI none, and SIRENE has no URL field at all, a
 
 `robots.txt` obeyed (5 firms declined and are not retried), one request at a time, GET only.
 157 Python tests · 19 site tests · build deterministic.
+
+## 2026-09-23 — the queue is not sendable, and why
+
+Checked whether the 67 "qualified and contactable" records could actually be written to. They
+cannot, and the reason matters more than the number.
+
+**Zero records carry a trigger. Zero.** What makes those 67 `qualified` is an ICP *fit* score —
+"priority segment fund_manager (20) + priority market France (15) + multi-asset" — which describes
+what a firm **is**, not why we are writing to it **now**. Our own outreach rule 4 is explicit: if we
+cannot name why we are writing to this firm at this moment, we are not ready to write. So the
+pipeline currently has contact routes and fit, and no reason to send anything.
+
+That makes the trigger scan (`plan/data-and-intake.md` M4) the binding constraint, not more
+sourcing and not more addresses.
+
+**Fixed first, because the trigger scan would have been built on it:** `append_events` appended
+blindly. A day's snapshot is overwritten by each run while the diff baseline stays yesterday's, so
+every run of the same day re-detects the same change — three runs on 2026-09-23 logged one phone
+change on SEVENTURE PARTNERS three times. Events are now deduplicated on (date, register, firm,
+field, before, after); `woke` is deliberately excluded from that identity, since it describes our
+state rather than the event. The three existing duplicates were collapsed to one.
+
+An inflated trigger feed is worse than a quiet one: the entire value of a trigger is that it means
+something happened.

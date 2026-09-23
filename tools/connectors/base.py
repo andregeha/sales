@@ -166,6 +166,18 @@ def load_snapshot(path: Path) -> dict:
 # Change events — the structured trigger feed (`crm/events/<YYYY-MM>.jsonl`)
 # ---------------------------------------------------------------------------
 
+def _event_identity(ev: dict) -> tuple:
+    """What makes two event records the same real-world event.
+
+    Not the whole object: `woke` is a consequence of our own CRM state at the moment of observation
+    and can legitimately differ between two sightings of one change.
+    """
+    return (
+        ev.get("date"), ev.get("register"), ev.get("company_slug") or ev.get("company_name"),
+        ev.get("field"), str(ev.get("before")), str(ev.get("after")),
+    )
+
+
 def append_events(events: list[dict]) -> Optional[Path]:
     """Append one JSON object per line to this month's event log. Never overwrites; never truncates.
 
@@ -177,8 +189,35 @@ def append_events(events: list[dict]) -> Optional[Path]:
     month = events[0]["date"][:7]
     path = EVENTS_DIR / f"{month}.jsonl"
     path.parent.mkdir(parents=True, exist_ok=True)
+
+    # ⚠ Append-only is not the same as append-blindly. A day's snapshot is overwritten by each run,
+    # so the diff baseline stays yesterday's — and running the pass twice in one day re-detects the
+    # same change and logs it again. Measured: one phone change on one firm appeared three times
+    # after three runs on 2026-09-23. That inflates the trigger feed, which is the one feed that
+    # must not cry wolf, so an event already recorded for the same firm, field, values and day is
+    # not written a second time.
+    seen = set()
+    if path.exists():
+        for line in path.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            try:
+                seen.add(_event_identity(json.loads(line)))
+            except (json.JSONDecodeError, AttributeError):
+                continue
+
+    fresh = []
+    for ev in events:
+        key = _event_identity(ev)
+        if key in seen:
+            continue
+        seen.add(key)
+        fresh.append(ev)
+    if not fresh:
+        return path
+
     with path.open("a", encoding="utf-8") as f:
-        for ev in events:
+        for ev in fresh:
             f.write(json.dumps(ev, ensure_ascii=False, sort_keys=True) + "\n")
     return path
 
