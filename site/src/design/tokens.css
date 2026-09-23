@@ -44,7 +44,7 @@
   /* Text */
   --text: oklch(24% 0.012 260);
   --text-muted: oklch(50% 0.010 260);
-  --text-subtle: oklch(64% 0.008 260);
+  --text-subtle: oklch(54% 0.008 260);  /* 4.70:1 worst case — 64% measured 3.14, below AA */
 
   /* Exactly one accent. */
   --accent: oklch(52% 0.148 258);
@@ -85,7 +85,7 @@
 
     --text: oklch(95% 0.004 260);
     --text-muted: oklch(72% 0.008 260);
-    --text-subtle: oklch(57% 0.008 260);
+    --text-subtle: oklch(63% 0.008 260);  /* 4.71:1 worst case — 57% measured 3.73, below AA */
 
     --accent: oklch(70% 0.135 258);
     --accent-fg: oklch(17% 0.008 260);
@@ -121,7 +121,7 @@
   --border-strong: oklch(37% 0.012 260);
   --text: oklch(95% 0.004 260);
   --text-muted: oklch(72% 0.008 260);
-  --text-subtle: oklch(57% 0.008 260);
+  --text-subtle: oklch(63% 0.008 260);  /* 4.71:1 worst case — 57% measured 3.73, below AA */
   --accent: oklch(70% 0.135 258);
   --accent-fg: oklch(17% 0.008 260);
   --accent-weak: oklch(29% 0.055 258);

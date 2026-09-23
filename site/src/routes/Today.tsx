@@ -31,8 +31,10 @@ import {
 import { getEvents, getIndex, getRfps, getSources, getStats } from "../lib/data";
 import { Link, navigate } from "../lib/router";
 import { useAsync } from "../lib/useAsync";
+import { useIsNarrow } from "../lib/useMediaQuery";
 
 export function Today() {
+  const narrow = useIsNarrow();
   const all = useAsync(
     () => Promise.all([getIndex(), getStats(), getSources(), getRfps(), getEvents()]),
     [],
@@ -138,17 +140,43 @@ export function Today() {
             procurement, and our buyers are private firms who never publish.
           </EmptyState>
         ) : (
-          <DataTable head={["Deadline", "Issuer", "Title", "Market"]}>
-            {soon.map((r) => (
-              <Tr key={r.slug}>
-                <Td className="tnum whitespace-nowrap">{r.deadline}</Td>
-                <Td>{r.issuer}</Td>
-                <Td>{r.title}</Td>
-                <Td>
-                  <MarketTag country={r.country} />
-                </Td>
-              </Tr>
-            ))}
+          <DataTable
+            head={narrow ? ["Deadline", "Title"] : ["Deadline", "Issuer", "Title", "Market"]}
+            layout={
+              narrow
+                ? [{ width: 96 }, { flex: 1 }]
+                : [{ width: 108 }, { flex: 0.34 }, { flex: 0.66 }, { width: 104 }]
+            }
+          >
+            {soon.map((r) =>
+              narrow ? (
+                <Tr key={r.slug}>
+                  <Td className="tnum whitespace-nowrap">{r.deadline}</Td>
+                  <Td truncate title={r.title}>
+                    <div className="py-1">
+                      <div className="truncate">{r.title}</div>
+                      <div className="truncate text-micro text-subtle">
+                        {r.issuer}
+                        {r.country ? ` · ${r.country}` : ""}
+                      </div>
+                    </div>
+                  </Td>
+                </Tr>
+              ) : (
+                <Tr key={r.slug}>
+                  <Td className="tnum whitespace-nowrap">{r.deadline}</Td>
+                  <Td truncate title={r.issuer ?? undefined}>
+                    {r.issuer}
+                  </Td>
+                  <Td truncate title={r.title}>
+                    {r.title}
+                  </Td>
+                  <Td>
+                    <MarketTag country={r.country} />
+                  </Td>
+                </Tr>
+              ),
+            )}
           </DataTable>
         )}
       </Section>
@@ -168,31 +196,79 @@ export function Today() {
             That is a normal day. New licences arrive at roughly two a month per market.
           </EmptyState>
         ) : (
-          <DataTable head={["Company", "Market", "Segment", "Fit", "Why now", "Reach"]}>
-            {actionable.slice(0, 12).map((c) => (
-              <Tr key={c.slug} onClick={() => navigate(`/companies/${c.slug}`)}>
-                <Td className="font-medium">{c.name}</Td>
-                <Td>
-                  <MarketTag country={c.country} />
-                </Td>
-                <Td>
-                  <SegmentTag segment={c.segment} />
-                </Td>
-                <Td>
-                  <ScoreBadge score={c.score} />
-                </Td>
-                <Td className="max-w-[34ch] truncate">
-                  <TriggerLine trigger={c.trigger} />
-                </Td>
-                <Td>
-                  <ContactRoute
-                    hasEmail={c.has_email}
-                    hasPhone={c.has_phone}
-                    hasLinkedin={c.has_linkedin}
-                  />
-                </Td>
-              </Tr>
-            ))}
+          <DataTable
+            head={
+              narrow
+                ? ["Company", "Fit", "Reach"]
+                : ["Company", "Market", "Segment", "Fit", "Why now", "Reach"]
+            }
+            layout={
+              // ⚠ On a 375px phone the six fixed columns alone came to 446px, so the two flex
+              // columns resolved to ZERO and the company name vanished. Today is the page Andre
+              // reads on a phone, so narrow gets three columns with the detail stacked instead.
+              narrow
+                ? [{ flex: 1 }, { width: 62, align: "center" }, { width: 66, align: "center" }]
+                : [
+                    { flex: 0.4 },
+                    { width: 104 },
+                    { width: 128 },
+                    { width: 136, align: "center" },
+                    { flex: 0.6 },
+                    { width: 78, align: "center" },
+                  ]
+            }
+          >
+            {actionable.slice(0, 12).map((c) =>
+              narrow ? (
+                <Tr key={c.slug} onClick={() => navigate(`/companies/${c.slug}`)}>
+                  <Td truncate title={c.name}>
+                    <div className="py-1">
+                      <div className="truncate font-medium">{c.name}</div>
+                      <div className="truncate text-micro text-subtle">
+                        {c.country}
+                        {c.segment ? ` · ${c.segment.replace(/_/g, " ")}` : ""}
+                      </div>
+                      <div className="truncate text-micro text-muted">{c.trigger}</div>
+                    </div>
+                  </Td>
+                  <Td>
+                    <ScoreBadge score={c.score} compact />
+                  </Td>
+                  <Td>
+                    <ContactRoute
+                      hasEmail={c.has_email}
+                      hasPhone={c.has_phone}
+                      hasLinkedin={c.has_linkedin}
+                    />
+                  </Td>
+                </Tr>
+              ) : (
+                <Tr key={c.slug} onClick={() => navigate(`/companies/${c.slug}`)}>
+                  <Td truncate className="font-medium" title={c.name}>
+                    {c.name}
+                  </Td>
+                  <Td>
+                    <MarketTag country={c.country} />
+                  </Td>
+                  <Td>
+                    <SegmentTag segment={c.segment} />
+                  </Td>
+                  <Td>
+                    <ScoreBadge score={c.score} />
+                  </Td>
+                  <Td truncate title={c.trigger ?? undefined}>
+                    <TriggerLine trigger={c.trigger} />
+                  </Td>
+                  <Td>
+                    <ContactRoute
+                      hasEmail={c.has_email}
+                      hasPhone={c.has_phone}
+                      hasLinkedin={c.has_linkedin}
+                    />
+                  </Td>
+                </Tr>
+              ),
+            )}
           </DataTable>
         )}
       </Section>

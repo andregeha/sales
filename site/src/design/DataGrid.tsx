@@ -260,18 +260,57 @@ function plainText(v: unknown): string | undefined {
   return undefined;
 }
 
-/** A small static table for a handful of rows, where virtualisation would be silly. */
-export function DataTable({ head, children }: { head: ReactNode[]; children: ReactNode }) {
+/**
+ * A small static table for a handful of rows, where virtualisation would be silly.
+ *
+ * ⚠ Takes the same `layout` as `DataGrid`, and for the same reason. Without declared widths the
+ * table is auto-laid-out, and one long cell wins: on Today a "Why now" span rendered 1,651px wide
+ * inside a 1,425px viewport, because `truncate` on the cell cannot constrain a column that the
+ * table is free to widen. Declared widths make truncation actually truncate.
+ */
+export function DataTable({
+  head,
+  layout,
+  children,
+}: {
+  head: ReactNode[];
+  /** One entry per column, in order. Omit only for tables of short, predictable values. */
+  layout?: ColumnLayout[];
+  children: ReactNode;
+}) {
+  const fixed = layout !== undefined;
   return (
     <div className="overflow-hidden rounded-[var(--radius)] border bg-surface">
-      <table className="w-full border-collapse text-small">
+      <table className={cn("w-full border-collapse text-small", fixed && "table-fixed")}>
+        {layout ? (
+          <colgroup>
+            {layout.map((c, i) => (
+              <col
+                // biome-ignore lint/suspicious/noArrayIndexKey: columns are positional by definition
+                key={i}
+                style={
+                  c.width !== undefined
+                    ? { width: `${c.width}px` }
+                    : { width: `${(c.flex ?? 1) * 100}%` }
+                }
+              />
+            ))}
+          </colgroup>
+        ) : null}
         <thead className="bg-surface-raised">
           <tr>
             {head.map((h, i) => (
               <th
                 // biome-ignore lint/suspicious/noArrayIndexKey: static header cells
                 key={i}
-                className="border-b px-3 py-2 text-left text-micro font-semibold tracking-wide text-muted uppercase"
+                className={cn(
+                  "border-b px-3 py-2 text-micro font-semibold tracking-wide text-muted uppercase",
+                  layout?.[i]?.align === "center"
+                    ? "text-center"
+                    : layout?.[i]?.align === "end"
+                      ? "text-right"
+                      : "text-left",
+                )}
               >
                 {h}
               </th>
@@ -284,8 +323,29 @@ export function DataTable({ head, children }: { head: ReactNode[]; children: Rea
   );
 }
 
-export function Td({ children, className }: { children?: ReactNode; className?: string }) {
-  return <td className={cn("border-b px-3 py-2 align-middle", className)}>{children}</td>;
+export function Td({
+  children,
+  className,
+  truncate,
+  title,
+}: {
+  children?: ReactNode;
+  className?: string;
+  /** Clip to one line with an ellipsis. Needs the table to have a `layout`. */
+  truncate?: boolean;
+  title?: string;
+}) {
+  return (
+    <td className={cn("border-b px-3 py-2 align-middle", truncate && "overflow-hidden", className)}>
+      {truncate ? (
+        <div className="truncate" title={title}>
+          {children}
+        </div>
+      ) : (
+        children
+      )}
+    </td>
+  );
 }
 
 export function Tr({ children, onClick }: { children: ReactNode; onClick?: () => void }) {

@@ -75,3 +75,54 @@ Not by looking at it. By measuring, as above:
 3. Table width ≤ container width at 1440, 768 and 375.
 4. Row heights all equal to the declared constant.
 5. Header and body columns still aligned.
+
+
+---
+
+# Round three — the sweep after the grid fix
+
+Ran every route at **1440 / 768 / 375**, in **light and dark**, with a detector that only reports an
+element escaping the viewport when **no ancestor clips it** — the first version of that detector
+produced false positives by measuring a truncated span's *intrinsic* width.
+
+## Findings
+
+**R1 · 🔴 On a phone, Today's main table lost its content entirely.**
+Observed at 375px: the six fixed columns summed to 446px against a 375px viewport, so both `flex`
+columns resolved to **0px** — the company name and the reason to write were invisible. Today is the
+page Andre reads on a phone, so this was the worst remaining bug.
+Fixed: Today now takes a three-column narrow layout like the grid, with market, segment and the
+trigger stacked under the name. Measured after: columns 205/62/66, none zero, no scrolling.
+
+**R2 · 🟠 `DataTable` had the same auto-layout flaw as the grid.**
+A "Why now" cell rendered 1,651px wide inside a 1,425px viewport, because `truncate` on a cell
+cannot constrain a column the table is free to widen.
+Fixed: `DataTable` now takes the same `layout` prop, and `Td` gained `truncate` + `title`. Every
+table in the system now declares its widths or explicitly opts out.
+
+**R3 · 🟠 `--text-subtle` failed WCAG AA in both themes.**
+Measured, not eyeballed — resolving `oklch()` through a canvas, since reading it as RGB silently
+produces 1.00:1 for everything:
+
+| | before | after | floor |
+|---|---|---|---|
+| light, worst surface | **3.14:1** | **4.70:1** | 4.5 |
+| dark, worst surface | **3.73:1** | **4.71:1** | 4.5 |
+
+That token carries the city under a company name, record slugs, source notes and the keyboard
+hints — small text, and the hardest to read. Light moved 64% → 54%, dark 57% → 63%.
+
+## Verified after
+
+- 10 routes × 3 widths: **no page overflow, nothing escaping an unclipped ancestor, no
+  `undefined`/`NaN` in any rendered page.**
+- Contrast: every sampled role passes AA in both themes.
+- Grid widths still identical across every sort state and after a 4,000px scroll.
+
+## Still not satisfied, and why it is not a UI fix
+
+- **`/triggers`, `/pipeline`, `/runs` have almost no real content** — 1 run, 0 events, 0 live deals.
+  They render correct empty states, but a feed cannot be judged until it has flowed. Re-audit after
+  the daily run has a week behind it.
+- **The score plateau** (88% in two bands) is a scoring-model decision for Andre, not something the
+  UI can fix. The UI now states it rather than implying precision.
