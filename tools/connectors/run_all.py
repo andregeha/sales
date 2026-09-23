@@ -36,6 +36,7 @@ from base import REPO_ROOT, ConnectorError, format_report  # noqa: E402
 CONNECTOR_MODULES = [
     "amf_france",
     "cma_saudi",
+    "cma_uae",
     "dfsa_difc",
     "fsra_adgm",
     "regafi_france",

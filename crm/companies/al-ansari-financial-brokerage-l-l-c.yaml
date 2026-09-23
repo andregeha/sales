@@ -1,0 +1,64 @@
+slug: al-ansari-financial-brokerage-l-l-c
+name: AL ANSARI FINANCIAL BROKERAGE L.L.C.
+legal_name: null
+country: UAE
+city: Abu Dhabi
+segment: broker
+regulator: Capital Market Authority (UAE)
+website: https://www.afsonline.ae
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: 'Capital Market Authority (UAE) open-data register of licensed companies (https://www.uaecma.gov.ae/en/open-data/licensed-companies);
+    licence CP-0000086 dated 2004-11-30. Snapshot: crm/registers/cma-uae/2026-09-23.json.'
+  date: '2026-09-23'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- cma-uae
+- register-sourced
+- new-licence
+- broker
+- uae
+- onshore
+- cma-uae
+created: '2026-09-23'
+updated: '2026-09-23'
+contacts:
+- name: AL ANSARI FINANCIAL BROKERAGE L.L.C. — contact published on the Capital Market Authority (UAE)
+    register
+  title: General enquiries
+  role: unknown
+  email: info@afsonline.ae
+  phone: 971-26968333
+  linkedin: null
+  language: en
+  notes: Email and/or telephone exactly as the Capital Market Authority (UAE) publishes them on its own
+    open-data register — not guessed, not pattern-inferred. Confirm who it belongs to before writing;
+    it may be a named individual rather than a general inbox.
+  source: Capital Market Authority (UAE) open-data register, company CP-0000086
+fit:
+  score: 33
+  reasoning: 'Fit 30/60: adjacent segment broker (10) + priority market UAE (15) + regulated by Capital
+    Market Authority (UAE) (5). Trigger 0/25: licence granted 2004-11-30, too long ago to count as a trigger.
+    Access 3/15: generic company contact published on the register (3). Scored automatically from the
+    Capital Market Authority (UAE) open-data register of licensed companies at first sighting. Fit points
+    are awarded only where the register itself states the fact; anything it is silent on scores zero rather
+    than being assumed. Enrich before outreach.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-23'
+  type: research
+  summary: 'Appeared as a new entry in the Capital Market Authority (UAE) open-data register of licensed
+    companies. Licence CP-0000086, authorised 2004-11-30, Trading and clearing broker; Trading broker
+    in the international markets. Detected by the automated register diff; every field here is as the
+    register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address
+    (per the Capital Market Authority (UAE)): Al Salam Street- Al Zubara Tower-Floor 5ِ, Office No. 502'
+  link: https://www.uaecma.gov.ae/en/open-data/licensed-companies
+next_action: null

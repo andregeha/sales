@@ -243,3 +243,37 @@ existing 319/497 firm-register records to find any that are not yet in the CRM.
    every attempt (curl: "Could not connect to server"; WebFetch: ECONNREFUSED). This reads as a
    connectivity/availability problem from our network at the time of testing, not a measurement of
    the dataset -- worth a retry another day before concluding anything about it.
+
+---
+
+## ⚠ Verification pass on the fund registers (orchestrator, 2026-09-23)
+
+The investigation's headline for the ADGM fund register was **"109 distinct managers among the 279
+active funds"**, presented as the most actionable new finding. I read the register myself before
+building anything on it. The mechanics check out exactly as reported — `POST
+/api/fsrac/funds/listing/filter`, `totalItems: 340`, 279 active, 109 distinct `fundManager` values,
+and the manager is named on the listing row with no detail fetch needed.
+
+**But 109 is the wrong number to act on. The number that matters is 16** — the managers not already
+in the CRM. And that 16 does not survive contact either:
+
+- **Spelling variants inflate it.** `BlackRock Fund Managers Limited` and `Blackrock Fund Managers
+  Ltd` are one firm; so are `Chimera Capital Limited` and `Chimera Capital Ltd`. The true count is
+  around a dozen.
+- **Most of the remainder are not Gulf firms.** Avenue Capital Management II L.P., Blackstone Real
+  Estate Advisors L.P., EIG Management Company, Falcon Edge Capital LP, Hollis Park Partners LP,
+  McKinley Capital Management LLC — US and offshore managers of ADGM-*domiciled* funds. A fund being
+  domiciled in ADGM says where the vehicle is registered, not where the manager buys software. This
+  is the same trap as the DIFC representative offices: recognisable names, decisions made elsewhere.
+
+⚠ One caveat in the other direction, worth stating: `itemsPerPage` in the request is **ignored** —
+the API returns 10 rows per page whatever you ask for, so anything that reads one page and trusts
+`itemsPerPage` will silently see 10 of 340. Page until `len(collected) == totalItems`.
+
+**Conclusion: not worth a register connector.** A dozen mostly-foreign names does not justify a
+daily-run source, and creating records from them would put Blackstone in the pipeline again. If it
+is read at all it should feed the **candidate queue**, where a human decides. The DFSA fund register
+(295 funds) is worth the same check before assuming otherwise.
+
+This is exactly why a measured claim gets re-measured before it becomes code: the mechanics were
+right, the conclusion was not.

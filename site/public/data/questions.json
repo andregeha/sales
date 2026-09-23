@@ -278,5 +278,13 @@
     "section": "Contact reachability (opened 2026-09-23)",
     "status": "🟠",
     "unblocks": null
+  },
+  {
+    "id": "26",
+    "priority": "nice",
+    "question": "`cma_uae.py` (Capital Market Authority (UAE), onshore) deliberately does not map two categories it found on the register: \"Custody\" (`type=9`, 6 firms — distinct from \"Securities Central Clearing\", `type=21`, which IS mapped to `custodian`) and \"Trading broker of OTC derivatives and currencies in the spot market\" (`type=3`, 27 firms). Neither was part of the directive that produced the connector. Worth a decision on whether either belongs before a future run adds it.",
+    "section": "Contact reachability (opened 2026-09-23)",
+    "status": "⚪",
+    "unblocks": null
   }
 ]

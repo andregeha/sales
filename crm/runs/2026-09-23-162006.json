@@ -1,0 +1,23 @@
+{
+  "commit": "d73efc63d98c823a8af0b2a8cc4ec3a1011b5c80",
+  "connectors": [
+    {
+      "backfill": true,
+      "baseline": false,
+      "changes": 0,
+      "created": 88,
+      "error": null,
+      "new_on_register": 93,
+      "ok": true,
+      "partial": false,
+      "register": "cma-uae",
+      "skipped": 5,
+      "source": "Capital Market Authority (UAE) open-data register of licensed companies",
+      "total": 93
+    }
+  ],
+  "duration_s": 548.513,
+  "finished_at": "2026-09-23T16:29:15+00:00",
+  "ok": true,
+  "started_at": "2026-09-23T16:20:06+00:00"
+}

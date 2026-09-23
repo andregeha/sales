@@ -684,3 +684,69 @@ all along and my plan doc conflated it with a Gulf body. The UAE association is 
 
 **Still to read:** the fund registers, which name their managers and which we do not touch at all —
 ADGM 340 funds via a single POST (109 distinct managers among 279 active), DFSA 295 funds.
+
+## 2026-09-23 (later) — `tools/connectors/cma_uae.py`: UAE onshore, the first non-free-zone source
+
+Built the connector the investigation above scoped, and went one step further: `integrationId 2055`
+— the per-company detail call the investigation flagged as unverified — was found in the register
+page's own inline JS (a "view company" handler) and confirmed live against real firms. It is a
+genuinely good source: `CompanyDetails` carries `Email`, `Telephone`, `City`, `CompanyAddress` and
+`EstablishedDate`, published by the regulator on its own register, for firms that state one — the
+same shape of win FSRA (ADGM) already gave us, now also onshore.
+
+**Segments — measured live, matching the directive exactly:** Investment Fund Management (39) →
+`fund_manager`; Portfolios management (44) and Profit Sharing Asset Management (1) → `asset_manager`;
+Securities Central Clearing (2) → `custodian`; Trading and clearing broker (26), Trading broker (3)
+and Trading broker in the international markets (36) → `broker`. 93 unique firms across the seven,
+50 of them holding more than one — deduped by the register's `code`, every held category kept in
+`licence_type`, segment resolved by the priority order in the table above (fund management outranks
+general portfolio management, which outranks brokerage).
+
+**Deliberately left unmapped** (open question #26): "Custody" (`type=9`, 6 firms, distinct from the
+mapped "Securities Central Clearing") and "Trading broker of OTC derivatives and currencies in the
+spot market" (`type=3`, 27 firms) — neither was part of the directive, so neither was guessed at.
+
+Registered in `run_all.py`'s `CONNECTOR_MODULES` and in `knowledge/market/source-coverage.yaml`
+(UAE × asset_manager, fund_manager, mfo). 17 new tests in `test_cma_uae.py`, no network, stubbing the
+one seam (`_call`) both the listing and the detail lookup pass through — `python -m pytest tools/ -q`
+stays green at 176. `--only cma-uae --dry-run` runs clean: 93 entries, correctly a baseline run.
+
+⚠ Not run for real and not committed, on instruction — Andre runs the backfill himself. One thing to
+know before he does: like `dfsa_difc.py`, this connector only learns a firm's licence date from the
+per-candidate detail call, so a plain (non-`--backfill`) first run would create nothing — the listing
+alone has no date field to filter on. Run `--backfill` for the first pass, exactly as DFSA and FSRA
+needed.
+
+## 2026-09-23 — UAE onshore connected: 1,611 → 1,811 records
+
+`tools/connectors/cma_uae.py` is live. UAE **570 → 767** active records; the CRM **1,611 → 1,811**.
+UAE contact routes: email **119 → 197**, website **24 → 99**.
+
+⚠ **The regulator renamed itself.** SCA became the **Capital Market Authority (UAE)** on 1 Jan 2026
+(Federal Decree-Laws 32/33 of 2025); `sca.gov.ae` redirects to `uaecma.gov.ae`. That collides with
+the Saudi CMA we already read, so the register is `cma-uae` and the regulator string is always
+spelled "Capital Market Authority (UAE)" — never a bare "CMA" anywhere a human will read it.
+
+Two things the build got right that are worth keeping: the per-company detail endpoint returns
+`Email`, `Telephone` and `City`, so onshore firms arrive with a contact route rather than just a
+name; and a flat payload returns `400 Invalid Integration Parameters` — the parameters nest inside
+`urlParameters`, which only reading the register page's own JS revealed.
+
+⚠ **An honest User-Agent alone gets HTTP 403 here; adding the page's own Referer/Origin returns
+200.** That is an origin check, not bot protection, so we send the correct request context and do
+**not** spoof a browser identity. Worth stating because the distinction is the whole line we hold.
+
+### The fund registers: a headline that did not survive checking
+The investigation's most actionable finding was "109 distinct fund managers" on the ADGM fund
+register. The mechanics were exactly right — 340 funds, 279 active, manager named on every row — but
+the number to act on is **16**, the managers not already held, and 16 does not survive either:
+spelling variants (`BlackRock Fund Managers Limited` / `Blackrock Fund Managers Ltd`, two Chimeras)
+collapse it to about a dozen, and most of the remainder are US managers of ADGM-**domiciled** funds
+— Avenue, Blackstone Real Estate, EIG, Falcon Edge, Hollis Park, McKinley. Where a vehicle is
+registered says nothing about where its manager buys software: the representative-office trap again.
+**Not worth a connector.** If read at all it feeds the candidate queue.
+⚠ Gotcha for whoever does read it: the API **ignores `itemsPerPage`** and returns 10 rows whatever
+you ask for, so anything trusting that field silently sees 10 of 340.
+The DFSA fund register (295 funds) stands as the investigation measured it — I could not verify it
+myself, its funds page uses a different token pattern from the firms page, and it is recorded as
+unverified rather than assumed.

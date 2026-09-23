@@ -1,28 +1,28 @@
 {
-  "active_total": 1716,
+  "active_total": 1804,
   "by_country": {
     "France": 987,
     "Lebanon": 17,
     "Saudi Arabia": 37,
-    "UAE": 681
+    "UAE": 769
   },
   "by_segment": {
-    "asset_manager": 676,
+    "asset_manager": 689,
     "bank": 262,
-    "broker": 168,
-    "custodian": 21,
+    "broker": 204,
+    "custodian": 23,
     "family_office": 3,
-    "fund_manager": 581,
+    "fund_manager": 618,
     "mfo": 11
   },
   "by_status": {
     "disqualified": 6,
     "new": 1,
-    "nurture": 1516,
-    "qualified": 197,
+    "nurture": 1594,
+    "qualified": 207,
     "researching": 2
   },
-  "companies_total": 1722,
+  "companies_total": 1810,
   "contact_route_by_market": [
     {
       "country": "France",
@@ -41,8 +41,8 @@
     },
     {
       "country": "UAE",
-      "total": 681,
-      "with_route": 556
+      "total": 769,
+      "with_route": 644
     }
   ],
   "coverage": {
@@ -77,12 +77,12 @@
       "mfo": 1
     },
     "UAE": {
-      "asset_manager": 321,
+      "asset_manager": 334,
       "bank": 35,
-      "broker": 67,
-      "custodian": 21,
+      "broker": 103,
+      "custodian": 23,
       "family_office": 0,
-      "fund_manager": 233,
+      "fund_manager": 270,
       "insurer": 0,
       "mfo": 4
     }
@@ -105,19 +105,19 @@
     },
     {
       "band": "30-39",
-      "count": 165
+      "count": 200
     },
     {
       "band": "40-49",
-      "count": 266
+      "count": 267
     },
     {
       "band": "50-59",
-      "count": 553
+      "count": 598
     },
     {
       "band": "60-69",
-      "count": 649
+      "count": 656
     },
     {
       "band": "70-79",

@@ -27,6 +27,12 @@
           "kind": "register",
           "name": "FSRA public register (ADGM)",
           "note": "An MFO managing third-party money needs a licence in both free zones, so it does appear."
+        },
+        {
+          "connector": "cma-uae",
+          "kind": "register",
+          "name": "Capital Market Authority (UAE) open-data register (onshore)",
+          "note": "An MFO managing third-party money onshore holds \"Investment Fund Management\" or \"Portfolios management\" — both mapped — so it appears here too."
         }
       ],
       "unfed": false
@@ -57,7 +63,7 @@
       "candidates": 0,
       "gap": null,
       "market": "UAE",
-      "records": 321,
+      "records": 334,
       "segment": "asset_manager",
       "sources": [
         {
@@ -71,6 +77,12 @@
           "kind": "register",
           "name": "FSRA public register (ADGM)",
           "note": "412 active firms; 214 publish an email address."
+        },
+        {
+          "connector": "cma-uae",
+          "kind": "register",
+          "name": "Capital Market Authority (UAE) open-data register (onshore)",
+          "note": "UAE's first ONSHORE source — DIFC and ADGM are free zones. \"Portfolios management\": 44 firms; \"Profit Sharing Asset Management\": 1. Publishes a website per firm on the listing and an email/phone on request per firm, via the regulator's own per-company lookup."
         }
       ],
       "unfed": false
@@ -79,7 +91,7 @@
       "candidates": 10,
       "gap": null,
       "market": "UAE",
-      "records": 233,
+      "records": 270,
       "segment": "fund_manager",
       "sources": [
         {
@@ -93,6 +105,12 @@
           "kind": "register",
           "name": "FSRA public register (ADGM)",
           "note": null
+        },
+        {
+          "connector": "cma-uae",
+          "kind": "register",
+          "name": "Capital Market Authority (UAE) open-data register (onshore)",
+          "note": "\"Investment Fund Management\": 39 firms, onshore."
         },
         {
           "connector": "gleif",

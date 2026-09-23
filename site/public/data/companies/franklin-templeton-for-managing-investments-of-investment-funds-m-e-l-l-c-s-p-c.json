@@ -1,0 +1,69 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-23",
+      "link": "https://www.uaecma.gov.ae/en/open-data/licensed-companies",
+      "summary": "Appeared as a new entry in the Capital Market Authority (UAE) open-data register of licensed companies. Licence CP-0001634, authorised 2025-08-05, Investment Fund Management; Portfolios management. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the Capital Market Authority (UAE)): World Trade Center\nOffice Tower - Level 17\nAbu Dhabi, United Arab Emirates",
+      "type": "research"
+    }
+  ],
+  "city": "Abu Dhabi",
+  "contacts": [
+    {
+      "email": "amar.mehta@franklintempleton.com",
+      "language": "en",
+      "linkedin": null,
+      "name": "FRANKLIN TEMPLETON FOR  \nMANAGING INVESTMENTS OF \nINVESTMENT FUNDS M E - L.L.C - S.P.C — contact published on the Capital Market Authority (UAE) register",
+      "notes": "Email and/or telephone exactly as the Capital Market Authority (UAE) publishes them on its own open-data register — not guessed, not pattern-inferred. Confirm who it belongs to before writing; it may be a named individual rather than a general inbox.",
+      "phone": "971-505580414",
+      "role": "unknown",
+      "source": "Capital Market Authority (UAE) open-data register, company CP-0001634",
+      "title": "General enquiries"
+    }
+  ],
+  "country": "UAE",
+  "created": "2026-09-23",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 50/60: priority segment fund_manager (20) + priority market UAE (15) + manages third-party money — authorised by Capital Market Authority (UAE) for Investment Fund Management; Portfolios management (10) + regulated by Capital Market Authority (UAE) (5). Trigger 12/25: licence granted 2025-08-05, still early-stage but not brand new (12). Access 3/15: generic company contact published on the register (3). Scored automatically from the Capital Market Authority (UAE) open-data register of licensed companies at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "score": 65
+  },
+  "has_contact_route": true,
+  "has_email": true,
+  "has_linkedin": false,
+  "has_phone": true,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "FRANKLIN TEMPLETON FOR  \nMANAGING INVESTMENTS OF \nINVESTMENT FUNDS M E - L.L.C - S.P.C",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "Capital Market Authority (UAE)",
+  "score": 65,
+  "segment": "fund_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "franklin-templeton-for-managing-investments-of-investment-funds-m-e-l-l-c-s-p-c",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-23",
+    "detail": "Capital Market Authority (UAE) open-data register of licensed companies (https://www.uaecma.gov.ae/en/open-data/licensed-companies); licence CP-0001634 dated 2025-08-05. Snapshot: crm/registers/cma-uae/2026-09-23.json."
+  },
+  "stage": "identified",
+  "status": "qualified",
+  "tags": [
+    "cma-uae",
+    "register-sourced",
+    "new-licence",
+    "fund-manager",
+    "uae",
+    "onshore",
+    "cma-uae"
+  ],
+  "trigger": "licence granted 2025-08-05, still early-stage but not brand new (12)",
+  "updated": "2026-09-23",
+  "website": "https://www.franklintempleton.com/"
+}

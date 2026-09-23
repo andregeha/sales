@@ -1,0 +1,65 @@
+slug: ad-awqaf-investments-l-l-c-o-p-c
+name: AD Awqaf Investments - L.L.C - O.P.C
+legal_name: null
+country: UAE
+city: Abu Dhabi
+segment: fund_manager
+regulator: Capital Market Authority (UAE)
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: 'Capital Market Authority (UAE) open-data register of licensed companies (https://www.uaecma.gov.ae/en/open-data/licensed-companies);
+    licence CP-0001239 dated 2024-03-06. Snapshot: crm/registers/cma-uae/2026-09-23.json.'
+  date: '2026-09-23'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- cma-uae
+- register-sourced
+- new-licence
+- fund-manager
+- uae
+- onshore
+- cma-uae
+created: '2026-09-23'
+updated: '2026-09-23'
+contacts:
+- name: AD Awqaf Investments - L.L.C - O.P.C — contact published on the Capital Market Authority (UAE)
+    register
+  title: General enquiries
+  role: unknown
+  email: legal@awqafcapital.ae
+  phone: 971-553025217
+  linkedin: null
+  language: en
+  notes: Email and/or telephone exactly as the Capital Market Authority (UAE) publishes them on its own
+    open-data register — not guessed, not pattern-inferred. Confirm who it belongs to before writing;
+    it may be a named individual rather than a general inbox.
+  source: Capital Market Authority (UAE) open-data register, company CP-0001239
+fit:
+  score: 53
+  reasoning: 'Fit 50/60: priority segment fund_manager (20) + priority market UAE (15) + manages third-party
+    money — authorised by Capital Market Authority (UAE) for Investment Fund Management; Portfolios management
+    (10) + regulated by Capital Market Authority (UAE) (5). Trigger 0/25: licence granted 2024-03-06,
+    too long ago to count as a trigger. Access 3/15: generic company contact published on the register
+    (3). Scored automatically from the Capital Market Authority (UAE) open-data register of licensed companies
+    at first sighting. Fit points are awarded only where the register itself states the fact; anything
+    it is silent on scores zero rather than being assumed. Enrich before outreach.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-23'
+  type: research
+  summary: 'Appeared as a new entry in the Capital Market Authority (UAE) open-data register of licensed
+    companies. Licence CP-0001239, authorised 2024-03-06, Investment Fund Management; Portfolios management.
+    Detected by the automated register diff; every field here is as the register publishes it and nothing
+    has been inferred. Not yet researched or enriched. Registered address (per the Capital Market Authority
+    (UAE)): 36 Az Zumurrud St - Al Rawdah - Capital Centre - Abu Dhabi'
+  link: https://www.uaecma.gov.ae/en/open-data/licensed-companies
+next_action: null

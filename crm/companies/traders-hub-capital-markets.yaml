@@ -1,0 +1,66 @@
+slug: traders-hub-capital-markets
+name: Traders Hub Capital Markets
+legal_name: null
+country: UAE
+city: Abu Dhabi
+segment: fund_manager
+regulator: Capital Market Authority (UAE)
+website: https://tradershub.ae/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: 'Capital Market Authority (UAE) open-data register of licensed companies (https://www.uaecma.gov.ae/en/open-data/licensed-companies);
+    licence CP-0000766 dated 2021-12-07. Snapshot: crm/registers/cma-uae/2026-09-23.json.'
+  date: '2026-09-23'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- cma-uae
+- register-sourced
+- new-licence
+- fund-manager
+- uae
+- onshore
+- cma-uae
+created: '2026-09-23'
+updated: '2026-09-23'
+contacts:
+- name: Traders Hub Capital Markets — contact published on the Capital Market Authority (UAE) register
+  title: General enquiries
+  role: unknown
+  email: info@tradershub.ae
+  phone: 971-25994666
+  linkedin: null
+  language: en
+  notes: Email and/or telephone exactly as the Capital Market Authority (UAE) publishes them on its own
+    open-data register — not guessed, not pattern-inferred. Confirm who it belongs to before writing;
+    it may be a named individual rather than a general inbox.
+  source: Capital Market Authority (UAE) open-data register, company CP-0000766
+fit:
+  score: 53
+  reasoning: 'Fit 50/60: priority segment fund_manager (20) + priority market UAE (15) + manages third-party
+    money — authorised by Capital Market Authority (UAE) for Investment Fund Management; Portfolios management;
+    Trading broker in the international markets (10) + regulated by Capital Market Authority (UAE) (5).
+    Trigger 0/25: licence granted 2021-12-07, too long ago to count as a trigger. Access 3/15: generic
+    company contact published on the register (3). Scored automatically from the Capital Market Authority
+    (UAE) open-data register of licensed companies at first sighting. Fit points are awarded only where
+    the register itself states the fact; anything it is silent on scores zero rather than being assumed.
+    Enrich before outreach.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-23'
+  type: research
+  summary: 'Appeared as a new entry in the Capital Market Authority (UAE) open-data register of licensed
+    companies. Licence CP-0000766, authorised 2021-12-07, Investment Fund Management; Portfolios management;
+    Trading broker in the international markets. Detected by the automated register diff; every field
+    here is as the register publishes it and nothing has been inferred. Not yet researched or enriched.
+    Registered address (per the Capital Market Authority (UAE)): برج CI - الطابق الثاني – مكتب رقم 201-
+    شارع الكورنيش – أبوظبي ، الإمارات العربية المتحدة'
+  link: https://www.uaecma.gov.ae/en/open-data/licensed-companies
+next_action: null

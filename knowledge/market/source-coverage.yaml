@@ -86,6 +86,13 @@ cells:
         name: FSRA public register (ADGM)
         connector: fsra-adgm
         note: "412 active firms; 214 publish an email address."
+      - kind: register
+        name: Capital Market Authority (UAE) open-data register (onshore)
+        connector: cma-uae
+        note: >-
+          UAE's first ONSHORE source — DIFC and ADGM are free zones. "Portfolios management": 44
+          firms; "Profit Sharing Asset Management": 1. Publishes a website per firm on the listing
+          and an email/phone on request per firm, via the regulator's own per-company lookup.
   - market: UAE
     segment: fund_manager
     sources:
@@ -95,6 +102,10 @@ cells:
       - kind: register
         name: FSRA public register (ADGM)
         connector: fsra-adgm
+      - kind: register
+        name: Capital Market Authority (UAE) open-data register (onshore)
+        connector: cma-uae
+        note: '"Investment Fund Management": 39 firms, onshore.'
       - kind: graph
         name: GLEIF fund → manager relationships
         connector: gleif
@@ -132,6 +143,12 @@ cells:
         name: FSRA public register (ADGM)
         connector: fsra-adgm
         note: "An MFO managing third-party money needs a licence in both free zones, so it does appear."
+      - kind: register
+        name: Capital Market Authority (UAE) open-data register (onshore)
+        connector: cma-uae
+        note: >-
+          An MFO managing third-party money onshore holds "Investment Fund Management" or
+          "Portfolios management" — both mapped — so it appears here too.
 
   # ---------------------------------------------------------- Saudi Arabia
   - market: Saudi Arabia
