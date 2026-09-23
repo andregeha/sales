@@ -1,0 +1,57 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-23",
+      "link": "https://www.regafi.fr/",
+      "summary": "Appeared as a new entry in the ACPR REGAFI register of authorised credit institutions and investment firms. Licence 12732, authorised 2009-07-31, Établissement de Crédit — Banque. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched.",
+      "type": "research"
+    }
+  ],
+  "city": "Paris",
+  "contacts": [],
+  "country": "France",
+  "created": "2026-09-23",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 40/60: priority segment bank (20) + priority market France (15) + regulated by ACPR (France) (5). Trigger 0/25: licence granted 2009-07-31, too long ago to count as a trigger. Access 0/15: no contact route published (0). Scored automatically from the ACPR REGAFI register of authorised credit institutions and investment firms at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "score": 40
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "BPCE",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "ACPR (France)",
+  "score": 40,
+  "segment": "bank",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "bpce",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-23",
+    "detail": "ACPR REGAFI register of authorised credit institutions and investment firms (https://www.regafi.fr/); licence 12732 dated 2009-07-31. Snapshot: crm/registers/regafi-france/2026-09-23.json."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "regafi-france",
+    "register-sourced",
+    "new-licence",
+    "bank",
+    "banque",
+    "france",
+    "acpr"
+  ],
+  "trigger": null,
+  "updated": "2026-09-23",
+  "website": null
+}

@@ -1,0 +1,51 @@
+slug: caisse-d-epargne-et-de-prevoyance-du-languedoc-roussillon
+name: Caisse d'épargne et de prévoyance du Languedoc Roussillon
+legal_name: null
+country: France
+city: Montpellier
+segment: bank
+regulator: ACPR (France)
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: 'ACPR REGAFI register of authorised credit institutions and investment firms (https://www.regafi.fr/);
+    licence 8339 dated 1991-10-11. Snapshot: crm/registers/regafi-france/2026-09-23.json.'
+  date: '2026-09-23'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- regafi-france
+- register-sourced
+- new-licence
+- bank
+- banque-mutualiste-ou-coopérative
+- france
+- acpr
+created: '2026-09-23'
+updated: '2026-09-23'
+contacts: []
+fit:
+  score: 40
+  reasoning: 'Fit 40/60: priority segment bank (20) + priority market France (15) + regulated by ACPR
+    (France) (5). Trigger 0/25: licence granted 1991-10-11, too long ago to count as a trigger. Access
+    0/15: no contact route published (0). Scored automatically from the ACPR REGAFI register of authorised
+    credit institutions and investment firms at first sighting. Fit points are awarded only where the
+    register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich
+    before outreach.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-23'
+  type: research
+  summary: Appeared as a new entry in the ACPR REGAFI register of authorised credit institutions and investment
+    firms. Licence 8339, authorised 1991-10-11, Établissement de Crédit — Banque mutualiste ou coopérative.
+    Detected by the automated register diff; every field here is as the register publishes it and nothing
+    has been inferred. Not yet researched or enriched.
+  link: https://www.regafi.fr/
+next_action: null

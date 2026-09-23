@@ -1,0 +1,57 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-23",
+      "link": "https://www.regafi.fr/",
+      "summary": "Appeared as a new entry in the ACPR REGAFI register of authorised credit institutions and investment firms. Licence 4210, authorised 1993-04-30, Établissement de Crédit — Banque mutualiste ou coopérative. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched.",
+      "type": "research"
+    }
+  ],
+  "city": "Aix En Provence",
+  "contacts": [],
+  "country": "France",
+  "created": "2026-09-23",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 40/60: priority segment bank (20) + priority market France (15) + regulated by ACPR (France) (5). Trigger 0/25: licence granted 1993-04-30, too long ago to count as a trigger. Access 0/15: no contact route published (0). Scored automatically from the ACPR REGAFI register of authorised credit institutions and investment firms at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "score": 40
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Caisse régionale de crédit agricole mutuel Alpes Provence",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "ACPR (France)",
+  "score": 40,
+  "segment": "bank",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "caisse-regionale-de-credit-agricole-mutuel-alpes-provence",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-23",
+    "detail": "ACPR REGAFI register of authorised credit institutions and investment firms (https://www.regafi.fr/); licence 4210 dated 1993-04-30. Snapshot: crm/registers/regafi-france/2026-09-23.json."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "regafi-france",
+    "register-sourced",
+    "new-licence",
+    "bank",
+    "banque-mutualiste-ou-coopérative",
+    "france",
+    "acpr"
+  ],
+  "trigger": null,
+  "updated": "2026-09-23",
+  "website": null
+}

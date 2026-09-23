@@ -38,6 +38,7 @@ CONNECTOR_MODULES = [
     "cma_saudi",
     "dfsa_difc",
     "fsra_adgm",
+    "regafi_france",
 ]
 
 #: The engine's memory of itself — one file per invocation, never overwritten. See `plan/website.md`

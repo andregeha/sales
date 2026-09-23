@@ -66,5 +66,17 @@
     "regulator": "FSRA (ADGM)",
     "runs_seen": 1,
     "status": "ok"
+  },
+  {
+    "consecutive_failures": 0,
+    "history": [],
+    "last_success_date": null,
+    "latest_count": 317,
+    "note": null,
+    "partial": false,
+    "register": "regafi-france",
+    "regulator": "ACPR (France)",
+    "runs_seen": 0,
+    "status": "stale"
   }
 ]
