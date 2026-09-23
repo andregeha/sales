@@ -170,6 +170,21 @@ export const QuestionRow = z.object({
 export type QuestionRow = z.infer<typeof QuestionRow>;
 
 /** Shapes mirror exactly what `tools/site_data.py` emits — Python owns this contract. */
+export const CandidateRow = z.object({
+  source: z.string(),
+  source_id: nullableStr,
+  name: z.string(),
+  country: z.string(),
+  city: nullableStr,
+  segment_guess: nullableStr,
+  created: nullableStr,
+  why: z.string(),
+  evidence_url: nullableStr,
+  matched_slug: nullableStr,
+  extra: z.record(z.string(), z.unknown()).default({}),
+});
+export type CandidateRow = z.infer<typeof CandidateRow>;
+
 export const Stats = z.object({
   companies_total: z.number(),
   active_total: z.number().default(0),
@@ -206,6 +221,7 @@ const BY_PATH: Record<string, z.ZodType> = {
   "rfps.json": z.array(Rfp),
   "questions.json": z.array(QuestionRow),
   "build.json": Build,
+  "candidates.json": z.array(CandidateRow),
 };
 
 /** Throws with a readable message when the emitter and this app disagree about a shape. */

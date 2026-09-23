@@ -12,6 +12,7 @@ import {
   FileText,
   Globe2,
   History,
+  Inbox,
   LayoutGrid,
   Moon,
   Radio,
@@ -24,6 +25,9 @@ import { lazy, Suspense, useEffect, useState } from "react";
  * Only Today is eager. Everything else is fetched when it is opened, which keeps Recharts and the
  * grid off the first load for a reader who just wants today's brief (finding F6).
  */
+const Candidates = lazy(() =>
+  import("./routes/Candidates").then((m) => ({ default: m.Candidates })),
+);
 const Companies = lazy(() => import("./routes/Companies").then((m) => ({ default: m.Companies })));
 const CompanyDetail = lazy(() =>
   import("./routes/CompanyDetail").then((m) => ({ default: m.CompanyDetail })),
@@ -52,6 +56,7 @@ const NAV_WORK = [
   { to: "/", label: "Today", icon: LayoutGrid },
   { to: "/companies", label: "Companies", icon: Building2 },
   { to: "/triggers", label: "Triggers", icon: Activity },
+  { to: "/candidates", label: "Candidates", icon: Inbox },
   { to: "/pipeline", label: "Pipeline", icon: Radio },
   { to: "/rfps", label: "RFPs", icon: FileText },
 ] as const;
@@ -171,6 +176,7 @@ function render(route: string) {
   if (route === "/") return <Today />;
   if (route.startsWith("/companies/"))
     return <CompanyDetail slug={decodeURIComponent(route.slice("/companies/".length))} />;
+  if (route.startsWith("/candidates")) return <Candidates />;
   if (route.startsWith("/companies")) return <Companies />;
   if (route.startsWith("/triggers")) return <Events />;
   if (route.startsWith("/pipeline")) return <Pipeline />;

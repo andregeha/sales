@@ -7,6 +7,7 @@
  */
 import type {
   Build,
+  CandidateRow,
   Company,
   CompanyIndexRow,
   EventRow,
@@ -19,6 +20,7 @@ import type {
 
 export type {
   Build,
+  CandidateRow,
   Company,
   CompanyIndexRow,
   EventRow,
@@ -71,6 +73,7 @@ export const getEvents = once(() => loadJson<EventRow[]>("events.json"));
 export const getRfps = once(() => loadJson<Rfp[]>("rfps.json"));
 export const getQuestions = once(() => loadJson<QuestionRow[]>("questions.json"));
 export const getBuild = once(() => loadJson<Build>("build.json"));
+export const getCandidates = once(() => loadJson<CandidateRow[]>("candidates.json"));
 
 export function getCompany(slug: string): Promise<Company> {
   return loadJson<Company>(`companies/${slug}.json`);

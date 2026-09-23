@@ -37,6 +37,7 @@ REPO_ROOT = HERE.parent
 
 sys.path.insert(0, str(HERE))
 import crm  # noqa: E402  (path set above so this reuses the CRM's own code path)
+import candidates  # noqa: E402
 import crm_report  # noqa: E402  (has_contact_route / trigger_line — one definition, not two)
 
 sys.path.insert(0, str(HERE / "connectors"))
@@ -317,6 +318,19 @@ def compute_source_health(runs: list[dict]) -> list[dict]:
     return out
 
 
+def build_candidates(out: Path) -> int:
+    """The review queue: what noisy sources PROPOSED but were not allowed to create.
+
+    ⚠ These are deliberately not records and are never counted as pipeline. A candidate is a
+    question ("is this one of ours?"), and the website's job is to make answering it cheap.
+    """
+    rows = sorted(
+        candidates.load_all(),
+        key=lambda r: ((r.get("name") or "").lower(), r.get("source") or ""),
+    )
+    return write_json(out / "candidates.json", rows)
+
+
 def build_sources(runs: list[dict], out: Path) -> int:
     return write_json(out / "sources.json", compute_source_health(runs))
 
@@ -537,6 +551,7 @@ def build(out: Path) -> dict:
     sizes["runs.json"] = build_runs(runs, out)
     sizes["events.json"] = build_events(events, out)
     sizes["sources.json"] = build_sources(runs, out)
+    sizes["candidates.json"] = build_candidates(out)
     sizes["stats.json"] = build_stats(companies, rfps, out)
     q_size, q_warnings = build_questions(out)
     sizes["questions.json"] = q_size
