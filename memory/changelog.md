@@ -471,3 +471,28 @@ Verified against real data: "banque audi" → `bank-audi-france` (1.00) across l
 form; "Jadwa" → `jadwa-investment-difc-limited`; a firm that does not exist returns nothing.
 
 127 tests green · CRM validates at 1,611 · site build deterministic.
+
+## 2026-09-23 (later still) — the coverage view: where we are blind
+
+`/coverage` answers the question the Markets view cannot. Counting records treats two opposite
+situations identically: a market we looked at and found empty, and a market we never had a way to
+look at. France × family office read as thin for weeks when it was a *wrong-instrument* failure —
+a family office is usually unlicensed, so no licence register can ever find one, and running the
+AMF connector harder would never have produced a record.
+
+Every market × segment now names its instrument or states in writing why none can exist
+(`knowledge/market/source-coverage.yaml`), and **`site_data.py` fails the build if a cell does
+neither**. "Never miss" is only a process if forgetting is impossible.
+
+**The honest headline: 7 of 20 cells have no instrument at all, holding 19 records that nothing
+maintains.** UAE × family office, Saudi × bank, Saudi × family office, and all of Lebanon. Those
+records cannot be refreshed, so a firm that closed would go on looking current — which the page
+calls out as its own warning rather than leaving to inference.
+
+Two design-system additions rather than ad-hoc markup, per the site rules: `SourceKindTag`
+(register / registry / graph are not interchangeable, and a reader who cannot tell them apart will
+over-trust the noisy one) and `NoInstrumentBadge`. Also fixed: YAML block scalars kept the author's
+hard line wraps, so the page wrapped mid-sentence — how the source file is wrapped must not change
+how the site reads.
+
+Verified live in the browser at desktop and 375px, light and dark. 129 tests green.

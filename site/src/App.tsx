@@ -18,6 +18,7 @@ import {
   Radio,
   ServerCog,
   Sun,
+  Telescope,
 } from "lucide-react";
 import { lazy, Suspense, useEffect, useState } from "react";
 
@@ -32,6 +33,7 @@ const Companies = lazy(() => import("./routes/Companies").then((m) => ({ default
 const CompanyDetail = lazy(() =>
   import("./routes/CompanyDetail").then((m) => ({ default: m.CompanyDetail })),
 );
+const Coverage = lazy(() => import("./routes/Coverage").then((m) => ({ default: m.Coverage })));
 const Events = lazy(() => import("./routes/Events").then((m) => ({ default: m.Events })));
 const Markets = lazy(() => import("./routes/Markets").then((m) => ({ default: m.Markets })));
 const Pipeline = lazy(() => import("./routes/Pipeline").then((m) => ({ default: m.Pipeline })));
@@ -63,6 +65,7 @@ const NAV_WORK = [
 
 const NAV_MACHINE = [
   { to: "/markets", label: "Markets", icon: Globe2 },
+  { to: "/coverage", label: "Coverage", icon: Telescope },
   { to: "/sources", label: "Sources", icon: ServerCog },
   { to: "/runs", label: "Runs", icon: History },
   { to: "/questions", label: "Questions", icon: CircleHelp },
@@ -182,6 +185,7 @@ function render(route: string) {
   if (route.startsWith("/pipeline")) return <Pipeline />;
   if (route.startsWith("/rfps")) return <Rfps />;
   if (route.startsWith("/markets")) return <Markets />;
+  if (route.startsWith("/coverage")) return <Coverage />;
   if (route.startsWith("/sources")) return <Sources />;
   if (route.startsWith("/runs")) return <Runs />;
   if (route.startsWith("/questions")) return <Questions />;

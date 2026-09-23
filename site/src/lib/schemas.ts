@@ -188,6 +188,33 @@ export const CandidateRow = z.object({
 });
 export type CandidateRow = z.infer<typeof CandidateRow>;
 
+export const CoverageCell = z.object({
+  market: z.string(),
+  segment: z.string(),
+  records: z.number(),
+  candidates: z.number(),
+  sources: z
+    .array(
+      z.object({
+        kind: nullableStr,
+        name: z.string(),
+        connector: nullableStr,
+        note: nullableStr,
+      }),
+    )
+    .default([]),
+  /** True when NOTHING feeds this cell — then a zero says nothing about the market. */
+  unfed: z.boolean().default(false),
+  gap: nullableStr,
+});
+export type CoverageCell = z.infer<typeof CoverageCell>;
+
+export const Coverage = z.object({
+  measured: nullableStr,
+  cells: z.array(CoverageCell).default([]),
+});
+export type Coverage = z.infer<typeof Coverage>;
+
 export const Stats = z.object({
   companies_total: z.number(),
   active_total: z.number().default(0),
@@ -225,6 +252,7 @@ const BY_PATH: Record<string, z.ZodType> = {
   "questions.json": z.array(QuestionRow),
   "build.json": Build,
   "candidates.json": z.array(CandidateRow),
+  "coverage.json": Coverage,
 };
 
 /** Throws with a readable message when the emitter and this app disagree about a shape. */

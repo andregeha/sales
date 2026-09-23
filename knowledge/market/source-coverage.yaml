@@ -1,0 +1,209 @@
+# Which source feeds which market × segment — and where none does.
+#
+# **Why this file exists.** The Markets view answers "where are we thin?" by counting records. That
+# question has a trap in it: a zero can mean two completely different things.
+#
+#   - **A real absence.** We looked with the right instrument and there is nothing there.
+#   - **A missing instrument.** We never had a way to look at all.
+#
+# Those demand opposite responses, and counting records cannot tell them apart. France × family
+# office sat at zero for weeks and read like a thin market; it was in fact a *wrong-instrument*
+# failure — a family office is usually not licensed, so no licence register can ever find one.
+#
+# So each cell below declares the source that feeds it, or states in writing why none exists.
+# `tools/site_data.py` cross-checks this against the CRM's actual counts and **fails the build** if a
+# cell is neither fed nor explained. That is the mechanical version of the promise in
+# `plan/source-architecture.md` §5 — "never miss" as a process, not an intention.
+#
+# ⚠ Every count here was measured on the date given. Nothing is estimated. When a number is unknown,
+# it is absent, not guessed.
+#
+# `kind` is one of:
+#   register   — a regulator's own list. Authoritative for who is LICENSED.
+#   registry   — a company registry. Authoritative for who EXISTS. Noisy; proposes candidates only.
+#   graph      — an identity/relationship graph (GLEIF). Finds firms via what they manage.
+#   none       — nothing feeds this cell. `reason` is then mandatory and must be specific.
+
+measured: "2026-09-23"
+
+cells:
+  # ---------------------------------------------------------------- France
+  - market: France
+    segment: asset_manager
+    sources:
+      - kind: register
+        name: AMF (sociétés de gestion de portefeuille)
+        connector: amf-france
+        note: "666 firms. Publishes websites and phone numbers, which is why France's contact-route coverage is our best."
+  - market: France
+    segment: fund_manager
+    sources:
+      - kind: register
+        name: AMF (sociétés de gestion de portefeuille)
+        connector: amf-france
+      - kind: graph
+        name: GLEIF fund → manager relationships
+        connector: gleif
+        note: "France's 19,464 GLEIF funds have NOT been swept — hours at a polite request rate. Saudi, UAE and Lebanon are done."
+  - market: France
+    segment: bank
+    sources:
+      - kind: register
+        name: ACPR REGAFI (credit institutions)
+        connector: regafi-france
+        note: "213 banks. This cell was zero until REGAFI was built — the AMF lists managers, not banks."
+  - market: France
+    segment: family_office
+    sources:
+      - kind: registry
+        name: SIRENE / recherche-entreprises (NAF 64.20Z, 70.10Z)
+        connector: sirene-france
+        note: "Candidates only, never records. 64.20Z is every holding company in France; a handful are family offices."
+    gap: |
+      No register can close this cell. A single-family office is not a licensed activity in France,
+      so it appears on no regulator's list by construction. The registry is the only instrument, and
+      it proposes rather than proves — which is why these arrive as scored candidates for a human.
+  - market: France
+    segment: mfo
+    sources:
+      - kind: register
+        name: AMF (sociétés de gestion de portefeuille)
+        connector: amf-france
+        note: "An MFO managing third-party money IS licensed in France, so the AMF list does reach this cell."
+      - kind: registry
+        name: SIRENE / recherche-entreprises
+        connector: sirene-france
+
+  # ------------------------------------------------------------------- UAE
+  - market: UAE
+    segment: asset_manager
+    sources:
+      - kind: register
+        name: DFSA public register (DIFC)
+        connector: dfsa-difc
+        note: "Managing Assets: 396 permissions."
+      - kind: register
+        name: FSRA public register (ADGM)
+        connector: fsra-adgm
+        note: "412 active firms; 214 publish an email address."
+  - market: UAE
+    segment: fund_manager
+    sources:
+      - kind: register
+        name: DFSA public register (DIFC)
+        connector: dfsa-difc
+      - kind: register
+        name: FSRA public register (ADGM)
+        connector: fsra-adgm
+      - kind: graph
+        name: GLEIF fund → manager relationships
+        connector: gleif
+        note: "131 UAE funds walked; managers not already held became candidates."
+  - market: UAE
+    segment: bank
+    sources:
+      - kind: register
+        name: DFSA public register (DIFC)
+        connector: dfsa-difc
+        note: "Accepting Deposits: 38 permissions."
+      - kind: register
+        name: FSRA public register (ADGM)
+        connector: fsra-adgm
+    gap: |
+      DIFC and ADGM are financial free zones. UAE **onshore** banks are supervised by the Central
+      Bank of the UAE, which we do not yet read — so a mainland bank is invisible to us. Open, and
+      recorded as such rather than tolerated.
+  - market: UAE
+    segment: family_office
+    sources: []
+    gap: |
+      No instrument. The DFSA's 41 "Single Family Office" entries are ALL withdrawn — DIFC moved
+      single-family offices to the Family Wealth Centre in 2023, which publishes no public register.
+      A zero in this cell is therefore not a statement about the market: the Gulf's family-office
+      population is real and largely unlisted. Closing it needs a non-register instrument
+      (directories, events, referral), not a better register.
+  - market: UAE
+    segment: mfo
+    sources:
+      - kind: register
+        name: DFSA public register (DIFC)
+        connector: dfsa-difc
+      - kind: register
+        name: FSRA public register (ADGM)
+        connector: fsra-adgm
+        note: "An MFO managing third-party money needs a licence in both free zones, so it does appear."
+
+  # ---------------------------------------------------------- Saudi Arabia
+  - market: Saudi Arabia
+    segment: asset_manager
+    sources:
+      - kind: register
+        name: CMA authorised persons
+        connector: cma-saudi
+        note: "PARTIAL — the page server-renders 36 of 242. Disappearances are NOT detected."
+      - kind: graph
+        name: GLEIF fund → manager relationships
+        connector: gleif
+        note: "Found SNB Capital and Jadwa Investment, two major managers absent from our slice of the CMA list."
+    gap: |
+      The CMA register is read only in part: its API times out from Europe and the page renders a
+      recently-updated slice. We do NOT defeat the geo-restriction. Completing this cell needs
+      someone able to run the connector from inside Saudi Arabia.
+  - market: Saudi Arabia
+    segment: fund_manager
+    sources:
+      - kind: register
+        name: CMA authorised persons
+        connector: cma-saudi
+      - kind: graph
+        name: GLEIF fund → manager relationships
+        connector: gleif
+  - market: Saudi Arabia
+    segment: bank
+    sources: []
+    gap: |
+      SAMA (the central bank) supervises Saudi banks and we read no SAMA source. The CMA register
+      covers capital-market activity, not deposit-taking, so it cannot stand in. Unbuilt, not empty.
+  - market: Saudi Arabia
+    segment: family_office
+    sources: []
+    gap: |
+      Same structural reason as the UAE: family offices are not licensed, so no register lists them,
+      and Saudi has no company registry we can read the way SIRENE serves France.
+  - market: Saudi Arabia
+    segment: mfo
+    sources:
+      - kind: register
+        name: CMA authorised persons
+        connector: cma-saudi
+        note: "Managing third-party money is a licensed activity, so an MFO does appear — within the partial slice we can read."
+
+  # --------------------------------------------------------------- Lebanon
+  - market: Lebanon
+    segment: bank
+    sources: []
+    gap: |
+      Banque du Liban publishes no machine-readable list of licensed banks. Our 16 Lebanese records
+      are held and deliberately frozen pending Law 23/2025 restructuring — which banks are on the
+      survivor track is a question for Andre, not something to infer. This market is
+      relationship-driven and saying so plainly is what makes the rest of our numbers trustworthy.
+  - market: Lebanon
+    segment: asset_manager
+    sources: []
+    gap: "No public register, and no readable company registry. See the Lebanon × bank note."
+  - market: Lebanon
+    segment: fund_manager
+    sources:
+      - kind: graph
+        name: GLEIF fund → manager relationships
+        connector: gleif
+        note: "Exactly 1 Lebanese fund carries an LEI. Swept; it is not a population."
+    gap: "GLEIF reaches this cell in principle but Lebanon's LEI population is one fund. Effectively unfed."
+  - market: Lebanon
+    segment: family_office
+    sources: []
+    gap: "No register, no registry, no LEI population. Relationship-driven or invisible."
+  - market: Lebanon
+    segment: mfo
+    sources: []
+    gap: "As above."

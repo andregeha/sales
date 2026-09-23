@@ -10,6 +10,8 @@ import type {
   CandidateRow,
   Company,
   CompanyIndexRow,
+  Coverage,
+  CoverageCell,
   EventRow,
   QuestionRow,
   Rfp,
@@ -23,6 +25,8 @@ export type {
   CandidateRow,
   Company,
   CompanyIndexRow,
+  Coverage,
+  CoverageCell,
   EventRow,
   QuestionRow,
   Rfp,
@@ -74,6 +78,9 @@ export const getRfps = once(() => loadJson<Rfp[]>("rfps.json"));
 export const getQuestions = once(() => loadJson<QuestionRow[]>("questions.json"));
 export const getBuild = once(() => loadJson<Build>("build.json"));
 export const getCandidates = once(() => loadJson<CandidateRow[]>("candidates.json"));
+
+/** Which instrument feeds each market × segment — and where none does. */
+export const getCoverage = once(() => loadJson<Coverage>("coverage.json"));
 
 export function getCompany(slug: string): Promise<Company> {
   return loadJson<Company>(`companies/${slug}.json`);

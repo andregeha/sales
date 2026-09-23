@@ -110,6 +110,46 @@ export function ScoreBadge({
 }
 
 /**
+ * What KIND of instrument a source is — and they are not interchangeable.
+ *
+ * A register states who is licensed and can be created from directly. A registry states who exists
+ * and is noisy enough that it may only propose. A graph finds a firm through what it manages. A
+ * reader who cannot tell them apart will over-trust the noisy one, so the kind is always shown.
+ */
+export function SourceKindTag({ kind }: { kind: string | null | undefined }) {
+  const map: Record<string, { tone: "positive" | "caution" | "accent"; title: string }> = {
+    register: { tone: "positive", title: "A regulator's own list — authoritative for who is licensed" },
+    registry: { tone: "caution", title: "A company registry — authoritative for who exists, but noisy: proposes only" },
+    graph: { tone: "accent", title: "An identity/relationship graph — finds a firm via what it manages" },
+  };
+  const m = kind ? map[kind] : undefined;
+  if (!m) return <span className="text-micro text-subtle">{kind ?? "unknown"}</span>;
+  return (
+    <Badge tone={m.tone} title={m.title}>
+      {kind}
+    </Badge>
+  );
+}
+
+/**
+ * Nothing feeds this market × segment at all.
+ *
+ * ⚠ Deliberately the loudest badge in the product. It does not mean "we have no firms here" — it
+ * means a count in this cell carries no information either way, because we never had an instrument
+ * pointed at it.
+ */
+export function NoInstrumentBadge() {
+  return (
+    <Badge
+      tone="critical"
+      title="No source feeds this market and segment — a zero here says nothing about the market"
+    >
+      no instrument
+    </Badge>
+  );
+}
+
+/**
  * How likely an unreviewed *proposal* is to be one of ours.
  *
  * ⚠ Deliberately NOT `ScoreBadge`. That one ranks a firm we have researched and says what to DO

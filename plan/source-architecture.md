@@ -108,11 +108,11 @@ queue with their evidence, and only a scored, segmented candidate becomes a reco
 
 | # | Build | Closes |
 |---|---|---|
-| **C1** | **`regafi_france.py`** — ACPR credit institutions + investment firms | France × bank = 0 → ~936 |
-| **C2** | **`sirene_france.py`** — NAF-filtered French company registry, sliced by département to beat the 10k cap, **into a candidate queue not the CRM** | France family offices, unregulated managers |
-| **C3** | **`gleif_enrich.py`** — LEI, legal form, address onto existing records; fund→manager relationships as candidates | Enrichment + managers we never saw |
-| **C4** | **Reconciliation report** — the three diffs above, surfaced on the website as its own view | "never miss", operationally |
-| **C5** | **`multilateral_rfp.py`** — World Bank · UNGM · EBRD, filtered to our four markets and to financial-systems scope | RFP coverage in Saudi, UAE, Lebanon |
+| **C1** | ✅ **`regafi_france.py`** — ACPR credit institutions + investment firms | France × bank = 0 → ~936 |
+| **C2** | ✅ **`sirene_france.py`** — NAF-filtered French company registry, sliced by département to beat the 10k cap, **into a candidate queue not the CRM** | France family offices, unregulated managers |
+| **C3** | ✅ **`gleif_enrich.py`** — LEI, legal form, address onto existing records; fund→manager relationships as candidates | Enrichment + managers we never saw |
+| **C4** | ✅ **Coverage view** (`/coverage`) — every market × segment names its instrument or states why none exists; **the build fails if a cell does neither** | "never miss", operationally |
+| **C5** | ✅ **`multilateral_rfp.py`** — World Bank · UNGM · EBRD, filtered to our four markets and to financial-systems scope | RFP coverage in Saudi, UAE, Lebanon |
 | **C6** | Investigations, timeboxed: Saudi completeness · UAE onshore CMA · DIFC register (slow retry) · IsDB path | Known unknowns |
 
 Scheduling comes **after** C1–C5, per Andre. The connectors are worth nothing unscheduled, but an
@@ -129,3 +129,19 @@ It does not mean every firm. It means:
 
 Lebanon will still be relationship-driven. Invitation-only RFPs will still be invisible. Saying so
 plainly is what makes the rest of the number trustworthy.
+
+## 6. Where C1–C5 actually landed (2026-09-23)
+
+Built and live: REGAFI (France × bank 0 → 213) · SIRENE (300 candidates) · GLEIF (969 of 1,610
+records matched; 17 fund-manager candidates including SNB Capital and Jadwa) · the multilateral RFP
+radar (World Bank, UNGM, IsDB readable; EBRD refused, loudly) · the coverage view · `/intake`.
+
+**What the coverage view says, and it is the honest headline:** of 20 market × segment cells,
+**7 have no instrument at all**, and those cells hold **19 records that nothing maintains** — they
+cannot be refreshed, so a firm that closed would go on looking current indefinitely. The four worth
+naming: UAE × family office (DIFC moved SFOs to a centre that publishes nothing), Saudi × bank (we
+read no SAMA source), Saudi × family office, and all of Lebanon.
+
+That is the real answer to "never miss": not a promise of completeness, but a page that says
+exactly where we are blind, that fails the build if someone forgets to explain a blind spot, and
+that distinguishes a market we looked at from a market we never had a way to look at.

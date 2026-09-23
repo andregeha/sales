@@ -14,6 +14,8 @@ import shutil
 import sys
 import tempfile
 import unittest
+
+import pytest
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -432,3 +434,51 @@ def test_a_source_never_read_reports_failing_not_stale():
     assert health["ebrd"]["status"] == "failing", (
         "a source that has never been read successfully must not read as merely stale"
     )
+
+
+def test_every_market_segment_cell_declares_a_source_or_a_written_reason(tmp_path):
+    """The build must refuse when a cell is neither fed nor explained.
+
+    Counting records cannot tell a market we looked at and found empty from one we never had a way
+    to look at. France × family office read as a thin market for weeks when it was in fact an
+    instrument we had never built — running the AMF connector harder would never have produced a
+    record. "Never miss" is only a process if forgetting is impossible, so this is enforced by the
+    build rather than by good intentions.
+    """
+    import site_data
+
+    real = site_data.SOURCE_COVERAGE_FILE
+    incomplete = tmp_path / "source-coverage.yaml"
+    incomplete.write_text(
+        "measured: '2026-09-23'\ncells:\n"
+        "  - market: France\n    segment: asset_manager\n"
+        "    sources:\n      - kind: register\n        name: AMF\n",
+        encoding="utf-8",
+    )
+    site_data.SOURCE_COVERAGE_FILE = incomplete
+    try:
+        with pytest.raises(ValueError) as exc:
+            site_data.build_coverage([], tmp_path)
+        assert "Lebanon" in str(exc.value)
+    finally:
+        site_data.SOURCE_COVERAGE_FILE = real
+
+
+def test_a_cell_with_no_source_must_still_say_why(tmp_path):
+    """An empty `sources` list is not an explanation — silence is what we are trying to prevent."""
+    import site_data
+
+    real = site_data.SOURCE_COVERAGE_FILE
+    silent = tmp_path / "silent.yaml"
+    cells = "".join(
+        f"  - market: {m}\n    segment: {s}\n    sources: []\n    gap: because\n"
+        for m in site_data.MARKETS for s in site_data.PRIORITY_SEGMENTS
+    ).replace("    gap: because\n", "", 1)   # strip the reason from the very first cell only
+    silent.write_text(f"measured: '2026-09-23'\ncells:\n{cells}", encoding="utf-8")
+    site_data.SOURCE_COVERAGE_FILE = silent
+    try:
+        with pytest.raises(ValueError) as exc:
+            site_data.build_coverage([], tmp_path)
+        assert "no written reason" in str(exc.value)
+    finally:
+        site_data.SOURCE_COVERAGE_FILE = real

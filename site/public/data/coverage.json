@@ -1,0 +1,330 @@
+{
+  "cells": [
+    {
+      "candidates": 0,
+      "gap": "No instrument. The DFSA's 41 \"Single Family Office\" entries are ALL withdrawn — DIFC moved single-family offices to the Family Wealth Centre in 2023, which publishes no public register. A zero in this cell is therefore not a statement about the market: the Gulf's family-office population is real and largely unlisted. Closing it needs a non-register instrument (directories, events, referral), not a better register.",
+      "market": "UAE",
+      "records": 0,
+      "segment": "family_office",
+      "sources": [],
+      "unfed": true
+    },
+    {
+      "candidates": 0,
+      "gap": null,
+      "market": "UAE",
+      "records": 4,
+      "segment": "mfo",
+      "sources": [
+        {
+          "connector": "dfsa-difc",
+          "kind": "register",
+          "name": "DFSA public register (DIFC)",
+          "note": null
+        },
+        {
+          "connector": "fsra-adgm",
+          "kind": "register",
+          "name": "FSRA public register (ADGM)",
+          "note": "An MFO managing third-party money needs a licence in both free zones, so it does appear."
+        }
+      ],
+      "unfed": false
+    },
+    {
+      "candidates": 0,
+      "gap": "DIFC and ADGM are financial free zones. UAE **onshore** banks are supervised by the Central Bank of the UAE, which we do not yet read — so a mainland bank is invisible to us. Open, and recorded as such rather than tolerated.",
+      "market": "UAE",
+      "records": 35,
+      "segment": "bank",
+      "sources": [
+        {
+          "connector": "dfsa-difc",
+          "kind": "register",
+          "name": "DFSA public register (DIFC)",
+          "note": "Accepting Deposits: 38 permissions."
+        },
+        {
+          "connector": "fsra-adgm",
+          "kind": "register",
+          "name": "FSRA public register (ADGM)",
+          "note": null
+        }
+      ],
+      "unfed": false
+    },
+    {
+      "candidates": 0,
+      "gap": null,
+      "market": "UAE",
+      "records": 320,
+      "segment": "asset_manager",
+      "sources": [
+        {
+          "connector": "dfsa-difc",
+          "kind": "register",
+          "name": "DFSA public register (DIFC)",
+          "note": "Managing Assets: 396 permissions."
+        },
+        {
+          "connector": "fsra-adgm",
+          "kind": "register",
+          "name": "FSRA public register (ADGM)",
+          "note": "412 active firms; 214 publish an email address."
+        }
+      ],
+      "unfed": false
+    },
+    {
+      "candidates": 10,
+      "gap": null,
+      "market": "UAE",
+      "records": 176,
+      "segment": "fund_manager",
+      "sources": [
+        {
+          "connector": "dfsa-difc",
+          "kind": "register",
+          "name": "DFSA public register (DIFC)",
+          "note": null
+        },
+        {
+          "connector": "fsra-adgm",
+          "kind": "register",
+          "name": "FSRA public register (ADGM)",
+          "note": null
+        },
+        {
+          "connector": "gleif",
+          "kind": "graph",
+          "name": "GLEIF fund → manager relationships",
+          "note": "131 UAE funds walked; managers not already held became candidates."
+        }
+      ],
+      "unfed": false
+    },
+    {
+      "candidates": 0,
+      "gap": "Same structural reason as the UAE: family offices are not licensed, so no register lists them, and Saudi has no company registry we can read the way SIRENE serves France.",
+      "market": "Saudi Arabia",
+      "records": 3,
+      "segment": "family_office",
+      "sources": [],
+      "unfed": true
+    },
+    {
+      "candidates": 0,
+      "gap": null,
+      "market": "Saudi Arabia",
+      "records": 1,
+      "segment": "mfo",
+      "sources": [
+        {
+          "connector": "cma-saudi",
+          "kind": "register",
+          "name": "CMA authorised persons",
+          "note": "Managing third-party money is a licensed activity, so an MFO does appear — within the partial slice we can read."
+        }
+      ],
+      "unfed": false
+    },
+    {
+      "candidates": 0,
+      "gap": "SAMA (the central bank) supervises Saudi banks and we read no SAMA source. The CMA register covers capital-market activity, not deposit-taking, so it cannot stand in. Unbuilt, not empty.",
+      "market": "Saudi Arabia",
+      "records": 0,
+      "segment": "bank",
+      "sources": [],
+      "unfed": true
+    },
+    {
+      "candidates": 0,
+      "gap": "The CMA register is read only in part: its API times out from Europe and the page renders a recently-updated slice. We do NOT defeat the geo-restriction. Completing this cell needs someone able to run the connector from inside Saudi Arabia.",
+      "market": "Saudi Arabia",
+      "records": 27,
+      "segment": "asset_manager",
+      "sources": [
+        {
+          "connector": "cma-saudi",
+          "kind": "register",
+          "name": "CMA authorised persons",
+          "note": "PARTIAL — the page server-renders 36 of 242. Disappearances are NOT detected."
+        },
+        {
+          "connector": "gleif",
+          "kind": "graph",
+          "name": "GLEIF fund → manager relationships",
+          "note": "Found SNB Capital and Jadwa Investment, two major managers absent from our slice of the CMA list."
+        }
+      ],
+      "unfed": false
+    },
+    {
+      "candidates": 7,
+      "gap": null,
+      "market": "Saudi Arabia",
+      "records": 5,
+      "segment": "fund_manager",
+      "sources": [
+        {
+          "connector": "cma-saudi",
+          "kind": "register",
+          "name": "CMA authorised persons",
+          "note": null
+        },
+        {
+          "connector": "gleif",
+          "kind": "graph",
+          "name": "GLEIF fund → manager relationships",
+          "note": null
+        }
+      ],
+      "unfed": false
+    },
+    {
+      "candidates": 0,
+      "gap": "No register, no registry, no LEI population. Relationship-driven or invisible.",
+      "market": "Lebanon",
+      "records": 0,
+      "segment": "family_office",
+      "sources": [],
+      "unfed": true
+    },
+    {
+      "candidates": 0,
+      "gap": "As above.",
+      "market": "Lebanon",
+      "records": 0,
+      "segment": "mfo",
+      "sources": [],
+      "unfed": true
+    },
+    {
+      "candidates": 0,
+      "gap": "Banque du Liban publishes no machine-readable list of licensed banks. Our 16 Lebanese records are held and deliberately frozen pending Law 23/2025 restructuring — which banks are on the survivor track is a question for Andre, not something to infer. This market is relationship-driven and saying so plainly is what makes the rest of our numbers trustworthy.",
+      "market": "Lebanon",
+      "records": 14,
+      "segment": "bank",
+      "sources": [],
+      "unfed": true
+    },
+    {
+      "candidates": 0,
+      "gap": "No public register, and no readable company registry. See the Lebanon × bank note.",
+      "market": "Lebanon",
+      "records": 2,
+      "segment": "asset_manager",
+      "sources": [],
+      "unfed": true
+    },
+    {
+      "candidates": 0,
+      "gap": "GLEIF reaches this cell in principle but Lebanon's LEI population is one fund. Effectively unfed.",
+      "market": "Lebanon",
+      "records": 0,
+      "segment": "fund_manager",
+      "sources": [
+        {
+          "connector": "gleif",
+          "kind": "graph",
+          "name": "GLEIF fund → manager relationships",
+          "note": "Exactly 1 Lebanese fund carries an LEI. Swept; it is not a population."
+        }
+      ],
+      "unfed": false
+    },
+    {
+      "candidates": 1,
+      "gap": "No register can close this cell. A single-family office is not a licensed activity in France, so it appears on no regulator's list by construction. The registry is the only instrument, and it proposes rather than proves — which is why these arrive as scored candidates for a human.",
+      "market": "France",
+      "records": 0,
+      "segment": "family_office",
+      "sources": [
+        {
+          "connector": "sirene-france",
+          "kind": "registry",
+          "name": "SIRENE / recherche-entreprises (NAF 64.20Z, 70.10Z)",
+          "note": "Candidates only, never records. 64.20Z is every holding company in France; a handful are family offices."
+        }
+      ],
+      "unfed": false
+    },
+    {
+      "candidates": 0,
+      "gap": null,
+      "market": "France",
+      "records": 6,
+      "segment": "mfo",
+      "sources": [
+        {
+          "connector": "amf-france",
+          "kind": "register",
+          "name": "AMF (sociétés de gestion de portefeuille)",
+          "note": "An MFO managing third-party money IS licensed in France, so the AMF list does reach this cell."
+        },
+        {
+          "connector": "sirene-france",
+          "kind": "registry",
+          "name": "SIRENE / recherche-entreprises",
+          "note": null
+        }
+      ],
+      "unfed": false
+    },
+    {
+      "candidates": 0,
+      "gap": null,
+      "market": "France",
+      "records": 213,
+      "segment": "bank",
+      "sources": [
+        {
+          "connector": "regafi-france",
+          "kind": "register",
+          "name": "ACPR REGAFI (credit institutions)",
+          "note": "213 banks. This cell was zero until REGAFI was built — the AMF lists managers, not banks."
+        }
+      ],
+      "unfed": false
+    },
+    {
+      "candidates": 81,
+      "gap": null,
+      "market": "France",
+      "records": 326,
+      "segment": "asset_manager",
+      "sources": [
+        {
+          "connector": "amf-france",
+          "kind": "register",
+          "name": "AMF (sociétés de gestion de portefeuille)",
+          "note": "666 firms. Publishes websites and phone numbers, which is why France's contact-route coverage is our best."
+        }
+      ],
+      "unfed": false
+    },
+    {
+      "candidates": 93,
+      "gap": null,
+      "market": "France",
+      "records": 343,
+      "segment": "fund_manager",
+      "sources": [
+        {
+          "connector": "amf-france",
+          "kind": "register",
+          "name": "AMF (sociétés de gestion de portefeuille)",
+          "note": null
+        },
+        {
+          "connector": "gleif",
+          "kind": "graph",
+          "name": "GLEIF fund → manager relationships",
+          "note": "France's 19,464 GLEIF funds have NOT been swept — hours at a polite request rate. Saudi, UAE and Lebanon are done."
+        }
+      ],
+      "unfed": false
+    }
+  ],
+  "measured": "2026-09-23"
+}

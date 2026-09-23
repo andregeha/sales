@@ -339,6 +339,85 @@ def build_candidates(out: Path) -> int:
     return write_json(out / "candidates.json", rows)
 
 
+SOURCE_COVERAGE_FILE = REPO_ROOT / "knowledge" / "market" / "source-coverage.yaml"
+
+MARKETS = ["UAE", "Saudi Arabia", "Lebanon", "France"]
+PRIORITY_SEGMENTS = ["family_office", "mfo", "bank", "asset_manager", "fund_manager"]
+
+
+def build_coverage(companies: list[dict], out: Path) -> int:
+    """Which instrument feeds each market × segment — and where none does.
+
+    ⚠ **This fails the build when a cell is neither fed nor explained.** That is the point of it.
+    Counting records cannot distinguish a market we looked at and found empty from a market we never
+    had a way to look at, and those demand opposite responses: one is a fact about the world, the
+    other is a hole in our machinery. France × family office read as a thin market for weeks when it
+    was actually an instrument we had never built.
+
+    So every cell must either name a source or state, in writing, why none can exist. "Never miss"
+    is only a process if forgetting is impossible; leaving this to good intentions makes it a slogan.
+    """
+    raw = crm.yaml.safe_load(SOURCE_COVERAGE_FILE.read_text(encoding="utf-8")) or {}
+    declared = {(c["market"], c["segment"]): c for c in raw.get("cells") or []}
+
+    counts: dict[tuple[str, str], int] = {}
+    cand_counts: dict[tuple[str, str], int] = {}
+    for c in companies:
+        key = (c.get("country") or "", c.get("segment") or "")
+        counts[key] = counts.get(key, 0) + 1
+    for row in candidates.load_all():
+        if row.get("matched_slug"):
+            continue
+        key = (row.get("country") or "", row.get("segment_guess") or "")
+        cand_counts[key] = cand_counts.get(key, 0) + 1
+
+    rows, undeclared = [], []
+    for market in MARKETS:
+        for segment in PRIORITY_SEGMENTS:
+            cell = declared.get((market, segment))
+            if cell is None:
+                undeclared.append(f"{market} × {segment}")
+                continue
+            sources = cell.get("sources") or []
+            # ⚠ Re-flow the YAML's hard-wrapped prose. A `|` block scalar keeps every newline the
+            # author typed, so the page wrapped mid-sentence at whatever column the editor happened
+            # to use. How the source file is wrapped must not change how the site reads; a blank
+            # line still separates paragraphs.
+            gap = "\n\n".join(
+                " ".join(para.split())
+                for para in (cell.get("gap") or "").strip().split("\n\n")
+                if para.strip()
+            ) or None
+            if not sources and not gap:
+                undeclared.append(f"{market} × {segment} (no source and no written reason)")
+                continue
+            rows.append({
+                "market": market,
+                "segment": segment,
+                "records": counts.get((market, segment), 0),
+                "candidates": cand_counts.get((market, segment), 0),
+                "sources": [
+                    {"kind": s.get("kind"), "name": s.get("name"),
+                     "connector": s.get("connector"), "note": s.get("note")}
+                    for s in sources
+                ],
+                # An unfed cell is the loudest thing this page can say, so it is its own flag
+                # rather than something a reader has to infer from an empty list.
+                "unfed": not sources,
+                "gap": gap,
+            })
+
+    if undeclared:
+        raise ValueError(
+            "source-coverage.yaml does not account for: " + ", ".join(sorted(undeclared)) +
+            ". Every market × segment must name a source or state why none can exist — otherwise a "
+            "zero in that cell is unreadable, and 'never miss' is a slogan rather than a process."
+        )
+
+    rows.sort(key=lambda r: (MARKETS.index(r["market"]), PRIORITY_SEGMENTS.index(r["segment"])))
+    return write_json(out / "coverage.json", {"measured": raw.get("measured"), "cells": rows})
+
+
 def build_sources(runs: list[dict], out: Path) -> int:
     return write_json(out / "sources.json", compute_source_health(runs))
 
@@ -560,6 +639,7 @@ def build(out: Path) -> dict:
     sizes["events.json"] = build_events(events, out)
     sizes["sources.json"] = build_sources(runs, out)
     sizes["candidates.json"] = build_candidates(out)
+    sizes["coverage.json"] = build_coverage(companies, out)
     sizes["stats.json"] = build_stats(companies, rfps, out)
     q_size, q_warnings = build_questions(out)
     sizes["questions.json"] = q_size
