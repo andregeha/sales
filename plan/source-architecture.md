@@ -78,7 +78,14 @@ UAE portals are JS apps. **The addressable public flow in the Gulf and Lebanon i
 - **ADGM company registrar** — only `/public-registers/fsra` and a professional-services directory.
 - **DIFC public register** — rate-limited me repeatedly today (429); needs a slower retry.
 - **Lebanon** — no public register of banks or managers.
-- **AFFO** — publishes no member directory, by design.
+- **Family-office associations** — neither publishes a member directory, and they are two different
+  bodies in two different markets. ⚠ An earlier version of this line said only "AFFO", in a section
+  otherwise about the Gulf, which read as though we had checked a Gulf association. We had not.
+  - **AFFO** (`affo.fr`) is the *Association Française du Family Office* — **France**, est. 2001,
+    100+ member structures. `knowledge/market/landscape.md` had this right all along.
+  - **EFOA** (`emiratesfoa.com`, verified reachable 2026-09-23) is the *Emirates Family Office
+    Association* — the **UAE** body. Approval-only membership, no public directory, and an explicit
+    no-solicitation policy, which is a reason to engage rather than scrape.
 
 ## 3. The idea that actually answers "never miss"
 

@@ -72,9 +72,16 @@ These are ordered by what they unblock, not by how easy they are.
 | 18 | **286 candidates are not in the CRM**, now scored so the queue sorts by likelihood. Nobody has reviewed them. The eight scoring 60+ are the ones worth Andre's eyes first. | 🟠 |
 | 19 | **France's 19,464 GLEIF funds have not been swept** for fund→manager relationships — hours at a polite rate. Saudi, UAE and Lebanon are done (17 candidates, incl. SNB Capital and Jadwa). | ⚪ |
 
+## Commercial data sourcing (opened 2026-09-23)
+| # | Question | Status |
+|---|---|---|
+| 23 | **Should we buy a UAE-specific family-office data product** (e.g. allfamilyoffices.com's "171 UAE family offices / 501 contacts" download, or Praxis Rock's comparable UAE dataset) to close the UAE × family office cell, which has zero coverage and no register instrument by structural design? Neither vendor's price was found published — needs a direct pricing-page check, then Andre's approval before any purchase. See `plan/uae-sources-commercial.md`. | 🟠 |
+| 24 | **None of the global data platforms (Preqin, PitchBook, S&P Capital IQ, With Intelligence, Bureau van Dijk, Refinitiv/LSEG Workspace, Wealth-X) were found to justify their five-figure annual cost for our UAE segments** — confirmed today, not estimated. This closes the question rather than opening it further, recorded here so it is not re-investigated without new information. | ⚪ |
+
 ## Contact reachability (opened 2026-09-23)
 | # | Question | Status |
 |---|---|---|
 | 20 | **1,146 of 1,604 records publish no website we know of** (UAE 543 of 567, France 578 of 986), so the website sweep structurally cannot reach them. **Checked and ruled out as sources of a website:** the ADGM snapshot carries only 13, and DFSA, CMA, REGAFI and SIRENE carry none at all — SIRENE has no URL field of any kind. Finding one per firm would mean search, which is bot-protected and risks attributing the wrong firm's site. **No instrument exists for this today.** | 🔴 |
 | 21 | **Only 38 records have a real named human**; 887 "contacts" are switchboards. The website sweep collects published *routes*, not people. Named decision-makers need a different instrument — LinkedIn Sales Navigator is the obvious one and is blocked on a seat. | 🔴 |
 | 22 | **GDPR posture on published business addresses.** We collect role addresses (`contact@`) by preference, which are not personal data, and write a named individual's address only where a firm publishes no role address. Worth a decision from Andre on whether that line is where he wants it before any France outreach goes out. | 🟠 |
+| 25 | **`crm/SCHEMA.md` has no segment for a service provider.** DIFC fund *administrators* (33 records) are currently `fund_manager`, which is factually wrong — administration is NAV/registrar/reporting, not management. They are still plausible Gaia buyers, so dropping them is wrong too. Needs either a new segment (`fund_administrator`) or a decision to leave them mis-labelled knowingly. Not re-segmented on a connector's say-so. | 🟠 |

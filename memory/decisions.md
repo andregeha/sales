@@ -108,3 +108,22 @@ Andre's answers to the setup questions, and what follows from them.
 - **Generated data is not a Tailwind source.** `site/public/data/` is excluded in `tokens.css`.
   *Why:* it was being scanned, so the built CSS changed whenever a company or candidate did —
   breaking the determinism contract silently, in output nobody inspects.
+
+## UAE sourcing (2026-09-23)
+- **We will never build a DMCC business-directory connector**, however easy it becomes technically.
+  Verified against DMCC's own published terms, read directly: the directory is "published with the
+  express consent of our member companies" and it is "expressly forbidden to copy, download, store,
+  reproduce … or otherwise deal with the DMCC member directory for email or telephone marketing",
+  nor to "reproduce the directory for use on your own website, database or products". *Why:* that
+  bars both of the things this repo exists to do — ingesting firms into a CRM and contacting them.
+  This is a permissions decision, not an engineering one, so no amount of technical ease reopens it.
+- **Representative offices are candidates, never records.** A DIFC representative office cannot
+  conduct financial business; it is marketing and liaison, and the parent's platform decision is
+  made abroad. *Why:* 195 of them would add T. Rowe Price, Blackstone and Euroclear to our pipeline
+  and convert at approximately zero, which would make every coverage number we report less honest.
+- **A family office in the UAE is not findable from any register, and we stop looking for one.**
+  DIFC states family arrangements sit on "a private register … on an independent server"; the
+  Family Wealth Centre publishes no directory; the DFSA's Single Family Office category is wholly
+  withdrawn; EFOA is approval-only with a no-solicitation policy. *Why:* this cell is not a sourcing
+  failure to be fixed with a better scraper — it is a market that deliberately does not publish, and
+  the realistic routes are events, referrals and engagement.

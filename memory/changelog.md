@@ -597,3 +597,90 @@ state rather than the event. The three existing duplicates were collapsed to one
 
 An inflated trigger feed is worse than a quiet one: the entire value of a trigger is that it means
 something happened.
+
+## 2026-09-23 — UAE non-register sources investigated: exchanges, associations, commercial data, press
+
+Andre asked for every non-register UAE source for asset managers, fund managers, family offices and
+MFOs, paid options in scope, priced where possible. Full findings in
+`plan/uae-sources-commercial.md`.
+
+**Resolved a name-collision that could have caused a bad claim later:** "Arab Family Office
+Association" does not appear to exist. Our standing "AFFO publishes no member directory" fact is
+about the French AFFO (Association Française du Family Office). The real UAE body is the Emirates
+Family Office Association (EFOA) — separately confirmed, also with no public member directory,
+approval-only membership, explicit no-solicitation policy. `memory/facts.md` updated so the two are
+never merged again.
+
+**What's actually usable, free:** Nasdaq Dubai's member list (clean static HTML, custodians and
+settlement banks named) and the Global Private Capital Association's Middle East Council page (9
+named individuals at MENA private-capital firms). DFM and ADX broker directories exist but are
+JS-rendered and, for ADX, sit behind Cloudflare bot management that blocked our fetch tool twice
+while a plain `curl` got through — flagged as bot-sensitive, not defeated.
+
+**Priced what could be priced, honestly labelled by source:** Crunchbase Pro ($588/yr, published)
+and LinkedIn Sales Navigator ($1,080–$1,800/yr, published) are the only two providers with a real
+published price. Preqin, PitchBook, S&P Capital IQ, Bureau van Dijk, With Intelligence, Wealth-X,
+Refinitiv/LSEG Workspace, Campden Wealth, FINTRX — none publishes a price; every figure quoted for
+them is a third-party estimate, labelled as such.
+
+**Recommendation, if one purchase were made:** a boutique, UAE-specific family-office dataset (e.g.
+allfamilyoffices.com's "171 UAE family offices / 501 contacts") over any global platform — it targets
+the one CRM cell (UAE × family office) that has zero coverage by structural design, at a fraction of
+the cost of a global terminal built for a different job. Its own price was not found published;
+logged as open question #23.
+
+New open questions #23–24 in `memory/open-questions.md`.
+
+## 2026-09-23 — UAE source investigation, and the register we were under-reading
+
+Andre redirected: stop on triggers, grow the database, start with UAE, find every source "public or
+not". Three parallel investigations plus my own check of what we already hold.
+
+**The biggest win was a source we already read.** The DFSA publishes ~50 financial-service
+categories; our connector queried **four**. Five unqueried ones held 613 firms not in the CRM.
+Extended to nine services — measured result: **UAE 570 → 682 records, CRM 1,611 → 1,723**
+(fund managers +57, brokers +46, custodians +8).
+
+⚠ **Precision was chosen over volume, and the refusals matter more than the additions:**
+- **Representative offices (200 firms, 195 new)** — T. Rowe Price, Blackstone, Euroclear, Baring,
+  Partners Group. A representative office **cannot conduct financial business**; the platform
+  decision sits at the parent abroad. Magnificent in a pipeline report, ~zero conversion.
+- **Advising on Financial Products (810)** and **Arranging Deals (817)** — mixed with insurance and
+  credit advisers. Volume without precision; the *Agent PSP* mistake in better clothing.
+These belong in the candidate queue, not the CRM. Recorded as a decision, not a backlog item.
+
+**A mis-mapping found:** we label fund *administrators* `fund_manager`. Administration is
+NAV/registrar/reporting, not management — and the genuine service, *Managing a Collective Investment
+Fund* (213 firms), was never queried. Logged as open question #25 rather than silently re-segmenting
+33 live records on a connector's say-so.
+
+**Onshore UAE — verified live, and the agent's claim needed correcting.** SCA was renamed the
+**Capital Market Authority (UAE)** on 1 Jan 2026; `sca.gov.ae` redirects to `uaecma.gov.ae`. ⚠ That
+collides with the Saudi CMA we already track: every reference must now carry a country.
+The bulk endpoint the investigation reported did not reproduce for me — a flat payload returns
+`400 Invalid Integration Parameters`. Reading the register page's own JS gave the real shape:
+parameters nest inside `urlParameters`. **Confirmed: 322 onshore-licensed companies**, fields
+`code/name/status/website/year` — and `website` is published, which matters because 543 of 567 UAE
+records had none. ~113 new firms in our segments.
+⚠ An honest User-Agent alone gets HTTP 403; sending the page's own Referer/Origin returns 200. That
+is an origin check, not bot protection — we send the correct request context and do **not** spoof a
+browser identity.
+
+**Three dead ends, closed with evidence rather than left to be re-hunted:**
+- **DMCC** — verified in their own terms: forbidden to reproduce the directory "for use on your own
+  website, database or products" or to use it "for email or telephone marketing". That is exactly
+  what we would do with it, so it is a permanent decision, not a technical backlog item.
+- **DIFC company register** (Vercel challenge) and **ADGM Registration Authority** (Akamai 403) —
+  blocked, reported, not evaded.
+- **UAE family offices: no register exists anywhere.** DIFC states family arrangements sit on "a
+  private register … on an independent server"; the Family Wealth Centre publishes no directory; the
+  DFSA's Single Family Office category is wholly withdrawn; EFOA is approval-only with a
+  no-solicitation policy. Not a scraping problem — a market that deliberately does not publish.
+
+**A correction to my own work:** `plan/source-architecture.md` listed "AFFO publishes no member
+directory" in a Gulf context. **AFFO is French** — `knowledge/market/landscape.md` had this right
+all along and my plan doc conflated it with a Gulf body. The UAE association is **EFOA**
+(`emiratesfoa.com`, verified reachable). Fixed.
+
+**Still to read:** the fund registers, which name their managers and which we do not touch at all —
+ADGM 340 funds via a single POST (109 distinct managers among 279 active), DFSA 295 funds.

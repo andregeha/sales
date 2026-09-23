@@ -1,0 +1,66 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-23",
+      "link": "https://www.dfsa.ae/public-register/firms",
+      "summary": "Appeared as a new entry in the DFSA public register of authorised firms (DIFC). Licence F001356, Dealing in Investments as Agent (Authorised Firms). Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the DFSA): Tower 2, Level 12, Al Fattan Currency House, DIFC, PO Box 482030, Dubai, UAE",
+      "type": "research"
+    }
+  ],
+  "city": "Dubai",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "BGC Brokers L.P. — switchboard (register-published)",
+      "notes": "Telephone number as published by the DFSA on its own public register — not a guessed number and not an individual's line. Use it to reach a named person, not as the first touch itself.",
+      "phone": "971 4 507 1200",
+      "role": "unknown",
+      "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/bgc-brokers-lp",
+      "title": "General enquiries"
+    }
+  ],
+  "country": "UAE",
+  "created": "2026-09-23",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 30/60: adjacent segment broker (10) + priority market UAE (15) + regulated by DFSA (DIFC) (5). Trigger 0/25: no licence date published, so no datable trigger. Access 3/15: generic company contact published on the register (3). Scored automatically from the DFSA public register of authorised firms (DIFC) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "score": 33
+  },
+  "has_contact_route": true,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": true,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "BGC Brokers L.P.",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "DFSA (DIFC)",
+  "score": 33,
+  "segment": "broker",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "bgc-brokers-l-p",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-23",
+    "detail": "DFSA public register of authorised firms (DIFC) (https://www.dfsa.ae/public-register/firms); licence F001356. Snapshot: crm/registers/dfsa-difc/2026-09-23.json."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "dfsa-difc",
+    "register-sourced",
+    "new-licence",
+    "broker"
+  ],
+  "trigger": null,
+  "updated": "2026-09-23",
+  "website": null
+}

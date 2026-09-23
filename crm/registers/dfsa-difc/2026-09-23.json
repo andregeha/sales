@@ -2,26 +2,54 @@
   "register": "dfsa-difc",
   "regulator": "DFSA (DIFC)",
   "source_url": "https://www.dfsa.ae/public-register/firms",
-  "fetched_at": "2026-09-23T09:34:59+00:00",
+  "fetched_at": "2026-09-23T15:58:06+00:00",
   "run_date": "2026-09-23",
-  "count": 319,
+  "count": 434,
   "entries": [
     {
       "key": "F000003",
       "name": "Standard Chartered Bank",
       "country": "UAE",
-      "segment": "fund_manager",
+      "segment": "bank",
       "city": "Dubai",
       "website": null,
       "phone": null,
       "licence_date": null,
-      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "licence_type": "Accepting Deposits (Authorised Firms)",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": true,
-      "evidence": {
-        "third_party": "DFSA-authorised for Providing Fund Administration"
-      }
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F000013",
+      "name": "Barclays Bank PLC",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 362 1000",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F000039",
+      "name": "Tradition Dubai Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F000045",
@@ -39,6 +67,21 @@
       "evidence": {
         "third_party": "DFSA-authorised for Providing Fund Administration"
       }
+    },
+    {
+      "key": "F000049",
+      "name": "Kotak Mahindra (UK) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 384 8900",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F000064",
@@ -154,6 +197,36 @@
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
       }
+    },
+    {
+      "key": "F000186",
+      "name": "Kotak Mahindra Bank Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 354 4455",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Principal (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F000216",
+      "name": "Merrill Lynch International",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 425 8200",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F000223",
@@ -280,6 +353,21 @@
       "phone": null,
       "licence_date": null,
       "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F000327",
+      "name": "JPMorgan Chase Bank, N.A.",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 428 1700",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -501,6 +589,21 @@
       }
     },
     {
+      "key": "F000783",
+      "name": "GFI Securities Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 707 1800",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F000787",
       "name": "Union Bank of India",
       "country": "UAE",
@@ -646,6 +749,23 @@
       }
     },
     {
+      "key": "F001052",
+      "name": "Dubai Holding Investments (Management) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
       "key": "F001087",
       "name": "Punjab National Bank",
       "country": "UAE",
@@ -678,6 +798,23 @@
       }
     },
     {
+      "key": "F001120",
+      "name": "TVM Capital Healthcare Partners Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 332 8839",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
       "key": "F001127",
       "name": "Tabarak Investment Capital Limited",
       "country": "UAE",
@@ -693,6 +830,85 @@
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
       }
+    },
+    {
+      "key": "F001134",
+      "name": "GMG (Dubai) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 449 6900",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F001310",
+      "name": "Equitativa (Dubai) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 405 7348",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F001339",
+      "name": "Carlyle MENA Investment Advisors Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 427 5621",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F001356",
+      "name": "BGC Brokers L.P.",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 507 1200",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F001369",
+      "name": "Macquarie Bank Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 376 3000",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F001376",
@@ -793,6 +1009,21 @@
       "evidence": null
     },
     {
+      "key": "F001438",
+      "name": "Swissquote MEA Ltd.",
+      "country": "UAE",
+      "segment": "custodian",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 450 1777",
+      "licence_date": null,
+      "licence_type": "Providing Custody (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F001451",
       "name": "Al Ahly Financial (DIFC) Ltd",
       "country": "UAE",
@@ -825,6 +1056,21 @@
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
       }
+    },
+    {
+      "key": "F001541",
+      "name": "Attijariwafa Bank (Middle East) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 377 0300",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F001582",
@@ -910,6 +1156,21 @@
       }
     },
     {
+      "key": "F001780",
+      "name": "IG Limited",
+      "country": "UAE",
+      "segment": "custodian",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 559 2000",
+      "licence_date": null,
+      "licence_type": "Providing Custody (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F001786",
       "name": "Canara Bank (DIFC Branch)",
       "country": "UAE",
@@ -919,6 +1180,21 @@
       "phone": null,
       "licence_date": null,
       "licence_type": "Accepting Deposits (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F001796",
+      "name": "The Saudi National Bank",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Principal (Authorised Firms)",
       "legal_name": null,
       "multi_asset": null,
       "third_party": null,
@@ -974,6 +1250,21 @@
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
       }
+    },
+    {
+      "key": "F001884",
+      "name": "TP ICAP (Dubai) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 302 3900",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F001913",
@@ -1342,6 +1633,21 @@
       "evidence": null
     },
     {
+      "key": "F002623",
+      "name": "MUFG Securities EMEA plc",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 387 5152",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F002641",
       "name": "Index & Cie Limited",
       "country": "UAE",
@@ -1410,6 +1716,21 @@
       }
     },
     {
+      "key": "F002740",
+      "name": "CMC Markets Middle East Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 800 0357 04373",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F002897",
       "name": "ENTO Capital Management Limited",
       "country": "UAE",
@@ -1458,6 +1779,23 @@
       "third_party": true,
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F002963",
+      "name": "KAMCO Investment Company (DIFC) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 350 2900",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
       }
     },
     {
@@ -1529,6 +1867,21 @@
       }
     },
     {
+      "key": "F003233",
+      "name": "PhillipCapital (India) Private Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 332 5052",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F003251",
       "name": "KHK & Partners Limited",
       "country": "UAE",
@@ -1546,6 +1899,21 @@
       }
     },
     {
+      "key": "F003269",
+      "name": "Amana Financial Services (Dubai) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 276 9525",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Principal (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F003297",
       "name": "Amwal Capital Partners Limited",
       "country": "UAE",
@@ -1561,6 +1929,38 @@
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
       }
+    },
+    {
+      "key": "F003339",
+      "name": "Badwa Capital Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 264 1168",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F003347",
+      "name": "Marex MENA Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 279 8901",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F003379",
@@ -1632,18 +2032,31 @@
       "key": "F003452",
       "name": "HSBC Bank Middle East Limited",
       "country": "UAE",
-      "segment": "fund_manager",
+      "segment": "bank",
       "city": "Dubai",
       "website": null,
       "phone": null,
       "licence_date": null,
-      "licence_type": "Providing Fund Administration (Authorised Firms)",
+      "licence_type": "Accepting Deposits (Authorised Firms)",
       "legal_name": null,
       "multi_asset": null,
-      "third_party": true,
-      "evidence": {
-        "third_party": "DFSA-authorised for Providing Fund Administration"
-      }
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F003474",
+      "name": "PhillipCapital (DIFC) Private Limited",
+      "country": "UAE",
+      "segment": "custodian",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 332 5052",
+      "licence_date": null,
+      "licence_type": "Providing Custody (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F003478",
@@ -1661,6 +2074,21 @@
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
       }
+    },
+    {
+      "key": "F003484",
+      "name": "Trading Point MENA Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 526 8666",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Principal (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F003497",
@@ -1867,6 +2295,40 @@
       }
     },
     {
+      "key": "F003940",
+      "name": "BearBull Global Investments Group Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 272 2719",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F003970",
+      "name": "Axys Capital Ltd",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 323 0600",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
       "key": "F004068",
       "name": "Lighthouse Canton Capital (DIFC) Pte Limited",
       "country": "UAE",
@@ -1935,6 +2397,70 @@
       }
     },
     {
+      "key": "F004276",
+      "name": "GII Capital Ltd",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 564 8846",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F004288",
+      "name": "StoneX Financial (DIFC) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 249 2600",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F004290",
+      "name": "MEVP Capital Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 558 4534",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F004300",
+      "name": "Archr Brokers (DIFC) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 58 590 1403",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F004321",
       "name": "Trident Fund Services (DIFC) Limited",
       "country": "UAE",
@@ -1966,6 +2492,23 @@
       "third_party": true,
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004373",
+      "name": "Dubai Cultiv8 Investments Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 361 3000",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
       }
     },
     {
@@ -2003,6 +2546,21 @@
       }
     },
     {
+      "key": "F004543",
+      "name": "Seaport Global (DIFC) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 452 5868",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F004559",
       "name": "BLUEFIVE PRIVATE WEALTH Ltd",
       "country": "UAE",
@@ -2017,6 +2575,23 @@
       "third_party": true,
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F004600",
+      "name": "Maybank Islamic Berhad (Dubai-DIFC Branch)",
+      "country": "UAE",
+      "segment": "asset_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 240 6688",
+      "licence_date": null,
+      "licence_type": "Managing a Profit Sharing Investment Account (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Profit Sharing Investment Account"
       }
     },
     {
@@ -2190,6 +2765,21 @@
       }
     },
     {
+      "key": "F004885",
+      "name": "HF Markets (DIFC) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 318 4777",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Principal (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F004893",
       "name": "Halkin Investments Middle East Limited",
       "country": "UAE",
@@ -2241,6 +2831,23 @@
       }
     },
     {
+      "key": "F004953",
+      "name": "Altica Partners (DIFC) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 319 7890",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
       "key": "F004958",
       "name": "Three Comma Capital Advisors Limited",
       "country": "UAE",
@@ -2258,6 +2865,21 @@
       }
     },
     {
+      "key": "F004961",
+      "name": "Vontobel Financial Products Ltd.",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 703 8555",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Principal (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F004980",
       "name": "The Ultima World (DIFC) Limited",
       "country": "UAE",
@@ -2273,6 +2895,36 @@
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
       }
+    },
+    {
+      "key": "F005031",
+      "name": "JB Drax Honoré (DIFC) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 514 6927",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F005034",
+      "name": "Cantor Fitzgerald Europe (DIFC Branch)",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 401 9263",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F005081",
@@ -2306,6 +2958,23 @@
       "third_party": true,
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F005193",
+      "name": "GRIP (DIFC) Ltd.",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 564 2244",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
       }
     },
     {
@@ -2358,6 +3027,38 @@
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
       }
+    },
+    {
+      "key": "F005287",
+      "name": "Alarabi Investments Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 874 7314",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F005322",
+      "name": "Ypsilon Capital (DIFC) Ltd",
+      "country": "UAE",
+      "segment": "custodian",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Providing Custody (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F005331",
@@ -2647,6 +3348,21 @@
       }
     },
     {
+      "key": "F006316",
+      "name": "XTB MENA Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 376 8200",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Principal (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F006321",
       "name": "GSB Capital Ltd",
       "country": "UAE",
@@ -2747,6 +3463,21 @@
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
       }
+    },
+    {
+      "key": "F006487",
+      "name": "Vantage Capital Markets (Dubai) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F006496",
@@ -2851,6 +3582,40 @@
       }
     },
     {
+      "key": "F006787",
+      "name": "Tenami Capital Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F006795",
+      "name": "Tangier Service Capital Group Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 50 468 8905",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
       "key": "F006813",
       "name": "Imani Wealth Management Ltd",
       "country": "UAE",
@@ -2882,6 +3647,40 @@
       "third_party": true,
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F006839",
+      "name": "Aspire Capital Partners Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F006861",
+      "name": "SOTA CAPITAL Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
       }
     },
     {
@@ -3055,6 +3854,23 @@
       }
     },
     {
+      "key": "F007093",
+      "name": "Arcadia Capital Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
       "key": "F007207",
       "name": "WRise Wealth Management Middle East Limited",
       "country": "UAE",
@@ -3070,6 +3886,21 @@
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
       }
+    },
+    {
+      "key": "F007286",
+      "name": "STP Partners Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F007292",
@@ -3123,6 +3954,21 @@
       }
     },
     {
+      "key": "F007325",
+      "name": "Jefferies International Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F007328",
       "name": "Schonfeld Strategic Advisors (DIFC) Ltd",
       "country": "UAE",
@@ -3137,6 +3983,40 @@
       "third_party": true,
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007344",
+      "name": "Raiven Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F007347",
+      "name": "Aarna Fund Management Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
       }
     },
     {
@@ -3242,6 +4122,23 @@
       }
     },
     {
+      "key": "F007487",
+      "name": "Pontinova Invest Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
       "key": "F007488",
       "name": "AMP Partners (DIFC) Limited",
       "country": "UAE",
@@ -3273,6 +4170,40 @@
       "third_party": true,
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007525",
+      "name": "Liberte Capital Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F007532",
+      "name": "Morphosis Venture Capital Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
       }
     },
     {
@@ -3395,6 +4326,23 @@
       }
     },
     {
+      "key": "F007623",
+      "name": "Glencroft Capital Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 54 557 4445",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
       "key": "F007640",
       "name": "DTL Investment Limited",
       "country": "UAE",
@@ -3426,6 +4374,40 @@
       "third_party": true,
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F007747",
+      "name": "Seed VC Innovation Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 54 595 9807",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F007759",
+      "name": "Finneva Financial Services (DIFC) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 323 1861",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
       }
     },
     {
@@ -3480,6 +4462,21 @@
       }
     },
     {
+      "key": "F007833",
+      "name": "Makor Securities (DIFC) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F007834",
       "name": "Verition Management (DIFC) Limited",
       "country": "UAE",
@@ -3531,6 +4528,21 @@
       }
     },
     {
+      "key": "F007966",
+      "name": "Forte Capital Markets Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F007994",
       "name": "Farro Capital Ltd",
       "country": "UAE",
@@ -3546,6 +4558,72 @@
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
       }
+    },
+    {
+      "key": "F008004",
+      "name": "Successo Ventures Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F008012",
+      "name": "Universal Asset Management Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 50 569 2760",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F008013",
+      "name": "Truleum Venture Partners Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 52 344 1977",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F008033",
+      "name": "PT Bank Syariah Indonesia Tbk – Middle East (DIFC Branch)",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 568 9557",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Principal (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F008038",
@@ -3667,6 +4745,38 @@
       }
     },
     {
+      "key": "F008267",
+      "name": "El Dorado Capital Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F008529",
+      "name": "Ripple Middle East Limited",
+      "country": "UAE",
+      "segment": "custodian",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Providing Custody (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F008552",
       "name": "Aramid Capital Limited",
       "country": "UAE",
@@ -3769,6 +4879,21 @@
       }
     },
     {
+      "key": "F008867",
+      "name": "Olam Risk Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 330 8134",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Principal (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F008868",
       "name": "Noventa Capital Management Limited",
       "country": "UAE",
@@ -3803,6 +4928,40 @@
       }
     },
     {
+      "key": "F008946",
+      "name": "Tharaa Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F008952",
+      "name": "Zenith Investment Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
       "key": "F008968",
       "name": "Emperors Capital Services Ltd.",
       "country": "UAE",
@@ -3820,6 +4979,40 @@
       }
     },
     {
+      "key": "F008985",
+      "name": "Taranis Capital Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F008991",
+      "name": "Jervois Capital Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
       "key": "F009005",
       "name": "Amaltas Partners Limited",
       "country": "UAE",
@@ -3834,6 +5027,23 @@
       "third_party": true,
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F009016",
+      "name": "Anax Capital Asset Management Company Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 50 528 5542",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
       }
     },
     {
@@ -3886,6 +5096,21 @@
       "evidence": {
         "third_party": "DFSA-authorised for Providing Fund Administration"
       }
+    },
+    {
+      "key": "F009115",
+      "name": "Kepler Cheuvreux SA (DIFC Branch)",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 50 916 3013",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F009120",
@@ -3953,6 +5178,40 @@
       "third_party": true,
       "evidence": {
         "third_party": "DFSA-authorised for Providing Fund Administration"
+      }
+    },
+    {
+      "key": "F009252",
+      "name": "Three Pins Capital Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F009273",
+      "name": "Allfunds (Middle East) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 422 8230",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
       }
     },
     {
@@ -4058,6 +5317,23 @@
       }
     },
     {
+      "key": "F009439",
+      "name": "Elite Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
       "key": "F009440",
       "name": "National Bank of Kuwait S.A.K.P. DIFC Branch",
       "country": "UAE",
@@ -4071,6 +5347,38 @@
       "multi_asset": null,
       "third_party": null,
       "evidence": null
+    },
+    {
+      "key": "F009446",
+      "name": "B2B Prime Services MENA Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F009450",
+      "name": "Capital Bridge Investments Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
     },
     {
       "key": "F009493",
@@ -4158,6 +5466,36 @@
       }
     },
     {
+      "key": "F009621",
+      "name": "Axis Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Principal (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F009738",
+      "name": "Escrow Made Easy Limited",
+      "country": "UAE",
+      "segment": "custodian",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Providing Custody (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F009759",
       "name": "Motilal Oswal International Wealth Management Limited",
       "country": "UAE",
@@ -4190,6 +5528,51 @@
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
       }
+    },
+    {
+      "key": "F009827",
+      "name": "IFX Payments (DIFC) Limited",
+      "country": "UAE",
+      "segment": "custodian",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Providing Custody (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F009839",
+      "name": "Gallardo Securities (DIFC) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F009856",
+      "name": "Fortrade (DIFC) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F009926",
@@ -4311,6 +5694,38 @@
       }
     },
     {
+      "key": "F010213",
+      "name": "Arrow Energy Markets (DIFC) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F010267",
+      "name": "ICL Capital Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
       "key": "F010272",
       "name": "Dymon Asia Capital (DIFC) Limited",
       "country": "UAE",
@@ -4359,6 +5774,40 @@
       "third_party": true,
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010380",
+      "name": "Sandrock Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F010384",
+      "name": "Agna Capital Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
       }
     },
     {
@@ -4413,6 +5862,21 @@
       }
     },
     {
+      "key": "F010456",
+      "name": "Velocity Trade (DIFC) Ltd",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F010521",
       "name": "Binghatti Capital Limited",
       "country": "UAE",
@@ -4427,6 +5891,23 @@
       "third_party": true,
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010523",
+      "name": "Stellar AMC Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
       }
     },
     {
@@ -4498,6 +5979,23 @@
       }
     },
     {
+      "key": "F010619",
+      "name": "ChrysCapital Advisors Middle East Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
       "key": "F010624",
       "name": "Prospera Capital Limited",
       "country": "UAE",
@@ -4512,6 +6010,23 @@
       "third_party": true,
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F010689",
+      "name": "Sweid & Sweid Capital Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 52 616 1182",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
       }
     },
     {
@@ -4530,6 +6045,21 @@
       "evidence": {
         "third_party": "DFSA-authorised for Providing Fund Administration"
       }
+    },
+    {
+      "key": "F010757",
+      "name": "Magen Financial Ltd",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F010823",
@@ -4668,6 +6198,57 @@
       }
     },
     {
+      "key": "F011012",
+      "name": "Merrion Capital Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F011023",
+      "name": "Leventis AMC Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F011232",
+      "name": "Atgo Investment Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
       "key": "F011301",
       "name": "IQ EQ Fund Management (DIFC) Limited",
       "country": "UAE",
@@ -4683,6 +6264,38 @@
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
       }
+    },
+    {
+      "key": "F011318",
+      "name": "Birchwood Fund Management Ltd",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F011327",
+      "name": "Tourmaline Europe LLP (DIFC Branch)",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "44 203 142 8327",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F011359",
@@ -4736,6 +6349,23 @@
       }
     },
     {
+      "key": "F011430",
+      "name": "Prospera Wealth Management Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
       "key": "F011439",
       "name": "Lighthouse Asset Management Limited",
       "country": "UAE",
@@ -4768,6 +6398,53 @@
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
       }
+    },
+    {
+      "key": "F011653",
+      "name": "Amalgamated Metal Trading (MENA) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F011661",
+      "name": "Arzan Investment Management (DIFC) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "971 4 256 9704",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F011663",
+      "name": "EMFI Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F011667",
@@ -4855,6 +6532,21 @@
       }
     },
     {
+      "key": "F011885",
+      "name": "Flow Capital Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F011915",
       "name": "Sanatan Dharma Private Wealth Limited",
       "country": "UAE",
@@ -4923,6 +6615,55 @@
       }
     },
     {
+      "key": "F012031",
+      "name": "Chengwei Capital (DIFC) Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F012060",
+      "name": "Nisus Finance & Investment Management (DIFC) Ltd",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
+      "key": "F012218",
+      "name": "Sahm Financial Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
       "key": "F012244",
       "name": "Cognit Capital (DIFC) Limited",
       "country": "UAE",
@@ -4972,6 +6713,21 @@
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
       }
+    },
+    {
+      "key": "F012295",
+      "name": "Keystone Financial Solutions (DIFC) Limited",
+      "country": "UAE",
+      "segment": "custodian",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Providing Custody (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
     },
     {
       "key": "F012320",
@@ -5144,6 +6900,38 @@
       }
     },
     {
+      "key": "F012519",
+      "name": "Braemar Securities (DIFC) Limited",
+      "country": "UAE",
+      "segment": "broker",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Dealing in Investments as Agent (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "F012535",
+      "name": "SandFox Partners Ltd",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
       "key": "F012573",
       "name": "Trellen Capital Limited",
       "country": "UAE",
@@ -5229,6 +7017,23 @@
       }
     },
     {
+      "key": "F012711",
+      "name": "Astrava Capital Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
+      }
+    },
+    {
       "key": "F012713",
       "name": "Elephant Asset Management Limited",
       "country": "UAE",
@@ -5243,6 +7048,23 @@
       "third_party": true,
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012762",
+      "name": "Royal Investments Capital Limited",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
       }
     },
     {
@@ -5311,6 +7133,23 @@
       "third_party": true,
       "evidence": {
         "third_party": "DFSA-authorised for Managing Assets"
+      }
+    },
+    {
+      "key": "F012935",
+      "name": "Alya Residential Development Capital Management Ltd",
+      "country": "UAE",
+      "segment": "fund_manager",
+      "city": "Dubai",
+      "website": null,
+      "phone": "Date of Licence",
+      "licence_date": null,
+      "licence_type": "Managing a Collective Investment Fund (Authorised Firms)",
+      "legal_name": null,
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "DFSA-authorised for Managing a Collective Investment Fund"
       }
     },
     {

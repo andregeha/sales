@@ -1384,6 +1384,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Agna Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "agna-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Paris",
     "country": "France",
     "created": "2026-09-22",
@@ -1746,6 +1771,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Alarabi Investments Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "alarabi-investments-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -2003,6 +2053,31 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "https://www.alkhabeer.com/"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Allfunds (Middle East) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "allfunds-middle-east-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
   },
   {
     "city": "Puteaux",
@@ -2467,6 +2542,31 @@
     "website": "https://alti-global.com/"
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Altica Partners (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "altica-partners-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "LYON",
     "country": "France",
     "created": "2026-09-22",
@@ -2598,6 +2698,31 @@
     "website": "https://www.alven.co"
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Alya Residential Development Capital Management Ltd",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "alya-residential-development-capital-management-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Abu Dhabi",
     "country": "UAE",
     "created": "2026-09-22",
@@ -2623,6 +2748,31 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "https://amwealth.ae/"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Amalgamated Metal Trading (MENA) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "amalgamated-metal-trading-mena-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
   },
   {
     "city": "Dubai",
@@ -2698,6 +2848,31 @@
     "trigger": null,
     "updated": "2026-09-22",
     "website": "https://www.amanacapital.com"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Amana Financial Services (Dubai) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "amana-financial-services-dubai-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
   },
   {
     "city": "Abu Dhabi",
@@ -3242,6 +3417,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Anax Capital Asset Management Company Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "anax-capital-asset-management-company-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -3712,6 +3912,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Arcadia Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "arcadia-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Abu Dhabi",
     "country": "UAE",
     "created": "2026-09-22",
@@ -3784,6 +4009,31 @@
       "register-sourced",
       "new-licence",
       "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Archr Brokers (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "archr-brokers-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -4390,6 +4640,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Arrow Energy Markets (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "arrow-energy-markets-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Abu Dhabi",
     "country": "UAE",
     "created": "2026-09-22",
@@ -4437,6 +4712,31 @@
       "register-sourced",
       "new-licence",
       "asset-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Arzan Investment Management (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "arzan-investment-management-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -4621,6 +4921,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Aspire Capital Partners Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "aspire-capital-partners-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": null,
     "country": "France",
     "created": "2026-09-22",
@@ -4751,6 +5076,31 @@
   {
     "city": "Dubai",
     "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Astrava Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "astrava-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
     "has_email": false,
@@ -4797,6 +5147,31 @@
     "trigger": null,
     "updated": "2026-09-22",
     "website": "https://www.capza.co"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Atgo Investment Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "atgo-investment-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
   },
   {
     "city": "PARIS",
@@ -4996,6 +5371,31 @@
       "banque",
       "france",
       "acpr"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Attijariwafa Bank (Middle East) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "attijariwafa-bank-middle-east-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -5626,6 +6026,56 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Axis Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "axis-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Axys Capital Ltd",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "axys-capital-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Paris",
     "country": "France",
     "created": "2026-09-23",
@@ -5856,6 +6306,56 @@
     ],
     "trigger": null,
     "updated": "2026-09-22",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "B2B Prime Services MENA Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "b2b-prime-services-mena-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Badwa Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "badwa-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
     "website": null
   },
   {
@@ -7895,6 +8395,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Barclays Bank PLC",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "barclays-bank-plc",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Paris",
     "country": "France",
     "created": "2026-09-23",
@@ -8133,6 +8658,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "BearBull Global Investments Group Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "bearbull-global-investments-group-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Abu Dhabi",
     "country": "UAE",
     "created": "2026-09-22",
@@ -8266,6 +8816,31 @@
   {
     "city": "Dubai",
     "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "BGC Brokers L.P.",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "bgc-brokers-l-p",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
     "has_email": false,
@@ -8283,6 +8858,31 @@
       "register-sourced",
       "new-licence",
       "asset-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Birchwood Fund Management Ltd",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "birchwood-fund-management-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -9261,6 +9861,31 @@
       "register-sourced",
       "new-licence",
       "asset-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Braemar Securities (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "braemar-securities-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -11769,6 +12394,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Cantor Fitzgerald Europe (DIFC Branch)",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "cantor-fitzgerald-europe-difc-branch",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -11889,6 +12539,31 @@
       "register-sourced",
       "new-licence",
       "asset-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Capital Bridge Investments Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "capital-bridge-investments-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -12282,6 +12957,31 @@
     ],
     "trigger": null,
     "updated": "2026-09-22",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Carlyle MENA Investment Advisors Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "carlyle-mena-investment-advisors-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
     "website": null
   },
   {
@@ -12909,6 +13609,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Chengwei Capital (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "chengwei-capital-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": null,
     "country": "France",
     "created": "2026-09-22",
@@ -13003,6 +13728,31 @@
       "register-sourced",
       "new-licence",
       "asset-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "ChrysCapital Advisors Middle East Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "chryscapital-advisors-middle-east-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -13434,6 +14184,31 @@
       "register-sourced",
       "new-licence",
       "asset-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "CMC Markets Middle East Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "cmc-markets-middle-east-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -15621,6 +16396,56 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Dubai Cultiv8 Investments Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "dubai-cultiv8-investments-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Dubai Holding Investments (Management) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "dubai-holding-investments-management-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "LILLE",
     "country": "France",
     "created": "2026-09-22",
@@ -16003,6 +16828,31 @@
     "website": "https://www.ekkio.fr"
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "El Dorado Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "el-dorado-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -16153,6 +17003,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Elite Capital (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "elite-capital-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "BAYONNE",
     "country": "France",
     "created": "2026-09-22",
@@ -16299,6 +17174,31 @@
       "register-sourced",
       "new-licence",
       "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "EMFI Capital (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "emfi-capital-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -16865,6 +17765,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Equitativa (Dubai) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "equitativa-dubai-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Boulogne Billancourt",
     "country": "France",
     "created": "2026-09-23",
@@ -16964,6 +17889,31 @@
     ],
     "trigger": null,
     "updated": "2026-09-22",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Escrow Made Easy Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "custodian",
+    "slug": "escrow-made-easy-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "custodian"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
     "website": null
   },
   {
@@ -18623,6 +19573,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Finneva Financial Services (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "finneva-financial-services-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": null,
     "country": "France",
     "created": "2026-09-22",
@@ -19021,6 +19996,31 @@
     "website": "https://www.flornoyferri.com/"
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Flow Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "flow-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -19199,6 +20199,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Forte Capital Markets Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "forte-capital-markets-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Paris",
     "country": "France",
     "created": "2026-09-23",
@@ -19220,6 +20245,31 @@
       "broker",
       "france",
       "acpr"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Fortrade (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "fortrade-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -19961,6 +21011,31 @@
   {
     "city": "Dubai",
     "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Gallardo Securities (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "gallardo-securities-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
     "has_email": false,
@@ -20346,6 +21421,56 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "GFI Securities Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "gfi-securities-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "GII Capital Ltd",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "gii-capital-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -20412,6 +21537,31 @@
     "status": "nurture",
     "tags": [
       "amf-france",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Glencroft Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "glencroft-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
       "register-sourced",
       "new-licence",
       "fund-manager"
@@ -20498,6 +21648,31 @@
       "fsra"
     ],
     "trigger": "licence granted 2025-04-05, still early-stage but not brand new (12)",
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "GMG (Dubai) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "gmg-dubai-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
     "updated": "2026-09-23",
     "website": null
   },
@@ -20790,6 +21965,31 @@
       "broker",
       "france",
       "acpr"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "GRIP (DIFC) Ltd.",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "grip-difc-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -21445,6 +22645,31 @@
     "website": "https://www.herest.fr/"
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "HF Markets (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "hf-markets-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "LYON 2EME",
     "country": "France",
     "created": "2026-09-22",
@@ -21847,7 +23072,7 @@
     "segment": "fund_manager",
     "slug": "hsbc-bank-middle-east-limited",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "dfsa-difc",
       "register-sourced",
@@ -22280,6 +23505,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "ICL Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "icl-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Abu Dhabi",
     "country": "UAE",
     "created": "2026-09-22",
@@ -22356,6 +23606,56 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "https://www.idico.fr"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "IFX Payments (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "custodian",
+    "slug": "ifx-payments-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "custodian"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "IG Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "custodian",
+    "slug": "ig-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "custodian"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
   },
   {
     "city": "PARIS",
@@ -24070,6 +25370,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "JB Drax Honoré (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "jb-drax-honore-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Paris",
     "country": "France",
     "created": "2026-09-23",
@@ -24122,6 +25447,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Jefferies International Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "jefferies-international-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -24145,6 +25495,31 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "https://jeito.life"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Jervois Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "jervois-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
   },
   {
     "city": "Dubai",
@@ -24300,6 +25675,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "JPMorgan Chase Bank, N.A.",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "jpmorgan-chase-bank-n-a",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Paris",
     "country": "France",
     "created": "2026-09-23",
@@ -24422,6 +25822,31 @@
       "register-sourced",
       "new-licence",
       "asset-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "KAMCO Investment Company (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "kamco-investment-company-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -24658,6 +26083,31 @@
     "website": "https://www.kci-invest.com"
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Kepler Cheuvreux SA (DIFC Branch)",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "kepler-cheuvreux-sa-difc-branch",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": null,
     "country": "France",
     "created": "2026-09-22",
@@ -24783,6 +26233,31 @@
       "register-sourced",
       "new-licence",
       "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Keystone Financial Solutions (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "custodian",
+    "slug": "keystone-financial-solutions-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "custodian"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -25102,6 +26577,56 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "https://www.korelyacapital.com"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Kotak Mahindra Bank Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "kotak-mahindra-bank-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Kotak Mahindra (UK) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "kotak-mahindra-uk-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
   },
   {
     "city": "Abu Dhabi",
@@ -25922,6 +27447,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Leventis AMC Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "leventis-amc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": null,
     "country": "France",
     "created": "2026-09-22",
@@ -26049,6 +27599,31 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "https://libank.com.lb"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Liberte Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "liberte-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
   },
   {
     "city": "PARIS",
@@ -26682,6 +28257,31 @@
     "website": "https://www.machinacap.com"
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Macquarie Bank Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "macquarie-bank-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Paris",
     "country": "France",
     "created": "2026-09-23",
@@ -26830,6 +28430,31 @@
       "register-sourced",
       "new-licence",
       "asset-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Makor Securities (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "makor-securities-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -27065,6 +28690,31 @@
       "uae",
       "adgm",
       "fsra"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Marex MENA Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "marex-mena-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -27382,6 +29032,31 @@
       "acpr"
     ],
     "trigger": "licence granted 2025-04-28, still early-stage but not brand new (12)",
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Maybank Islamic Berhad (Dubai-DIFC Branch)",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "asset_manager",
+    "slug": "maybank-islamic-berhad-dubai-difc-branch",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "asset-manager"
+    ],
+    "trigger": null,
     "updated": "2026-09-23",
     "website": null
   },
@@ -27745,6 +29420,56 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Merrill Lynch International",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "merrill-lynch-international",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Merrion Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "merrion-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -27789,6 +29514,31 @@
       "register-sourced",
       "new-licence",
       "asset-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "MEVP Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "mevp-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -28676,6 +30426,31 @@
   {
     "city": "Dubai",
     "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Morphosis Venture Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "morphosis-venture-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
     "has_email": false,
@@ -28882,6 +30657,31 @@
     ],
     "trigger": null,
     "updated": "2026-09-22",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "MUFG Securities EMEA plc",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "mufg-securities-emea-plc",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
     "website": null
   },
   {
@@ -29778,6 +31578,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Nisus Finance & Investment Management (DIFC) Ltd",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "nisus-finance-investment-management-difc-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -30665,6 +32490,31 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "https://www.ofi-invest-re.com/sgp/"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Olam Risk Management (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "olam-risk-management-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
   },
   {
     "city": "BORDEAUX",
@@ -32212,6 +34062,56 @@
     "website": "https://www.phhgestion.com"
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "PhillipCapital (DIFC) Private Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "custodian",
+    "slug": "phillipcapital-difc-private-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "custodian"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "PhillipCapital (India) Private Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "phillipcapital-india-private-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -32812,6 +34712,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Pontinova Invest Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "pontinova-invest-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Paris",
     "country": "France",
     "created": "2026-09-23",
@@ -33326,6 +35251,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Prospera Wealth Management Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "prospera-wealth-management-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Abu Dhabi",
     "country": "UAE",
     "created": "2026-09-22",
@@ -33401,6 +35351,31 @@
     ],
     "trigger": null,
     "updated": "2026-09-22",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "PT Bank Syariah Indonesia Tbk – Middle East (DIFC Branch)",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "pt-bank-syariah-indonesia-tbk-middle-east-difc-branch",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
     "website": null
   },
   {
@@ -33973,6 +35948,31 @@
     "trigger": null,
     "updated": "2026-09-22",
     "website": "https://www.raisefrance.com"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Raiven Capital (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "raiven-capital-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
   },
   {
     "city": "Dubai",
@@ -34570,6 +36570,31 @@
     "website": "https://www.ringcp.com"
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Ripple Middle East Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "custodian",
+    "slug": "ripple-middle-east-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "custodian"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": null,
     "country": "France",
     "created": "2026-09-22",
@@ -34851,6 +36876,31 @@
       "banque",
       "france",
       "acpr"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Royal Investments Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "royal-investments-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -35272,6 +37322,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Sahm Financial Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "sahm-financial-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "LYON",
     "country": "France",
     "created": "2026-09-22",
@@ -35419,6 +37494,56 @@
       "register-sourced",
       "new-licence",
       "asset-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "SandFox Partners Ltd",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "sandfox-partners-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Sandrock Capital (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "sandrock-capital-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -35787,6 +37912,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Seaport Global (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "seaport-global-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Jeddah",
     "country": "Saudi Arabia",
     "created": "2026-09-22",
@@ -35812,6 +37962,31 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "https://sedcocapital.com/"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Seed VC Innovation Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "seed-vc-innovation-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
   },
   {
     "city": null,
@@ -37110,6 +39285,31 @@
   {
     "city": "Dubai",
     "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "SOTA CAPITAL Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "sota-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
     "has_email": false,
@@ -37503,7 +39703,7 @@
     "segment": "fund_manager",
     "slug": "standard-chartered-bank",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "dfsa-difc",
       "register-sourced",
@@ -37511,7 +39711,7 @@
       "fund-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
+    "updated": "2026-09-23",
     "website": null
   },
   {
@@ -37671,6 +39871,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Stellar AMC Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "stellar-amc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Toulouse",
     "country": "France",
     "created": "2026-09-23",
@@ -37778,6 +40003,56 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "StoneX Financial (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "stonex-financial-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "STP Partners Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "stp-partners-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Abu Dhabi",
     "country": "UAE",
     "created": "2026-09-22",
@@ -37803,6 +40078,31 @@
     ],
     "trigger": null,
     "updated": "2026-09-22",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Successo Ventures Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "successo-ventures-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
     "website": null
   },
   {
@@ -37959,6 +40259,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Sweid & Sweid Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "sweid-sweid-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": null,
     "country": "France",
     "created": "2026-09-22",
@@ -38059,6 +40384,31 @@
     ],
     "trigger": null,
     "updated": "2026-09-22",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Swissquote MEA Ltd.",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "custodian",
+    "slug": "swissquote-mea-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "custodian"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
     "website": null
   },
   {
@@ -38368,6 +40718,56 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Tangier Service Capital Group Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "tangier-service-capital-group-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Taranis Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "taranis-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Abu Dhabi",
     "country": "UAE",
     "created": "2026-09-22",
@@ -38571,6 +40971,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Tenami Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "tenami-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "MARSEILLE",
     "country": "France",
     "created": "2026-09-22",
@@ -38587,6 +41012,31 @@
     "status": "nurture",
     "tags": [
       "amf-france",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Tharaa Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "tharaa-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
       "register-sourced",
       "new-licence",
       "fund-manager"
@@ -38761,6 +41211,31 @@
   {
     "city": "Dubai",
     "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "The Saudi National Bank",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "the-saudi-national-bank",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
     "has_email": false,
@@ -38906,6 +41381,31 @@
       "register-sourced",
       "new-licence",
       "asset-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Three Pins Capital Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "three-pins-capital-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
     ],
     "trigger": null,
     "updated": "2026-09-23",
@@ -39090,6 +41590,56 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Tourmaline Europe LLP (DIFC Branch)",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "tourmaline-europe-llp-difc-branch",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "TP ICAP (Dubai) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "tp-icap-dubai-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Paris",
     "country": "France",
     "created": "2026-09-23",
@@ -39143,6 +41693,31 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "https://tplfunds.com"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Trading Point MENA Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "trading-point-mena-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
   },
   {
     "city": "Abu Dhabi",
@@ -39403,6 +41978,31 @@
     "website": "https://www.truffle.com"
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Truleum Venture Partners Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "truleum-venture-partners-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Paris",
     "country": "France",
     "created": "2026-09-23",
@@ -39587,6 +42187,31 @@
       "magellim-group"
     ],
     "trigger": "a new President (Guillaume Hilaire) took over on 2025-02-24, a genuine and fairly recent senior leadership change, though President is not explicitly one of the COO/CIO/Head of Ops/Compliance titles the table specifies, so scored below the full 12-point band",
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "TVM Capital Healthcare Partners Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "tvm-capital-healthcare-partners-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
     "updated": "2026-09-23",
     "website": null
   },
@@ -40027,6 +42652,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Universal Asset Management Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "universal-asset-management-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -40286,6 +42936,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Vantage Capital Markets (Dubai) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "vantage-capital-markets-dubai-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Abu Dhabi",
     "country": "UAE",
     "created": "2026-09-22",
@@ -40513,6 +43188,31 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "http://www.vega-is.com"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Velocity Trade (DIFC) Ltd",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "velocity-trade-difc-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
   },
   {
     "city": null,
@@ -40905,6 +43605,31 @@
     ],
     "trigger": "new licence granted 2026-01-28 (237 days ago), no incumbent to displace (20)",
     "updated": "2026-09-22",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Vontobel Financial Products Ltd.",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "vontobel-financial-products-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
     "website": null
   },
   {
@@ -41633,6 +44358,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "XTB MENA Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "xtb-mena-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": "Paris",
     "country": "France",
     "created": "2026-09-23",
@@ -41741,6 +44491,31 @@
     "website": "https://www.yottacapital.fr"
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Ypsilon Capital (DIFC) Ltd",
+    "regulator": "DFSA (DIFC)",
+    "score": 33,
+    "segment": "custodian",
+    "slug": "ypsilon-capital-difc-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "custodian"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
     "city": null,
     "country": "France",
     "created": "2026-09-22",
@@ -41813,6 +44588,31 @@
       "banque",
       "france",
       "acpr"
+    ],
+    "trigger": null,
+    "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Zenith Investment Management (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": 53,
+    "segment": "fund_manager",
+    "slug": "zenith-investment-management-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "dfsa-difc",
+      "register-sourced",
+      "new-licence",
+      "fund-manager"
     ],
     "trigger": null,
     "updated": "2026-09-23",

@@ -4,12 +4,21 @@
 The DIFC is the densest concentration of our buyers in the Gulf, and the DFSA's public register is
 searchable by **financial service**, which maps almost directly onto our segments:
 
-| DFSA financial service | Firms (2026-09-22) | Our segment |
+| DFSA financial service | Firms (2026-09-23) | Our segment |
 |---|---|---|
 | Managing Assets | 396 | `asset_manager` |
+| Managing a Collective Investment Fund | 213 | `fund_manager` |
+| Dealing in Investments as Agent | 190 | `broker` |
+| Dealing in Investments as Principal | 129 | `broker` |
+| Providing Custody | 54 | `custodian` |
 | Single Family Office | 41 | `family_office` |
 | Accepting Deposits | 38 | `bank` |
-| Providing Fund Administration | 33 | `fund_manager` |
+| Providing Fund Administration | 33 | `fund_manager` ⚠ see the note on `SERVICES` |
+| Managing a Profit Sharing Investment Account | 7 | `asset_manager` |
+
+⚠ The register publishes ~50 service categories. We query the nine above **on purpose** — see the
+note on `SERVICES` for the large ones we deliberately refuse (representative offices, advising,
+arranging), and why more rows there would not mean more leads.
 
 ⚠ **"Single Family Office" is the important one.** Family offices are invisible by design almost
 everywhere — DIFC exempts single-family offices above a $50m net-asset threshold from much of the
@@ -51,11 +60,44 @@ REGISTER_PAGE = f"{BASE}/public-register/firms"
 TOTAL_URL = f"{BASE}/public-register/firms/getTotal"
 
 #: DFSA financial service → our segment. Only services that map to a segment we sell to.
+#:
+#: ⚠ The register publishes ~50 service categories and this asked it **four** questions until
+#: 2026-09-23. Measured that day: five unqueried services held **613 firms not in our CRM**. The
+#: ones added below are the high-precision half; the rest are deliberately left out and the reasons
+#: are worth keeping, because "more rows" is not the same as "more leads":
+#:
+#: - **Operating a Representative Office** (200 firms, 195 new) — T. Rowe Price, Blackstone,
+#:   Euroclear, Baring, Partners Group. A representative office **cannot conduct financial
+#:   business**; it is a marketing and liaison presence, and the platform decision sits at the
+#:   parent in London or New York. Magnificent in a pipeline report, near-zero conversion.
+#: - **Advising on Financial Products** (810) and **Arranging Deals in Investments** (817) — mixed
+#:   with insurance advisers, credit advisers and corporate-finance boutiques. High volume, low
+#:   precision; creating records from them would repeat the 22,280 *Agent PSP* mistake.
+#: - **Arranging Custody** (397) — arranging, not providing. A referral relationship, not a system.
+#:
+#: Those belong in the candidate queue for a human, not in the CRM.
 SERVICES = {
     "Managing Assets": "asset_manager",
     "Single Family Office": "family_office",
-    "Providing Fund Administration": "fund_manager",
     "Accepting Deposits": "bank",
+
+    # ⚠ Fund ADMINISTRATION is third-party operational servicing — NAV, registrar, reporting — and
+    # is NOT fund management. Mapping it to `fund_manager` was simply wrong, and the genuine
+    # fund-manager service (below) was never queried at all. Administrators are still plausible Gaia
+    # buyers, so they are kept rather than dropped; `crm/SCHEMA.md` has no segment that fits a
+    # service provider, which is recorded as open question #25 rather than papered over by
+    # re-segmenting 33 live records on a connector's say-so.
+    "Providing Fund Administration": "fund_manager",
+
+    # The real DIFC fund managers: 213 firms, 100 of them new to us when measured.
+    "Managing a Collective Investment Fund": "fund_manager",
+    # Islamic discretionary management. Small (7) but squarely ours.
+    "Managing a Profit Sharing Investment Account": "asset_manager",
+    # Custody proper — providing it, not arranging it.
+    "Providing Custody": "custodian",
+    # Dealers. An adjacent segment we already hold.
+    "Dealing in Investments as Agent": "broker",
+    "Dealing in Investments as Principal": "broker",
 }
 
 PAGE_SIZE = 10

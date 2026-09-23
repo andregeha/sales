@@ -11,6 +11,12 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 549300F99IL9YJDWH369 found for this firm (matched on name + country). Filled legal_name 'HSBC BANK MIDDLE EAST LIMITED'. Legal form per GLEIF: LIMITED. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/549300F99IL9YJDWH369",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": "https://www.dfsa.ae/public-register/firms",
+      "summary": "Register change detected by the automated DFSA public register of authorised firms (DIFC) diff. authorised activities changed: 'Providing Fund Administration (Authorised Firms)' -> 'Accepting Deposits (Authorised Firms)'; segment reclassified: 'fund_manager' -> 'bank'. Every value here is as the regulator publishes it. ⚠ Status raised from nurture to qualified on the strength of this change — an authorisation or segment change means the firm's business has moved, which is a reason to write. NOT yet researched; confirm before any outreach.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
@@ -59,7 +65,7 @@
     "detail": "DFSA public register of authorised firms (DIFC) (https://www.dfsa.ae/public-register/firms); licence F003452. Snapshot: crm/registers/dfsa-difc/2026-09-22.json."
   },
   "stage": "identified",
-  "status": "nurture",
+  "status": "qualified",
   "tags": [
     "dfsa-difc",
     "register-sourced",

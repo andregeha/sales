@@ -212,9 +212,16 @@
   — do not average them, and do not quote a number we have not verified.
 - **Family offices are invisible by design.** DIFC exempts single-family offices above a $50m
   net-asset threshold, ADGM above $10m — so only **multi-family offices** appear on registers.
-  No Gulf family-office association with a public directory was found.
   **AFFO** (France, est. 2001, 100+ member structures, publishes an annual barometer with EY) is the
-  one genuinely usable family-office association across all four markets.
+  one genuinely usable family-office association across all four markets — it publishes no member
+  directory, but engages via events/sponsorship.
+  ⚠ **Name-collision warning, resolved 2026-09-23**: "AFFO" here is the **French** Association
+  Française du Family Office (`affo.fr`) — unrelated to any "Arab Family Office Association", which
+  does not appear to exist under that name. The confirmed **UAE** equivalent is the **Emirates
+  Family Office Association (EFOA)**, launched at ADGM, approval-only membership, no fees, explicit
+  no-solicitation policy, and — like AFFO — **no public member directory**
+  (`plan/uae-sources-commercial.md`, checked 2026-09-23, high). Do not conflate the two AFFO/EFOA
+  bodies again.
 - **Where the density is** — the researched recommendation: work **Saudi CMIs hardest**, then
   **Lebanese banks** (with hard survivor/resolution qualification), then **UAE DIFC family offices
   and MFOs**, then **France** as a steady lower-intensity lane. Deprioritise Lebanese BDL "financial

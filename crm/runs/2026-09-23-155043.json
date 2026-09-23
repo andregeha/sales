@@ -1,0 +1,23 @@
+{
+  "commit": "25bb0130730f77c1f08666b735dff396b200cd22",
+  "connectors": [
+    {
+      "backfill": true,
+      "baseline": false,
+      "changes": 4,
+      "created": 112,
+      "error": null,
+      "new_on_register": 115,
+      "ok": true,
+      "partial": false,
+      "register": "dfsa-difc",
+      "skipped": 322,
+      "source": "DFSA public register of authorised firms (DIFC)",
+      "total": 434
+    }
+  ],
+  "duration_s": 442.933,
+  "finished_at": "2026-09-23T15:58:06+00:00",
+  "ok": true,
+  "started_at": "2026-09-23T15:50:43+00:00"
+}
