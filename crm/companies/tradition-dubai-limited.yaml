@@ -1,6 +1,6 @@
 slug: tradition-dubai-limited
 name: Tradition (Dubai) Limited
-legal_name: null
+legal_name: Tradition (Dubai) Limited
 country: UAE
 city: Abu Dhabi
 segment: broker
@@ -29,7 +29,7 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts: []
 fit:
   score: 42
@@ -48,4 +48,12 @@ activities:
     Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Maryah Island, Unit 9, Floor 7,
     Al Sila Tower, Abu Dhabi Global Market Square'
   link: https://www.adgm.com/public-registers/fsra
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 5493003UX5NBQP441N14 found for this firm (matched on name + country).
+    Filled legal_name ''Tradition (Dubai) Limited''. Legal form per GLEIF: 70EO. crm/SCHEMA.md has no
+    `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on
+    normalized name + country only, not a second identifier — treat as provisional and challenge if it
+    looks wrong. Record: https://search.gleif.org/#/record/5493003UX5NBQP441N14'
+  link: null
 next_action: null

@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+/* ⚠ `public/data/` is GENERATED — every company, candidate and RFP we hold, as JSON. Tailwind v4
+   auto-discovers sources from the project root, so it was scanning that data and the built CSS
+   changed whenever the data did. Measured: editing one candidate's `why` text changed the CSS
+   hash. That silently breaks the determinism contract in plan/website.md §7 — the same class of
+   bug as letting the checker copy `dist` under `site/`. Data is never a source of class names. */
+@source not "../../public/data";
+
 /*
   The charte graphique. Every colour, size and shape in this product is defined HERE and nowhere
   else. No component may use a raw hex, an rgb(), or a Tailwind palette name like `bg-blue-500`.

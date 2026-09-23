@@ -1,6 +1,6 @@
 slug: caisse-regionale-de-credit-agricole-mutuel-de-la-martinique-et-de-la-guyane
 name: Caisse régionale de crédit agricole mutuel de la Martinique et de la Guyane
-legal_name: null
+legal_name: CAISSE REGIONALE DE CREDIT AGRICOLE MUTUEL DE LA MARTINIQUE ET DE LA GUYANE
 country: France
 city: Le Lamentin
 segment: bank
@@ -48,4 +48,12 @@ activities:
     Detected by the automated register diff; every field here is as the register publishes it and nothing
     has been inferred. Not yet researched or enriched.
   link: https://www.regafi.fr/
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 969500SAHI7IJX8TRZ82 found for this firm (matched on name + country).
+    Filled legal_name ''CAISSE REGIONALE DE CREDIT AGRICOLE MUTUEL DE LA MARTINIQUE ET DE LA GUYANE''.
+    Legal form per GLEIF: S0X8. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this
+    note, not a structured field. Match was made on normalized name + country only, not a second identifier
+    — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500SAHI7IJX8TRZ82'
+  link: null
 next_action: null

@@ -1,6 +1,6 @@
 slug: j-p-morgan-middle-east-limited
 name: J.P. MORGAN MIDDLE EAST LIMITED
-legal_name: null
+legal_name: J.P. Morgan Middle East Limited
 country: UAE
 city: Abu Dhabi
 segment: bank
@@ -29,7 +29,7 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: J.P. MORGAN MIDDLE EAST LIMITED — contact published on the FSRA register
   title: General enquiries
@@ -59,4 +59,12 @@ activities:
     address (per the FSRA): United Arab Emirates, Abu Dhabi, Maryah Island, Unit No. 2, Floor 10, Al Sarab
     Tower, Abu Dhabi Global Market Square'
   link: https://www.adgm.com/public-registers/fsra
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 9845007C9BCHPS759A22 found for this firm (matched on name + country).
+    Filled legal_name ''J.P. Morgan Middle East Limited''. Legal form per GLEIF: OSE2. Direct parent per
+    GLEIF: JPMORGAN CHASE & CO.. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this
+    note, not a structured field. Match was made on normalized name + country only, not a second identifier
+    — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/9845007C9BCHPS759A22'
+  link: null
 next_action: null

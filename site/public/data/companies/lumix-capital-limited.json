@@ -5,6 +5,12 @@
       "link": "https://www.dfsa.ae/public-register/firms",
       "summary": "Appeared as a new entry in the DFSA public register of authorised firms (DIFC). Licence F005980, Managing Assets (Authorised Firms). Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the DFSA): Level 1, Fund Centre, Office GV-00-03-01-BC-02, GD-PB-04-01-OF-01-0 Gate District, Precinct Building 04, DIFC, PO Box 127674, Dubai, UAE",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "GLEIF enrichment: LEI 2549005RV9WPJSMJJ235 found for this firm (matched on name + country). Filled legal_name 'LUMIX Capital Limited'. Legal form per GLEIF: 70EO. Direct parent per GLEIF: RHUMBLINE SOLUTIONS - FZCO. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/2549005RV9WPJSMJJ235",
+      "type": "research"
     }
   ],
   "city": "Dubai",
@@ -33,7 +39,7 @@
   "has_email": false,
   "has_linkedin": false,
   "has_phone": true,
-  "legal_name": null,
+  "legal_name": "LUMIX Capital Limited",
   "linkedin": null,
   "name": "LUMIX Capital Limited",
   "next_action": null,
@@ -61,6 +67,6 @@
     "asset-manager"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": null
 }

@@ -1,6 +1,6 @@
 slug: casden-banque-populaire
 name: CASDEN Banque Populaire
-legal_name: null
+legal_name: CASDEN BANQUE POPULAIRE
 country: France
 city: Champs Sur Marne
 segment: bank
@@ -48,4 +48,12 @@ activities:
     Detected by the automated register diff; every field here is as the register publishes it and nothing
     has been inferred. Not yet researched or enriched.
   link: https://www.regafi.fr/
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 969500W8LGZQUL2KL242 found for this firm (matched on name + country).
+    Filled legal_name ''CASDEN BANQUE POPULAIRE''. Legal form per GLEIF: OSLZ. Direct parent per GLEIF:
+    BPCE. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured
+    field. Match was made on normalized name + country only, not a second identifier — treat as provisional
+    and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500W8LGZQUL2KL242'
+  link: null
 next_action: null

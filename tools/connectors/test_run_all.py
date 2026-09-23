@@ -112,10 +112,16 @@ class TestMainWritesARunRecordEndToEnd(ConnectorHarness):
         self._orig_runs_dir = run_all.RUNS_DIR
         run_all.RUNS_DIR = self.runs_dir
         self._orig_load = run_all.load_connectors
+        # ⚠ The tests must never touch the network. `main()` also runs the auxiliary sources (the
+        # multilateral RFP radar), which dial four real organisations — so they are switched off
+        # here explicitly. A test that needs to exercise them injects its own fake module name.
+        self._orig_aux = run_all.AUX_MODULES
+        run_all.AUX_MODULES = []
 
     def tearDown(self):
         run_all.RUNS_DIR = self._orig_runs_dir
         run_all.load_connectors = self._orig_load
+        run_all.AUX_MODULES = self._orig_aux
         super().tearDown()
 
     def _stub_loader_ok(self, only=None):
@@ -153,6 +159,44 @@ class TestMainWritesARunRecordEndToEnd(ConnectorHarness):
         rc = run_all.main(["--dry-run", "--json"])
         self.assertEqual(rc, 0)
         self.assertEqual(self.runs(), [])
+
+
+class AuxSourceReporting(TestMainWritesARunRecordEndToEnd):
+    """An auxiliary source that cannot be read must fail the run and appear in the record by name.
+
+    This is the EBRD case, and it is the whole reason auxiliary sources report here at all: a dead
+    RFP source that only prints to a terminal is a source nobody knows is dead.
+    """
+
+    def _fake_aux(self, mod_name, *, dry_run):
+        return [
+            {"register": "x:World Bank", "source": "World Bank", "ok": True, "error": None,
+             "total": 69, "new_on_register": 69, "created": 0, "skipped": 69,
+             "changes": 0, "baseline": None, "backfill": None, "partial": None},
+            {"register": "x:EBRD", "source": "EBRD procurement", "ok": False,
+             "error": "stateful portal, no query contract", "total": None, "new_on_register": 0,
+             "created": 0, "skipped": 0, "changes": 0,
+             "baseline": None, "backfill": None, "partial": None},
+        ]
+
+    def test_dead_aux_source_fails_the_run_and_is_named(self):
+        run_all.load_connectors = self._stub_loader_ok
+        run_all.AUX_MODULES = ["fake"]
+        orig = run_all._aux_summaries
+        run_all._aux_summaries = self._fake_aux
+        try:
+            rc = run_all.main(["--json"])
+        finally:
+            run_all._aux_summaries = orig
+        self.assertEqual(rc, 1, "a source that could not be read must fail the run")
+        record = json.loads(self.runs()[0].read_text(encoding="utf-8"))
+        self.assertFalse(record["ok"])
+        dead = [c for c in record["connectors"] if not c["ok"]]
+        self.assertEqual([d["source"] for d in dead], ["EBRD procurement"])
+        # A readable source that correctly found nothing is NOT a failure.
+        wb = [c for c in record["connectors"] if c["source"] == "World Bank"][0]
+        self.assertTrue(wb["ok"])
+        self.assertEqual(wb["created"], 0)
 
 
 if __name__ == "__main__":

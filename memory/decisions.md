@@ -85,3 +85,26 @@ Andre's answers to the setup questions, and what follows from them.
   *Why:* they are correct, already battle-tested, and consistency across the two repos matters.
 - **Deck production stays in `ofs-marketing`.** Sales specifies and reviews; marketing builds.
   *Why:* the brand kit, build scripts and QA gates live there and should not be forked.
+
+## Sourcing and data integrity (2026-09-23)
+- **Noisy sources propose candidates; they never create records.** SIRENE, GLEIF and anything keyed
+  on self-declared industry codes land in `crm/candidates/`, not the CRM. *Why:* NAF `64.20Z` is
+  every holding company in France. Auto-creating from it would refill the CRM with noise and destroy
+  the only property that makes a record here worth trusting — that it means something.
+- **A candidate's likelihood score is deliberately NOT the ICP score.** Separate vocabulary in the
+  UI ("likely ours" vs "work now"), separate model, separate docstring warning. *Why:* they answer
+  different questions — one ranks a researched firm and says what to do; the other ranks an
+  unreviewed guess. Sharing a badge would let a guess wear a researched record's authority.
+- **We filter with our own classifier, not the source's keyword search.** Measured on 2026-09-23:
+  UNGM's own `Description` filter returned zero notices across all four markets while the unfiltered
+  country lists held 63. *Why:* a source-side filter is a black box — when it matches nothing we
+  cannot tell "nothing is there" from "our words were wrong", and that failure looks exactly like
+  good news. Our classifier prints a reason for every rejection.
+- **Every source reports its health into the same run record**, registers and RFP sources alike
+  (`AUX_MODULES` in `run_all.py`). *Why:* a dead source visible only in someone's terminal is a dead
+  source nobody knows about. EBRD's failure now renders on the website beside the registers.
+- **A source never once read successfully reports as `failing`, not `stale`.** *Why:* "stale" invites
+  waiting for a recovery that cannot happen; "failing" invites fixing.
+- **Generated data is not a Tailwind source.** `site/public/data/` is excluded in `tokens.css`.
+  *Why:* it was being scanned, so the built CSS changed whenever a company or candidate did —
+  breaking the determinism contract silently, in output nobody inspects.

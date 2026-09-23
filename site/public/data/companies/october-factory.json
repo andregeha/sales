@@ -5,9 +5,15 @@
       "link": "https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf",
       "summary": "Appeared as a new entry in the AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr). Licence GP-16000030, authorised 2016-11-17, 2 - Gestion de FIA; 2a - Gestionnaire au-delà des seuils de la Directive AIFM ou ayant opté pour l'application de la Directive AIFM; 3 - Conseil en investissement. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "GLEIF enrichment: LEI 969500CUHYQ0L5MGXQ10 found for this firm (matched on name + country). Filled legal_name 'OCTOBER FACTORY', city 'PARIS'. Legal form per GLEIF: 6CHY. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500CUHYQ0L5MGXQ10",
+      "type": "research"
     }
   ],
-  "city": null,
+  "city": "PARIS",
   "contacts": [],
   "country": "France",
   "created": "2026-09-22",
@@ -21,7 +27,7 @@
   "has_email": false,
   "has_linkedin": false,
   "has_phone": false,
-  "legal_name": null,
+  "legal_name": "OCTOBER FACTORY",
   "linkedin": null,
   "name": "OCTOBER FACTORY",
   "next_action": null,
@@ -49,6 +55,6 @@
     "fund-manager"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": null
 }

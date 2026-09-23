@@ -1,6 +1,6 @@
 slug: hope-asset-management
 name: Hope Asset Management
-legal_name: null
+legal_name: HOPE ASSET MANAGEMENT
 country: France
 city: Saint-Cyr-au-Mont-d'Or
 segment: fund_manager
@@ -35,7 +35,7 @@ tags:
 - multi-asset
 - private-markets
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: Francois Berthou
   title: Co-founder
@@ -85,6 +85,14 @@ activities:
     the Hope4Seasons multi-asset fund launch. No email on file; route is Berthou''s LinkedIn profile,
     with Yannick Gaudel''s LinkedIn noted as a second option. Full draft: outreach/2026-09-22-top-leads.md.
     Awaiting Andre''s review before send.'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 969500B0LWKC373MWB88 found for this firm (matched on name + country).
+    Filled legal_name ''HOPE ASSET MANAGEMENT''. Legal form per GLEIF: 6CHY. crm/SCHEMA.md has no `lei`
+    field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized
+    name + country only, not a second identifier — treat as provisional and challenge if it looks wrong.
+    Record: https://search.gleif.org/#/record/969500B0LWKC373MWB88'
   link: null
 next_action:
   who: Andre Geha

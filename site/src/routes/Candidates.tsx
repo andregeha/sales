@@ -12,7 +12,7 @@
 import { ExternalLink, Inbox } from "lucide-react";
 import { useMemo, useState } from "react";
 import { type ColumnLayout, DataGrid, type GridColumn } from "../design/DataGrid";
-import { MarketTag, SegmentTag } from "../design/domain";
+import { CandidateScore, MarketTag, SegmentTag } from "../design/domain";
 import {
   Button,
   Callout,
@@ -58,6 +58,7 @@ export function Candidates() {
   const narrow = useIsNarrow();
   const [unknownOnly, setUnknownOnly] = useState(true);
   const [source, setSource] = useState<string | null>(null);
+  const [minScore, setMinScore] = useState(0);
 
   const rows = state.status === "ok" ? state.data : [];
 
@@ -69,9 +70,10 @@ export function Candidates() {
       rows.filter((r) => {
         if (unknownOnly && r.matched_slug) return false;
         if (source && r.source !== source) return false;
+        if (r.score < minScore) return false;
         return true;
       }),
-    [rows, unknownOnly, source],
+    [rows, unknownOnly, source, minScore],
   );
 
   const columns = useMemo<GridColumn<CandidateRow>[]>(
@@ -83,7 +85,10 @@ export function Candidates() {
               header: "Candidate",
               cell: (ctx) => (
                 <div className="min-w-0 py-1">
-                  <div className="truncate font-medium">{ctx.row.original.name}</div>
+                  <div className="flex items-center gap-2">
+                    <span className="truncate font-medium">{ctx.row.original.name}</span>
+                    <CandidateScore score={ctx.row.original.score} />
+                  </div>
                   <div className="truncate text-micro text-subtle">{ctx.row.original.why}</div>
                 </div>
               ),
@@ -108,6 +113,15 @@ export function Candidates() {
             },
           ]
         : [
+            {
+              accessorKey: "score",
+              header: "Likelihood",
+              cell: (ctx) => (
+                <span title={ctx.row.original.score_reasoning}>
+                  <CandidateScore score={ctx.row.original.score} />
+                </span>
+              ),
+            },
             {
               accessorKey: "name",
               header: "Candidate",
@@ -170,6 +184,7 @@ export function Candidates() {
   const layout: ColumnLayout[] = narrow
     ? [{ flex: 1 }, { width: 64, align: "center" }]
     : [
+        { width: 132 },
         { flex: 0.3 },
         { width: 104 },
         { width: 124 },
@@ -198,7 +213,9 @@ export function Candidates() {
         A licence register is clean enough to create from. These sources are not — French NAF{" "}
         <code className="font-mono text-micro">64.20Z</code> is every holding company in France, of
         which a handful are family offices. Nothing here counts as pipeline until a human promotes
-        it, and a candidate nobody promotes has cost us nothing.
+        it, and a candidate nobody promotes has cost us nothing.{" "}
+        <strong>Likelihood is not the ICP score</strong> — it ranks how worth looking at a proposal
+        is, and carries none of a researched record's authority. Hover it to see what produced it.
       </Callout>
 
       <div className="mt-6">
@@ -209,6 +226,11 @@ export function Candidates() {
             value={unknown.length}
             tone="accent"
             hint="the reconciliation gap"
+          />
+          <Stat
+            label="worth reviewing first"
+            value={unknown.filter((r) => r.score >= 40).length}
+            hint="scored 40+ — the rest is a long tail"
           />
           <Stat
             label="already known to us"
@@ -223,18 +245,25 @@ export function Candidates() {
           <Chip active={unknownOnly} onClick={() => setUnknownOnly(!unknownOnly)}>
             not in the CRM
           </Chip>
+          <Chip active={minScore === 60} onClick={() => setMinScore(minScore === 60 ? 0 : 60)}>
+            likely ours
+          </Chip>
+          <Chip active={minScore === 40} onClick={() => setMinScore(minScore === 40 ? 0 : 40)}>
+            40+
+          </Chip>
           {sources.map((s) => (
             <Chip key={s} active={source === s} onClick={() => setSource(source === s ? null : s)}>
               {s}
             </Chip>
           ))}
-          {source || !unknownOnly ? (
+          {source || !unknownOnly || minScore ? (
             <Button
               size="sm"
               variant="ghost"
               onClick={() => {
                 setSource(null);
                 setUnknownOnly(true);
+                setMinScore(0);
               }}
             >
               reset

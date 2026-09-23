@@ -1,6 +1,6 @@
 slug: rockfi
 name: RockFi
-legal_name: null
+legal_name: ROCKFI
 country: France
 city: Paris
 segment: mfo
@@ -37,7 +37,7 @@ tags:
 - network
 - disqualified
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts: []
 fit:
   score: 25
@@ -58,5 +58,12 @@ activities:
   summary: Sourced via web search on RockFi's growth and DG France appointment (2026-09-22); disqualified
     after confirming it is ORIAS/CIF-registered rather than AMF-authorised, and has already built its
     own back/middle-office tech. Recorded to avoid re-researching it as a lookalike asset/fund manager.
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 969500UBJ08SNZOBWR30 found for this firm (matched on name + country).
+    Filled legal_name ''ROCKFI''. Legal form per GLEIF: 6CHY. crm/SCHEMA.md has no `lei` field, so the
+    LEI itself lives only in this note, not a structured field. Match was made on normalized name + country
+    only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500UBJ08SNZOBWR30'
   link: null
 next_action: null

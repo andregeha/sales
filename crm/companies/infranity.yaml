@@ -1,8 +1,8 @@
 slug: infranity
 name: INFRANITY
-legal_name: null
+legal_name: INFRANITY
 country: France
-city: null
+city: PARIS
 segment: asset_manager
 regulator: AMF
 website: null
@@ -26,7 +26,7 @@ tags:
 - new-licence
 - asset-manager
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts: []
 fit:
   score: 60
@@ -53,4 +53,12 @@ activities:
     Detected by the automated register diff; every field here is as the register publishes it and nothing
     has been inferred. Not yet researched or enriched.
   link: https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 969500Q2KIYRFU90OR39 found for this firm (matched on name + country).
+    Filled legal_name ''INFRANITY'', city ''PARIS''. Legal form per GLEIF: 6CHY. Direct parent per GLEIF:
+    GENERALI INVESTMENTS HOLDING S.P.A.. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only
+    in this note, not a structured field. Match was made on normalized name + country only, not a second
+    identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500Q2KIYRFU90OR39'
+  link: null
 next_action: null

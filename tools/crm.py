@@ -723,8 +723,8 @@ def cmd_rfp_add(args: argparse.Namespace) -> int:
     if args.published_date and not is_valid_date(args.published_date):
         sys.stderr.write("error: --published-date must be YYYY-MM-DD\n")
         return 1
-    if not is_valid_date(args.deadline):
-        sys.stderr.write("error: --deadline must be YYYY-MM-DD\n")
+    if args.deadline and not is_valid_date(args.deadline):
+        sys.stderr.write("error: --deadline must be YYYY-MM-DD (or omitted if unknown)\n")
         return 1
     RFPS_DIR.mkdir(parents=True, exist_ok=True)
     save_yaml(path, rec)
@@ -983,9 +983,13 @@ def validate_rfp(path: Path, rec: dict, errors: list[str], seen_slugs: set[str])
     if slug:
         seen_slugs.add(slug)
 
-    for field in ("title", "issuer", "deadline", "status"):
+    for field in ("title", "issuer", "status"):
         if not rec.get(field):
             _err(errors, path, f"missing required field '{field}'")
+    # `deadline` is deliberately NOT required: several legitimate sources (multilateral development
+    # bank notices, general procurement notices) never state one, and inventing one would violate
+    # the "never invent" rule. A null deadline just means the record never appears in
+    # crm_report.py's approaching-deadlines section.
 
     if rec.get("status") and rec["status"] not in RFP_STATUSES:
         _err(errors, path, f"invalid status {rec['status']!r}")
@@ -1153,7 +1157,10 @@ def build_parser() -> argparse.ArgumentParser:
     sp.add_argument("--segment", choices=SEGMENTS)
     sp.add_argument("--source-url")
     sp.add_argument("--published-date", help="YYYY-MM-DD")
-    sp.add_argument("--deadline", required=True, help="YYYY-MM-DD")
+    sp.add_argument("--deadline",
+                    help="YYYY-MM-DD. Omit if the source does not state one — never invent a "
+                         "deadline. A null deadline just means the tender never shows up in "
+                         "crm_report.py's approaching-deadlines section.")
     sp.add_argument("--status", default="spotted", choices=RFP_STATUSES)
     sp.add_argument("--fit-assessment")
     sp.add_argument("--outcome", default="pending", choices=RFP_OUTCOMES)

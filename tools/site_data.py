@@ -284,6 +284,12 @@ def compute_source_health(runs: list[dict]) -> list[dict]:
 
         if not dated:
             status = "stale"          # never run
+        elif last_success_date is None:
+            # ⚠ Never once read successfully. That is worse than a source which worked yesterday
+            # and missed today, so it does not wait for the consecutive-failure threshold: a source
+            # we have never been able to read is failing from its first run, and the difference
+            # matters because "stale" invites waiting while "failing" invites fixing.
+            status = "failing"
         elif consecutive_failures >= FAILING_THRESHOLD:
             status = "failing"
         elif consecutive_failures >= 1:
@@ -324,9 +330,11 @@ def build_candidates(out: Path) -> int:
     ⚠ These are deliberately not records and are never counted as pipeline. A candidate is a
     question ("is this one of ours?"), and the website's job is to make answering it cheap.
     """
+    # Best-first: a 300-row queue sorted by name is a queue nobody reads. Name breaks ties so
+    # the ordering stays deterministic.
     rows = sorted(
         candidates.load_all(),
-        key=lambda r: ((r.get("name") or "").lower(), r.get("source") or ""),
+        key=lambda r: (-(r.get("score") or 0), (r.get("name") or "").lower(), r.get("source") or ""),
     )
     return write_json(out / "candidates.json", rows)
 

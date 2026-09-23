@@ -1,6 +1,6 @@
 slug: cresen-limited
 name: Cresen Limited
-legal_name: null
+legal_name: كريسين ليميتد
 country: UAE
 city: Dubai
 segment: asset_manager
@@ -26,7 +26,7 @@ tags:
 - new-licence
 - asset-manager
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: Cresen Limited — switchboard (register-published)
   title: General enquiries
@@ -56,4 +56,12 @@ activities:
     address (per the DFSA): Unit Office 1111, Level 11, Index Tower, Al Mustaqbal Street, DIFC, Dubai,
     PO Box 417147, UAE'
   link: https://www.dfsa.ae/public-register/firms
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 2549003E390Q9PYZIA96 found for this firm (matched on name + country).
+    Filled legal_name ''كريسين ليميتد''. Legal form per GLEIF: 70EO. crm/SCHEMA.md has no `lei` field,
+    so the LEI itself lives only in this note, not a structured field. Match was made on normalized name
+    + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record:
+    https://search.gleif.org/#/record/2549003E390Q9PYZIA96'
+  link: null
 next_action: null

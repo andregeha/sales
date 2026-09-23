@@ -1,6 +1,6 @@
 slug: reyl-finance-mea-ltd
 name: Reyl Finance (MEA) Ltd.
-legal_name: null
+legal_name: ريل فاينانس (ام إي أي) المحدودة
 country: UAE
 city: Dubai
 segment: asset_manager
@@ -26,7 +26,7 @@ tags:
 - new-licence
 - asset-manager
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: Reyl Finance (MEA) Ltd. — switchboard (register-published)
   title: General enquiries
@@ -55,4 +55,12 @@ activities:
     the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered
     address (per the DFSA): Unit C404, Level 4, Burj Daman, DIFC, PO Box 507006, Dubai, UAE'
   link: https://www.dfsa.ae/public-register/firms
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 9845008C1B02CF604E06 found for this firm (matched on name + country).
+    Filled legal_name ''ريل فاينانس (ام إي أي) المحدودة''. Legal form per GLEIF: Private Company Limited
+    by Shares. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured
+    field. Match was made on normalized name + country only, not a second identifier — treat as provisional
+    and challenge if it looks wrong. Record: https://search.gleif.org/#/record/9845008C1B02CF604E06'
+  link: null
 next_action: null

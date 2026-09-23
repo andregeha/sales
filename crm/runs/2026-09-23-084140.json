@@ -1,0 +1,23 @@
+{
+  "commit": "befa85b9f9f3bdd62de9d6064d9a23beb618c8fa",
+  "connectors": [
+    {
+      "backfill": false,
+      "baseline": true,
+      "changes": 0,
+      "created": 0,
+      "error": null,
+      "new_on_register": 317,
+      "ok": true,
+      "partial": false,
+      "register": "regafi-france",
+      "skipped": 3,
+      "source": "ACPR REGAFI register of authorised credit institutions and investment firms",
+      "total": 317
+    }
+  ],
+  "duration_s": 36.157,
+  "finished_at": "2026-09-23T08:42:16+00:00",
+  "ok": true,
+  "started_at": "2026-09-23T08:41:40+00:00"
+}

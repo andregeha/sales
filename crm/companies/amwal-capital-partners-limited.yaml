@@ -1,6 +1,6 @@
 slug: amwal-capital-partners-limited
 name: Amwal Capital Partners Limited
-legal_name: null
+legal_name: AMWAL CAPITAL PARTNERS LIMITED
 country: UAE
 city: Dubai
 segment: asset_manager
@@ -35,7 +35,7 @@ tags:
 - incumbent-broadridge
 - no-current-trigger
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: Samer Sarraf
   title: Founding Partner, Senior Executive Officer & Director
@@ -66,5 +66,13 @@ activities:
     2024) Broadridge IMS go-live with no dissatisfaction signal found. Recorded as nurture rather than
     pursued now, per the ICP''s ''mid-implementation of a competitor'' disqualify guidance. Revisit in
     12-18 months or if a complaint/departure signal surfaces.'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 549300LQLPMZLUJUFR23 found for this firm (matched on name + country).
+    Filled legal_name ''AMWAL CAPITAL PARTNERS LIMITED''. Legal form per GLEIF: With Limited Liability.
+    Direct parent per GLEIF: Amwal Capital Partners. crm/SCHEMA.md has no `lei` field, so the LEI itself
+    lives only in this note, not a structured field. Match was made on normalized name + country only,
+    not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/549300LQLPMZLUJUFR23'
   link: null
 next_action: null

@@ -36,7 +36,7 @@ tags:
 - aifm-as-a-service
 - multi-strategy
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: James Bruce
   title: Managing Director, Capricorn Fund Managers (DIFC) Limited
@@ -63,7 +63,14 @@ fit:
     fund-hosting platform is precisely the multi-manager NAV/fund-administration workload Gaia is built
     for.'
   disqualified_reason: null
-activities: []
+activities:
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 213800J54OTTLNK4IC31 found for this firm (matched on name + country).
+    No blank schema field to fill. Legal form per GLEIF: 70EO. crm/SCHEMA.md has no `lei` field, so the
+    LEI itself lives only in this note, not a structured field. Match was made on normalized name + country
+    only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/213800J54OTTLNK4IC31'
+  link: null
 next_action:
   who: Andre Geha
   what: Draft a warm intro note to James Bruce referencing Capricorn's DIFC fund-hosting model and Gaia's

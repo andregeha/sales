@@ -1,8 +1,8 @@
 slug: jefferies
 name: Jefferies
-legal_name: null
+legal_name: Jefferies Company
 country: Saudi Arabia
-city: null
+city: Riyadh
 segment: broker
 regulator: CMA (Saudi Arabia)
 website: null
@@ -26,7 +26,7 @@ tags:
 - new-licence
 - broker
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts: []
 fit:
   score: 50
@@ -47,4 +47,12 @@ activities:
     yet). Detected by the automated register diff; every field here is as the register publishes it and
     nothing has been inferred. Not yet researched or enriched.'
   link: https://cma.gov.sa/en/Market/AuthorisedPersons/Pages/default.aspx
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 529900G5WV3VXPZS8V25 found for this firm (matched on name + country).
+    Filled legal_name ''Jefferies Company'', city ''Riyadh''. Legal form per GLEIF: Company Limited. crm/SCHEMA.md
+    has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made
+    on normalized name + country only, not a second identifier — treat as provisional and challenge if
+    it looks wrong. Record: https://search.gleif.org/#/record/529900G5WV3VXPZS8V25'
+  link: null
 next_action: null

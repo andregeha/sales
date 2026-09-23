@@ -1,6 +1,6 @@
 slug: andermatt-capital-limited
 name: Andermatt Capital Limited
-legal_name: null
+legal_name: ANDERMATT CAPITAL LIMITED
 country: UAE
 city: Abu Dhabi
 segment: asset_manager
@@ -29,7 +29,7 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: Andermatt Capital Limited — contact published on the FSRA register
   title: General enquiries
@@ -60,4 +60,12 @@ activities:
     address (per the FSRA): United Arab Emirates, Abu Dhabi, Maryah Island, Office 205, 11th Floor, Al
     Sarab Tower, Adgm Square'
   link: https://www.adgm.com/public-registers/fsra
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 9845009053B949394164 found for this firm (matched on name + country).
+    Filled legal_name ''ANDERMATT CAPITAL LIMITED''. Legal form per GLEIF: OSE2. crm/SCHEMA.md has no
+    `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on
+    normalized name + country only, not a second identifier — treat as provisional and challenge if it
+    looks wrong. Record: https://search.gleif.org/#/record/9845009053B949394164'
+  link: null
 next_action: null

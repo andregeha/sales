@@ -109,6 +109,31 @@ export function ScoreBadge({
   );
 }
 
+/**
+ * How likely an unreviewed *proposal* is to be one of ours.
+ *
+ * ⚠ Deliberately NOT `ScoreBadge`. That one ranks a firm we have researched and says what to DO
+ * about it ("work now"). This ranks a guess about a firm nobody has looked at, and says only how
+ * much attention it deserves. Giving them the same badge would let an unreviewed guess wear the
+ * authority of a researched record — so they do not share a vocabulary, on purpose.
+ */
+export function CandidateScore({ score }: { score: number | null | undefined }) {
+  if (score === null || score === undefined) {
+    return <span className="text-subtle italic text-micro">unscored</span>;
+  }
+  const band =
+    score >= 60
+      ? { tone: "accent" as const, label: "likely ours", title: "60+ — review this first" }
+      : score >= 40
+        ? { tone: "caution" as const, label: "possible", title: "40–59 — plausible, needs a look" }
+        : { tone: "neutral" as const, label: "long shot", title: "under 40 — probably not ours" };
+  return (
+    <Badge tone={band.tone} title={band.title}>
+      <span className="tnum">{score}</span> · {band.label}
+    </Badge>
+  );
+}
+
 const SEGMENT_LABELS: Record<string, string> = {
   family_office: "family office",
   mfo: "MFO",

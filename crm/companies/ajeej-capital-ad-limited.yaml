@@ -1,6 +1,6 @@
 slug: ajeej-capital-ad-limited
 name: Ajeej Capital (AD) Limited
-legal_name: null
+legal_name: Ajeej Capital (AD) Limited
 country: UAE
 city: Abu Dhabi
 segment: fund_manager
@@ -29,7 +29,7 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: Ajeej Capital (AD) Limited — contact published on the FSRA register
   title: General enquiries
@@ -60,4 +60,12 @@ activities:
     or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Reem Island, Unit
     No. 2403, 24th Floor, Tamouh Tower, Tamouh'
   link: https://www.adgm.com/public-registers/fsra
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 25490000F44JLXQKGP81 found for this firm (matched on name + country).
+    Filled legal_name ''Ajeej Capital (AD) Limited''. Legal form per GLEIF: OSE2. crm/SCHEMA.md has no
+    `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on
+    normalized name + country only, not a second identifier — treat as provisional and challenge if it
+    looks wrong. Record: https://search.gleif.org/#/record/25490000F44JLXQKGP81'
+  link: null
 next_action: null

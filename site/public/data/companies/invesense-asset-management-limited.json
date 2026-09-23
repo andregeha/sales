@@ -5,6 +5,12 @@
       "link": "https://www.dfsa.ae/public-register/firms",
       "summary": "Appeared as a new entry in the DFSA public register of authorised firms (DIFC). Licence F002331, Managing Assets (Authorised Firms). Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the DFSA): Unit OT 26-32, Level 26, Central Park Offices, DIFC, PO Box 506907, Dubai, UAE",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "GLEIF enrichment: LEI 9845000FF36A92D7DA80 found for this firm (matched on name + country). Filled legal_name 'إينفيسينس لإدارة الأصول المحدودة'. Legal form per GLEIF: Private Company Limited by Shares. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/9845000FF36A92D7DA80",
+      "type": "research"
     }
   ],
   "city": "Dubai",
@@ -33,7 +39,7 @@
   "has_email": false,
   "has_linkedin": false,
   "has_phone": true,
-  "legal_name": null,
+  "legal_name": "إينفيسينس لإدارة الأصول المحدودة",
   "linkedin": null,
   "name": "Invesense Asset Management Limited",
   "next_action": null,
@@ -61,6 +67,6 @@
     "asset-manager"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": null
 }

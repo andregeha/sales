@@ -1,6 +1,6 @@
 slug: herest
 name: Herest
-legal_name: null
+legal_name: HEREST
 country: France
 city: Marcq-en-Baroeul
 segment: mfo
@@ -32,7 +32,7 @@ tags:
 - no-current-trigger
 - established
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: Jerome Jambert
   title: Co-founder & Gerant
@@ -64,5 +64,12 @@ activities:
     coverage. Established, well-regarded independent MFO (11-50 employees) with no discoverable current
     trigger; genuinely worth watching rather than a false negative - the 2022 regional-expansion story
     and 2025 award are both too old or the wrong kind of signal to count as a trigger under icp.md.
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 969500J9G4Y6QAH88U55 found for this firm (matched on name + country).
+    Filled legal_name ''HEREST''. Legal form per GLEIF: 6CHY. crm/SCHEMA.md has no `lei` field, so the
+    LEI itself lives only in this note, not a structured field. Match was made on normalized name + country
+    only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500J9G4Y6QAH88U55'
   link: null
 next_action: null

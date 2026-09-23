@@ -5,6 +5,12 @@
       "link": null,
       "summary": "Reviewed DFSA's own 2-Nov-2023 enforcement notice (dfsa.ae/news) fining FFA Private Bank USD 373,842 for market-abuse monitoring system failures 2018-2021, and the May-2021 restriction that preceded it (lifted Jul-2021). DFSA states the matter is closed and weaknesses were remediated. No current/live trigger identified; recorded as nurture pending a fresh signal.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "GLEIF enrichment: LEI 2549000K988VB2LHA565 found for this firm (matched on name + country). No blank schema field to fill. Legal form per GLEIF: 70EO. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/2549000K988VB2LHA565",
+      "type": "research"
     }
   ],
   "city": "Dubai",
@@ -65,6 +71,6 @@
     "compliance-history"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://www.ffaprivatebank.com"
 }

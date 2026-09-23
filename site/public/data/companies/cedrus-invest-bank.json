@@ -5,6 +5,12 @@
       "link": null,
       "summary": "Sourced from CMA Lebanon register and pitchbook/cfi.co profiles. Genuine family-office/HNW wealth-management fit. Leadership attribution conflicts between two sources (Fadi Assali vs Raed Khoury) and was not reconciled. Being an investment bank rather than a deposit-taking commercial bank may reduce (not eliminate) exposure to the Law 23/2025 resolution question - inference, not confirmed.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "GLEIF enrichment: LEI 529900MZ2088TM8YYP06 found for this firm (matched on name + country). No blank schema field to fill. Legal form per GLEIF: Société anonyme libanaise. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/529900MZ2088TM8YYP06",
+      "type": "research"
     }
   ],
   "city": "Beirut",
@@ -56,6 +62,6 @@
     "resolution-status-unknown"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://www.cedrusbank.com"
 }

@@ -390,3 +390,45 @@ class TestRunsAndEvents(SiteDataHarness):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+def test_generated_data_is_excluded_from_tailwind_scanning():
+    """The built CSS must not depend on the CRM's contents.
+
+    ⚠ This is a real bug that shipped, not a hypothetical. Tailwind 4 auto-discovers its content
+    sources by scanning the project, and `site/public/data/` is generated but not gitignored — so
+    it was scanned, and the built CSS changed whenever a company or candidate did. Measured: adding
+    a few words to one candidate's `why` text changed the CSS hash.
+
+    That breaks the determinism contract in plan/website.md §7 in the most misleading way possible:
+    the build still succeeds, and the output is wrong only in a way nobody looks at. Data is never
+    a source of class names.
+    """
+    css = (HERE.parent / "site" / "src" / "design" / "tokens.css").read_text(encoding="utf-8")
+    assert '@source not "../../public/data"' in css, (
+        "tokens.css no longer excludes the generated data directory from Tailwind's scanner. "
+        "Restore it, or the built CSS becomes a function of the CRM's contents."
+    )
+
+
+def test_a_source_never_read_reports_failing_not_stale():
+    """EBRD's case. A source we have never once read is failing from its first run.
+
+    "stale" invites waiting for it to recover; "failing" invites fixing it. A source that has never
+    worked has nothing to recover to, and letting it sit under the same word as a one-day blip is
+    how a permanently dead source becomes background noise.
+    """
+    from site_data import compute_source_health
+
+    runs = [
+        {"started_at": "2026-09-23T08:00:00+00:00",
+         "connectors": [{"register": "ebrd", "source": "EBRD", "ok": False,
+                         "error": "portal has no query contract", "total": None,
+                         "new_on_register": 0, "created": 0, "skipped": 0, "changes": 0,
+                         "baseline": None, "backfill": None, "partial": None}]},
+    ]
+    health = {h["register"]: h for h in compute_source_health(runs)}
+    assert health["ebrd"]["last_success_date"] is None
+    assert health["ebrd"]["status"] == "failing", (
+        "a source that has never been read successfully must not read as merely stale"
+    )

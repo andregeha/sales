@@ -1,6 +1,6 @@
 slug: hsbc-continental-europe
 name: HSBC Continental Europe
-legal_name: null
+legal_name: HSBC CONTINENTAL EUROPE
 country: France
 city: Paris
 segment: bank
@@ -48,4 +48,12 @@ activities:
     register diff; every field here is as the register publishes it and nothing has been inferred. Not
     yet researched or enriched.
   link: https://www.regafi.fr/
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI F0HUI1NY1AZMJMD8LP67 found for this firm (matched on name + country).
+    Filled legal_name ''HSBC CONTINENTAL EUROPE''. Legal form per GLEIF: QVPB. Direct parent per GLEIF:
+    HSBC BANK PLC. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a
+    structured field. Match was made on normalized name + country only, not a second identifier — treat
+    as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/F0HUI1NY1AZMJMD8LP67'
+  link: null
 next_action: null

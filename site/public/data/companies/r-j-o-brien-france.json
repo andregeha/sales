@@ -5,6 +5,12 @@
       "link": "https://www.regafi.fr/",
       "summary": "Appeared as a new entry in the ACPR REGAFI register of authorised credit institutions and investment firms. Licence 82868, authorised 2019-10-02, Entreprise d'Investissement. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "GLEIF enrichment: LEI 5493005C7D4YURSCIP31 found for this firm (matched on name + country). Filled legal_name \"R.J.O' BRIEN FRANCE\". Legal form per GLEIF: 6CHY. Direct parent per GLEIF: R.J. O'BRIEN LIMITED. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/5493005C7D4YURSCIP31",
+      "type": "research"
     }
   ],
   "city": "Paris",
@@ -21,7 +27,7 @@
   "has_email": false,
   "has_linkedin": false,
   "has_phone": false,
-  "legal_name": null,
+  "legal_name": "R.J.O' BRIEN FRANCE",
   "linkedin": null,
   "name": "R.J.O' BRIEN FRANCE",
   "next_action": null,

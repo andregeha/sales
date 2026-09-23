@@ -1,6 +1,6 @@
 slug: banque-banorient-france
 name: Banque Banorient France
-legal_name: null
+legal_name: BANQUE BANORIENT FRANCE
 country: France
 city: Paris
 segment: bank
@@ -48,4 +48,12 @@ activities:
     register diff; every field here is as the register publishes it and nothing has been inferred. Not
     yet researched or enriched.
   link: https://www.regafi.fr/
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 9695007EQZDL89LUW373 found for this firm (matched on name + country).
+    Filled legal_name ''BANQUE BANORIENT FRANCE''. Legal form per GLEIF: K65D. Direct parent per GLEIF:
+    BLOM BANK S.A.L.. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not
+    a structured field. Match was made on normalized name + country only, not a second identifier — treat
+    as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/9695007EQZDL89LUW373'
+  link: null
 next_action: null

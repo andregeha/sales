@@ -41,6 +41,53 @@ CONNECTOR_MODULES = [
     "regafi_france",
 ]
 
+#: Sources that are NOT register connectors but must still report their health into the same run
+#: record. A register connector produces company records; these produce RFPs or candidates. They
+#: share nothing but the contract that matters: **a source that could not be read says so, by name,
+#: somewhere Andre will see it.**
+#:
+#: ⚠ Without this, a dead source is visible only in whoever's terminal happened to run it. EBRD is
+#: currently unreadable by design (a stateful JSF portal we refuse to guess at), and that fact
+#: belongs on the website's Sources view alongside the registers, not in scrollback.
+#:
+#: Deliberately excluded: `sirene_france` and `gleif_enrich`. Those are periodic sweeps over tens of
+#: thousands of rows, not daily passes, and running them here would make the daily run take hours.
+AUX_MODULES = ["multilateral_rfp"]
+
+
+def _aux_summaries(mod_name: str, *, dry_run: bool) -> list[dict]:
+    """Run one auxiliary source and flatten it into per-source rows shaped like a connector run.
+
+    The RFP radar reads four organisations and any of them can fail independently, so it emits four
+    rows rather than one — a run where EBRD is dead and the World Bank is fine is not "the radar
+    failed", and must not read as either "fine" or "all broken".
+    """
+    mod = importlib.import_module(mod_name)
+    res = mod.run(dry_run=dry_run)
+    rows = []
+    for r in res.get("sources_ok", []):
+        rows.append({
+            "register": f"{mod_name}:{r['source']}", "source": r["source"], "ok": True,
+            "error": None,
+            # `total` is notices READ in our markets; `created` is genuine hits. A source can read
+            # 69 notices and correctly create nothing — that is a working radar, not a quiet one.
+            "total": r.get("found"), "new_on_register": r.get("found") or 0,
+            # Join on the SHORT key each notice carries, not the display name — they differ, and
+            # matching on the display name silently tallied zero for every source.
+            "created": sum(1 for c in res.get("created", []) if c.get("source") == r.get("key")),
+            "skipped": sum(1 for c in res.get("rejected", []) if c.get("source") == r.get("key")),
+            "changes": 0, "baseline": None, "backfill": None, "partial": None,
+        })
+    for f in res.get("sources_failed", []):
+        rows.append({
+            "register": f"{mod_name}:{f['source']}", "source": f["source"], "ok": False,
+            "error": f["error"], "total": None, "new_on_register": 0,
+            "created": 0, "skipped": 0, "changes": 0,
+            "baseline": None, "backfill": None, "partial": None,
+        })
+    return rows
+
+
 #: The engine's memory of itself — one file per invocation, never overwritten. See `plan/website.md`
 #: §3.1: "was the radar actually looking last Tuesday?" must always be answerable, including on a
 #: run that failed outright.
@@ -103,18 +150,24 @@ def _connector_failure_summary(fail: dict) -> dict:
 
 
 def build_run_record(started_at: datetime, finished_at: datetime,
-                     results: list[dict], failures: list[dict]) -> dict:
+                     results: list[dict], failures: list[dict],
+                     aux: Optional[list[dict]] = None) -> dict:
     """Assemble the structured `Run` record. Pure function — no filesystem access — so it is testable
     without a real connector or a real clock."""
-    connectors = [_connector_run_summary(r) for r in results] + \
-                 [_connector_failure_summary(f) for f in failures]
+    connectors = (
+        [_connector_run_summary(r) for r in results]
+        + [_connector_failure_summary(f) for f in failures]
+        # Auxiliary sources arrive already in this shape — they are reported beside the registers
+        # because a dead RFP source and a dead register are the same kind of bad news.
+        + list(aux or [])
+    )
     connectors.sort(key=lambda c: c["register"])
     return {
         "started_at": started_at.isoformat(timespec="seconds"),
         "finished_at": finished_at.isoformat(timespec="seconds"),
         "duration_s": round((finished_at - started_at).total_seconds(), 3),
         "commit": git_commit_sha(),
-        "ok": not failures,
+        "ok": not failures and all(c["ok"] for c in (aux or [])),
         "connectors": connectors,
     }
 
@@ -182,13 +235,26 @@ def main(argv=None) -> int:
             failures.append({"register": c.register, "source": c.source_name, "ok": False,
                              "error": f"unexpected {type(e).__name__}: {e}",
                              "traceback": traceback.format_exc()})
+    # Auxiliary sources run only in a full pass: `--only <register>` means "just that register".
+    aux_rows: list[dict] = []
+    if not args.only:
+        for mod_name in AUX_MODULES:
+            try:
+                aux_rows.extend(_aux_summaries(mod_name, dry_run=args.dry_run))
+            except Exception as e:  # noqa: BLE001 - the whole module dying is itself a finding
+                aux_rows.append({
+                    "register": mod_name, "source": mod_name, "ok": False,
+                    "error": f"unexpected {type(e).__name__}: {e}",
+                    "total": None, "new_on_register": 0, "created": 0, "skipped": 0,
+                    "changes": 0, "baseline": None, "backfill": None, "partial": None,
+                })
     finished_at = datetime.now(timezone.utc)
 
     # Every run leaves a record, success or failure — a dry run is a preview and leaves none,
     # matching the rule that a dry run writes nothing else either (no snapshot, no CRM record).
     run_path = None
     if not args.dry_run:
-        record = build_run_record(started_at, finished_at, results, failures)
+        record = build_run_record(started_at, finished_at, results, failures, aux_rows)
         run_path = write_run_record(record)
 
     if args.json:
@@ -205,11 +271,22 @@ def main(argv=None) -> int:
             print(f"  No snapshot written and no records created. This is NOT a quiet day —")
             print(f"    the source could not be read. Do not report zero new leads from it.")
             print()
+        for a in aux_rows:
+            if a["ok"]:
+                print(f"[{a['source']}] read {a['total']} notice(s) in our markets · "
+                      f"{a['created']} created · {a['skipped']} rejected after filtering")
+            else:
+                print(f"[{a['source']}] FAILED")
+                print(f"  ⚠ {a['error']}")
+                print("  This is NOT a quiet day for this source — it could not be read.")
+            print()
         if run_path:
             print(f"run record: {run_path.relative_to(REPO_ROOT)}".replace("\\", "/"))
 
-    if failures:
-        print(f"{len(failures)} of {len(results) + len(failures)} connectors FAILED.", file=sys.stderr)
+    dead_aux = [a for a in aux_rows if not a["ok"]]
+    if failures or dead_aux:
+        total = len(results) + len(failures) + len(aux_rows)
+        print(f"{len(failures) + len(dead_aux)} of {total} sources FAILED.", file=sys.stderr)
         return 1
     return 0
 

@@ -35,14 +35,18 @@ export function Rfps() {
   const rows = [...state.data].sort((a, b) =>
     (a.deadline ?? "9999").localeCompare(b.deadline ?? "9999"),
   );
-  const open = rows.filter((r) => r.deadline && r.deadline >= today);
-  const closed = rows.filter((r) => !r.deadline || r.deadline < today);
+  // ⚠ A tender with NO stated deadline is open, not closed. Several genuine multilateral notices
+  // (World Bank, UNGM, IsDB) state none at all, and `deadline` is nullable precisely so we do not
+  // invent one. Treating null as closed would file a live, actionable tender under "closed" — the
+  // exact failure this page's lede calls the worst thing this workspace can produce.
+  const open = rows.filter((r) => !r.deadline || r.deadline >= today);
+  const closed = rows.filter((r) => r.deadline && r.deadline < today);
 
   return (
     <Page>
       <PageHeader
         title="RFPs"
-        lede="Soonest deadline first. A missed deadline is the worst thing this workspace can produce."
+        lede="Soonest deadline first; a tender with no stated closing date is open, not closed. A missed deadline is the worst thing this workspace can produce."
       />
       <Section>
         <Callout tone="info" title="Read a short list carefully">
@@ -62,7 +66,16 @@ export function Rfps() {
           >
             {open.map((r) => (
               <Tr key={r.slug}>
-                <Td className="tnum whitespace-nowrap">{r.deadline}</Td>
+                <Td className="tnum whitespace-nowrap">
+                  {r.deadline ?? (
+                    <span
+                      className="text-caution italic"
+                      title="The notice states no closing date — check the source before relying on this."
+                    >
+                      none stated
+                    </span>
+                  )}
+                </Td>
                 <Td>{r.issuer}</Td>
                 <Td>{r.title}</Td>
                 <Td>

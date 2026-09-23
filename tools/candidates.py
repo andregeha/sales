@@ -38,6 +38,31 @@ import crm  # noqa: E402
 CANDIDATES_DIR = REPO_ROOT / "crm" / "candidates"
 
 
+#: Words in a firm's own name that suggest it does what we sell to. Weak evidence on its own — a
+#: name is not a business model — but across a queue of 300 it sorts the plausible to the top.
+NAME_SIGNALS = {
+    "asset management": 12, "asset manager": 12, "gestion privee": 12, "gestion de fortune": 12,
+    "wealth": 10, "family office": 16, "multi family": 16, "patrimoine": 10, "patrimonial": 10,
+    "capital": 6, "investment": 6, "investissement": 6, "invest": 5, "gestion": 6,
+    "partners": 4, "advisors": 4, "conseil": 3, "fund": 8, "fonds": 8, "sicav": 10, "am": 0,
+}
+
+#: How much a source's proposal is worth before anything else is known about the firm.
+SOURCE_WEIGHT = {
+    "gleif": 30,           # it actually manages a registered fund — the strongest signal we have
+    "sirene-france": 10,   # it declared an industry code, which is a claim, not a fact
+}
+
+#: A NAF code's own signal strength, since they differ enormously.
+NAF_WEIGHT = {
+    "66.30Z": 18,   # fund management as the principal declared activity
+    "64.30Z": 12,   # a collective investment vehicle
+    "66.12Z": 10,   # securities brokerage
+    "64.20Z": 2,    # every holding company in France
+    "70.10Z": 2,    # every head office
+}
+
+
 @dataclass
 class Candidate:
     """A firm a source thinks we might want, with the evidence for that belief."""
@@ -61,6 +86,62 @@ class Candidate:
 
     def key(self) -> str:
         return f"{self.source}:{self.source_id or self.name.strip().lower()}"
+
+    def score(self) -> tuple[int, str]:
+        """How likely this is to be one of ours, 0-100, with the reasoning that produced it.
+
+        ⚠ Deliberately NOT the ICP score in `knowledge/market/icp.md`. That model scores a firm we
+        have researched; this scores a *proposal* about a firm we have not. Conflating them would
+        let an unreviewed guess inherit the authority of a researched record.
+
+        The reasoning matters more than the number, exactly as it does for a real record — it is
+        what lets a human disagree in ten seconds instead of re-researching from scratch.
+        """
+        pts = 0
+        why: list[str] = []
+
+        w = SOURCE_WEIGHT.get(self.source, 5)
+        pts += w
+        why.append(f"proposed by {self.source} ({w})")
+
+        naf = str((self.extra or {}).get("naf") or "")
+        if naf:
+            nw = NAF_WEIGHT.get(naf, 4)
+            pts += nw
+            why.append(f"NAF {naf} ({nw})")
+
+        funds = (self.extra or {}).get("fund_count")
+        if isinstance(funds, int) and funds > 0:
+            fw = min(24, 8 + 4 * funds)
+            pts += fw
+            why.append(f"manages {funds} registered fund(s) ({fw})")
+
+        low = self.name.lower()
+        hits = [(k, v) for k, v in NAME_SIGNALS.items() if v and k in low]
+        if hits:
+            best = max(hits, key=lambda x: x[1])
+            pts += best[1]
+            why.append(f'name contains "{best[0]}" ({best[1]})')
+
+        officers = (self.extra or {}).get("officers") or []
+        if officers:
+            pts += 8
+            why.append(f"{len(officers)} named officer(s) on the public record (8)")
+
+        if self.segment_guess in {"family_office", "mfo", "asset_manager", "fund_manager", "bank"}:
+            pts += 8
+            why.append(f"guessed segment {self.segment_guess} is one we sell to (8)")
+
+        if self.matched_slug:
+            pts -= 20
+            why.append(f"already in the CRM as {self.matched_slug} (-20, not a new lead)")
+
+        pts = max(0, min(100, pts))
+        return pts, (
+            "; ".join(why)
+            + ". ⚠ This ranks a PROPOSAL, not a researched firm — it is not the ICP score and "
+            "carries none of its authority."
+        )
 
 
 def _path(source: str, date: str) -> Path:
@@ -101,10 +182,11 @@ def write(source: str, candidates: list[Candidate], *, dry_run: bool = False) ->
         CANDIDATES_DIR.mkdir(parents=True, exist_ok=True)
         path = _path(source, crm.today())
         # Sorted for determinism: the same input always produces the same file.
-        lines = [
-            json.dumps(asdict(c), ensure_ascii=False, sort_keys=True)
-            for c in sorted(fresh, key=lambda x: (x.name.lower(), x.key()))
-        ]
+        lines = []
+        for c in sorted(fresh, key=lambda x: (x.name.lower(), x.key())):
+            row = asdict(c)
+            row["score"], row["score_reasoning"] = c.score()
+            lines.append(json.dumps(row, ensure_ascii=False, sort_keys=True))
         with path.open("a", encoding="utf-8") as f:
             f.write("\n".join(lines) + "\n")
 

@@ -138,7 +138,10 @@ updated: 2026-09-22
 - `decision.outcome` is `pending` until a bid/no-bid call is made; `decision.reason` should explain
   the call once made (capacity, fit, timeline, relationship, etc).
 - `deadline` drives `tools/crm_report.py`'s "RFP deadlines approaching" section — keep it accurate
-  and update `status` as the tender moves.
+  and update `status` as the tender moves. It is **nullable**: some genuine sources (multilateral
+  development bank general procurement notices, grant announcements) never state one. Leave it
+  `null` rather than invent one — a null deadline just means the record is invisible to the
+  approaching-deadlines section until someone finds and fills in a real date.
 
 ## What `tools/crm.py validate` checks
 1. File name (minus `.yaml`) matches the record's `slug`.

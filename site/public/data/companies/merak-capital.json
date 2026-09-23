@@ -5,6 +5,12 @@
       "link": null,
       "summary": "Sourced from web search on CMA licensing news (Saudi asset/fund manager pass). Confirmed CMI status, multi-asset fund manager profile, and a 2026-05-03 CMA commencement notice for Managing Investments and Operating Funds activity. Could not click-verify the CMA register itself (egress blocked); relied on search snippets from merak.capital, Preqin, Crunchbase, MAGNiTT. No named contact found yet — watch for a named CIO/COO/Head of Ops before drafting outreach.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "GLEIF enrichment: LEI 558600MNKER19V0G8436 found for this firm (matched on name + country). Filled legal_name 'Merak Capital'. Legal form per GLEIF: 78VH. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/558600MNKER19V0G8436",
+      "type": "research"
     }
   ],
   "city": "Riyadh",
@@ -21,7 +27,7 @@
   "has_email": false,
   "has_linkedin": false,
   "has_phone": false,
-  "legal_name": null,
+  "legal_name": "Merak Capital",
   "linkedin": "https://www.linkedin.com/company/merakcapital",
   "name": "Merak Capital",
   "next_action": {
@@ -53,6 +59,6 @@
     "new-licence-activity"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://merak.capital/"
 }

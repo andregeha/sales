@@ -5,6 +5,12 @@
       "link": "https://www.dfsa.ae/public-register/firms",
       "summary": "Appeared as a new entry in the DFSA public register of authorised firms (DIFC). Licence F004980, Managing Assets (Authorised Firms). Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the DFSA): Unit 1002, Level 10, Index Tower, DIFC, PO Box 507341, Dubai, UAE",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "GLEIF enrichment: LEI 254900TYD5TO73MVEZ27 found for this firm (matched on name + country). Filled legal_name 'The Ultima World (DIFC) Limited'. Legal form per GLEIF: 70EO. Direct parent per GLEIF: ذا التيما وورلد م.د.م.س. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/254900TYD5TO73MVEZ27",
+      "type": "research"
     }
   ],
   "city": "Dubai",
@@ -33,7 +39,7 @@
   "has_email": false,
   "has_linkedin": false,
   "has_phone": true,
-  "legal_name": null,
+  "legal_name": "The Ultima World (DIFC) Limited",
   "linkedin": null,
   "name": "The Ultima World (DIFC) Limited",
   "next_action": null,
@@ -61,6 +67,6 @@
     "asset-manager"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": null
 }

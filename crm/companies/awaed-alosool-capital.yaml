@@ -31,7 +31,7 @@ tags:
 - retail-fintech
 - disqualified
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts: []
 fit:
   score: 15
@@ -55,5 +55,12 @@ activities:
   summary: Investigated as a CMA asset-management-licensed CMI, but the actual business is a mass-market
     commission-free retail trading app (Awaed), not an institutional portfolio/fund manager. Disqualified
     per ICP's retail-brokerage exclusion despite the licence technically covering asset management.
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 558600PIKDABWIMCSU18 found for this firm (matched on name + country).
+    No blank schema field to fill. Legal form per GLEIF: 78VH. crm/SCHEMA.md has no `lei` field, so the
+    LEI itself lives only in this note, not a structured field. Match was made on normalized name + country
+    only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/558600PIKDABWIMCSU18'
   link: null
 next_action: null

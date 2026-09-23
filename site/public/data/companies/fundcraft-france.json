@@ -5,6 +5,12 @@
       "link": null,
       "summary": "Sourced via web search on Fundcraft's AMF authorisation (2026-09-22). New AIFM licence (2026-06-24) following a January 2026 Paris office opening. As a fund-operations/ManCo-as-a-service platform, Fundcraft itself needs a multi-fund, multi-client administration backbone - a good structural fit for Gaia's fund-administration module, though this is a services provider rather than a classic asset manager and should be qualified on those terms.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "GLEIF enrichment: LEI 969500ZTU3BRWLFB5H80 found for this firm (matched on name + country). Filled legal_name 'FUNDCRAFT FRANCE SAS'. Legal form per GLEIF: 6CHY. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500ZTU3BRWLFB5H80",
+      "type": "research"
     }
   ],
   "city": "Paris",
@@ -33,7 +39,7 @@
   "has_email": false,
   "has_linkedin": true,
   "has_phone": false,
-  "legal_name": null,
+  "legal_name": "FUNDCRAFT FRANCE SAS",
   "linkedin": null,
   "name": "Fundcraft France",
   "next_action": null,
@@ -63,6 +69,6 @@
     "fund-administration"
   ],
   "trigger": "brand-new AMF licence (2026-06-24), no incumbent French system to displace yet",
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://www.fundcraft.fr/"
 }

@@ -5,6 +5,12 @@
       "link": "https://www.adgm.com/public-registers/fsra",
       "summary": "Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 220101, authorised 2023-09-08, Managing A Collective Investment Fund; Managing Assets. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Maryah Island, Unit 1, Floor 24, Al Khatem Tower, Adgm Square",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "GLEIF enrichment: LEI 984500B5E7F6A8DFFN94 found for this firm (matched on name + country). Filled legal_name 'إكس12 كابيتال المحدودة'. Legal form per GLEIF: Limited Liability Partnership. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/984500B5E7F6A8DFFN94",
+      "type": "research"
     }
   ],
   "city": "Abu Dhabi",
@@ -33,7 +39,7 @@
   "has_email": true,
   "has_linkedin": false,
   "has_phone": false,
-  "legal_name": null,
+  "legal_name": "إكس12 كابيتال المحدودة",
   "linkedin": null,
   "name": "X12 Capital Limited",
   "next_action": null,
@@ -64,6 +70,6 @@
     "fsra"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": null
 }

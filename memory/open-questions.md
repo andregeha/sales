@@ -63,3 +63,11 @@ These are ordered by what they unblock, not by how easy they are.
 | 13 | Exact FIX venue/broker coverage we can claim in writing (beyond Bloomberg EMSX + direct broker integration). | 🟠 |
 | 14 | Whether a **dedicated profitability/RoA view** exists beyond the profitability report, for a client asking specifically. | ⚪ |
 | 15 | The **digital onboarding flow** screens in the portal — we have not seen them; get access before demoing onboarding end to end. | 🟠 |
+
+## Sourcing gaps (opened 2026-09-23)
+| # | Question | Status |
+|---|---|---|
+| 16 | **EBRD procurement** — the notice search is a stateful JSF/ADF portal with no query contract, the same shape as France's PLACE. Needs a human with a browser, or an official EBRD feed, before it can be read. It is `failing` on the Sources view until then, deliberately. | 🔴 |
+| 17 | **UNGM sees titles only.** The listing carries no description, so our classifier judges a title alone — a genuinely relevant notice with an uninformative title will be missed. Reading each notice's detail page would fix it at ~60 extra requests per run; not yet judged worth the load. | 🟠 |
+| 18 | **286 candidates are not in the CRM**, now scored so the queue sorts by likelihood. Nobody has reviewed them. The eight scoring 60+ are the ones worth Andre's eyes first. | 🟠 |
+| 19 | **France's 19,464 GLEIF funds have not been swept** for fund→manager relationships — hours at a polite rate. Saudi, UAE and Lebanon are done (17 candidates, incl. SNB Capital and Jadwa). | ⚪ |

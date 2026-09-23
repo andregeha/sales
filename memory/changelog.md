@@ -254,3 +254,193 @@ Zod's `.default(0)`, which only fires on a missing key, not an explicit `null`.
 byte-identical; the real output validates against the site's actual Zod contract via Node.
 **Not verified:** the site itself rendering this data in a browser (P1/frontend, being built in a
 parallel session) — this task was data-contract only.
+
+## 2026-09-23 — `tools/connectors/gleif_enrich.py` (C3): GLEIF enrichment + fund→manager candidates
+
+Built and ran the third leg of `plan/source-architecture.md`'s tier 3. **GLEIF has no industry
+classification** (verified against the live API), so it cannot source prospects the way the
+register/SIRENE connectors do — it only ever does two narrower things well, and this tool does only
+those two:
+
+**1. Enrichment.** For each CRM record in our four markets, search GLEIF (`filter[fulltext]` +
+`filter[entity.legalAddress.country]`) and accept a hit only when a normalized name from our record
+(`name` or `legal_name`) matches a name GLEIF holds for that entity (its `legalName` or an
+`otherNames` entry) **and** the record's own `entity.legalAddress.country` — checked again in code,
+not just trusted from the query filter — agrees with ours. Two or more distinct GLEIF entities
+sharing a name in the same country is logged as `ambiguous` and never guessed at. `crm/SCHEMA.md` has
+no `lei` field, so per the brief nothing was added — the LEI, legal form and any asserted direct
+parent go into a `research` activity entry instead; `legal_name` and `city` (which are real fields)
+are filled **only where our own field was `null`**, verified by re-loading the file from disk
+immediately before writing (never trusting the in-memory copy). Runs are cached in
+`crm/gleif/checked.json` so a re-run only spends requests on records not yet checked; `--recheck`
+overrides.
+
+Ran the full sweep for real (`--skip-funds`, no `--limit`) against all 1,610 in-territory CRM
+records. **969 matched on GLEIF (60%): 937 gained a `legal_name`, 456 gained a `city`, 25 flagged
+`ambiguous` (multiple distinct GLEIF entities share the name in that country) and correctly left
+untouched, 616 have no GLEIF record at all** — expected and not a tool failure: an LEI is not
+universal, and plenty of real licensed managers simply never needed one. `crm.py validate` exits 0
+(1,611 companies) both mid-run and after.
+
+⚠ **The run crashed partway through** (`OSError: [Errno 22] Invalid argument`) writing
+`crm/gleif/checked.json` at record 1,038 of 1,610 — a transient Windows file-lock (this working
+copy is likely under antivirus or cloud-sync watch), not data loss: every CRM record already
+written was intact, and the cache file itself was undamaged. Fixed before resuming: `save_cache()`
+now writes to a temp file and does an atomic `replace()`, with 5 retries and backoff, and raises
+(rather than silently continuing) only if all five fail. Resumed with the same command; the cache
+meant it only had to re-check the 572 records not yet marked done. One cosmetic side-effect of the
+crash timing: `marigny-capital` has two near-identical GLEIF activity notes (the write that crashed
+had already reached the CRM file before the cache write failed, so the resume re-processed it) —
+left as-is rather than edited, per the CRM's own append-only rule for `activities`.
+
+**2. Fund → manager discovery.** A GLEIF fund record (`entity.category=FUND`) that asserts a
+`fund-manager` relationship links straight to its managing entity's own lei-record — confirmed live,
+not assumed (most French/UAE/Saudi funds with a manager on file expose it this way; a fund with no
+such relationship key has simply never had one reported, and is skipped rather than guessed). A
+manager domiciled in one of our four markets that does not match anything already in the CRM by
+name + country is proposed as a candidate via the existing `tools/candidates.py` queue
+(`crm/candidates/gleif-<date>.jsonl`) — same append-only, evidence-carrying, never-auto-promoted
+mechanism `sirene_france.py` already established; `matched_slug` is `null` on every line by
+construction. Run for real on Lebanon (1 fund), Saudi Arabia (16) and UAE (131): **148 funds walked,
+107 had a fund-manager relationship, 17 distinct candidates written** — among them ALJAZIRA CAPITAL
+COMPANY, Jadwa Investment Company and SNB Capital (Riyadh) for Saudi, and Abu Dhabi Commercial Bank
+(7 funds) for UAE — the last one a useful, honest example of the tool's limits: ADCB's asset-
+management arm is already in the CRM as `adcb-asset-management-limited`, but the parent bank is a
+distinct legal entity under a different name, so it correctly did not auto-match and instead
+surfaced as a candidate whose `why` text flags the possible same-group relationship for a human to
+settle. **France's 19,464 GLEIF-registered funds were deliberately not swept this session** — at one
+polite request per fund-with-a-link, a full pass is hours, not minutes; `--max-funds-per-country`
+bounds a run, and `--countries` scopes it, for whoever schedules the full sweep.
+
+**Tests:** `tools/connectors/test_gleif.py`, 13 tests, no network (`_get_json` is the one stubbed
+seam) — name+country matching (including the wrong-country-same-name rejection, and the ambiguous-
+match refusal), never-overwrite (including a simulated concurrent edit winning over the in-memory
+gain), fund-manager candidates never becoming CRM records and never being proposed when already
+known, and loud failure (both phases) on an unreachable API or an unexpected response shape.
+
+**What did not survive contact with the API, worth recording so nobody re-discovers it the hard
+way:** `page[size]` above 200 is rejected outright (HTTP 400) — the plan's "sliced by département"
+instinct for SIRENE applies here too, just at a smaller ceiling. `filter[entity.legalName]` is an
+exact-string filter, not a search — it missed the AMF's own "1 2 3 INVESTMENT MANAGERS" entirely
+(that firm has no LEI at all, confirmed by a full-text search too), which is why matching goes
+through `filter[fulltext]` plus our own normalization instead. The `fund-manager` relationship's
+`lei-record` link returns the manager's full record directly (`{"data": {...}}`), not a list —
+simpler than expected. `direct-parent`/`ultimate-parent` relationship keys are present on nearly
+every record regardless of whether a parent exists; only a `links.lei-record` (vs. a
+`links.reporting-exception`) means there is actually something to follow.
+
+**Verified:** all 13 `test_gleif.py` tests pass with no network; `python tools/crm.py validate`
+exits 0 after real writes (1,611 companies, 1 RFP); the full real enrichment sweep (1,610 of 1,610)
+and the real Lebanon/Saudi/UAE fund-manager-discovery run both completed against the live API,
+including recovering from a genuine mid-run crash (see above), and are reflected in the numbers
+above.
+**Not verified:** a full France fund sweep (scope decision, not a failure — see above); whether any
+of the 25 `ambiguous` French names or the 17 candidates are worth pursuing is Andre's call, not
+this tool's.
+
+## 2026-09-23 — `tools/connectors/multilateral_rfp.py` (C5): RFP radar for the Gulf and Lebanon
+
+Built the tier-4 RFP source from `plan/source-architecture.md`: local portals cover France
+(TED/BOAMP) reasonably and nothing else, so the addressable public tender flow in Saudi Arabia, the
+UAE and Lebanon is multilateral development banks. Read live, from the laptop, against all four
+named sources:
+
+- **World Bank** — the real procurement-notices API is `search.worldbank.org/api/v2/procnotices`
+  (JSON, no key), **not** the Projects & Operations API the brief also named (that one is a project
+  pipeline — no procurement notices in it at all). Filterable by `<field>_exact` + free-text `qterm`,
+  confirmed by empirical testing (the intuitive `countryshortname_exact` is silently ignored;
+  `project_ctry_name_exact` genuinely filters). ✅ Live.
+- **UNGM** — the notice page is a JS SPA, but it calls a real JSON-over-POST endpoint
+  (`/Public/Notice/Search`) behind a standard ASP.NET anti-forgery token, read exactly as a browser
+  would (GET the page for a token + cookie, then POST — no login, no account). Rate-limits
+  aggressively (HTTP 429) under rapid requests — paced deliberately slowly (4s/request, a short
+  curated term list) rather than fixed with retries. ✅ Live.
+- **EBRD** — investigated, **not** automated, on purpose. The informational page (`.../work-with-
+  us/procurement.html`) is a static 200; the actual search tool (`ecepp.ebrd.com/delta/
+  noticeSearchResults.html`) is a ~3.8MB Oracle ADF/JSF enterprise portal (`/delta/
+  JavaScriptServlet`) with no confirmed static query contract — architecturally the same trap
+  `knowledge/market/rfp-sources.md` already documents for France's PLACE (a stateful postback that
+  silently returns the unfiltered list for every query tried). The connector checks the info page is
+  still up, then **raises loudly by name every run** rather than guess at the real portal's
+  contract. This is a permanent, documented gap, not a bug — closing it needs a human with a browser
+  or an official API.
+- **IsDB** — found the procurement path the brief asked me to investigate:
+  `isdb.org/project-procurement/tenders`, a Drupal Views tender board. Its exposed `locality`
+  (country) and `status` filters **do not actually filter** — `?locality=LB/SA/AE` all return
+  byte-identical rows, confirmed by diff — while `tender_type` genuinely does. The connector never
+  relies on the broken filters: it fetches the whole listing (confirmed small and complete — exactly
+  150 records over 3 pages, page 4+ empty) and filters on the country label every row already prints.
+  ✅ Live. France is not an IsDB member state and structurally never appears — a fact, not a gap.
+
+**Filtering.** `classify()` requires a country match (UAE/Saudi Arabia/Lebanon/France) **and** a
+portfolio/investment/asset/fund/core-banking/treasury/capital-markets category term (English **and**
+French) **and** a system/software/platform indicator — the last one is what stops an advisory or
+policy mandate leaking through just because it uses our vocabulary. Nine named false-positive
+classes are rejected explicitly, each traced to a real notice found while building this
+(`Loan Management system` for a Lebanese agri-credit guarantee fund; `Establishment of Road Asset
+Management System` — a road inventory, not investment assets; `Development of an Investment Policy`
+— an advisory mandate; `INDIVIDUAL CONSULTANT SERVICES` — a person, not a vendor; a World Bank
+grant facility that funds *others* to build capacity; the French public-pension mandate-tenderers
+named in `rfp-sources.md`; and more — see the module docstring). World Bank's `notice_type`/
+`notice_status`/`procurement_method_name` structured fields are used to exclude Contract
+Awards/Terminations, Cancelled notices and Individual Consultant Selections directly, rather than
+guessing from title text — an earlier version that also fed the World Bank's full `notice_text`
+blob into `classify()` created three false positives from generic project boilerplate (a "B5 Fund"
+communications hire that only *mentioned* "fund administration" in passing, an unrelated financial
+auditor engagement, and a "PMU and Credit Manager" post) before this was caught and fixed by
+inspecting the output by hand rather than trusting a clean run.
+
+**Schema change required, and made:** `crm.py rfp add`'s `--deadline` was `required=True`, but
+several genuine multilateral notices (general procurement notices, grant announcements) never state
+one, and the one rule that matters most here is **never invent a deadline**. `deadline` is now
+nullable end to end — `tools/crm.py` (argparse, `cmd_rfp_add`, `validate_rfp`) and `crm/SCHEMA.md`
+— with `compute_stats()`'s approaching-deadlines section already handling a null gracefully (it did
+before this change too; no null deadline was ever going to appear in `crm/rfps/` until now).
+
+**Live run result, 2026-09-23:** World Bank ✅ (0 genuine hits — Saudi Arabia/UAE/France are not
+World Bank borrowers; Lebanon's real WB portfolio is microfinance, tax administration, roads and
+individual hires, not portfolio/investment software), UNGM ✅ (0 genuine hits), IsDB ✅ (0 genuine
+hits — Saudi Arabia carries 19 of IsDB's own Jeddah-HQ corporate tenders, none of them software;
+Lebanon and UAE: none in the current window), EBRD ❌ (fails loudly by design, every run, until a
+human or an API closes it). **Zero RFP records created — a correct, reported-plainly result, not a
+sourcing failure.** `python tools/crm.py validate` exits 0 unchanged (1,611 companies, 1 RFP).
+
+**Tests:** `tools/connectors/test_multilateral.py`, 27 tests, no network — every named
+false-positive class rejected on its real example text, a genuine hit still accepted, a source
+raising is reported by name and never folded into "zero found", one source failing does not silence
+another, zero genuine matches writes nothing, a genuine hit produces a schema-valid null-deadline
+record, dry-run writes nothing, and a rerun does not duplicate (checked by both slug and
+`source_url`).
+
+## 2026-09-23 — candidate scoring, source health, and two silent bugs
+
+**Candidate scoring.** 317 candidates were an unreviewable queue sorted by name. `Candidate.score()`
+now ranks a *proposal* 0–100 with its reasoning, and the queue sorts best-first: GLEIF fund managers
+(SNB Capital, Jadwa) at the top, a retirement residence and a Chinese logistics firm at the bottom.
+Kept deliberately separate from the ICP score, in model, docstring and UI vocabulary.
+
+**Every source now reports into the run record.** `run_all.py` gained `AUX_MODULES`, so the
+multilateral RFP radar's four organisations report health beside the registers. EBRD — unreadable by
+design, a stateful JSF portal we refuse to guess at — renders as `failing` on the website instead of
+existing only in a terminal.
+
+**Two silent bugs found and fixed, both of which looked like good news:**
+
+1. **UNGM was reading zero and reporting a quiet market.** It delegated filtering to UNGM's own
+   `Description` search; all six curated terms matched nothing in all four markets, while an
+   unfiltered UAE query returned a full page. `fetch_ungm` now reads whole country lists (63
+   notices) and applies our own auditable classifier. The dead-end term list is retained, renamed,
+   with the measurement that killed it.
+2. **The built CSS depended on the CRM's contents.** Tailwind 4 auto-discovers sources by scanning
+   the project, and `site/public/data/` is generated but not gitignored — so editing one candidate's
+   text changed the CSS hash. Excluded in `tokens.css`, with a regression test.
+
+**Also fixed:** an RFP with no stated deadline was filed as *closed* (the nullable-deadline change
+had not been traced into the UI) — it is now open, marked "none stated"; per-source tallies in the
+radar joined on the display name instead of the short key and silently reported "0 rejected" for
+sources that rejected 88; a source never once read successfully reported as `stale` rather than
+`failing`; and `test_run_all` was dialling four real organisations because `main()` now runs the
+aux sources.
+
+**State:** 1,611 companies · 317 candidates (286 not in the CRM, 8 scoring 60+) · 118 tests green ·
+site build deterministic · full pass reads 151 notices across three live sources, EBRD loudly dead.

@@ -84,3 +84,17 @@ tools/connectors/
 ```
 Keep it dependency-light and readable. Each connector should be a small file that only knows how to
 get its own source's list and map it onto our fields — everything else belongs in `base.py`.
+
+## `multilateral_rfp.py` — a different shape, RFP records not company records
+
+Everything above is about `base.py`'s Connector pipeline: one register, a snapshot, a diff, a
+company record. **`multilateral_rfp.py` is deliberately not built on that pipeline** — it produces
+`crm/rfps/<slug>.yaml` records (via the same code path as `crm.py rfp add`), not company records,
+and there is no per-firm register to snapshot and diff; each run just asks "any genuine tender in
+our markets right now?" It reads the World Bank procurement-notices API, UNGM, and IsDB's tender
+board (all ✅ live), and raises loudly on EBRD by design (its real search tool is a stateful
+enterprise portal with no confirmed contract — see the module's own docstring for why that was not
+scraped). Run it with `python tools/connectors/multilateral_rfp.py` (`--dry-run`, `--json`).
+Test it with `python tools/connectors/test_multilateral.py` (27 tests, no network). See
+`memory/changelog.md`, 2026-09-23, for the full build notes and the false positives it took to get
+the filtering right.

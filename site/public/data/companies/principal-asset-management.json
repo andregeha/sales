@@ -11,9 +11,15 @@
       "link": null,
       "summary": "Enriched from the amf-france register snapshot 2026-09-22: switchboard 01 40 15 53 00. These are details the regulator publishes on its own register, not guessed or pattern-inferred. Existing values were left untouched.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "GLEIF enrichment: LEI 969500KSSNNGQXL15E79 found for this firm (matched on name + country). Filled legal_name 'PRINCIPAL ASSET MANAGEMENT', city 'PARIS'. Legal form per GLEIF: 6CHY. Direct parent per GLEIF: PRINCIPAL REAL ESTATE LIMITED. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500KSSNNGQXL15E79",
+      "type": "research"
     }
   ],
-  "city": null,
+  "city": "PARIS",
   "contacts": [
     {
       "email": null,
@@ -39,7 +45,7 @@
   "has_email": false,
   "has_linkedin": false,
   "has_phone": true,
-  "legal_name": null,
+  "legal_name": "PRINCIPAL ASSET MANAGEMENT",
   "linkedin": null,
   "name": "PRINCIPAL ASSET MANAGEMENT",
   "next_action": null,
@@ -67,6 +73,6 @@
     "fund-manager"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://fr.principalam.com/"
 }

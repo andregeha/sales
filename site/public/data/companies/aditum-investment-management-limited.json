@@ -5,6 +5,12 @@
       "link": null,
       "summary": "UAE DIFC sourcing pass: DFSA register listing search-confirmed. Trigger (CIO hire) is dated (2023); 2024 Saudi expansion is the more current signal. Watch for a fresher 2025/2026 event before drafting outreach.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "GLEIF enrichment: LEI 213800LNHXULRMMMXN96 found for this firm (matched on name + country). Filled legal_name 'ADITUM INVESTMENT MANAGEMENT LIMITED'. Legal form per GLEIF: 70EO. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/213800LNHXULRMMMXN96",
+      "type": "research"
     }
   ],
   "city": "Dubai",
@@ -33,7 +39,7 @@
   "has_email": false,
   "has_linkedin": false,
   "has_phone": false,
-  "legal_name": null,
+  "legal_name": "ADITUM INVESTMENT MANAGEMENT LIMITED",
   "linkedin": null,
   "name": "Aditum Investment Management Limited",
   "next_action": null,
@@ -62,6 +68,6 @@
     "trigger-growth-dated"
   ],
   "trigger": "the CIO hire (Ali El Adou, April 2023) is now over two years old and no longer counts as 'new'; the 2024 Saudi expansion is the more current signal and scored as visible growth (8)",
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://www.aditumim.com/"
 }

@@ -1,6 +1,6 @@
 slug: fab-asset-management-limited
 name: FAB ASSET MANAGEMENT LIMITED
-legal_name: null
+legal_name: FAB ASSET MANAGEMENT LIMITED
 country: UAE
 city: Abu Dhabi
 segment: fund_manager
@@ -29,7 +29,7 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: FAB ASSET MANAGEMENT LIMITED — contact published on the FSRA register
   title: General enquiries
@@ -61,4 +61,12 @@ activities:
     yet researched or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Reem
     Island, The Entire Floor 55, Floor. 55, Addax Port Office Tower, Tamouh'
   link: https://www.adgm.com/public-registers/fsra
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 254900LLG1XEED21I039 found for this firm (matched on name + country).
+    Filled legal_name ''FAB ASSET MANAGEMENT LIMITED''. Legal form per GLEIF: OSE2. crm/SCHEMA.md has
+    no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made
+    on normalized name + country only, not a second identifier — treat as provisional and challenge if
+    it looks wrong. Record: https://search.gleif.org/#/record/254900LLG1XEED21I039'
+  link: null
 next_action: null

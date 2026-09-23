@@ -5,15 +5,23 @@
       {
         "count": 666,
         "date": "2026-09-22"
+      },
+      {
+        "count": 666,
+        "date": "2026-09-23"
+      },
+      {
+        "count": 666,
+        "date": "2026-09-23"
       }
     ],
-    "last_success_date": "2026-09-22",
+    "last_success_date": "2026-09-23",
     "latest_count": 666,
     "note": null,
     "partial": false,
     "register": "amf-france",
     "regulator": "AMF",
-    "runs_seen": 1,
+    "runs_seen": 3,
     "status": "ok"
   },
   {
@@ -22,15 +30,23 @@
       {
         "count": 36,
         "date": "2026-09-22"
+      },
+      {
+        "count": 36,
+        "date": "2026-09-23"
+      },
+      {
+        "count": 36,
+        "date": "2026-09-23"
       }
     ],
-    "last_success_date": "2026-09-22",
+    "last_success_date": "2026-09-23",
     "latest_count": 36,
     "note": "Partial source — reads a slice of the register, not all of it. New names are caught; disappearances are not detected.",
     "partial": true,
     "register": "cma-saudi",
     "regulator": "CMA (Saudi Arabia)",
-    "runs_seen": 1,
+    "runs_seen": 3,
     "status": "ok"
   },
   {
@@ -39,15 +55,23 @@
       {
         "count": 319,
         "date": "2026-09-22"
+      },
+      {
+        "count": 319,
+        "date": "2026-09-23"
+      },
+      {
+        "count": 319,
+        "date": "2026-09-23"
       }
     ],
-    "last_success_date": "2026-09-22",
+    "last_success_date": "2026-09-23",
     "latest_count": 319,
     "note": null,
     "partial": false,
     "register": "dfsa-difc",
     "regulator": "DFSA (DIFC)",
-    "runs_seen": 1,
+    "runs_seen": 3,
     "status": "ok"
   },
   {
@@ -56,27 +80,132 @@
       {
         "count": 412,
         "date": "2026-09-22"
+      },
+      {
+        "count": 412,
+        "date": "2026-09-23"
+      },
+      {
+        "count": 412,
+        "date": "2026-09-23"
       }
     ],
-    "last_success_date": "2026-09-22",
+    "last_success_date": "2026-09-23",
     "latest_count": 412,
     "note": null,
     "partial": false,
     "register": "fsra-adgm",
     "regulator": "FSRA (ADGM)",
-    "runs_seen": 1,
+    "runs_seen": 3,
+    "status": "ok"
+  },
+  {
+    "consecutive_failures": 2,
+    "history": [
+      {
+        "count": null,
+        "date": "2026-09-23"
+      },
+      {
+        "count": null,
+        "date": "2026-09-23"
+      }
+    ],
+    "last_success_date": null,
+    "latest_count": null,
+    "note": "EBRD: https://www.ebrd.com/work-with-us/procurement.html is reachable, but the actual notice search (https://ecepp.ebrd.com/delta/noticeSearchResults.html) is a stateful enterprise JSF/ADF portal with no confirmed static query-string or REST contract — the same shape as France's PLACE portal, which knowledge/market/rfp-sources.md already documents as unsafe to scrape (a stateful postback that silently returns the unfiltered list for every query tried). This connector does not guess at that contract. Needs a human with a browser, or an official EBRD procurement API/feed, before EBRD can be added here.",
+    "partial": false,
+    "register": "multilateral_rfp:EBRD procurement",
+    "regulator": null,
+    "runs_seen": 2,
+    "status": "failing"
+  },
+  {
+    "consecutive_failures": 0,
+    "history": [
+      {
+        "count": 19,
+        "date": "2026-09-23"
+      },
+      {
+        "count": 19,
+        "date": "2026-09-23"
+      }
+    ],
+    "last_success_date": "2026-09-23",
+    "latest_count": 19,
+    "note": null,
+    "partial": false,
+    "register": "multilateral_rfp:IsDB (Islamic Development Bank) tenders",
+    "regulator": null,
+    "runs_seen": 2,
     "status": "ok"
   },
   {
     "consecutive_failures": 0,
-    "history": [],
-    "last_success_date": null,
+    "history": [
+      {
+        "count": 0,
+        "date": "2026-09-23"
+      },
+      {
+        "count": 63,
+        "date": "2026-09-23"
+      }
+    ],
+    "last_success_date": "2026-09-23",
+    "latest_count": 63,
+    "note": null,
+    "partial": false,
+    "register": "multilateral_rfp:UNGM (UN Global Marketplace)",
+    "regulator": null,
+    "runs_seen": 2,
+    "status": "ok"
+  },
+  {
+    "consecutive_failures": 0,
+    "history": [
+      {
+        "count": 69,
+        "date": "2026-09-23"
+      },
+      {
+        "count": 69,
+        "date": "2026-09-23"
+      }
+    ],
+    "last_success_date": "2026-09-23",
+    "latest_count": 69,
+    "note": null,
+    "partial": false,
+    "register": "multilateral_rfp:World Bank eProcure (procurement notices API)",
+    "regulator": null,
+    "runs_seen": 2,
+    "status": "ok"
+  },
+  {
+    "consecutive_failures": 0,
+    "history": [
+      {
+        "count": 317,
+        "date": "2026-09-23"
+      },
+      {
+        "count": 317,
+        "date": "2026-09-23"
+      },
+      {
+        "count": 317,
+        "date": "2026-09-23"
+      }
+    ],
+    "last_success_date": "2026-09-23",
     "latest_count": 317,
     "note": null,
     "partial": false,
     "register": "regafi-france",
     "regulator": "ACPR (France)",
-    "runs_seen": 0,
-    "status": "stale"
+    "runs_seen": 3,
+    "status": "ok"
   }
 ]

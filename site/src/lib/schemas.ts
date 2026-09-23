@@ -181,6 +181,9 @@ export const CandidateRow = z.object({
   why: z.string(),
   evidence_url: nullableStr,
   matched_slug: nullableStr,
+  /** How likely this proposal is to be one of ours. NOT the ICP score — see `candidates.py`. */
+  score: z.number().default(0),
+  score_reasoning: z.string().default(""),
   extra: z.record(z.string(), z.unknown()).default({}),
 });
 export type CandidateRow = z.infer<typeof CandidateRow>;

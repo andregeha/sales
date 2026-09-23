@@ -1,6 +1,6 @@
 slug: arab-banking-corporation-sa
 name: ARAB BANKING CORPORATION SA
-legal_name: null
+legal_name: ARAB BANKING CORPORATION SA
 country: France
 city: Paris
 segment: bank
@@ -48,4 +48,12 @@ activities:
     register diff; every field here is as the register publishes it and nothing has been inferred. Not
     yet researched or enriched.
   link: https://www.regafi.fr/
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 969500090LN710HT1B25 found for this firm (matched on name + country).
+    Filled legal_name ''ARAB BANKING CORPORATION SA''. Legal form per GLEIF: K65D. Direct parent per GLEIF:
+    ABC INTERNATIONAL BANK PLC. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this
+    note, not a structured field. Match was made on normalized name + country only, not a second identifier
+    — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500090LN710HT1B25'
+  link: null
 next_action: null

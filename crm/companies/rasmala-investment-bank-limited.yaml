@@ -1,6 +1,6 @@
 slug: rasmala-investment-bank-limited
 name: Rasmala Investment Bank Limited
-legal_name: null
+legal_name: Rasmala Investment Bank Limited
 country: UAE
 city: Dubai
 segment: bank
@@ -37,7 +37,7 @@ tags:
 - trigger-senior-hire
 - trigger-growth
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: Zak Hydari
   title: Chief Executive Officer, Rasmala Investment Bank & Group CEO, Rasmala Holdings
@@ -71,5 +71,13 @@ activities:
     plus a large, recent, publicised fund exit (Poseidon Fund, Oct 2025). Established group — before drafting
     outreach, need to establish current PMS/back-office stack and whether the CEO change signals any technology
     review. No incumbent-system information found in this pass.'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 254900X9F39583CHFH08 found for this firm (matched on name + country).
+    Filled legal_name ''Rasmala Investment Bank Limited''. Legal form per GLEIF: 70EO. crm/SCHEMA.md has
+    no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made
+    on normalized name + country only, not a second identifier — treat as provisional and challenge if
+    it looks wrong. Record: https://search.gleif.org/#/record/254900X9F39583CHFH08'
   link: null
 next_action: null

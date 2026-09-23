@@ -1,8 +1,8 @@
 slug: come-asset-management
 name: COME ASSET MANAGEMENT
-legal_name: null
+legal_name: COME ASSET MANAGEMENT
 country: France
-city: null
+city: PARIS
 segment: asset_manager
 regulator: AMF
 website: null
@@ -28,7 +28,7 @@ tags:
 - mfo-parent-cote-le-family-office
 - family-office-professionalising
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: Charles Brunswick
   title: Director, Come Asset Management; co-founder & Deputy CEO, Come Maison Financiere
@@ -72,5 +72,13 @@ activities:
     is the multi-family office''s newly launched, wholly-owned asset-management subsidiary, not an unrelated
     new entrant. Charles Brunswick (co-founder/Deputy CEO of the MFO) directs it. Coordinate any outreach
     across both records - do not approach independently.'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 9695004SMZBF27NRQZ40 found for this firm (matched on name + country).
+    Filled legal_name ''COME ASSET MANAGEMENT'', city ''PARIS''. Legal form per GLEIF: 6CHY. crm/SCHEMA.md
+    has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made
+    on normalized name + country only, not a second identifier — treat as provisional and challenge if
+    it looks wrong. Record: https://search.gleif.org/#/record/9695004SMZBF27NRQZ40'
   link: null
 next_action: null

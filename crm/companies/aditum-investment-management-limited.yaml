@@ -1,6 +1,6 @@
 slug: aditum-investment-management-limited
 name: Aditum Investment Management Limited
-legal_name: null
+legal_name: ADITUM INVESTMENT MANAGEMENT LIMITED
 country: UAE
 city: Dubai
 segment: asset_manager
@@ -32,7 +32,7 @@ tags:
 - asset-manager
 - trigger-growth-dated
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: Ali El Adou
   title: Chief Investment Officer
@@ -61,5 +61,13 @@ activities:
   summary: 'UAE DIFC sourcing pass: DFSA register listing search-confirmed. Trigger (CIO hire) is dated
     (2023); 2024 Saudi expansion is the more current signal. Watch for a fresher 2025/2026 event before
     drafting outreach.'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 213800LNHXULRMMMXN96 found for this firm (matched on name + country).
+    Filled legal_name ''ADITUM INVESTMENT MANAGEMENT LIMITED''. Legal form per GLEIF: 70EO. crm/SCHEMA.md
+    has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made
+    on normalized name + country only, not a second identifier — treat as provisional and challenge if
+    it looks wrong. Record: https://search.gleif.org/#/record/213800LNHXULRMMMXN96'
   link: null
 next_action: null

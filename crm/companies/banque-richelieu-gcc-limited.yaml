@@ -1,6 +1,6 @@
 slug: banque-richelieu-gcc-limited
 name: Banque Richelieu GCC Limited
-legal_name: null
+legal_name: BANQUE RICHELIEU GCC LIMITED
 country: UAE
 city: Abu Dhabi
 segment: fund_manager
@@ -29,7 +29,7 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: Banque Richelieu GCC Limited — contact published on the FSRA register
   title: General enquiries
@@ -62,4 +62,12 @@ activities:
     address (per the FSRA): United Arab Emirates, Abu Dhabi, Maryah Island, ., 23rd floor, Al Sila Tower,
     Abu Dhabi Global Market Square'
   link: https://www.adgm.com/public-registers/fsra
+- date: '2026-09-23'
+  type: research
+  summary: 'GLEIF enrichment: LEI 549300IK95C59T7Z9K45 found for this firm (matched on name + country).
+    Filled legal_name ''BANQUE RICHELIEU GCC LIMITED''. Legal form per GLEIF: OSE2. Direct parent per
+    GLEIF: SOCIETE GENERALE DE BANQUE AU LIBAN SAL. crm/SCHEMA.md has no `lei` field, so the LEI itself
+    lives only in this note, not a structured field. Match was made on normalized name + country only,
+    not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/549300IK95C59T7Z9K45'
+  link: null
 next_action: null
