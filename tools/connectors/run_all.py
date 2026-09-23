@@ -65,10 +65,19 @@ def _aux_summaries(mod_name: str, *, dry_run: bool) -> list[dict]:
     mod = importlib.import_module(mod_name)
     res = mod.run(dry_run=dry_run)
     rows = []
+
+    def key_for(entry: dict) -> str:
+        # The register key is shown to a human on the Sources view, so it must read as a name and
+        # not as an internal module path. `multilateral_rfp:EBRD procurement` was the module's
+        # identifier leaking into the UI.
+        short = entry.get("key") or entry["source"].lower().split("(")[0].strip().replace(" ", "-")
+        return f"rfp:{short.replace('_', '-')}"
+
     for r in res.get("sources_ok", []):
         rows.append({
-            "register": f"{mod_name}:{r['source']}", "source": r["source"], "ok": True,
-            "error": None,
+            "register": key_for(r), "source": r["source"], "ok": True, "error": None,
+            # The organisation's own name, so the card reads "rfp:ebrd · EBRD procurement".
+            "regulator": r["source"],
             # `total` is notices READ in our markets; `created` is genuine hits. A source can read
             # 69 notices and correctly create nothing — that is a working radar, not a quiet one.
             "total": r.get("found"), "new_on_register": r.get("found") or 0,
@@ -80,7 +89,8 @@ def _aux_summaries(mod_name: str, *, dry_run: bool) -> list[dict]:
         })
     for f in res.get("sources_failed", []):
         rows.append({
-            "register": f"{mod_name}:{f['source']}", "source": f["source"], "ok": False,
+            "register": key_for(f), "source": f["source"], "ok": False,
+            "regulator": f["source"],
             "error": f["error"], "total": None, "new_on_register": 0,
             "created": 0, "skipped": 0, "changes": 0,
             "baseline": None, "backfill": None, "partial": None,

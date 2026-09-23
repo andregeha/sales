@@ -311,7 +311,13 @@ def compute_source_health(runs: list[dict]) -> list[dict]:
 
         out.append({
             "register": reg,
-            "regulator": _register_regulator(reg),
+            # A register connector publishes its regulator in its snapshots. An auxiliary source
+            # (the RFP radar) writes no snapshots, so it carries the organisation's name on the run
+            # row itself — otherwise its card would show a bare key and nothing to read.
+            "regulator": (
+                next((c.get("regulator") for _, c in dated if c.get("regulator")), None)
+                or _register_regulator(reg)
+            ),
             "status": status,
             "last_success_date": last_success_date,
             "consecutive_failures": consecutive_failures,

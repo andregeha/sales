@@ -496,3 +496,34 @@ hard line wraps, so the page wrapped mid-sentence — how the source file is wra
 how the site reads.
 
 Verified live in the browser at desktop and 375px, light and dark. 129 tests green.
+
+## 2026-09-23 (fix) — "The data layer could not be loaded"
+
+Andre hit a hard failure on the site: `sources.json does not match the expected contract: expected
+number, received null`. My own regression from the same session.
+
+**The bug.** EBRD has never once been read, so its run history carries `count: null` for every run.
+That is the honest value — a day we could not read the source has no entry count — but `schemas.ts`
+demanded a number. Writing `0` instead would have been far worse: the sparkline would draw to the
+floor and read as "the register emptied overnight".
+
+**Fixed** by making `history[].count` nullable, breaking the sparkline across a null rather than
+connecting through it (`connectNulls={false}` — joining across would invent a trend through a day
+we were blind), and rendering "never read" instead of an empty box for a source with no successful
+run at all.
+
+**Also fixed:** `multilateral_rfp:EBRD procurement` — an internal module key I had leaked into the
+UI. Aux sources are now keyed `rfp:ebrd`, `rfp:world-bank`, `rfp:ungm`, `rfp:isdb` and carry the
+organisation's name. Today's two earlier run records were migrated to the new keys, which is a
+rename and not a rewrite: every count, error and timestamp is exactly as recorded. Without it the
+Sources view showed four phantom sources that never existed.
+
+**Why it escaped every check, which matters more than the bug.** `build_site.py --check` passed,
+`tsc` passed, the site built and deployed. Zod validation is dev-only at runtime, so the contract
+between `site_data.py` and `schemas.ts` was only ever tested by opening the exact page that broke —
+and I had verified `/coverage`, not `/sources`.
+
+`site/src/lib/contract.test.ts` now validates every emitted file, and every company record, against
+the schemas with no browser involved — including an assertion that the file list matches, so a new
+emitted file cannot be added untested. Confirmed it reproduces the original error when the fix is
+reverted. Cost: `@types/node`, dev-only, documented in `plan/website.md`.

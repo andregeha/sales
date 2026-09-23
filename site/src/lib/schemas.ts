@@ -120,7 +120,12 @@ export const SourceRow = z.object({
   consecutive_failures: z.number().default(0),
   latest_count: z.number().nullable().optional(),
   runs_seen: z.number().default(0),
-  history: z.array(z.object({ date: z.string(), count: z.number() })).default([]),
+  /**
+   * ⚠ `count` is nullable on purpose. A run that could not READ the source has no entry count —
+   * that is unknown, not zero. Writing 0 would draw the line to the floor and read as "the register
+   * emptied overnight", which is a far worse lie than a gap. The sparkline breaks instead.
+   */
+  history: z.array(z.object({ date: z.string(), count: z.number().nullable() })).default([]),
 });
 export type SourceRow = z.infer<typeof SourceRow>;
 

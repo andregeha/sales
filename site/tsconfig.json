@@ -13,7 +13,13 @@
     "verbatimModuleSyntax": true,
     "skipLibCheck": true,
     "noEmit": true,
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+    // Node types are needed by `src/lib/contract.test.ts`, which reads the emitted JSON off disk to
+    // check it against the schemas this app declares. Vite's own client types come in through the
+    // triple-slash reference in `src/vite-env.d.ts`, so naming "node" here does not displace them.
+    // ⚠ This does make `process`, `fs` and friends typecheck inside app code, where they would fail
+    // in a browser. Nothing in `src/routes` or `src/design` may use them.
+    "types": ["node"]
   },
   "include": ["src"]
 }

@@ -371,3 +371,17 @@ Wiring into the daily run (R3) happens at the end of **P1**: `run_all.py` → `s
   available. → nothing is ever authored in `site/`.
 - **Scope creep toward a web app.** Andre explicitly does not want to input data. Every form is a
   step toward a product we were not asked for and do not need.
+
+## Dependency added 2026-09-23 — `@types/node` (dev only)
+
+Required by `site/src/lib/contract.test.ts`, which reads the emitted JSON off disk and validates it
+against `schemas.ts`. Types only: zero runtime, nothing in the bundle.
+
+⚠ Naming `"types": ["node"]` in `tsconfig.json` makes `process`, `fs` and friends typecheck inside
+app code, where they would fail in a browser. Nothing in `src/routes` or `src/design` may use them.
+
+**Why the test was worth a dependency.** `site_data.py` and `schemas.ts` are a hand-maintained
+contract across a language boundary, and nothing checked it outside a browser: `build_site.py
+--check` passed, `tsc` passed, the site built — and rendered "The data layer could not be loaded".
+Zod validation is dev-only at runtime, so the only thing that would have caught it was opening the
+exact page that broke.

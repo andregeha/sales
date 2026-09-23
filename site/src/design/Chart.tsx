@@ -181,6 +181,12 @@ export function Sparkline({
   if (data.length === 0) {
     return <span className="text-micro text-subtle">no history</span>;
   }
+  // A source we have run but never successfully READ has a point per run and a value for none of
+  // them. That would draw an empty box, and an empty box says nothing — so it says the thing
+  // instead. This is EBRD's case.
+  if (data.every((d) => d[y] === null || d[y] === undefined)) {
+    return <span className="text-micro text-critical">never read</span>;
+  }
   return (
     <div style={{ height, width: 120 }}>
       <ResponsiveContainer width="100%" height="100%">
@@ -192,6 +198,9 @@ export function Sparkline({
             strokeWidth={1.75}
             dot={false}
             isAnimationActive={false}
+            // A run that could not read the source has no count. The line must BREAK there rather
+            // than joining across it, which would invent a trend through a day we were blind.
+            connectNulls={false}
           />
         </LineChart>
       </ResponsiveContainer>

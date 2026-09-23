@@ -58,6 +58,20 @@
       "total": 412
     },
     {
+      "backfill": false,
+      "baseline": true,
+      "changes": 0,
+      "created": 0,
+      "error": null,
+      "new_on_register": 317,
+      "ok": true,
+      "partial": false,
+      "register": "regafi-france",
+      "skipped": 3,
+      "source": "ACPR REGAFI register of authorised credit institutions and investment firms",
+      "total": 317
+    },
+    {
       "backfill": null,
       "baseline": null,
       "changes": 0,
@@ -66,7 +80,8 @@
       "new_on_register": 0,
       "ok": false,
       "partial": null,
-      "register": "multilateral_rfp:EBRD procurement",
+      "register": "rfp:ebrd",
+      "regulator": "EBRD procurement",
       "skipped": 0,
       "source": "EBRD procurement",
       "total": null
@@ -80,7 +95,8 @@
       "new_on_register": 19,
       "ok": true,
       "partial": null,
-      "register": "multilateral_rfp:IsDB (Islamic Development Bank) tenders",
+      "register": "rfp:isdb",
+      "regulator": "IsDB (Islamic Development Bank) tenders",
       "skipped": 0,
       "source": "IsDB (Islamic Development Bank) tenders",
       "total": 19
@@ -94,7 +110,8 @@
       "new_on_register": 0,
       "ok": true,
       "partial": null,
-      "register": "multilateral_rfp:UNGM (UN Global Marketplace)",
+      "register": "rfp:ungm",
+      "regulator": "UNGM (UN Global Marketplace)",
       "skipped": 0,
       "source": "UNGM (UN Global Marketplace)",
       "total": 0
@@ -108,24 +125,11 @@
       "new_on_register": 69,
       "ok": true,
       "partial": null,
-      "register": "multilateral_rfp:World Bank eProcure (procurement notices API)",
+      "register": "rfp:world-bank",
+      "regulator": "World Bank eProcure (procurement notices API)",
       "skipped": 0,
       "source": "World Bank eProcure (procurement notices API)",
       "total": 69
-    },
-    {
-      "backfill": false,
-      "baseline": true,
-      "changes": 0,
-      "created": 0,
-      "error": null,
-      "new_on_register": 317,
-      "ok": true,
-      "partial": false,
-      "register": "regafi-france",
-      "skipped": 3,
-      "source": "ACPR REGAFI register of authorised credit institutions and investment firms",
-      "total": 317
     }
   ],
   "duration_s": 375.708,
