@@ -161,9 +161,25 @@
   },
   {
     "id": "16",
+    "priority": "blocking",
+    "question": "EBRD procurement — the notice search is a stateful JSF/ADF portal with no query contract, the same shape as France's PLACE. Needs a human with a browser, or an official EBRD feed, before it can be read. It is `failing` on the Sources view until then, deliberately.",
+    "section": "Sourcing gaps (opened 2026-09-23)",
+    "status": "🔴",
+    "unblocks": null
+  },
+  {
+    "id": "16",
     "priority": "soon",
     "question": "Will you set up the free saved-search email alerts on BOAMP and PLACE (and My TED)? They are free, they take minutes, and a push alert beats any scraper we could write. They need an account in your name, so I cannot do it. Links in `knowledge/market/rfp-sources.md`.",
     "section": "🆕 New, from this session",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "17",
+    "priority": "soon",
+    "question": "UNGM sees titles only. The listing carries no description, so our classifier judges a title alone — a genuinely relevant notice with an uninformative title will be missed. Reading each notice's detail page would fix it at ~60 extra requests per run; not yet judged worth the load.",
+    "section": "Sourcing gaps (opened 2026-09-23)",
     "status": "🟠",
     "unblocks": null
   },
@@ -177,9 +193,25 @@
   },
   {
     "id": "18",
+    "priority": "soon",
+    "question": "286 candidates are not in the CRM, now scored so the queue sorts by likelihood. Nobody has reviewed them. The eight scoring 60+ are the ones worth Andre's eyes first.",
+    "section": "Sourcing gaps (opened 2026-09-23)",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "18",
     "priority": "nice",
     "question": "Can anyone run the Saudi CMA connector from the Riyadh office (or any Saudi network)? Its Open Data API times out from Europe. From inside the Kingdom it would probably work, and would upgrade Saudi from a partial source (36 of 242 firms) to a complete one.",
     "section": "🆕 New, from this session",
+    "status": "⚪",
+    "unblocks": null
+  },
+  {
+    "id": "19",
+    "priority": "nice",
+    "question": "France's 19,464 GLEIF funds have not been swept for fund→manager relationships — hours at a polite rate. Saudi, UAE and Lebanon are done (17 candidates, incl. SNB Capital and Jadwa).",
+    "section": "Sourcing gaps (opened 2026-09-23)",
     "status": "⚪",
     "unblocks": null
   },

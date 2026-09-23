@@ -444,3 +444,30 @@ aux sources.
 
 **State:** 1,611 companies · 317 candidates (286 not in the CRM, 8 scoring 60+) · 118 tests green ·
 site build deterministic · full pass reads 151 notices across three live sources, EBRD loudly dead.
+
+## 2026-09-23 (later) — `/intake`, and the resolver it stands on
+
+**`/intake` skill built** (`.claude/skills/intake/SKILL.md`). Connectors sweep sources; intake
+captures what a human saw. Free text in — a hire, a fund launch, a name at a conference — and
+exactly one of four outcomes out, named: an activity on an existing record, a new record, a
+candidate, or a fact/open question. It separates what Andre *said* from what was *verified*, never
+invents a contact detail, and refuses to qualify a record on hearsay.
+
+**`crm.py find` added**, because intake's real risk is the duplicate, not the miss — a second record
+for a firm we already hold splits its history so the activity, the contact and the trigger end up on
+different copies, and both look fine. Fuzzy resolution across 1,611 records, ranked, deliberately
+returning several: it ranks, it does not decide.
+
+Getting it right took three corrections, each kept as a test in `tools/test_crm_find.py`:
+- matching on generic industry vocabulary made "Zzz Nonexistent Capital" return eight confident
+  matches — sharing the word "capital" with 200 records is not evidence;
+- whole-string similarity rated "ASB Capital" and "SNB Capital" at 0.91, so a one-letter-different
+  firm tied with the real one. Comparison now runs on each name's *distinctive* core;
+- raw substring containment matched "one" inside "n**one**xistent", and a single-letter core like
+  "G" (from "G Capital") matched nearly the whole CRM. Containment is now by whole words with a
+  minimum length.
+
+Verified against real data: "banque audi" → `bank-audi-france` (1.00) across language and legal
+form; "Jadwa" → `jadwa-investment-difc-limited`; a firm that does not exist returns nothing.
+
+127 tests green · CRM validates at 1,611 · site build deterministic.

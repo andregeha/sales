@@ -400,6 +400,113 @@ def _csv_set(raw: Optional[str]) -> Optional[set[str]]:
     return {v.strip() for v in raw.split(",") if v.strip()}
 
 
+#: Words so common in our two industries that sharing one is not evidence of anything. Sharing
+#: "capital" with 200 other records says nothing; sharing "jadwa" says almost everything.
+GENERIC_NAME_WORDS = {
+    "capital", "capitale", "investment", "investments", "investissement", "investissements",
+    "invest", "asset", "assets", "management", "managers", "manager", "gestion", "gestionnaire",
+    "partners", "partner", "associes", "finance", "financial", "financiere", "financiers",
+    "bank", "banque", "banking", "banca", "fund", "funds", "fonds", "wealth", "patrimoine",
+    "advisors", "advisory", "conseil", "securities", "portfolio", "trust", "equity", "private",
+    "international", "global", "europe", "france", "middle", "east", "gulf", "national",
+}
+
+
+def _fold(s: str) -> str:
+    """Lowercase, strip accents and punctuation, drop the legal-form noise words.
+
+    "Société Générale S.A." and "societe generale" must fold to the same string, or every French
+    record becomes a near-miss.
+    """
+    import unicodedata
+
+    s = unicodedata.normalize("NFKD", s or "")
+    s = "".join(c for c in s if not unicodedata.combining(c)).lower()
+    s = re.sub(r"[^a-z0-9 ]+", " ", s)
+    noise = {
+        "sa", "sas", "sarl", "sca", "scs", "snc", "plc", "ltd", "limited", "llc", "inc", "co",
+        "company", "holding", "holdings", "group", "groupe", "the", "of", "and", "et",
+        "psc", "pjsc", "llp", "lp", "bv", "nv", "ag", "gmbh", "spa", "srl",
+    }
+    return " ".join(w for w in s.split() if w not in noise)
+
+
+def find_companies(text: str, limit: int = 8) -> list[tuple[float, dict]]:
+    """Rank CRM records by how likely they are to be the firm `text` refers to.
+
+    ⚠ This exists because **intake's real risk is the duplicate**, not the miss. A second record for
+    a firm we already hold splits its history in two: the activities, the contacts and the trigger
+    all end up on whichever copy the writer happened to reach. So resolution has to be attempted
+    before anything is created, and it has to be attempted on a *fuzzy* basis — Andre will write
+    "Jadwa", never "Jadwa Investment Company".
+
+    Returns `(score, record)` best-first. It deliberately returns several: this ranks, it does not
+    decide. A confident-looking single answer is exactly what would cause a wrong merge.
+    """
+    import difflib
+
+    needle = _fold(text)
+    if not needle:
+        return []
+    needle_tokens = set(needle.split())
+    out: list[tuple[float, dict]] = []
+    for rec in load_all_companies():
+        best = 0.0
+        for name in (rec.get("name"), rec.get("legal_name")):
+            if not name:
+                continue
+            hay = _fold(name)
+            if not hay:
+                continue
+            # ⚠ Compare the DISTINCTIVE part of each name, not the whole string. Folded,
+            # "snb capital" and "asb capital" are 91% similar and "omnes capital" matched
+            # "zzz nonexistent capital" — because the shared half is a word two hundred records
+            # contain. Stripping the industry vocabulary first leaves "snb" against "asb", which
+            # is correctly a non-match. Fall back to the full string only when a name is nothing
+            # but generic words (e.g. "Capital Partners"), where the generic form IS the name.
+            needle_core = " ".join(w for w in needle.split() if w not in GENERIC_NAME_WORDS)
+            hay_core = " ".join(w for w in hay.split() if w not in GENERIC_NAME_WORDS)
+            a, b = (needle_core or needle), (hay_core or hay)
+            score = difflib.SequenceMatcher(None, a, b).ratio()
+            # A full containment ("jadwa" inside "jadwa investment") is a stronger signal than the
+            # raw ratio gives it, because the short form is how people actually refer to firms.
+            # Containment must be by whole words, not raw substring: "one" is a substring of
+            # "nonexistent", and a one-letter core like "g" (from "G Capital") is a substring of
+            # nearly everything. Require every word of the shorter name to appear in the longer,
+            # and require the shorter name to carry at least one word substantial enough to mean
+            # something — otherwise a single initial matches the entire CRM.
+            at, bt = set(a.split()), set(b.split())
+            shorter, longer = (at, bt) if len(at) <= len(bt) else (bt, at)
+            if shorter and shorter <= longer and any(len(w) >= 3 for w in shorter):
+                score = max(score, 0.90)
+            # ⚠ A shared word only means something if the word itself is distinctive. Nearly every
+            # firm we hold contains "capital", "banque", "investment" or "gestion", so counting
+            # those as evidence made "Zzz Nonexistent Capital" return eight confident-looking
+            # matches — which is how a wrong merge happens. Only distinctive tokens count.
+            shared = (needle_tokens & set(hay.split())) - GENERIC_NAME_WORDS
+            if shared:
+                score = max(score, 0.55 + 0.1 * len(shared))
+            best = max(best, min(score, 1.0))
+        if best >= 0.55:
+            out.append((best, rec))
+    out.sort(key=lambda x: (-x[0], (x[1].get("name") or "").lower()))
+    return out[:limit]
+
+
+def cmd_find(args: argparse.Namespace) -> int:
+    matches = find_companies(args.text, limit=args.limit)
+    if not matches:
+        print(f"no CRM record resembles {args.text!r}.")
+        print("  → treat this as a NEW firm, or as a candidate if you cannot verify it exists.")
+        return 0
+    print(f"{len(matches)} possible match(es) for {args.text!r} — this ranks, it does not decide:")
+    for score, rec in matches:
+        country = rec.get("country") or "?"
+        seg = rec.get("segment") or "?"
+        print(f"  {score:.2f}  {rec['slug']:44} {rec.get('name','')[:40]:42} {country} · {seg}")
+    return 0
+
+
 def cmd_list(args: argparse.Namespace) -> int:
     statuses = _csv_set(args.status)
     if statuses:
@@ -1082,6 +1189,13 @@ def build_parser() -> argparse.ArgumentParser:
     sp.set_defaults(func=cmd_show)
 
     # list
+    # find — resolution before creation, so intake cannot silently duplicate a firm
+    sp = sub.add_parser("find", help="Fuzzy-match free text against company names. Run this BEFORE "
+                                     "creating any record.")
+    sp.add_argument("text", help='What you were told, e.g. "Jadwa" or "Banque Audi".')
+    sp.add_argument("--limit", type=int, default=8)
+    sp.set_defaults(func=cmd_find)
+
     sp = sub.add_parser("list", help="List/filter company records.")
     sp.add_argument("--country", help="Comma-separated for multiple, e.g. UAE,KSA.")
     sp.add_argument("--segment", help=f"Comma-separated. Allowed: {', '.join(SEGMENTS)}.")
