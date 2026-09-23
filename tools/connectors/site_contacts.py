@@ -97,12 +97,28 @@ ROLE_LOCALS = {
 #: activity note — we do not throw away what a firm published — but they are never the address a
 #: first touch would leave from.
 NEVER_ROUTE_LOCALS = {
-    "dpo", "rgpd", "gdpr", "privacy", "privacyoffice", "dataprotection", "donneespersonnelles",
-    "careers", "career", "jobs", "job", "recrutement", "recruitment", "recruiting", "hr", "rh", "cv",
-    "press", "presse", "media", "medias", "journalistes", "pr",
-    "legal", "juridique", "reclamation", "reclamations", "complaints", "fraud", "security",
-    "support", "help", "helpdesk", "billing", "facturation", "invoice", "comptabilite",
+    # Short forms, matched exactly: too short to match as substrings without catching real names.
+    "dpo", "rgpd", "gdpr", "hr", "rh", "cv", "pr", "job", "jobs",
 }
+
+#: ⚠ Matched as SUBSTRINGS of the local part, because exact matching is not enough. `dataprivacy@`
+#: was written to a live record while the list held `privacy` and `dataprotection` — a firm can
+#: spell the same wrong door a dozen ways, and each one reaches someone whose job is explicitly not
+#: buying software. Only stems of 4+ characters are used, so no ordinary name is caught by accident.
+NEVER_ROUTE_STEMS = (
+    "privacy", "privacite", "dataprotection", "donneespersonnelles", "protectiondesdonnees",
+    "career", "recrut", "recruit", "hiring", "emploi", "stage",
+    "press", "presse", "media", "journalist", "communiqu",
+    "legal", "juridiq", "compliance", "reclamation", "complaint", "plainte",
+    "fraud", "abuse", "phishing", "whistle", "alerte",
+    "invoice", "factur", "billing", "comptab", "accounting", "treasury",
+    "support", "helpdesk", "assistance", "webmaster", "hosting", "unsubscribe",
+)
+
+
+def _is_wrong_door(local: str) -> bool:
+    """True when this inbox exists for something other than talking to us."""
+    return local in NEVER_ROUTE_LOCALS or any(s in local for s in NEVER_ROUTE_STEMS)
 
 #: Addresses that are never a route to the firm: infrastructure, vendors, and the debris that ends
 #: up in page source. Each one here was observed, not imagined.
@@ -281,7 +297,7 @@ def _rank_emails(emails: set[str], site_domain: str) -> tuple[list[str], list[st
         return bool(site_domain) and (d == site_domain or d.endswith("." + site_domain)
                                       or site_domain.endswith("." + d))
 
-    usable = {e for e in emails if e.partition("@")[0] not in NEVER_ROUTE_LOCALS}
+    usable = {e for e in emails if not _is_wrong_door(e.partition("@")[0])}
     role = sorted((e for e in usable if e.partition("@")[0] in ROLE_LOCALS),
                   key=lambda e: (not own(e), e))
     personal = sorted((e for e in usable if e.partition("@")[0] not in ROLE_LOCALS),

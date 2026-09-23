@@ -29,8 +29,17 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-22'
-contacts: []
+updated: '2026-09-23'
+contacts:
+- name: TPL Investment Management Ltd — general enquiries
+  title: General enquiries
+  role: unknown
+  email: null
+  phone: '+97148828500'
+  linkedin: null
+  language: null
+  notes: null
+  source: Phone published on https://tplfunds.com/tpl-investment-management/
 fit:
   score: 53
   reasoning: 'Fit 50/60: priority segment fund_manager (20) + priority market UAE (15) + manages third-party
@@ -49,4 +58,11 @@ activities:
     or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Reem Island, Unit
     3503-S3, 35th Floor, Tamouh, Addax Port Office Tower, Al Rayfa Street'
   link: https://www.adgm.com/public-registers/fsra
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://tplfunds.com, https://tplfunds.com/tpl-investment-management/,
+    https://tplfunds.com/what-we-do/. Applied phone +97148828500. Every address here was printed on the
+    firm''s own site and transcribed, never constructed — challenge any of it against the page it came
+    from.'
+  link: null
 next_action: null

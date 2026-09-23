@@ -33,7 +33,7 @@ tags:
 - asset-manager
 - trigger-new-licence
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: Meshal Alothman
   title: CEO & Co-founder
@@ -54,6 +54,15 @@ contacts:
   notes: 25+ years' experience; formerly Deputy Director for Investments and Operations at Kuwait's Public
     Institution for Social Security (PIFSS).
   source: PR Newswire, rocketreach.co. Web search 2026-09-22.
+- name: Capital Asset Management (CAM) — general enquiries
+  title: General enquiries
+  role: unknown
+  email: contact@capitalam.com
+  phone: '+97144910100'
+  linkedin: null
+  language: null
+  notes: null
+  source: Email published on https://capitalam.com/en/ · Phone published on https://capitalam.com/en/
 fit:
   score: 88
   reasoning: 'Fit 60/60: priority asset-manager segment (20) + UAE (15) + genuinely multi-asset (private
@@ -78,6 +87,14 @@ activities:
   summary: 'Drafted first-touch to Meshal Alothman (CEO & Co-founder) on the March 2024 DFSA Cat3C licence
     and CAM''s from-scratch operating setup. No email on file; route is Alothman''s LinkedIn profile.
     Full draft: outreach/2026-09-22-top-leads.md. Awaiting Andre''s review before send.'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://capitalam.com/en/, https://capitalam.com/en/, https://capitalam.com/en/team/,
+    https://capitalam.com/en/news/capital-asset-management-to-serve-mena-from-dubai-granted-dfsa-cat3c-license/.
+    Applied email contact@capitalam.com, phone +97144910100. Also published there: info@capitalam.com.
+    Every address here was printed on the firm''s own site and transcribed, never constructed — challenge
+    any of it against the page it came from.'
   link: null
 next_action:
   who: Andre Geha

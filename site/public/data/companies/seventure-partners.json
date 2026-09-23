@@ -35,19 +35,25 @@
       "link": "https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf",
       "summary": "Register change detected by the automated AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr) diff. telephone published or changed: '0157950510' -> '0158192270'. Every value here is as the regulator publishes it.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://www.seventure.fr, https://www.seventure.fr/contact/, https://www.seventure.fr/teams/comite-direction/, https://www.seventure.fr/a-propos/documentation-reglementaire/. Applied email contact@seventure.fr. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "PARIS",
   "contacts": [
     {
-      "email": null,
+      "email": "contact@seventure.fr",
       "language": "fr",
       "linkedin": null,
       "name": "SEVENTURE PARTNERS — switchboard (register-published)",
       "notes": "Switchboard number as published by the regulator on its own register — not a guessed or inferred number, and not an individual's line. A generic number is a weak route: use it to reach a named person, not as the first touch itself.",
       "phone": "0157950510",
       "role": "unknown",
-      "source": "amf-france register snapshot 2026-09-22",
+      "source": "amf-france register snapshot 2026-09-22 · Email published on https://www.seventure.fr/contact/",
       "title": "General enquiries"
     }
   ],
@@ -60,7 +66,7 @@
     "score": 63
   },
   "has_contact_route": true,
-  "has_email": false,
+  "has_email": true,
   "has_linkedin": false,
   "has_phone": true,
   "legal_name": "SEVENTURE PARTNERS",

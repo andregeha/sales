@@ -11,10 +11,28 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 984500FDC1E36ADCCE36 found for this firm (matched on name + country). Filled legal_name 'AM WEALTH LIMITED'. Legal form per GLEIF: OSE2. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/984500FDC1E36ADCCE36",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://amwealth.ae/, https://amwealth.ae/contact/, https://amwealth.ae/contact/, https://amwealth.ae/about-us/. Applied email info@amwealth.ae, phone +97126265275. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Abu Dhabi",
-  "contacts": [],
+  "contacts": [
+    {
+      "email": "info@amwealth.ae",
+      "language": null,
+      "linkedin": null,
+      "name": "AM Wealth Limited — general enquiries",
+      "notes": null,
+      "phone": "+97126265275",
+      "role": "unknown",
+      "source": "Email published on https://amwealth.ae/ · Phone published on https://amwealth.ae/contact/",
+      "title": "General enquiries"
+    }
+  ],
   "country": "UAE",
   "created": "2026-09-22",
   "description": "ADGM-regulated wealth manager/brokerage (Al Sila Tower, ADGM Square) describing itself as delivering 'institutional-grade wealth management' and 'specialized brokerage services to institutional and professional clients', blending portfolio and risk management with data-driven/AI-assisted methods. Segment classification is uncertain from public sources — the firm's own language mixes 'brokerage' and 'wealth management', and its exact FSRA licence category was not confirmed in this pass.",
@@ -23,10 +41,10 @@
     "reasoning": "Fit ~35/60: segment is ambiguous — described as brokerage as much as wealth manager, so scored as adjacent (10) rather than priority, pending confirmation of licence category + UAE market (15) + multi-asset not established (0) + serves institutional/professional third-party clients (10) + FSRA-regulated (5). Trigger 0/25: no dated event found. Access 3/15: CEO's first name ('Maria') found in an about-us snippet but no surname or verifiable title established — treated as a generic-contact-equivalent, not a named reachable decision-maker, since we cannot confirm identity. Total ~43 (Worth a look band) — needs direct confirmation of licence category and a full contact name before it moves further.",
     "score": 43
   },
-  "has_contact_route": false,
-  "has_email": false,
+  "has_contact_route": true,
+  "has_email": true,
   "has_linkedin": false,
-  "has_phone": false,
+  "has_phone": true,
   "legal_name": "AM WEALTH LIMITED",
   "linkedin": null,
   "name": "AM Wealth Limited",

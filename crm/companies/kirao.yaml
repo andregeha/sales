@@ -27,7 +27,16 @@ tags:
 - asset-manager
 created: '2026-09-22'
 updated: '2026-09-23'
-contacts: []
+contacts:
+- name: KIRAO — general enquiries
+  title: General enquiries
+  role: unknown
+  email: contact@kirao.fr
+  phone: '+33185760804'
+  linkedin: null
+  language: null
+  notes: null
+  source: Email published on https://kirao.fr/contact/ · Phone published on https://kirao.fr/contact/
 fit:
   score: 63
   reasoning: 'Fit 60/60: priority segment asset_manager (20) + priority market France (15) + multi-asset
@@ -59,5 +68,11 @@ activities:
     field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized
     name + country only, not a second identifier — treat as provisional and challenge if it looks wrong.
     Record: https://search.gleif.org/#/record/969500G6Y50XGC6M0N58'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://kirao.fr/, https://kirao.fr/contact/, https://kirao.fr/mentions-legales/.
+    Applied email contact@kirao.fr, phone +33185760804. Every address here was printed on the firm''s
+    own site and transcribed, never constructed — challenge any of it against the page it came from.'
   link: null
 next_action: null

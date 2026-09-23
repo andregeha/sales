@@ -32,7 +32,7 @@ tags:
 - asset-manager
 - no-trigger
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: Shiblee Alam
   title: Managing Director – Business Development and Investor Relations
@@ -44,6 +44,15 @@ contacts:
   notes: Also described as a Board Member; CAIA charterholder per YouTube bio. Business-development-facing
     role, a natural first contact rather than the final economic buyer.
   source: LinkedIn (ae.linkedin.com/in/shibleealam), rocketreach.co, 8f-am.com. Web search 2026-09-22.
+- name: 8F Asset Management Middle East Limited — general enquiries
+  title: General enquiries
+  role: unknown
+  email: contact@8f-am.com
+  phone: null
+  linkedin: null
+  language: null
+  notes: null
+  source: Email published on https://8f-am.com/contact/
 fit:
   score: 68
   reasoning: 'Fit 60/60: priority asset-manager segment, Cat 3C fund manager (20) + UAE (15) + part of
@@ -61,5 +70,12 @@ activities:
   summary: 'UAE ADGM sourcing pass: FSRA register listing search-confirmed (Cat 3C, FSP 210027, registered
     2021). No dated trigger found. Named BD/IR contact is a real access point despite the lack of a trigger
     — worth a light check-in rather than a full outreach push.'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://8f-am.com/, https://8f-am.com/contact/, https://8f-am.com/dedicated-talented-and-experienced-team/.
+    Applied email contact@8f-am.com. Also published there: frankfurt-office@8f-am.com. Every address here
+    was printed on the firm''s own site and transcribed, never constructed — challenge any of it against
+    the page it came from.'
   link: null
 next_action: null

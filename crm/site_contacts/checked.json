@@ -1,0 +1,2494 @@
+{
+  "1-2-3-investment-managers": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 0,
+    "result": "read"
+  },
+  "21-invest-france": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 1,
+    "result": "read"
+  },
+  "360-capital-partners": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "50-partners-gestion": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "52-capital": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [Errno 11001] getaddrinfo failed"
+  },
+  "8f-asset-management-middle-east-limited": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "a-plus-finance-sas": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 0,
+    "result": "read"
+  },
+  "aalto-reim": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1020)"
+  },
+  "access-capital-partners": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [Errno 11001] getaddrinfo failed"
+  },
+  "acer-finance": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "activa-capital": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 0,
+    "result": "read"
+  },
+  "adagia-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "adbio-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "aditum-investment-management-limited": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "admio-asset-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "advenis-real-estate-investment-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "aedgis": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "aesope-gestion-de-portefeuilles": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "aestiam": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "aew": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [Errno 11001] getaddrinfo failed"
+  },
+  "africinvest-europe": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 1,
+    "result": "read"
+  },
+  "ag2r-la-mondiale-gestion-d-actifs": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [Errno 11001] getaddrinfo failed"
+  },
+  "agora-finance": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "agrica-epargne": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 0,
+    "result": "read"
+  },
+  "al-muhaidib-investment-office": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 6,
+    "result": "read"
+  },
+  "alba-infra-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "albarest-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "alderan": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 1,
+    "result": "read"
+  },
+  "alkhabeer-capital": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 1,
+    "result": "read"
+  },
+  "allianz-immovalor": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 0,
+    "result": "read"
+  },
+  "aloe-private-equity": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "altaroc-partners-sas": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 18,
+    "result": "read"
+  },
+  "alter-equity-sas": {
+    "date": "2026-09-23",
+    "emails": 13,
+    "phones": 1,
+    "result": "read"
+  },
+  "altheis": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "alti-wealth-management-france": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "altis-capital": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "alven-capital-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "am-wealth-limited": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "amalthee-gestion-sgp": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 2,
+    "result": "read"
+  },
+  "ambra-capital": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "amiral-gestion": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  "ampere-gestion": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 403"
+  },
+  "amplegest": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "amundi-immobilier": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "amwal-capital-partners-limited": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "anaxis-asset-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "angelor": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "apicil-asset-management": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 403"
+  },
+  "aquiti-gestion": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "ardian-france": {
+    "date": "2026-09-23",
+    "emails": 23,
+    "phones": 2,
+    "result": "read"
+  },
+  "argos-france-s-a-s": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 2,
+    "result": "read"
+  },
+  "arkea-asset-management": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 0,
+    "result": "read"
+  },
+  "arkea-capital": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 0,
+    "result": "read"
+  },
+  "arkea-real-estate-investment-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "arlane": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "aroxys": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "arqaam-capital-financial-ksa": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "asset-management-data-governance-amdg": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "aster-capital-partners-sas": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "atalante": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "athymis-gestion": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 3,
+    "result": "read"
+  },
+  "atland-voisin": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "atlante-gestion": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "atlantic-vantage-point-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "atlas-responsible-investors": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "atream": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "atrio-gestion-privee": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 0,
+    "result": "read"
+  },
+  "audacia": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "auriga-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "auris-gestion": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "auxense-gestion": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.auxense.com'. (_ssl.c:1020)"
+  },
+  "axeleo-capital": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 0,
+    "result": "read"
+  },
+  "axio-capital": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "axiom-alternative-investments-sarl": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "axipit-real-estate-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "azh-impact-gp": {
+    "date": "2026-09-23",
+    "emails": 8,
+    "phones": 0,
+    "result": "read"
+  },
+  "balzac-reim": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 2,
+    "result": "read"
+  },
+  "bank-of-beirut": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 403"
+  },
+  "bankmed": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "banque-libano-fran-aise": {
+    "date": "2026-09-23",
+    "result": "declined",
+    "why": "robots.txt disallows"
+  },
+  "bbac": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 3,
+    "result": "read"
+  },
+  "beaureale-investments-france": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "bex-capital": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "blackfin-capital-partners": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [Errno 11001] getaddrinfo failed"
+  },
+  "blc-bank": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "blisce": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "blueimvest": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "bnp-paribas-asset-management-europe": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 1,
+    "result": "read"
+  },
+  "bnp-paribas-real-estate-investment-management-france": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "bordier-cie-france-sa": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 4,
+    "result": "read"
+  },
+  "byblos-bank": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "byway-capital": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "ca-indosuez-gestion": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 1,
+    "result": "read"
+  },
+  "cap-west": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 1,
+    "result": "read"
+  },
+  "capagro": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "capital-asset-management-cam": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 1,
+    "result": "read"
+  },
+  "capital-croissance-sas": {
+    "date": "2026-09-23",
+    "emails": 55,
+    "phones": 29,
+    "result": "read"
+  },
+  "capital-fund-management": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "capital-grand-est": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "capitem-partenaires": {
+    "date": "2026-09-23",
+    "emails": 6,
+    "phones": 1,
+    "result": "read"
+  },
+  "capricorn-fund-managers-difc-limited": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "carlton-selection": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "carmignac-gestion": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "cartesia": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "cathay-capital-private-equity": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "cdc-croissance": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "cedrus-invest-bank": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 3,
+    "result": "read"
+  },
+  "centauri": {
+    "date": "2026-09-23",
+    "result": "declined",
+    "why": "robots.txt disallows"
+  },
+  "cervinvest-capital": {
+    "date": "2026-09-23",
+    "emails": 18,
+    "phones": 0,
+    "result": "read"
+  },
+  "chequers-partenaires-sa": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 2,
+    "result": "read"
+  },
+  "ciam": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "cic-private-debt": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "ciclad-gestion": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 3,
+    "result": "read"
+  },
+  "clartan-associes": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "cogefi-gestion": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "coinshares-asset-management": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "colliers-global-investors-france": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  "colville-capital-partners-france": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "comgest-sa": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "conquest-advisors-france": {
+    "date": "2026-09-23",
+    "result": "declined",
+    "why": "robots.txt disallows"
+  },
+  "conservateur-gestion-valor": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "consolidation-et-developpement-gestion": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "constance-associes-sas": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 2,
+    "result": "read"
+  },
+  "corecam-family-office-ltd": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.corecam.com'. (_ssl.c:1020)"
+  },
+  "cote-le-family-office": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "covea-finance": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "covivio-sgp": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "cpr-asset-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "credit-libanais": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "credit-mutuel-asset-management": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond"
+  },
+  "credit-mutuel-impact": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 1,
+    "result": "read"
+  },
+  "cyrus-herez": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 0,
+    "result": "read"
+  },
+  "daphni": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "darwin-invest": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "dauphine-am": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "dealbydeal-invest": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "delta-alternative-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "deltager-sa": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 0,
+    "result": "read"
+  },
+  "delubac-asset-management": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "demea-agro": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "demea-sustainable-investment": {
+    "date": "2026-09-23",
+    "emails": 5,
+    "phones": 1,
+    "result": "read"
+  },
+  "divio-capital": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 1,
+    "result": "read"
+  },
+  "dnca-finance": {
+    "date": "2026-09-23",
+    "emails": 21,
+    "phones": 21,
+    "result": "read"
+  },
+  "dom-finance": {
+    "date": "2026-09-23",
+    "emails": 26,
+    "phones": 21,
+    "result": "read"
+  },
+  "dorval-asset-management": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1020)"
+  },
+  "dubly-transatlantique-gestion": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "ecofi-investissements": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 1,
+    "result": "read"
+  },
+  "edmond-de-rothschild-asset-management-france": {
+    "date": "2026-09-23",
+    "emails": 9,
+    "phones": 12,
+    "result": "read"
+  },
+  "edmond-de-rothschild-reim-france": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: timed out"
+  },
+  "edouard-7-gestion-privee": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'edouard7gestionprivee.com'. (_ssl.c:1020)"
+  },
+  "ekkio-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "elaia-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "eleva-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "ellipsis-asset-management": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "emz-partners": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "ensof-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "entrepreneur-invest": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 2,
+    "result": "read"
+  },
+  "epsicap-reim": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "equalis-capital-france": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "equigest": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 1,
+    "result": "read"
+  },
+  "equistone-partners-france-sas": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "erasmus-gestion": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 2,
+    "result": "read"
+  },
+  "eres-gestion": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "essling-capital": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "eternam": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "etxea-capital": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 1,
+    "result": "read"
+  },
+  "eukratos": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 2,
+    "result": "read"
+  },
+  "eurasia-asset-management": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [Errno 11001] getaddrinfo failed"
+  },
+  "eurazeo-global-investor": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "eurazeo-infrastructure-partners": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "euryale": {
+    "date": "2026-09-23",
+    "emails": 7,
+    "phones": 2,
+    "result": "read"
+  },
+  "eutopia-gestion": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 0,
+    "result": "read"
+  },
+  "even-fo": {
+    "date": "2026-09-23",
+    "emails": 9,
+    "phones": 0,
+    "result": "read"
+  },
+  "extendam": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 2,
+    "result": "read"
+  },
+  "f-a-asset-management": {
+    "date": "2026-09-23",
+    "emails": 16,
+    "phones": 1,
+    "result": "read"
+  },
+  "faad-capital-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "fastea-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "federal-bank-of-lebanon": {
+    "date": "2026-09-23",
+    "result": "declined",
+    "why": "robots.txt disallows"
+  },
+  "fideas-capital-sas": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "fil-gestion": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 403"
+  },
+  "finaltis": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "financiere-de-l-arc": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "financiere-de-l-echiquier": {
+    "date": "2026-09-23",
+    "emails": 5,
+    "phones": 2,
+    "result": "read"
+  },
+  "financiere-de-la-cite": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "finorpa-gestion": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "flandrin-capital": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [Errno 11001] getaddrinfo failed"
+  },
+  "flexam-invest-asset-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "flornoy-ferri": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 6,
+    "result": "read"
+  },
+  "fluence-france": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "forest-invest": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "france-titrisation": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "france-valley": {
+    "date": "2026-09-23",
+    "emails": 51,
+    "phones": 0,
+    "result": "read"
+  },
+  "franklin-templeton-financial-company-ksa": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "fransabank": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "frenchfood-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "fundcraft-france": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "fundpartner-am": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "future-positive-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "galia-gestion": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "galion-exe": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "gay-lussac-gestion": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 2,
+    "result": "read"
+  },
+  "gefip-gestion-financiere-privee": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "generis-capital-partners-sas": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 2,
+    "result": "read"
+  },
+  "gestion-21": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  "gestys": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "ginjer-am": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "go-capital": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  "gordian-capital-difc-limited": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "greenman-arth": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "groupama-gan-reim": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "gutenberg-finance": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [Errno 11003] getaddrinfo failed"
+  },
+  "harvestone-capital-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 3,
+    "result": "read"
+  },
+  "herest": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 1,
+    "result": "read"
+  },
+  "hidden-road-partners-civ-middle-east-limited": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "hmg-finance-sa": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "homa-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "horizon-asset-management": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 2,
+    "result": "read"
+  },
+  "hotel-investissement-capital": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 1,
+    "result": "read"
+  },
+  "hsbc-reim-france": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [Errno 11001] getaddrinfo failed"
+  },
+  "i-p": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "ibionext": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "ibl-bank": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "idia": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 2,
+    "result": "read"
+  },
+  "idico": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 1,
+    "result": "read"
+  },
+  "igea-finance": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "im-global-partner": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "inco-ventures": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "indigo-capital": {
+    "date": "2026-09-23",
+    "emails": 11,
+    "phones": 0,
+    "result": "read"
+  },
+  "infravia-capital-partners": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "initiative-finance-gestion": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 3,
+    "result": "read"
+  },
+  "innovacom-gestion": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "innovafonds": {
+    "date": "2026-09-23",
+    "emails": 19,
+    "phones": 1,
+    "result": "read"
+  },
+  "inovalis": {
+    "date": "2026-09-23",
+    "emails": 5,
+    "phones": 1,
+    "result": "read"
+  },
+  "inter-gestion-reim": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "invested-partners": {
+    "date": "2026-09-23",
+    "emails": 8,
+    "phones": 0,
+    "result": "read"
+  },
+  "investisseurs-dans-l-entreprise": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "iq-eq-management": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "irdi-capital-investissement": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 1,
+    "result": "read"
+  },
+  "iris-capital-management": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "iris-finance": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [Errno 11003] getaddrinfo failed"
+  },
+  "isai-gestion": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "ixios-asset-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "ixo-private-equity": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "janngo-capital-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "jeito-capital": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 500"
+  },
+  "jg-capital-management": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  "jolt-capital": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 2,
+    "result": "read"
+  },
+  "june-reim": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 500"
+  },
+  "kanopy-am": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 1,
+    "result": "read"
+  },
+  "katko-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "kepler-cheuvreux-invest": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "keren-finance": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "kiplink-finance-sas": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 1,
+    "result": "read"
+  },
+  "kirao": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "korelya-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "kurma-partners": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.kls-partners.com'. (_ssl.c:1020)"
+  },
+  "kyaneos-asset-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "kyoseil-asset-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "l-catterton-europe": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 525"
+  },
+  "la-financiere-responsable": {
+    "date": "2026-09-23",
+    "emails": 7,
+    "phones": 1,
+    "result": "read"
+  },
+  "la-financiere-tiepolo": {
+    "date": "2026-09-23",
+    "emails": 38,
+    "phones": 1,
+    "result": "read"
+  },
+  "la-maison-partners": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 4,
+    "result": "read"
+  },
+  "laffitte-capital-management-sas": {
+    "date": "2026-09-23",
+    "emails": 5,
+    "phones": 1,
+    "result": "read"
+  },
+  "lamazere-gestion-privee": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "latour-capital-management-sas": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "lauxera-capital-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "lb-p-asset-management": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "lbo-france-gestion": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 1,
+    "result": "read"
+  },
+  "lbp-am": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "lesha-capital-ksa": {
+    "date": "2026-09-23",
+    "result": "declined",
+    "why": "robots.txt disallows"
+  },
+  "lgt-private-debt-france-sas": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "libank-levant-investment-bank": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "lifento": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.lifento.com'. (_ssl.c:1020)"
+  },
+  "lita-gestion": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "llm-associes": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "m-capital-partners": {
+    "date": "2026-09-23",
+    "emails": 7,
+    "phones": 0,
+    "result": "read"
+  },
+  "machina-capital": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "mandarine-gestion": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "mansartis-gestion": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "marquis-family-office": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "mata-capital-im": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "matignon-finances": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "mbo": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "mca-finance": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "meanings-capital-partners": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 0,
+    "result": "read"
+  },
+  "merak-capital": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 0,
+    "result": "read"
+  },
+  "merieux-equity-partners": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 2,
+    "result": "read"
+  },
+  "messieurs-hottinguer-et-cie-gestion-privee": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "millennium-capital-management-france": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "mindston-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "mirova": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "mnk-partners": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "mobilis-gestion": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 1,
+    "result": "read"
+  },
+  "momentum-invest-sas": {
+    "date": "2026-09-23",
+    "emails": 9,
+    "phones": 1,
+    "result": "read"
+  },
+  "moneta-asset-management": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 5,
+    "result": "read"
+  },
+  "montagu-private-equity-sas": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 1,
+    "result": "read"
+  },
+  "montaigne-capital": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "montbleu-finance": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "montefiore-investment": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 1,
+    "result": "read"
+  },
+  "montpensier-arbevel": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "montsegur-finance": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "more-capital": {
+    "date": "2026-09-23",
+    "result": "declined",
+    "why": "robots.txt disallows"
+  },
+  "motion-equity-partners": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 0,
+    "result": "read"
+  },
+  "msm-investment-advisors-difc-limited": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "musharaka-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "mw-gestion": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "my-share-company": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 429"
+  },
+  "myria-asset-management": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 403"
+  },
+  "naxicap-partners": {
+    "date": "2026-09-23",
+    "emails": 6,
+    "phones": 0,
+    "result": "read"
+  },
+  "nci": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "new-alpha-asset-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "newfund-management": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: timed out"
+  },
+  "nextstage-am": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 1,
+    "result": "read"
+  },
+  "nixen-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "nord-capital-partenaires-sas": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "normandie-reim": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "noteus-partners": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "novaxia-investissement": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "nuvama-private-difc-limited": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 403"
+  },
+  "o2-capital-asset-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "occte": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "oddo-bhf-asset-management-sas": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [WinError 10054] An existing connection was forcibly closed by the remote host"
+  },
+  "officium-asset-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "ofi-invest-asset-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "ofi-invest-real-estate": {
+    "date": "2026-09-23",
+    "emails": 5,
+    "phones": 3,
+    "result": "read"
+  },
+  "omada-investment-managers": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "oneragtime-sas": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 0,
+    "result": "read"
+  },
+  "opale-capital": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "opale-gestion-ingenierie-et-investissement": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "optigestion": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "optimum-invest": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 2,
+    "result": "read"
+  },
+  "otea-capital": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  "otoktone-3i": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [Errno 11001] getaddrinfo failed"
+  },
+  "ouest-croissance-gestion": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "ouest-rebond": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "ovni-capital": {
+    "date": "2026-09-23",
+    "emails": 7,
+    "phones": 0,
+    "result": "read"
+  },
+  "pai-sas": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "palatine-asset-management": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 0,
+    "result": "read"
+  },
+  "pams": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  "parametric": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "paref-gestion": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 1,
+    "result": "read"
+  },
+  "parquest-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "patrimium-asset-management-difc": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 429"
+  },
+  "peninsular-capital-management": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "peqan": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "pergam": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "perial-asset-management-sas": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "philippe-hottinguer-gestion-groupe-philippe-hottinguer": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  "phitrust": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "phitrust-impact-investors": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "pierre-1er-gestion": {
+    "date": "2026-09-23",
+    "emails": 5,
+    "phones": 2,
+    "result": "read"
+  },
+  "piquemal-houghton-investments": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "platinium-gestion": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 2,
+    "result": "read"
+  },
+  "poincare-gestion": {
+    "date": "2026-09-23",
+    "emails": 11,
+    "phones": 2,
+    "result": "read"
+  },
+  "portzamparc-gestion": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "praemia-reim-france": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "principal-asset-management": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "pristine": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 500"
+  },
+  "private-corner": {
+    "date": "2026-09-23",
+    "emails": 6,
+    "phones": 3,
+    "result": "read"
+  },
+  "pro-btp-finance": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "promepar-asset-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "prudentia-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "quaero-capital-france-sas": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 500"
+  },
+  "qualium-investissement": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "raise": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 1,
+    "result": "read"
+  },
+  "raise-reim": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: timed out"
+  },
+  "rasmala-investment-bank-limited": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "rb-capital": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 500"
+  },
+  "rcube-asset-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "re-sources-capital": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 0,
+    "result": "read"
+  },
+  "redtree-capital-france": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 1,
+    "result": "read"
+  },
+  "revaia": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "rgreen-invest": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "richelieu-invest": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 1,
+    "result": "read"
+  },
+  "ring": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "rivage-investment": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 2,
+    "result": "read"
+  },
+  "roce-capital-sas": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  "rothschild-co-asset-management": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 13,
+    "result": "read"
+  },
+  "sagard-sas": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "saint-olive-et-cie": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 2,
+    "result": "read"
+  },
+  "sanso-longchamp-asset-management": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 4,
+    "result": "read"
+  },
+  "sb2f-gestion-privee": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "sedco-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "selwood-asset-management-france": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unexpected InvalidURL: URL can't contain control characters. 'Under construction' (found at least ' ')"
+  },
+  "serena-capital": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 2,
+    "result": "read"
+  },
+  "seven-capital-management": {
+    "date": "2026-09-23",
+    "emails": 9,
+    "phones": 2,
+    "result": "read"
+  },
+  "seven2": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "seventure-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "sgbl": {
+    "date": "2026-09-23",
+    "result": "declined",
+    "why": "robots.txt disallows"
+  },
+  "sienna-am-france": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "sienna-gestion": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1020)"
+  },
+  "singular-capital-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "slate-venture-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "smart-lenders-asset-management-sas": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "societe-de-gestion-prevoir": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 4,
+    "result": "read"
+  },
+  "societe-generale-investment-solutions-france": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 1,
+    "result": "read"
+  },
+  "societes-des-nouveaux-patrimoines": {
+    "date": "2026-09-23",
+    "emails": 3,
+    "phones": 0,
+    "result": "read"
+  },
+  "sofinnova-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "sogenial-immobilier": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "solutions-d-epargne-et-d-assurance-sea": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [Errno 11001] getaddrinfo failed"
+  },
+  "sparring-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "spinecap": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "square-capital-paris-sas": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "stabiho-investment-partners": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "starquest": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "sulaiman-alrajhi-holding-financial-investments": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 403"
+  },
+  "sully-patrimoine-gestion": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [WinError 10061] No connection could be made because the target machine actively refused it"
+  },
+  "sunny-asset-management": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 2,
+    "result": "read"
+  },
+  "swen-capital-partners": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 403"
+  },
+  "swiss-life-asset-managers-france": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 403"
+  },
+  "sycomore-asset-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "syquant-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "talence-patrival": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "technofounders": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "telamon": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "the-family-office-company-b-s-c-c-difc-branch": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 403"
+  },
+  "the-family-office-ksa": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "HTTP 403"
+  },
+  "theoreim": {
+    "date": "2026-09-23",
+    "emails": 4,
+    "phones": 0,
+    "result": "read"
+  },
+  "tikehau-investment-management": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "tilt-capital-partners": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "tpl-investment-management-ltd": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "trail-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "trail-solutions-patrimoine": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [Errno 11002] getaddrinfo failed"
+  },
+  "trocadero-capital-partners": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 1,
+    "result": "read"
+  },
+  "truffle-capital-s-a-s": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "turenne-capital-partenaires-sa": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "twenty-first-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "twentytwo-investment-management": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 2,
+    "result": "read"
+  },
+  "tygrow": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unexpected InvalidURL: URL can't contain control characters. 'En cours de création' (found at least ' ')"
+  },
+  "ubs-la-maison-de-gestion": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 2,
+    "result": "read"
+  },
+  "ui-investissement": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 12,
+    "result": "read"
+  },
+  "unigestion-asset-management-france": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "union-bancaire-gestion-institutionnelle": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [Errno 11001] getaddrinfo failed"
+  },
+  "unofi-gestion-d-actifs": {
+    "date": "2026-09-23",
+    "emails": 18,
+    "phones": 0,
+    "result": "read"
+  },
+  "v-patrimoine": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "valimmo-reim": {
+    "date": "2026-09-23",
+    "emails": 8,
+    "phones": 1,
+    "result": "read"
+  },
+  "varenne-capital-partners": {
+    "date": "2026-09-23",
+    "result": "unreachable",
+    "why": "unreachable: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.varennecapital.fr'. (_ssl.c:1020)"
+  },
+  "vatel-capital": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "vega-investment-solutions": {
+    "date": "2026-09-23",
+    "emails": 0,
+    "phones": 1,
+    "result": "read"
+  },
+  "ventech-sas": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "veritas-investment-associates": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "vermeer-capital-partners": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "verto": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "weinberg-capital-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  },
+  "wemo-real-estate-investment-management": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 0,
+    "result": "read"
+  },
+  "white-star-capital-france-sas": {
+    "date": "2026-09-23",
+    "result": "nothing published"
+  },
+  "yotta-capital-partners": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 0,
+    "result": "read"
+  },
+  "zencap-asset-management": {
+    "date": "2026-09-23",
+    "emails": 2,
+    "phones": 4,
+    "result": "read"
+  },
+  "zenith-am": {
+    "date": "2026-09-23",
+    "emails": 1,
+    "phones": 1,
+    "result": "read"
+  }
+}

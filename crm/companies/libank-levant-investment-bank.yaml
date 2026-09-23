@@ -36,8 +36,17 @@ tags:
 - resolution-status-unknown
 - no-named-contact
 created: '2026-09-22'
-updated: '2026-09-22'
-contacts: []
+updated: '2026-09-23'
+contacts:
+- name: LIBANK (Levant Investment Bank) — general enquiries
+  title: General enquiries
+  role: unknown
+  email: info@libank.com.lb
+  phone: null
+  linkedin: null
+  language: null
+  notes: null
+  source: Email published on https://libank.com.lb/en/Contact-us
 fit:
   score: 50
   reasoning: 'Fit: priority segment investment bank serving family offices/HNWI/institutional clients
@@ -55,6 +64,13 @@ activities:
   summary: Sourced from CMA Lebanon register and libank.com.lb. Genuine family-office/HNW/institutional
     fit; acquired Optimum Invest S.A.L. 100% in 2020 (separate CRM record). No current named leader found
     - needs enrichment pass.
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://libank.com.lb/en/Home, https://libank.com.lb/en/Contact-us,
+    https://libank.com.lb/en/Corporate-Governance&group=People, https://libank.com.lb/en/Corporate-Governance&group=Risk-Management.
+    Applied email info@libank.com.lb. Every address here was printed on the firm''s own site and transcribed,
+    never constructed — challenge any of it against the page it came from.'
   link: null
 next_action:
   who: Andre Geha

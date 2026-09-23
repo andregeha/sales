@@ -17,19 +17,25 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 969500O3PG17TH59PW85 found for this firm (matched on name + country). Filled legal_name 'PRIVATE CORNER', city 'PARIS'. Legal form per GLEIF: 6CHY. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500O3PG17TH59PW85",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://private-corner.eu/, https://private-corner.eu/contact, https://private-corner.eu/cgu. Applied email contact@private-corner.eu. Also published there: ed@private-corner.eu, tr@private-corner.eu, yc@private-corner.eu. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "PARIS",
   "contacts": [
     {
-      "email": null,
+      "email": "contact@private-corner.eu",
       "language": "fr",
       "linkedin": null,
       "name": "PRIVATE CORNER — switchboard (register-published)",
       "notes": "Switchboard number as published by the regulator on its own register — not a guessed or inferred number, and not an individual's line. A generic number is a weak route: use it to reach a named person, not as the first touch itself.",
       "phone": "+33622530690",
       "role": "unknown",
-      "source": "amf-france register snapshot 2026-09-22",
+      "source": "amf-france register snapshot 2026-09-22 · Email published on https://private-corner.eu/",
       "title": "General enquiries"
     }
   ],
@@ -42,7 +48,7 @@
     "score": 63
   },
   "has_contact_route": true,
-  "has_email": false,
+  "has_email": true,
   "has_linkedin": false,
   "has_phone": true,
   "legal_name": "PRIVATE CORNER",

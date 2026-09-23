@@ -37,8 +37,17 @@ tags:
 - libank-subsidiary
 - governance-flag
 created: '2026-09-22'
-updated: '2026-09-22'
-contacts: []
+updated: '2026-09-23'
+contacts:
+- name: Optimum Invest — general enquiries
+  title: General enquiries
+  role: unknown
+  email: info@optimumlb.com
+  phone: '+9611320412'
+  linkedin: null
+  language: null
+  notes: null
+  source: Email published on https://www.optimumlb.com/contacts · Phone published on https://www.optimumlb.com
 fit:
   score: 30
   reasoning: 'Fit: priority segment asset manager/broker (20) + Lebanon (15) + multi-asset (fixed income,
@@ -59,6 +68,14 @@ activities:
     2020 - not an independent buying centre. Public reporting (The National, Sept 2024) on a 2015-2018
     embezzlement/fraud investigation allegedly linked to former BDL governor Riad Salameh is a genuine
     governance flag, recorded factually and neutrally; not an OFS assertion about current conduct or solvency.
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://www.optimumlb.com, https://www.optimumlb.com/contacts,
+    https://www.optimumlb.com/profile?d=6, https://www.optimumlb.com/profile?d=team. Applied email info@optimumlb.com,
+    phone +9611320412. Also published there: info@optimuminvest.com. Every address here was printed on
+    the firm''s own site and transcribed, never constructed — challenge any of it against the page it
+    came from.'
   link: null
 next_action:
   who: Andre Geha

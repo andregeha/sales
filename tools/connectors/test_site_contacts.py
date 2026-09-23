@@ -226,3 +226,22 @@ def test_the_national_trunk_prefix_is_stripped():
 
 def test_a_number_without_a_trunk_prefix_is_left_alone():
     assert sc._clean_phones("<p>+33 1 44 55 02 10</p>", "France") == {"+33144550210"}
+
+
+def test_a_wrong_door_spelled_differently_is_still_a_wrong_door():
+    """`dataprivacy@` reached a live record while the list held `privacy` and `dataprotection`.
+
+    A firm can spell the same inbox a dozen ways; exact matching cannot keep up, so the stems are
+    matched as substrings.
+    """
+    for local in ("dataprivacy", "privacyteam", "protectiondesdonnees", "recrutement",
+                  "communiques", "reclamations", "facturation", "helpdesk", "compliance"):
+        assert sc._is_wrong_door(local), local
+        assert sc._rank_emails({f"{local}@firm.fr"}, "firm.fr") == ([], []), local
+
+
+def test_ordinary_names_are_not_caught_by_the_substring_stems():
+    """The stems are 4+ characters precisely so a real person or channel is not excluded."""
+    for local in ("contact", "info", "infos", "jdupont", "marie.legrand", "clientservices",
+                  "commercial", "direction"):
+        assert not sc._is_wrong_door(local), local

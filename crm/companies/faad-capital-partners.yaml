@@ -32,8 +32,17 @@ tags:
 - new-licence
 - multi-asset
 created: '2026-09-22'
-updated: '2026-09-22'
-contacts: []
+updated: '2026-09-23'
+contacts:
+- name: FAAD Capital Partners Company — general enquiries
+  title: General enquiries
+  role: unknown
+  email: hi@faad.sa
+  phone: '+966920031930'
+  linkedin: null
+  language: null
+  notes: null
+  source: Phone published on https://faad.sa/en/home/ · Email published on https://faad.sa/en/home/
 fit:
   score: 65
   reasoning: 'Fit: priority segment fund manager (20) + priority market KSA (15) + genuinely multi-asset
@@ -52,6 +61,13 @@ activities:
     licensed 2023, commenced 2024 — a young, actively-building fund manager with no visible incumbent
     PMS mentioned in public material. No named contact found yet; faad.sa lists a leadership team page
     not yet reviewed for named individuals with public contact routes.
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://faad.sa/en/home/, https://faad.sa/en/contact-us/, https://faad.sa/en/leadership-team/,
+    https://faad.sa/en/about-us/. Applied phone +966920031930, email hi@faad.sa (personal-looking; no
+    role address published). Every address here was printed on the firm''s own site and transcribed, never
+    constructed — challenge any of it against the page it came from.'
   link: null
 next_action:
   who: Andre Geha

@@ -27,7 +27,16 @@ tags:
 - asset-manager
 created: '2026-09-22'
 updated: '2026-09-23'
-contacts: []
+contacts:
+- name: ALBA INFRA PARTNERS — general enquiries
+  title: General enquiries
+  role: unknown
+  email: fernando.castagnolo@alba-ip.com
+  phone: '+33631998953'
+  linkedin: null
+  language: null
+  notes: null
+  source: Published on https://alba-ip.com/fr/contact-fr/
 fit:
   score: 53
   reasoning: 'Fit 50/60: priority segment asset_manager (20) + priority market France (15) + manages third-party
@@ -56,5 +65,12 @@ activities:
     has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made
     on normalized name + country only, not a second identifier — treat as provisional and challenge if
     it looks wrong. Record: https://search.gleif.org/#/record/969500OBQ83G9HEUYP74'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://alba-ip.com/fr/, https://alba-ip.com/fr/contact-fr/, https://alba-ip.com/fr/equipe/,
+    https://alba-ip.com/fr/a-propos/. Applied phone +33631998953, email fernando.castagnolo@alba-ip.com
+    (personal-looking; no role address published). Every address here was printed on the firm''s own site
+    and transcribed, never constructed — challenge any of it against the page it came from.'
   link: null
 next_action: null

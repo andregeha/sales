@@ -5,12 +5,18 @@
       "link": "https://www.adgm.com/public-registers/fsra",
       "summary": "Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 250122, authorised 2026-05-19, Managing A Collective Investment Fund. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Reem Island, Office 2905, Suite 402, Floor 29, Sky Tower, Shams Abu Dhabi, Abu Dhabi, Al Reem Island, United Arab Emirates",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Removed vclegal@yolo.io as a contact route. It is published by the firm, but it is a privacy/recruitment/press/billing inbox — writing to it reaches someone whose job is explicitly not buying software, and on a privacy address it invites a complaint rather than a meeting. It was written by an earlier version of the website sweep whose exclusion list matched exact local parts only.",
+      "type": "research"
     }
   ],
   "city": "Abu Dhabi",
   "contacts": [
     {
-      "email": "vclegal@yolo.io",
+      "email": null,
       "language": "en",
       "linkedin": null,
       "name": "YOLO III LIMITED — contact published on the FSRA register",
@@ -30,7 +36,7 @@
     "score": 73
   },
   "has_contact_route": true,
-  "has_email": true,
+  "has_email": false,
   "has_linkedin": false,
   "has_phone": true,
   "legal_name": null,
@@ -64,6 +70,6 @@
     "fsra"
   ],
   "trigger": "new licence granted 2026-05-19 (126 days ago), no incumbent to displace (20)",
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": null
 }

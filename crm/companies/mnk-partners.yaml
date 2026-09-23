@@ -32,7 +32,7 @@ tags:
 - real-estate
 - compliance-hire
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: Syria Behloul
   title: Responsable Conformite et Controle Interne (RCCI); Directrice Generale Deleguee
@@ -56,6 +56,15 @@ contacts:
   notes: Founder and President of MNK Partners per press coverage. Pronouns not stated - use they/them.
     No email/phone/LinkedIn found; none invented.
   source: Web search 2026-09-22, press coverage
+- name: MNK Partners — general enquiries
+  title: General enquiries
+  role: unknown
+  email: null
+  phone: '+33140670120'
+  linkedin: null
+  language: null
+  notes: null
+  source: Phone published on https://mnk-partners.com/
 fit:
   score: 60
   reasoning: 'Fit 50/60: priority segment fund manager (20) + priority market France (15) + third-party
@@ -76,5 +85,12 @@ activities:
   summary: Sourced via web search on MNK Partners scale and 2024 RCCI hire (2026-09-22). Real estate boutique
     AM, ~EUR 500m AUM, AMF GP-19000006. Compliance-hire trigger is from Sept 2024, so treated as a dated
     rather than fresh signal - included because the RCCI is a plausible, named compliance-angle contact.
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://mnk-partners.com/, https://mnk-partners.com/contact/,
+    https://mnk-partners.com/equipe-et-savoir-faire/, https://mnk-partners.com/equipe/mansour-khalife/.
+    Applied phone +33140670120. Every address here was printed on the firm''s own site and transcribed,
+    never constructed — challenge any of it against the page it came from.'
   link: null
 next_action: null

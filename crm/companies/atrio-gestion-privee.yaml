@@ -31,14 +31,14 @@ contacts:
 - name: ATRIO GESTION PRIVEE — switchboard (register-published)
   title: General enquiries
   role: unknown
-  email: null
+  email: contact@coherence-communication.fr
   phone: '0155350402'
   linkedin: null
   language: fr
   notes: 'Switchboard number as published by the regulator on its own register — not a guessed or inferred
     number, and not an individual''s line. A generic number is a weak route: use it to reach a named person,
     not as the first touch itself.'
-  source: amf-france register snapshot 2026-09-22
+  source: amf-france register snapshot 2026-09-22 · Email published on https://atrio-gp.fr/mentions-legales
 fit:
   score: 63
   reasoning: 'Fit 60/60: priority segment asset_manager (20) + priority market France (15) + multi-asset
@@ -77,5 +77,13 @@ activities:
     has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made
     on normalized name + country only, not a second identifier — treat as provisional and challenge if
     it looks wrong. Record: https://search.gleif.org/#/record/969500T5AIO8EB1U6F17'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://atrio-gp.fr, https://atrio-gp.fr/contacter-atrio, https://atrio-gp.fr/mentions-legales.
+    Applied email contact@coherence-communication.fr. Also published there: alexandre.faraut@atrio-gp.fr,
+    jeanemmanuel.tronche@atrio-gp.fr, julien.lemoine@atrio-gp.fr. Every address here was printed on the
+    firm''s own site and transcribed, never constructed — challenge any of it against the page it came
+    from.'
   link: null
 next_action: null

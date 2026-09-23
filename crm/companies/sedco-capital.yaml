@@ -34,8 +34,17 @@ tags:
 - fund-launch
 - established
 created: '2026-09-22'
-updated: '2026-09-22'
-contacts: []
+updated: '2026-09-23'
+contacts:
+- name: SEDCO Capital — general enquiries
+  title: General enquiries
+  role: unknown
+  email: info@sedcocapital.com
+  phone: '+966920013317'
+  linkedin: null
+  language: null
+  notes: null
+  source: Email published on https://sedcocapital.com/contacts/offices/ · Phone published on https://sedcocapital.com/contacts/offices/
 fit:
   score: 65
   reasoning: 'Fit: priority segment asset manager (20) + priority market KSA (15) + genuinely multi-asset
@@ -67,6 +76,13 @@ activities:
     externally-facing asset-management arm (already fully captured in this record). No separate record
     needed for SEDCO Holding itself: it is a proprietary single-family vehicle with no register presence
     of its own.'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://sedcocapital.com/, https://sedcocapital.com/contacts/complaints/,
+    https://sedcocapital.com/contacts/enquiry/, https://sedcocapital.com/contacts/offices/. Applied email
+    info@sedcocapital.com, phone +966920013317. Every address here was printed on the firm''s own site
+    and transcribed, never constructed — challenge any of it against the page it came from.'
   link: null
 next_action:
   who: Andre Geha

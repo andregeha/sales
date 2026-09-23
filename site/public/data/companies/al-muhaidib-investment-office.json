@@ -5,6 +5,12 @@
       "link": null,
       "summary": "Sourced via Praxis Rock's 22-firm Saudi family-office directory plus web search identifying a named, dedicated CIO (Junaid Jafar) overseeing both the family office and financial-investments vertical - a professionalising signal per icp.md, but undated, so not credited as a hard trigger. Single-family, proprietary vehicle; genuinely worth a light watch rather than active pursuit.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://muhaidib.com/ar/, https://muhaidib.com/ar/category/contact, https://muhaidib.com/ar/category/executive-management. Applied email info@muhaidib.com, phone +966112636000. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Dammam",
@@ -19,6 +25,17 @@
       "role": "economic_buyer",
       "source": "informaconnect.com/superreturn-saudi-arabia/speakers/junaid-jafar/ and muhaidib.com executive-management page, found 2026-09-22",
       "title": "Chief Investment Officer, Muhaidib Investment Office"
+    },
+    {
+      "email": "info@muhaidib.com",
+      "language": null,
+      "linkedin": null,
+      "name": "Al Muhaidib Investment Office — general enquiries",
+      "notes": null,
+      "phone": "+966112636000",
+      "role": "unknown",
+      "source": "Email published on https://muhaidib.com/ar/ · Phone published on https://muhaidib.com/ar/",
+      "title": "General enquiries"
     }
   ],
   "country": "Saudi Arabia",
@@ -29,10 +46,10 @@
     "reasoning": "Fit 35/60: priority segment family_office (20) + priority market KSA (15) + multi-asset across international private markets and local/international public markets (10, but see below) - subtotal already 45; corrected: no points for third-party money (0, proprietary family capital only) and no points for a named regulator (0, no CMA/SAMA licence found for the investment office itself as distinct from group entities) = Fit 45/60. Trigger 0/25: a dedicated CIO exists and is active in industry circles (SuperReturn speaker, Sigma Lithium board seat 2025), which is a professionalising-family-office signal in spirit, but no appointment/hire date could be confirmed, so it cannot be scored as a dated 'new CIO hired' trigger (12 pts) under icp.md's own standard of a genuine reason-why-now. Access 8/15: named, identifiable decision-maker (Junaid Jafar, CIO) via a public conference bio, though no direct contact route (email/phone/LinkedIn) was confirmed. Total 53 by arithmetic, moderated down to 42 given this is a purely proprietary single-family vehicle - real fit but weak on both the third-party-money and regulatory-obligation dimensions that usually justify Gaia's compliance-led pitch. Status nurture: no dated trigger. Worth a light watch for a reported new mandate type, additional hire, or reporting-consolidation initiative.",
     "score": 42
   },
-  "has_contact_route": false,
-  "has_email": false,
+  "has_contact_route": true,
+  "has_email": true,
   "has_linkedin": false,
-  "has_phone": false,
+  "has_phone": true,
   "legal_name": "Al Muhaidib Group",
   "linkedin": null,
   "name": "Al Muhaidib Investment Office",
@@ -63,6 +80,6 @@
     "no-dated-trigger"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://muhaidib.com/"
 }

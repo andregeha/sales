@@ -31,14 +31,14 @@ contacts:
 - name: SOFINNOVA PARTNERS — switchboard (register-published)
   title: General enquiries
   role: unknown
-  email: null
+  email: actithera@optimumcomms.com
   phone: 01 76 23 41 00
   linkedin: null
   language: fr
   notes: 'Switchboard number as published by the regulator on its own register — not a guessed or inferred
     number, and not an individual''s line. A generic number is a weak route: use it to reach a named person,
     not as the first touch itself.'
-  source: amf-france register snapshot 2026-09-22
+  source: amf-france register snapshot 2026-09-22 · Email published on https://sofinnovapartners.com/news/actithera-significantly-strengthens-leadership-team-and-board-as-company-advances-towards-clinical-development
 fit:
   score: 63
   reasoning: 'Fit 60/60: priority segment asset_manager (20) + priority market France (15) + multi-asset
@@ -77,5 +77,13 @@ activities:
     has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made
     on normalized name + country only, not a second identifier — treat as provisional and challenge if
     it looks wrong. Record: https://search.gleif.org/#/record/969500FWF493HMEQNX94'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://sofinnovapartners.com/, https://sofinnovapartners.com/contact,
+    https://sofinnovapartners.com/news/actithera-significantly-strengthens-leadership-team-and-board-as-company-advances-towards-clinical-development,
+    https://sofinnovapartners.com/team. Applied email actithera@optimumcomms.com (personal-looking; no
+    role address published). Every address here was printed on the firm''s own site and transcribed, never
+    constructed — challenge any of it against the page it came from.'
   link: null
 next_action: null

@@ -42,6 +42,15 @@ contacts:
   notes: Founded Agora Finance in 2007; member of the Chambre Nationale des Conseils en Gestion de Patrimoine.
     No LinkedIn/email/phone confirmed in this session; none invented. Pronouns not stated - use they/them.
   source: agorafinance.fr and infonet.fr director listing, found 2026-09-22
+- name: Agora Finance — general enquiries
+  title: General enquiries
+  role: unknown
+  email: info@agorafinance.fr
+  phone: '+33171183937'
+  linkedin: null
+  language: null
+  notes: null
+  source: Published on https://agorafinance.fr/contact/
 fit:
   score: 58
   reasoning: 'Fit 55/60: priority segment mfo (20) + priority market France (15) + multi-asset (financial,
@@ -67,5 +76,12 @@ activities:
     so the LEI itself lives only in this note, not a structured field. Match was made on normalized name
     + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record:
     https://search.gleif.org/#/record/969500GB5X5BSF2VFH69'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://agorafinance.fr/, https://agorafinance.fr/contact/, https://agorafinance.fr/equipe-agora/,
+    https://agorafinance.fr/mentions-legales/. Applied email info@agorafinance.fr, phone +33171183937.
+    Every address here was printed on the firm''s own site and transcribed, never constructed — challenge
+    any of it against the page it came from.'
   link: null
 next_action: null

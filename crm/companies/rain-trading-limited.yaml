@@ -29,12 +29,12 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: Rain Trading Limited — contact published on the FSRA register
   title: General enquiries
   role: unknown
-  email: support-ae@rain.com
+  email: null
   phone: null
   linkedin: null
   language: en
@@ -59,4 +59,11 @@ activities:
     or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Maryah Island, Unit
     9, 7 Floor, Al Sarab Tower, Abu Dhabi Global Market Square'
   link: https://www.adgm.com/public-registers/fsra
+- date: '2026-09-23'
+  type: research
+  summary: Removed support-ae@rain.com as a contact route. It is published by the firm, but it is a privacy/recruitment/press/billing
+    inbox — writing to it reaches someone whose job is explicitly not buying software, and on a privacy
+    address it invites a complaint rather than a meeting. It was written by an earlier version of the
+    website sweep whose exclusion list matched exact local parts only.
+  link: null
 next_action: null

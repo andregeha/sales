@@ -26,19 +26,19 @@ tags:
 - new-licence
 - fund-manager
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: DIVIO CAPITAL — switchboard (register-published)
   title: General enquiries
   role: unknown
-  email: null
+  email: contact@divio-capital.com
   phone: +33 772 335 340
   linkedin: null
   language: fr
   notes: 'Switchboard number as published by the regulator on its own register — not a guessed or inferred
     number, and not an individual''s line. A generic number is a weak route: use it to reach a named person,
     not as the first touch itself.'
-  source: amf-france register snapshot 2026-09-22
+  source: amf-france register snapshot 2026-09-22 · Email published on https://divio-capital.com/en/legal-notices/
 fit:
   score: 83
   reasoning: 'Fit 60/60: priority segment fund_manager (20) + priority market France (15) + multi-asset
@@ -67,5 +67,13 @@ activities:
   summary: 'Enriched from the amf-france register snapshot 2026-09-22: switchboard +33 772 335 340. These
     are details the regulator publishes on its own register, not guessed or pattern-inferred. Existing
     values were left untouched.'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://divio-capital.com/en/, https://divio-capital.com/en/contact-us/,
+    https://divio-capital.com/en/the-asset-management-company-divio-capital-is-launched-by-four-european-investment-experts/,
+    https://divio-capital.com/en/legal-notices/. Applied email contact@divio-capital.com. Also published
+    there: contact@divio-capital.fr. Every address here was printed on the firm''s own site and transcribed,
+    never constructed — challenge any of it against the page it came from.'
   link: null
 next_action: null

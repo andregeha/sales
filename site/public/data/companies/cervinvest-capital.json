@@ -11,10 +11,28 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 969500212GELDFXMOF36 found for this firm (matched on name + country). Filled legal_name 'CERVINVEST CAPITAL', city 'PARIS'. Legal form per GLEIF: 6CHY. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500212GELDFXMOF36",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://www.cervinvest-capital.com/, https://www.cervinvest-capital.com/contact/, https://www.cervinvest-capital.com/team/, https://www.cervinvest-capital.com/about/. Applied email alabert@cervinvest-capital.com (personal-looking; no role address published). Also published there: amilliard@cervinvest-capital.com, arouland@cervinvest-capital.com, asmoinade@cervinvest-capital.com, dkusters@cervinvest-capital.com, ffehaili@cervinvest-capital.com, gbonnassies@cervinvest-capital.com. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "PARIS",
-  "contacts": [],
+  "contacts": [
+    {
+      "email": "alabert@cervinvest-capital.com",
+      "language": null,
+      "linkedin": null,
+      "name": "Cervinvest Capital — general enquiries",
+      "notes": null,
+      "phone": null,
+      "role": "unknown",
+      "source": "Email published on https://www.cervinvest-capital.com/team/",
+      "title": "General enquiries"
+    }
+  ],
   "country": "France",
   "created": "2026-09-22",
   "description": null,
@@ -23,8 +41,8 @@
     "reasoning": "Fit 50/60: priority segment fund_manager (20) + priority market France (15) + manages third-party money — AMF-authorised for 2 - Gestion de FIA; 2a - Gestionnaire au-delà des seuils de la Directive AIFM ou ayant opté pour l'application de la Directive AIFM; 3 - Conseil en investissement (10) + regulated by AMF (5). Trigger 0/25: licence granted 2024-04-22, too long ago to count as a trigger. Access 3/15: generic company contact published on the register (3). Scored automatically from the AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
     "score": 53
   },
-  "has_contact_route": false,
-  "has_email": false,
+  "has_contact_route": true,
+  "has_email": true,
   "has_linkedin": false,
   "has_phone": false,
   "legal_name": "CERVINVEST CAPITAL",

@@ -27,7 +27,16 @@ tags:
 - fund-manager
 created: '2026-09-22'
 updated: '2026-09-23'
-contacts: []
+contacts:
+- name: SOGENIAL IMMOBILIER — general enquiries
+  title: General enquiries
+  role: unknown
+  email: communication@sogenial.fr
+  phone: null
+  linkedin: null
+  language: null
+  notes: null
+  source: Email published on https://www.sogenial.fr
 fit:
   score: 63
   reasoning: 'Fit 60/60: priority segment fund_manager (20) + priority market France (15) + multi-asset
@@ -58,5 +67,12 @@ activities:
     has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made
     on normalized name + country only, not a second identifier — treat as provisional and challenge if
     it looks wrong. Record: https://search.gleif.org/#/record/969500OTE4SRRASDKZ20'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://www.sogenial.fr, https://www.sogenial.fr/contact/, https://www.sogenial.fr/actualites/les-equipes-de-sogenial-immobilier-vous-donne-rendez-vous-a-lyon-au-congres-patrimonia-du-30-septembre-au-1er-octobre-prochain/,
+    https://www.sogenial.fr/politique-de-confidentialite/. Applied email communication@sogenial.fr. Also
+    published there: contact@sogenial.fr. Every address here was printed on the firm''s own site and transcribed,
+    never constructed — challenge any of it against the page it came from.'
   link: null
 next_action: null

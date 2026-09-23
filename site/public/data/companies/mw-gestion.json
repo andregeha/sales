@@ -11,19 +11,25 @@
       "link": null,
       "summary": "Enriched from the amf-france register snapshot 2026-09-22: switchboard 01-42-86-54-45. These are details the regulator publishes on its own register, not guessed or pattern-inferred. Existing values were left untouched.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://www.mwgestion.com/, https://www.mwgestion.com/pour-nous-contacter/, https://www.mwgestion.com/mentions-legales/. Applied email contact@mwgestion.com. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": null,
   "contacts": [
     {
-      "email": null,
+      "email": "contact@mwgestion.com",
       "language": "fr",
       "linkedin": null,
       "name": "MW GESTION — switchboard (register-published)",
       "notes": "Switchboard number as published by the regulator on its own register — not a guessed or inferred number, and not an individual's line. A generic number is a weak route: use it to reach a named person, not as the first touch itself.",
       "phone": "01-42-86-54-45",
       "role": "unknown",
-      "source": "amf-france register snapshot 2026-09-22",
+      "source": "amf-france register snapshot 2026-09-22 · Email published on https://www.mwgestion.com/",
       "title": "General enquiries"
     }
   ],
@@ -36,7 +42,7 @@
     "score": 63
   },
   "has_contact_route": true,
-  "has_email": false,
+  "has_email": true,
   "has_linkedin": false,
   "has_phone": true,
   "legal_name": null,
@@ -67,6 +73,6 @@
     "asset-manager"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://mwgestion.com"
 }

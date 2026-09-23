@@ -34,8 +34,17 @@ tags:
 - new-licence-activity
 - regional-group
 created: '2026-09-22'
-updated: '2026-09-22'
-contacts: []
+updated: '2026-09-23'
+contacts:
+- name: Arqaam Capital Financial Company (Saudi Arabia) — general enquiries
+  title: General enquiries
+  role: unknown
+  email: info@arqaamcapital.com
+  phone: null
+  linkedin: null
+  language: null
+  notes: null
+  source: Email published on https://www.arqaamcapital.com/saudiarabia/en/
 fit:
   score: 63
   reasoning: 'Fit: priority segment asset manager (20) + priority market KSA (15) + multi-asset via fund
@@ -58,5 +67,12 @@ activities:
     some group-wide investment/portfolio infrastructure, so ''new licence'' may not mean ''no incumbent
     system'' here the way it would for a true de novo entrant. Only a generic company contact (info@arqaamcapital.com)
     found, no named person.'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://www.arqaamcapital.com/saudiarabia/en/, https://www.arqaamcapital.com/saudiarabia/en/contact/,
+    https://www.arqaamcapital.com/saudiarabia/en/board-of-directors-and-management-team/. Applied email
+    info@arqaamcapital.com. Every address here was printed on the firm''s own site and transcribed, never
+    constructed — challenge any of it against the page it came from.'
   link: null
 next_action: null

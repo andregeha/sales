@@ -34,8 +34,17 @@ tags:
 - bank
 - resolution-status-unknown
 created: '2026-09-22'
-updated: '2026-09-22'
-contacts: []
+updated: '2026-09-23'
+contacts:
+- name: Byblos Bank — general enquiries
+  title: General enquiries
+  role: unknown
+  email: null
+  phone: '+9611205050'
+  linkedin: null
+  language: null
+  notes: null
+  source: Phone published on https://www.byblosbank.com/personal-banking-lebanon
 fit:
   score: 52
   reasoning: 'Fit: priority segment private/investment bank (20) + priority market Lebanon (15) + multi-asset
@@ -59,6 +68,13 @@ activities:
     Named Chairman/GM Semaan Bassil, no direct contact found. Core open question: which Law 23/2025 restructuring
     track Byblos is on - not publicly confirmed. Recommend Andre check for viability confirmation before
     any outreach.'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://www.byblosbank.com/personal-banking-lebanon, https://www.byblosbank.com/GDPR,
+    https://www.byblosbank.com/about-byblos-bank, https://www.byblosbank.com/about/faqs. Applied phone
+    +9611205050. Every address here was printed on the firm''s own site and transcribed, never constructed
+    — challenge any of it against the page it came from.'
   link: null
 next_action:
   who: Andre Geha

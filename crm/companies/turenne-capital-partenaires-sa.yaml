@@ -26,19 +26,19 @@ tags:
 - new-licence
 - asset-manager
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: TURENNE CAPITAL PARTENAIRES SA — switchboard (register-published)
   title: General enquiries
   role: unknown
-  email: null
+  email: secretariat@nordcapital.fr
   phone: '0153430303'
   linkedin: null
   language: fr
   notes: 'Switchboard number as published by the regulator on its own register — not a guessed or inferred
     number, and not an individual''s line. A generic number is a weak route: use it to reach a named person,
     not as the first touch itself.'
-  source: amf-france register snapshot 2026-09-22
+  source: amf-france register snapshot 2026-09-22 · Email published on https://www.turennecapital.com/contact/
 fit:
   score: 63
   reasoning: 'Fit 60/60: priority segment asset_manager (20) + priority market France (15) + multi-asset
@@ -69,5 +69,12 @@ activities:
   summary: 'Enriched from the amf-france register snapshot 2026-09-22: switchboard 0153430303. These are
     details the regulator publishes on its own register, not guessed or pattern-inferred. Existing values
     were left untouched.'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://www.turennecapital.com, https://www.turennecapital.com/contact/,
+    https://www.turennecapital.com/equipe/, https://www.turennecapital.com/turenne-sante-renforce-son-equipe-avec-larrivee-danne-laure-meynier-en-qualite-de-directrice-associee/.
+    Applied email secretariat@nordcapital.fr. Every address here was printed on the firm''s own site and
+    transcribed, never constructed — challenge any of it against the page it came from.'
   link: null
 next_action: null

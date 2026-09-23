@@ -11,12 +11,18 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 213800TZOFHTZTVVYX79 found for this firm (matched on name + country). Filled legal_name 'MAREX CAPITAL (AD) LIMITED'. Legal form per GLEIF: OSE2. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/213800TZOFHTZTVVYX79",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Removed marexad-compliance@marex.com as a contact route. It is published by the firm, but it is a privacy/recruitment/press/billing inbox — writing to it reaches someone whose job is explicitly not buying software, and on a privacy address it invites a complaint rather than a meeting. It was written by an earlier version of the website sweep whose exclusion list matched exact local parts only.",
+      "type": "research"
     }
   ],
   "city": "Abu Dhabi",
   "contacts": [
     {
-      "email": "marexad-compliance@marex.com",
+      "email": null,
       "language": "en",
       "linkedin": null,
       "name": "Marex Capital (AD) Limited — contact published on the FSRA register",
@@ -36,7 +42,7 @@
     "score": 33
   },
   "has_contact_route": true,
-  "has_email": true,
+  "has_email": false,
   "has_linkedin": false,
   "has_phone": true,
   "legal_name": "MAREX CAPITAL (AD) LIMITED",

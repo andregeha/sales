@@ -11,6 +11,12 @@
       "link": null,
       "summary": "Enriched from the amf-france register snapshot 2026-09-22: switchboard 0158186180. These are details the regulator publishes on its own register, not guessed or pattern-inferred. Existing values were left untouched.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://www.entrepreneurinvest.com/, https://www.entrepreneurinvest.com/contact/, https://www.entrepreneurinvest.com/a-propos/, https://www.entrepreneurinvest.com/a-propos/25-ans-dinvestissement-positif/. Nothing new to apply. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": null,
@@ -67,6 +73,6 @@
     "asset-manager"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://www.entrepreneurventure.com"
 }

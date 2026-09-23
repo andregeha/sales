@@ -31,14 +31,14 @@ contacts:
 - name: SEVENTURE PARTNERS — switchboard (register-published)
   title: General enquiries
   role: unknown
-  email: null
+  email: contact@seventure.fr
   phone: 0157950510
   linkedin: null
   language: fr
   notes: 'Switchboard number as published by the regulator on its own register — not a guessed or inferred
     number, and not an individual''s line. A generic number is a weak route: use it to reach a named person,
     not as the first touch itself.'
-  source: amf-france register snapshot 2026-09-22
+  source: amf-france register snapshot 2026-09-22 · Email published on https://www.seventure.fr/contact/
 fit:
   score: 63
   reasoning: 'Fit 60/60: priority segment asset_manager (20) + priority market France (15) + multi-asset
@@ -96,4 +96,11 @@ activities:
     portefeuille (via data.gouv.fr) diff. telephone published or changed: ''0157950510'' -> ''0158192270''.
     Every value here is as the regulator publishes it.'
   link: https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://www.seventure.fr, https://www.seventure.fr/contact/, https://www.seventure.fr/teams/comite-direction/,
+    https://www.seventure.fr/a-propos/documentation-reglementaire/. Applied email contact@seventure.fr.
+    Every address here was printed on the firm''s own site and transcribed, never constructed — challenge
+    any of it against the page it came from.'
+  link: null
 next_action: null

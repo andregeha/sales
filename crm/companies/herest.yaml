@@ -45,6 +45,15 @@ contacts:
     Milleis Banque's board. AFFO board administrator. Pronouns not stated - use they/them. No email/phone
     published; none invented.
   source: LinkedIn and decideurs-magazine.com interview, found 2026-09-22
+- name: Herest — general enquiries
+  title: General enquiries
+  role: unknown
+  email: contact@herest.fr
+  phone: '+33320111058'
+  linkedin: null
+  language: null
+  notes: null
+  source: Email published on https://www.herest.fr/ · Phone published on https://www.herest.fr/
 fit:
   score: 63
   reasoning: 'Fit 55/60: priority segment mfo (20) + priority market France (15) + multi-asset (wealth
@@ -71,5 +80,12 @@ activities:
     Filled legal_name ''HEREST''. Legal form per GLEIF: 6CHY. crm/SCHEMA.md has no `lei` field, so the
     LEI itself lives only in this note, not a structured field. Match was made on normalized name + country
     only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500J9G4Y6QAH88U55'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://www.herest.fr/, https://www.herest.fr/, https://www.herest.fr,
+    https://www.herest.fr/mentions-legales/. Applied email contact@herest.fr, phone +33320111058. Also
+    published there: contact@sewan.fr, conformite@herest.fr. Every address here was printed on the firm''s
+    own site and transcribed, never constructed — challenge any of it against the page it came from.'
   link: null
 next_action: null

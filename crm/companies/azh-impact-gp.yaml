@@ -26,8 +26,17 @@ tags:
 - new-licence
 - fund-manager
 created: '2026-09-22'
-updated: '2026-09-22'
-contacts: []
+updated: '2026-09-23'
+contacts:
+- name: AZH Impact GP — general enquiries
+  title: General enquiries
+  role: unknown
+  email: contact@auraeimpact.com
+  phone: null
+  linkedin: null
+  language: null
+  notes: null
+  source: Email published on https://www.auraeimpact.com/contact
 fit:
   score: 73
   reasoning: 'Fit 50/60: priority segment fund_manager (20) + priority market France (15) + manages third-party
@@ -48,4 +57,13 @@ activities:
     by the automated register diff; every field here is as the register publishes it and nothing has been
     inferred. Not yet researched or enriched.
   link: https://www.data.gouv.fr/datasets/liste-des-societes-de-gestion-de-portefeuille-sgp-agreees-par-lamf
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://www.auraeimpact.com/, https://www.auraeimpact.com/contact,
+    https://www.auraeimpact.com/notre-equipe, https://www.auraeimpact.com/informations-legales. Applied
+    email contact@auraeimpact.com. Also published there: contact@webflow.com, acharpentier@auraeimpact.com,
+    anachef@auraeimpact.com, bdetalhouet@auraeimpact.com, gdellevigne@auraeimpact.com, vgondard@auraeimpact.com.
+    Every address here was printed on the firm''s own site and transcribed, never constructed — challenge
+    any of it against the page it came from.'
+  link: null
 next_action: null

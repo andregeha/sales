@@ -11,6 +11,12 @@
       "link": null,
       "summary": "Drafted first-touch to Meshal Alothman (CEO & Co-founder) on the March 2024 DFSA Cat3C licence and CAM's from-scratch operating setup. No email on file; route is Alothman's LinkedIn profile. Full draft: outreach/2026-09-22-top-leads.md. Awaiting Andre's review before send.",
       "type": "email_drafted"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://capitalam.com/en/, https://capitalam.com/en/, https://capitalam.com/en/team/, https://capitalam.com/en/news/capital-asset-management-to-serve-mena-from-dubai-granted-dfsa-cat3c-license/. Applied email contact@capitalam.com, phone +97144910100. Also published there: info@capitalam.com. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
@@ -36,6 +42,17 @@
       "role": "economic_buyer",
       "source": "PR Newswire, rocketreach.co. Web search 2026-09-22.",
       "title": "CIO & Co-founder"
+    },
+    {
+      "email": "contact@capitalam.com",
+      "language": null,
+      "linkedin": null,
+      "name": "Capital Asset Management (CAM) — general enquiries",
+      "notes": null,
+      "phone": "+97144910100",
+      "role": "unknown",
+      "source": "Email published on https://capitalam.com/en/ · Phone published on https://capitalam.com/en/",
+      "title": "General enquiries"
     }
   ],
   "country": "UAE",
@@ -47,9 +64,9 @@
     "score": 88
   },
   "has_contact_route": true,
-  "has_email": false,
+  "has_email": true,
   "has_linkedin": true,
-  "has_phone": false,
+  "has_phone": true,
   "legal_name": null,
   "linkedin": null,
   "name": "Capital Asset Management (CAM)",
@@ -83,6 +100,6 @@
     "trigger-new-licence"
   ],
   "trigger": "a brand-new DFSA licence (granted March 2024, ~2",
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://capitalam.com/"
 }

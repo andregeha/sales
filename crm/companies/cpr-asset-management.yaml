@@ -26,7 +26,7 @@ tags:
 - new-licence
 - asset-manager
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: CPR ASSET MANAGEMENT — switchboard (register-published)
   title: General enquiries
@@ -68,5 +68,12 @@ activities:
   summary: 'Enriched from the amf-france register snapshot 2026-09-22: switchboard 01 53 15 70 00. These
     are details the regulator publishes on its own register, not guessed or pattern-inferred. Existing
     values were left untouched.'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://cpram.com/fra/fr/particuliers, https://cpram.com/fra/fr/particuliers/nous-connaitre/nos-equipes,
+    https://cpram.com/fra/fr/particuliers/nous-connaitre/a-propos-de-cpram, https://cpram.com/fra/fr/particuliers/footer/mentions-legales.
+    Nothing new to apply. Every address here was printed on the firm''s own site and transcribed, never
+    constructed — challenge any of it against the page it came from.'
   link: null
 next_action: null

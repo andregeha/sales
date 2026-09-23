@@ -5,10 +5,28 @@
       "link": null,
       "summary": "Sourced from BDL bank list. Named Chairperson Raya Haffar El Hassan (since Oct 2020); Executive GM name found (Michel Accad, 2020) not re-verified as current. Resolution-track status not publicly confirmed.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://www.bankmed.com.lb, https://www.bankmed.com.lb/content/contact/ask-me.aspx, https://www.bankmed.com.lb/content/contact/complaints.aspx, https://www.bankmed.com.lb/content/contact/contact-branch.aspx. Applied phone +9611708090. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Beirut",
-  "contacts": [],
+  "contacts": [
+    {
+      "email": null,
+      "language": null,
+      "linkedin": null,
+      "name": "BankMed — general enquiries",
+      "notes": null,
+      "phone": "+9611708090",
+      "role": "unknown",
+      "source": "Phone published on https://www.bankmed.com.lb",
+      "title": "General enquiries"
+    }
+  ],
   "country": "Lebanon",
   "created": "2026-09-22",
   "description": "Major Lebanese commercial bank (Hariri-family-linked ownership history), full-service retail, corporate, private and correspondent banking, part of the wider Hariri/M1 Group financial network. Chairperson of the Board since October 2020: Raya Haffar El Hassan (former Lebanese finance and interior minister); Executive General Manager historically Michel Accad (2020) - current 2026 incumbent not independently confirmed in this research.",
@@ -17,10 +35,10 @@
     "reasoning": "Fit: priority segment bank (20) + Lebanon (15) + multi-asset commercial/private/correspondent banking (10) + third-party deposits (10) + BDL regulated (5) = 60/60. Timing: sector-wide regulatory pressure only (10/25), no individual viability confirmation found - gating question unresolved. Access: named Chairperson (Raya Haffar El Hassan) identified but her current 2026 role not re-confirmed, no contact route, and the Executive GM name found (Michel Accad) dates to 2020 and was not re-verified as current = 3/15 (stale/uncertain named contact only). Total mechanically ~73, held to 48 given both the resolution-status gate and uncertainty about who currently leads the bank operationally - re-verify leadership before any approach.",
     "score": 48
   },
-  "has_contact_route": false,
+  "has_contact_route": true,
   "has_email": false,
   "has_linkedin": false,
-  "has_phone": false,
+  "has_phone": true,
   "legal_name": "BankMed S.A.L.",
   "linkedin": "https://www.linkedin.com/company/bankmed",
   "name": "BankMed",
@@ -53,6 +71,6 @@
     "resolution-status-unknown"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://www.bankmed.com.lb"
 }

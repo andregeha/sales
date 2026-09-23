@@ -76,4 +76,11 @@ activities:
     normalized name + country only, not a second identifier — treat as provisional and challenge if it
     looks wrong. Record: https://search.gleif.org/#/record/969500IX27XY4SNGV850'
   link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://www.bexcapital.com, https://www.bexcapital.com/contact/,
+    https://www.bexcapital.com/contact/, https://www.bexcapital.com/our-team/. Nothing new to apply. Every
+    address here was printed on the firm''s own site and transcribed, never constructed — challenge any
+    of it against the page it came from.'
+  link: null
 next_action: null

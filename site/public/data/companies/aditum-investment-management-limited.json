@@ -11,6 +11,12 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 213800LNHXULRMMMXN96 found for this firm (matched on name + country). Filled legal_name 'ADITUM INVESTMENT MANAGEMENT LIMITED'. Legal form per GLEIF: 70EO. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/213800LNHXULRMMMXN96",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://www.aditumim.com/, https://www.aditumim.com/contact-us, https://www.aditumim.com/investment-management-solutions, https://www.aditumim.com/about-us. Applied phone +97148753700. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
@@ -25,6 +31,17 @@
       "role": "economic_buyer",
       "source": "bloomberg.com 2023-04-13 article, web search 2026-09-22.",
       "title": "Chief Investment Officer"
+    },
+    {
+      "email": null,
+      "language": null,
+      "linkedin": null,
+      "name": "Aditum Investment Management Limited — general enquiries",
+      "notes": null,
+      "phone": "+97148753700",
+      "role": "unknown",
+      "source": "Phone published on https://www.aditumim.com/",
+      "title": "General enquiries"
     }
   ],
   "country": "UAE",
@@ -35,10 +52,10 @@
     "reasoning": "Fit 60/60: priority asset-manager segment (20) + UAE (15) + multi-asset, conventional and Sharia-compliant (10) + manages third-party/institutional and family-office money (10) + DFSA-regulated (5). Trigger 8/25: the CIO hire (Ali El Adou, April 2023) is now over two years old and no longer counts as 'new'; the 2024 Saudi expansion is the more current signal and scored as visible growth (8). Access 8/15: Ali El Adou is a named, public CIO, though his exact current role/tenure was not re-verified beyond the 2023 appointment announcement. Total 76 (Strong band) — good fit, trigger has gone stale; research further for a fresher signal (a 2025/2026 hire, fund launch, or Riyadh-Dubai integration story) before treating as a hot lead.",
     "score": 76
   },
-  "has_contact_route": false,
+  "has_contact_route": true,
   "has_email": false,
   "has_linkedin": false,
-  "has_phone": false,
+  "has_phone": true,
   "legal_name": "ADITUM INVESTMENT MANAGEMENT LIMITED",
   "linkedin": null,
   "name": "Aditum Investment Management Limited",

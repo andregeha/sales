@@ -5,10 +5,28 @@
       "link": null,
       "summary": "Sourced via web search on CMA CMI licence announcements. Multi-asset real-assets fund manager, licensed 2023, commenced 2024 — a young, actively-building fund manager with no visible incumbent PMS mentioned in public material. No named contact found yet; faad.sa lists a leadership team page not yet reviewed for named individuals with public contact routes.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://faad.sa/en/home/, https://faad.sa/en/contact-us/, https://faad.sa/en/leadership-team/, https://faad.sa/en/about-us/. Applied phone +966920031930, email hi@faad.sa (personal-looking; no role address published). Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Riyadh",
-  "contacts": [],
+  "contacts": [
+    {
+      "email": "hi@faad.sa",
+      "language": null,
+      "linkedin": null,
+      "name": "FAAD Capital Partners Company — general enquiries",
+      "notes": null,
+      "phone": "+966920031930",
+      "role": "unknown",
+      "source": "Phone published on https://faad.sa/en/home/ · Email published on https://faad.sa/en/home/",
+      "title": "General enquiries"
+    }
+  ],
   "country": "Saudi Arabia",
   "created": "2026-09-22",
   "description": "Saudi CMI licensed by the CMA (licence no. 23270-32, issued 2023-08-15; commencement letter 2024-07-09) to conduct Managing Investments and Operating Funds, Arranging, and Advising activities. Described in press as the first 'non-traditional' Saudi investment firm licensed by the CMA, focused on real estate, private equity, infrastructure, growth equity, private debt and other real assets — i.e. multi-asset fund management for third-party/institutional capital.",
@@ -17,10 +35,10 @@
     "reasoning": "Fit: priority segment fund manager (20) + priority market KSA (15) + genuinely multi-asset (real estate, PE, infrastructure, growth equity, private debt) (10) + manages third-party/institutional capital via operated funds (10) + CMA-regulated (5) = 60/60. Timing: licence issued 2023, commencement completed 2024-07 and reconfirmed in a 2025 CMA notice — a fund manager still in its first 1-2 operating years with funds actively being raised/operated across several asset classes, exactly the point spreadsheets stop working (15/25 for fund launch/new asset class, not full new-licence points since the original grant is ~2 years old). Access: no named contact identified (0/15). Total 75 by table; kept at 65 given no route in yet and reliance on search snippets for the licence dates.",
     "score": 65
   },
-  "has_contact_route": false,
-  "has_email": false,
+  "has_contact_route": true,
+  "has_email": true,
   "has_linkedin": false,
-  "has_phone": false,
+  "has_phone": true,
   "legal_name": null,
   "linkedin": null,
   "name": "FAAD Capital Partners Company",
@@ -54,6 +72,6 @@
     "multi-asset"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://faad.sa/en/home/"
 }

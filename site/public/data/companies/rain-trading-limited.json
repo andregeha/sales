@@ -5,12 +5,18 @@
       "link": "https://www.adgm.com/public-registers/fsra",
       "summary": "Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 210063, authorised 2022-12-22, Providing Custody; Dealing In Investments. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Maryah Island, Unit 9, 7 Floor, Al Sarab Tower, Abu Dhabi Global Market Square",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Removed support-ae@rain.com as a contact route. It is published by the firm, but it is a privacy/recruitment/press/billing inbox — writing to it reaches someone whose job is explicitly not buying software, and on a privacy address it invites a complaint rather than a meeting. It was written by an earlier version of the website sweep whose exclusion list matched exact local parts only.",
+      "type": "research"
     }
   ],
   "city": "Abu Dhabi",
   "contacts": [
     {
-      "email": "support-ae@rain.com",
+      "email": null,
       "language": "en",
       "linkedin": null,
       "name": "Rain Trading Limited — contact published on the FSRA register",
@@ -29,8 +35,8 @@
     "reasoning": "Fit 30/60: adjacent segment custodian (10) + priority market UAE (15) + regulated by FSRA (ADGM) (5). Trigger 0/25: licence granted 2022-12-22, too long ago to count as a trigger. Access 0/15: no contact route published (0). Scored automatically from the FSRA public register of financial firms (ADGM) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
     "score": 30
   },
-  "has_contact_route": true,
-  "has_email": true,
+  "has_contact_route": false,
+  "has_email": false,
   "has_linkedin": false,
   "has_phone": false,
   "legal_name": null,
@@ -64,6 +70,6 @@
     "fsra"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": null
 }

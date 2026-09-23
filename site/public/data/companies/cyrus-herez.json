@@ -5,6 +5,12 @@
       "link": null,
       "summary": "Sourced via web search on French multi-family offices and the Cyrus Conseil/Maison Herez merger (2026-09-22). Largest independent French wealth/family-office group; owns AMF-approved Amplegest and Eternam (separate CRM records). Merger (April 2024) is a plausible but dated consolidation trigger - qualify what remains fragmented post-merger before pursuing.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://www.cyrus-herez.fr/, http://www.cyrus-herez.fr/nous-contacter/, https://www.cyrus-herez.fr/mentions-legales/. Applied email contact@cyrus-herez.fr. Also published there: service.juridique@cyrus-herez.fr, service.juridique@cyrusconseil.fr. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Paris",
@@ -30,6 +36,17 @@
       "role": "economic_buyer",
       "source": "Web search 2026-09-22, groupe-cyrus.fr",
       "title": "Group President"
+    },
+    {
+      "email": "contact@cyrus-herez.fr",
+      "language": null,
+      "linkedin": null,
+      "name": "Cyrus Herez (Groupe Cyrus) — general enquiries",
+      "notes": null,
+      "phone": null,
+      "role": "unknown",
+      "source": "Email published on https://www.cyrus-herez.fr/mentions-legales/",
+      "title": "General enquiries"
     }
   ],
   "country": "France",
@@ -40,8 +57,8 @@
     "reasoning": "Fit 55/60: priority segment family office/MFO (20) + priority market France (15) + multi-asset across its subsidiaries' equity/bond/real-estate/private-management offering (10) + third-party client money by definition of wealth/family-office management (10) + regulated indirectly through AMF-approved subsidiaries rather than a single group-level licence, so a partial 5 rather than full confidence. Trigger 12/25: the April 2024 Cyrus Conseil/Maison Herez merger is a genuine consolidation event - two wealth-management platforms combining almost certainly means reconciling client reporting and possibly back-office systems across the merged entity and its subsidiaries - but it does not map cleanly onto a single table row (closest: new entity from a merger, similar in spirit to a spin-out) and is now roughly 18 months old, so scored below the 20-point new-entity band. Access 8/15: named CEO David Intins and Group President Meyer Azogui identified via multiple press sources, not yet confirmed reachable. Total 75, moderated to 62: this is a large, already-sophisticated group (likely running established systems across its subsidiaries already) rather than a firm professionalising for the first time - qualify what, if anything, is actually still fragmented post-merger before assuming a live systems-review trigger. Coordinate with the Amplegest and Eternam records rather than pursuing all three independently.",
     "score": 62
   },
-  "has_contact_route": false,
-  "has_email": false,
+  "has_contact_route": true,
+  "has_email": true,
   "has_linkedin": false,
   "has_phone": false,
   "legal_name": null,
@@ -74,6 +91,6 @@
     "wealth-management"
   ],
   "trigger": "the April 2024 Cyrus Conseil/Maison Herez merger is a genuine consolidation event - two wealth-management platforms combining almost certainly means reconciling client reporting and possibly back-office systems across the merged entity and its subsidiaries - but it does not map cleanly onto a single table row (closest: new entity from a merger, similar in spirit to a spin-out) and is now roughly 18 months old, so scored below the 20-point new-entity band",
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://www.cyrus-herez.fr/"
 }

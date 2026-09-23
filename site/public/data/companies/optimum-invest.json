@@ -5,10 +5,28 @@
       "link": null,
       "summary": "Sourced via optimumlb.com and CMA Lebanon register. Now a 100%-owned LIBANK subsidiary since 2020 - not an independent buying centre. Public reporting (The National, Sept 2024) on a 2015-2018 embezzlement/fraud investigation allegedly linked to former BDL governor Riad Salameh is a genuine governance flag, recorded factually and neutrally; not an OFS assertion about current conduct or solvency.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://www.optimumlb.com, https://www.optimumlb.com/contacts, https://www.optimumlb.com/profile?d=6, https://www.optimumlb.com/profile?d=team. Applied email info@optimumlb.com, phone +9611320412. Also published there: info@optimuminvest.com. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Beirut",
-  "contacts": [],
+  "contacts": [
+    {
+      "email": "info@optimumlb.com",
+      "language": null,
+      "linkedin": null,
+      "name": "Optimum Invest — general enquiries",
+      "notes": null,
+      "phone": "+9611320412",
+      "role": "unknown",
+      "source": "Email published on https://www.optimumlb.com/contacts · Phone published on https://www.optimumlb.com",
+      "title": "General enquiries"
+    }
+  ],
   "country": "Lebanon",
   "created": "2026-09-22",
   "description": "Boutique Lebanese financial institution founded 2004, originally fixed-income institutional brokerage, upgraded in 2012 to a full financial institution (USD 5m paid-up capital) regulated by BDL. Four business lines: institutional fixed-income brokerage, asset management, corporate finance advisory and wealth management, serving financial institutions, corporates, family offices and private clients. Acquired 100% by LIBANK S.A.L. (Levant Investment Bank) in 2020 - now a subsidiary, not an independent buying centre. Publicly reported (The National, Sept 2024; Nowlebanon) as having been the subject of a 2015-2018 embezzlement/fraud investigation allegedly connected to former BDL governor Riad Salameh; this is public reporting on a legal/governance matter, not an OFS assessment of the firm's current conduct or solvency.",
@@ -17,10 +35,10 @@
     "reasoning": "Fit: priority segment asset manager/broker (20) + Lebanon (15) + multi-asset (fixed income, asset mgmt, wealth mgmt, corporate finance) (10) + manages third-party/institutional and family-office capital (10) + regulated (5) = 60/60 on paper. Timing: no specific new trigger found (0/25) - being a wholly owned LIBANK subsidiary since 2020 means it is not really an independent buying decision anymore, and the publicly reported 2015-2018 fraud/embezzlement allegations are a genuine governance caution worth flagging to Andre even though they predate the current ownership and are not evidence about current solvency or conduct. Access: no independent decision-maker - any approach should go via LIBANK, not Optimum directly (0/15). Total held to 30 (nurture/watch) given the subsidiary status and the reputational flag both argue for caution rather than active pursuit; if pursued at all, do it through LIBANK.",
     "score": 30
   },
-  "has_contact_route": false,
-  "has_email": false,
+  "has_contact_route": true,
+  "has_email": true,
   "has_linkedin": false,
-  "has_phone": false,
+  "has_phone": true,
   "legal_name": "Optimum Invest S.A.L.",
   "linkedin": "https://www.linkedin.com/company/optimum-invest-sal",
   "name": "Optimum Invest",
@@ -55,6 +73,6 @@
     "governance-flag"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://www.optimumlb.com"
 }

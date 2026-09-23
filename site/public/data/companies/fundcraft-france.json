@@ -11,6 +11,12 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 969500ZTU3BRWLFB5H80 found for this firm (matched on name + country). Filled legal_name 'FUNDCRAFT FRANCE SAS'. Legal form per GLEIF: 6CHY. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500ZTU3BRWLFB5H80",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://www.fundcraft.fr/, https://www.fundcraft.fr/contact. Applied phone +33647412099. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Paris",
@@ -25,6 +31,17 @@
       "role": "economic_buyer",
       "source": "Web search 2026-09-22, fundcraft.fr/fundcraft.lu press releases + LinkedIn snippet",
       "title": "Country Head France"
+    },
+    {
+      "email": null,
+      "language": null,
+      "linkedin": null,
+      "name": "Fundcraft France — general enquiries",
+      "notes": null,
+      "phone": "+33647412099",
+      "role": "unknown",
+      "source": "Phone published on https://www.fundcraft.fr/",
+      "title": "General enquiries"
     }
   ],
   "country": "France",
@@ -38,7 +55,7 @@
   "has_contact_route": true,
   "has_email": false,
   "has_linkedin": true,
-  "has_phone": false,
+  "has_phone": true,
   "legal_name": "FUNDCRAFT FRANCE SAS",
   "linkedin": null,
   "name": "Fundcraft France",

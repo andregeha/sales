@@ -17,6 +17,12 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 969500SO51KWX8L5GA63 found for this firm (matched on name + country). Filled legal_name 'ARGOS FRANCE S.A.S', city 'PARIS'. Legal form per GLEIF: 6CHY. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500SO51KWX8L5GA63",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://argos.fund/, https://argos.fund/contact-us/, https://argos.fund/argos-announces-four-promotions-across-its-investment-and-finance-teams/, https://argos.fund/team/. Nothing new to apply. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "PARIS",

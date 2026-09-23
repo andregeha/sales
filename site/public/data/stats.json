@@ -27,22 +27,22 @@
     {
       "country": "France",
       "total": 987,
-      "with_route": 459
+      "with_route": 530
     },
     {
       "country": "Lebanon",
       "total": 17,
-      "with_route": 0
+      "with_route": 9
     },
     {
       "country": "Saudi Arabia",
       "total": 37,
-      "with_route": 2
+      "with_route": 9
     },
     {
       "country": "UAE",
       "total": 569,
-      "with_route": 443
+      "with_route": 444
     }
   ],
   "coverage": {

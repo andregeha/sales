@@ -527,3 +527,49 @@ and I had verified `/coverage`, not `/sources`.
 the schemas with no browser involved — including an assertion that the file list matches, so a new
 emitted file cannot be added untested. Confirmed it reproduces the original error when the fix is
 reverted. Cost: `@types/node`, dev-only, documented in `plan/website.md`.
+
+## 2026-09-23 — the website sweep: 7% reachable → 22%
+
+Andre pushed back that the CRM was not producing new companies and the gaps were obvious. The
+measurement behind that was worse than my earlier summaries implied: 1,604 records, **119 email
+addresses, all UAE**, France 986 records and **zero** — and 887 of our 937 "contacts" were
+switchboard numbers off registers, labelled *General enquiries*, not people. We had built a very
+good directory and almost no ability to act on it.
+
+**Built `tools/connectors/site_contacts.py`**, a third connector shape: it creates no records and
+proposes no candidates, it reads the contact route a firm publishes on its own site and writes it
+onto the record we already hold. Transcription, never inference — a page with no address yields
+nothing, asserted in a test that says to revert if it ever fails.
+
+**Result, measured:**
+
+| | before | after |
+|---|---|---|
+| France with an email | 0 | **245** |
+| All markets | 119 (7%) | **367 (22%)** |
+| Qualified *and* contactable | 54 | 67 |
+
+**Four defects the first live batches caught, each now a test.** Every one would have produced a
+wrong action, not just a wrong number:
+
+1. `+1 206…` on a French asset manager — a Seattle number from a vendor widget. Phones must match
+   the market's dialling code.
+2. `+33 (0)1 56 88 33 00` became `+330156883300` — one digit too many, **undiallable**. The trunk
+   `0` is never part of an international number, and every French site prints it that way. The
+   common case, not an edge case.
+3. `dpo@`, `rgpd@`, `careers@`, `press@` — real, published, and the wrong door.
+4. `infos@` filed as personal data for want of one letter.
+
+**And one that got through to live records:** `dataprivacy@` was written because the exclusion list
+matched exact local parts only. Wrong doors are now matched as substrings of 4+ characters, and a
+cleanup removed **17** such addresses — `compliance@`, `legal@`, `support@`, `reclamation@`.
+⚠ Most of those were UAE records from the FSRA register, not from this sweep: the 119 UAE emails we
+had been counting all along included compliance inboxes.
+
+**Two hard limits, written down rather than left to be rediscovered** (open questions 20–22):
+1,146 of 1,604 records publish **no website we know of**, and no instrument exists for that — ADGM's
+snapshot carries 13, DFSA/CMA/REGAFI none, and SIRENE has no URL field at all, all checked. And only
+38 records have a real named human; this connector collects routes, not people.
+
+`robots.txt` obeyed (5 firms declined and are not retried), one request at a time, GET only.
+157 Python tests · 19 site tests · build deterministic.

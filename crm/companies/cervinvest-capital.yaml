@@ -27,7 +27,16 @@ tags:
 - fund-manager
 created: '2026-09-22'
 updated: '2026-09-23'
-contacts: []
+contacts:
+- name: Cervinvest Capital — general enquiries
+  title: General enquiries
+  role: unknown
+  email: alabert@cervinvest-capital.com
+  phone: null
+  linkedin: null
+  language: null
+  notes: null
+  source: Email published on https://www.cervinvest-capital.com/team/
 fit:
   score: 53
   reasoning: 'Fit 50/60: priority segment fund_manager (20) + priority market France (15) + manages third-party
@@ -55,5 +64,15 @@ activities:
     has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made
     on normalized name + country only, not a second identifier — treat as provisional and challenge if
     it looks wrong. Record: https://search.gleif.org/#/record/969500212GELDFXMOF36'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://www.cervinvest-capital.com/, https://www.cervinvest-capital.com/contact/,
+    https://www.cervinvest-capital.com/team/, https://www.cervinvest-capital.com/about/. Applied email
+    alabert@cervinvest-capital.com (personal-looking; no role address published). Also published there:
+    amilliard@cervinvest-capital.com, arouland@cervinvest-capital.com, asmoinade@cervinvest-capital.com,
+    dkusters@cervinvest-capital.com, ffehaili@cervinvest-capital.com, gbonnassies@cervinvest-capital.com.
+    Every address here was printed on the firm''s own site and transcribed, never constructed — challenge
+    any of it against the page it came from.'
   link: null
 next_action: null

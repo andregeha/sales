@@ -5,10 +5,28 @@
       "link": null,
       "summary": "Sourced from BDL institution history (formerly Intercontinental Bank of Lebanon) and ibl.com.lb. No current named leader found. Resolution-track status not publicly confirmed.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://www.ibl.com.lb/english/home, https://www.ibl.com.lb/english/contact-us, https://www.ibl.com.lb/english/about-ibl/management, https://www.ibl.com.lb/english/about-ibl/abc-statement. Applied email ibl@ibl.com.lb (personal-looking; no role address published). Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Beirut",
-  "contacts": [],
+  "contacts": [
+    {
+      "email": "ibl@ibl.com.lb",
+      "language": null,
+      "linkedin": null,
+      "name": "IBL Bank — general enquiries",
+      "notes": null,
+      "phone": null,
+      "role": "unknown",
+      "source": "Email published on https://www.ibl.com.lb/english/contact-us",
+      "title": "General enquiries"
+    }
+  ],
   "country": "Lebanon",
   "created": "2026-09-22",
   "description": "Lebanese bank founded 1961 (formerly Intercontinental Bank of Lebanon), headquartered in Achrafieh, Beirut, 20 domestic branches plus foreign branches in Cyprus, Erbil, Baghdad and Basra. No current (2026) named chairman/CEO independently confirmed in this research.",
@@ -17,8 +35,8 @@
     "reasoning": "Fit: bank segment (20) + Lebanon (15) + multi-asset commercial/trade banking (10) + third-party deposits (10) + BDL regulated (5) = 60/60. Timing: sector-wide pressure only (10/25), no individual confirmation. Access: no named leader or contact route found = 0/15. Total mechanically ~70, held to 38 (worth a look) given the resolution-status gate plus a complete absence of a named route in.",
     "score": 38
   },
-  "has_contact_route": false,
-  "has_email": false,
+  "has_contact_route": true,
+  "has_email": true,
   "has_linkedin": false,
   "has_phone": false,
   "legal_name": "IBL Bank S.A.L.",
@@ -54,6 +72,6 @@
     "no-named-contact"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://www.ibl.com.lb"
 }

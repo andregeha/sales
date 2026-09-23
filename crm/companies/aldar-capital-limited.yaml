@@ -29,12 +29,12 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: ALDAR CAPITAL LIMITED — contact published on the FSRA register
   title: General enquiries
   role: unknown
-  email: legal@aldarcapital.ae
+  email: null
   phone: +971 22361001
   linkedin: null
   language: en
@@ -61,4 +61,11 @@ activities:
     yet researched or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Maryah
     Island, Abu Dhabi'
   link: https://www.adgm.com/public-registers/fsra
+- date: '2026-09-23'
+  type: research
+  summary: Removed legal@aldarcapital.ae as a contact route. It is published by the firm, but it is a
+    privacy/recruitment/press/billing inbox — writing to it reaches someone whose job is explicitly not
+    buying software, and on a privacy address it invites a complaint rather than a meeting. It was written
+    by an earlier version of the website sweep whose exclusion list matched exact local parts only.
+  link: null
 next_action: null

@@ -29,12 +29,12 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: Wealthface Limited — contact published on the FSRA register
   title: General enquiries
   role: unknown
-  email: support@wealthface.com
+  email: null
   phone: +971 24187566
   linkedin: null
   language: en
@@ -60,4 +60,11 @@ activities:
     address (per the FSRA): United Arab Emirates, Abu Dhabi, Reem Island, Office 4305 and 4306, Floor
     43, Addax Port Office Tower, Al Rayfa Street'
   link: https://www.adgm.com/public-registers/fsra
+- date: '2026-09-23'
+  type: research
+  summary: Removed support@wealthface.com as a contact route. It is published by the firm, but it is a
+    privacy/recruitment/press/billing inbox — writing to it reaches someone whose job is explicitly not
+    buying software, and on a privacy address it invites a complaint rather than a meeting. It was written
+    by an earlier version of the website sweep whose exclusion list matched exact local parts only.
+  link: null
 next_action: null

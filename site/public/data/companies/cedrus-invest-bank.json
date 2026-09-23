@@ -11,10 +11,28 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 529900MZ2088TM8YYP06 found for this firm (matched on name + country). No blank schema field to fill. Legal form per GLEIF: Société anonyme libanaise. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/529900MZ2088TM8YYP06",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://www.cedrusbank.com/home-page, https://www.cedrusbank.com/contact-cedrus-bank, https://www.cedrusbank.com/english/contact-us, https://www.cedrusbank.com/about-cedrus-bank-lebanon. Applied email info@cedrusbank.com, phone +9611236612. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Beirut",
-  "contacts": [],
+  "contacts": [
+    {
+      "email": "info@cedrusbank.com",
+      "language": null,
+      "linkedin": null,
+      "name": "Cedrus Invest Bank — general enquiries",
+      "notes": null,
+      "phone": "+9611236612",
+      "role": "unknown",
+      "source": "Email published on https://www.cedrusbank.com/contact-cedrus-bank · Phone published on https://www.cedrusbank.com/home-page",
+      "title": "General enquiries"
+    }
+  ],
   "country": "Lebanon",
   "created": "2026-09-22",
   "description": "Boutique Lebanese investment bank founded in Beirut in 2011, focused on wealth management, capital markets and investment banking (M&A advisory, fundraising) for high-net-worth individuals, family offices and corporates across MENA. A licensed investment bank rather than a deposit-taking retail bank, which may place it differently relative to the commercial-bank resolution framework, though this is not confirmed. Listed on CMA Lebanon's approved-institutions register. Leadership named in sources as Chairman-General Manager, with some conflicting attribution between co-founders Fadi Assali (named in a 2017 profile) and Raed Khoury (named in a more recent Craft.co listing) - current incumbent not independently reconciled.",
@@ -23,10 +41,10 @@
     "reasoning": "Fit: priority segment private/investment bank serving family offices and HNWIs (20) + Lebanon (15) + multi-asset (wealth mgmt, capital markets, corporate finance) (10) + explicitly manages third-party/client capital, not proprietary (10) + BDL/CMA regulated (5) = 60/60 - a strong structural fit, closer to our family-office/HNW pitch than a mass retail bank. Timing: sector-wide pressure (10/25); being an investment bank rather than a deposit-heavy commercial bank may mean lighter exposure to the FX-deposit/correspondent-banking crisis at the core of Law 23/2025, but this is inference, not a confirmed fact, so it is not scored as a positive trigger - Andre should treat the resolution-track question as open here too. Access: named leadership exists but is unreconciled between two conflicting sources = 3/15 (uncertain named contact). Total mechanically ~73, held to 55 given the leadership-name conflict needs resolving and the resolution-track question, though this is one of the more promising non-mass-retail names in the batch.",
     "score": 55
   },
-  "has_contact_route": false,
-  "has_email": false,
+  "has_contact_route": true,
+  "has_email": true,
   "has_linkedin": false,
-  "has_phone": false,
+  "has_phone": true,
   "legal_name": "Cedrus Invest Bank S.A.L.",
   "linkedin": "https://www.linkedin.com/company/cedrus-invest-bank",
   "name": "Cedrus Invest Bank",

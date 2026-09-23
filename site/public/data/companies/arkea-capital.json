@@ -11,10 +11,28 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 969500FCNO2282SG6Z86 found for this firm (matched on name + country). Filled legal_name 'ARKEA CAPITAL', city 'LE RELECQ-KERHUON'. Legal form per GLEIF: 6CHY. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500FCNO2282SG6Z86",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://arkea-capital.com/, https://arkea-capital.com/contact/, https://arkea-capital.com/, https://arkea-capital.com/equipe/. Applied email gwenola.landivinec@arkea.com (personal-looking; no role address published). Also published there: jerome.guittet@arkea.com, stephane.choukroun@arkea.com, yohann.vimont@arkea.com. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "LE RELECQ-KERHUON",
-  "contacts": [],
+  "contacts": [
+    {
+      "email": "gwenola.landivinec@arkea.com",
+      "language": null,
+      "linkedin": null,
+      "name": "ARKEA CAPITAL — general enquiries",
+      "notes": null,
+      "phone": null,
+      "role": "unknown",
+      "source": "Email published on https://arkea-capital.com/contact/",
+      "title": "General enquiries"
+    }
+  ],
   "country": "France",
   "created": "2026-09-22",
   "description": null,
@@ -23,8 +41,8 @@
     "reasoning": "Fit 60/60: priority segment asset_manager (20) + priority market France (15) + multi-asset — AMF-authorised across 3 instrument classes including 2 - OPCVM et FIA européens ouverts à une clientèle non professionnelle; 3 - FIA européens destinés à une clientèle professionnelle et FIA des pays tiers; 4 - Instruments financiers non admis à la négociation sur un marché réglementé ou organisé (10) + manages third-party money — AMF-authorised for 1 - Gestion de portefeuille pour le compte de tiers (Gestion des mandats); 2 - Gestion de FIA; 2 - Réception et transmission d'ordres pour le compte de tiers (10) + regulated by AMF (5). Trigger 0/25: licence granted 1998-11-12, too long ago to count as a trigger. Access 3/15: generic company contact published on the register (3). Scored automatically from the AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
     "score": 63
   },
-  "has_contact_route": false,
-  "has_email": false,
+  "has_contact_route": true,
+  "has_email": true,
   "has_linkedin": false,
   "has_phone": false,
   "legal_name": "ARKEA CAPITAL",

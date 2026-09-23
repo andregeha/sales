@@ -26,7 +26,7 @@ tags:
 - new-licence
 - fund-manager
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: EQUISTONE PARTNERS FRANCE SAS — switchboard (register-published)
   title: General enquiries
@@ -67,5 +67,12 @@ activities:
   summary: 'Enriched from the amf-france register snapshot 2026-09-22: switchboard 01 56 69 43 43. These
     are details the regulator publishes on its own register, not guessed or pattern-inferred. Existing
     values were left untouched.'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://www.equistone.fr/, https://www.equistone.fr/contact-us/,
+    https://www.equistone.fr/investments/converteam/, https://www.equistone.fr/team/. Nothing new to apply.
+    Every address here was printed on the firm''s own site and transcribed, never constructed — challenge
+    any of it against the page it came from.'
   link: null
 next_action: null

@@ -11,6 +11,12 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 969500GB5X5BSF2VFH69 found for this firm (matched on name + country). Filled legal_name 'AGORA FINANCE'. Legal form per GLEIF: 6CHY. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500GB5X5BSF2VFH69",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://agorafinance.fr/, https://agorafinance.fr/contact/, https://agorafinance.fr/equipe-agora/, https://agorafinance.fr/mentions-legales/. Applied email info@agorafinance.fr, phone +33171183937. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Paris",
@@ -25,6 +31,17 @@
       "role": "economic_buyer",
       "source": "agorafinance.fr and infonet.fr director listing, found 2026-09-22",
       "title": "Founder"
+    },
+    {
+      "email": "info@agorafinance.fr",
+      "language": null,
+      "linkedin": null,
+      "name": "Agora Finance — general enquiries",
+      "notes": null,
+      "phone": "+33171183937",
+      "role": "unknown",
+      "source": "Published on https://agorafinance.fr/contact/",
+      "title": "General enquiries"
     }
   ],
   "country": "France",
@@ -35,10 +52,10 @@
     "reasoning": "Fit 55/60: priority segment mfo (20) + priority market France (15) + multi-asset (financial, real estate, tax engineering) (10) + third-party family money (10) + regulated 0/5 - no named regulator confirmed in this session. Trigger 0/25: no current trigger found - firm appears stable since 2007 with no reported hire, launch or incident. Access 3/15: only a generic company contact route plus a named founder (Aurelien Guichard) without a confirmed reachable profile (no LinkedIn/email/phone found and verified) - scored as generic-contact-only rather than the higher named-decision-maker band. Total 58; status nurture per the no-trigger rule - re-check for a launch, hire or press mention before spending outreach effort.",
     "score": 58
   },
-  "has_contact_route": false,
-  "has_email": false,
+  "has_contact_route": true,
+  "has_email": true,
   "has_linkedin": false,
-  "has_phone": false,
+  "has_phone": true,
   "legal_name": "AGORA FINANCE",
   "linkedin": "https://fr.linkedin.com/company/agora-finance",
   "name": "Agora Finance",

@@ -30,8 +30,17 @@ tags:
 - resolution-status-unknown
 - no-named-contact
 created: '2026-09-22'
-updated: '2026-09-22'
-contacts: []
+updated: '2026-09-23'
+contacts:
+- name: IBL Bank — general enquiries
+  title: General enquiries
+  role: unknown
+  email: ibl@ibl.com.lb
+  phone: null
+  linkedin: null
+  language: null
+  notes: null
+  source: Email published on https://www.ibl.com.lb/english/contact-us
 fit:
   score: 38
   reasoning: 'Fit: bank segment (20) + Lebanon (15) + multi-asset commercial/trade banking (10) + third-party
@@ -44,6 +53,14 @@ activities:
   type: research
   summary: Sourced from BDL institution history (formerly Intercontinental Bank of Lebanon) and ibl.com.lb.
     No current named leader found. Resolution-track status not publicly confirmed.
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://www.ibl.com.lb/english/home, https://www.ibl.com.lb/english/contact-us,
+    https://www.ibl.com.lb/english/about-ibl/management, https://www.ibl.com.lb/english/about-ibl/abc-statement.
+    Applied email ibl@ibl.com.lb (personal-looking; no role address published). Every address here was
+    printed on the firm''s own site and transcribed, never constructed — challenge any of it against the
+    page it came from.'
   link: null
 next_action:
   who: Andre Geha

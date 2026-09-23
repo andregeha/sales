@@ -5,6 +5,12 @@
       "link": null,
       "summary": "Sourced via web search on MNK Partners scale and 2024 RCCI hire (2026-09-22). Real estate boutique AM, ~EUR 500m AUM, AMF GP-19000006. Compliance-hire trigger is from Sept 2024, so treated as a dated rather than fresh signal - included because the RCCI is a plausible, named compliance-angle contact.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://mnk-partners.com/, https://mnk-partners.com/contact/, https://mnk-partners.com/equipe-et-savoir-faire/, https://mnk-partners.com/equipe/mansour-khalife/. Applied phone +33140670120. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Paris",
@@ -30,6 +36,17 @@
       "role": "economic_buyer",
       "source": "Web search 2026-09-22, press coverage",
       "title": "President, founder"
+    },
+    {
+      "email": null,
+      "language": null,
+      "linkedin": null,
+      "name": "MNK Partners — general enquiries",
+      "notes": null,
+      "phone": "+33140670120",
+      "role": "unknown",
+      "source": "Phone published on https://mnk-partners.com/",
+      "title": "General enquiries"
     }
   ],
   "country": "France",
@@ -40,10 +57,10 @@
     "reasoning": "Fit 50/60: priority segment fund manager (20) + priority market France (15) + third-party investor money via SCPI/professional funds (10) + AMF-regulated, GP-19000006 (5); multi-asset credit not given (0) since real estate (including private debt funds) is treated here as a related but still fairly narrow real-assets focus rather than genuine cross-asset-class management. Trigger 12/25: a new Responsable Conformite et Controle Interne (RCCI) was appointed in September 2024 (Syria Behloul) - a real senior compliance hire, though the table's 12-point band is for a new COO/CIO/Head of Ops/Compliance and this appointment is now roughly two years old, so scored at the lower end and should be treated as a lagging rather than fresh signal. Access 8/15: named founder/President Mansour Khalife and named RCCI/Delegate General Director Syria Behloul both identified via press, RCCI role in particular is a natural compliance-angle entry point. Total 70, moderated to 60 given the compliance-hire trigger is dated rather than current.",
     "score": 60
   },
-  "has_contact_route": false,
+  "has_contact_route": true,
   "has_email": false,
   "has_linkedin": false,
-  "has_phone": false,
+  "has_phone": true,
   "legal_name": null,
   "linkedin": null,
   "name": "MNK Partners",
@@ -73,6 +90,6 @@
     "compliance-hire"
   ],
   "trigger": "a new Responsable Conformite et Controle Interne (RCCI) was appointed in September 2024 (Syria Behloul) - a real senior compliance hire, though the table's 12-point band is for a new COO/CIO/Head of Ops/Compliance and this appointment is now roughly two years old, so scored at the lower end and should be treated as a lagging rather than fresh signal",
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://mnk-partners.com/"
 }

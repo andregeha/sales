@@ -11,10 +11,34 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 969500PVFFZ6ZN3CHG63 found for this firm (matched on name + country). Filled legal_name 'IDICO', city 'PARIS'. Legal form per GLEIF: 6CHY. Direct parent per GLEIF: IDI. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500PVFFZ6ZN3CHG63",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://idico.fr/, https://idico.fr/lequipe/, https://idico.fr/mentions-legales/. Applied phone +33155278030, email dataprivacy@idico.fr (personal-looking; no role address published). Also published there: infoclients@idico.fr, dataprivacy@omnescapital.com. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Removed dataprivacy@idico.fr as a contact route. It is published by the firm, but it is a privacy/recruitment/press/billing inbox — writing to it reaches someone whose job is explicitly not buying software, and on a privacy address it invites a complaint rather than a meeting. It was written by an earlier version of the website sweep whose exclusion list matched exact local parts only.",
+      "type": "research"
     }
   ],
   "city": "PARIS",
-  "contacts": [],
+  "contacts": [
+    {
+      "email": null,
+      "language": null,
+      "linkedin": null,
+      "name": "idiCo — general enquiries",
+      "notes": null,
+      "phone": "+33155278030",
+      "role": "unknown",
+      "source": "Phone published on https://idico.fr/",
+      "title": "General enquiries"
+    }
+  ],
   "country": "France",
   "created": "2026-09-22",
   "description": null,
@@ -23,10 +47,10 @@
     "reasoning": "Fit 60/60: priority segment asset_manager (20) + priority market France (15) + multi-asset — AMF-authorised across 7 instrument classes including 1 - Instruments négociés sur un marché réglementé ou organisé (Instruments financiers cotés, TCN,...); 2 - OPCVM et FIA européens ouverts à une clientèle non professionnelle; 3 - FIA européens destinés à une clientèle professionnelle et FIA des pays tiers (10) + manages third-party money — AMF-authorised for 1 - Gestion de portefeuille pour le compte de tiers (Gestion des mandats); 2 - Gestion de FIA; 2a - Gestionnaire au-delà des seuils de la Directive AIFM ou ayant opté pour l'application de la Directive AIFM (10) + regulated by AMF (5). Trigger 0/25: licence granted 2023-03-07, too long ago to count as a trigger. Access 3/15: generic company contact published on the register (3). Scored automatically from the AMF register of licensed sociétés de gestion de portefeuille (via data.gouv.fr) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
     "score": 63
   },
-  "has_contact_route": false,
+  "has_contact_route": true,
   "has_email": false,
   "has_linkedin": false,
-  "has_phone": false,
+  "has_phone": true,
   "legal_name": "IDICO",
   "linkedin": null,
   "name": "idiCo",

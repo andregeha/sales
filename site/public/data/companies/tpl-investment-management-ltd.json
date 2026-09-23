@@ -5,10 +5,28 @@
       "link": "https://www.adgm.com/public-registers/fsra",
       "summary": "Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 210062, authorised 2022-05-26, Managing A Collective Investment Fund. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Reem Island, Unit 3503-S3, 35th Floor, Tamouh, Addax Port Office Tower, Al Rayfa Street",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://tplfunds.com, https://tplfunds.com/tpl-investment-management/, https://tplfunds.com/what-we-do/. Applied phone +97148828500. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Abu Dhabi",
-  "contacts": [],
+  "contacts": [
+    {
+      "email": null,
+      "language": null,
+      "linkedin": null,
+      "name": "TPL Investment Management Ltd — general enquiries",
+      "notes": null,
+      "phone": "+97148828500",
+      "role": "unknown",
+      "source": "Phone published on https://tplfunds.com/tpl-investment-management/",
+      "title": "General enquiries"
+    }
+  ],
   "country": "UAE",
   "created": "2026-09-22",
   "description": null,
@@ -17,10 +35,10 @@
     "reasoning": "Fit 50/60: priority segment fund_manager (20) + priority market UAE (15) + manages third-party money — FSRA-authorised for Managing A Collective Investment Fund (10) + regulated by FSRA (ADGM) (5). Trigger 0/25: licence granted 2022-05-26, too long ago to count as a trigger. Access 3/15: generic company contact published on the register (3). Scored automatically from the FSRA public register of financial firms (ADGM) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
     "score": 53
   },
-  "has_contact_route": false,
+  "has_contact_route": true,
   "has_email": false,
   "has_linkedin": false,
-  "has_phone": false,
+  "has_phone": true,
   "legal_name": null,
   "linkedin": null,
   "name": "TPL Investment Management Ltd",
@@ -52,6 +70,6 @@
     "fsra"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://tplfunds.com"
 }

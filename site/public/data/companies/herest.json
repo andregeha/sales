@@ -11,6 +11,12 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 969500J9G4Y6QAH88U55 found for this firm (matched on name + country). Filled legal_name 'HEREST'. Legal form per GLEIF: 6CHY. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/969500J9G4Y6QAH88U55",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://www.herest.fr/, https://www.herest.fr/, https://www.herest.fr, https://www.herest.fr/mentions-legales/. Applied email contact@herest.fr, phone +33320111058. Also published there: contact@sewan.fr, conformite@herest.fr. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Marcq-en-Baroeul",
@@ -25,6 +31,17 @@
       "role": "economic_buyer",
       "source": "LinkedIn and decideurs-magazine.com interview, found 2026-09-22",
       "title": "Co-founder & Gerant"
+    },
+    {
+      "email": "contact@herest.fr",
+      "language": null,
+      "linkedin": null,
+      "name": "Herest — general enquiries",
+      "notes": null,
+      "phone": "+33320111058",
+      "role": "unknown",
+      "source": "Email published on https://www.herest.fr/ · Phone published on https://www.herest.fr/",
+      "title": "General enquiries"
     }
   ],
   "country": "France",
@@ -36,9 +53,9 @@
     "score": 63
   },
   "has_contact_route": true,
-  "has_email": false,
+  "has_email": true,
   "has_linkedin": true,
-  "has_phone": false,
+  "has_phone": true,
   "legal_name": "HEREST",
   "linkedin": "https://fr.linkedin.com/company/herest",
   "name": "Herest",

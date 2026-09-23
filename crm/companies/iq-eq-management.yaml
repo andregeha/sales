@@ -26,7 +26,7 @@ tags:
 - new-licence
 - fund-manager
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: IQ EQ Management — switchboard (register-published)
   title: General enquiries
@@ -67,5 +67,12 @@ activities:
   summary: 'Enriched from the amf-france register snapshot 2026-09-22: switchboard 0180279999. These are
     details the regulator publishes on its own register, not guessed or pattern-inferred. Existing values
     were left untouched.'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://iqeq.fr/, https://iqeq.fr/contact/, https://iqeq.fr/le-groupe/interlocuteurs/,
+    https://iqeq.fr/service-de-direction/. Nothing new to apply. Every address here was printed on the
+    firm''s own site and transcribed, never constructed — challenge any of it against the page it came
+    from.'
   link: null
 next_action: null

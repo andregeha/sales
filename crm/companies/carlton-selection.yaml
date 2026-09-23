@@ -31,14 +31,14 @@ contacts:
 - name: CARLTON SELECTION — switchboard (register-published)
   title: General enquiries
   role: unknown
-  email: null
+  email: relations-investisseurs@carltonselection.fr
   phone: 05 56 23 17 17
   linkedin: null
   language: fr
   notes: 'Switchboard number as published by the regulator on its own register — not a guessed or inferred
     number, and not an individual''s line. A generic number is a weak route: use it to reach a named person,
     not as the first touch itself.'
-  source: amf-france register snapshot 2026-09-22
+  source: amf-france register snapshot 2026-09-22 · Email published on https://www.carltonselection.fr/nouvelleadresse.html
 fit:
   score: 63
   reasoning: 'Fit 60/60: priority segment asset_manager (20) + priority market France (15) + multi-asset
@@ -76,5 +76,12 @@ activities:
     per GLEIF: INTERSELECTION ACTUARIAT FINANCE. crm/SCHEMA.md has no `lei` field, so the LEI itself lives
     only in this note, not a structured field. Match was made on normalized name + country only, not a
     second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/9695007XVWT4LMB6O470'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://www.carltonselection.fr, https://www.carltonselection.fr/nouvelleadresse.html,
+    https://www.carltonselection.fr/mentionsnul.html. Applied email relations-investisseurs@carltonselection.fr
+    (personal-looking; no role address published). Every address here was printed on the firm''s own site
+    and transcribed, never constructed — challenge any of it against the page it came from.'
   link: null
 next_action: null

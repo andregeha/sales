@@ -38,7 +38,16 @@ tags:
 - resolution-status-unknown
 created: '2026-09-22'
 updated: '2026-09-23'
-contacts: []
+contacts:
+- name: Cedrus Invest Bank — general enquiries
+  title: General enquiries
+  role: unknown
+  email: info@cedrusbank.com
+  phone: '+9611236612'
+  linkedin: null
+  language: null
+  notes: null
+  source: Email published on https://www.cedrusbank.com/contact-cedrus-bank · Phone published on https://www.cedrusbank.com/home-page
 fit:
   score: 55
   reasoning: 'Fit: priority segment private/investment bank serving family offices and HNWIs (20) + Lebanon
@@ -68,6 +77,13 @@ activities:
     no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made
     on normalized name + country only, not a second identifier — treat as provisional and challenge if
     it looks wrong. Record: https://search.gleif.org/#/record/529900MZ2088TM8YYP06'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://www.cedrusbank.com/home-page, https://www.cedrusbank.com/contact-cedrus-bank,
+    https://www.cedrusbank.com/english/contact-us, https://www.cedrusbank.com/about-cedrus-bank-lebanon.
+    Applied email info@cedrusbank.com, phone +9611236612. Every address here was printed on the firm''s
+    own site and transcribed, never constructed — challenge any of it against the page it came from.'
   link: null
 next_action:
   who: Andre Geha

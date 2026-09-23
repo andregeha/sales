@@ -77,4 +77,11 @@ activities:
     on normalized name + country only, not a second identifier — treat as provisional and challenge if
     it looks wrong. Record: https://search.gleif.org/#/record/969500AFDIY1XZE27L60'
   link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://www.moneta.fr, https://www.moneta.fr/contact/comment-souscrire,
+    https://www.moneta.fr/contact/nous-contacter, https://www.moneta.fr/contact/stagiaires-apprentis.
+    Nothing new to apply. Every address here was printed on the firm''s own site and transcribed, never
+    constructed — challenge any of it against the page it came from.'
+  link: null
 next_action: null

@@ -27,7 +27,16 @@ tags:
 - fund-manager
 created: '2026-09-22'
 updated: '2026-09-23'
-contacts: []
+contacts:
+- name: MATA CAPITAL IM — general enquiries
+  title: General enquiries
+  role: unknown
+  email: null
+  phone: '+331869524313'
+  linkedin: null
+  language: null
+  notes: null
+  source: Phone published on https://www.matacapital.com/en
 fit:
   score: 63
   reasoning: 'Fit 60/60: priority segment fund_manager (20) + priority market France (15) + multi-asset
@@ -58,5 +67,12 @@ activities:
     no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made
     on normalized name + country only, not a second identifier — treat as provisional and challenge if
     it looks wrong. Record: https://search.gleif.org/#/record/969500AQ7GWY2U71MH23'
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://www.matacapital.com/en, https://www.matacapital.com/en,
+    https://www.matacapital.com/en/team, https://www.matacapital.com/en/mata-capital-asset-management.
+    Applied phone +331869524313. Every address here was printed on the firm''s own site and transcribed,
+    never constructed — challenge any of it against the page it came from.'
   link: null
 next_action: null

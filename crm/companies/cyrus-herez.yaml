@@ -36,7 +36,7 @@ tags:
 - merger
 - wealth-management
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-23'
 contacts:
 - name: David Intins
   title: CEO, Cyrus Herez
@@ -58,6 +58,15 @@ contacts:
   notes: Named Group President of Groupe Cyrus. Pronouns not stated - use they/them. No email/phone/LinkedIn
     found; none invented.
   source: Web search 2026-09-22, groupe-cyrus.fr
+- name: Cyrus Herez (Groupe Cyrus) — general enquiries
+  title: General enquiries
+  role: unknown
+  email: contact@cyrus-herez.fr
+  phone: null
+  linkedin: null
+  language: null
+  notes: null
+  source: Email published on https://www.cyrus-herez.fr/mentions-legales/
 fit:
   score: 62
   reasoning: 'Fit 55/60: priority segment family office/MFO (20) + priority market France (15) + multi-asset
@@ -82,5 +91,13 @@ activities:
     (2026-09-22). Largest independent French wealth/family-office group; owns AMF-approved Amplegest and
     Eternam (separate CRM records). Merger (April 2024) is a plausible but dated consolidation trigger
     - qualify what remains fragmented post-merger before pursuing.
+  link: null
+- date: '2026-09-23'
+  type: research
+  summary: 'Website contact sweep: read https://www.cyrus-herez.fr/, http://www.cyrus-herez.fr/nous-contacter/,
+    https://www.cyrus-herez.fr/mentions-legales/. Applied email contact@cyrus-herez.fr. Also published
+    there: service.juridique@cyrus-herez.fr, service.juridique@cyrusconseil.fr. Every address here was
+    printed on the firm''s own site and transcribed, never constructed — challenge any of it against the
+    page it came from.'
   link: null
 next_action: null

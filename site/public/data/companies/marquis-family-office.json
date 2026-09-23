@@ -5,6 +5,12 @@
       "link": null,
       "summary": "Sourced via AFFO homepage testimonial (Yuna Marquis quoted as Founder). Confirmed via pappers.fr and marquisfamilyoffice.fr. Small, human-scale independent MFO in Rennes; no trigger and no verified direct contact route found.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://marquisfamilyoffice.fr/, https://marquisfamilyoffice.fr/contact/, https://marquisfamilyoffice.fr/a-propos/, https://marquisfamilyoffice.fr/mentions-legales/. Applied email contact@marquisfamilyoffice.fr. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Rennes",
@@ -19,6 +25,17 @@
       "role": "economic_buyer",
       "source": "AFFO homepage testimonial, pappers.fr and marquisfamilyoffice.fr, found 2026-09-22",
       "title": "Founder"
+    },
+    {
+      "email": "contact@marquisfamilyoffice.fr",
+      "language": null,
+      "linkedin": null,
+      "name": "Marquis Family Office — general enquiries",
+      "notes": null,
+      "phone": null,
+      "role": "unknown",
+      "source": "Email published on https://marquisfamilyoffice.fr/mentions-legales/",
+      "title": "General enquiries"
     }
   ],
   "country": "France",
@@ -29,8 +46,8 @@
     "reasoning": "Fit 55/60: priority segment mfo (20) + priority market France (15) + multi-asset (real estate, financial investment across the family book) (10) + third-party family money (10) + regulated 0/5 - no named regulator/CIF registration confirmed in this session. Trigger 0/25: no trigger found - a small, stable, deliberately limited-roster practice with no reported launch, hire or incident. Access 3/15: named founder (Yuna Marquis) but no confirmed reachable contact route (no LinkedIn/email/phone verified in this session) - generic-contact-only band. Total 48; status nurture. Genuinely small (advisory + admin + compliance poles, human-scale by design) - worth a light touch, not a priority push; re-score if it professionalises further or takes on a named CIO/COO.",
     "score": 48
   },
-  "has_contact_route": false,
-  "has_email": false,
+  "has_contact_route": true,
+  "has_email": true,
   "has_linkedin": false,
   "has_phone": false,
   "legal_name": null,
@@ -63,6 +80,6 @@
     "no-current-trigger"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://marquisfamilyoffice.fr/"
 }

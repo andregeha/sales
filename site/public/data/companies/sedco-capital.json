@@ -11,10 +11,28 @@
       "link": null,
       "summary": "Context while working Saudi family offices/MFOs (2026-09-22): SEDCO Capital's parent, SEDCO Holding (Jeddah, est. 1976), is one of the 22 verified single-family offices listed by Praxis Rock's Saudi directory - a Shariah-compliant diversified family conglomerate. SEDCO Capital is its CMA-regulated, externally-facing asset-management arm (already fully captured in this record). No separate record needed for SEDCO Holding itself: it is a proprietary single-family vehicle with no register presence of its own.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://sedcocapital.com/, https://sedcocapital.com/contacts/complaints/, https://sedcocapital.com/contacts/enquiry/, https://sedcocapital.com/contacts/offices/. Applied email info@sedcocapital.com, phone +966920013317. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Jeddah",
-  "contacts": [],
+  "contacts": [
+    {
+      "email": "info@sedcocapital.com",
+      "language": null,
+      "linkedin": null,
+      "name": "SEDCO Capital — general enquiries",
+      "notes": null,
+      "phone": "+966920013317",
+      "role": "unknown",
+      "source": "Email published on https://sedcocapital.com/contacts/offices/ · Phone published on https://sedcocapital.com/contacts/offices/",
+      "title": "General enquiries"
+    }
+  ],
   "country": "Saudi Arabia",
   "created": "2026-09-22",
   "description": "Established Jeddah-headquartered Shariah-compliant asset manager (relaunched as a standalone asset manager in 2010, tracing to 1976), with offices in Riyadh and Luxembourg. Offers a full range of asset management across asset allocation, real estate, private equity, public equity, liquidity instruments, agriculture, timber and commodities, all Shariah-screened. Listed among Forbes Middle East's 30 biggest regional asset managers. Reported total AUM > SAR 48bn.",
@@ -23,10 +41,10 @@
     "reasoning": "Fit: priority segment asset manager (20) + priority market KSA (15) + genuinely multi-asset (real estate, PE, public equity, liquidity, agriculture, timber, commodities) (10) + manages third-party institutional/family capital across multiple funds, not proprietary (10) + CMA-regulated (5) = 60/60 — one of the strongest fit scores in this batch given the breadth of asset classes, which is exactly Gaia's front-to-back, multi-asset pitch. Timing: a new real-estate fund (SEDCO Capital Alawaly Fund) with a near-term/late-2026 inception date is an active fund-launch signal (15/25) — new fund means new NAV, subscriptions/redemptions and shareholder-registry work, precisely our fund-administration module. Access: no named contact identified in this pass (0/15) — this is an established, well-known regional firm so a named CIO/COO/Head of Ops should be findable with more effort. Total 75 by table, kept at 65 pending confirmation of the fund-launch date and identification of a named contact; established firms of this size are also more likely to have an incumbent PMS already, which should be qualified before outreach.",
     "score": 65
   },
-  "has_contact_route": false,
-  "has_email": false,
+  "has_contact_route": true,
+  "has_email": true,
   "has_linkedin": false,
-  "has_phone": false,
+  "has_phone": true,
   "legal_name": null,
   "linkedin": "https://www.linkedin.com/company/sedco-capital",
   "name": "SEDCO Capital",
@@ -61,6 +79,6 @@
     "established"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://sedcocapital.com/"
 }

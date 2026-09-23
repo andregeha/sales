@@ -5,6 +5,12 @@
       "link": null,
       "summary": "Established Jeddah multi-asset alternative investment manager (~SAR 9bn AUM, 38+ funds), CEO Ahmed Saud Ghouth named on the firm's own site. Active 2026 fund launch/restructuring signal found. No incumbent-system information found — this needs qualifying before treating as a greenfield opportunity, since a 20-year-old firm this size likely already runs some PMS.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-23",
+      "link": null,
+      "summary": "Website contact sweep: read https://www.alkhabeer.com/, https://www.alkhabeer.com/, https://www.alkhabeer.com/contact/, https://www.alkhabeer.com/asset-management/. Applied email info@alkhabeer.com, phone +9668001247555. Also published there: cc@alkhabeer.com. Every address here was printed on the firm's own site and transcribed, never constructed — challenge any of it against the page it came from.",
+      "type": "research"
     }
   ],
   "city": "Jeddah",
@@ -19,6 +25,17 @@
       "role": "economic_buyer",
       "source": "Web search 2026-09-22, alkhabeer.com/executive-management",
       "title": "Chief Executive Officer, Alkhabeer Capital"
+    },
+    {
+      "email": "info@alkhabeer.com",
+      "language": null,
+      "linkedin": null,
+      "name": "Alkhabeer Capital — general enquiries",
+      "notes": null,
+      "phone": "+9668001247555",
+      "role": "unknown",
+      "source": "Email published on https://www.alkhabeer.com/contact/ · Phone published on https://www.alkhabeer.com/contact/",
+      "title": "General enquiries"
     }
   ],
   "country": "Saudi Arabia",
@@ -29,10 +46,10 @@
     "reasoning": "Fit: priority segment asset manager (20) + priority market KSA (15) + multi-asset (real estate, PE, capital markets, traded funds) (10) + explicitly serves institutions and family offices, i.e. third-party capital (10) + CMA-regulated (5) = 60/60. Timing: an active 2026 fund launch (Diversified Income Traded Fund) plus a fundamental restructuring of an existing traded fund effective 2026-06-29 — a live fund-launch/new-mandate signal (15/25); with 38+ funds under management, ongoing NAV/subscription-redemption/shareholder-registry complexity is a standing operational fact, not a one-off. Access: named CEO identified (Ahmed Saud Ghouth) via the firm's own executive management page, but no direct contact route confirmed (8/15). Total 83 by table, moderated to 63 given the firm's scale and 20-year history make an existing incumbent PMS likely — qualify what system they run today before assuming greenfield opportunity.",
     "score": 63
   },
-  "has_contact_route": false,
-  "has_email": false,
+  "has_contact_route": true,
+  "has_email": true,
   "has_linkedin": false,
-  "has_phone": false,
+  "has_phone": true,
   "legal_name": null,
   "linkedin": "https://www.linkedin.com/company/alkhabeercap",
   "name": "Alkhabeer Capital",
@@ -68,6 +85,6 @@
     "established"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "website": "https://www.alkhabeer.com/"
 }
