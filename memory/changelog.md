@@ -946,3 +946,43 @@ entity in our segment — the record says explicitly that any contact at all is 
 second record without it; and re-running would then have flipped the two already-created records into
 "duplicate" rejections, because a firm we had just created ourselves looks exactly like one that was
 already there. The re-run now skips anything already accepted.
+
+## 2026-09-24 — the ADGM audit: I was wrong, and that is the useful result
+
+I told Andre that 162 ADGM firms sat outside the CRM and that it looked like "the same shape as
+DIFC", where we had been querying 4 of ~50 service categories. **The audit says otherwise.**
+
+Read every missing firm's detail page and classified it structurally — reading the register's own
+activity table rather than testing our six needles against it, because the point was to discover
+names we do not know:
+
+| Why it is missing | Count |
+|---|---:|
+| **All authorisations WITHDRAWN** | **106** |
+| Holds activities we do not map | 38 |
+| Lists no regulated activity at all | 20 |
+| **Detail page unreadable** | **0** |
+| **Should have matched and didn't** | **0** |
+
+**The FSRA connector is sound.** Zero unreadable pages, zero wrong skips. 106 of the 164 are simply
+withdrawn firms, correctly excluded, and the 20 with no activity are reinsurers, payment and tech
+companies (ADNOC Reinsurance, Hubpay, Lean Technologies) — not our segments.
+
+The real gap is small and specific: **10 fund administrators** ("Acting as the Administrator of a
+Collective Investment Fund") and **12 *Arranging Deals in Investments*** firms — the latter being
+exactly the low-precision category we already refuse to create records from in DIFC, so refusing it
+here is consistency rather than an oversight.
+
+⚠ Fund administrators are deliberately NOT added yet. `crm/SCHEMA.md` has no segment for a service
+provider, DIFC's 33 administrators are already mis-labelled `fund_manager` (open question #25), and
+adding ten more would compound an error rather than fix it.
+
+**Banco Santander**, the case that prompted this, falls in the withdrawn or no-activity bucket — not
+a silently dropped bank.
+
+### Meanwhile the onshore CMA does have the DIFC shape
+52 unmapped categories hold firms, 906 firm-slots in total. Most is correctly out of scope
+(Introduction 186, Promotion 137, Telemarketing 57, exchange-access permissions). But three are
+genuine inconsistencies with segments we already carry elsewhere: **Custody** (6 firms), **Trading
+broker of OTC derivatives and currencies** (27) and **Commodity Brokerage** (6). We map custody in
+DIFC and brokers in three other categories here.
