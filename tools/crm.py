@@ -485,7 +485,14 @@ def find_companies(text: str, limit: int = 8,
             # something — otherwise a single initial matches the entire CRM.
             at, bt = set(a.split()), set(b.split())
             shorter, longer = (at, bt) if len(at) <= len(bt) else (bt, at)
-            if shorter and shorter <= longer and any(len(w) >= 3 for w in shorter):
+            # ⚠ A SINGLE shared word only means identity when the other name is barely longer.
+            # "Finance House Securities" reduces to the one distinctive word "house" — which is
+            # contained in "small house single family office fze" and scored a confident 0.90,
+            # hiding a real family office behind an unrelated broker. But single-token containment
+            # is still needed for the common case ("Jadwa" → "Jadwa Investment (DIFC) Limited"), so
+            # the rule is about DISTANCE: one word may stand for a name of at most two words.
+            long_enough = len(shorter) >= 2 or len(longer) <= 2
+            if shorter and shorter <= longer and long_enough and any(len(w) >= 3 for w in shorter):
                 score = max(score, 0.90)
             # ⚠ A shared word only means something if the word itself is distinctive. Nearly every
             # firm we hold contains "capital", "banque", "investment" or "gestion", so counting

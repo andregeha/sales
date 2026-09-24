@@ -120,3 +120,84 @@ the kind of event that tends to accompany, or precede, professionalising financi
 worth a light watch, and worth someone with laptop access re-attempting the direct fetch, since a
 government source naming registrants (if it ever becomes public) would be categorically better than
 any aggregator on this whole page.
+
+---
+
+## E. Families looked at, no named vehicle found
+
+Checked directly (official site, or a targeted search plus at least one official-site fetch attempt)
+and found **no named family office or investment-arm entity** — only the operating conglomerate
+itself, sometimes informally called a "family office" by aggregators with no vehicle name attached:
+
+- **Easa Saleh Al Gurg Group (ESAG)** — ZoomInfo lists a "Head of Family Office" *role* (Mohammed
+  Al Shaibani) but algurg.com's own leadership page (fetched directly, 2026-09-24) names no separate
+  family-office entity. Treat as: a family-office *function* exists, no distinctly named vehicle
+  confirmed.
+- **Chalhoub Group** — aggregators (Altss, SWFInstitute) call it a single-family office; no named
+  investment arm found in this pass, and no attempt yet to fetch chalhoub.com directly.
+- **Al Tayer Group** — the operating group itself (see Investment Trading Group in §A for its
+  confirmed investment office).
+- **Al Habtoor Group** — the operating group itself (see Al Habtoor Investment in §A for its
+  confirmed investment arm).
+
+## F. Families named in the brief that are out of UAE scope
+
+- **YBA Kanoo / Yusuf Bin Ahmed Kanoo Group** — headquartered in **Bahrain**, not the UAE, per its
+  own "About Us" page (kanoo.com) and Forbes Middle East. It does run named divisions — **Kanoo
+  Capital** (established 2016) and **Kanoo Global Investments** — but neither was confirmed as a
+  UAE-registered entity in this pass (no GLEIF match for either name under the UAE country filter).
+  Not included in the tables above; worth a separate Bahrain-scoped look if that market opens up.
+- **Alshaya Group** — headquartered in **Kuwait**; operates across the UAE and other GCC markets but
+  no UAE-specific named investment vehicle was found. Out of scope for this UAE-specific task.
+- **Olayan Group, Al Bin Laden Group, Alghanim Industries** — Saudi/Kuwaiti families named in the
+  brief's example list; not pursued here as they are not UAE entities. (Note: **The Olayan Group**
+  already has a CRM record, `the-olayan-group.yaml`, presumably from Saudi-market work — not
+  duplicated here.)
+
+---
+
+## Unknowns (explicit)
+
+- Whether **Al Ghurair Investment LLC** and **Abdulla Ahmed Al Ghurair Investment Co. LLC** (two
+  different GLEIF records) are the same legal entity under two names, or genuinely two entities —
+  unresolved.
+- Any live, reachable website for **Al Ghurair Investment LLC** — `alghurairinvest.com` 404'd on a
+  direct fetch 2026-09-24; do not assume it is dead permanently, but do not cite it as live either.
+- Whether **Skylark Investment Limited** and **Padar Investment Limited** (GLEIF entities sharing an
+  "Al Habtoor Motors Bldg" address) are actually Al Habtoor-family vehicles — address proximity only,
+  no corroborating source.
+- The true relationship between **Sharaf HQ Investment**, **Sharaf Investment (L.L.C.)**, and
+  **Sharafi Group Investments** — are these the same thing, sibling entities, or three unrelated
+  companies that happen to share a name pattern? Not resolved. **Sharafi Group Investments** in
+  particular needs a direct check against the Sharaf family before being treated as part of the same
+  group at all — flagged as a live name-collision risk, not a confirmed fact either way.
+- Whether the Galadari family's four differently-named entities (**Galadari Brothers**, **Ilyas &
+  Mustafa Galadari Group**, **Galadari Investment Office**, **AWGAL Investments**) map to four
+  distinct branches or overlap — not independently confirmed; only aggregator-sourced.
+- Any public, named list from the UAE's **Unified Family Business Registry** — confirmed to exist,
+  contents not public as far as this pass could establish; the Ministry's own announcement page
+  could not be fetched directly in this session (connection reset) and should be retried.
+- Whether any of the entities in §A or §B are **single** or **multi**-family in the strict sense
+  used elsewhere in our CRM (an MFO manages third-party money) — every one identified here that has
+  a primary-source description is proprietary/single-family; none was found, in this pass, to
+  describe itself as managing money for families other than its own. That is itself a finding: the
+  "named investment vehicle of a named merchant family" route surfaced **single**-family vehicles
+  almost exclusively — it is not, on this evidence, a good route to *multi*-family offices, which
+  remain the better commercial prospect per `memory/facts.md`.
+- Kanoo Capital / Kanoo Global Investments' exact registration jurisdiction — not confirmed as UAE
+  or Bahrain-only; GLEIF found nothing under either name in the UAE.
+
+---
+
+## Recommendation for whoever picks this up next
+
+None of the entities in §A are, on present evidence, immediately actionable Gaia prospects — every
+one confirmed here is a **single-family, proprietary** vehicle (the same shape as
+`al-muhaidib-investment-office.yaml`, already in our CRM from the Saudi side), and per
+`knowledge/market/icp.md`'s own scoring logic a proprietary single-family office scores materially
+lower than a multi-family office managing third-party money, precisely because there is no
+third-party money, no external client reporting obligation, and often no regulator to force a
+system decision. They are worth holding as **named, sourced records** (not inventing contacts or
+triggers for them) rather than as active pipeline. The one genuinely new **channel** this pass
+opened is GLEIF's ability to walk a family name to its registered vehicles cheaply and repeatably —
+worth reusing for Saudi and Lebanese family names too, not just UAE ones.

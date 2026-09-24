@@ -132,3 +132,24 @@ def test_a_name_match_in_another_country_is_not_a_duplicate(monkeypatch):
     cross = crm.find_companies("SNB Capital", country="Saudi Arabia")
     assert cross, "the foreign relative should still be surfaced, not hidden"
     assert cross[0][0] < 0.90, "a cross-country namesake must never reach duplicate certainty"
+
+
+def test_one_shared_common_word_is_not_identity(monkeypatch):
+    """"Finance House Securities" reduces to the single word "house" once industry words are
+    stripped — and "house" is contained in "small house single family office fze", which scored a
+    confident 0.90 and hid a real Dubai family office behind an unrelated broker.
+
+    One word may stand in for a name of at most two words; beyond that the distance is too great.
+    """
+    fixture = [_rec("finance-house-securities", "Finance House Securities", country="UAE")]
+    monkeypatch.setattr(crm, "load_all_companies", lambda: list(fixture))
+    ranked = crm.find_companies("Small House Capital (Single Family Office FZE)", country="UAE")
+    assert all(s < 0.90 for s, _ in ranked), "an unrelated firm sharing one word must not read as a duplicate"
+
+
+def test_a_short_form_still_matches_its_longer_legal_name(monkeypatch):
+    """The case single-token containment exists for, and which must keep working."""
+    fixture = [_rec("jadwa-investment-difc-limited", "Jadwa Investment (DIFC) Limited", country="UAE")]
+    monkeypatch.setattr(crm, "load_all_companies", lambda: list(fixture))
+    top = crm.find_companies("Jadwa", country="UAE")[0]
+    assert top[0] >= 0.90 and top[1]["slug"] == "jadwa-investment-difc-limited"

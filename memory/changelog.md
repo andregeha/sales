@@ -827,3 +827,44 @@ Investments, Stephens Investments Holdings, Massar Investments and 36 more. I re
 to the Family Wealth Centre in 2023, so this is a frozen 2023 snapshot — stale, needing verification,
 and the only enumerable list of named Gulf family offices found anywhere. Ingested as candidates at
 score 54, the highest-ranked block in the queue after GLEIF.
+
+## 2026-09-24 — UAE family offices: 0 records → 66 named candidates
+
+Andre: "there are much more in the UAE, much more. Can't you find them via web search, checking
+website? LinkedIn? other solutions?" He was right.
+
+**66 named UAE family offices and MFOs now in the queue**, from three routes, none of them a register:
+
+| Route | Found | Note |
+|---|---:|---|
+| DFSA Single Family Office listing | 41 | the withdrawn *category*, not withdrawn firms — a frozen 2023 snapshot |
+| Trade press, conference and own-site research | 18 | incl. 6 genuine **MFOs**, which manage third-party money and are the better prospects |
+| Family groups and GLEIF corporate structures | 7 | Al Majid Investment, Al Tayer's ITG, Al Habtoor Investment, Seddiqi & Sons, three Al Ghurair branches |
+
+Named MFOs found: Abbey Road Investment Group, Pharos MFO, McFaddens & Co (UAE), Advani Family
+Office, Equalis Capital, Charles Park. Named SFOs include Apeiron (Christian Angermayer, ADGM),
+KAAF (Mishal Kanoo), Vivium (Elie Khouri), Almulla Capital, Boschen, 76Columbus, Daher.
+
+⚠ **Three traps caught by the research and preserved in the candidate text rather than smoothed over:**
+- Dubai's **Equalis Capital Ltd** (DIFC, equalis.ch) is a completely different company from
+  `equalis-capital-france` already in the CRM (Paris, AMF-licensed). Do not merge.
+- **"Al Ghurair" names at least three legally separate entities** across different family branches,
+  plus a fourth domain flagged as a likely scam site trading on the name, which was NOT ingested.
+- Al Ghurair Group's "Family Office" is a **function on an org chart, not an incorporated entity** —
+  deliberately not added as a record.
+
+On LinkedIn: public company URLs surfaced by a search engine were recorded; the site itself was not
+scraped and no login was used. That line does not move.
+
+### A false positive that would have hidden a real firm
+`crm.py find` matched **"Small House Capital (Single Family Office FZE)"** to **"Finance House
+Securities"** at a confident 0.90. Cause: once generic industry words are stripped, Finance House
+Securities reduces to the single word **"house"** — and a one-word core contained in a six-word name
+scored full containment. Single-token containment is genuinely needed ("Jadwa" → "Jadwa Investment
+(DIFC) Limited"), so the fix is about distance: one word may stand for a name of at most two words.
+Both cases are now tests. ⚠ Without this, a real Dubai family office would have been silently
+absorbed into an unrelated broker's record.
+
+⚠ **Known performance limit:** `find_companies` reloads all 1,816 YAML records on every call, so
+bulk re-resolution of 25 candidates times out. Fine for the one-at-a-time use it was built for;
+it needs a cached index before any bulk promotion pass.
