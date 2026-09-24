@@ -5,19 +5,31 @@
       "link": "https://www.dfsa.ae/public-register/firms",
       "summary": "Appeared as a new entry in the DFSA public register of authorised firms (DIFC). Licence F002709, Managing Assets (Authorised Firms). Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the DFSA): Unit C108,Level 1, Burj Daman, DIFC, PO Box 506970, Dubai, UAE",
       "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Open-web enrichment sweep. Applied: website https://audaciacapital.com; email info@audaciacapital.com. Evidence: audaciacapital.com (fetched 2026-09-24); difccourts.ae case listing (2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
+      "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Trigger recorded from the open-web sweep: named defendant in DIFC Courts case CFI 063/2024 (Istar Capital Limited v Audacia Capital Limited). ⚠ Litigation is a signal that something is happening, NOT an opening — it may equally mean the firm is distracted or distressed. Treat with care and do not lead with it. Source: difccourts.ae, found 2026-09-24.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
   "contacts": [
     {
-      "email": null,
+      "email": "info@audaciacapital.com",
       "language": "en",
       "linkedin": null,
       "name": "Audacia Capital Limited — switchboard (register-published)",
       "notes": "Telephone number as published by the DFSA on its own public register — not a guessed number and not an individual's line. Use it to reach a named person, not as the first touch itself.",
       "phone": "971 4 277 1122",
       "role": "unknown",
-      "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/audacia-capital-limited",
+      "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/audacia-capital-limited · Email published on the firm's own site (audaciacapital.com (fetched 2026-09-24); difccourts.ae case )",
       "title": "General enquiries"
     }
   ],
@@ -26,11 +38,11 @@
   "description": null,
   "fit": {
     "disqualified_reason": null,
-    "reasoning": "Fit 50/60: priority segment asset_manager (20) + priority market UAE (15) + manages third-party money — DFSA-authorised for Managing Assets (10) + regulated by DFSA (DIFC) (5). Trigger 0/25: no licence date published, so no datable trigger. Access 3/15: generic company contact published on the register (3). Scored automatically from the DFSA public register of authorised firms (DIFC) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "reasoning": "Fit 50/60: priority segment asset_manager (20) + priority market UAE (15) + manages third-party money — DFSA-authorised for Managing Assets (10) + regulated by DFSA (DIFC) (5). Trigger 10/25: named defendant in DIFC Courts case CFI 063/2024 (Istar Capital Limited v Audacia Capital Limited). ⚠ Litigation is a signal that something is happening, NOT an opening — it may equally mean the firm is distracted or distressed. Treat with care and do not lead with it [difccourts.ae, found 2026-09-24]. Access 3/15: generic company contact published on the register (3). Scored automatically from the DFSA public register of authorised firms (DIFC) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
     "score": 53
   },
   "has_contact_route": true,
-  "has_email": false,
+  "has_email": true,
   "has_linkedin": false,
   "has_phone": true,
   "legal_name": null,
@@ -53,14 +65,14 @@
     "detail": "DFSA public register of authorised firms (DIFC) (https://www.dfsa.ae/public-register/firms); licence F002709. Snapshot: crm/registers/dfsa-difc/2026-09-22.json."
   },
   "stage": "identified",
-  "status": "nurture",
+  "status": "qualified",
   "tags": [
     "dfsa-difc",
     "register-sourced",
     "new-licence",
     "asset-manager"
   ],
-  "trigger": null,
-  "updated": "2026-09-22",
-  "website": null
+  "trigger": "named defendant in DIFC Courts case CFI 063/2024 (Istar Capital Limited v Audacia Capital Limited)",
+  "updated": "2026-09-24",
+  "website": "https://audaciacapital.com"
 }

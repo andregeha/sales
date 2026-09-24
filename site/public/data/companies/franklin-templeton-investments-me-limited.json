@@ -11,19 +11,25 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 5493003KQSZRG1QTOZ88 found for this firm (matched on name + country). Filled legal_name 'Franklin Templeton Investments (ME) Limited'. Legal form per GLEIF: 70EO. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/5493003KQSZRG1QTOZ88",
       "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Open-web enrichment sweep. Applied: website https://franklintempletonme.com; email service.dubai.franklintempleton@fisglobal.com. Evidence: franklintempletonme.com/about-us/contact-us (2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
   "contacts": [
     {
-      "email": null,
+      "email": "service.dubai.franklintempleton@fisglobal.com",
       "language": "en",
       "linkedin": null,
       "name": "Franklin Templeton Investments (ME) Limited — switchboard (register-published)",
       "notes": "Telephone number as published by the DFSA on its own public register — not a guessed number and not an individual's line. Use it to reach a named person, not as the first touch itself.",
       "phone": "971 4 428 4100",
       "role": "unknown",
-      "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/franklin-templeton-investments-me-limited",
+      "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/franklin-templeton-investments-me-limited · Email published on the firm's own site (franklintempletonme.com/about-us/contact-us (2026-09-24))",
       "title": "General enquiries"
     }
   ],
@@ -36,7 +42,7 @@
     "score": 53
   },
   "has_contact_route": true,
-  "has_email": false,
+  "has_email": true,
   "has_linkedin": false,
   "has_phone": true,
   "legal_name": "Franklin Templeton Investments (ME) Limited",
@@ -67,6 +73,6 @@
     "asset-manager"
   ],
   "trigger": null,
-  "updated": "2026-09-23",
-  "website": null
+  "updated": "2026-09-24",
+  "website": "https://franklintempletonme.com"
 }

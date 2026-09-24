@@ -11,6 +11,18 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 254900HV1ME5CQB9YR61 found for this firm (matched on name + country). Filled legal_name 'ASB Capital Limited'. Legal form per GLEIF: 70EO. Direct parent per GLEIF: بنك السلام ش.م.ب. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/254900HV1ME5CQB9YR61",
       "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Open-web enrichment sweep. Applied: website https://asbc.com. Evidence: alsalambank.com press release (2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
+      "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Trigger recorded from the open-web sweep: Al Salam Bank (Bahrain) launched this DIFC firm in November 2024 with a large starting AUM — a new entrant standing up operations from scratch. Source: alsalambank.com, found 2026-09-24.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
@@ -32,7 +44,7 @@
   "description": null,
   "fit": {
     "disqualified_reason": null,
-    "reasoning": "Fit 50/60: priority segment asset_manager (20) + priority market UAE (15) + manages third-party money — DFSA-authorised for Managing Assets (10) + regulated by DFSA (DIFC) (5). Trigger 0/25: no licence date published, so no datable trigger. Access 3/15: generic company contact published on the register (3). Scored automatically from the DFSA public register of authorised firms (DIFC) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "reasoning": "Fit 50/60: priority segment asset_manager (20) + priority market UAE (15) + manages third-party money — DFSA-authorised for Managing Assets (10) + regulated by DFSA (DIFC) (5). Trigger 20/25: Al Salam Bank (Bahrain) launched this DIFC firm in November 2024 with a large starting AUM — a new entrant standing up operations from scratch [alsalambank.com, found 2026-09-24]. Access 3/15: generic company contact published on the register (3). Scored automatically from the DFSA public register of authorised firms (DIFC) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
     "score": 53
   },
   "has_contact_route": true,
@@ -59,14 +71,14 @@
     "detail": "DFSA public register of authorised firms (DIFC) (https://www.dfsa.ae/public-register/firms); licence F009926. Snapshot: crm/registers/dfsa-difc/2026-09-22.json."
   },
   "stage": "identified",
-  "status": "nurture",
+  "status": "qualified",
   "tags": [
     "dfsa-difc",
     "register-sourced",
     "new-licence",
     "asset-manager"
   ],
-  "trigger": null,
-  "updated": "2026-09-23",
-  "website": null
+  "trigger": "Al Salam Bank (Bahrain) launched this DIFC firm in November 2024 with a large starting AUM — a new entrant standing up operations from scratch [alsalambank",
+  "updated": "2026-09-24",
+  "website": "https://asbc.com"
 }

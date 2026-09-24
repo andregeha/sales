@@ -5,7 +5,7 @@ country: UAE
 city: Dubai
 segment: fund_manager
 regulator: DFSA (DIFC)
-website: null
+website: https://arzanim.com
 linkedin: null
 size:
   aum: null
@@ -26,7 +26,7 @@ tags:
 - new-licence
 - fund-manager
 created: '2026-09-23'
-updated: '2026-09-23'
+updated: '2026-09-24'
 contacts:
 - name: Arzan Investment Management (DIFC) Limited — switchboard (register-published)
   title: General enquiries
@@ -56,4 +56,10 @@ activities:
     or enriched. Registered address (per the DFSA): Unit Penthouse-1 External, Level 7, Gate Village Building
     08, DIFC, Dubai, UAE'
   link: https://www.dfsa.ae/public-register/firms
+- date: '2026-09-24'
+  type: research
+  summary: 'Open-web enrichment sweep. Applied: website https://arzanim.com. Evidence: arzanim.com/contact
+    (fetched 2026-09-24). Every value was transcribed from a published source — nothing was constructed
+    from a domain.'
+  link: null
 next_action: null

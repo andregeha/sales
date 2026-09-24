@@ -5,7 +5,7 @@ country: UAE
 city: Abu Dhabi
 segment: fund_manager
 regulator: FSRA (ADGM)
-website: null
+website: https://balmoral-im.com
 linkedin: null
 size:
   aum: null
@@ -29,7 +29,7 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-24'
 contacts: []
 fit:
   score: 50
@@ -49,4 +49,10 @@ activities:
     or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Reem Island, 1005,
     10, Addax Port Office Tower, Tamouh'
   link: https://www.adgm.com/public-registers/fsra
+- date: '2026-09-24'
+  type: research
+  summary: 'Open-web enrichment sweep. Applied: website https://balmoral-im.com. Evidence: adgm.com register,
+    prnewswire.com (2026-09-24). Every value was transcribed from a published source — nothing was constructed
+    from a domain.'
+  link: null
 next_action: null

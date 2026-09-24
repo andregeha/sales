@@ -5,7 +5,7 @@ country: UAE
 city: Dubai
 segment: fund_manager
 regulator: DFSA (DIFC)
-website: null
+website: https://bearbull.ae
 linkedin: null
 size:
   aum: null
@@ -26,18 +26,39 @@ tags:
 - new-licence
 - fund-manager
 created: '2026-09-23'
-updated: '2026-09-23'
+updated: '2026-09-24'
 contacts:
 - name: BearBull Global Investments Group Limited — switchboard (register-published)
   title: General enquiries
   role: unknown
-  email: null
+  email: info@bearbull.ae
   phone: 971 4 272 2719
   linkedin: null
   language: en
   notes: Telephone number as published by the DFSA on its own public register — not a guessed number and
     not an individual's line. Use it to reach a named person, not as the first touch itself.
   source: DFSA public register, https://www.dfsa.ae/public-register/firms/bearbull-global-investments-group-limited
+    · Email published on the firm's own site (bearbull.ae/about-bearbull-2 (fetched 2026-09-24))
+- name: Alain Freymond
+  title: Chairman; ex-Banque Pictet
+  role: unknown
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal
+    contact detail was published and none is guessed.
+  source: 'UAE web enrichment 2026-09-24: bearbull.ae/about-bearbull-2 (fetched 2026-09-24)'
+- name: Fernand Garcia
+  title: Vice-Chairman
+  role: unknown
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal
+    contact detail was published and none is guessed.
+  source: 'UAE web enrichment 2026-09-24: bearbull.ae/about-bearbull-2 (fetched 2026-09-24)'
 fit:
   score: 53
   reasoning: 'Fit 50/60: priority segment fund_manager (20) + priority market UAE (15) + manages third-party
@@ -56,4 +77,10 @@ activities:
     or enriched. Registered address (per the DFSA): Unit 02, Level 7, Building 1 Currency House, DIFC,
     PO Box 127676, Dubai, UAE'
   link: https://www.dfsa.ae/public-register/firms
+- date: '2026-09-24'
+  type: research
+  summary: 'Open-web enrichment sweep. Applied: website https://bearbull.ae; email info@bearbull.ae; contact
+    Alain Freymond; contact Fernand Garcia. Evidence: bearbull.ae/about-bearbull-2 (fetched 2026-09-24).
+    Every value was transcribed from a published source — nothing was constructed from a domain.'
+  link: null
 next_action: null

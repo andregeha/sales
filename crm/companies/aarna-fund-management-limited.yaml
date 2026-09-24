@@ -34,7 +34,7 @@ tags:
 - single-asset-class
 - thin-profile
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-24'
 contacts:
 - name: Alankar Bisaria
   title: Authorised Individual, Aarna Fund Management Limited (LinkedIn shows Partner, Aarna Investments
@@ -50,6 +50,16 @@ contacts:
     No email/phone found.
   source: DFSA public register (dfsa.ae/public-register/firms/aarna-fund-management-limited) and LinkedIn
     (linkedin.com/in/alankar-bisaria-b40190b), checked 2026-09-22.
+- name: Jaidev Parthasarathy
+  title: authorised individuals per DFSA register
+  role: unknown
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal
+    contact detail was published and none is guessed.
+  source: 'UAE web enrichment 2026-09-24: dfsa.ae register (2026-09-24)'
 fit:
   score: 38
   reasoning: 'Fit 25/60: priority segment fund manager (20) + priority market UAE (15) minus most other
@@ -63,5 +73,11 @@ fit:
     not resolved). Total 38 — worth a look, not worth outreach effort yet; watch for a broadened licence
     (beyond VC-only) or a fund-launch announcement as the real trigger.'
   disqualified_reason: null
-activities: []
+activities:
+- date: '2026-09-24'
+  type: research
+  summary: 'Open-web enrichment sweep. Applied: contact Jaidev Parthasarathy. Evidence: dfsa.ae register
+    (2026-09-24). Every value was transcribed from a published source — nothing was constructed from a
+    domain.'
+  link: null
 next_action: null

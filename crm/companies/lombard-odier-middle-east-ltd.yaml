@@ -1,0 +1,40 @@
+slug: lombard-odier-middle-east-ltd
+name: Lombard Odier (Middle East) Ltd
+legal_name: null
+country: UAE
+city: Dubai
+segment: bank
+regulator: DFSA (DIFC)
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register_search
+  detail: 'A DIFC-licensed operating entity of an international private bank, verified against the DFSA
+    register and the bank''s own site. ⚠ It surfaced from the ''Advising on Financial Products'' candidate
+    bucket, which we treat as low-precision because it mixes insurance and credit advisers — but a private
+    bank holds that licence precisely BECAUSE advising clients is its business. It books client assets
+    and runs portfolios in the UAE, which is our ICP segment ''private and investment banks''. ⚠ This
+    is NOT a representative office: it is a licensed entity that conducts financial business locally.'
+  date: '2026-09-24'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- private-bank
+- uae
+- difc
+- promoted-from-candidate
+created: '2026-09-24'
+updated: '2026-09-24'
+contacts: []
+fit:
+  score: null
+  reasoning: null
+  disqualified_reason: null
+activities: []
+next_action: null

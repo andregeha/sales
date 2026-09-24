@@ -302,5 +302,37 @@
     "section": "Contact reachability (opened 2026-09-23)",
     "status": "🟠",
     "unblocks": null
+  },
+  {
+    "id": "29",
+    "priority": "soon",
+    "question": "A wide open-web sweep for UAE private banks, bank wealth arms, MFOs and EAMs is done and written up in `plan/uae-web-wealth.md`. It found roughly a dozen international private banks/EAMs with a real UAE booking presence (Julius Baer, Lombard Odier, EFG (Middle East) Limited, Edmond de Rothschild (Middle East) Ltd, Rothschild & Co Wealth Management Dubai, Coutts, LGT, BNP Paribas Wealth Management (DIFC) Limited, Nomura International plc's DIFC wealth arm, Almha Capital) that are not yet in the CRM — none were added, per the task's read-only instruction. Needs a decision on whether/how to add them.",
+    "section": "UAE private-banking/wealth sourcing (opened 2026-09-24)",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "30",
+    "priority": "soon",
+    "question": "Rep-office trap, three fresh cases: Pictet's Dubai presence is a Central Bank of UAE-regulated representative office (confirmed by fetching Pictet's own page), RBC's Dubai wealth lead carries the title \"Chief Representative\" (press), and CA Indosuez's Abu Dhabi office is explicitly a representative office on Indosuez's own site (its Dubai DIFC branch is real and separate). None of these three should be treated as a live prospect without further confirmation.",
+    "section": "UAE private-banking/wealth sourcing (opened 2026-09-24)",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "31",
+    "priority": "soon",
+    "question": "CRM hygiene, found but not fixed (out of scope for a read-only research task): `first-abu-dhabi-bank-p-j-s-c.yaml` and `first-abu-dhabi-bank.yaml` look like duplicate records for the same bank. Separately, `j-p-morgan-middle-east-limited.yaml` is recorded as Abu Dhabi, but J.P. Morgan Private Bank's own site places its DIFC private-banking office in Dubai — unclear if these are the same legal entity or two distinct JPM UAE entities.",
+    "section": "UAE private-banking/wealth sourcing (opened 2026-09-24)",
+    "status": "🟠",
+    "unblocks": null
+  },
+  {
+    "id": "32",
+    "priority": "nice",
+    "question": "Two name-collision risks to keep in mind for any future UAE outreach: (1) EFG (Middle East) Limited (Swiss EFG International, new candidate) vs. EFG Hermes UAE Limited (Egyptian investment bank, already tracked) — unrelated firms sharing \"EFG\"; (2) Vault Wealth Limited (ADGM-regulated wealth manager, already tracked) vs. Vault22 (a DIFC-based personal budgeting app, not a wealth manager) — unrelated firms sharing \"Vault\".",
+    "section": "UAE private-banking/wealth sourcing (opened 2026-09-24)",
+    "status": "⚪",
+    "unblocks": null
   }
 ]

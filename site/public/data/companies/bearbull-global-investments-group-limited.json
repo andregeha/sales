@@ -5,20 +5,48 @@
       "link": "https://www.dfsa.ae/public-register/firms",
       "summary": "Appeared as a new entry in the DFSA public register of authorised firms (DIFC). Licence F003940, Managing a Collective Investment Fund (Authorised Firms). Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the DFSA): Unit 02, Level 7, Building 1 Currency House, DIFC, PO Box 127676, Dubai, UAE",
       "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Open-web enrichment sweep. Applied: website https://bearbull.ae; email info@bearbull.ae; contact Alain Freymond; contact Fernand Garcia. Evidence: bearbull.ae/about-bearbull-2 (fetched 2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
   "contacts": [
     {
-      "email": null,
+      "email": "info@bearbull.ae",
       "language": "en",
       "linkedin": null,
       "name": "BearBull Global Investments Group Limited — switchboard (register-published)",
       "notes": "Telephone number as published by the DFSA on its own public register — not a guessed number and not an individual's line. Use it to reach a named person, not as the first touch itself.",
       "phone": "971 4 272 2719",
       "role": "unknown",
-      "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/bearbull-global-investments-group-limited",
+      "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/bearbull-global-investments-group-limited · Email published on the firm's own site (bearbull.ae/about-bearbull-2 (fetched 2026-09-24))",
       "title": "General enquiries"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Alain Freymond",
+      "notes": "Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "UAE web enrichment 2026-09-24: bearbull.ae/about-bearbull-2 (fetched 2026-09-24)",
+      "title": "Chairman; ex-Banque Pictet"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Fernand Garcia",
+      "notes": "Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "UAE web enrichment 2026-09-24: bearbull.ae/about-bearbull-2 (fetched 2026-09-24)",
+      "title": "Vice-Chairman"
     }
   ],
   "country": "UAE",
@@ -30,7 +58,7 @@
     "score": 53
   },
   "has_contact_route": true,
-  "has_email": false,
+  "has_email": true,
   "has_linkedin": false,
   "has_phone": true,
   "legal_name": null,
@@ -61,6 +89,6 @@
     "fund-manager"
   ],
   "trigger": null,
-  "updated": "2026-09-23",
-  "website": null
+  "updated": "2026-09-24",
+  "website": "https://bearbull.ae"
 }

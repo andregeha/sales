@@ -5,6 +5,18 @@
       "link": "https://www.dfsa.ae/public-register/firms",
       "summary": "Appeared as a new entry in the DFSA public register of authorised firms (DIFC). Licence F003339, Managing a Collective Investment Fund (Authorised Firms). Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the DFSA): Unit L31-12, Level 31, ICD Brookfield Place, DIFC, Dubai, UAE",
       "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Open-web enrichment sweep. Applied: website https://badwacapital.com. Evidence: badwacapital.com (fetched 2026-09-24); saudigazette.com.sa (2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
+      "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Trigger recorded from the open-web sweep: AlRajhi United acquired a stake in 2025 — an ownership change, and new owners review the operating stack. Source: saudigazette.com.sa, found 2026-09-24.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
@@ -26,7 +38,7 @@
   "description": null,
   "fit": {
     "disqualified_reason": null,
-    "reasoning": "Fit 50/60: priority segment fund_manager (20) + priority market UAE (15) + manages third-party money — DFSA-authorised for Managing a Collective Investment Fund (10) + regulated by DFSA (DIFC) (5). Trigger 0/25: no licence date published, so no datable trigger. Access 3/15: generic company contact published on the register (3). Scored automatically from the DFSA public register of authorised firms (DIFC) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "reasoning": "Fit 50/60: priority segment fund_manager (20) + priority market UAE (15) + manages third-party money — DFSA-authorised for Managing a Collective Investment Fund (10) + regulated by DFSA (DIFC) (5). Trigger 18/25: AlRajhi United acquired a stake in 2025 — an ownership change, and new owners review the operating stack [saudigazette.com.sa, found 2026-09-24]. Access 3/15: generic company contact published on the register (3). Scored automatically from the DFSA public register of authorised firms (DIFC) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
     "score": 53
   },
   "has_contact_route": true,
@@ -53,14 +65,14 @@
     "detail": "DFSA public register of authorised firms (DIFC) (https://www.dfsa.ae/public-register/firms); licence F003339. Snapshot: crm/registers/dfsa-difc/2026-09-23.json."
   },
   "stage": "identified",
-  "status": "nurture",
+  "status": "qualified",
   "tags": [
     "dfsa-difc",
     "register-sourced",
     "new-licence",
     "fund-manager"
   ],
-  "trigger": null,
-  "updated": "2026-09-23",
-  "website": null
+  "trigger": "AlRajhi United acquired a stake in 2025 — an ownership change, and new owners review the operating stack [saudigazette",
+  "updated": "2026-09-24",
+  "website": "https://badwacapital.com"
 }

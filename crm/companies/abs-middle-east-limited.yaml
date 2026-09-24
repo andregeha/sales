@@ -17,7 +17,7 @@ source:
   detail: 'DFSA public register of authorised firms (DIFC) (https://www.dfsa.ae/public-register/firms);
     licence F002650. Snapshot: crm/registers/dfsa-difc/2026-09-22.json.'
   date: '2026-09-22'
-status: nurture
+status: qualified
 stage: identified
 owner: Andre Geha
 tags:
@@ -26,7 +26,7 @@ tags:
 - new-licence
 - asset-manager
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-24'
 contacts:
 - name: ABS (Middle East) Limited — switchboard (register-published)
   title: General enquiries
@@ -38,14 +38,25 @@ contacts:
   notes: Telephone number as published by the DFSA on its own public register — not a guessed number and
     not an individual's line. Use it to reach a named person, not as the first touch itself.
   source: DFSA public register, https://www.dfsa.ae/public-register/firms/falcon-private-wealth-limited
+- name: Samir Atitallah
+  title: CEO, per press
+  role: unknown
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal
+    contact detail was published and none is guessed.
+  source: 'UAE web enrichment 2026-09-24: gulfbusiness/Zawya/fintechnews.ae coverage (2026-09-24)'
 fit:
   score: 53
   reasoning: 'Fit 50/60: priority segment asset_manager (20) + priority market UAE (15) + manages third-party
-    money — DFSA-authorised for Managing Assets (10) + regulated by DFSA (DIFC) (5). Trigger 0/25: no
-    licence date published, so no datable trigger. Access 3/15: generic company contact published on the
-    register (3). Scored automatically from the DFSA public register of authorised firms (DIFC) at first
-    sighting. Fit points are awarded only where the register itself states the fact; anything it is silent
-    on scores zero rather than being assumed. Enrich before outreach.'
+    money — DFSA-authorised for Managing Assets (10) + regulated by DFSA (DIFC) (5). Trigger 20/25: Arab
+    Bank Switzerland launched this DIFC entity in June 2026 under CEO Samir Atitallah — a brand-new booking
+    centre with no incumbent platform to displace [gulfbusiness.com, found 2026-09-24]. Access 3/15: generic
+    company contact published on the register (3). Scored automatically from the DFSA public register
+    of authorised firms (DIFC) at first sighting. Fit points are awarded only where the register itself
+    states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.'
   disqualified_reason: null
 activities:
 - date: '2026-09-22'
@@ -55,4 +66,16 @@ activities:
     the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered
     address (per the DFSA): Unit C1201-A, Level 12, Burj Daman, DIFC, PO Box 72816, Dubai, UAE'
   link: https://www.dfsa.ae/public-register/firms
+- date: '2026-09-24'
+  type: research
+  summary: 'Open-web enrichment sweep. Applied: contact Samir Atitallah. Evidence: gulfbusiness/Zawya/fintechnews.ae
+    coverage (2026-09-24). Every value was transcribed from a published source — nothing was constructed
+    from a domain.'
+  link: null
+- date: '2026-09-24'
+  type: research
+  summary: 'Trigger recorded from the open-web sweep: Arab Bank Switzerland launched this DIFC entity
+    in June 2026 under CEO Samir Atitallah — a brand-new booking centre with no incumbent platform to
+    displace. Source: gulfbusiness.com, found 2026-09-24.'
+  link: null
 next_action: null

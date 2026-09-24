@@ -5,19 +5,25 @@
       "link": "https://www.dfsa.ae/public-register/firms",
       "summary": "Appeared as a new entry in the DFSA public register of authorised firms (DIFC). Licence F008936, Managing Assets (Authorised Firms). Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the DFSA): Unit S317, Level 3, Emirates Financial Towers, DIFC, PO Box 62136, Dubai, UAE",
       "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Open-web enrichment sweep. Applied: website https://arnaassets.com; email info@arnaassets.com. Evidence: arnaassets.com/about-us (fetched 2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
   "contacts": [
     {
-      "email": null,
+      "email": "info@arnaassets.com",
       "language": "en",
       "linkedin": null,
       "name": "Arna Assets Limited — switchboard (register-published)",
       "notes": "Telephone number as published by the DFSA on its own public register — not a guessed number and not an individual's line. Use it to reach a named person, not as the first touch itself.",
       "phone": "Date of Licence",
       "role": "unknown",
-      "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/arna-assets-limited",
+      "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/arna-assets-limited · Email published on the firm's own site (arnaassets.com/about-us (fetched 2026-09-24))",
       "title": "General enquiries"
     }
   ],
@@ -30,7 +36,7 @@
     "score": 53
   },
   "has_contact_route": true,
-  "has_email": false,
+  "has_email": true,
   "has_linkedin": false,
   "has_phone": true,
   "legal_name": null,
@@ -61,6 +67,6 @@
     "asset-manager"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
-  "website": null
+  "updated": "2026-09-24",
+  "website": "https://arnaassets.com"
 }

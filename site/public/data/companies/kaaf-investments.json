@@ -1,7 +1,81 @@
 {
-  "activities": [],
+  "activities": [
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Open-web enrichment sweep. Applied: website https://kaafinvestments.com; email info@kaafinvestments.com; contact Mishal Kanoo; contact Maha Kanoo; contact Bassem Kanoo; contact Filmon Ghebrihiwet; contact Nandi Vardhan Mehta. Evidence: kaafinvestments.com (fetched 2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
+      "type": "research"
+    }
+  ],
   "city": "Dubai",
-  "contacts": [],
+  "contacts": [
+    {
+      "email": "info@kaafinvestments.com",
+      "language": null,
+      "linkedin": null,
+      "name": "KAAF Investments — general enquiries",
+      "notes": null,
+      "phone": null,
+      "role": "unknown",
+      "source": "Email published on the firm's own site (kaafinvestments.com (fetched 2026-09-24))",
+      "title": "General enquiries"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Mishal Kanoo",
+      "notes": "Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "UAE web enrichment 2026-09-24: kaafinvestments.com (fetched 2026-09-24)",
+      "title": "Chairman"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Maha Kanoo",
+      "notes": "Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "UAE web enrichment 2026-09-24: kaafinvestments.com (fetched 2026-09-24)",
+      "title": "Vice Chairwoman"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Bassem Kanoo",
+      "notes": "Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "UAE web enrichment 2026-09-24: kaafinvestments.com (fetched 2026-09-24)",
+      "title": "Director"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Filmon Ghebrihiwet",
+      "notes": "Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "UAE web enrichment 2026-09-24: kaafinvestments.com (fetched 2026-09-24)",
+      "title": "CIO"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Nandi Vardhan Mehta",
+      "notes": "Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "UAE web enrichment 2026-09-24: kaafinvestments.com (fetched 2026-09-24)",
+      "title": "CFO"
+    }
+  ],
   "country": "UAE",
   "created": "2026-09-24",
   "description": null,
@@ -10,8 +84,8 @@
     "reasoning": null,
     "score": null
   },
-  "has_contact_route": false,
-  "has_email": false,
+  "has_contact_route": true,
+  "has_email": true,
   "has_linkedin": false,
   "has_phone": false,
   "legal_name": null,
@@ -42,5 +116,5 @@
   ],
   "trigger": null,
   "updated": "2026-09-24",
-  "website": null
+  "website": "https://kaafinvestments.com"
 }

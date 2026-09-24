@@ -5,20 +5,37 @@
       "link": "https://www.dfsa.ae/public-register/firms",
       "summary": "Appeared as a new entry in the DFSA public register of authorised firms (DIFC). Licence F011816, Managing Assets (Authorised Firms). Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the DFSA): Unit N902B Level 9, Emirates Financial Towers, DIFC, Dubai, UAE",
       "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Open-web enrichment sweep. Applied: website https://abk.eahli.com; email dpo@abkuwait.com; contact Rami El Rifai. Evidence: abk.eahli.com/en/international-banking/offshore/abk-difc (fetched 2026-09-24); gulfnews.com, dfsa.ae register (2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
   "contacts": [
     {
-      "email": null,
+      "email": "dpo@abkuwait.com",
       "language": "en",
       "linkedin": null,
       "name": "ABK Capital (DIFC) Limited — switchboard (register-published)",
       "notes": "Telephone number as published by the DFSA on its own public register — not a guessed number and not an individual's line. Use it to reach a named person, not as the first touch itself.",
       "phone": "Date of Licence",
       "role": "unknown",
-      "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/abk-capital-difc-limited",
+      "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/abk-capital-difc-limited · Email published on the firm's own site (abk.eahli.com/en/international-banking/offshore/abk-difc (fe)",
       "title": "General enquiries"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Rami El Rifai",
+      "notes": "Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "UAE web enrichment 2026-09-24: abk.eahli.com/en/international-banking/offshore/abk-difc (fetched 2026-09-24); g",
+      "title": "Senior Executive Officer"
     }
   ],
   "country": "UAE",
@@ -30,7 +47,7 @@
     "score": 53
   },
   "has_contact_route": true,
-  "has_email": false,
+  "has_email": true,
   "has_linkedin": false,
   "has_phone": true,
   "legal_name": null,
@@ -61,6 +78,6 @@
     "asset-manager"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
-  "website": null
+  "updated": "2026-09-24",
+  "website": "https://abk.eahli.com"
 }

@@ -11,6 +11,18 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 98450042C89450CBA696 found for this firm (matched on name + country). Filled legal_name 'Ambit Global Private Client (MENA) Limited'. Legal form per GLEIF: 70EO. Direct parent per GLEIF: AMBIT PRIVATE LIMITED. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/98450042C89450CBA696",
       "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Open-web enrichment sweep. Applied: contact Shanti Kaliappan. Evidence: hubbis.com, Ambit press release PDF (2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
+      "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Trigger recorded from the open-web sweep: entered DIFC in 2024 by acquiring Moonrock Investments Ltd — a new market entrant integrating an acquired book, which is exactly when systems get chosen. Source: hubbis.com, found 2026-09-24.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
@@ -25,6 +37,17 @@
       "role": "unknown",
       "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/moonrock-investments-limited",
       "title": "General enquiries"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Shanti Kaliappan",
+      "notes": "Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "UAE web enrichment 2026-09-24: hubbis.com, Ambit press release PDF (2026-09-24)",
+      "title": "Dubai leadership, per Ambit press release"
     }
   ],
   "country": "UAE",
@@ -32,7 +55,7 @@
   "description": null,
   "fit": {
     "disqualified_reason": null,
-    "reasoning": "Fit 50/60: priority segment asset_manager (20) + priority market UAE (15) + manages third-party money — DFSA-authorised for Managing Assets (10) + regulated by DFSA (DIFC) (5). Trigger 0/25: no licence date published, so no datable trigger. Access 3/15: generic company contact published on the register (3). Scored automatically from the DFSA public register of authorised firms (DIFC) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "reasoning": "Fit 50/60: priority segment asset_manager (20) + priority market UAE (15) + manages third-party money — DFSA-authorised for Managing Assets (10) + regulated by DFSA (DIFC) (5). Trigger 16/25: entered DIFC in 2024 by acquiring Moonrock Investments Ltd — a new market entrant integrating an acquired book, which is exactly when systems get chosen [hubbis.com, found 2026-09-24]. Access 3/15: generic company contact published on the register (3). Scored automatically from the DFSA public register of authorised firms (DIFC) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
     "score": 53
   },
   "has_contact_route": true,
@@ -59,14 +82,14 @@
     "detail": "DFSA public register of authorised firms (DIFC) (https://www.dfsa.ae/public-register/firms); licence F007050. Snapshot: crm/registers/dfsa-difc/2026-09-22.json."
   },
   "stage": "identified",
-  "status": "nurture",
+  "status": "qualified",
   "tags": [
     "dfsa-difc",
     "register-sourced",
     "new-licence",
     "asset-manager"
   ],
-  "trigger": null,
-  "updated": "2026-09-23",
+  "trigger": "entered DIFC in 2024 by acquiring Moonrock Investments Ltd — a new market entrant integrating an acquired book, which is exactly when systems get chosen [hubbis",
+  "updated": "2026-09-24",
   "website": null
 }

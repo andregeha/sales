@@ -274,7 +274,7 @@
       "fsra"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -378,7 +378,7 @@
       "thin-profile"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -485,7 +485,7 @@
     "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
-    "has_email": false,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
     "name": "ABK Capital (DIFC) Limited",
@@ -502,8 +502,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://abk.eahli.com"
   },
   {
     "city": null,
@@ -544,15 +544,15 @@
     "segment": "asset_manager",
     "slug": "abs-middle-east-limited",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "dfsa-difc",
       "register-sourced",
       "new-licence",
       "asset-manager"
     ],
-    "trigger": null,
-    "updated": "2026-09-22",
+    "trigger": "Arab Bank Switzerland launched this DIFC entity in June 2026 under CEO Samir Atitallah — a brand-new booking centre with no incumbent platform to displace [gulfbusiness",
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -775,7 +775,7 @@
     "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
-    "has_email": false,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
     "name": "Access Technologies OPCO Limited",
@@ -792,8 +792,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://accesswealth.io"
   },
   {
     "city": null,
@@ -959,7 +959,7 @@
     "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
-    "has_email": false,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
     "name": "Ad Diriyah Asset Management Limited",
@@ -976,8 +976,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://addiriyaham.com"
   },
   {
     "city": "PARIS",
@@ -1141,7 +1141,7 @@
     "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
-    "has_email": false,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
     "name": "ADIB Capital Limited",
@@ -1158,8 +1158,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://adib.ae"
   },
   {
     "city": "Abu Dhabi",
@@ -1265,8 +1265,8 @@
       "fsra"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://ads-investments.com"
   },
   {
     "city": "Abu Dhabi",
@@ -1573,8 +1573,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://africap.me"
   },
   {
     "city": "PARIS",
@@ -1709,7 +1709,7 @@
     "country": "UAE",
     "created": "2026-09-23",
     "has_contact_route": true,
-    "has_email": false,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
     "name": "Agna Capital Limited",
@@ -1726,8 +1726,8 @@
       "fund-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://agnacapital.com"
   },
   {
     "city": "Paris",
@@ -1913,7 +1913,7 @@
     "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
-    "has_email": false,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
     "name": "Ajeej Capital (DIFC) Limited",
@@ -1930,8 +1930,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://ajeej.com"
   },
   {
     "city": "Dubai",
@@ -2483,8 +2483,8 @@
       "fund-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://alarabiinvest.com"
   },
   {
     "city": "PARIS",
@@ -2558,15 +2558,15 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://albencapital.com"
   },
   {
     "city": "Dubai",
     "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
-    "has_email": false,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
     "name": "Alcazar Capital Limited",
@@ -2583,8 +2583,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://alcazar-capital.com"
   },
   {
     "city": "Abu Dhabi",
@@ -2996,15 +2996,15 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://alpenassetadvisors.com"
   },
   {
     "city": "Dubai",
     "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
-    "has_email": false,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
     "name": "Alpha Capital (DIFC) Limited",
@@ -3021,8 +3021,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://acldifc.com"
   },
   {
     "city": "Abu Dhabi",
@@ -3226,8 +3226,8 @@
       "fsra"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://alteiafund.com"
   },
   {
     "city": null,
@@ -3653,15 +3653,15 @@
     "segment": "asset_manager",
     "slug": "amaltas-partners-limited",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "dfsa-difc",
       "register-sourced",
       "new-licence",
       "asset-manager"
     ],
-    "trigger": null,
-    "updated": "2026-09-23",
+    "trigger": "acquired by India's Atom Group with DFSA change-of-control approval (2024/2025) — a new parent typically consolidates or replaces platforms [cafemutual",
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -3781,15 +3781,15 @@
     "segment": "asset_manager",
     "slug": "ambit-global-private-client-mena-limited",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "dfsa-difc",
       "register-sourced",
       "new-licence",
       "asset-manager"
     ],
-    "trigger": null,
-    "updated": "2026-09-23",
+    "trigger": "entered DIFC in 2024 by acquiring Moonrock Investments Ltd — a new market entrant integrating an acquired book, which is exactly when systems get chosen [hubbis",
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -3864,8 +3864,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://amicorp.com"
   },
   {
     "city": "Dubai",
@@ -3950,7 +3950,7 @@
     "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
-    "has_email": false,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
     "name": "AMP Partners (DIFC) Limited",
@@ -3967,8 +3967,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://amp-partners.com"
   },
   {
     "city": "PARIS",
@@ -4561,8 +4561,8 @@
       "fund-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://apexgroup.com"
   },
   {
     "city": null,
@@ -4878,15 +4878,15 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://aramid.ae"
   },
   {
     "city": "Dubai",
     "country": "UAE",
     "created": "2026-09-23",
     "has_contact_route": true,
-    "has_email": false,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
     "name": "Arcadia Capital Limited",
@@ -4903,8 +4903,8 @@
       "fund-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://arcadiacapital.ae"
   },
   {
     "city": "Abu Dhabi",
@@ -5207,15 +5207,15 @@
     "segment": "asset_manager",
     "slug": "ark-capital-management-dubai-limited",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "dfsa-difc",
       "register-sourced",
       "new-licence",
       "asset-manager"
     ],
-    "trigger": null,
-    "updated": "2026-09-23",
+    "trigger": "the DFSA fined it USD 504,000 in February 2026 for market-abuse SYSTEMS AND CONTROLS failings and for failing to report a change of control — a regulator naming a firm's systems as inadequate is the most direct 'why now' this workspace can hold, and remediation budget follows a fine [dfsa",
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -5460,7 +5460,7 @@
     "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
-    "has_email": false,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
     "name": "Arna Assets Limited",
@@ -5477,8 +5477,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://arnaassets.com"
   },
   {
     "city": "Abu Dhabi",
@@ -5505,8 +5505,8 @@
       "fsra"
     ],
     "trigger": "licence granted 2025-08-20, still early-stage but not brand new (12)",
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://arolla.ae"
   },
   {
     "city": "COURBEVOIE",
@@ -5555,8 +5555,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://arpglobalcapital.com"
   },
   {
     "city": "Riyadh",
@@ -5712,8 +5712,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://arxfe.com"
   },
   {
     "city": "Dubai",
@@ -5737,8 +5737,8 @@
       "fund-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://arzanim.com"
   },
   {
     "city": "Dubai",
@@ -5762,8 +5762,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://asanga-capital.com"
   },
   {
     "city": "Dubai",
@@ -5804,23 +5804,23 @@
     "segment": "asset_manager",
     "slug": "asb-capital-limited",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "dfsa-difc",
       "register-sourced",
       "new-licence",
       "asset-manager"
     ],
-    "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "trigger": "Al Salam Bank (Bahrain) launched this DIFC firm in November 2024 with a large starting AUM — a new entrant standing up operations from scratch [alsalambank",
+    "updated": "2026-09-24",
+    "website": "https://asbc.com"
   },
   {
     "city": "Dubai",
     "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
-    "has_email": false,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
     "name": "ASCA Capital Limited",
@@ -5837,8 +5837,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://ascacapital.com"
   },
   {
     "city": "Dubai",
@@ -5862,8 +5862,8 @@
       "fund-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://theascent-group.com"
   },
   {
     "city": "Dubai",
@@ -5887,8 +5887,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://arcmcap.com"
   },
   {
     "city": "Abu Dhabi",
@@ -5915,7 +5915,7 @@
       "fsra"
     ],
     "trigger": "licence granted 2024-12-11, still early-stage but not brand new (12)",
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -6018,8 +6018,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://astercm.ae"
   },
   {
     "city": "PARIS",
@@ -6051,7 +6051,7 @@
     "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
-    "has_email": false,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
     "name": "Astero Falcon DIFC Limited",
@@ -6068,8 +6068,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://asterofalcon.com"
   },
   {
     "city": "Dubai",
@@ -6429,7 +6429,7 @@
     "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
-    "has_email": false,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
     "name": "Audacia Capital Limited",
@@ -6438,16 +6438,16 @@
     "segment": "asset_manager",
     "slug": "audacia-capital-limited",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "dfsa-difc",
       "register-sourced",
       "new-licence",
       "asset-manager"
     ],
-    "trigger": null,
-    "updated": "2026-09-22",
-    "website": null
+    "trigger": "named defendant in DIFC Courts case CFI 063/2024 (Istar Capital Limited v Audacia Capital Limited)",
+    "updated": "2026-09-24",
+    "website": "https://audaciacapital.com"
   },
   {
     "city": "Dubai",
@@ -7105,7 +7105,7 @@
     "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
-    "has_email": false,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
     "name": "Ayn Capital Limited",
@@ -7122,8 +7122,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://ayncapital.com"
   },
   {
     "city": null,
@@ -7345,16 +7345,16 @@
     "segment": "fund_manager",
     "slug": "badwa-capital-limited",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "dfsa-difc",
       "register-sourced",
       "new-licence",
       "fund-manager"
     ],
-    "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "trigger": "AlRajhi United acquired a stake in 2025 — an ownership change, and new owners review the operating stack [saudigazette",
+    "updated": "2026-09-24",
+    "website": "https://badwacapital.com"
   },
   {
     "city": "GENNEVILLIERS",
@@ -7431,8 +7431,8 @@
       "fsra"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://balmoral-im.com"
   },
   {
     "city": "Abu Dhabi",
@@ -9716,7 +9716,7 @@
     "country": "UAE",
     "created": "2026-09-23",
     "has_contact_route": true,
-    "has_email": false,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
     "name": "BearBull Global Investments Group Limited",
@@ -9733,8 +9733,8 @@
       "fund-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://bearbull.ae"
   },
   {
     "city": "Abu Dhabi",
@@ -10654,6 +10654,31 @@
     ],
     "trigger": null,
     "updated": "2026-09-22",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "BNP Paribas Wealth Management (DIFC) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "bank",
+    "slug": "bnp-paribas-wealth-management-difc-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "private-bank",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -18206,6 +18231,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Edmond de Rothschild (Middle East) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "bank",
+    "slug": "edmond-de-rothschild-middle-east-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "private-bank",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": null
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -18328,6 +18378,31 @@
     ],
     "trigger": null,
     "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "EFG (Middle East) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "bank",
+    "slug": "efg-middle-east-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "private-bank",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -22378,7 +22453,7 @@
     "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
-    "has_email": false,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
     "name": "Franklin Templeton Investments (ME) Limited",
@@ -22395,8 +22470,8 @@
       "asset-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
-    "website": null
+    "updated": "2026-09-24",
+    "website": "https://franklintempletonme.com"
   },
   {
     "city": "Beirut",
@@ -27523,7 +27598,7 @@
       "fsra"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -27963,6 +28038,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Julius Baer (Middle East) Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "bank",
+    "slug": "julius-baer-middle-east-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "private-bank",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": null
+  },
+  {
     "city": null,
     "country": "Saudi Arabia",
     "created": "2026-09-22",
@@ -28041,8 +28141,8 @@
     "city": "Dubai",
     "country": "UAE",
     "created": "2026-09-24",
-    "has_contact_route": false,
-    "has_email": false,
+    "has_contact_route": true,
+    "has_email": true,
     "has_linkedin": false,
     "has_phone": false,
     "name": "KAAF Investments",
@@ -28059,7 +28159,7 @@
     ],
     "trigger": null,
     "updated": "2026-09-24",
-    "website": null
+    "website": "https://kaafinvestments.com"
   },
   {
     "city": "Dubai",
@@ -29865,6 +29965,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "LGT (Middle East) Ltd.",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "bank",
+    "slug": "lgt-middle-east-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "private-bank",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": null
+  },
+  {
     "city": null,
     "country": "France",
     "created": "2026-09-22",
@@ -30199,6 +30324,31 @@
     ],
     "trigger": null,
     "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Lombard Odier (Middle East) Ltd",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "bank",
+    "slug": "lombard-odier-middle-east-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "private-bank",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
     "website": null
   },
   {

@@ -1,5 +1,12 @@
 {
-  "activities": [],
+  "activities": [
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Open-web enrichment sweep. Applied: contact Jaidev Parthasarathy. Evidence: dfsa.ae register (2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
+      "type": "research"
+    }
+  ],
   "city": "Dubai",
   "contacts": [
     {
@@ -12,6 +19,17 @@
       "role": "unknown",
       "source": "DFSA public register (dfsa.ae/public-register/firms/aarna-fund-management-limited) and LinkedIn (linkedin.com/in/alankar-bisaria-b40190b), checked 2026-09-22.",
       "title": "Authorised Individual, Aarna Fund Management Limited (LinkedIn shows Partner, Aarna Investments Limited)"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Jaidev Parthasarathy",
+      "notes": "Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "UAE web enrichment 2026-09-24: dfsa.ae register (2026-09-24)",
+      "title": "authorised individuals per DFSA register"
     }
   ],
   "country": "UAE",
@@ -57,6 +75,6 @@
     "thin-profile"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-24",
   "website": null
 }

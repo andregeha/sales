@@ -5,7 +5,7 @@ country: UAE
 city: Abu Dhabi
 segment: fund_manager
 regulator: FSRA (ADGM)
-website: null
+website: https://alteiafund.com
 linkedin: null
 size:
   aum: null
@@ -29,8 +29,18 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-22'
-contacts: []
+updated: '2026-09-24'
+contacts:
+- name: Mariam Ballaith
+  title: approved persons per ADGM register
+  role: unknown
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal
+    contact detail was published and none is guessed.
+  source: 'UAE web enrichment 2026-09-24: adgm.com register, alteiafund.com (2026-09-24)'
 fit:
   score: 50
   reasoning: 'Fit 50/60: priority segment fund_manager (20) + priority market UAE (15) + manages third-party
@@ -49,4 +59,10 @@ activities:
     or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Maryah Island, Office
     311, Level 11, Al Sarab Tower, Abu Dhabi Global Market Square'
   link: https://www.adgm.com/public-registers/fsra
+- date: '2026-09-24'
+  type: research
+  summary: 'Open-web enrichment sweep. Applied: website https://alteiafund.com; contact Mariam Ballaith.
+    Evidence: adgm.com register, alteiafund.com (2026-09-24). Every value was transcribed from a published
+    source — nothing was constructed from a domain.'
+  link: null
 next_action: null

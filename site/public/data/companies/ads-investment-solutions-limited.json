@@ -17,6 +17,12 @@
       "link": null,
       "summary": "Removed compliance@ads-investments.com as a contact route. It is published by the firm, but it is a privacy/recruitment/press/billing inbox — writing to it reaches someone whose job is explicitly not buying software, and on a privacy address it invites a complaint rather than a meeting. It was written by an earlier version of the website sweep whose exclusion list matched exact local parts only.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Open-web enrichment sweep. Applied: website https://ads-investments.com. Evidence: ads-investments.com listed; adgm.com register (2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
+      "type": "research"
     }
   ],
   "city": "Abu Dhabi",
@@ -76,6 +82,6 @@
     "fsra"
   ],
   "trigger": null,
-  "updated": "2026-09-23",
-  "website": null
+  "updated": "2026-09-24",
+  "website": "https://ads-investments.com"
 }

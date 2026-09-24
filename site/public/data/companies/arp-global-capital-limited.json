@@ -11,6 +11,12 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 254900D98F0CK6O12145 found for this firm (matched on name + country). Filled legal_name 'ARP Global Capital Limited'. Legal form per GLEIF: Limited Liability Company. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/254900D98F0CK6O12145",
       "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Open-web enrichment sweep. Applied: website https://arpglobalcapital.com; contact Yusuf Alireza; contact Krishna Rao. Evidence: arpglobalcapital.com/contact-us (fetched 2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
@@ -25,6 +31,28 @@
       "role": "unknown",
       "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/arp-global-capital-limited",
       "title": "General enquiries"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Yusuf Alireza",
+      "notes": "Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "UAE web enrichment 2026-09-24: arpglobalcapital.com/contact-us (fetched 2026-09-24)",
+      "title": "co-founder; ex-CEO Noble Group, ex-Goldman Sachs"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Krishna Rao",
+      "notes": "Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "UAE web enrichment 2026-09-24: arpglobalcapital.com/contact-us (fetched 2026-09-24)",
+      "title": "co-founder"
     }
   ],
   "country": "UAE",
@@ -67,6 +95,6 @@
     "asset-manager"
   ],
   "trigger": null,
-  "updated": "2026-09-23",
-  "website": null
+  "updated": "2026-09-24",
+  "website": "https://arpglobalcapital.com"
 }

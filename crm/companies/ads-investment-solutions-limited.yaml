@@ -5,7 +5,7 @@ country: UAE
 city: Abu Dhabi
 segment: fund_manager
 regulator: FSRA (ADGM)
-website: null
+website: https://ads-investments.com
 linkedin: null
 size:
   aum: null
@@ -29,7 +29,7 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-23'
+updated: '2026-09-24'
 contacts:
 - name: ADS Investment Solutions Limited — contact published on the FSRA register
   title: General enquiries
@@ -75,5 +75,11 @@ activities:
     not buying software, and on a privacy address it invites a complaint rather than a meeting. It was
     written by an earlier version of the website sweep whose exclusion list matched exact local parts
     only.
+  link: null
+- date: '2026-09-24'
+  type: research
+  summary: 'Open-web enrichment sweep. Applied: website https://ads-investments.com. Evidence: ads-investments.com
+    listed; adgm.com register (2026-09-24). Every value was transcribed from a published source — nothing
+    was constructed from a domain.'
   link: null
 next_action: null

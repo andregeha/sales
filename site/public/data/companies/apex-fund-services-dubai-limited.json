@@ -5,6 +5,12 @@
       "link": "https://www.dfsa.ae/public-register/firms",
       "summary": "Appeared as a new entry in the DFSA public register of authorised firms (DIFC). Licence F000255, Providing Fund Administration (Authorised Firms). Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the DFSA): Unit C1408, Level 14, Burj Daman, DIFC, PO Box 506534, Dubai, UAE",
       "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Open-web enrichment sweep. Applied: website https://apexgroup.com; contact Christiane El Habre; contact Naveed Zamir Yasir. Evidence: apexgroup.com (fetched 2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
@@ -19,6 +25,28 @@
       "role": "unknown",
       "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/apex-fund-services-dubai-limited",
       "title": "General enquiries"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Christiane El Habre",
+      "notes": "Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "UAE web enrichment 2026-09-24: apexgroup.com (fetched 2026-09-24)",
+      "title": "Regional Managing Director, Middle East"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Naveed Zamir Yasir",
+      "notes": "Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "UAE web enrichment 2026-09-24: apexgroup.com (fetched 2026-09-24)",
+      "title": "Country Head, Dubai"
     }
   ],
   "country": "UAE",
@@ -61,6 +89,6 @@
     "fund-manager"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
-  "website": null
+  "updated": "2026-09-24",
+  "website": "https://apexgroup.com"
 }

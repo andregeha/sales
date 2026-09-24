@@ -1,0 +1,47 @@
+{
+  "activities": [],
+  "city": "Dubai",
+  "contacts": [],
+  "country": "UAE",
+  "created": "2026-09-24",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Lombard Odier (Middle East) Ltd",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "DFSA (DIFC)",
+  "score": null,
+  "segment": "bank",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "lombard-odier-middle-east-ltd",
+  "source": {
+    "channel": "register_search",
+    "date": "2026-09-24",
+    "detail": "A DIFC-licensed operating entity of an international private bank, verified against the DFSA register and the bank's own site. ⚠ It surfaced from the 'Advising on Financial Products' candidate bucket, which we treat as low-precision because it mixes insurance and credit advisers — but a private bank holds that licence precisely BECAUSE advising clients is its business. It books client assets and runs portfolios in the UAE, which is our ICP segment 'private and investment banks'. ⚠ This is NOT a representative office: it is a licensed entity that conducts financial business locally."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "private-bank",
+    "uae",
+    "difc",
+    "promoted-from-candidate"
+  ],
+  "trigger": null,
+  "updated": "2026-09-24",
+  "website": null
+}

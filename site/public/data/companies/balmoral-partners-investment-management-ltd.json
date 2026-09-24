@@ -5,6 +5,12 @@
       "link": "https://www.adgm.com/public-registers/fsra",
       "summary": "Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 240019, authorised 2024-08-30, Managing A Collective Investment Fund. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Reem Island, 1005, 10, Addax Port Office Tower, Tamouh",
       "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Open-web enrichment sweep. Applied: website https://balmoral-im.com. Evidence: adgm.com register, prnewswire.com (2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
+      "type": "research"
     }
   ],
   "city": "Abu Dhabi",
@@ -52,6 +58,6 @@
     "fsra"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
-  "website": null
+  "updated": "2026-09-24",
+  "website": "https://balmoral-im.com"
 }

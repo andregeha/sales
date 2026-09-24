@@ -5,19 +5,25 @@
       "link": "https://www.dfsa.ae/public-register/firms",
       "summary": "Appeared as a new entry in the DFSA public register of authorised firms (DIFC). Licence F008167, Managing Assets (Authorised Firms). Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the DFSA): 1008, Innovation One, DIFC, Dubai, UAE",
       "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Open-web enrichment sweep. Applied: website https://accesswealth.io; email support@accesswealth.io. Evidence: accesswealth.io (fetched 2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
   "contacts": [
     {
-      "email": null,
+      "email": "support@accesswealth.io",
       "language": "en",
       "linkedin": null,
       "name": "Access Technologies OPCO Limited — switchboard (register-published)",
       "notes": "Telephone number as published by the DFSA on its own public register — not a guessed number and not an individual's line. Use it to reach a named person, not as the first touch itself.",
       "phone": "Date of Licence",
       "role": "unknown",
-      "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/access-technologies-opco-limited",
+      "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/access-technologies-opco-limited · Email published on the firm's own site (accesswealth.io (fetched 2026-09-24))",
       "title": "General enquiries"
     }
   ],
@@ -30,7 +36,7 @@
     "score": 53
   },
   "has_contact_route": true,
-  "has_email": false,
+  "has_email": true,
   "has_linkedin": false,
   "has_phone": true,
   "legal_name": null,
@@ -61,6 +67,6 @@
     "asset-manager"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
-  "website": null
+  "updated": "2026-09-24",
+  "website": "https://accesswealth.io"
 }

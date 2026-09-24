@@ -81,3 +81,78 @@ not a list of new leads, and nothing was added or changed in `crm/`.
 | Barclays | barclays-bank-plc.yaml | Barclays Bank PLC (DIFC Branch): Investment Bank, International Corporate Banking, and Private Banking and Wealth Management per own UAE contact page | not established | ib.barclays/contact-us/ae.html |
 | Deutsche Bank | deutsche-bank-ag.yaml | Wealth Management arm in Dubai (DIFC) and Abu Dhabi (ADGM); regional head chain (2019-era, stale) ran Fred Hilal then Mubashar Ayoob reporting to Loic Voide | stale 2019 sourcing, do not quote as current | wealth.db.com/en/locations/europe-middle-east-and-africa/united-arab-emirates.html |
 | Citibank | citibank-n-a.yaml | Citi Private Bank operates from the same Citibank N.A. UAE entity; "Citigold Private Client" threshold USD 1,000,000 | not established | privatebank.citibank.com/office-locations/dubai |
+| HSBC | hsbc-bank-middle-east-limited.yaml (onshore) | Two distinct HSBC private-banking entities per own page: onshore HSBC Bank Middle East Limited (Emaar Square) and offshore "HSBC PB (Suisse) SA DB" at DIFC -- offshore entity not obviously the same CRM record, not separately confirmed | not established | privatebanking.hsbc.com/hsbc-private-banking-uae/ (fetched 2026-09-24) |
+| J.P. Morgan | j-p-morgan-middle-east-limited.yaml (CRM lists as Abu Dhabi; own site places Private Bank office at ICD Brookfield Place, DIFC -- reconciliation not resolved here) | J.P. Morgan Private Bank, DIFC | not established | privatebank.jpmorgan.com/eur/en/locations/emea/dubai |
+| Mirabaud | not new -- already mirabaud-middle-east-limited.yaml | Cat 1 DFSA licence; discretionary management, advisory, wealth planning, EAM support; ~40 staff; WealthBriefing MENA 2023 award | Georges Khoueiri, CEO Mirabaud Middle East | mirabaud.com/en/mirabaud-group/contact/our-offices/dubai (fetched 2026-09-24) |
+| Union Bancaire Privee (UBP) | not new -- already union-bancaire-privee-middle-east-limited.yaml | ~USD 12bn ME AUM, ~USD 4.5bn booked in Dubai per press (not corroborated); DIFC branch since 2011 | Mohamed Shoukry, CEO UBP Middle East (from 2024) | ubp.com/en/contact/our-offices/ubp-dubai |
+
+---
+
+## C. Multi-family offices (MFO) -- see plan/uae-family-offices.md, not repeated here
+
+That file (written earlier today) already ran a wide, verified search across UAE SFOs and MFOs --
+Abbey Road Investment Group, Pharos MFO, McFaddens and Co (UAE), Advani Family Office, Equalis
+Capital Ltd, The Family Office Company (DIFC branch), Corecam, MSM Investment Advisors, Patrimium
+Asset Management, and others, each graded with evidence. Nothing new was found in this pass beyond
+what that file already documents. One point worth restating here because it is squarely in this
+task's territory: "Al Qasimi Family Office", which some third-party MFO listicles
+(familyofficehub.io, andsimple.co) assert is a Dubai-headquartered MFO founded 1982 --
+plan/uae-family-offices.md already flagged this name as unresolved, finding no independent primary
+source distinguishing a formal "Al Qasimi Family Office" entity from the Sharjah/RAK ruling family's
+general holdings. This pass found the same vendor claim repeated but no better primary source, so
+the existing "do not treat as verified" caution stands.
+
+---
+
+## D. Dead-end / low-yield routes this pass, do not repeat
+
+- DFSA's own register pages (dfsa.ae/public-register/firms/...) block WebFetch outright (403) but
+  respond normally to a plain curl with a standard browser User-Agent -- and even curl was
+  rate-limited/blocked on back-to-back requests without a short pause. Anyone re-running this should
+  space out register lookups.
+- Several bank sites blocked WebFetch specifically (403) while being reachable in a normal browser --
+  adcb.com/en/private/, cbd.ae/personal/private-banking, efginternational.com, juliusbaer.com
+  (locations page), rothschildandco.com (office page 404'd, likely a stale URL rather than
+  blocking) -- consistent with the bot-sensitivity pattern already logged in memory/facts.md for
+  other UAE financial sites (DFM, ADX, AGBI).
+- rakbank.ae/en/wealth is JS-heavy; a plain fetch returns "Loading..." placeholders with no
+  substantive content -- same class of problem as DFM/ADX noted in plan/uae-sources-commercial.md.
+- A generic Arabic-language search surfaced only general explainer content (DIFC/DWTC regulatory
+  framework, tax-efficiency pieces) and one Arabic-language MFO name already covered elsewhere
+  (Dawia Family Office, dawiafo.com) -- not independently verified this pass, flagged as unknown
+  rather than added as a graded candidate.
+
+---
+
+## Unknowns (explicit)
+
+- Whether a separate, currently-licensed Pictet DIFC entity (distinct from the Central
+  Bank-regulated representative office confirmed above) exists -- one older press piece (Zawya)
+  refers to "Pictet Asset Management" opening in DIFC, which was not independently re-confirmed as
+  still active and separately licensed in this pass.
+- RBC's current UAE legal/licensing status -- whether any DFSA Cat-3/4 entity exists today under an
+  active RBC private-banking name, beyond the "Chief Representative" title found in press. Not
+  established.
+- Whether "ONE Swiss Private Wealth Limited" (the DFSA register's current name for the former Falcon
+  Private Wealth Limited entity) is a live, differently-owned, evaluable prospect in its own right --
+  not established, would need its own pass.
+- Emirates NBD's current Group Head of Private Banking -- press gives two names (Mohammad Al
+  Bastaki, since Aug-2023; Saod Obaidalla, "promoted to global Head of Private Banking", undated
+  snippet) without dates that reconcile cleanly. Do not draft outreach to either without checking
+  the dated Emirates NBD press release directly.
+- Mashreq's current Head of Private Banking -- three names surfaced (Rajesh Malkani, Hazem Fouad,
+  Vipul Kapur) at what read as different levels of seniority/scope; not reconciled into a single
+  current org chart.
+- Whether HSBC's offshore DIFC private-banking entity ("HSBC PB (Suisse) SA DB") is the same CRM
+  record as hsbc-bank-middle-east-limited.yaml (the onshore entity) or a separate, currently
+  untracked legal entity -- not established.
+- Whether J.P. Morgan Middle East Limited, which the CRM records as Abu Dhabi, is the same legal
+  entity that books J.P. Morgan Private Bank's Dubai DIFC office, or whether JPM operates two
+  separate UAE entities -- not established; worth reconciling before treating either as duplicate or
+  distinct.
+- CRM hygiene note, not investigated further here: first-abu-dhabi-bank-p-j-s-c.yaml and
+  first-abu-dhabi-bank.yaml appear to be two records for the same bank. Flagging only; not fixed,
+  per this task's "do not write to crm/" instruction.
+- No AUM figures quoted anywhere in this file (GSB's "$4-5bn advisory / ~$1bn AUM", Almha's "~$6bn",
+  UBP's "$12bn ME / $4.5bn Dubai") were independently corroborated beyond the firm's own site or a
+  single press mention -- treat as claimed, not verified, figures.

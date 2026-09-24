@@ -11,10 +11,28 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 8755002J7XVK9K3AVI33 found for this firm (matched on name + country). Filled legal_name 'Arolla Finance Limited'. Legal form per GLEIF: RWVW. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/8755002J7XVK9K3AVI33",
       "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Open-web enrichment sweep. Applied: website https://arolla.ae; contact Geetanjali Sharma. Evidence: arolla.ae, adgm.com register (2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
+      "type": "research"
     }
   ],
   "city": "Abu Dhabi",
-  "contacts": [],
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Geetanjali Sharma",
+      "notes": "Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "UAE web enrichment 2026-09-24: arolla.ae, adgm.com register (2026-09-24)",
+      "title": "per search snippet - role not fully clear"
+    }
+  ],
   "country": "UAE",
   "created": "2026-09-22",
   "description": null,
@@ -58,6 +76,6 @@
     "fsra"
   ],
   "trigger": "licence granted 2025-08-20, still early-stage but not brand new (12)",
-  "updated": "2026-09-23",
-  "website": null
+  "updated": "2026-09-24",
+  "website": "https://arolla.ae"
 }

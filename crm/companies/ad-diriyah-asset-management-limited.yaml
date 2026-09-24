@@ -5,7 +5,7 @@ country: UAE
 city: Dubai
 segment: asset_manager
 regulator: DFSA (DIFC)
-website: null
+website: https://addiriyaham.com
 linkedin: null
 size:
   aum: null
@@ -26,18 +26,19 @@ tags:
 - new-licence
 - asset-manager
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-24'
 contacts:
 - name: Ad Diriyah Asset Management Limited — switchboard (register-published)
   title: General enquiries
   role: unknown
-  email: null
+  email: info@addiriyaham.com
   phone: 971 4 401 9515
   linkedin: null
   language: en
   notes: Telephone number as published by the DFSA on its own public register — not a guessed number and
     not an individual's line. Use it to reach a named person, not as the first touch itself.
   source: DFSA public register, https://www.dfsa.ae/public-register/firms/ad-diriyah-asset-management-limited
+    · Email published on the firm's own site (addiriyaham.com/contact-us (fetched 2026-09-24))
 fit:
   score: 53
   reasoning: 'Fit 50/60: priority segment asset_manager (20) + priority market UAE (15) + manages third-party
@@ -56,4 +57,10 @@ activities:
     address (per the DFSA): Unit GD-GB-00-15-BC-65B, Level 15, Gate District Gate Building, DIFC, PO Box
     121208, Dubai, UAE'
   link: https://www.dfsa.ae/public-register/firms
+- date: '2026-09-24'
+  type: research
+  summary: 'Open-web enrichment sweep. Applied: website https://addiriyaham.com; email info@addiriyaham.com.
+    Evidence: addiriyaham.com/contact-us (fetched 2026-09-24). Every value was transcribed from a published
+    source — nothing was constructed from a domain.'
+  link: null
 next_action: null

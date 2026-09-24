@@ -29,8 +29,18 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-23'
-contacts: []
+updated: '2026-09-24'
+contacts:
+- name: Elliot Andrews
+  title: CEO, per LinkedIn
+  role: unknown
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Named on the firm's own site or a cited public source during the 2026-09-24 web sweep. No personal
+    contact detail was published and none is guessed.
+  source: 'UAE web enrichment 2026-09-24: adgm.com register, LinkedIn (2026-09-24)'
 fit:
   score: 62
   reasoning: 'Fit 50/60: priority segment fund_manager (20) + priority market UAE (15) + manages third-party
@@ -58,5 +68,11 @@ activities:
     no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made
     on normalized name + country only, not a second identifier — treat as provisional and challenge if
     it looks wrong. Record: https://search.gleif.org/#/record/213800PM53J8QH59PL32'
+  link: null
+- date: '2026-09-24'
+  type: research
+  summary: 'Open-web enrichment sweep. Applied: contact Elliot Andrews. Evidence: adgm.com register, LinkedIn
+    (2026-09-24). Every value was transcribed from a published source — nothing was constructed from a
+    domain.'
   link: null
 next_action: null

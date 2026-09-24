@@ -5,7 +5,7 @@ country: UAE
 city: Dubai
 segment: asset_manager
 regulator: DFSA (DIFC)
-website: null
+website: https://astercm.ae
 linkedin: null
 size:
   aum: null
@@ -26,7 +26,7 @@ tags:
 - new-licence
 - asset-manager
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-24'
 contacts:
 - name: Aster Capital Management (DIFC) Limited — switchboard (register-published)
   title: General enquiries
@@ -55,4 +55,10 @@ activities:
     the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered
     address (per the DFSA): Unit 1012, 10th Floor Index Tower Al Mustaqbal Street, DIFC, 000, Dubai, UAE'
   link: https://www.dfsa.ae/public-register/firms
+- date: '2026-09-24'
+  type: research
+  summary: 'Open-web enrichment sweep. Applied: website https://astercm.ae. Evidence: astercm.ae listed
+    in search (2026-09-24). Every value was transcribed from a published source — nothing was constructed
+    from a domain.'
+  link: null
 next_action: null

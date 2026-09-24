@@ -1070,3 +1070,44 @@ missing record.
 
 Both were plausible, specific and wrong. Logging them as open questions would have sent someone
 chasing a gap that is not there.
+
+## 2026-09-24 — a correction I owe Andre: we were never at zero triggers
+
+I told Andre repeatedly that the CRM held **zero triggers** and that the pipeline was blocked on
+that. **That was wrong, and it was my measurement that was wrong.** I checked `record['trigger']`,
+a field that does not exist in `crm/SCHEMA.md`. A trigger lives inside `fit.reasoning` as a
+`Trigger N/25:` clause, which is what `crm_report.trigger_line()` reads.
+
+Measured correctly: **1,777 records carry a Trigger clause, 195 score non-zero, and 194 surface a
+readable "why now".** And **73 firms have BOTH a trigger and an email address** — a sendable queue
+that existed while I was describing the pipeline as blocked. Most are licence-recency triggers
+("new licence, no incumbent to displace"), which are real but weaker than an event.
+
+⚠ The strategic advice I gave on the back of that number — that sourcing should stop and triggers
+be built first — was based on a false premise. The trigger scan is still worth building; the
+urgency I attached to it was not earned.
+
+### Seven genuine event triggers, from the web sweep
+The open-web sweep produced the first **event**-based triggers we have ever held, each dated and
+sourced:
+
+| Firm | Trigger | Why it matters |
+|---|---|---|
+| **Ark Capital Management (Dubai)** | DFSA fine of USD 504,000, Feb 2026, for market-abuse **systems and controls** failings | A regulator naming a firm's systems as inadequate is the most direct "why now" we can hold, and remediation budget follows a fine |
+| ABS (Middle East) | Arab Bank Switzerland launched this DIFC entity June 2026 | A brand-new booking centre, no incumbent to displace |
+| ASB Capital | Al Salam Bank launched it Nov 2024 with large starting AUM | New entrant standing up operations |
+| Badwa Capital | AlRajhi United took a stake, 2025 | New owners review the stack |
+| Amaltas Partners | Acquired by Atom Group, DFSA change of control | A new parent consolidates platforms |
+| Ambit Global Private Client (MENA) | Entered DIFC in 2024 by acquiring Moonrock | Integrating an acquired book |
+| Audacia Capital | Defendant in DIFC Courts CFI 063/2024 | ⚠ Logged at only 10/25 — litigation means something is happening, not that a door is open. Do not lead with it |
+
+### And the enrichment
+44 UAE records enriched from the sweep: **+38 websites, +18 emails, +31 named people.**
+UAE websites 126 → 164, emails 206 → 224, named humans 25 → 56.
+
+**Six international private banks promoted** that were sitting undecided in the DIFC "Advising on
+Financial Products" candidate bucket at score 20: Lombard Odier, EFG, Edmond de Rothschild, LGT and
+BNP Paribas Wealth Management (DIFC). ⚠ Treating that category as uniformly low-precision was right
+on average and wrong about a specific cluster — a private bank holds an advisory licence *because*
+advising clients is its business. Pictet, RBC and CA Indosuez Abu Dhabi were excluded as
+representative offices, each with its source.
