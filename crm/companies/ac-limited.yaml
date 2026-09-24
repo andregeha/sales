@@ -1,0 +1,39 @@
+slug: ac-limited
+name: AC Limited
+legal_name: null
+country: UAE
+city: Dubai
+segment: family_office
+regulator: DFSA (DIFC)
+website: https://www.aclimited.com/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: DFSA Single Family Office listing (ref F003179), verified still active 2026-09-24. Confirmed
+    active and currently operating from DIFC, founded 2013, running a large diversified global portfolio.
+    ⚠ This is the family office of Sheikh Mohamed bin Zayed Al Nahyan, President of the UAE. It is recorded
+    because it is a real, active entity in our segment — NOT because it is an approachable prospect. Any
+    contact at all is Andre's decision alone and nothing about this record should be treated as routine.
+  date: '2026-09-24'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- family-office
+- uae
+- difc
+- promoted-from-candidate
+created: '2026-09-24'
+updated: '2026-09-24'
+contacts: []
+fit:
+  score: null
+  reasoning: null
+  disqualified_reason: null
+activities: []
+next_action: null

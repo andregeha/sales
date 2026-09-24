@@ -1,0 +1,58 @@
+slug: maddox-street-limited
+name: Maddox Street Limited
+legal_name: null
+country: UAE
+city: Dubai
+segment: family_office
+regulator: DFSA (DIFC)
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: DFSA Single Family Office listing (ref F003316), verified still active 2026-09-24. Family office
+    incorporated 21 July 2010 in DIFC with two named directors. ⚠ The register mirror shows a commercial-licence
+    validity date of 20 July 2024, over two years stale — confirm the licence was renewed before working
+    this record.
+  date: '2026-09-24'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- family-office
+- uae
+- difc
+- promoted-from-candidate
+created: '2026-09-24'
+updated: '2026-09-24'
+contacts:
+- name: Priya Assomull
+  title: Director and shareholder
+  role: unknown
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Named in public sources during verification. No contact detail was published for this person
+    and none is guessed.
+  source: 'Public-source verification 2026-09-24: DIFC register mirror, registered number 951'
+- name: Sujata Assomull
+  title: Director, shareholder and company secretary
+  role: unknown
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Named in public sources during verification. No contact detail was published for this person
+    and none is guessed.
+  source: 'Public-source verification 2026-09-24: DIFC register mirror'
+fit:
+  score: null
+  reasoning: null
+  disqualified_reason: null
+activities: []
+next_action: null

@@ -1,0 +1,37 @@
+slug: twinwood-family-holdings
+name: Twinwood Family Holdings
+legal_name: null
+country: UAE
+city: Dubai
+segment: family_office
+regulator: DFSA (DIFC)
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: DFSA Single Family Office listing (ref F005121), verified still active 2026-09-24. Confirmed
+    active with an ACTIVE LEI whose Arabic-script legal name confirms the exact entity match. ⚠ No public
+    detail on the family or the activity beyond that.
+  date: '2026-09-24'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- family-office
+- uae
+- difc
+- promoted-from-candidate
+created: '2026-09-24'
+updated: '2026-09-24'
+contacts: []
+fit:
+  score: null
+  reasoning: null
+  disqualified_reason: null
+activities: []
+next_action: null

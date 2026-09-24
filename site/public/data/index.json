@@ -693,6 +693,31 @@
     "website": "https://adib.com"
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "AC Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "family_office",
+    "slug": "ac-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://www.aclimited.com/"
+  },
+  {
     "city": "Abu Dhabi",
     "country": "UAE",
     "created": "2026-09-22",
@@ -1911,6 +1936,31 @@
   {
     "city": "Dubai",
     "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "AJM International Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "family_office",
+    "slug": "ajm-international-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
     "has_email": false,
@@ -2279,6 +2329,31 @@
     ],
     "trigger": null,
     "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Al Rayid Investments Ltd",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "family_office",
+    "slug": "al-rayid-investments-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -4289,6 +4364,31 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "https://angelor.fr/"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Anou SFO Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "family_office",
+    "slug": "anou-sfo-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": null
   },
   {
     "city": "PARIS",
@@ -30317,6 +30417,31 @@
   {
     "city": "Dubai",
     "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Maddox Street Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "family_office",
+    "slug": "maddox-street-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
     "has_email": false,
@@ -31021,6 +31146,31 @@
     "website": "https://www.mashreqbank.com"
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Massar Investments Ltd.",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "family_office",
+    "slug": "massar-investments-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": null
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -31120,6 +31270,31 @@
     ],
     "trigger": null,
     "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Mayfield Group LLP",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "family_office",
+    "slug": "mayfield-group-llp",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -35251,6 +35426,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Onyx Blue Capital Ltd",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "family_office",
+    "slug": "onyx-blue-capital-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "http://onyxbluecapital.com/"
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -38656,6 +38856,31 @@
     "website": "https://www.redtreecapital.com/"
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Redwood SFO Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "family_office",
+    "slug": "redwood-sfo-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://www.redwoodsfo.ae/"
+  },
+  {
     "city": "Paris",
     "country": "France",
     "created": "2026-09-22",
@@ -39276,6 +39501,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Rosemonde Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "family_office",
+    "slug": "rosemonde-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": null
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -39699,6 +39949,31 @@
     ],
     "trigger": "register entry last updated 2026-06-24 (90 days ago), no incumbent to displace (20) — ⚠ this is the CMA's 'last update' date for the entry, which is the licence date for a new firm but may be an amendment for an existing one",
     "updated": "2026-09-22",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Sabban Holdings Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "family_office",
+    "slug": "sabban-holdings-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -43402,6 +43677,31 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "TAM Capital LLC",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "family_office",
+    "slug": "tam-capital-llc",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": null
+  },
+  {
     "city": null,
     "country": "Saudi Arabia",
     "created": "2026-09-22",
@@ -43889,6 +44189,31 @@
     "trigger": null,
     "updated": "2026-09-22",
     "website": "https://tfoco.com/en/sa"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "The KEF Company Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "family_office",
+    "slug": "the-kef-company-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://www.kefholdings.com/"
   },
   {
     "city": "Riyadh",
@@ -44797,6 +45122,31 @@
   {
     "city": "Dubai",
     "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Tsangs Group SFO Limited",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "family_office",
+    "slug": "tsangs-group-sfo-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
     "has_email": false,
@@ -45029,6 +45379,31 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "https://twentytwo-im.com/"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Twinwood Family Holdings",
+    "regulator": "DFSA (DIFC)",
+    "score": null,
+    "segment": "family_office",
+    "slug": "twinwood-family-holdings",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "difc",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": null
   },
   {
     "city": "Abu Dhabi",

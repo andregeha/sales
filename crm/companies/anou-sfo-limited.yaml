@@ -1,0 +1,36 @@
+slug: anou-sfo-limited
+name: Anou SFO Limited
+legal_name: null
+country: UAE
+city: Dubai
+segment: family_office
+regulator: DFSA (DIFC)
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: DFSA Single Family Office listing (ref F004693), verified still active 2026-09-24. Single-family
+    office incorporated 12 Aug 2018 in DIFC, confirmed active on two directory sources.
+  date: '2026-09-24'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- family-office
+- uae
+- difc
+- promoted-from-candidate
+created: '2026-09-24'
+updated: '2026-09-24'
+contacts: []
+fit:
+  score: null
+  reasoning: null
+  disqualified_reason: null
+activities: []
+next_action: null

@@ -1,0 +1,38 @@
+slug: onyx-blue-capital-ltd
+name: Onyx Blue Capital Ltd
+legal_name: null
+country: UAE
+city: Dubai
+segment: family_office
+regulator: DFSA (DIFC)
+website: http://onyxbluecapital.com/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: DFSA Single Family Office listing (ref F005471), verified still active 2026-09-24. Confirmed
+    active with an ACTIVE/ISSUED LEI. ⚠ It self-presents as 'an independent investment boutique specialised
+    in alternative investments' rather than as a classic single-family vehicle — the DFSA category and
+    its own words disagree, so qualify what it actually manages.
+  date: '2026-09-24'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- family-office
+- uae
+- difc
+- promoted-from-candidate
+created: '2026-09-24'
+updated: '2026-09-24'
+contacts: []
+fit:
+  score: null
+  reasoning: null
+  disqualified_reason: null
+activities: []
+next_action: null

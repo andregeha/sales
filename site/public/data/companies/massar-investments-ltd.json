@@ -1,0 +1,59 @@
+{
+  "activities": [],
+  "city": "Dubai",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Abdul Aziz Al Ghurair",
+      "notes": "Named in public sources during verification. No contact detail was published for this person and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "Public-source verification 2026-09-24: Altss; PERE institution profile",
+      "title": "Principal"
+    }
+  ],
+  "country": "UAE",
+  "created": "2026-09-24",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": "https://www.linkedin.com/company/massar-investments/",
+  "name": "Massar Investments Ltd.",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "DFSA (DIFC)",
+  "score": null,
+  "segment": "family_office",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "massar-investments-ltd",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-24",
+    "detail": "DFSA Single Family Office listing (ref F001894), verified still active 2026-09-24. Confirmed active single-family office of Abdul Aziz Al Ghurair, Chairman of Mashreq Bank, founded 2011 and diversified across private equity, public markets and alternatives. ⚠ Its LEI registration shows LAPSED, which means the LEI was not renewed — it is NOT evidence the entity closed; the entity status itself is ACTIVE."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "family-office",
+    "uae",
+    "difc",
+    "promoted-from-candidate"
+  ],
+  "trigger": null,
+  "updated": "2026-09-24",
+  "website": null
+}

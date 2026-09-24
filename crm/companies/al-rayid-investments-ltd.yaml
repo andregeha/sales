@@ -1,0 +1,37 @@
+slug: al-rayid-investments-ltd
+name: Al Rayid Investments Ltd
+legal_name: null
+country: UAE
+city: Dubai
+segment: family_office
+regulator: DFSA (DIFC)
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: DFSA Single Family Office listing (ref F006604), verified still active 2026-09-24. DIFC-registered
+    investment entity since 2020, confirmed current on a register mirror. ⚠ Only one source and no independent
+    second — thinner evidence than the rest of this batch.
+  date: '2026-09-24'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- family-office
+- uae
+- difc
+- promoted-from-candidate
+created: '2026-09-24'
+updated: '2026-09-24'
+contacts: []
+fit:
+  score: null
+  reasoning: null
+  disqualified_reason: null
+activities: []
+next_action: null

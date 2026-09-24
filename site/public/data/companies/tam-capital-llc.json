@@ -1,0 +1,59 @@
+{
+  "activities": [],
+  "city": "Dubai",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Laurent Viguier",
+      "notes": "Named in public sources during verification. No contact detail was published for this person and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "Public-source verification 2026-09-24: Altss; Preqin; Tamer Group press release",
+      "title": "Chief Executive Officer"
+    }
+  ],
+  "country": "UAE",
+  "created": "2026-09-24",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": "https://www.linkedin.com/company/tamcapital",
+  "name": "TAM Capital LLC",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "DFSA (DIFC)",
+  "score": null,
+  "segment": "family_office",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "tam-capital-llc",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-24",
+    "detail": "DFSA Single Family Office listing (ref F003413), verified still active 2026-09-24. Confirmed active single-family office of the Tamer family (Tamer Group, a large Gulf pharmaceutical and consumer-goods distributor), governed by an Oversight Board of family members plus independent advisors. Its CEO spent ~20 years in private banking at Credit Agricole Indosuez and Lombard Odier — a buyer who already knows what a portfolio system is."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "family-office",
+    "uae",
+    "difc",
+    "promoted-from-candidate"
+  ],
+  "trigger": null,
+  "updated": "2026-09-24",
+  "website": null
+}

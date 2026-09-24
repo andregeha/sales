@@ -1,0 +1,48 @@
+slug: the-kef-company-limited
+name: The KEF Company Limited
+legal_name: null
+country: UAE
+city: Dubai
+segment: family_office
+regulator: DFSA (DIFC)
+website: https://www.kefholdings.com/
+linkedin: https://www.linkedin.com/company/kefholdings
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: DFSA Single Family Office listing (ref F001985), verified still active 2026-09-24. Confirmed
+    active DIFC entity of KEF Holdings, a family business since 2012 investing across healthcare, education,
+    hospitality and agriculture in the UAE and India. ⚠ GLEIF's record of this name is a DIFFERENT, British
+    Virgin Islands, RETIRED entity — do not use it as evidence about this company.
+  date: '2026-09-24'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- family-office
+- uae
+- difc
+- promoted-from-candidate
+created: '2026-09-24'
+updated: '2026-09-24'
+contacts:
+- name: Faizal Kottikollon
+  title: Founder and Chairman
+  role: unknown
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Named in public sources during verification. No contact detail was published for this person
+    and none is guessed.
+  source: 'Public-source verification 2026-09-24: The National profile; MEConstructionNews'
+fit:
+  score: null
+  reasoning: null
+  disqualified_reason: null
+activities: []
+next_action: null

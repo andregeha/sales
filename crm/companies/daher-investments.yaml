@@ -6,7 +6,7 @@ city: Dubai
 segment: family_office
 regulator: null
 website: https://daherinvestments.com/
-linkedin: null
+linkedin: https://www.linkedin.com/company/daher-capital
 size:
   aum: null
   employees: null
@@ -31,5 +31,12 @@ fit:
   score: null
   reasoning: null
   disqualified_reason: null
-activities: []
+activities:
+- date: '2026-09-24'
+  type: research
+  summary: 'Verification confirms this is the same firm already held as `daher-investments`: DIFC, Index
+    Tower, the Daher family, daherinvestments.com, also trading as Daher Capital. Adds LEI 254900LCKTDSSNW2DS83
+    (entity ACTIVE, registration ISSUED) and LinkedIn https://www.linkedin.com/company/daher-capital.
+    Not a second record.'
+  link: null
 next_action: null

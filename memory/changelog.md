@@ -904,3 +904,45 @@ written and would create the same firm twice — reintroducing the exact failure
 to prevent. `save_yaml` therefore invalidates it, and a test asserts both halves. The cache also
 leaked between tests until an autouse fixture cleared it, which is the same bug wearing a different
 hat.
+
+## 2026-09-24 — the 41 verified: UAE family offices 0 → 37
+
+All 41 DFSA-listed Dubai family offices were checked against public sources before any became a
+record. **UAE family_office 0 → 28, mfo 4 → 9 — 37 in a segment that held nothing this morning.**
+Named humans in the UAE went 19 → 25, which matters more than the firm count: we had almost none.
+
+| Verification outcome | Count | What we did |
+|---|---:|---|
+| Confirmed active family offices | 19 | promoted, with named people where published |
+| Confirmed closed or dissolved | 3 | rejected — Merriment (dissolved 2015), Tree Tops (in liquidation), Turtle Management (ceased as an FO Jan 2019) |
+| Exist, but not investment-managing FOs | 5 | 2 rejected, 3 deferred |
+| Unconfirmed | 14 | deferred |
+
+**Rejected despite being active**, because the DFSA category misleads: **Binghatti Holding** is the
+group holding company of a Dubai property developer with ~10,000 employees, and **Himalaya Global
+Holdings** the same for a pharma/FMCG group. Both are family-GOVERNANCE structures over operating
+conglomerates, not portfolio-managing family offices.
+
+**14 deferred as unconfirmed.** No website, no LinkedIn, no press, no current GLEIF record — only the
+frozen 2023 listing. They may well exist; we cannot show it, and a record we cannot stand behind is
+worse than none.
+
+⚠ **A decision reversed, which is what the append-only log is for.** Sabban Holdings was deferred
+hours earlier on a single aggregator source. Verification confirmed it active — Al-Sabban family,
+DIFC since October 2013 — so it is now accepted, and the reasoning says the bar was right and the
+evidence has now met it.
+
+⚠ **Entity traps caught and written into the records rather than smoothed away:** The KEF Company's
+GLEIF record is a DIFFERENT, retired BVI entity; Massar Investments' LEI shows LAPSED, which means an
+unrenewed LEI and **not** a closed firm; Blu Stone Management and Blu Stone Capital are distinct DFSA
+entities at one address; Dubai Wing is yet another Al Ghurair branch; Maddox Street's licence date is
+two years stale and is flagged on the record.
+
+⚠ **AC Limited is recorded but is not an ordinary prospect.** It is the family office of Sheikh
+Mohamed bin Zayed Al Nahyan, President of the UAE. It is in the CRM because it is a real, active
+entity in our segment — the record says explicitly that any contact at all is Andre's decision alone.
+
+**Two process bugs, both mine:** `cmd_contact` needs a `source` argument and the script died at the
+second record without it; and re-running would then have flipped the two already-created records into
+"duplicate" rejections, because a firm we had just created ourselves looks exactly like one that was
+already there. The re-run now skips anything already accepted.

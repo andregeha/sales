@@ -1,5 +1,12 @@
 {
-  "activities": [],
+  "activities": [
+    {
+      "date": "2026-09-24",
+      "link": null,
+      "summary": "Verification confirms this is the same firm already held as `daher-investments`: DIFC, Index Tower, the Daher family, daherinvestments.com, also trading as Daher Capital. Adds LEI 254900LCKTDSSNW2DS83 (entity ACTIVE, registration ISSUED) and LinkedIn https://www.linkedin.com/company/daher-capital. Not a second record.",
+      "type": "research"
+    }
+  ],
   "city": "Dubai",
   "contacts": [],
   "country": "UAE",
@@ -15,7 +22,7 @@
   "has_linkedin": false,
   "has_phone": false,
   "legal_name": null,
-  "linkedin": null,
+  "linkedin": "https://www.linkedin.com/company/daher-capital",
   "name": "Daher Investments",
   "next_action": null,
   "owner": "Andre Geha",
