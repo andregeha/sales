@@ -1282,7 +1282,7 @@
     "segment": "broker",
     "slug": "ads-securities-l-l-c-s-p-c",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "cma-uae",
       "register-sourced",
@@ -1293,7 +1293,7 @@
       "cma-uae"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": "https://www.adss.com"
   },
   {
@@ -4248,7 +4248,7 @@
     "segment": "broker",
     "slug": "anax-capital-financial-markets-l-l-c",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "cma-uae",
       "register-sourced",
@@ -4259,7 +4259,7 @@
       "cma-uae"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": "https://www.anaxcapital.ae/"
   },
   {
@@ -13617,7 +13617,7 @@
     "segment": "broker",
     "slug": "capital-com-mena-securities-trading-l-l-c",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "cma-uae",
       "register-sourced",
@@ -13628,7 +13628,7 @@
       "cma-uae"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -14504,7 +14504,7 @@
     "segment": "fund_manager",
     "slug": "century-financial-consultancy-llc",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "cma-uae",
       "register-sourced",
@@ -14515,7 +14515,7 @@
       "cma-uae"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": "https://www.century.ae"
   },
   {
@@ -14607,7 +14607,7 @@
     "segment": "asset_manager",
     "slug": "cfi-financial-markets-l-l-c",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "cma-uae",
       "register-sourced",
@@ -14618,7 +14618,7 @@
       "cma-uae"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": "https://cfifinancial.com/en/uae"
   },
   {
@@ -15125,7 +15125,7 @@
     "segment": "bank",
     "slug": "citibank-n-a",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "dfsa-difc",
       "register-sourced",
@@ -15133,7 +15133,7 @@
       "bank"
     ],
     "trigger": null,
-    "updated": "2026-09-22",
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -15402,7 +15402,7 @@
     "segment": "broker",
     "slug": "cms-financial-llc",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "cma-uae",
       "register-sourced",
@@ -15413,7 +15413,7 @@
       "cma-uae"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": "https://www.cmsfinancial.ae"
   },
   {
@@ -17072,16 +17072,16 @@
   {
     "city": "Dubai",
     "country": "UAE",
-    "created": "2026-09-23",
+    "created": "2026-09-24",
     "has_contact_route": true,
     "has_email": true,
     "has_linkedin": false,
     "has_phone": true,
-    "name": "DAMAN SECURITIES LLC",
+    "name": "DAMAN MARKETS FINANCIAL SERVICES L.L.C",
     "regulator": "Capital Market Authority (UAE)",
     "score": 33,
     "segment": "broker",
-    "slug": "daman-securities-llc",
+    "slug": "daman-markets-financial-services-l-l-c",
     "stage": "identified",
     "status": "nurture",
     "tags": [
@@ -17094,7 +17094,35 @@
       "cma-uae"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
+    "website": "https://damanmarkets.com/"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-23",
+    "has_contact_route": true,
+    "has_email": true,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "DAMAN SECURITIES LLC",
+    "regulator": "Capital Market Authority (UAE)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "daman-securities-llc",
+    "stage": "identified",
+    "status": "qualified",
+    "tags": [
+      "cma-uae",
+      "register-sourced",
+      "new-licence",
+      "broker",
+      "uae",
+      "onshore",
+      "cma-uae"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
     "website": "https://www.damansecurities.ae"
   },
   {
@@ -17324,7 +17352,7 @@
       "cma-uae"
     ],
     "trigger": "new licence granted 2025-12-12 (285 days ago), no incumbent to displace (20)",
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": "https://www.definite.com"
   },
   {
@@ -17511,6 +17539,34 @@
   {
     "city": "Dubai",
     "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": true,
+    "has_email": true,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Deriv Capital Contracts & Currencies L.L.C",
+    "regulator": "Capital Market Authority (UAE)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "deriv-capital-contracts-currencies-l-l-c",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "cma-uae",
+      "register-sourced",
+      "new-licence",
+      "broker",
+      "uae",
+      "onshore",
+      "cma-uae"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://deriv.com/ae"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
     "has_email": false,
@@ -17532,6 +17588,34 @@
     "trigger": null,
     "updated": "2026-09-22",
     "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": true,
+    "has_email": true,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Deutsche Securities and Services",
+    "regulator": "Capital Market Authority (UAE)",
+    "score": 33,
+    "segment": "custodian",
+    "slug": "deutsche-securities-and-services",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "cma-uae",
+      "register-sourced",
+      "new-licence",
+      "custodian",
+      "uae",
+      "onshore",
+      "cma-uae"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://www.db.com"
   },
   {
     "city": "Abu Dhabi",
@@ -18791,6 +18875,34 @@
   {
     "city": "Dubai",
     "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": true,
+    "has_email": true,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "EMIRATES NBD CAPITAL PSC",
+    "regulator": "Capital Market Authority (UAE)",
+    "score": 33,
+    "segment": "custodian",
+    "slug": "emirates-nbd-capital-psc",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "cma-uae",
+      "register-sourced",
+      "new-licence",
+      "custodian",
+      "uae",
+      "onshore",
+      "cma-uae"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://www.emiratesnbd.com"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
     "created": "2026-09-23",
     "has_contact_route": true,
     "has_email": true,
@@ -19389,7 +19501,7 @@
     "segment": "fund_manager",
     "slug": "equiti-securities-currencies-brokers-llc",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "cma-uae",
       "register-sourced",
@@ -19400,7 +19512,7 @@
       "cma-uae"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -20093,6 +20205,34 @@
     ],
     "trigger": null,
     "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": true,
+    "has_email": true,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "EXNESS MENA FINANCIAL BROKERS L.L.C",
+    "regulator": "Capital Market Authority (UAE)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "exness-mena-financial-brokers-l-l-c",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "cma-uae",
+      "register-sourced",
+      "new-licence",
+      "broker",
+      "uae",
+      "onshore",
+      "cma-uae"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -21443,7 +21583,7 @@
     "segment": "bank",
     "slug": "first-abu-dhabi-bank",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "regafi-france",
       "register-sourced",
@@ -21454,7 +21594,7 @@
       "acpr"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -24946,7 +25086,7 @@
       "fund-manager"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -27852,6 +27992,34 @@
   {
     "city": "Dubai",
     "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": true,
+    "has_email": true,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "KAMA CAPITAL SECURITIES BROKER L.L.C",
+    "regulator": "Capital Market Authority (UAE)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "kama-capital-securities-broker-l-l-c",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "cma-uae",
+      "register-sourced",
+      "new-licence",
+      "broker",
+      "uae",
+      "onshore",
+      "cma-uae"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://kamacapital.ae/"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
     "created": "2026-09-23",
     "has_contact_route": true,
     "has_email": false,
@@ -28374,7 +28542,7 @@
     "segment": "broker",
     "slug": "kira-financial-brokers-llc",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "cma-uae",
       "register-sourced",
@@ -28385,7 +28553,7 @@
       "cma-uae"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -31530,7 +31698,7 @@
       "cma-uae"
     ],
     "trigger": "licence granted 2025-07-30, still early-stage but not brand new (12)",
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -31875,7 +32043,7 @@
     "segment": "broker",
     "slug": "mex-global-financial-services-l-l-c",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "cma-uae",
       "register-sourced",
@@ -31886,7 +32054,7 @@
       "cma-uae"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": "https://www.Mex.ae"
   },
   {
@@ -31903,7 +32071,7 @@
     "segment": "broker",
     "slug": "mex-markets-financial-services-llc",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "cma-uae",
       "register-sourced",
@@ -31914,7 +32082,7 @@
       "cma-uae"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": "https://www.mexbridge.ae"
   },
   {
@@ -33669,7 +33837,7 @@
       "cma-uae"
     ],
     "trigger": "new licence granted 2025-11-04 (323 days ago), no incumbent to displace (20)",
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": "https://naviramarkets.com"
   },
   {
@@ -33816,7 +33984,7 @@
     "segment": "broker",
     "slug": "ncm-financial-services-l-l-c",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "cma-uae",
       "register-sourced",
@@ -33827,7 +33995,7 @@
       "cma-uae"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": "https://www.ncmfinancials.com/"
   },
   {
@@ -34288,7 +34456,7 @@
     "segment": "fund_manager",
     "slug": "noor-capital-pjsc",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "cma-uae",
       "register-sourced",
@@ -34299,7 +34467,7 @@
       "cma-uae"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": "https://www.noorcapital.ae"
   },
   {
@@ -35601,6 +35769,34 @@
     "trigger": null,
     "updated": "2026-09-22",
     "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": true,
+    "has_email": true,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "Orient Financial Brokers LLC",
+    "regulator": "Capital Market Authority (UAE)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "orient-financial-brokers-llc",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "cma-uae",
+      "register-sourced",
+      "new-licence",
+      "broker",
+      "uae",
+      "onshore",
+      "cma-uae"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://www.orientfinance.com"
   },
   {
     "city": "LYON",
@@ -37190,7 +37386,7 @@
     "segment": "broker",
     "slug": "plus500gulf-securities-l-l-c",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "cma-uae",
       "register-sourced",
@@ -37201,7 +37397,7 @@
       "cma-uae"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": "https://www.plus500.com/en-ae"
   },
   {
@@ -39395,6 +39591,34 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": true,
+    "has_email": true,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "ROBOMARKETS FINANCIAL BROKERAGE L.L.C",
+    "regulator": "Capital Market Authority (UAE)",
+    "score": 33,
+    "segment": "broker",
+    "slug": "robomarkets-financial-brokerage-l-l-c",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "cma-uae",
+      "register-sourced",
+      "new-licence",
+      "broker",
+      "uae",
+      "onshore",
+      "cma-uae"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://NA"
   },
   {
     "city": null,
@@ -44742,7 +44966,7 @@
     "segment": "fund_manager",
     "slug": "traders-hub-capital-markets",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "cma-uae",
       "register-sourced",
@@ -44753,7 +44977,7 @@
       "cma-uae"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": "https://tradershub.ae/"
   },
   {
@@ -44900,7 +45124,7 @@
     "segment": "broker",
     "slug": "traze-securities-l-l-c",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "cma-uae",
       "register-sourced",
@@ -44911,7 +45135,7 @@
       "cma-uae"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": "https://www.traze.ae"
   },
   {
@@ -46931,6 +47155,34 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": true,
+    "has_email": true,
+    "has_linkedin": false,
+    "has_phone": true,
+    "name": "WAFRA GULF F X CURRENCIES BROKERS L.L.C",
+    "regulator": "Capital Market Authority (UAE)",
+    "score": 45,
+    "segment": "broker",
+    "slug": "wafra-gulf-f-x-currencies-brokers-l-l-c",
+    "stage": "identified",
+    "status": "qualified",
+    "tags": [
+      "cma-uae",
+      "register-sourced",
+      "new-licence",
+      "broker",
+      "uae",
+      "onshore",
+      "cma-uae"
+    ],
+    "trigger": "licence granted 2025-03-10, still early-stage but not brand new (12)",
+    "updated": "2026-09-24",
+    "website": null
+  },
+  {
     "city": "Abu Dhabi",
     "country": "UAE",
     "created": "2026-09-22",
@@ -47703,7 +47955,7 @@
     "segment": "asset_manager",
     "slug": "xtb-financial-services-l-l-c",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "cma-uae",
       "register-sourced",
@@ -47714,7 +47966,7 @@
       "cma-uae"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-24",
     "website": "https://www.xtb.com"
   },
   {

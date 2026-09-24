@@ -986,3 +986,13 @@ a silently dropped bank.
 genuine inconsistencies with segments we already carry elsewhere: **Custody** (6 firms), **Trading
 broker of OTC derivatives and currencies** (27) and **Commodity Brokerage** (6). We map custody in
 DIFC and brokers in three other categories here.
+
+**Acted on it:** mapped Custody (id 9) and OTC-derivatives/spot broking (id 3) in `cma_uae.py`.
+UAE 801 → 810 records; custodians 23 → 25, brokers 103 → 110. The connector's own test asserted
+those two were *deliberately* left open, so the test was updated to record that the decision
+changed and why — the exclusion was an inconsistency, not a scope judgement.
+
+⚠ **Commodity brokerage (ids 22, 23, 24) stays excluded, and that IS a scope judgement.** Our other
+brokers trade securities and currencies, instruments a multi-asset portfolio holds; a commodity
+broker clearing physical trades is an execution business. Mapping it would widen `broker` until the
+segment stopped meaning anything — the same reasoning that refuses DIFC representative offices.

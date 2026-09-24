@@ -5,6 +5,12 @@
       "link": "https://www.uaecma.gov.ae/en/open-data/licensed-companies",
       "summary": "Appeared as a new entry in the Capital Market Authority (UAE) open-data register of licensed companies. Licence CP-0001785, authorised 2025-12-12, Trading and clearing broker. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the Capital Market Authority (UAE)): Office No 1604, One by Omniyat, Business Bay, Dubai, UAE",
       "type": "research"
+    },
+    {
+      "date": "2026-09-24",
+      "link": "https://www.uaecma.gov.ae/en/open-data/licensed-companies",
+      "summary": "Register change detected by the automated Capital Market Authority (UAE) open-data register of licensed companies diff. authorised activities changed: 'Trading and clearing broker' -> 'Trading broker of OTC derivatives and currencies in the spot market; Trading and clearing broker'. Every value here is as the regulator publishes it.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
@@ -64,6 +70,6 @@
     "cma-uae"
   ],
   "trigger": "new licence granted 2025-12-12 (285 days ago), no incumbent to displace (20)",
-  "updated": "2026-09-23",
+  "updated": "2026-09-24",
   "website": "https://www.definite.com"
 }

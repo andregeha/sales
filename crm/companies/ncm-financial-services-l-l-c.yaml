@@ -17,7 +17,7 @@ source:
   detail: 'Capital Market Authority (UAE) open-data register of licensed companies (https://www.uaecma.gov.ae/en/open-data/licensed-companies);
     licence CP-0000803 dated 2023-07-19. Snapshot: crm/registers/cma-uae/2026-09-23.json.'
   date: '2026-09-23'
-status: nurture
+status: qualified
 stage: identified
 owner: Andre Geha
 tags:
@@ -29,7 +29,7 @@ tags:
 - onshore
 - cma-uae
 created: '2026-09-23'
-updated: '2026-09-23'
+updated: '2026-09-24'
 contacts:
 - name: NCM FINANCIAL SERVICES L.L.C — contact published on the Capital Market Authority (UAE) register
   title: General enquiries
@@ -59,5 +59,14 @@ activities:
     Detected by the automated register diff; every field here is as the register publishes it and nothing
     has been inferred. Not yet researched or enriched. Registered address (per the Capital Market Authority
     (UAE)): Al Wasl- Office No.3009- Al Skeikh Said Bin Maktoum Bin Rashid Al Maktoum'
+  link: https://www.uaecma.gov.ae/en/open-data/licensed-companies
+- date: '2026-09-24'
+  type: research
+  summary: 'Register change detected by the automated Capital Market Authority (UAE) open-data register
+    of licensed companies diff. authorised activities changed: ''Trading broker in the international markets''
+    -> ''Trading broker of OTC derivatives and currencies in the spot market; Trading broker in the international
+    markets''. Every value here is as the regulator publishes it. ⚠ Status raised from nurture to qualified
+    on the strength of this change — an authorisation or segment change means the firm''s business has
+    moved, which is a reason to write. NOT yet researched; confirm before any outreach.'
   link: https://www.uaecma.gov.ae/en/open-data/licensed-companies
 next_action: null

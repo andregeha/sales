@@ -17,7 +17,7 @@ source:
   detail: 'DFSA public register of authorised firms (DIFC) (https://www.dfsa.ae/public-register/firms);
     licence F000986. Snapshot: crm/registers/dfsa-difc/2026-09-22.json.'
   date: '2026-09-22'
-status: nurture
+status: qualified
 stage: identified
 owner: Andre Geha
 tags:
@@ -26,7 +26,7 @@ tags:
 - new-licence
 - bank
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-24'
 contacts:
 - name: Citibank, N.A. — switchboard (register-published)
   title: General enquiries
@@ -54,4 +54,13 @@ activities:
     as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered
     address (per the DFSA): Unit 1, Level 7, Gate Precinct Building 2, DIFC, PO Box 507010, Dubai, UAE'
   link: https://www.dfsa.ae/public-register/firms
+- date: '2026-09-24'
+  type: research
+  summary: 'Register change detected by the automated Capital Market Authority (UAE) open-data register
+    of licensed companies diff. authorised activities changed: ''Portfolios management; Trading broker
+    in the international markets'' -> ''Portfolios management; Custody; Trading broker in the international
+    markets''. Every value here is as the regulator publishes it. ⚠ Status raised from nurture to qualified
+    on the strength of this change — an authorisation or segment change means the firm''s business has
+    moved, which is a reason to write. NOT yet researched; confirm before any outreach.'
+  link: https://www.uaecma.gov.ae/en/open-data/licensed-companies
 next_action: null

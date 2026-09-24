@@ -17,7 +17,7 @@ source:
   detail: 'ACPR REGAFI register of authorised credit institutions and investment firms (https://www.regafi.fr/);
     licence 15350 dated 1979-02-23. Snapshot: crm/registers/regafi-france/2026-09-23.json.'
   date: '2026-09-23'
-status: nurture
+status: qualified
 stage: identified
 owner: Andre Geha
 tags:
@@ -29,7 +29,7 @@ tags:
 - france
 - acpr
 created: '2026-09-23'
-updated: '2026-09-23'
+updated: '2026-09-24'
 contacts: []
 fit:
   score: 40
@@ -56,4 +56,13 @@ activities:
     on normalized name + country only, not a second identifier — treat as provisional and challenge if
     it looks wrong. Record: https://search.gleif.org/#/record/2549000MXQ8UZM1BF851'
   link: null
+- date: '2026-09-24'
+  type: research
+  summary: 'Register change detected by the automated Capital Market Authority (UAE) open-data register
+    of licensed companies diff. authorised activities changed: ''Investment Fund Management; Portfolios
+    management'' -> ''Investment Fund Management; Portfolios management; Custody''. Every value here is
+    as the regulator publishes it. ⚠ Status raised from nurture to qualified on the strength of this change
+    — an authorisation or segment change means the firm''s business has moved, which is a reason to write.
+    NOT yet researched; confirm before any outreach.'
+  link: https://www.uaecma.gov.ae/en/open-data/licensed-companies
 next_action: null

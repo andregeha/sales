@@ -113,6 +113,17 @@ CATEGORIES: dict[str, tuple[str, str]] = {
     "7": ("Portfolios management", "asset_manager"),
     "45": ("Profit Sharing Asset Management", "asset_manager"),
     "21": ("Securities Central Clearing", "custodian"),
+    # ⚠ Added 2026-09-24 after auditing the 52 unmapped categories. These two were not a judgement
+    # that they are out of scope — they were an inconsistency: we map custody in DIFC and brokers in
+    # three other categories in this very register, so excluding the same businesses here made our
+    # coverage depend on which category a regulator happened to file a firm under.
+    "9": ("Custody", "custodian"),
+    "3": ("Trading broker of OTC derivatives and currencies in the spot market", "broker"),
+    # ⚠ Commodity brokerage (ids 22, 23, 24) is deliberately NOT mapped, and that is a real decision
+    # rather than an omission. Our other brokers trade securities and currencies — instruments a
+    # multi-asset portfolio holds. A commodity broker clearing physical trades is an execution
+    # business, not a portfolio one, and adding it would widen `broker` until the segment stopped
+    # meaning anything. The same reasoning that refuses DIFC representative offices.
     "1": ("Trading and clearing broker", "broker"),
     "4": ("Trading broker", "broker"),
     "2": ("Trading broker in the international markets", "broker"),

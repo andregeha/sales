@@ -132,8 +132,23 @@ class TestSegmentMapping(unittest.TestCase):
         self.assertNotIn("20", CATEGORIES)   # Promotion
         self.assertNotIn("19", CATEGORIES)   # Introduction
         self.assertNotIn("59", CATEGORIES)   # Dealing in Virtual Assets
-        self.assertNotIn("9", CATEGORIES)    # Custody (distinct from 21, deliberately left open)
-        self.assertNotIn("3", CATEGORIES)    # OTC/spot broker (deliberately left open)
+        # ⚠ Commodity brokerage, all three variants. A DECISION, not an omission: our other brokers
+        # trade securities and currencies — instruments a multi-asset portfolio holds — while a
+        # commodity broker clearing physical trades is an execution business. Mapping it would widen
+        # `broker` until the segment stopped meaning anything.
+        for cid in ("22", "23", "24"):
+            self.assertNotIn(cid, CATEGORIES)
+
+    def test_custody_and_otc_broking_are_mapped(self):
+        """⚠ This REVERSES the connector's original decision, and the reversal is the point.
+
+        Custody (9) and OTC-derivatives/spot broking (3) were first left unmapped. An audit of all 52
+        unmapped categories showed that was not a scope judgement but an inconsistency: we map
+        custody in DIFC, and three other broker categories in this very register. Excluding these
+        made our coverage depend on which category a regulator happened to file a firm under.
+        """
+        self.assertEqual(CATEGORIES["9"][1], "custodian")
+        self.assertEqual(CATEGORIES["3"][1], "broker")
 
 
 # ---------------------------------------------------------------------------
