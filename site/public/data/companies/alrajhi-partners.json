@@ -1,0 +1,80 @@
+{
+  "activities": [],
+  "city": "Riyadh",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Saad AlGheriri",
+      "notes": "Named in public sources. No contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "Public-source research 2026-09-24: Firm's own team page",
+      "title": "Chief Executive Officer"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Abdulsalam S. AlRajhi",
+      "notes": "Named in public sources. No contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "Public-source research 2026-09-24: Firm's own team page",
+      "title": "Managing Director"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Nasser Alajroush",
+      "notes": "Named in public sources. No contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "Public-source research 2026-09-24: Firm's own team page",
+      "title": "Managing Director"
+    }
+  ],
+  "country": "Saudi Arabia",
+  "created": "2026-09-24",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "AlRajhi Partners",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": null,
+  "score": null,
+  "segment": "asset_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "alrajhi-partners",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-24",
+    "detail": "⚠ Corrects a wrong auto-merge, and one our own research had flagged in advance. This was folded into `sulaiman-alrajhi-holding-financial-investments` — a DIFFERENT Al Rajhi entity. The Al Rajhi name covers at least four separate organisations. AlRajhi Partners is an investment firm founded 2019 with shareholders from the family, running public equities, private equity and real estate, with a full named team on its own site. It is not Al Rajhi Bank either. Evidence: https://alrajhi-partners.com/our-team/"
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "family-office",
+    "saudi",
+    "promoted-from-candidate"
+  ],
+  "trigger": null,
+  "updated": "2026-09-24",
+  "website": "https://alrajhi-partners.com/"
+}

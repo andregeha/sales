@@ -1,0 +1,58 @@
+{
+  "activities": [],
+  "city": "Riyadh",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Ihsan Abbas Bafakih",
+      "notes": "Named in public sources. No contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "Public-source research 2026-09-24: World Finance profile, named and quoted",
+      "title": "Chief Executive Officer"
+    }
+  ],
+  "country": "Saudi Arabia",
+  "created": "2026-09-24",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "MASIC (Mohammed I. Alsubeaei & Sons Investment Company)",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": null,
+  "score": null,
+  "segment": "family_office",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "masic-mohammed-i-alsubeaei-sons-investment-company",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-24",
+    "detail": "Explicitly established to exclusively manage the assets of the family of the late Mohammed I. Alsubeaei — a single family office by its own definition, running public equity, private equity and real estate at multi-billion-dollar scale. It has professionalised: the family moved off day-to-day management onto the board, which means an executive team makes the operating decisions. LEI 558600CPLKVWVHAITJ95, GLEIF ACTIVE, Riyadh. Evidence: https://www.worldfinance.com/strategy/managerial-roles-diversify-at-investment-firm-masic-2"
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "family-office",
+    "saudi",
+    "promoted-from-candidate"
+  ],
+  "trigger": null,
+  "updated": "2026-09-24",
+  "website": "https://masic.com.sa/"
+}

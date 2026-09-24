@@ -200,3 +200,50 @@ def test_the_resolver_caches_records_but_a_write_invalidates_it(tmp_path, monkey
     assert calls["n"] == 2
 
     crm.invalidate_match_index()
+
+
+def test_same_firm_refuses_to_decide_on_a_merely_close_match(monkeypatch):
+    """The failure this exists to stop, which happened twice in one run.
+
+    Auto-merging the resolver's top hit at 0.90 folded "Alajlan Family Office" into "The Family
+    Office International Investment Company" — two unrelated firms sharing the words "family
+    office" — and "AlRajhi Partners" into "Sulaiman Alrajhi Holding", two different branches of a
+    family whose name covers at least four organisations, a collision our own research had flagged
+    in advance.
+
+    `find_companies` ranks and says so. `same_firm` is the decision, and it declines unless the
+    names are near-identical, returning the close match so a human sees what it nearly matched.
+    """
+    fixture = [
+        _rec("the-family-office-ksa", "The Family Office International Investment Company (Saudi Arabia)",
+             country="Saudi Arabia"),
+        _rec("sulaiman-alrajhi-holding", "Sulaiman Alrajhi Holding - Financial Investments",
+             country="Saudi Arabia"),
+    ]
+    monkeypatch.setattr(crm, "load_all_companies", lambda: list(fixture))
+
+    for name in ("Alajlan Family Office", "AlRajhi Partners"):
+        slug, _close = crm.same_firm(name, country="Saudi Arabia")
+        assert slug is None, f"{name} must not be auto-merged into a different firm"
+
+
+def test_a_near_miss_is_surfaced_rather_than_hidden(monkeypatch):
+    """Declining to merge is only half of it — the caller must SEE what it nearly matched.
+
+    A silent `None` would send a near-duplicate straight into record creation with nobody aware
+    there was a candidate to compare it against.
+    """
+    fixture = [_rec("zenith-orion-capital", "Zenith Orion Capital", country="UAE")]
+    monkeypatch.setattr(crm, "load_all_companies", lambda: list(fixture))
+    slug, close = crm.same_firm("Zenith Capital", country="UAE")
+    assert slug is None, "a shared first word is not identity — Zenith Capital may be a different firm"
+    assert close and close[0][1]["slug"] == "zenith-orion-capital"
+    assert crm.SUGGEST_THRESHOLD <= close[0][0] < crm.IDENTITY_THRESHOLD
+
+
+def test_same_firm_does_resolve_a_genuine_identity(monkeypatch):
+    """It must still decide when the answer is obvious, or every promotion becomes manual."""
+    fixture = [_rec("jadwa-investment-company", "Jadwa Investment Company", country="Saudi Arabia")]
+    monkeypatch.setattr(crm, "load_all_companies", lambda: list(fixture))
+    slug, _ = crm.same_firm("Jadwa Investment Company", country="Saudi Arabia")
+    assert slug == "jadwa-investment-company"

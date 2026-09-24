@@ -2438,6 +2438,30 @@
     "website": "https://www.alwathbah.ae"
   },
   {
+    "city": "Riyadh",
+    "country": "Saudi Arabia",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Alajlan Family Office",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "alajlan-family-office",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "saudi",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://alajlanfamilyoffice.com/"
+  },
+  {
     "city": "Dubai",
     "country": "UAE",
     "created": "2026-09-23",
@@ -3079,6 +3103,30 @@
     "website": null
   },
   {
+    "city": "Riyadh",
+    "country": "Saudi Arabia",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "AlRajhi Partners",
+    "regulator": null,
+    "score": null,
+    "segment": "asset_manager",
+    "slug": "alrajhi-partners",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "saudi",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://alrajhi-partners.com/"
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -3436,6 +3484,30 @@
     "trigger": null,
     "updated": "2026-09-22",
     "website": null
+  },
+  {
+    "city": "Riyadh",
+    "country": "Saudi Arabia",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "AlTouq Group",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "altouq-group",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "saudi",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://altouq.com/"
   },
   {
     "city": "Abu Dhabi",
@@ -30735,6 +30807,30 @@
     "website": null
   },
   {
+    "city": "Dammam",
+    "country": "Saudi Arabia",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Majd Investment",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "majd-investment",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "saudi",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://majd.sa/"
+  },
+  {
     "city": "Dubai",
     "country": "UAE",
     "created": "2026-09-23",
@@ -31312,6 +31408,30 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "https://www.mashreqbank.com"
+  },
+  {
+    "city": "Riyadh",
+    "country": "Saudi Arabia",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "MASIC (Mohammed I. Alsubeaei & Sons Investment Company)",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "masic-mohammed-i-alsubeaei-sons-investment-company",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "saudi",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://masic.com.sa/"
   },
   {
     "city": "Dubai",
@@ -32629,6 +32749,30 @@
     ],
     "trigger": null,
     "updated": "2026-09-22",
+    "website": null
+  },
+  {
+    "city": "Riyadh",
+    "country": "Saudi Arabia",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Mohammad Abdullah Abunayyan Investment Company",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "mohammad-abdullah-abunayyan-investment-company",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "saudi",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -48125,6 +48269,54 @@
     ],
     "trigger": null,
     "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": null,
+    "country": "Saudi Arabia",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Zahrat Al Amaal Holding Company",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "zahrat-al-amaal-holding-company",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "saudi",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": null
+  },
+  {
+    "city": "Al Khobar",
+    "country": "Saudi Arabia",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Zamil Group Investment Company",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "zamil-group-investment-company",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "saudi",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
     "website": null
   },
   {

@@ -1,0 +1,46 @@
+{
+  "activities": [],
+  "city": "Riyadh",
+  "contacts": [],
+  "country": "Saudi Arabia",
+  "created": "2026-09-24",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Alajlan Family Office",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": null,
+  "score": null,
+  "segment": "family_office",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "alajlan-family-office",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-24",
+    "detail": "⚠ Corrects a wrong auto-merge. This was folded into `the-family-office-ksa` — which is The Family Office International Investment Company (Saudi Arabia), an entirely different firm that merely shares the words 'family office'. Alajlan Family Office is the self-described single family office of the Alajlan family, investing in B2B SaaS, PropTech and EdTech across MENAP. ⚠ Also distinct from Ajlan & Bros Group, the family's operating conglomerate. Evidence: https://alajlanfamilyoffice.com/"
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "family-office",
+    "saudi",
+    "promoted-from-candidate"
+  ],
+  "trigger": null,
+  "updated": "2026-09-24",
+  "website": "https://alajlanfamilyoffice.com/"
+}

@@ -996,3 +996,49 @@ changed and why — the exclusion was an inconsistency, not a scope judgement.
 brokers trade securities and currencies, instruments a multi-asset portfolio holds; a commodity
 broker clearing physical trades is an execution business. Mapping it would widen `broker` until the
 segment stopped meaning anything — the same reasoning that refuses DIFC representative offices.
+
+## 2026-09-24 — Saudi: 39 → 47 records, and a merge rule that had to change
+
+The UAE playbook applied to our thinnest market. Two investigations; the family-office one is in,
+the regulator one has landed and is not yet built.
+
+**8 verified Saudi family offices and investment arms promoted**, each from the firm's own site or a
+primary source: **MASIC** (explicitly "to exclusively manage the assets of the family of the late
+Mohammed I. Alsubeaei"; CEO Ihsan Abbas Bafakih), **AlTouq Group** (self-described Saudi family
+office since the 1970s), **Alajlan Family Office**, **AlRajhi Partners** (CEO Saad AlGheriri plus two
+MDs), **Majd Investment** (Almajdouie), **Zahrat Al Amaal** (Fawaz Alhokair — and it carries a dated
+trigger, a March 2024 direct-lending JV with Z Capital Group), **Zamil Group Investment Company**,
+**Abunayyan Investment Company**. Saudi named humans 0 → 7. Four hybrids deferred where
+conglomerate-versus-investment-office status is genuinely mixed: Xenel, Al Fozan, Khaled Juffali,
+JIMCO.
+
+⚠ **Two wrong auto-merges, and the second was flagged in advance by our own research.**
+- "Alajlan Family Office" was folded into `the-family-office-ksa` — The Family Office International
+  Investment Company, an unrelated firm sharing only the words *family office*.
+- "AlRajhi Partners" was folded into `sulaiman-alrajhi-holding-financial-investments` — a different
+  Al Rajhi branch. The research file had explicitly warned the Al Rajhi name covers four entities.
+
+**Root cause: my promotion scripts treated the resolver's top hit at 0.90 as identity**, while
+`find_companies`' own docstring says it ranks and does not decide. Callers kept ignoring that.
+`crm.same_firm()` is now the decision, made once and conservatively: it resolves only at 0.97+, and
+returns the near-misses so the caller can see what it nearly matched rather than getting a silent
+`None`. Both records were created properly afterwards.
+
+⚠ A consequence worth knowing: short-form resolution ("Jadwa" → "Jadwa Investment (DIFC) Limited")
+scores 0.90 and therefore no longer auto-resolves. That is correct for a machine promoting in bulk
+and wrong for a human typing a name — which is why `find_companies` stays the tool for `/intake`
+and `same_firm` the tool for automation.
+
+### The Saudi regulator investigation — found, not yet built
+Following the same method that cracked the UAE (read `sitemap.xml`, not the navigation) surfaced two
+sources the existing connector never mentioned:
+1. **CMA "Institutions under supervision" .xlsx** — a plain unauthenticated download with **~219
+   named Capital Market Institutions**, of which **~122 are asset/fund managers WITH AUM figures**.
+   We currently read 36 of 242 from the HTML page. AUM is a scoring signal we have for no other
+   Saudi record.
+2. **SAMA `PortalHandler.ashx`** — an open JSON endpoint returning **all 39 licensed Saudi banks**
+   plus 91 finance companies. ⚠ This closes `Saudi × bank = 0`, which the coverage view currently
+   reports as having **no instrument at all**.
+
+Confirmed blocked and not pursued: Tadawul (Akamai 403 on every path, including robots.txt),
+`data.gov.sa` (TCP timeout, same geo-block signature as the CMA API), Ministry of Commerce (CAPTCHA).

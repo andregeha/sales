@@ -1,0 +1,56 @@
+slug: altouq-group
+name: AlTouq Group
+legal_name: null
+country: Saudi Arabia
+city: Riyadh
+segment: family_office
+regulator: null
+website: https://altouq.com/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: web_research
+  detail: 'Self-described on its own site as ''a Saudi Arabian Family office officially established in
+    the 1970s focused on investment and wealth management''. A multi-asset thematic investor across financial
+    services, consumer, mining services, energy and technology, investing directly and co-investing. ⚠
+    Its LEI''d legal vehicle ''AlTouq S.A.'' is registered in the British Virgin Islands; the operating
+    family office is Riyadh-based. Do not record the BVI entity as the firm. Evidence: https://altouq.com/'
+  date: '2026-09-24'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- family-office
+- saudi
+- promoted-from-candidate
+created: '2026-09-24'
+updated: '2026-09-24'
+contacts:
+- name: AbdulMohsen AlTouq
+  title: Chief Executive Officer
+  role: unknown
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Named in public sources. No contact detail was published and none is guessed.
+  source: 'Public-source research 2026-09-24: Family Capital profile, 2017'
+- name: Saif Ibrahim AlTouq
+  title: Deputy Chief Executive Officer
+  role: unknown
+  email: null
+  phone: null
+  linkedin: null
+  language: en
+  notes: Named in public sources. No contact detail was published and none is guessed.
+  source: 'Public-source research 2026-09-24: Family Capital profile, 2017'
+fit:
+  score: null
+  reasoning: null
+  disqualified_reason: null
+activities: []
+next_action: null

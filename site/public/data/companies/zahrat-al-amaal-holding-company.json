@@ -1,0 +1,46 @@
+{
+  "activities": [],
+  "city": null,
+  "contacts": [],
+  "country": "Saudi Arabia",
+  "created": "2026-09-24",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Zahrat Al Amaal Holding Company",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": null,
+  "score": null,
+  "segment": "family_office",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "zahrat-al-amaal-holding-company",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-24",
+    "detail": "The investment entity founded by Fawaz Abdulaziz Alhokair, focused on healthcare and financial services and distinct from Fawaz Alhokair Group, the retail and mall operating business. ⚠ It carries a DATED TRIGGER, which is rare for us: in March 2024 it announced a direct-lending joint venture with Z Capital Group targeting Saudi SME lending — a new lending book is exactly when portfolio and risk infrastructure gets bought. ⚠ City unconfirmed. Evidence: https://www.businesswire.com/news/home/20240307398748/en/ZCG-and-Fawaz-Alhokair-Announce-Strategic-Partnership-and-Direct-Lending-Joint-Venture-Focused-on-Investment-Across-Saudi-Arabia"
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "family-office",
+    "saudi",
+    "promoted-from-candidate"
+  ],
+  "trigger": null,
+  "updated": "2026-09-24",
+  "website": null
+}

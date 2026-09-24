@@ -1,0 +1,69 @@
+{
+  "activities": [],
+  "city": "Riyadh",
+  "contacts": [
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "AbdulMohsen AlTouq",
+      "notes": "Named in public sources. No contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "Public-source research 2026-09-24: Family Capital profile, 2017",
+      "title": "Chief Executive Officer"
+    },
+    {
+      "email": null,
+      "language": "en",
+      "linkedin": null,
+      "name": "Saif Ibrahim AlTouq",
+      "notes": "Named in public sources. No contact detail was published and none is guessed.",
+      "phone": null,
+      "role": "unknown",
+      "source": "Public-source research 2026-09-24: Family Capital profile, 2017",
+      "title": "Deputy Chief Executive Officer"
+    }
+  ],
+  "country": "Saudi Arabia",
+  "created": "2026-09-24",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "AlTouq Group",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": null,
+  "score": null,
+  "segment": "family_office",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "altouq-group",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-24",
+    "detail": "Self-described on its own site as 'a Saudi Arabian Family office officially established in the 1970s focused on investment and wealth management'. A multi-asset thematic investor across financial services, consumer, mining services, energy and technology, investing directly and co-investing. ⚠ Its LEI'd legal vehicle 'AlTouq S.A.' is registered in the British Virgin Islands; the operating family office is Riyadh-based. Do not record the BVI entity as the firm. Evidence: https://altouq.com/"
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "family-office",
+    "saudi",
+    "promoted-from-candidate"
+  ],
+  "trigger": null,
+  "updated": "2026-09-24",
+  "website": "https://altouq.com/"
+}

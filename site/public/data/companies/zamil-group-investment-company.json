@@ -1,0 +1,46 @@
+{
+  "activities": [],
+  "city": "Al Khobar",
+  "contacts": [],
+  "country": "Saudi Arabia",
+  "created": "2026-09-24",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": "https://www.linkedin.com/company/zamil-group-investments",
+  "name": "Zamil Group Investment Company",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": null,
+  "score": null,
+  "segment": "family_office",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "zamil-group-investment-company",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-24",
+    "detail": "The named investment arm, established 1988, of Zamil Group Holding — a family-owned industrial conglomerate dating to 1920. It runs two divisions, Public Equity and Private Equity, MENA-focused: a split book of listed and unlisted holdings is precisely the multi-asset problem we address. ⚠ No CEO or CIO specific to the investment arm is confirmed; the holding company's president is not necessarily the person running it. Evidence: https://www.linkedin.com/company/zamil-group-investments"
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "family-office",
+    "saudi",
+    "promoted-from-candidate"
+  ],
+  "trigger": null,
+  "updated": "2026-09-24",
+  "website": null
+}

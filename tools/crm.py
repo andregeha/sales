@@ -543,6 +543,34 @@ def find_companies(text: str, limit: int = 8,
     return out[:limit]
 
 
+#: A ranked match at or above this is still only a SUGGESTION. Auto-merging at 0.90 wrongly folded
+#: "Alajlan Family Office" into "The Family Office International Investment Company", and "AlRajhi
+#: Partners" into "Sulaiman Alrajhi Holding" — two different Al Rajhi branches, a collision our own
+#: research had explicitly flagged.
+SUGGEST_THRESHOLD = 0.90
+
+#: Only a near-identical name may be treated as the SAME firm without a human looking. The gap
+#: between the two numbers is the space where a machine must ask rather than decide.
+IDENTITY_THRESHOLD = 0.97
+
+
+def same_firm(name: str, country: Optional[str] = None) -> tuple[Optional[str], list[tuple[float, dict]]]:
+    """Resolve `name` to an existing slug ONLY when it is unambiguous.
+
+    Returns `(slug_or_None, close_matches)`. A caller that is about to create a record should treat
+    a `None` slug with non-empty `close_matches` as "a human must look at this", not as "it is new".
+
+    ⚠ `find_companies` ranks; it deliberately does not decide, and its docstring says so. Callers
+    kept ignoring that and treating its top hit as identity, which merged firms that share a family
+    name or the words "family office". This function is the decision, made once and conservatively,
+    so no caller has to reinvent the threshold — and gets it wrong in a different way.
+    """
+    ranked = find_companies(name, limit=5, country=country)
+    if ranked and ranked[0][0] >= IDENTITY_THRESHOLD:
+        return ranked[0][1]["slug"], ranked
+    return None, [r for r in ranked if r[0] >= SUGGEST_THRESHOLD]
+
+
 def cmd_find(args: argparse.Namespace) -> int:
     matches = find_companies(args.text, limit=args.limit)
     if not matches:

@@ -122,10 +122,10 @@
       "unfed": false
     },
     {
-      "candidates": 0,
+      "candidates": 6,
       "gap": "Same structural reason as the UAE: family offices are not licensed, so no register lists them, and Saudi has no company registry we can read the way SIRENE serves France.",
       "market": "Saudi Arabia",
-      "records": 3,
+      "records": 10,
       "segment": "family_office",
       "sources": [],
       "unfed": true
@@ -159,7 +159,7 @@
       "candidates": 0,
       "gap": "The CMA register is read only in part: its API times out from Europe and the page renders a recently-updated slice. We do NOT defeat the geo-restriction. Completing this cell needs someone able to run the connector from inside Saudi Arabia.",
       "market": "Saudi Arabia",
-      "records": 31,
+      "records": 32,
       "segment": "asset_manager",
       "sources": [
         {
