@@ -1,0 +1,46 @@
+{
+  "activities": [],
+  "city": "Dubai",
+  "contacts": [],
+  "country": "UAE",
+  "created": "2026-09-24",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "McFaddens & Co (UAE)",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": null,
+  "score": null,
+  "segment": "mfo",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "mcfaddens-co-uae",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-24",
+    "detail": "International multi-family office that opened a dedicated UAE hub, led by Director Nathan Tolman. Reported in the trade press rather than self-published. Evidence: https://www.privatebankerinternational.com/news/mcfaddens-co-establishes-multi-family-office-operations-in-uae/"
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "family-office",
+    "uae",
+    "promoted-from-candidate"
+  ],
+  "trigger": null,
+  "updated": "2026-09-24",
+  "website": "https://mcfaddensandco.com/"
+}

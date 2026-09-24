@@ -150,6 +150,10 @@ def dump_yaml(data: dict) -> str:
 
 def save_yaml(path: Path, data: dict) -> None:
     path.write_text(dump_yaml(data), encoding="utf-8")
+    # Any write invalidates the resolver's cache. Without this a process that creates a record and
+    # then resolves the next candidate against the CRM would not see what it had just written — and
+    # would happily create the same firm twice.
+    invalidate_match_index()
 
 
 def company_path(slug: str) -> Path:
@@ -431,6 +435,34 @@ def _fold(s: str) -> str:
     return " ".join(w for w in s.split() if w not in noise)
 
 
+#: Records held in memory for resolution, loaded once per process.
+_MATCH_INDEX: Optional[list[dict]] = None
+
+
+def _match_index() -> list[dict]:
+    """The records `find_companies` searches, parsed once rather than once per call.
+
+    ⚠ Resolution reads every company record, and re-reading 1,816 YAML files for each name made a
+    bulk pass over 25 candidates time out entirely. That is fine for the one-at-a-time use the
+    resolver was built for and useless for the promotion pass it is needed by, which is exactly the
+    kind of limit that only shows up when the tool starts being used properly.
+
+    The cache lives for the life of the process. A long-running writer that creates records and then
+    resolves against them must call `invalidate_match_index()` — not doing so would let it create a
+    second record for a firm it had just created itself.
+    """
+    global _MATCH_INDEX
+    if _MATCH_INDEX is None:
+        _MATCH_INDEX = load_all_companies()
+    return _MATCH_INDEX
+
+
+def invalidate_match_index() -> None:
+    """Forget the cached records — call after writing any company record in the same process."""
+    global _MATCH_INDEX
+    _MATCH_INDEX = None
+
+
 def find_companies(text: str, limit: int = 8,
                    country: Optional[str] = None) -> list[tuple[float, dict]]:
     """Rank CRM records by how likely they are to be the firm `text` refers to.
@@ -458,7 +490,7 @@ def find_companies(text: str, limit: int = 8,
         return []
     needle_tokens = set(needle.split())
     out: list[tuple[float, dict]] = []
-    for rec in load_all_companies():
+    for rec in _match_index():
         best = 0.0
         for name in (rec.get("name"), rec.get("legal_name")):
             if not name:

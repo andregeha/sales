@@ -1,0 +1,46 @@
+{
+  "activities": [],
+  "city": "Dubai",
+  "contacts": [],
+  "country": "UAE",
+  "created": "2026-09-24",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Equalis Capital Ltd",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": null,
+  "score": null,
+  "segment": "mfo",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "equalis-capital-ltd",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-24",
+    "detail": "DIFC-incorporated 2013, co-founded by Shaher Awartani and H.E. Yousif Al Otaiba; CEO Tobias Pfister. WARNING: completely unrelated to `equalis-capital-france` already in the CRM (Paris, AMF-licensed, equaliscapital.com). This one's domain is equalis.ch. Do not merge them. Evidence: https://www.preqin.com/data/profile/investor/equalis-capital/133706"
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "family-office",
+    "uae",
+    "promoted-from-candidate"
+  ],
+  "trigger": null,
+  "updated": "2026-09-24",
+  "website": null
+}

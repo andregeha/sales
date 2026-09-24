@@ -1,0 +1,35 @@
+slug: apeiron-investment-group-mena
+name: Apeiron Investment Group (MENA)
+legal_name: null
+country: UAE
+city: Abu Dhabi
+segment: family_office
+regulator: null
+website: https://apeiron-investments.com/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: web_research
+  detail: 'ADGM''s own announcement calls it investor Christian Angermayer''s family office opening at
+    ADGM; in-region co-heads Aaron Weaver and Salvatore Lavallo. Evidence: https://www.adgm.com/media/announcements/global-investor-sets-sights-on-uae-opens-family-office-in-abu-dhabi'
+  date: '2026-09-24'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- family-office
+- uae
+- promoted-from-candidate
+created: '2026-09-24'
+updated: '2026-09-24'
+contacts: []
+fit:
+  score: null
+  reasoning: null
+  disqualified_reason: null
+activities: []
+next_action: null

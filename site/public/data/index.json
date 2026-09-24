@@ -202,6 +202,30 @@
   {
     "city": "Abu Dhabi",
     "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "76Columbus Family Office",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "76columbus-family-office",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://76columbus.com/"
+  },
+  {
+    "city": "Abu Dhabi",
+    "country": "UAE",
     "created": "2026-09-22",
     "has_contact_route": true,
     "has_email": true,
@@ -356,6 +380,30 @@
     "trigger": null,
     "updated": "2026-09-22",
     "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Abbey Road Investment Group",
+    "regulator": null,
+    "score": null,
+    "segment": "mfo",
+    "slug": "abbey-road-investment-group",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://abbeyroadig.com/"
   },
   {
     "city": "PARIS",
@@ -1224,6 +1272,30 @@
     "website": "https://www.adss.com"
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Advani Family Office",
+    "regulator": null,
+    "score": null,
+    "segment": "mfo",
+    "slug": "advani-family-office",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://www.advanifamilyoffice.com/"
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -1999,6 +2071,54 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Al Habtoor Investment (LLC)",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "al-habtoor-investment-llc",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://www.alhabtoorinvestment.com/"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Al-Kabir Private Family Office",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "al-kabir-private-family-office",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://al-kabir.com/"
+  },
+  {
     "city": "Paris",
     "country": "France",
     "created": "2026-09-23",
@@ -2025,6 +2145,30 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Al Majid Investment Co. (L.L.C.)",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "al-majid-investment-co-l-l-c",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://www.al-majid.com/"
   },
   {
     "city": "Dubai",
@@ -2681,6 +2825,30 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "https://www.aipuae.com"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Almulla Capital",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "almulla-capital",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://almullacapital.com/"
   },
   {
     "city": "PARIS",
@@ -4174,6 +4342,30 @@
     "trigger": "licence granted 2025-06-25, still early-stage but not brand new (12)",
     "updated": "2026-09-22",
     "website": null
+  },
+  {
+    "city": "Abu Dhabi",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Apeiron Investment Group (MENA)",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "apeiron-investment-group-mena",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://apeiron-investments.com/"
   },
   {
     "city": "Dubai",
@@ -10369,6 +10561,30 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "https://www.bordier.fr"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Boschen Family Office",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "boschen-family-office",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://boschen.com/"
   },
   {
     "city": "Paris",
@@ -16649,6 +16865,30 @@
     "website": "https://www.cyrus-herez.fr/"
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Daher Investments",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "daher-investments",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://daherinvestments.com/"
+  },
+  {
     "city": "Abu Dhabi",
     "country": "UAE",
     "created": "2026-09-22",
@@ -18882,6 +19122,30 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "https://www.equaliscapital.com"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Equalis Capital Ltd",
+    "regulator": null,
+    "score": null,
+    "segment": "mfo",
+    "slug": "equalis-capital-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": null
   },
   {
     "city": "PARIS",
@@ -26245,6 +26509,30 @@
     "website": "https://www.ide-am.eu"
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Investment Trading Group LLC (ITG)",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "investment-trading-group-llc-itg",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://www.altayer.com/"
+  },
+  {
     "city": null,
     "country": "Saudi Arabia",
     "created": "2026-09-22",
@@ -27435,6 +27723,30 @@
     ],
     "trigger": null,
     "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "KAAF Investments",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "kaaf-investments",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -30859,6 +31171,30 @@
     "trigger": null,
     "updated": "2026-09-22",
     "website": "https://www.mcafinance.fr"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "McFaddens & Co (UAE)",
+    "regulator": null,
+    "score": null,
+    "segment": "mfo",
+    "slug": "mcfaddens-co-uae",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://mcfaddensandco.com/"
   },
   {
     "city": "Abu Dhabi",
@@ -36123,6 +36459,30 @@
     "website": null
   },
   {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Pharos MFO",
+    "regulator": null,
+    "score": null,
+    "segment": "mfo",
+    "slug": "pharos-mfo",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://www.pharosmfo.com/"
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -40136,6 +40496,30 @@
   {
     "city": "Dubai",
     "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Seddiqi & Sons Investment (L.L.C.)",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "seddiqi-sons-investment-l-l-c",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://seddiqiholding.com/"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
     "created": "2026-09-23",
     "has_contact_route": true,
     "has_email": false,
@@ -42279,6 +42663,30 @@
     "trigger": "new licence granted 2026-08-22 (31 days ago), no incumbent to displace (20)",
     "updated": "2026-09-23",
     "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Stonegate Capital (UAE)",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "stonegate-capital-uae",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://stonegatecapitaluae.com/"
   },
   {
     "city": "Dubai",
@@ -45938,6 +46346,30 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Vivium Holding",
+    "regulator": null,
+    "score": null,
+    "segment": "family_office",
+    "slug": "vivium-holding",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "family-office",
+      "uae",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": "https://viviumholding.com/"
   },
   {
     "city": "Abu Dhabi",

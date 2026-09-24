@@ -24,7 +24,22 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
+import pytest  # noqa: E402
+
 import crm  # noqa: E402
+
+
+@pytest.fixture(autouse=True)
+def _fresh_resolver_cache():
+    """The resolver caches records for the life of the process.
+
+    ⚠ That cache leaks between tests: one test's fixture would still be in memory for the next,
+    which is exactly how a stale index causes a duplicate in real use. Clearing it around every
+    test keeps each one honest, and mirrors the rule that a write invalidates the cache.
+    """
+    crm.invalidate_match_index()
+    yield
+    crm.invalidate_match_index()
 
 
 def _rec(slug: str, name: str, **kw) -> dict:
@@ -153,3 +168,35 @@ def test_a_short_form_still_matches_its_longer_legal_name(monkeypatch):
     monkeypatch.setattr(crm, "load_all_companies", lambda: list(fixture))
     top = crm.find_companies("Jadwa", country="UAE")[0]
     assert top[0] >= 0.90 and top[1]["slug"] == "jadwa-investment-difc-limited"
+
+
+def test_the_resolver_caches_records_but_a_write_invalidates_it(tmp_path, monkeypatch):
+    """Resolution reads every company record; re-reading them per call made bulk promotion time out.
+
+    ⚠ The dangerous half is the invalidation. A promotion pass creates a record and then resolves
+    the NEXT candidate against the CRM — if the cache were stale it would not see what it had just
+    written, and would create the same firm twice. That is the precise failure the resolver exists
+    to prevent, reintroduced by the optimisation meant to make it usable.
+    """
+    calls = {"n": 0}
+    records = [_rec("first-firm", "First Firm", country="UAE")]
+
+    def counted():
+        calls["n"] += 1
+        return list(records)
+
+    monkeypatch.setattr(crm, "load_all_companies", counted)
+    crm.invalidate_match_index()
+
+    crm.find_companies("First Firm", country="UAE")
+    crm.find_companies("Something Else", country="UAE")
+    assert calls["n"] == 1, "records should be parsed once, not once per call"
+
+    # A write must make the next resolution see the new record.
+    records.append(_rec("second-firm", "Second Firm", country="UAE"))
+    crm.invalidate_match_index()
+    hit = crm.find_companies("Second Firm", country="UAE")
+    assert hit and hit[0][1]["slug"] == "second-firm"
+    assert calls["n"] == 2
+
+    crm.invalidate_match_index()

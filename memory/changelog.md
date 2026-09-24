@@ -868,3 +868,39 @@ absorbed into an unrelated broker's record.
 ⚠ **Known performance limit:** `find_companies` reloads all 1,816 YAML records on every call, so
 bulk re-resolution of 25 candidates times out. Fine for the one-at-a-time use it was built for;
 it needs a cached index before any bulk promotion pass.
+
+## 2026-09-24 — UAE family offices: 0 records → 22
+
+Promoted from the candidate queue after verification. **UAE family_office 0 → 13, mfo 4 → 9.**
+
+**The 9 MFOs are the better prospects** — an MFO manages several families' money by way of business,
+which is the multi-portfolio, multi-currency problem Gaia exists for. Promoted: Abbey Road
+Investment Group, Pharos MFO, McFaddens & Co (UAE), Advani Family Office, Equalis Capital Ltd.
+
+**Family offices promoted:** Apeiron (ADGM's own announcement), Vivium, Almulla Capital, Al-Kabir,
+Daher Investments, 76Columbus, Boschen, KAAF (Mishal Kanoo), Stonegate Capital, plus three family
+investment vehicles verified against primary sources — Al Majid Investment (the group's own site
+describes multi-asset management), Al Tayer's ITG (a 2024 deal record proves it is active, not a
+dormant shell), Al Habtoor Investment and Seddiqi & Sons.
+
+**The dividing line was evidence, not enthusiasm.** 8 deferred with reasons rather than recorded:
+- **All three Al Ghurair entities.** The name covers at least three legally separate branches, one
+  domain 404s, and one self-describes as a holding company that never uses the words "family
+  office". Creating records now risks attaching activity to the wrong branch.
+- **Sabban Holdings** — a single aggregator profile. Everything else promoted rests on the firm's
+  own site or a primary source, and that bar is worth keeping.
+- **Small House Capital** and **Advantage Family Office** — strong names, quoted CIOs, and no
+  findable website or LinkedIn page at all. A record nobody can reach is not yet an asset.
+- **Charles Park Family Office** — entered Dubai only through a partnership; no UAE entity of its own.
+
+### The resolver had to be made usable before any of this
+`find_companies` re-read all 1,821 YAML records on **every call**, so a bulk pass over 25 candidates
+timed out outright — fine for the one-at-a-time use it was built for, useless for the promotion pass
+it was needed by. Records are now parsed once per process.
+
+⚠ **The dangerous half is the invalidation, not the cache.** A promotion pass creates a record and
+then resolves the NEXT candidate against the CRM; a stale index would not see what it had just
+written and would create the same firm twice — reintroducing the exact failure the resolver exists
+to prevent. `save_yaml` therefore invalidates it, and a test asserts both halves. The cache also
+leaked between tests until an autouse fixture cleared it, which is the same bug wearing a different
+hat.

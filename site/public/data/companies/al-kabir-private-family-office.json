@@ -1,0 +1,46 @@
+{
+  "activities": [],
+  "city": "Dubai",
+  "contacts": [],
+  "country": "UAE",
+  "created": "2026-09-24",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Al-Kabir Private Family Office",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": null,
+  "score": null,
+  "segment": "family_office",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "al-kabir-private-family-office",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-24",
+    "detail": "Self-described Private Family Office, led by Zakaria al-Kabir, formerly of UBS and Deutsche Bank. Evidence: https://al-kabir.com/"
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "family-office",
+    "uae",
+    "promoted-from-candidate"
+  ],
+  "trigger": null,
+  "updated": "2026-09-24",
+  "website": "https://al-kabir.com/"
+}

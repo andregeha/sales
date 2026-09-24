@@ -1,0 +1,46 @@
+{
+  "activities": [],
+  "city": "Dubai",
+  "contacts": [],
+  "country": "UAE",
+  "created": "2026-09-24",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Daher Investments",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": null,
+  "score": null,
+  "segment": "family_office",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "daher-investments",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-24",
+    "detail": "Its own About page describes it advising investment vehicles for the Daher family from DIFC; it also trades as Daher Capital, a private family office. Evidence: https://daherinvestments.com/about"
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "family-office",
+    "uae",
+    "promoted-from-candidate"
+  ],
+  "trigger": null,
+  "updated": "2026-09-24",
+  "website": "https://daherinvestments.com/"
+}

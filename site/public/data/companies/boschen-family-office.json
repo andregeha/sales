@@ -1,0 +1,46 @@
+{
+  "activities": [],
+  "city": "Dubai",
+  "contacts": [],
+  "country": "UAE",
+  "created": "2026-09-24",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Boschen Family Office",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": null,
+  "score": null,
+  "segment": "family_office",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "boschen-family-office",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-24",
+    "detail": "Self-describes as an internationally operating single family office; Chairman Harry Boschen; headquartered at DIFC. Evidence: https://boschen.com/our-story"
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "family-office",
+    "uae",
+    "promoted-from-candidate"
+  ],
+  "trigger": null,
+  "updated": "2026-09-24",
+  "website": "https://boschen.com/"
+}

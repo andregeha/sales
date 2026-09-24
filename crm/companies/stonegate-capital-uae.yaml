@@ -1,0 +1,35 @@
+slug: stonegate-capital-uae
+name: Stonegate Capital (UAE)
+legal_name: null
+country: UAE
+city: Dubai
+segment: family_office
+regulator: null
+website: https://stonegatecapitaluae.com/
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: web_research
+  detail: 'Press explicitly calls it a family office serving one UK-based family; CIO Peter Warnes named.
+    Evidence: https://www.arabianbusiness.com/finance/stonegate-capital-launches-ai-first-family-office-in-dubai'
+  date: '2026-09-24'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- family-office
+- uae
+- promoted-from-candidate
+created: '2026-09-24'
+updated: '2026-09-24'
+contacts: []
+fit:
+  score: null
+  reasoning: null
+  disqualified_reason: null
+activities: []
+next_action: null

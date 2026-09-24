@@ -1,0 +1,46 @@
+{
+  "activities": [],
+  "city": "Dubai",
+  "contacts": [],
+  "country": "UAE",
+  "created": "2026-09-24",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Al Majid Investment Co. (L.L.C.)",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": null,
+  "score": null,
+  "segment": "family_office",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "al-majid-investment-co-l-l-c",
+  "source": {
+    "channel": "web_research",
+    "date": "2026-09-24",
+    "detail": "Investment arm of Juma Al Majid Holding Group since 1999, in the group's own words to diversify its investments across global equity markets, money market, fixed income and private equity. LEI 549300ZQX9O2YCGSCE59. Evidence: http://www.al-majid.com/group_businesses/investment-company-uae"
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "family-office",
+    "uae",
+    "promoted-from-candidate"
+  ],
+  "trigger": null,
+  "updated": "2026-09-24",
+  "website": "https://www.al-majid.com/"
+}
