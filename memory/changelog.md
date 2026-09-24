@@ -1042,3 +1042,31 @@ sources the existing connector never mentioned:
 
 Confirmed blocked and not pursued: Tadawul (Akamai 403 on every path, including robots.txt),
 `data.gov.sa` (TCP timeout, same geo-block signature as the CMA API), Ministry of Commerce (CAPTCHA).
+
+## 2026-09-24 — the UAE web sweep: registers validated, two claims checked and dropped
+
+Andre pushed: "you don't scan Google or LinkedIn?!" He was right about the imbalance — **773 of our
+810 UAE records came from registers and only 30 from web research**. I had been reaching for search
+only when a register failed me, rather than treating it as a source.
+
+**First sweep back, and its headline is reassuring rather than exciting: the open web kept
+re-surfacing firms we already hold.** HK Asset Management, Introspect Capital, GSB Capital, Century
+Financial, Al Mal Capital, SHUAA, Noor Capital, Al Ramz and others all turned up and are all already
+in the CRM via the DFSA/FSRA/CMA connectors. That is a genuine independent check that the register
+connectors are working. Only **3 verified new firms** outside those registers.
+
+⚠ **One of those three is worth more than a firm: Finsbury Associates is licensed by the UAE
+INSURANCE AUTHORITY** — a regulator we read nothing from. That is a missing instrument, not a
+missing record.
+
+### Two claims from the research, both checked and both dropped
+1. **"152 relevant CMA firms vs 97 in the CRM — an ingestion gap."** Checked: every one of the 103
+   snapshot entries is in the CRM; there is no gap. The 152 is a **sum of category counts**, which
+   double-counts firms holding several licences. The distinct union is 103 — exactly the trap
+   `plan/uae-sources-dfsa.md` already warns about ("the sum is meaningless and only the measured
+   union counts").
+2. **"Abacus Financial Consultants (CP-0000182) is registered but not ingested."** Checked against
+   the full 322-row register: **no firm matching that name exists on it**. Not a missed ingestion.
+
+Both were plausible, specific and wrong. Logging them as open questions would have sent someone
+chasing a gap that is not there.
