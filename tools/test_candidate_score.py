@@ -62,3 +62,26 @@ def test_score_stays_within_bounds():
     assert _c(extra={"weak_signal": "x"}, source="unknown-source").score()[0] >= 0
     assert _c(extra={"fund_count": 99, "officers": ["a"], "naf": "66.30Z"},
               segment_guess="family_office", source="gleif").score()[0] <= 100
+
+
+def test_the_decision_log_is_not_read_as_a_candidate(tmp_path, monkeypatch):
+    """`decisions.jsonl` shares the candidates directory and is not a candidate file.
+
+    Globbing `*.jsonl` blindly fed decision rows into the candidate list, where they carry no
+    `source` and broke every reader with a KeyError. Caught in live use, not in review.
+    """
+    import json
+
+    monkeypatch.setattr(cq, "CANDIDATES_DIR", tmp_path)
+    monkeypatch.setattr(cq, "DECISIONS_PATH", tmp_path / "decisions.jsonl")
+    (tmp_path / "some-source-2026-09-24.jsonl").write_text(
+        json.dumps({"source": "some-source", "name": "A Firm", "country": "UAE", "why": "x"}) + "\n",
+        encoding="utf-8",
+    )
+    (tmp_path / "decisions.jsonl").write_text(
+        json.dumps({"key": "some-source:a firm", "decision": "reject", "reason": "no"}) + "\n",
+        encoding="utf-8",
+    )
+    loaded = list(cq.load_all())
+    assert len(loaded) == 1
+    assert loaded[0]["source"] == "some-source"

@@ -12,7 +12,7 @@
 import { ExternalLink, Inbox } from "lucide-react";
 import { useMemo, useState } from "react";
 import { type ColumnLayout, DataGrid, type GridColumn } from "../design/DataGrid";
-import { CandidateScore, MarketTag, SegmentTag } from "../design/domain";
+import { CandidateScore, DecisionTag, MarketTag, SegmentTag } from "../design/domain";
 import {
   Button,
   Callout,
@@ -59,21 +59,30 @@ export function Candidates() {
   const [unknownOnly, setUnknownOnly] = useState(true);
   const [source, setSource] = useState<string | null>(null);
   const [minScore, setMinScore] = useState(0);
+  /** "waiting" is the work; "dismissed" is the accountability. */
+  const [view, setView] = useState<"waiting" | "dismissed" | "accepted" | "all">("waiting");
 
   const rows = state.status === "ok" ? state.data : [];
 
   const sources = useMemo(() => [...new Set(rows.map((r) => r.source))].sort(), [rows]);
   const unknown = useMemo(() => rows.filter((r) => !r.matched_slug), [rows]);
+  const dismissed = useMemo(
+    () => rows.filter((r) => r.decision === "reject" || r.decision === "defer"),
+    [rows],
+  );
 
   const filtered = useMemo(
     () =>
       rows.filter((r) => {
+        if (view === "waiting" && r.decision) return false;
+        if (view === "dismissed" && r.decision !== "reject" && r.decision !== "defer") return false;
+        if (view === "accepted" && r.decision !== "accept") return false;
         if (unknownOnly && r.matched_slug) return false;
         if (source && r.source !== source) return false;
         if (r.score < minScore) return false;
         return true;
       }),
-    [rows, unknownOnly, source, minScore],
+    [rows, unknownOnly, source, minScore, view],
   );
 
   const columns = useMemo<GridColumn<CandidateRow>[]>(
@@ -146,9 +155,19 @@ export function Candidates() {
             },
             {
               accessorKey: "why",
-              header: "Why it was proposed",
+              header: view === "waiting" ? "Why it was proposed" : "Why, and what we decided",
               enableSorting: false,
-              cell: (ctx) => <span className="text-small">{ctx.row.original.why}</span>,
+              cell: (ctx) => (
+                <div className="min-w-0">
+                  <span className="text-small">{ctx.row.original.why}</span>
+                  {ctx.row.original.decision ? (
+                    <div className="mt-1 text-micro">
+                      <DecisionTag decision={ctx.row.original.decision} />{" "}
+                      <span className="text-subtle">{ctx.row.original.decision_reason}</span>
+                    </div>
+                  ) : null}
+                </div>
+              ),
             },
             {
               accessorKey: "source",
@@ -178,7 +197,7 @@ export function Candidates() {
                 ),
             },
           ],
-    [narrow],
+    [narrow, view],
   );
 
   const layout: ColumnLayout[] = narrow
@@ -228,9 +247,15 @@ export function Candidates() {
             hint="the reconciliation gap"
           />
           <Stat
-            label="worth reviewing first"
-            value={unknown.filter((r) => r.score >= 40).length}
-            hint="scored 40+ — the rest is a long tail"
+            label="still waiting"
+            value={rows.filter((r) => !r.decision && !r.matched_slug).length}
+            tone="accent"
+            hint="nobody has decided about these yet"
+          />
+          <Stat
+            label="dismissed, with a reason"
+            value={dismissed.length}
+            hint="examined and turned down — not the same as never looked at"
           />
           <Stat
             label="already known to us"
@@ -242,6 +267,18 @@ export function Candidates() {
 
       <div className="mt-6">
         <Toolbar>
+          <Chip active={view === "waiting"} onClick={() => setView("waiting")}>
+            waiting ({rows.filter((r) => !r.decision && !r.matched_slug).length})
+          </Chip>
+          <Chip active={view === "dismissed"} onClick={() => setView("dismissed")}>
+            dismissed ({dismissed.length})
+          </Chip>
+          <Chip active={view === "accepted"} onClick={() => setView("accepted")}>
+            promoted ({rows.filter((r) => r.decision === "accept").length})
+          </Chip>
+          <Chip active={view === "all"} onClick={() => setView("all")}>
+            all
+          </Chip>
           <Chip active={unknownOnly} onClick={() => setUnknownOnly(!unknownOnly)}>
             not in the CRM
           </Chip>
@@ -256,7 +293,7 @@ export function Candidates() {
               {s}
             </Chip>
           ))}
-          {source || !unknownOnly || minScore ? (
+          {source || !unknownOnly || minScore || view !== "waiting" ? (
             <Button
               size="sm"
               variant="ghost"
@@ -264,6 +301,7 @@ export function Candidates() {
                 setSource(null);
                 setUnknownOnly(true);
                 setMinScore(0);
+                setView("waiting");
               }}
             >
               reset
@@ -278,8 +316,19 @@ export function Candidates() {
         layout={layout}
         onRowClick={(r) => (r.matched_slug ? navigate(`/companies/${r.matched_slug}`) : undefined)}
         empty={
-          <EmptyState icon={Inbox} title="Nothing waiting for review">
-            Sources have proposed nothing new, or everything proposed has been seen.
+          <EmptyState
+            icon={Inbox}
+            title={
+              view === "dismissed"
+                ? "Nothing has been dismissed yet"
+                : view === "accepted"
+                  ? "Nothing has been promoted yet"
+                  : "Nothing waiting for review"
+            }
+          >
+            {view === "dismissed"
+              ? "When a candidate is turned down, it stays here with the reason — so a rejection can be challenged rather than vanishing."
+              : "Sources have proposed nothing new, or everything proposed has been decided."}
           </EmptyState>
         }
       />

@@ -189,6 +189,11 @@ export const CandidateRow = z.object({
   /** How likely this proposal is to be one of ours. NOT the ICP score — see `candidates.py`. */
   score: z.number().default(0),
   score_reasoning: z.string().default(""),
+  /** The review decision in force, if one has been made. Data, never UI state — see candidates.py. */
+  decision: z.enum(["accept", "reject", "defer"]).nullable().default(null),
+  decision_reason: nullableStr,
+  decision_date: nullableStr,
+  decision_slug: nullableStr,
   extra: z.record(z.string(), z.unknown()).default({}),
 });
 export type CandidateRow = z.infer<typeof CandidateRow>;

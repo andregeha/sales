@@ -1,0 +1,45 @@
+{
+  "activities": [],
+  "city": null,
+  "contacts": [],
+  "country": "UAE",
+  "created": "2026-09-24",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Stronghold Capital Management Limited",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": null,
+  "score": null,
+  "segment": "fund_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "stronghold-capital-management-limited",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-24",
+    "detail": "GLEIF fund→manager relationship. Managing entity of 1 GLEIF-registered fund(s) domiciled in our territory (STRONGHOLD GLOBAL MULTI-STRATEGY OEIC LIMITED), per GLEIF's fund-manager relationship. Not found in the CRM under this name and country — may be a firm we have missed, or the same group as an existing record under a different legal entity (check before treating as new)."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "gleif",
+    "promoted-from-candidate"
+  ],
+  "trigger": null,
+  "updated": "2026-09-24",
+  "website": null
+}

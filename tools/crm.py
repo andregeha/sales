@@ -431,7 +431,8 @@ def _fold(s: str) -> str:
     return " ".join(w for w in s.split() if w not in noise)
 
 
-def find_companies(text: str, limit: int = 8) -> list[tuple[float, dict]]:
+def find_companies(text: str, limit: int = 8,
+                   country: Optional[str] = None) -> list[tuple[float, dict]]:
     """Rank CRM records by how likely they are to be the firm `text` refers to.
 
     ⚠ This exists because **intake's real risk is the duplicate**, not the miss. A second record for
@@ -442,6 +443,13 @@ def find_companies(text: str, limit: int = 8) -> list[tuple[float, dict]]:
 
     Returns `(score, record)` best-first. It deliberately returns several: this ranks, it does not
     decide. A confident-looking single answer is exactly what would cause a wrong merge.
+
+    ⚠ Pass `country` whenever you are deciding whether something is a DUPLICATE. A name match across
+    two countries is usually a group and its foreign subsidiary, not one firm: "SNB Capital" in
+    Riyadh and "SNB Capital (DIFC) Limited" in Dubai share a name, a brand and an owner, and are
+    different legal entities under different regulators. Treating the parent as a duplicate of the
+    subsidiary silently discarded two of the largest managers in our thinnest market, so a match in
+    a different country is capped below the certainty threshold and can never read as identity.
     """
     import difflib
 
@@ -487,6 +495,9 @@ def find_companies(text: str, limit: int = 8) -> list[tuple[float, dict]]:
             if shared:
                 score = max(score, 0.55 + 0.1 * len(shared))
             best = max(best, min(score, 1.0))
+        if country and (rec.get("country") or "").lower() != country.lower():
+            # Same name, different country: worth surfacing as a relative, never as the same firm.
+            best = min(best, 0.75)
         if best >= 0.55:
             out.append((best, rec))
     out.sort(key=lambda x: (-x[0], (x[1].get("name") or "").lower()))

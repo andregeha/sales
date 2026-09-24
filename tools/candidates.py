@@ -54,6 +54,10 @@ SOURCE_WEIGHT = {
     # the densest concentration of our buyers in the Gulf. That is far better evidence than a
     # self-declared French industry code, and worse than actually managing a fund.
     "dfsa-difc-broad": 20,
+    # A regulator listing a firm BY NAME as a family office is the strongest evidence that exists
+    # for a segment nobody publishes. The listing is frozen at 2023, which is a verification
+    # problem, not a credibility one.
+    "dfsa-family-office": 28,
     "sirene-france": 10,   # it declared an industry code, which is a claim, not a fact
 }
 
@@ -162,8 +166,71 @@ class Candidate:
         )
 
 
+#: Every decision a human (or the orchestrator acting as one) has made about a candidate.
+#:
+#: ⚠ A decision is DATA, not a UI state. The website renders the CRM; it never holds a fact the CRM
+#: does not. If "dismissed" lived only in a browser it would vanish on the next build, and the same
+#: firm would be re-proposed forever — which is exactly how a review queue loses a reviewer's trust.
+#:
+#: Append-only, like the candidates themselves: a decision that was later reversed is part of the
+#: record, not something to erase. The LAST decision for a key is the one in force.
+DECISIONS_PATH = CANDIDATES_DIR / "decisions.jsonl"
+
+#: What a reviewer can say about a candidate.
+DECISIONS = {
+    "accept",   # it is one of ours — promote it to a CRM record
+    "reject",   # it is not, and we do not want to be asked again
+    "defer",    # might be, but not now, and the reason says what would change that
+}
+
+
+def decide(key: str, decision: str, reason: str, *, slug: Optional[str] = None,
+           by: str = "orchestrator", dry_run: bool = False) -> dict:
+    """Record one decision about one candidate.
+
+    ⚠ `reason` is mandatory and is the point of the whole mechanism. A rejection without a reason is
+    indistinguishable from an oversight, and six months from now nobody — including whoever wrote it
+    — will know whether the firm was examined and dismissed or simply never looked at.
+    """
+    if decision not in DECISIONS:
+        raise ValueError(f"unknown decision {decision!r}; expected one of {sorted(DECISIONS)}")
+    if not (reason or "").strip():
+        raise ValueError("a decision must carry a reason — an unexplained rejection is a silent gap")
+    row = {
+        "key": key, "decision": decision, "reason": reason.strip(),
+        "slug": slug, "by": by, "date": crm.today(),
+    }
+    if not dry_run:
+        CANDIDATES_DIR.mkdir(parents=True, exist_ok=True)
+        with DECISIONS_PATH.open("a", encoding="utf-8") as f:
+            f.write(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n")
+    return row
+
+
+def load_decisions() -> dict[str, dict]:
+    """The decision in force for each candidate key — the last one written wins."""
+    out: dict[str, dict] = {}
+    if not DECISIONS_PATH.exists():
+        return out
+    for line in DECISIONS_PATH.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if row.get("key"):
+            out[row["key"]] = row
+    return out
+
+
 def _path(source: str, date: str) -> Path:
     return CANDIDATES_DIR / f"{source}-{date}.jsonl"
+
+
+def _is_candidate_file(path: Path) -> bool:
+    """A candidate file is `<source>-<date>.jsonl`. The decision log shares the directory."""
+    return path.name != DECISIONS_PATH.name
 
 
 def existing_keys(source: str) -> set[str]:
@@ -223,6 +290,11 @@ def load_all() -> Iterator[dict]:
     if not CANDIDATES_DIR.exists():
         return
     for p in sorted(CANDIDATES_DIR.glob("*.jsonl")):
+        # ⚠ The decision log lives in this directory too and is NOT a candidate file. Globbing
+        # `*.jsonl` blindly fed decision rows into the candidate list, where they have no `source`
+        # and blew up every reader. Anything that is not a proposal is skipped by name.
+        if p.name == DECISIONS_PATH.name:
+            continue
         for line in p.read_text(encoding="utf-8").splitlines():
             if line.strip():
                 try:

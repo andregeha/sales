@@ -112,3 +112,23 @@ def test_results_are_ranked_best_first_and_capped(monkeypatch):
     ranked = _find(monkeypatch, "capital", limit=3)
     assert len(ranked) <= 3
     assert ranked == sorted(ranked, key=lambda x: (-x[0], (x[1].get("name") or "").lower()))
+
+
+def test_a_name_match_in_another_country_is_not_a_duplicate(monkeypatch):
+    """The error this prevents actually happened, and cost us two real firms.
+
+    "SNB Capital" (Riyadh) was dismissed as a duplicate of "SNB Capital (DIFC) Limited" (Dubai).
+    They share a name, a brand and an owner — and are different legal entities under different
+    regulators, in different markets. Saudi is our thinnest market and both were among its largest
+    managers. A cross-country match is capped below the certainty threshold so it can be surfaced
+    as a relative but never actioned as identity.
+    """
+    fixture = [_rec("snb-capital-difc-limited", "SNB Capital (DIFC) Limited", country="UAE")]
+    monkeypatch.setattr(crm, "load_all_companies", lambda: list(fixture))
+
+    same = crm.find_companies("SNB Capital", country="UAE")
+    assert same and same[0][0] >= 0.90, "same-country match must still read as a duplicate"
+
+    cross = crm.find_companies("SNB Capital", country="Saudi Arabia")
+    assert cross, "the foreign relative should still be surfaced, not hidden"
+    assert cross[0][0] < 0.90, "a cross-country namesake must never reach duplicate certainty"

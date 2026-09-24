@@ -785,3 +785,45 @@ checkbox with value `CIF`); a first probe returned a page but no usable result c
 criteria are not yet understood. **Parked, not abandoned** — and worth noting the population is
 thousands of mostly small IFAs, so like *Advising on Financial Products* it should propose
 candidates, never create records.
+
+## 2026-09-24 — the promotion path, and what we decided to dismiss
+
+Andre: decide and promote yourself, do the research, and **show me what you dismissed** — the
+website is a view of structured data.
+
+**Decisions are now data.** `crm/candidates/decisions.jsonl`, append-only, last-write-wins, with
+`accept` / `reject` / `defer` and a **mandatory reason**. A rejection without a reason is
+indistinguishable from an oversight: six months on, nobody could tell whether a firm was examined
+and turned down or simply never looked at. The site renders it — Candidates now has waiting /
+dismissed / promoted tabs, and a dismissal shows its reason beside the firm.
+
+**265 dismissed, each with a reason.** 195 DIFC representative offices (a rep office cannot conduct
+financial business; the parent may be a prospect, this entity is not) and 60 arranging-custody firms
+(arranging is a referral, not a custody operation).
+
+**5 promoted**, after verifying the ambiguous ones against GLEIF rather than trusting my own reading:
+Alinma Investment, AlJazira Capital, Stronghold Capital Management, **SNB Capital** and **Jadwa
+Investment Company**. Three rejected with specific reasons — BlackRock Saudi Arabia (builds and sells
+Aladdin, structurally not a buyer), the Saudi Real Estate Development Fund (GLEIF categorises it as a
+FUND; a government housing programme), OMF (ME) JV GP (the general-partner SPV of a single JV fund).
+One deferred: GLEIF publishes only an Arabic legal name and my transliteration is not a verified fact.
+
+⚠ **A real error, caught and corrected.** The duplicate check first dismissed SNB Capital and Jadwa
+Investment as duplicates of `snb-capital-difc-limited` and `jadwa-investment-difc-limited`. Those are
+the groups' **DIFC subsidiaries** — UAE, DFSA-regulated. The candidates were the **Saudi parents** in
+Riyadh: different country, different regulator, different legal person, and two of the largest
+managers in our thinnest market. `find_companies` now takes a `country` and caps a cross-country
+namesake below the duplicate threshold, with a test naming the firms it cost us. Saudi 35 → 41.
+
+⚠ **And a bug I introduced an hour earlier:** `load_all()` globs `*.jsonl` in the candidates
+directory, so `decisions.jsonl` was being read as a candidate file — decision rows have no `source`
+and broke every reader. Fixed and tested.
+
+### Family offices: my earlier conclusion was wrong
+I wrote that "no register anywhere will produce named UAE family offices". **The DFSA still lists 41
+by name**, and none were in the CRM — Binghatti Holding, Al Murjan International Holding, Chanrai
+Investments, Stephens Investments Holdings, Massar Investments and 36 more. I read *Withdrawn* as
+"the source is dead"; the **category** was withdrawn, not the firms. DIFC moved single-family offices
+to the Family Wealth Centre in 2023, so this is a frozen 2023 snapshot — stale, needing verification,
+and the only enumerable list of named Gulf family offices found anywhere. Ingested as candidates at
+score 54, the highest-ranked block in the queue after GLEIF.

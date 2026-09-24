@@ -342,6 +342,17 @@ def build_candidates(out: Path) -> int:
         candidates.load_all(),
         key=lambda r: (-(r.get("score") or 0), (r.get("name") or "").lower(), r.get("source") or ""),
     )
+    # ⚠ What we DISMISSED has to be as visible as what we kept. A rejection that only exists as an
+    # absence is indistinguishable from never having looked, and it is the half of the review a
+    # reader most needs in order to challenge our judgement.
+    decisions = candidates.load_decisions()
+    for r in rows:
+        sid = r.get("source_id") or (r.get("name") or "").strip().lower()
+        dec = decisions.get(f"{r.get('source')}:{sid}")
+        r["decision"] = dec.get("decision") if dec else None
+        r["decision_reason"] = dec.get("reason") if dec else None
+        r["decision_date"] = dec.get("date") if dec else None
+        r["decision_slug"] = dec.get("slug") if dec else None
     return write_json(out / "candidates.json", rows)
 
 

@@ -1,0 +1,46 @@
+{
+  "activities": [],
+  "city": "Riyadh",
+  "contacts": [],
+  "country": "Saudi Arabia",
+  "created": "2026-09-24",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "Jadwa Investment Company",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "Capital Market Authority (Saudi Arabia)",
+  "score": null,
+  "segment": "asset_manager",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "jadwa-investment-company",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-24",
+    "detail": "GLEIF fund→manager relationship. ⚠ DISTINCT from jadwa-investment-difc-limited, which is the group's DIFC subsidiary regulated by the DFSA in Dubai. This is the Saudi entity: different country, different regulator, different legal person."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "gleif",
+    "promoted-from-candidate",
+    "saudi"
+  ],
+  "trigger": null,
+  "updated": "2026-09-24",
+  "website": null
+}

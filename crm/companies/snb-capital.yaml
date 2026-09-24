@@ -1,0 +1,36 @@
+slug: snb-capital
+name: SNB Capital
+legal_name: null
+country: Saudi Arabia
+city: Riyadh
+segment: asset_manager
+regulator: Capital Market Authority (Saudi Arabia)
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: 'GLEIF fund→manager relationship. ⚠ DISTINCT from snb-capital-difc-limited, which is the group''s
+    DIFC subsidiary regulated by the DFSA in Dubai. This is the Saudi entity: different country, different
+    regulator, different legal person.'
+  date: '2026-09-24'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- gleif
+- promoted-from-candidate
+- saudi
+created: '2026-09-24'
+updated: '2026-09-24'
+contacts: []
+fit:
+  score: null
+  reasoning: null
+  disqualified_reason: null
+activities: []
+next_action: null

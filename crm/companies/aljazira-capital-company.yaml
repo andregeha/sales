@@ -1,0 +1,36 @@
+slug: aljazira-capital-company
+name: ALJAZIRA CAPITAL COMPANY
+legal_name: null
+country: Saudi Arabia
+city: null
+segment: asset_manager
+regulator: null
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: GLEIF fund→manager relationship. Managing entity of 1 GLEIF-registered fund(s) domiciled in
+    our territory (Aljazira Global Emerging Markets Fund), per GLEIF's fund-manager relationship. Not
+    found in the CRM under this name and country — may be a firm we have missed, or the same group as
+    an existing record under a different legal entity (check before treating as new).
+  date: '2026-09-24'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- gleif
+- promoted-from-candidate
+created: '2026-09-24'
+updated: '2026-09-24'
+contacts: []
+fit:
+  score: null
+  reasoning: null
+  disqualified_reason: null
+activities: []
+next_action: null

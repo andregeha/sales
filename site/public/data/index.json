@@ -2447,6 +2447,29 @@
     "website": null
   },
   {
+    "city": null,
+    "country": "Saudi Arabia",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Alinma investment Company",
+    "regulator": null,
+    "score": null,
+    "segment": "asset_manager",
+    "slug": "alinma-investment-company",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "gleif",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": null
+  },
+  {
     "city": "Abu Dhabi",
     "country": "UAE",
     "created": "2026-09-22",
@@ -2472,6 +2495,29 @@
     ],
     "trigger": null,
     "updated": "2026-09-22",
+    "website": null
+  },
+  {
+    "city": null,
+    "country": "Saudi Arabia",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "ALJAZIRA CAPITAL COMPANY",
+    "regulator": null,
+    "score": null,
+    "segment": "asset_manager",
+    "slug": "aljazira-capital-company",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "gleif",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
     "website": null
   },
   {
@@ -26779,6 +26825,30 @@
     "website": null
   },
   {
+    "city": "Riyadh",
+    "country": "Saudi Arabia",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Jadwa Investment Company",
+    "regulator": "Capital Market Authority (Saudi Arabia)",
+    "score": null,
+    "segment": "asset_manager",
+    "slug": "jadwa-investment-company",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "gleif",
+      "promoted-from-candidate",
+      "saudi"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": null
+  },
+  {
     "city": "Dubai",
     "country": "UAE",
     "created": "2026-09-22",
@@ -40972,6 +41042,30 @@
     "website": null
   },
   {
+    "city": "Riyadh",
+    "country": "Saudi Arabia",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "SNB Capital",
+    "regulator": "Capital Market Authority (Saudi Arabia)",
+    "score": null,
+    "segment": "asset_manager",
+    "slug": "snb-capital",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "gleif",
+      "promoted-from-candidate",
+      "saudi"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
+    "website": null
+  },
+  {
     "city": "Dubai",
     "country": "UAE",
     "created": "2026-09-22",
@@ -42262,6 +42356,29 @@
     ],
     "trigger": null,
     "updated": "2026-09-22",
+    "website": null
+  },
+  {
+    "city": null,
+    "country": "UAE",
+    "created": "2026-09-24",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Stronghold Capital Management Limited",
+    "regulator": null,
+    "score": null,
+    "segment": "fund_manager",
+    "slug": "stronghold-capital-management-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "gleif",
+      "promoted-from-candidate"
+    ],
+    "trigger": null,
+    "updated": "2026-09-24",
     "website": null
   },
   {

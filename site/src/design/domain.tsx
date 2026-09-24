@@ -110,6 +110,30 @@ export function ScoreBadge({
 }
 
 /**
+ * What a reviewer decided about a candidate.
+ *
+ * ⚠ A dismissal is shown, never hidden. A rejection that exists only as an absence is
+ * indistinguishable from never having looked — and the difference is the whole reason the queue is
+ * worth trusting. `defer` is deliberately distinct from `reject`: "not now" and "not ours" are
+ * different answers and collapsing them loses the one that will change.
+ */
+export function DecisionTag({ decision }: { decision: string | null | undefined }) {
+  if (!decision) return null;
+  const map: Record<string, { tone: "positive" | "neutral" | "caution"; label: string; title: string }> = {
+    accept: { tone: "positive", label: "promoted", title: "Accepted and created as a CRM record" },
+    reject: { tone: "neutral", label: "dismissed", title: "Examined and turned down — the reason is beside it" },
+    defer: { tone: "caution", label: "deferred", title: "Might be ours, but not now — the reason says what would change that" },
+  };
+  const m = map[decision];
+  if (!m) return <span className="text-micro text-subtle">{decision}</span>;
+  return (
+    <Badge tone={m.tone} title={m.title}>
+      {m.label}
+    </Badge>
+  );
+}
+
+/**
  * What KIND of instrument a source is — and they are not interchangeable.
  *
  * A register states who is licensed and can be created from directly. A registry states who exists
