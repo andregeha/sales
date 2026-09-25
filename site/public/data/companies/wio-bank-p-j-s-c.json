@@ -1,0 +1,46 @@
+{
+  "activities": [],
+  "city": "أبو ظبي",
+  "contacts": [],
+  "country": "UAE",
+  "created": "2026-09-25",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": null,
+    "score": null
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": null,
+  "linkedin": null,
+  "name": "WIO BANK P.J.S.C.",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": null,
+  "score": null,
+  "segment": "bank",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "wio-bank-p-j-s-c",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-25",
+    "detail": "GLEIF LEI 984500641KXD0BF41033, entity status ACTIVE, legal address أبو ظبي. ⚠ Sourced from GLEIF because the Central Bank of the UAE's own register is bot-protected and returns 403 to an honestly-identified client — a bank we cannot enumerate is a bank whose RFP we cannot watch for, so the identity graph was used as the substitute instrument. GLEIF carries NO industry classification: the segment here is inferred from the legal name and must be confirmed before this record is worked."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "uae",
+    "bank",
+    "gleif-sourced"
+  ],
+  "trigger": null,
+  "updated": "2026-09-25",
+  "website": null
+}

@@ -1,0 +1,38 @@
+slug: emirates-investment-bank-p-j-s-c
+name: Emirates Investment Bank P.J.S.C.
+legal_name: null
+country: UAE
+city: Dubai
+segment: bank
+regulator: null
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: 'GLEIF LEI 5299008NWVU6T9JK1P82, entity status ACTIVE, legal address Dubai. ⚠ Sourced from GLEIF
+    because the Central Bank of the UAE''s own register is bot-protected and returns 403 to an honestly-identified
+    client — a bank we cannot enumerate is a bank whose RFP we cannot watch for, so the identity graph
+    was used as the substitute instrument. GLEIF carries NO industry classification: the segment here
+    is inferred from the legal name and must be confirmed before this record is worked.'
+  date: '2026-09-25'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- uae
+- bank
+- gleif-sourced
+created: '2026-09-25'
+updated: '2026-09-25'
+contacts: []
+fit:
+  score: null
+  reasoning: null
+  disqualified_reason: null
+activities: []
+next_action: null

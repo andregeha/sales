@@ -1308,3 +1308,33 @@ have been a straightforward error. Not ingested.
 
 And **BLOM and Bank Audi are existing clients** with folders in `accounts/` — context and proof, not
 pipeline. Neither was touched.
+
+## 2026-09-25 — UAE banks 40 → 57, by changing instrument rather than defeating a block
+
+CBUAE returns 403 to an honestly-identified client, on its API and its homepage alike, so the UAE's
+onshore banks could not be enumerated. Rather than spoof a browser, the question was changed: banks
+hold LEIs for regulatory reporting, so **GLEIF's identity graph was scanned** for active UAE entities
+with a bank-like legal name. 9,456 UAE entities scanned, **19 bank-named and not in the CRM, 18
+created.**
+
+The ones that matter are exactly the onshore banks CBUAE would have given us: **Emirates Islamic
+Bank, Sharjah Islamic Bank, National Bank of Ras Al Khaimah, Wio Bank, Ajman Bank, Bank of Sharjah,
+United Arab Bank, Invest Bank, National Bank of Umm Al Quwain, Emirates Investment Bank** — plus
+branches of Janata, SNB, BNY Mellon, ICBC, Credit Europe and Ahli United.
+
+⚠ **GLEIF carries no industry classification at all**, so every segment here is inferred from the
+legal name and is written into each record as needing confirmation before the record is worked.
+Two consequences handled rather than ignored:
+- **FIRST ABU DHABI BANK SECURITIES L.L.C** is FAB's securities arm, not the bank — mapped `broker`.
+- The sweep also swept in the **Central Bank of the UAE itself**, which a name filter cannot
+  distinguish from a commercial bank. Kept, because a central bank genuinely procures treasury and
+  reserve-management systems — but flagged `regulator` and `not-a-commercial-prospect`, because
+  working it as an ordinary lead would mean pitching our markets' supervisor.
+
+⚠ Branches are marked as branches. Unlike a representative office a branch *does* conduct business
+locally, so it is a real prospect — but the platform decision may sit with the parent, and the
+record says so.
+
+**This matters for Andre's bank-RFP question specifically:** we now hold 57 UAE banks against the
+~60 CBUAE licenses, so the population we could watch is close to complete even though the regulator's
+own list stays shut.

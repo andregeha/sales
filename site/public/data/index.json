@@ -1939,6 +1939,30 @@
     "website": null
   },
   {
+    "city": "DIFC",
+    "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "AHLI UNITED BANK LIMITED",
+    "regulator": null,
+    "score": null,
+    "segment": "bank",
+    "slug": "ahli-united-bank-limited",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "uae",
+      "bank",
+      "gleif-sourced"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
+    "website": null
+  },
+  {
     "city": "PARIS",
     "country": "France",
     "created": "2026-09-22",
@@ -2064,6 +2088,30 @@
     ],
     "trigger": null,
     "updated": "2026-09-24",
+    "website": null
+  },
+  {
+    "city": "Ajman",
+    "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "AJMAN BANK /P. J. S. C",
+    "regulator": null,
+    "score": null,
+    "segment": "bank",
+    "slug": "ajman-bank-p-j-s-c",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "uae",
+      "bank",
+      "gleif-sourced"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
     "website": null
   },
   {
@@ -8806,6 +8854,30 @@
     "website": "https://www.bankofsharjah.com"
   },
   {
+    "city": "Sharjah",
+    "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Bank of Sharjah P.J.S.C.",
+    "regulator": null,
+    "score": null,
+    "segment": "bank",
+    "slug": "bank-of-sharjah-p-j-s-c",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "uae",
+      "bank",
+      "gleif-sourced"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
+    "website": null
+  },
+  {
     "city": "Paris",
     "country": "France",
     "created": "2026-09-23",
@@ -9329,6 +9401,30 @@
     ],
     "trigger": null,
     "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "DUBAI",
+    "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "BANQUE DE COMMERCE ET DE PLACEMENTS SA",
+    "regulator": null,
+    "score": null,
+    "segment": "bank",
+    "slug": "banque-de-commerce-et-de-placements-sa",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "uae",
+      "bank",
+      "gleif-sourced"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
     "website": null
   },
   {
@@ -15803,6 +15899,32 @@
     "website": null
   },
   {
+    "city": "ABU DHABI",
+    "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "CENTRAL BANK OF THE UAE",
+    "regulator": null,
+    "score": null,
+    "segment": "bank",
+    "slug": "central-bank-of-the-uae",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "bank",
+      "gleif-sourced",
+      "not-a-commercial-prospect",
+      "regulator",
+      "uae"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
+    "website": null
+  },
+  {
     "city": "Dubai",
     "country": "UAE",
     "created": "2026-09-23",
@@ -17847,6 +17969,30 @@
     ],
     "trigger": null,
     "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "DUBAI",
+    "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "CREDIT EUROPE BANK (DUBAI) LTD",
+    "regulator": null,
+    "score": null,
+    "segment": "bank",
+    "slug": "credit-europe-bank-dubai-ltd",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "uae",
+      "bank",
+      "gleif-sourced"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
     "website": null
   },
   {
@@ -20505,6 +20651,30 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "http://www.eibank.com"
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Emirates Investment Bank P.J.S.C.",
+    "regulator": null,
+    "score": null,
+    "segment": "bank",
+    "slug": "emirates-investment-bank-p-j-s-c",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "uae",
+      "bank",
+      "gleif-sourced"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
+    "website": null
   },
   {
     "city": "Dubai",
@@ -23525,6 +23695,30 @@
     ],
     "trigger": null,
     "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "ABU DHABI",
+    "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "FIRST ABU DHABI BANK SECURITIES L.L.C",
+    "regulator": null,
+    "score": null,
+    "segment": "broker",
+    "slug": "first-abu-dhabi-bank-securities-l-l-c",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "uae",
+      "bank",
+      "gleif-sourced"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
     "website": null
   },
   {
@@ -28410,6 +28604,30 @@
     "website": null
   },
   {
+    "city": "أبو ظبي",
+    "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Industrial and Commercial Bank of China Limited - Abu Dhabi Branch",
+    "regulator": null,
+    "score": null,
+    "segment": "bank",
+    "slug": "industrial-and-commercial-bank-of-china-limited-abu-dhabi-branch",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "uae",
+      "bank",
+      "gleif-sourced"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
+    "website": null
+  },
+  {
     "city": "Abu Dhabi",
     "country": "UAE",
     "created": "2026-09-22",
@@ -28897,6 +29115,30 @@
     ],
     "trigger": null,
     "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "Sharjah",
+    "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "INVEST BANK P.S.C.",
+    "regulator": null,
+    "score": null,
+    "segment": "bank",
+    "slug": "invest-bank-p-s-c",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "uae",
+      "bank",
+      "gleif-sourced"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
     "website": null
   },
   {
@@ -29895,6 +30137,30 @@
     ],
     "trigger": null,
     "updated": "2026-09-22",
+    "website": null
+  },
+  {
+    "city": "Abu Dhabi",
+    "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Janata Bank PLC - Abu Dhabi",
+    "regulator": null,
+    "score": null,
+    "segment": "bank",
+    "slug": "janata-bank-plc-abu-dhabi",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "uae",
+      "bank",
+      "gleif-sourced"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
     "website": null
   },
   {
@@ -36727,6 +36993,54 @@
     "trigger": null,
     "updated": "2026-09-23",
     "website": "http://www.rakbank.ae"
+  },
+  {
+    "city": "Ras Al Khaimah",
+    "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "National Bank of Ras Al Khaimah P.S.C",
+    "regulator": null,
+    "score": null,
+    "segment": "bank",
+    "slug": "national-bank-of-ras-al-khaimah-p-s-c",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "uae",
+      "bank",
+      "gleif-sourced"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
+    "website": null
+  },
+  {
+    "city": "UMM AL QAIWAIN",
+    "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "NATIONAL BANK OF UMM AL QUWAIN PSC",
+    "regulator": null,
+    "score": null,
+    "segment": "bank",
+    "slug": "national-bank-of-umm-al-quwain-psc",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "uae",
+      "bank",
+      "gleif-sourced"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
+    "website": null
   },
   {
     "city": "Dubai",
@@ -45348,6 +45662,30 @@
   {
     "city": "Sharjah",
     "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "Sharjah Islamic Bank",
+    "regulator": null,
+    "score": null,
+    "segment": "bank",
+    "slug": "sharjah-islamic-bank",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "uae",
+      "bank",
+      "gleif-sourced"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
+    "website": null
+  },
+  {
+    "city": "Sharjah",
+    "country": "UAE",
     "created": "2026-09-23",
     "has_contact_route": true,
     "has_email": true,
@@ -48705,6 +49043,30 @@
     "website": null
   },
   {
+    "city": "DUBAI",
+    "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "THE BANK OF NEW YORK MELLON, DIFC BRANCH",
+    "regulator": null,
+    "score": null,
+    "segment": "bank",
+    "slug": "the-bank-of-new-york-mellon-difc-branch",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "uae",
+      "bank",
+      "gleif-sourced"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
+    "website": null
+  },
+  {
     "city": "Dubai",
     "country": "UAE",
     "created": "2026-09-22",
@@ -48938,6 +49300,30 @@
       "register-sourced",
       "new-licence",
       "broker"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
+    "website": null
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "THE SAUDI NATIONAL BANK (DUBAI BRANCH)",
+    "regulator": null,
+    "score": null,
+    "segment": "bank",
+    "slug": "the-saudi-national-bank-dubai-branch",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "uae",
+      "bank",
+      "gleif-sourced"
     ],
     "trigger": null,
     "updated": "2026-09-25",
@@ -50546,6 +50932,30 @@
     ],
     "trigger": null,
     "updated": "2026-09-23",
+    "website": null
+  },
+  {
+    "city": "SHARJAH",
+    "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "UNITED ARAB BANK",
+    "regulator": null,
+    "score": null,
+    "segment": "bank",
+    "slug": "united-arab-bank",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "uae",
+      "bank",
+      "gleif-sourced"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
     "website": null
   },
   {
@@ -52334,6 +52744,30 @@
       "fund-manager",
       "saudi-arabia",
       "cma-xlsx"
+    ],
+    "trigger": null,
+    "updated": "2026-09-25",
+    "website": null
+  },
+  {
+    "city": "أبو ظبي",
+    "country": "UAE",
+    "created": "2026-09-25",
+    "has_contact_route": false,
+    "has_email": false,
+    "has_linkedin": false,
+    "has_phone": false,
+    "name": "WIO BANK P.J.S.C.",
+    "regulator": null,
+    "score": null,
+    "segment": "bank",
+    "slug": "wio-bank-p-j-s-c",
+    "stage": "identified",
+    "status": "nurture",
+    "tags": [
+      "uae",
+      "bank",
+      "gleif-sourced"
     ],
     "trigger": null,
     "updated": "2026-09-25",

@@ -1,0 +1,50 @@
+slug: central-bank-of-the-uae
+name: CENTRAL BANK OF THE UAE
+legal_name: null
+country: UAE
+city: ABU DHABI
+segment: bank
+regulator: null
+website: null
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: 'The UAE''s central bank and financial regulator. ⚠ NOT a commercial-bank prospect: it is
+  the supervisor of most other records in this market. It is kept because a central bank genuinely does
+  buy portfolio, treasury and reserve-management systems and procures them formally — but it must never
+  be worked as if it were a commercial bank, and anything said to it is said to our markets'' regulator.'
+source:
+  channel: register
+  detail: 'GLEIF LEI 5493006P6LOOFH8TB150, entity status ACTIVE, legal address ABU DHABI. ⚠ Sourced from
+    GLEIF because the Central Bank of the UAE''s own register is bot-protected and returns 403 to an honestly-identified
+    client — a bank we cannot enumerate is a bank whose RFP we cannot watch for, so the identity graph
+    was used as the substitute instrument. GLEIF carries NO industry classification: the segment here
+    is inferred from the legal name and must be confirmed before this record is worked.'
+  date: '2026-09-25'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- bank
+- gleif-sourced
+- not-a-commercial-prospect
+- regulator
+- uae
+created: '2026-09-25'
+updated: '2026-09-25'
+contacts: []
+fit:
+  score: null
+  reasoning: null
+  disqualified_reason: null
+activities:
+- date: '2026-09-25'
+  type: note
+  summary: Flagged as the REGULATOR, not a commercial prospect. It arrived via a GLEIF name sweep for
+    UAE banks, which cannot tell a central bank from a commercial one — GLEIF carries no industry classification.
+    Kept because central banks do procure treasury and reserve-management systems, but labelled so nobody
+    treats it as an ordinary lead.
+  link: null
+next_action: null
