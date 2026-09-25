@@ -29,7 +29,7 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-25'
 contacts:
 - name: ZHAO CAPITAL LIMITED — contact published on the FSRA register
   title: General enquiries
@@ -60,4 +60,10 @@ activities:
     address (per the FSRA): United Arab Emirates, Abu Dhabi, Reem Island, Office 4327, 43rd Floor, Addax
     Port Office Tower, Al Rayfa Street, Al Reem Island'
   link: https://www.adgm.com/public-registers/fsra
+- date: '2026-09-25'
+  type: email_drafted
+  summary: Drafted a first-touch email to Zeeshan Alam at the FSRA-published address, on a licence granted
+    2026-09-02 with no incumbent to displace. Fully sendable. Draft held in outreach/2026-09-25-uae-batch.md.
+    NOT SENT — Andre approves and sends.
+  link: outreach/2026-09-25-uae-batch.md
 next_action: null

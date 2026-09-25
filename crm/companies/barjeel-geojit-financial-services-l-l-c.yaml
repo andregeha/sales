@@ -36,7 +36,7 @@ tags:
 - trigger-senior-hire
 - fund-administration-fit
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-25'
 contacts:
 - name: Surendra Dwivedi
   title: Chief Executive Officer, Designate
@@ -73,14 +73,15 @@ fit:
   score: 83
   reasoning: 'Fit 50/60: priority asset-manager/fund-manager segment (20) + UAE onshore (15) + third-party
     fund investors, 50,000+ retail NRI base (10) + SCA-regulated (5); multi-asset scored 0 since BGIOF
-    is an India-equities umbrella fund, not evidence of cross-asset-class breadth. Trigger 25/25 (capped):
-    fund launch with a live NFO window spanning Jan-Feb 2026 — exactly the NAV/subscriptions-redemptions/shareholder-registry
-    trigger Gaia''s fund-administration module maps onto (15) plus a new CEO-Designate (Surendra Dwivedi,
-    appointed per social posts) (12). Access 8/15: named CEO-Designate and founder-director identified.
-    Total 83 — hot: a live fund launch with subscriptions open right now is as concrete a fund-administration
-    hook as this pass found. Dwivedi''s appointment date (2025-08-01) is search-confirmed via LinkedIn/Facebook
-    posts but not cross-verified against a company filing; treat as reasonably reliable but confirm before
-    using in outreach.'
+    is an India-equities umbrella fund, not evidence of cross-asset-class breadth. Trigger 20/25: the
+    Barjeel Geojit India Opportunities Fund now runs as a live umbrella with segregated sub-funds, so
+    NAV per sub-fund, subscriptions/redemptions and the shareholder registry are a daily operating load.
+    ⚠ CORRECTED 2026-09-25: this clause previously described the NFO subscription window as live; it closed
+    2026-02-13 and quoting it would have been wrong in front of the client. Access 8/15: named CEO-Designate
+    and founder-director identified. Total 83 — hot: a live fund launch with subscriptions open right
+    now is as concrete a fund-administration hook as this pass found. Dwivedi''s appointment date (2025-08-01)
+    is search-confirmed via LinkedIn/Facebook posts but not cross-verified against a company filing; treat
+    as reasonably reliable but confirm before using in outreach.'
   disqualified_reason: null
 activities:
 - date: '2026-09-22'
@@ -113,6 +114,18 @@ activities:
     per prior activity entry). Full draft with mailto link: outreach/2026-09-22-top-leads.md. Awaiting
     Andre''s review before send.'
   link: null
+- date: '2026-09-25'
+  type: research
+  summary: Corrected a stale trigger. The record claimed a live NFO subscription window; it closed 2026-02-13,
+    seven months ago. A trigger that has expired is worse than no trigger — it puts a wrong fact in the
+    first sentence we say to a client.
+  link: null
+- date: '2026-09-25'
+  type: email_drafted
+  summary: 'Drafted a first-touch email to dubai@barjeel.ae, Attn: Surendra Dwivedi (CEO-Designate), on
+    the BGIOF sub-fund administration load. ⚠ Reaches a shared inbox, not him directly. Draft held in
+    outreach/2026-09-25-uae-batch.md. NOT SENT — Andre approves and sends.'
+  link: outreach/2026-09-25-uae-batch.md
 next_action:
   who: Andre Geha
   what: Confirm a direct contact route to Surendra Dwivedi and draft a fund-launch-hook first touch

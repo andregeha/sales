@@ -39,19 +39,21 @@ tags:
 - diaspora-banking
 - pre-launch
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-25'
 contacts:
 - name: Linda Tarazi
   title: Chief Executive Officer, Bank of Palestine - Global (ADGM entity)
   role: economic_buyer
   email: 'null'
-  phone: 'null'
+  phone: null
   linkedin: null
   language: en
-  notes: Appointed CEO of the new ADGM entity to lead its global expansion; 20+ years of international
+  notes: 'Appointed CEO of the new ADGM entity to lead its global expansion; 20+ years of international
     banking experience per press coverage. No LinkedIn profile or contact detail could be confirmed/verified
     in this research — do not guess a URL or email. Re-search closer to H2 2026 launch when the entity
-    is more publicly staffed.
+    is more publicly staffed. ⚠ A non-telephone value (''null'') had been stored here as a phone number
+    — the DFSA detail parser captured the NEXT FIELD''S LABEL because this firm publishes no telephone
+    at all. Removed: the firm has no published number, which is a fact, not a gap to fill.'
   source: Arabian Business, The National, Zawya, Retail Banker International and ADGM press release coverage
     of the 29-Dec-2025 IPA, checked 2026-09-22.
 fit:
@@ -67,7 +69,13 @@ fit:
     Total 68 rounds to 66 — strong queue candidate; re-check status close to the H2 2026 go-live, since
     a bank standing up new infrastructure pre-launch is exactly when a PMS/core decision gets made.'
   disqualified_reason: null
-activities: []
+activities:
+- date: '2026-09-25'
+  type: research
+  summary: Removed a corrupted telephone value left by a parser bug. The DFSA page renders label/value
+    pairs, and a firm with no telephone collapses so that the next label sits where the number should
+    be. These records had been counting as reachable when they are not.
+  link: null
 next_action:
   who: Andre Geha
   what: Check ADGM FSRA register directly (once a working query method is found) for the entity's formal

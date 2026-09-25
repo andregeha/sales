@@ -26,17 +26,20 @@ tags:
 - new-licence
 - custodian
 created: '2026-09-23'
-updated: '2026-09-23'
+updated: '2026-09-25'
 contacts:
 - name: Ypsilon Capital (DIFC) Ltd — switchboard (register-published)
   title: General enquiries
   role: unknown
   email: null
-  phone: Date of Licence
+  phone: null
   linkedin: null
   language: en
-  notes: Telephone number as published by the DFSA on its own public register — not a guessed number and
-    not an individual's line. Use it to reach a named person, not as the first touch itself.
+  notes: 'Telephone number as published by the DFSA on its own public register — not a guessed number
+    and not an individual''s line. Use it to reach a named person, not as the first touch itself. ⚠ A
+    non-telephone value (''Date of Licence'') had been stored here as a phone number — the DFSA detail
+    parser captured the NEXT FIELD''S LABEL because this firm publishes no telephone at all. Removed:
+    the firm has no published number, which is a fact, not a gap to fill.'
   source: DFSA public register, https://www.dfsa.ae/public-register/firms/wethaq-capital-markets-ltd
 fit:
   score: 33
@@ -55,4 +58,10 @@ activities:
     address (per the DFSA): Unit GD-PB-04-06-OF-03, Level 6, Gate District Precinct Building 04, DIFC,
     PO Box 50721, Dubai, UAE'
   link: https://www.dfsa.ae/public-register/firms
+- date: '2026-09-25'
+  type: research
+  summary: Removed a corrupted telephone value left by a parser bug. The DFSA page renders label/value
+    pairs, and a firm with no telephone collapses so that the next label sits where the number should
+    be. These records had been counting as reachable when they are not.
+  link: null
 next_action: null

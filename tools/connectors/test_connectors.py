@@ -535,3 +535,28 @@ class TestAMFMapping(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+def test_dfsa_phone_never_captures_the_next_field_label():
+    """The bug that put "Date of Licence" into 185 records as a telephone number.
+
+    A DFSA detail page renders label/value pairs. A firm with NO telephone collapses to
+    ``Telephone Number|Date of Licence|26-Jun-2025``, so taking whatever follows the label captured
+    the next label. Those records then counted as reachable — inflating the single number this
+    workspace uses to decide whether a firm can be contacted at all.
+    """
+    import sys
+    from pathlib import Path
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from dfsa_difc import _clean_phone
+
+    assert _clean_phone("Date of Licence") is None
+    assert _clean_phone("date of licence") is None
+    assert _clean_phone("Fax Number") is None
+    assert _clean_phone("") is None
+    assert _clean_phone(None) is None
+    # Not a label, but not a phone number either.
+    assert _clean_phone("Currency House") is None
+    # Real numbers survive, in the formats the register actually publishes.
+    assert _clean_phone("+971 4 362 1000") == "+971 4 362 1000"
+    assert _clean_phone("  971 4 388 0686  Ext 401 ") == "971 4 388 0686 Ext 401"

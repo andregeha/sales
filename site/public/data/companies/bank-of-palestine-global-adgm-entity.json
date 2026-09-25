@@ -1,5 +1,12 @@
 {
-  "activities": [],
+  "activities": [
+    {
+      "date": "2026-09-25",
+      "link": null,
+      "summary": "Removed a corrupted telephone value left by a parser bug. The DFSA page renders label/value pairs, and a firm with no telephone collapses so that the next label sits where the number should be. These records had been counting as reachable when they are not.",
+      "type": "research"
+    }
+  ],
   "city": "Abu Dhabi",
   "contacts": [
     {
@@ -7,8 +14,8 @@
       "language": "en",
       "linkedin": null,
       "name": "Linda Tarazi",
-      "notes": "Appointed CEO of the new ADGM entity to lead its global expansion; 20+ years of international banking experience per press coverage. No LinkedIn profile or contact detail could be confirmed/verified in this research — do not guess a URL or email. Re-search closer to H2 2026 launch when the entity is more publicly staffed.",
-      "phone": "null",
+      "notes": "Appointed CEO of the new ADGM entity to lead its global expansion; 20+ years of international banking experience per press coverage. No LinkedIn profile or contact detail could be confirmed/verified in this research — do not guess a URL or email. Re-search closer to H2 2026 launch when the entity is more publicly staffed. ⚠ A non-telephone value ('null') had been stored here as a phone number — the DFSA detail parser captured the NEXT FIELD'S LABEL because this firm publishes no telephone at all. Removed: the firm has no published number, which is a fact, not a gap to fill.",
+      "phone": null,
       "role": "economic_buyer",
       "source": "Arabian Business, The National, Zawya, Retail Banker International and ADGM press release coverage of the 29-Dec-2025 IPA, checked 2026-09-22.",
       "title": "Chief Executive Officer, Bank of Palestine - Global (ADGM entity)"
@@ -25,7 +32,7 @@
   "has_contact_route": true,
   "has_email": true,
   "has_linkedin": false,
-  "has_phone": true,
+  "has_phone": false,
   "legal_name": "Bank of Palestine - Global",
   "linkedin": null,
   "name": "Bank of Palestine - Global (ADGM entity)",
@@ -62,6 +69,6 @@
     "pre-launch"
   ],
   "trigger": null,
-  "updated": "2026-09-22",
+  "updated": "2026-09-25",
   "website": "https://www.bankofpalestine.com"
 }

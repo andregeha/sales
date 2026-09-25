@@ -11,6 +11,12 @@
       "link": null,
       "summary": "Open-web enrichment sweep. Applied: website https://theascent-group.com; contact Hazem Elmalla. Evidence: theascent-group.com/united-arab-emirates (fetched 2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-25",
+      "link": null,
+      "summary": "Removed a corrupted telephone value left by a parser bug. The DFSA page renders label/value pairs, and a firm with no telephone collapses so that the next label sits where the number should be. These records had been counting as reachable when they are not.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
@@ -20,8 +26,8 @@
       "language": "en",
       "linkedin": null,
       "name": "Ascent Fund Services (DIFC) Ltd — switchboard (register-published)",
-      "notes": "Telephone number as published by the DFSA on its own public register — not a guessed number and not an individual's line. Use it to reach a named person, not as the first touch itself.",
-      "phone": "Date of Licence",
+      "notes": "Telephone number as published by the DFSA on its own public register — not a guessed number and not an individual's line. Use it to reach a named person, not as the first touch itself. ⚠ A non-telephone value ('Date of Licence') had been stored here as a phone number — the DFSA detail parser captured the NEXT FIELD'S LABEL because this firm publishes no telephone at all. Removed: the firm has no published number, which is a fact, not a gap to fill.",
+      "phone": null,
       "role": "unknown",
       "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/ascent-fund-services-difc-ltd",
       "title": "General enquiries"
@@ -46,10 +52,10 @@
     "reasoning": "Fit 50/60: priority segment fund_manager (20) + priority market UAE (15) + manages third-party money — DFSA-authorised for Providing Fund Administration (10) + regulated by DFSA (DIFC) (5). Trigger 0/25: no licence date published, so no datable trigger. Access 3/15: generic company contact published on the register (3). Scored automatically from the DFSA public register of authorised firms (DIFC) at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
     "score": 53
   },
-  "has_contact_route": true,
+  "has_contact_route": false,
   "has_email": false,
   "has_linkedin": false,
-  "has_phone": true,
+  "has_phone": false,
   "legal_name": null,
   "linkedin": null,
   "name": "Ascent Fund Services (DIFC) Ltd",
@@ -78,6 +84,6 @@
     "fund-manager"
   ],
   "trigger": null,
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "website": "https://theascent-group.com"
 }

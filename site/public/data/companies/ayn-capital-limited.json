@@ -17,6 +17,12 @@
       "link": null,
       "summary": "Open-web enrichment sweep. Applied: website https://ayncapital.com; email info@ayncapital.com; contact Patrick R. Oerer; contact Nicolas Loubet; contact Mansur El-Fitouri; contact David Luksenburg. Evidence: ayncapital.com/about (fetched 2026-09-24). Every value was transcribed from a published source — nothing was constructed from a domain.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-25",
+      "link": null,
+      "summary": "Removed a corrupted telephone value left by a parser bug. The DFSA page renders label/value pairs, and a firm with no telephone collapses so that the next label sits where the number should be. These records had been counting as reachable when they are not.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
@@ -26,8 +32,8 @@
       "language": "en",
       "linkedin": null,
       "name": "Ayn Capital Limited — switchboard (register-published)",
-      "notes": "Telephone number as published by the DFSA on its own public register — not a guessed number and not an individual's line. Use it to reach a named person, not as the first touch itself.",
-      "phone": "Date of Licence",
+      "notes": "Telephone number as published by the DFSA on its own public register — not a guessed number and not an individual's line. Use it to reach a named person, not as the first touch itself. ⚠ A non-telephone value ('Date of Licence') had been stored here as a phone number — the DFSA detail parser captured the NEXT FIELD'S LABEL because this firm publishes no telephone at all. Removed: the firm has no published number, which is a fact, not a gap to fill.",
+      "phone": null,
       "role": "unknown",
       "source": "DFSA public register, https://www.dfsa.ae/public-register/firms/ayn-capital-limited · Email published on the firm's own site (ayncapital.com/about (fetched 2026-09-24))",
       "title": "General enquiries"
@@ -88,7 +94,7 @@
   "has_contact_route": true,
   "has_email": true,
   "has_linkedin": false,
-  "has_phone": true,
+  "has_phone": false,
   "legal_name": "Ayn Capital Limited",
   "linkedin": null,
   "name": "Ayn Capital Limited",
@@ -117,6 +123,6 @@
     "asset-manager"
   ],
   "trigger": null,
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "website": "https://ayncapital.com"
 }

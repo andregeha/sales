@@ -26,7 +26,7 @@ tags:
 - new-licence
 - asset-manager
 created: '2026-09-22'
-updated: '2026-09-24'
+updated: '2026-09-25'
 contacts:
 - name: Ark Capital Management (Dubai) Limited — switchboard (register-published)
   title: General enquiries
@@ -73,5 +73,14 @@ activities:
     market-abuse SYSTEMS AND CONTROLS failings and for failing to report a change of control — a regulator
     naming a firm''s systems as inadequate is the most direct ''why now'' this workspace can hold, and
     remediation budget follows a fine. Source: dfsa.ae news release, found 2026-09-24.'
+  link: null
+- date: '2026-09-25'
+  type: note
+  summary: Outreach considered and DELIBERATELY NOT DRAFTED. The only trigger on file is the DFSA's USD
+    504,000 fine for market-abuse systems-and-controls failings, and there is no second, independent hook.
+    Any wording vague enough to avoid naming the fine still reads as a euphemism for their own enforcement
+    action — the same reason in a costume — and this workspace's rule is that security is presented as
+    a posture and positively, never as someone's findings handed back to them. Revisit when a different,
+    unrelated reason to write exists.
   link: null
 next_action: null

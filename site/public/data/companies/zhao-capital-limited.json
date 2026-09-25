@@ -5,6 +5,12 @@
       "link": "https://www.adgm.com/public-registers/fsra",
       "summary": "Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 250115, authorised 2026-09-02, Managing Assets. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Reem Island, Office 4327, 43rd Floor, Addax Port Office Tower, Al Rayfa Street, Al Reem Island",
       "type": "research"
+    },
+    {
+      "date": "2026-09-25",
+      "link": "outreach/2026-09-25-uae-batch.md",
+      "summary": "Drafted a first-touch email to Zeeshan Alam at the FSRA-published address, on a licence granted 2026-09-02 with no incumbent to displace. Fully sendable. Draft held in outreach/2026-09-25-uae-batch.md. NOT SENT — Andre approves and sends.",
+      "type": "email_drafted"
     }
   ],
   "city": "Abu Dhabi",
@@ -64,6 +70,6 @@
     "fsra"
   ],
   "trigger": "new licence granted 2026-09-02 (20 days ago), no incumbent to displace (20)",
-  "updated": "2026-09-22",
+  "updated": "2026-09-25",
   "website": null
 }

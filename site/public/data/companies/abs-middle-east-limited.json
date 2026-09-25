@@ -17,6 +17,12 @@
       "link": null,
       "summary": "Trigger recorded from the open-web sweep: Arab Bank Switzerland launched this DIFC entity in June 2026 under CEO Samir Atitallah — a brand-new booking centre with no incumbent platform to displace. Source: gulfbusiness.com, found 2026-09-24.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-25",
+      "link": "outreach/2026-09-25-uae-batch.md",
+      "summary": "Drafted a first-touch email — but NOT sendable: no email exists for the firm or for CEO Samir Atitallah. Only a DFSA switchboard number. Needs a real route before it can go. Draft held in outreach/2026-09-25-uae-batch.md. NOT SENT — Andre approves and sends.",
+      "type": "email_drafted"
     }
   ],
   "city": "Dubai",
@@ -84,6 +90,6 @@
     "asset-manager"
   ],
   "trigger": "Arab Bank Switzerland launched this DIFC entity in June 2026 under CEO Samir Atitallah — a brand-new booking centre with no incumbent platform to displace [gulfbusiness",
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "website": null
 }

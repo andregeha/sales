@@ -26,7 +26,7 @@ tags:
 - new-licence
 - asset-manager
 created: '2026-09-22'
-updated: '2026-09-24'
+updated: '2026-09-25'
 contacts:
 - name: ASB Capital Limited — switchboard (register-published)
   title: General enquiries
@@ -77,4 +77,10 @@ activities:
     in November 2024 with a large starting AUM — a new entrant standing up operations from scratch. Source:
     alsalambank.com, found 2026-09-24.'
   link: null
+- date: '2026-09-25'
+  type: email_drafted
+  summary: 'Drafted a first-touch email — NOT sendable: no named contact and no email on file, only a
+    website and a switchboard. Draft held in outreach/2026-09-25-uae-batch.md. NOT SENT — Andre approves
+    and sends.'
+  link: outreach/2026-09-25-uae-batch.md
 next_action: null

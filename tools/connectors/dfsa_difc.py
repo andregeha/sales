@@ -128,6 +128,36 @@ _MONTHS = {m: i for i, m in enumerate(
     ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], 1)}
 
 
+#: Labels that appear on a DFSA detail page. A "phone number" equal to one of these is not a phone
+#: number — it is the NEXT FIELD'S LABEL, captured because this firm published no telephone at all.
+_DETAIL_LABELS = {
+    "date of licence", "fax number", "financial service", "address", "legal status",
+    "dfsa reference number", "name", "restrictions", "individuals", "regulatory actions",
+}
+
+
+def _clean_phone(raw: Optional[str]) -> Optional[str]:
+    """A telephone number, or None — never the label of the field that follows it.
+
+    ⚠ This bug reached 185 live records. The detail page renders label/value pairs, and a firm with
+    NO telephone collapses to ``Telephone Number|Date of Licence|26-Jun-2025``, so a regex that takes
+    whatever follows the label captured the string "Date of Licence" and stored it as a phone number.
+    Those records then counted as having a contact route, which is the worst kind of wrong: it
+    inflates the one number this workspace uses to decide whether a firm is reachable.
+
+    Two guards, because either alone is brittle: the value must not BE a known label, and it must
+    contain enough digits to be a telephone number at all.
+    """
+    if not raw:
+        return None
+    v = " ".join(str(raw).split())
+    if not v or v.strip().lower().rstrip(":") in _DETAIL_LABELS:
+        return None
+    if sum(ch.isdigit() for ch in v) < 6:
+        return None
+    return v
+
+
 def _strip(fragment: str) -> str:
     return " ".join(html.unescape(re.sub(r"<[^>]+>", "", fragment)).split())
 
@@ -293,8 +323,9 @@ class DFSADIFCConnector(Connector):
         d = self._detail(entry)
         if d.get("registered"):
             entry.licence_date = self._iso(d["registered"])
-        if d.get("phone"):
-            entry.phone = " ".join(d["phone"].split())
+        phone = _clean_phone(d.get("phone"))
+        if phone:
+            entry.phone = phone
         if d.get("legal_status"):
             entry.legal_name = None  # legal STATUS is not a legal NAME; do not conflate them
 

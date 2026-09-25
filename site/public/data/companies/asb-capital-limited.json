@@ -23,6 +23,12 @@
       "link": null,
       "summary": "Trigger recorded from the open-web sweep: Al Salam Bank (Bahrain) launched this DIFC firm in November 2024 with a large starting AUM — a new entrant standing up operations from scratch. Source: alsalambank.com, found 2026-09-24.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-25",
+      "link": "outreach/2026-09-25-uae-batch.md",
+      "summary": "Drafted a first-touch email — NOT sendable: no named contact and no email on file, only a website and a switchboard. Draft held in outreach/2026-09-25-uae-batch.md. NOT SENT — Andre approves and sends.",
+      "type": "email_drafted"
     }
   ],
   "city": "Dubai",
@@ -79,6 +85,6 @@
     "asset-manager"
   ],
   "trigger": "Al Salam Bank (Bahrain) launched this DIFC firm in November 2024 with a large starting AUM — a new entrant standing up operations from scratch [alsalambank",
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "website": "https://asbc.com"
 }

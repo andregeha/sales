@@ -1143,3 +1143,41 @@ Opening with a fine reads as circling a wounded animal, and this workspace's own
 security is presented as a posture and positively, never as someone's findings thrown back at them.
 The writer was told to make the timing evident without naming the fine, or to draft nothing and say
 so. Refusing is a valid answer.
+
+## 2026-09-25 — the first outreach drafts, and a parser bug they exposed
+
+**Five drafts written, one deliberately refused, and only two are actually sendable.** That last
+number is the honest one.
+
+⚠ **185 records held the literal string "Date of Licence" as a telephone number.** The DFSA detail
+page renders label/value pairs, and a firm publishing NO telephone collapses to
+`Telephone Number|Date of Licence|26-Jun-2025` — so a regex taking whatever follows the label
+captured the next field's label. Confirmed against the live page for Agna Capital before fixing.
+
+This is the worst kind of data error: those records **counted as having a contact route**, inflating
+the one number this workspace uses to decide whether a firm is reachable. `_clean_phone()` now
+rejects a value that is a known label or that carries fewer than six digits, with a test; 189
+records were cleaned and the reason written onto each contact. Two survivors are real numbers in odd
+formats (a French `01/41 45 80 74`, a UAE number with `Ext 401`) — my checker's false positives, not
+data errors.
+
+⚠ **Also removed: five personal free-mail addresses** (`@gmail`, `@yahoo`) published on the FSRA
+register as firm contacts. A regulator publishing someone's Gmail does not make it a business
+channel.
+
+### Ark Capital: refused, and the refusal recorded
+The writer declined to draft it, and was right to. Its only trigger is the DFSA fine for
+systems-and-controls failings; there is no second hook. Any phrasing vague enough to avoid naming
+the fine still reads as a euphemism for their own enforcement action — the same reason in a costume.
+Recorded on the record as a decision, so nobody re-derives it.
+
+### Two corrections to my own work
+1. **I briefed the batch on trigger strength without re-checking contactability.** Three of the six
+   firms I chose have no email at all. ABS Middle East, ASB Capital and Amaltas Partners got drafts
+   that cannot be sent — Amaltas has no route of any kind.
+2. **I gave the writer a stale fact.** I described Barjeel's NFO subscription window as live; it
+   closed 2026-02-13, seven months ago. The writer caught it and rewrote around the ongoing sub-fund
+   administration load. The trigger clause on the record has been corrected — an expired trigger is
+   worse than none, because it puts a wrong fact in the first sentence we say to a client.
+
+Every draft is logged as an `email_drafted` activity. Nothing has been sent.
