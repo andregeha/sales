@@ -1,0 +1,49 @@
+slug: ubs-ag
+name: UBS AG
+legal_name: يو بي إس
+country: Saudi Arabia
+city: null
+segment: bank
+regulator: SAMA (Saudi Central Bank)
+website: https://www.ubs.com/global/en/our-firm.html
+linkedin: null
+size:
+  aum: null
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: 'SAMA (Saudi Central Bank) register of licensed banks (https://www.sama.gov.sa/en-US/supervision/licenseentities/pages/default.aspx);
+    licence 61. Snapshot: crm/registers/sama-saudi/2026-09-25.json.'
+  date: '2026-09-25'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- sama-saudi
+- register-sourced
+- new-licence
+- bank
+- saudi-arabia
+- sama
+created: '2026-09-25'
+updated: '2026-09-25'
+contacts: []
+fit:
+  score: 43
+  reasoning: 'Fit 40/60: priority segment bank (20) + priority market Saudi Arabia (15) + regulated by
+    SAMA (Saudi Central Bank) (5). Trigger 0/25: no licence date published, so no datable trigger. Access
+    3/15: generic company contact published on the register (3). Scored automatically from the SAMA (Saudi
+    Central Bank) register of licensed banks at first sighting. Fit points are awarded only where the
+    register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich
+    before outreach.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-25'
+  type: research
+  summary: Appeared as a new entry in the SAMA (Saudi Central Bank) register of licensed banks. Licence
+    61, Foreign Bank Branches. Detected by the automated register diff; every field here is as the register
+    publishes it and nothing has been inferred. Not yet researched or enriched.
+  link: https://www.sama.gov.sa/en-US/supervision/licenseentities/pages/default.aspx
+next_action: null

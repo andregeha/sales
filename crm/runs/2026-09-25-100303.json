@@ -1,0 +1,23 @@
+{
+  "commit": "a0df235b43b10db2bfdbefd59f416aa05b8aa654",
+  "connectors": [
+    {
+      "backfill": true,
+      "baseline": false,
+      "changes": 0,
+      "created": 31,
+      "error": null,
+      "new_on_register": 39,
+      "ok": true,
+      "partial": false,
+      "register": "sama-saudi",
+      "skipped": 8,
+      "source": "SAMA (Saudi Central Bank) register of licensed banks",
+      "total": 39
+    }
+  ],
+  "duration_s": 5.938,
+  "finished_at": "2026-09-25T10:03:09+00:00",
+  "ok": true,
+  "started_at": "2026-09-25T10:03:03+00:00"
+}

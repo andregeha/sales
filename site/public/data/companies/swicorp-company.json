@@ -1,0 +1,56 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-25",
+      "link": "https://cma.gov.sa/AboutCMA/ResearchAndReports/opendata/Pages/default.aspx",
+      "summary": "Appeared as a new entry in the CMA \"Institutions under supervision of CMA\" quarterly Excel workbook. Licence swicorp, AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); footnoted by the CMA as a holder of an investment fund management licence. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Runs 0 public/private fund(s) as of Q4 2023 per the CMA's fund-count table. Also shows SAR 0.0m in discretionary/fund AUM as of Q1 2026.",
+      "type": "research"
+    }
+  ],
+  "city": null,
+  "contacts": [],
+  "country": "Saudi Arabia",
+  "created": "2026-09-25",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 50/60: priority segment fund_manager (20) + priority market Saudi Arabia (15) + manages third-party money — SAR 0.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report (10) + regulated by CMA (Saudi Arabia) (5). Trigger 0/25: no licence date published, so no datable trigger. Access 0/15: no contact route published (0). Scored automatically from the CMA \"Institutions under supervision of CMA\" quarterly Excel workbook at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "score": 50
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": "شركة سويكورب",
+  "linkedin": null,
+  "name": "Swicorp Company",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "CMA (Saudi Arabia)",
+  "score": 50,
+  "segment": "fund_manager",
+  "size": {
+    "aum": "SAR 0.0m (Q1 2026, discretionary/fund AUM per the CMA's quarterly Institutions-under-supervision report)",
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "swicorp-company",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-25",
+    "detail": "CMA \"Institutions under supervision of CMA\" quarterly Excel workbook (https://cma.gov.sa/AboutCMA/ResearchAndReports/opendata/Pages/default.aspx); licence swicorp. Snapshot: crm/registers/cma-saudi-xlsx/2026-09-25.json."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "cma-saudi-xlsx",
+    "register-sourced",
+    "new-licence",
+    "fund-manager",
+    "saudi-arabia",
+    "cma-xlsx"
+  ],
+  "trigger": null,
+  "updated": "2026-09-25",
+  "website": null
+}

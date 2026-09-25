@@ -1,0 +1,56 @@
+{
+  "activities": [
+    {
+      "date": "2026-09-25",
+      "link": "https://www.sama.gov.sa/en-US/supervision/licenseentities/pages/default.aspx",
+      "summary": "Appeared as a new entry in the SAMA (Saudi Central Bank) register of licensed banks. Licence 70, Foreign Bank Branches. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched.",
+      "type": "research"
+    }
+  ],
+  "city": null,
+  "contacts": [],
+  "country": "Saudi Arabia",
+  "created": "2026-09-25",
+  "description": null,
+  "fit": {
+    "disqualified_reason": null,
+    "reasoning": "Fit 40/60: priority segment bank (20) + priority market Saudi Arabia (15) + regulated by SAMA (Saudi Central Bank) (5). Trigger 0/25: no licence date published, so no datable trigger. Access 3/15: generic company contact published on the register (3). Scored automatically from the SAMA (Saudi Central Bank) register of licensed banks at first sighting. Fit points are awarded only where the register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich before outreach.",
+    "score": 43
+  },
+  "has_contact_route": false,
+  "has_email": false,
+  "has_linkedin": false,
+  "has_phone": false,
+  "legal_name": "بنك الأردن",
+  "linkedin": null,
+  "name": "Bank of Jordan",
+  "next_action": null,
+  "owner": "Andre Geha",
+  "regulator": "SAMA (Saudi Central Bank)",
+  "score": 43,
+  "segment": "bank",
+  "size": {
+    "aum": null,
+    "employees": null,
+    "portfolios": null
+  },
+  "slug": "bank-of-jordan",
+  "source": {
+    "channel": "register",
+    "date": "2026-09-25",
+    "detail": "SAMA (Saudi Central Bank) register of licensed banks (https://www.sama.gov.sa/en-US/supervision/licenseentities/pages/default.aspx); licence 70. Snapshot: crm/registers/sama-saudi/2026-09-25.json."
+  },
+  "stage": "identified",
+  "status": "nurture",
+  "tags": [
+    "sama-saudi",
+    "register-sourced",
+    "new-licence",
+    "bank",
+    "saudi-arabia",
+    "sama"
+  ],
+  "trigger": null,
+  "updated": "2026-09-25",
+  "website": "https://bankofjordan.com/en"
+}

@@ -1,0 +1,54 @@
+slug: portfolios-investment-company
+name: Portfolios Investment Company
+legal_name: شركة محافظ للأستثمار
+country: Saudi Arabia
+city: null
+segment: fund_manager
+regulator: CMA (Saudi Arabia)
+website: null
+linkedin: null
+size:
+  aum: SAR 815.6m (Q1 2026, discretionary/fund AUM per the CMA's quarterly Institutions-under-supervision
+    report)
+  employees: null
+  portfolios: null
+description: null
+source:
+  channel: register
+  detail: 'CMA "Institutions under supervision of CMA" quarterly Excel workbook (https://cma.gov.sa/AboutCMA/ResearchAndReports/opendata/Pages/default.aspx);
+    licence portfolios investment. Snapshot: crm/registers/cma-saudi-xlsx/2026-09-25.json.'
+  date: '2026-09-25'
+status: nurture
+stage: identified
+owner: Andre Geha
+tags:
+- cma-saudi-xlsx
+- register-sourced
+- new-licence
+- fund-manager
+- saudi-arabia
+- cma-xlsx
+created: '2026-09-25'
+updated: '2026-09-25'
+contacts: []
+fit:
+  score: 50
+  reasoning: 'Fit 50/60: priority segment fund_manager (20) + priority market Saudi Arabia (15) + manages
+    third-party money — SAR 815.6m per AUM per Capital Market Institution (Table 8), Q1 2026, per the
+    CMA''s own quarterly report (10) + regulated by CMA (Saudi Arabia) (5). Trigger 0/25: no licence date
+    published, so no datable trigger. Access 0/15: no contact route published (0). Scored automatically
+    from the CMA "Institutions under supervision of CMA" quarterly Excel workbook at first sighting. Fit
+    points are awarded only where the register itself states the fact; anything it is silent on scores
+    zero rather than being assumed. Enrich before outreach.'
+  disqualified_reason: null
+activities:
+- date: '2026-09-25'
+  type: research
+  summary: Appeared as a new entry in the CMA "Institutions under supervision of CMA" quarterly Excel
+    workbook. Licence portfolios investment, AUM per Capital Market Institution (Table 8); Number of public/private
+    funds per CMI (Table 14). Detected by the automated register diff; every field here is as the register
+    publishes it and nothing has been inferred. Not yet researched or enriched. Runs 2 public/private
+    fund(s) as of Q1 2026 per the CMA's fund-count table. Also shows SAR 815.6m in discretionary/fund
+    AUM as of Q1 2026.
+  link: https://cma.gov.sa/AboutCMA/ResearchAndReports/opendata/Pages/default.aspx
+next_action: null

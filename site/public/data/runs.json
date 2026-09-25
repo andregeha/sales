@@ -580,5 +580,53 @@
     "id": "2026-09-24-103251",
     "ok": true,
     "started_at": "2026-09-24T10:32:51+00:00"
+  },
+  {
+    "commit": "a0df235b43b10db2bfdbefd59f416aa05b8aa654",
+    "connectors": [
+      {
+        "backfill": true,
+        "baseline": false,
+        "changes": 0,
+        "created": 31,
+        "error": null,
+        "new_on_register": 39,
+        "ok": true,
+        "partial": false,
+        "register": "sama-saudi",
+        "skipped": 8,
+        "source": "SAMA (Saudi Central Bank) register of licensed banks",
+        "total": 39
+      }
+    ],
+    "duration_s": 5.938,
+    "finished_at": "2026-09-25T10:03:09+00:00",
+    "id": "2026-09-25-100303",
+    "ok": true,
+    "started_at": "2026-09-25T10:03:03+00:00"
+  },
+  {
+    "commit": "a0df235b43b10db2bfdbefd59f416aa05b8aa654",
+    "connectors": [
+      {
+        "backfill": true,
+        "baseline": false,
+        "changes": 0,
+        "created": 132,
+        "error": null,
+        "new_on_register": 144,
+        "ok": true,
+        "partial": false,
+        "register": "cma-saudi-xlsx",
+        "skipped": 12,
+        "source": "CMA \"Institutions under supervision of CMA\" quarterly Excel workbook",
+        "total": 144
+      }
+    ],
+    "duration_s": 55.866,
+    "finished_at": "2026-09-25T10:04:05+00:00",
+    "id": "2026-09-25-100309",
+    "ok": true,
+    "started_at": "2026-09-25T10:03:09+00:00"
   }
 ]

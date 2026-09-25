@@ -61,6 +61,23 @@
     "consecutive_failures": 0,
     "history": [
       {
+        "count": 144,
+        "date": "2026-09-25"
+      }
+    ],
+    "last_success_date": "2026-09-25",
+    "latest_count": 144,
+    "note": null,
+    "partial": false,
+    "register": "cma-saudi-xlsx",
+    "regulator": "CMA (Saudi Arabia)",
+    "runs_seen": 1,
+    "status": "ok"
+  },
+  {
+    "consecutive_failures": 0,
+    "history": [
+      {
         "count": 93,
         "date": "2026-09-23"
       },
@@ -267,6 +284,23 @@
     "register": "rfp:world-bank",
     "regulator": "World Bank eProcure (procurement notices API)",
     "runs_seen": 3,
+    "status": "ok"
+  },
+  {
+    "consecutive_failures": 0,
+    "history": [
+      {
+        "count": 39,
+        "date": "2026-09-25"
+      }
+    ],
+    "last_success_date": "2026-09-25",
+    "latest_count": 39,
+    "note": null,
+    "partial": false,
+    "register": "sama-saudi",
+    "regulator": "SAMA (Saudi Central Bank)",
+    "runs_seen": 1,
     "status": "ok"
   }
 ]

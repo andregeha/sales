@@ -158,29 +158,48 @@ cells:
         name: CMA authorised persons
         connector: cma-saudi
         note: "PARTIAL — the page server-renders 36 of 242. Disappearances are NOT detected."
+      - kind: register
+        name: CMA "Institutions under supervision of CMA" quarterly Excel (Table 8, AUM per CMI)
+        connector: cma-saudi-xlsx
+        note: >-
+          122 firms carry an AUM figure; 11 of those are NOT also running funds (Table 14) and so
+          land here rather than as fund_manager. Carries an actual AUM in SAR million — a scoring
+          signal no other Saudi source publishes. No address, phone, email, website or licence date.
       - kind: graph
         name: GLEIF fund → manager relationships
         connector: gleif
         note: "Found SNB Capital and Jadwa Investment, two major managers absent from our slice of the CMA list."
     gap: |
-      The CMA register is read only in part: its API times out from Europe and the page renders a
-      recently-updated slice. We do NOT defeat the geo-restriction. Completing this cell needs
-      someone able to run the connector from inside Saudi Arabia.
+      The CMA's HTML register is still read only in part (its API times out from Europe and the page
+      renders a recently-updated slice); the Excel workbook now closes most of the resulting gap for
+      firms that run an AUM book, but the two sources overlap only partially and neither is the CMA's
+      full 242.
   - market: Saudi Arabia
     segment: fund_manager
     sources:
       - kind: register
         name: CMA authorised persons
         connector: cma-saudi
+      - kind: register
+        name: CMA "Institutions under supervision of CMA" quarterly Excel (Table 14, fund count per CMI)
+        connector: cma-saudi-xlsx
+        note: "127 firms actually running public/private funds — corroborated by an AUM figure (Table 8) for most of them. No address, phone, email or website."
       - kind: graph
         name: GLEIF fund → manager relationships
         connector: gleif
   - market: Saudi Arabia
     segment: bank
-    sources: []
-    gap: |
-      SAMA (the central bank) supervises Saudi banks and we read no SAMA source. The CMA register
-      covers capital-market activity, not deposit-taking, so it cannot stand in. Unbuilt, not empty.
+    sources:
+      - kind: register
+        name: SAMA (Saudi Central Bank) licensed banks
+        connector: sama-saudi
+        note: >-
+          All 39 SAMA-licensed banks (11 local, 24 foreign branches, 4 digital) — this closes the
+          cell completely, since SAMA licenses every Saudi bank and there is no larger population
+          still to find. Publishes a website per bank; no phone, no licence date (its `Created` field
+          is a CMS record date, not a licence date, and is deliberately not used as one). SAMA also
+          licenses 91 finance/finance-support companies (consumer and SME lending), deliberately NOT
+          ingested — adjacent per this file's own convention, not core.
   - market: Saudi Arabia
     segment: family_office
     sources: []

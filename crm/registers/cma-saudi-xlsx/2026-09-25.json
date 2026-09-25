@@ -1,0 +1,2446 @@
+{
+  "register": "cma-saudi-xlsx",
+  "regulator": "CMA (Saudi Arabia)",
+  "source_url": "https://cma.gov.sa/AboutCMA/ResearchAndReports/opendata/Pages/default.aspx",
+  "fetched_at": "2026-09-25T10:04:05+00:00",
+  "run_date": "2026-09-25",
+  "count": 144,
+  "entries": [
+    {
+      "key": "99hlala capital",
+      "name": "99Hlala Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); footnoted by the CMA as a holder of an investment fund management licence",
+      "legal_name": "تسعة وتسعون هللة المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 142.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "adeem financial",
+      "name": "Adeem Financial Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة أديم المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1,538.8m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "aditum capital",
+      "name": "Aditum Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة أديتم المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 520.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "afaq",
+      "name": "Afaq company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة آفاق المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1,674.9m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "al nefaie investment",
+      "name": "Al Nefaie Investment Group",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "مجموعة النفيعي للاستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 5,524.3m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "al rajhi capital",
+      "name": "Al Rajhi Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة الراجحي المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 171,850.3m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "al wasatah al maliah",
+      "name": "Al Wasatah Al Maliah Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة الوساطة المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 829.3m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "alawwal capital",
+      "name": "Alawwal Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة الأول كابيتال",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 953.6m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "albilad investment",
+      "name": "AlBilad Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة البلاد للاستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 44,033.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "alinma capital",
+      "name": "Alinma Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة الإنماء المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 127,021.5m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "alistithmar capital for financial securities brokerage alistithmar capital",
+      "name": "Alistithmar Capital for Financial Securities and Brokerage Company (Alistithmar Capital)",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة الاستثمار للأوراق المالية والوساطة (الاستثمار كابيتال)",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 42,729.8m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "aljazira capital",
+      "name": "AlJazira Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة الجزيرة للأسواق المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 31,802.2m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "alkhabeer capital",
+      "name": "Alkhabeer Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة الخبير المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 9,697.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "alkhair capital saudi arabia",
+      "name": "AlKhair Capital Saudi Arabia Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة الخير كابيتال السعودية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 2,786.6m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "alkhizanah capital",
+      "name": "AlKhizanah Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة الخزانة المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 4.5m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "aloula geojit capital",
+      "name": "Aloula Geojit Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); footnoted by the CMA as a holder of an investment fund management licence",
+      "legal_name": "شركة الأولى جوجيت كابيتال",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 37.5m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "alpha capital",
+      "name": "Alpha Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة ألفا المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 21,044.8m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "alteia capital",
+      "name": "Alteia Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Number of public/private funds per CMI (Table 14)",
+      "legal_name": "ألتيا كابيتال",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 3.0m per Number of public/private funds per CMI (Table 14), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "alternative capital",
+      "name": "Alternative Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة ألتيرناتيف كابيتال",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 4.0m per Number of public/private funds per CMI (Table 14), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "alternative emerging investments assets alteia capital",
+      "name": "Alternative Emerging Investments Assets Alteia Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "asset_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8)",
+      "legal_name": "ألتيا كابيتال",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 112.9m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "amwal capital almaliyah",
+      "name": "Amwal Capital Almaliyah",
+      "country": "Saudi Arabia",
+      "segment": "asset_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8)",
+      "legal_name": "أموال كابيتال المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 2,198.1m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "anb capital",
+      "name": "ANB Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة العربي المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 31,132.1m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "anfaal capital",
+      "name": "Anfaal Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); footnoted by the CMA as a holder of an investment fund management licence",
+      "legal_name": "شركة أنفال كابيتال",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 550.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "apex fundrock investment jsc",
+      "name": "Apex FundRock Investment JSC",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة ابيكس فاند روك للإستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 5.0m per Number of public/private funds per CMI (Table 14), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "arbah capital",
+      "name": "Arbah Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة أرباح المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1,332.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "arcapita capital",
+      "name": "Arcapita Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة آركابيتا المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 0.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "arch capital",
+      "name": "Arch Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "آرش المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1,215.4m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "areeb capital",
+      "name": "Areeb Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة أريب المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 7,901.3m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "artal capital",
+      "name": "Artal Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "أرتال المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 3,896.4m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "asbar alosool capital",
+      "name": "Asbar Alosool Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة اسبار الأصول المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 3.0m per Number of public/private funds per CMI (Table 14), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "ashmore investment saudi arabia",
+      "name": "Ashmore Investment Saudi Arabia Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة أشمور للاستثمار السعودية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 5,738.2m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "asyaf investment",
+      "name": "Asyaf Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة أسياف للاستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 138.2m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "audi capital",
+      "name": "Audi Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة عودة كابيتال",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 394.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "awaed alasool financial",
+      "name": "Awaed Alasool Financial Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة عوائد الأصول المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 2,593.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "bait al mal al khaleeji",
+      "name": "Bait Al Mal Al Khaleeji Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة بيت المال الخليجي",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 61.3m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "bayt alnomow capital",
+      "name": "Bayt Alnomow Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة بيت النمو المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 391.4m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "bim capital",
+      "name": "BIM Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة منجم تطوير الاعمال المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1.0m per Number of public/private funds per CMI (Table 14), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "black rock",
+      "name": "Black Rock",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة بلاك روك العربية السعودية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 740.5m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "blme capital",
+      "name": "BLME Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة بي ال ام إي المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 2,304.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "blominvest saudi arabia",
+      "name": "Blominvest Saudi Arabia Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة بلوم للاستثمار السعودية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 19,536.9m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "bnp pariba investment ksa",
+      "name": "BNP Pariba Investment Company KSA",
+      "country": "Saudi Arabia",
+      "segment": "asset_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8)",
+      "legal_name": "شركة بي إن بي باريبا السعودية للاستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 0.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "citigroup saudi arabia",
+      "name": "Citigroup Saudi Arabia",
+      "country": "Saudi Arabia",
+      "segment": "custodian",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM under custodial activity (Table 15)",
+      "legal_name": "شركة سيتي جروب العربية السعودية",
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "credit suisse saudi arabia",
+      "name": "Credit Suisse Saudi Arabia Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة كريديت سويس العربية السعودية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 0.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "delta alreadh capital",
+      "name": "Delta Alreadh Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "asset_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8)",
+      "legal_name": "دلتا الريادة المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 434.8m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "derayah financial corporation",
+      "name": "Derayah Financial Corporation Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة دراية المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 20,127.2m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "deutsche securities saudi arabia",
+      "name": "Deutsche Securities Saudi Arabia Company",
+      "country": "Saudi Arabia",
+      "segment": "custodian",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM under custodial activity (Table 15)",
+      "legal_name": "دويتشه العربية السعودية للأوراق المالية",
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "dinar investment",
+      "name": "Dinar Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة دينار للاستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1,434.5m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "dirham capital",
+      "name": "Dirham Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Number of public/private funds per CMI (Table 14); footnoted by the CMA as a holder of an investment fund management licence",
+      "legal_name": "شركة درهم المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 0.0m per Number of public/private funds per CMI (Table 14), Q3 2022, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "dom capital financial",
+      "name": "Dom Capital Financial Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة دوم كابيتال المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 42.5m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "drahim app investment",
+      "name": "Drahim App Investment Co.",
+      "country": "Saudi Arabia",
+      "segment": "asset_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8)",
+      "legal_name": "شركة تطبيق دراهم للاستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1,024.3m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "east bridge capital",
+      "name": "East Bridge Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Number of public/private funds per CMI (Table 14)",
+      "legal_name": "جسر الشرق المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 0.0m per Number of public/private funds per CMI (Table 14), Q1 2024, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "efg hermes ksa",
+      "name": "-  EFG-Hermes-KSA",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة المجموعة الماليةهيرميس السعودية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 0.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "ejada capital",
+      "name": "Ejada Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة إجادة المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 0.0m per Number of public/private funds per CMI (Table 14), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "emirates nbd capital ksa",
+      "name": "Emirates NBD Capital KSA",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة الإمارات دبي الوطني كابيتال السعودية المحدودة",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 3,045.1m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "erad partners capital",
+      "name": "Erad Partners Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة شركاء إيراد المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 2.5m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "faad capital partners",
+      "name": "FAAD Capital Partners Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة شركاء فاد المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 207.8m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "fab capital",
+      "name": "FAB Capital",
+      "country": "Saudi Arabia",
+      "segment": "custodian",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM under custodial activity (Table 15)",
+      "legal_name": "شركة فاب كابيتال المالية",
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "fim partners ksa",
+      "name": "FIM Partners KSA",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة أف آي أم بارتنرز كي أس أي",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 6,428.7m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "fisher investments arabia",
+      "name": "Fisher Investments Arabia Company",
+      "country": "Saudi Arabia",
+      "segment": "asset_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8)",
+      "legal_name": "شركة فيشر العربية للاستثمارات",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 754.8m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "forsah capital",
+      "name": "FORSAH CAPITAL",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة فرصة المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1,164.7m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "franklin templeton financial",
+      "name": "Franklin Templeton Financial Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة فرانكلين تمبلتون المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 7,839.6m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "gfh capital",
+      "name": "GFH Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة جي إف إتش المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 2,220.2m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "gib capital",
+      "name": "GIB Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة جي أي بي كابيتال",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 15,919.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "goldman sachs saudi arabia",
+      "name": "Goldman Sachs Saudi Arabia Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة جولدمان ساكس العربية السعودية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 0.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "greenstone saudi arabia",
+      "name": "Greenstone Saudi Arabia LLC",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة جرينستون العربية السعودية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 0.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "growth catalyst investment",
+      "name": "Growth Catalyst Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة محفز النمو للاستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 2.0m per Number of public/private funds per CMI (Table 14), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "gulf international investment",
+      "name": "Gulf International Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة الخليج الدولية للاستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 478.1m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "gulf investors asset management",
+      "name": "Gulf Investors Asset Management Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة المستثمرون الخليجيون لإدارة الأصول",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 116.6m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "gulf one capital",
+      "name": "Gulf One Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة جلف ون كابيتال",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 0.0m per AUM per Capital Market Institution (Table 8), Q3 2020, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "hamah capital",
+      "name": "Hamah Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة هامة المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 95.7m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "hasseef investment",
+      "name": "Hasseef Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة حصيف للاستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1.0m per Number of public/private funds per CMI (Table 14), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "hsbc saudi arabia",
+      "name": "HSBC Saudi Arabia",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة إتش إس بي سي العربية السعودية المحدودة",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 0.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "impact capital",
+      "name": "Impact Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة تأثير المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1,340.9m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "investcorp saudi arabia financial investment",
+      "name": "Investcorp Saudi Arabia Financial Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة انفستكورب السعودية للإستثمارات المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 479.8m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "investor for securities",
+      "name": "The Investor Company For Securities",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); footnoted by the CMA as a holder of an investment fund management licence",
+      "legal_name": "شركة المستثمر للأوراق المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 34.5m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "ithraa capital",
+      "name": "Ithraa Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة إثراء المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 0.0m per AUM per Capital Market Institution (Table 8), Q3 2020, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "itqan capital",
+      "name": "Itqan Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة إتقان كابيتال",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 4,555.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "j p morgan saudi arabia",
+      "name": "J.P. Morgan Saudi Arabia Company",
+      "country": "Saudi Arabia",
+      "segment": "custodian",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM under custodial activity (Table 15)",
+      "legal_name": "شركة جي. بي. مورقان العربية السعودية",
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "jadara investment",
+      "name": "Jadara Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة جدارة للاستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 2.0m per Number of public/private funds per CMI (Table 14), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "jadwa investment",
+      "name": "Jadwa Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة جدوى للاستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 103,322.4m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "joa capital",
+      "name": "Joa Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة جوا المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 91.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "kamco investment",
+      "name": "Kamco Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة كامكو للاستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1,163.6m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "khwarizmi capital",
+      "name": "Khwarizmi Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة الخوارزمي المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 248.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "lazard saudi arabia",
+      "name": "Lazard Saudi Arabia Limited Company",
+      "country": "Saudi Arabia",
+      "segment": "asset_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8)",
+      "legal_name": "شركة لازارد العربية السعودية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 311.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "malaz capital",
+      "name": "Malaz Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة الملز المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 4,322.7m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "marifa capital",
+      "name": "Marifa Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة معرفة المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 0.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "merak capital",
+      "name": "Merak Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة ميراك المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1,497.7m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "merrill lynch ksa",
+      "name": "Merrill Lynch KSA Company",
+      "country": "Saudi Arabia",
+      "segment": "custodian",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM under custodial activity (Table 15)",
+      "legal_name": "شركة ميريل لنش المملكة العربية السعودية",
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "middle east financial investment",
+      "name": "Middle East Financial Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة الشرق الأوسط للاستثمار المالي",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 4,765.4m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "miyar capital",
+      "name": "Miyar Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة معيار المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 4,898.8m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "morgan stanley saudi arabia",
+      "name": "Morgan Stanley Saudi Arabia Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة مورغان ستانلي السعودية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 15,167.8m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "mulkia investment",
+      "name": "Mulkia Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة ملكيه للاستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 4,192.7m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "musharaka alsafaqat lilistithmar",
+      "name": "Musharaka Alsafaqat Lilistithmar Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة مشاركة الصفقات للإستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 10.0m per Number of public/private funds per CMI (Table 14), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "musharaka capital",
+      "name": "Musharaka Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة مشاركة المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 3,432.2m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "najm almarzam for investment",
+      "name": "Najm Almarzam Company for Investment",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة نجم المرزم للاستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 917.9m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "nama portfolio capital",
+      "name": "Nama Portfolio Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة محفظة نما المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 72.2m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "nama ventures capital",
+      "name": "Nama Ventures Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة نما فنتشرز المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1.0m per Number of public/private funds per CMI (Table 14), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "nitaq capital",
+      "name": "Nitaq Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة نطاق المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1.0m per Number of public/private funds per CMI (Table 14), Q1 2024, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "nomw capital",
+      "name": "Nomw Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة النمو المالية للاستشارات المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 9,234.8m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "northern trust of saudi arabia",
+      "name": "The Northern Trust Company of Saudi Arabia",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة نورذن ترست العربية السعودية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 3,690.5m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "osool bakheet investment",
+      "name": "Osool & Bakheet Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة أصول و بخيت الاستثمارية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 3,081.1m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "oud capital",
+      "name": "Oud Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة عود المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 3.0m per Number of public/private funds per CMI (Table 14), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "pinnacle capital",
+      "name": "Pinnacle Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة القمة الاولى للأستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 512.1m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "portfolios investment",
+      "name": "Portfolios Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة محافظ للأستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 815.6m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "quencia capital",
+      "name": "Quencia Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة كوانسيا المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 88.8m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "rasana capital",
+      "name": "Rasana Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة رصانة المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1,839.7m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "rawasi advanced investment",
+      "name": "Rawasi Advanced Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة رواسي المتقدمة للاستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 191.4m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "raz amwal investment",
+      "name": "Raz Amwal Investment",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة راز أموال للاستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 946.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "razeen financial",
+      "name": "Razeen Financial Company",
+      "country": "Saudi Arabia",
+      "segment": "asset_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8)",
+      "legal_name": "شركة رزين المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 42.8m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "rekaz national capital",
+      "name": "Rekaz National Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة ركاز الوطنية المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 490.6m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "riyad capital",
+      "name": "Riyad Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة الرياض المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 97,920.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "sab invest",
+      "name": "SAB INVEST Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة الأول للاستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 36,141.1m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "sabeen investment",
+      "name": "Sabeen Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة سبعين للأستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1,396.7m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "sadara capital",
+      "name": "Sadara Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "صدارة كابيتال",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1,322.4m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "sahm capital financial",
+      "name": "Sahm Capital Financial Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة سهم كابيتال المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 5.5m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "samba capital investment management",
+      "name": "SAMBA Capital & Investment Management Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة سامبا للأصول وإدارة الإستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 11,193.7m per AUM per Capital Market Institution (Table 8), Q3 2021, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "saudi economic development securities",
+      "name": "Saudi Economic and Development Securities Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "Number of public/private funds per CMI (Table 14)",
+      "legal_name": "الشركة السعودية للاقتصاد والتنمية للأوراق المالية (سدكو كابيتال)",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 77.0m per Number of public/private funds per CMI (Table 14), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "saudi economic development securities sedco capital",
+      "name": "Saudi Economic and Development Securities Company (SEDCO Capital)",
+      "country": "Saudi Arabia",
+      "segment": "asset_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); AUM under custodial activity (Table 15)",
+      "legal_name": "الشركة السعودية للاقتصاد والتنمية للأوراق المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 12,828.2m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "saudi fransi capital",
+      "name": "Saudi Fransi Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة السعودي الفرنسي كابيتال",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 26,213.8m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "saudi kuwaiti finance house",
+      "name": "Saudi Kuwaiti Finance House Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة بيت التمويل السعودي الكويتي",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 629.6m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "saudi venture capital investment",
+      "name": "Saudi Venture Capital Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "فينشر كابيتال الاستثمارية السعودية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 0.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "seedra investment",
+      "name": "Seedra Investment Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة سدرة للإستثمار",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 290.6m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "sharaka capital",
+      "name": "Sharaka Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة شراكة المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 368.6m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "shuaa capital saudi arabia",
+      "name": "Shuaa Capital Saudi Arabia Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة شعاع كابيتال العربية السعودية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 6.7m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "sico capital",
+      "name": "SICO Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة سيكو المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 6,025.5m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "sidra capital",
+      "name": "Sidra Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة سدرة المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 5,943.6m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "snb capital",
+      "name": "SNB Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة الأهلي المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 283,200.1m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "standard chartered capital saudi arabia",
+      "name": "Standard Chartered Capital Saudi Arabia",
+      "country": "Saudi Arabia",
+      "segment": "custodian",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM under custodial activity (Table 15)",
+      "legal_name": "ستاندرد تشارترد كابيتال العربية السعودية",
+      "multi_asset": null,
+      "third_party": null,
+      "evidence": null
+    },
+    {
+      "key": "state street saudi arabia financial solution",
+      "name": "State Street Saudi Arabia Financial Solution Company",
+      "country": "Saudi Arabia",
+      "segment": "asset_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); AUM under custodial activity (Table 15); footnoted by the CMA as a holder of an investment fund management licence",
+      "legal_name": "ستايت ستريت السعودية للحلول المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 11,899.6m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "sukna capital",
+      "name": "Sukna Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة سكنى المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 67.6m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "swicorp",
+      "name": "Swicorp Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); footnoted by the CMA as a holder of an investment fund management licence",
+      "legal_name": "شركة سويكورب",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 0.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "tam capital",
+      "name": "TAM Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة تام المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 118.1m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "tamra capital",
+      "name": "Tamra Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "asset_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8)",
+      "legal_name": "شركة تمرة المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 3,606.4m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "tanmia capital",
+      "name": "Tanmia Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة تنمية المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 344.4m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "tatimah capital",
+      "name": "Tatimah Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة تتمة المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 5,114.6m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "tharawat tuwaiq financial",
+      "name": "Tharawat Tuwaiq Financial Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة ثروات طويق المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 56.9m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "tharwat for financial securities",
+      "name": "Tharwat For Financial Securities",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة ثروات للاوراق المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 7,468.8m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "ubs saudi arabia",
+      "name": "UBS Saudi Arabia Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة يو بي إس العربية السعودية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 0.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "united financial house",
+      "name": "United Financial House Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); footnoted by the CMA as a holder of an investment fund management licence",
+      "legal_name": "شركة بيت الاتحاد المالي",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 255.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "value capital",
+      "name": "Value Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة قيمة المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 1,490.7m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "watani wealth management",
+      "name": "Watani Wealth Management Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة الوطني لإدارة الثروات",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 5,699.0m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "watheeq capital",
+      "name": "Watheeq Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة وثيق المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 3,958.1m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "winveston capital",
+      "name": "WinVeston Capital Company",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14)",
+      "legal_name": "شركة وينفستن المالية",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 18.3m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    },
+    {
+      "key": "yaqeen capital",
+      "name": "Yaqeen Capital",
+      "country": "Saudi Arabia",
+      "segment": "fund_manager",
+      "city": null,
+      "website": null,
+      "phone": null,
+      "licence_date": null,
+      "licence_type": "AUM per Capital Market Institution (Table 8); Number of public/private funds per CMI (Table 14); AUM under custodial activity (Table 15)",
+      "legal_name": "شركة يقين المالية (يقين كابيتال)",
+      "multi_asset": null,
+      "third_party": true,
+      "evidence": {
+        "third_party": "SAR 2,502.1m per AUM per Capital Market Institution (Table 8), Q1 2026, per the CMA's own quarterly report"
+      }
+    }
+  ]
+}

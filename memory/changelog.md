@@ -1181,3 +1181,100 @@ Recorded on the record as a decision, so nobody re-derives it.
    worse than none, because it puts a wrong fact in the first sentence we say to a client.
 
 Every draft is logged as an `email_drafted` activity. Nothing has been sent.
+
+## 2026-09-25 — two Saudi register connectors, closing Saudi × bank and tripling Saudi asset/fund coverage
+
+Saudi was our thinnest market (47 records against 810+ for the UAE), per `plan/saudi-sources.md`.
+Built the two sources that note identified, both read-only, both verified live before writing a line
+of parsing code.
+
+**`tools/connectors/sama_saudi.py` — SAMA's licensed-banks JSON API.** Found by reading the register
+page's own JS rather than guessing: a plain, unauthenticated `PortalHandler.ashx?op=LoadItems&...`
+call returns all 39 licensed banks (11 local, 24 foreign branches, 4 digital) in one call, with an
+English website for most. Closes **Saudi × bank completely** — SAMA licenses every Saudi bank, so
+there is no larger population left to find. The register also carries 91 finance/finance-support
+companies (`LicensedFinance`); deliberately **not fetched at all**, consumer/SME lending being
+adjacent, not core, per `knowledge/market/landscape.md`. `Created` looks like a licence date and
+is not one (it's a CMS record-save date, confirmed day-first by a `24/02/2022` row) — left `None`
+rather than trusted, so no false trigger can ever fire from it.
+
+**`tools/connectors/cma_saudi_xlsx.py` — a bulk Excel workbook the existing HTML connector never
+knew about.** Found via the CMA's sitemap (same method that worked for the UAE), not the nav menu:
+a quarterly "Institutions under supervision of CMA" `.xlsx`, no auth, no WAF. Reads three of its 17
+sheets (bilingual, Arabic sheet names — located by content, not name, with a title-string check that
+fails loudly if a future edition reorders them): Table 8 (AUM per CMI, 122 firms, an actual SAR
+figure — a scoring signal Saudi never had before), Table 14 (fund count, 127 firms, promotes a firm
+to `fund_manager` over plain `asset_manager`), Table 15 (custodial AUM, 43 firms). 144 distinct firms
+total. Coexists with, and does not replace, `cma_saudi.py` (register name `cma-saudi-xlsx`, kept
+distinct from `cma-saudi` per the task's instruction) — that one still uniquely carries per-firm
+licensed-activity codes for its own 36-of-242 slice.
+
+Two things worth flagging rather than burying:
+- **The "latest non-empty quarter" rule mattered in practice, not just in theory.** Several firms
+  publish `"NA"` (the workbook's own marker) in their most recent quarter while an earlier one is
+  real — the connector walks backward and skips non-numeric cells rather than reading the newest
+  column blindly, with a test proving both the normal case and the fallback.
+- **No stable per-firm ID exists across quarterly editions** (the workbook's own row-order `#`
+  resets every release) — this connector joins the three tables, and keys the CRM record, on the
+  normalised English name instead. A firm renaming itself between one quarterly edition and the next
+  will look like a delisting-and-relisting rather than a rename. Logged as open question #33 below,
+  not silently assumed away.
+
+Neither source publishes a licence date, so a plain (non-backfill) run of either creates **zero**
+CRM records by design — the base pipeline's baseline window is licence-date-gated, and inventing a
+date to get around that would be exactly the kind of guess this workspace refuses. `--backfill
+--dry-run` previews **31 net-new banks** from SAMA (8 of 39 already tracked, mostly via the GLEIF
+sweep) and **132 net-new firms** from the CMA workbook (12 of 144 already tracked) — **163 net-new
+Saudi records**, before Andre runs the real backfill, taking Saudi from 47 toward roughly 210–250
+depending on final dedup. `knowledge/market/source-coverage.yaml` updated: Saudi × bank now has a
+real instrument instead of a `gap:`, and Saudi × asset_manager / fund_manager each gained a second,
+complementary source.
+
+Both registered in `run_all.py`'s `CONNECTOR_MODULES`. Tests: `test_sama_saudi.py` (14, stubs
+`http_get`) and `test_cma_saudi_xlsx.py` (17, builds a tiny 16-sheet workbook with `openpyxl` and
+round-trips it through a real `save()`/`load_workbook()` so the actual parsing path is exercised).
+`python -m pytest tools/ -q` — 222 passed (was 191). Per the task, no real backfill was run and I did
+not commit — that is Andre's call, and he does both himself.
+
+⚠ **Found after the fact, not caused by me:** while this work was in progress, a concurrent session's
+commit (`a0df235`, unrelated Gulf-RFP-sources work) swept both new connector files and the
+`run_all.py` registration into its own commit and message — a shared-working-directory collision, not
+a commit I ran. The content is correct and tested; only the attribution/message is wrong. Andre may
+want to fix that history; I did not touch it.
+
+## 2026-09-25 — Saudi 47 → 210, and the bank cell finally closed
+
+Two connectors built and backfilled.
+
+**`sama_saudi.py`** — Saudi Central Bank's licensed-entities API, found by reading the register
+page's own JS. **All 39 licensed banks** (11 local, 24 foreign branches, 4 digital), with English
+names and websites. **Saudi × bank: 0 → 31 records**, and the coverage view's "no instrument at all"
+for that cell is gone. ⚠ `Created` is a CMS timestamp and is deliberately NOT mapped to
+`licence_date` — it is kept in `raw` and nothing false is recorded.
+⚠ The 91 finance/finance-support companies are never fetched: consumer and SME lending is not
+portfolio management, and that is a decision stated in the docstring rather than an omission.
+
+**`cma_saudi_xlsx.py`** — the CMA's quarterly "Institutions under supervision" workbook, a source the
+existing HTML connector never knew about. 144 firms across three tables. ⚠ **119 Saudi records now
+carry an AUM figure in SAR million** — a scoring signal we hold for no other market. Sheet names are
+Arabic, so sheets are found by content-matching their headers with a title sanity-check that fails
+loudly if a future edition reorders them, and the "latest non-empty quarter" walk skips the
+workbook's own `"NA"` marker.
+
+| | before | after |
+|---|---:|---:|
+| Saudi records | 47 | **210** |
+| …banks | 0 | **31** |
+| …with an AUM figure | 0 | **119** |
+| …with a website | 11 | 47 |
+| CRM total | 1,872 | **2,035** |
+
+Unfed coverage cells: 7 → **6**. What remains is family offices in three markets and all of
+Lebanon — segments that genuinely do not publish, not instruments we have failed to build.
+
+⚠ **A mistake of mine in the history.** Commit `a0df235`, whose message is about the Gulf RFP survey,
+also swept in `sama_saudi.py`, `cma_saudi_xlsx.py` and their `run_all.py` registration — I ran
+`git add -A` while a builder agent was still writing those files in the same working directory. The
+content is correct and fully tested; only the commit message is misleading about what it contains.
+Recorded here rather than rewriting pushed history. **The lesson: stage specific paths, not `-A`,
+while background agents are writing.**
