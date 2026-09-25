@@ -27339,6 +27339,28 @@
     "why": "GLEIF confirms the entity exists (LEI 8945003W420UYBT8XE71). WARNING: it is unclear whether this is the entity above under an older name or a separate one — GLEIF gives it a different LEI and legal name, and no independent description of its activity was found."
   },
   {
+    "city": null,
+    "country": "Lebanon",
+    "created": null,
+    "decision": null,
+    "decision_date": null,
+    "decision_reason": null,
+    "decision_slug": null,
+    "evidence_url": "https://www.abl.org.lb/arabic/about-abl/members",
+    "extra": {
+      "weak_signal": "Lebanon is frozen pending the Law 23/2025 survivor question",
+      "website": "https://www.lucid-investment.com"
+    },
+    "matched_slug": null,
+    "name": "LUCID Investment Bank",
+    "score": 7,
+    "score_reasoning": "proposed by abl-lebanon (5); name contains \"investment\" (6); guessed segment bank is one we sell to (8); Lebanon is frozen pending the Law 23/2025 survivor question (-12). ⚠ This ranks a PROPOSAL, not a researched firm — it is not the ICP score and carries none of its authority.",
+    "segment_guess": "bank",
+    "source": "abl-lebanon",
+    "source_id": null,
+    "why": "Listed by the Association of Banks in Lebanon (ABL) as a member. ⚠ Lebanon is FROZEN pending Andre's guidance on which banks are on the survivor track under Law 23/2025 (open question #2) — so this is proposed, not recorded. ABL membership proves the bank exists and is part of the sector; it says nothing about whether it survives restructuring, and creating records for banks that may be wound down would put casualties in our pipeline. an investment bank — closest of this batch to our segment"
+  },
+  {
     "city": "Dubai",
     "country": "UAE",
     "created": null,
@@ -32221,6 +32243,72 @@
     "source": "dfsa-difc-broad",
     "source_id": "F008013",
     "why": "DFSA register: DFSA-authorised to advise on financial products. ⚠ This category mixes genuine wealth managers with insurance advisers, credit advisers and corporate-finance boutiques"
+  },
+  {
+    "city": null,
+    "country": "Lebanon",
+    "created": null,
+    "decision": null,
+    "decision_date": null,
+    "decision_reason": null,
+    "decision_slug": null,
+    "evidence_url": "https://www.abl.org.lb/arabic/about-abl/members",
+    "extra": {
+      "weak_signal": "Lebanon is frozen pending the Law 23/2025 survivor question",
+      "website": "https://www.banque-habitat.com.lb"
+    },
+    "matched_slug": null,
+    "name": "Banque de l'Habitat",
+    "score": 1,
+    "score_reasoning": "proposed by abl-lebanon (5); guessed segment bank is one we sell to (8); Lebanon is frozen pending the Law 23/2025 survivor question (-12). ⚠ This ranks a PROPOSAL, not a researched firm — it is not the ICP score and carries none of its authority.",
+    "segment_guess": "bank",
+    "source": "abl-lebanon",
+    "source_id": null,
+    "why": "Listed by the Association of Banks in Lebanon (ABL) as a member. ⚠ Lebanon is FROZEN pending Andre's guidance on which banks are on the survivor track under Law 23/2025 (open question #2) — so this is proposed, not recorded. ABL membership proves the bank exists and is part of the sector; it says nothing about whether it survives restructuring, and creating records for banks that may be wound down would put casualties in our pipeline. a housing-finance bank; ⚠ likely out of segment, mortgage lending is not portfolio management"
+  },
+  {
+    "city": null,
+    "country": "Lebanon",
+    "created": null,
+    "decision": null,
+    "decision_date": null,
+    "decision_reason": null,
+    "decision_slug": null,
+    "evidence_url": "https://www.abl.org.lb/arabic/about-abl/members",
+    "extra": {
+      "weak_signal": "Lebanon is frozen pending the Law 23/2025 survivor question",
+      "website": "https://www.bml.com.lb"
+    },
+    "matched_slug": null,
+    "name": "Banque Misr Liban (BML)",
+    "score": 1,
+    "score_reasoning": "proposed by abl-lebanon (5); guessed segment bank is one we sell to (8); Lebanon is frozen pending the Law 23/2025 survivor question (-12). ⚠ This ranks a PROPOSAL, not a researched firm — it is not the ICP score and carries none of its authority.",
+    "segment_guess": "bank",
+    "source": "abl-lebanon",
+    "source_id": null,
+    "why": "Listed by the Association of Banks in Lebanon (ABL) as a member. ⚠ Lebanon is FROZEN pending Andre's guidance on which banks are on the survivor track under Law 23/2025 (open question #2) — so this is proposed, not recorded. ABL membership proves the bank exists and is part of the sector; it says nothing about whether it survives restructuring, and creating records for banks that may be wound down would put casualties in our pipeline. the Lebanese arm of Banque Misr"
+  },
+  {
+    "city": null,
+    "country": "Lebanon",
+    "created": null,
+    "decision": null,
+    "decision_date": null,
+    "decision_reason": null,
+    "decision_slug": null,
+    "evidence_url": "https://www.abl.org.lb/arabic/about-abl/members",
+    "extra": {
+      "weak_signal": "Lebanon is frozen pending the Law 23/2025 survivor question",
+      "website": "https://www.saradarbank.com"
+    },
+    "matched_slug": null,
+    "name": "Saradar Bank",
+    "score": 1,
+    "score_reasoning": "proposed by abl-lebanon (5); guessed segment bank is one we sell to (8); Lebanon is frozen pending the Law 23/2025 survivor question (-12). ⚠ This ranks a PROPOSAL, not a researched firm — it is not the ICP score and carries none of its authority.",
+    "segment_guess": "bank",
+    "source": "abl-lebanon",
+    "source_id": null,
+    "why": "Listed by the Association of Banks in Lebanon (ABL) as a member. ⚠ Lebanon is FROZEN pending Andre's guidance on which banks are on the survivor track under Law 23/2025 (open question #2) — so this is proposed, not recorded. ABL membership proves the bank exists and is part of the sector; it says nothing about whether it survives restructuring, and creating records for banks that may be wound down would put casualties in our pipeline. a digital-forward Lebanese bank per its own site"
   },
   {
     "city": "Dubai",

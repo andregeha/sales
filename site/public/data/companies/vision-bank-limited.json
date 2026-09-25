@@ -11,6 +11,12 @@
       "link": null,
       "summary": "GLEIF enrichment: LEI 25490027SAB0DJXC4I46 found for this firm (matched on name + country). Filled legal_name 'Vision Bank Limited'. Legal form per GLEIF: OSE2. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured field. Match was made on normalized name + country only, not a second identifier — treat as provisional and challenge if it looks wrong. Record: https://search.gleif.org/#/record/25490027SAB0DJXC4I46",
       "type": "research"
+    },
+    {
+      "date": "2026-09-25",
+      "link": null,
+      "summary": "⚠ NAME COLLISION. This record is the UAE entity, Vision Bank Limited, ADGM-regulated corporate banking. A completely separate SAMA-licensed digital consumer bank also trades as Vision Bank in Saudi Arabia (visionbank.com.sa). We hold only the UAE one. Do not merge them and do not attach Saudi press about the other to this record.",
+      "type": "note"
     }
   ],
   "city": "Abu Dhabi",
@@ -70,6 +76,6 @@
     "fsra"
   ],
   "trigger": null,
-  "updated": "2026-09-23",
+  "updated": "2026-09-25",
   "website": null
 }

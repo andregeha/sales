@@ -1278,3 +1278,33 @@ also swept in `sama_saudi.py`, `cma_saudi_xlsx.py` and their `run_all.py` regist
 content is correct and fully tested; only the commit message is misleading about what it contains.
 Recorded here rather than rewriting pushed history. **The lesson: stage specific paths, not `-A`,
 while background agents are writing.**
+
+## 2026-09-25 — where a regulator will not publish, the industry body sometimes will
+
+Tested that idea against the two markets where regulators block us.
+
+**UAE Banks Federation** — `uaebf.ae` fails **SSL certificate verification**. ⚠ Not bypassed. A
+certificate that will not verify means we cannot be sure we are talking to the real site, and data
+we would put into the CRM and later act on is exactly the wrong place to accept that. Recorded as
+unreachable-for-us rather than worked around.
+
+**Association of Banks in Lebanon** — reachable, and it publishes a member list **with each bank's
+own website**, server-rendered. 22 distinct bank websites extracted.
+
+⚠ **But the yield is small, and the reason is good news:** we already hold Byblos, Fransabank, SGBL,
+BBAC, BLC, Cedrus Invest, Banque Libano-Française and Federal Bank. Lebanon's coverage was better
+than I had been treating it. Genuinely new: **four** — Saradar Bank, LUCID Investment Bank, Banque
+de l'Habitat and Banque Misr Liban.
+
+⚠ **Proposed as candidates, not created as records.** Lebanon is frozen pending Andre's answer on
+which banks are on the survivor track under Law 23/2025 (open question #2). ABL membership proves a
+bank exists and is part of the sector; it says nothing about whether it survives restructuring, and
+creating records for banks that may be wound down would put casualties in the pipeline.
+
+⚠ Also caught while reading the list: `arabbank.com`, `intesasanpaolo.com` and `jpmorganchase.com`
+appear as ABL member links — those are **global parent sites**, not Lebanese entities. Adding
+"Banca Intesa Sanpaolo" as a Lebanese bank on the strength of a member-directory hyperlink would
+have been a straightforward error. Not ingested.
+
+And **BLOM and Bank Audi are existing clients** with folders in `accounts/` — context and proof, not
+pipeline. Neither was touched.

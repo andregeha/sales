@@ -5,6 +5,12 @@
       "link": "https://www.adgm.com/public-registers/fsra",
       "summary": "Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 200020, authorised 2025-04-08, Accepting Deposits. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Maryah Island, 1, Floor 9, Al Sarab Tower\nADGM Square, Al Maryah Island",
       "type": "research"
+    },
+    {
+      "date": "2026-09-25",
+      "link": null,
+      "summary": "⚠ The website on this record (dhabi.com) fails DNS resolution — it is not a live site. Left in place rather than deleted because it came from the register and may be a transcription of what the firm filed, but it is not a working route and the firm's identity is unresolved.",
+      "type": "research"
     }
   ],
   "city": "Abu Dhabi",
@@ -64,6 +70,6 @@
     "fsra"
   ],
   "trigger": "licence granted 2025-04-08, still early-stage but not brand new (12)",
-  "updated": "2026-09-22",
+  "updated": "2026-09-25",
   "website": "https://www.dhabi.com"
 }

@@ -19143,7 +19143,7 @@
       "fsra"
     ],
     "trigger": "licence granted 2025-04-08, still early-stage but not brand new (12)",
-    "updated": "2026-09-22",
+    "updated": "2026-09-25",
     "website": "https://www.dhabi.com"
   },
   {
@@ -22197,7 +22197,7 @@
     "segment": "bank",
     "slug": "ez-bank",
     "stage": "identified",
-    "status": "nurture",
+    "status": "qualified",
     "tags": [
       "sama-saudi",
       "register-sourced",
@@ -22206,9 +22206,9 @@
       "saudi-arabia",
       "sama"
     ],
-    "trigger": null,
+    "trigger": "a brand-new SAMA-licensed digital bank — a joint venture of Ajlan & Bros and QNB announced September 2025",
     "updated": "2026-09-25",
-    "website": "https://www.sama.gov.sa/ar-SA/Pages/default.aspx"
+    "website": null
   },
   {
     "city": "PARIS",
@@ -51505,7 +51505,7 @@
       "fsra"
     ],
     "trigger": null,
-    "updated": "2026-09-23",
+    "updated": "2026-09-25",
     "website": null
   },
   {
