@@ -1338,3 +1338,30 @@ record says so.
 **This matters for Andre's bank-RFP question specifically:** we now hold 57 UAE banks against the
 ~60 CBUAE licenses, so the population we could watch is close to complete even though the regulator's
 own list stays shut.
+
+## 2026-09-25 — working the candidate queue down: 729 → 570, every decision with a reason
+
+Not by lowering the bar, and not by deleting anything.
+
+**37 were duplicates hiding in plain sight.** 25 matched records we already hold once the queue was
+re-resolved against the improved matcher (they had been written before it existed). Another **12 were
+SIRENE's naming convention**: it publishes `LEGAL NAME (TRADE NAME)`, and the trailing parenthetical
+dragged otherwise-identical names — Amundi Asset Management, Edmond de Rothschild AM — just below
+the deliberately-conservative 0.97 identity threshold. Resolving on the name with the suffix stripped
+matched them exactly.
+
+**122 rejected on three categorical calls**, each argued from what the data shows:
+
+| Call | Count | Reason |
+|---|---:|---|
+| SIRENE `64.30Z` with no management signal | 88 | The code is nominally "fonds de placement" and is in practice a holding/participation code — the bucket contains **Boralex**, a renewable-energy company, and a supermarket group's finance arm. ⚠ And a fund *vehicle* is not a buyer; its manager is. |
+| SIRENE `66.12Z` whose name states another business | 16 | The code is self-declared securities brokerage; the names say building works, bureau de change, insurance, commodities. A firm's own name is better evidence than the code it chose for itself. |
+| DIFC advisory arms of global asset managers | 18 | Invesco, Pictet AM, Baring, Nomura AM, Mitsubishi UFJ, ICICI Prudential and peers hold that licence to distribute the parent's funds. Same reasoning as the representative offices: the decision sits at the parent, which runs its own global infrastructure and in several cases sells portfolio systems itself. |
+
+⚠ **Regional managers in that same DIFC bucket were deliberately left waiting, not swept up with the
+global names.** Impaxis Asset Management Middle East and Big Tree Asset Management are real
+prospects; rejecting a whole bucket because most of it is wrong is how the genuinely good rows get
+lost. That distinction is the entire reason this is a queue and not a filter.
+
+Decisions now stand at **396 rejected · 51 accepted · 29 deferred**, all rendered on the Candidates
+view with their reasoning.
