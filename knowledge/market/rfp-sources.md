@@ -311,3 +311,16 @@ sector filters (banks, asset managers, insurers, public funds).
 
 *Compiled 2026-09-22 by sales research, for Andre Geha / OFS Business Development. Sources are
 search-indexed as of that date (see verification note above) — re-verify before operational use.*
+
+## Correction, 2026-09-25 — Lebanon's PPA IS reachable
+
+This file previously recorded Lebanon's Public Procurement Authority as unconfirmed/unreachable.
+**That is wrong.** Probed live 2026-09-25: the PPA portal is up, structured, and carries a
+**"Banking and Financial Services" category** with **Banque du Liban as a registered buyer** — and
+BDL's own homepage links its Procurement page straight to a filtered PPA URL. Measured: 30 active
+tenders, 3 of them BDL (one a historical IT/licensing-support award).
+
+⚠ It remains a thin signal, not a feed: central-bank IT procurement surfacing publicly is rare, and
+our actual buyers — private banks, family offices, asset and fund managers — publish nothing in any
+of the four markets. But "we could not reach it" was simply untrue and would have stopped someone
+looking again.

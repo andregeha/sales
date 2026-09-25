@@ -36,10 +36,12 @@ from base import REPO_ROOT, ConnectorError, format_report  # noqa: E402
 CONNECTOR_MODULES = [
     "amf_france",
     "cma_saudi",
+    "cma_saudi_xlsx",
     "cma_uae",
     "dfsa_difc",
     "fsra_adgm",
     "regafi_france",
+    "sama_saudi",
 ]
 
 #: Sources that are NOT register connectors but must still report their health into the same run
