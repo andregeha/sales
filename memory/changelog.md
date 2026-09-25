@@ -1111,3 +1111,35 @@ BNP Paribas Wealth Management (DIFC). ⚠ Treating that category as uniformly lo
 on average and wrong about a specific cluster — a private bank holds an advisory licence *because*
 advising clients is its business. Pictet, RBC and CA Indosuez Abu Dhabi were excluded as
 representative offices, each with its source.
+
+## 2026-09-25 — cleaning the sendable queue before writing to anyone
+
+With 73 firms holding both a trigger and an email, the next step was outreach. Inspecting the queue
+first was worth it: **23 of the 73 had an email whose domain was not the firm's**, and five of those
+were an individual's **personal free-mail account** published on the FSRA register as a firm contact
+— `normanuhde@yahoo.com`, `omar.newera@gmail.com`, `jaluipradeep@gmail.com`,
+`compliance.menacapital@gmail.com`, `karine.ugarte@gmail.com`.
+
+⚠ **A regulator publishing someone's Gmail does not make it a business channel.** A cold sales email
+to a private mailbox is poor practice, hard to justify in the EU, and precisely the kind of touch
+that costs more than it earns. All five were removed as contact routes, with the reason recorded on
+the contact and the address left on the public register if it is ever needed for verification.
+Sendable: 73 → **69**.
+
+The remaining mismatches are mostly legitimate and were left alone — a group address at `bankfab.com`
+for FAB Asset Management or `hsbc.com` for an HSBC entity is a real route. But several are a
+corporate-services agent rather than the firm (`jacqueline.petts@xantium.com` for Tudor Capital,
+`aisha@jawanpartners.com` for VentureWave), which is worth knowing before anyone writes: that mail
+reaches the firm's administrator, not the firm.
+
+### First outreach batch commissioned
+Six drafts: Barjeel Geojit (fund launch with a live NFO window, and a named CEO), ABS Middle East and
+ASB Capital (brand-new DIFC booking centres), Amaltas Partners (change of control), Zhao Capital
+(licence 20 days old), and Ark Capital.
+
+⚠ **Ark Capital was briefed as a judgement call, not a template.** Its trigger is a DFSA fine for
+systems-and-controls failings — the strongest signal we hold and the worst thing to lead with.
+Opening with a fine reads as circling a wounded animal, and this workspace's own rule is that
+security is presented as a posture and positively, never as someone's findings thrown back at them.
+The writer was told to make the timing evident without naming the fine, or to draft nothing and say
+so. Refusing is a valid answer.

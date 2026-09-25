@@ -29,18 +29,22 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-23'
+updated: '2026-09-25'
 contacts:
 - name: Liongevity Capital Limited — contact published on the FSRA register
   title: General enquiries
   role: unknown
-  email: jaluipradeep@gmail.com
+  email: null
   phone: +971 581199683
   linkedin: null
   language: en
-  notes: Email and/or telephone exactly as the FSRA publishes them on its own public register — not guessed,
-    not pattern-inferred. ⚠ The address the regulator holds is often a named individual's work address
+  notes: 'Email and/or telephone exactly as the FSRA publishes them on its own public register — not guessed,
+    not pattern-inferred. ⚠ The address the regulator holds is often a named individual''s work address
     rather than a general inbox; check who it belongs to before writing, and treat it as a real person.
+    ⚠ A personal free-mail address (jaluipradeep@gmail.com) was published for this firm on the regulator''s
+    register and has been REMOVED as a contact route. It is an individual''s private mailbox, not a business
+    channel: cold-mailing it is poor practice and, in the EU, hard to justify. The address remains on
+    the public register if it is ever needed for verification.'
   source: FSRA public register, https://www.adgm.com/public-registers/fsra/firms/financial-firms/liongevity-capital-limited-250026
 fit:
   score: 73
@@ -68,5 +72,11 @@ activities:
     Shares. crm/SCHEMA.md has no `lei` field, so the LEI itself lives only in this note, not a structured
     field. Match was made on normalized name + country only, not a second identifier — treat as provisional
     and challenge if it looks wrong. Record: https://search.gleif.org/#/record/984500CUB14ZD2B42C79'
+  link: null
+- date: '2026-09-25'
+  type: research
+  summary: Removed a personal free-mail address as a contact route. A regulator publishing someone's Gmail
+    or Yahoo account does not make it a business channel, and an unsolicited sales email to a private
+    mailbox is the kind of touch that costs more than it earns.
   link: null
 next_action: null

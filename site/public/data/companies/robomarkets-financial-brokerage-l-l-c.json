@@ -5,16 +5,22 @@
       "link": "https://www.uaecma.gov.ae/en/open-data/licensed-companies",
       "summary": "Appeared as a new entry in the Capital Market Authority (UAE) open-data register of licensed companies. Licence CP-0001170, authorised 2024-07-30, Trading broker of OTC derivatives and currencies in the spot market. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the Capital Market Authority (UAE)): Building Name & No    PARK HEIGHTS SQUARE 1\nLand Area Hadaeq Sheikh Mohammed Bin Rashid           Plot Number 1887-0 \nLand DM No (Affection Plan) 631-1119             Makani No 23180 78748",
       "type": "research"
+    },
+    {
+      "date": "2026-09-25",
+      "link": null,
+      "summary": "Removed a personal free-mail address as a contact route. A regulator publishing someone's Gmail or Yahoo account does not make it a business channel, and an unsolicited sales email to a private mailbox is the kind of touch that costs more than it earns.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
   "contacts": [
     {
-      "email": "karine.ugarte@gmail.com",
+      "email": null,
       "language": "en",
       "linkedin": null,
       "name": "ROBOMARKETS FINANCIAL BROKERAGE L.L.C — contact published on the Capital Market Authority (UAE) register",
-      "notes": "Email and/or telephone exactly as the Capital Market Authority (UAE) publishes them on its own open-data register — not guessed, not pattern-inferred. Confirm who it belongs to before writing; it may be a named individual rather than a general inbox.",
+      "notes": "Email and/or telephone exactly as the Capital Market Authority (UAE) publishes them on its own open-data register — not guessed, not pattern-inferred. Confirm who it belongs to before writing; it may be a named individual rather than a general inbox. ⚠ A personal free-mail address (karine.ugarte@gmail.com) was published for this firm on the regulator's register and has been REMOVED as a contact route. It is an individual's private mailbox, not a business channel: cold-mailing it is poor practice and, in the EU, hard to justify. The address remains on the public register if it is ever needed for verification.",
       "phone": "971-589789732",
       "role": "unknown",
       "source": "Capital Market Authority (UAE) open-data register, company CP-0001170",
@@ -30,7 +36,7 @@
     "score": 33
   },
   "has_contact_route": true,
-  "has_email": true,
+  "has_email": false,
   "has_linkedin": false,
   "has_phone": true,
   "legal_name": null,
@@ -64,6 +70,6 @@
     "cma-uae"
   ],
   "trigger": null,
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "website": "https://NA"
 }

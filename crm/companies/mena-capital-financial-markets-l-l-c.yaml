@@ -29,19 +29,22 @@ tags:
 - onshore
 - cma-uae
 created: '2026-09-23'
-updated: '2026-09-24'
+updated: '2026-09-25'
 contacts:
 - name: MENA CAPITAL FINANCIAL MARKETS L.L.C — contact published on the Capital Market Authority (UAE)
     register
   title: General enquiries
   role: unknown
-  email: compliance.menacapital@gmail.com
+  email: null
   phone: 971-556828999
   linkedin: null
   language: en
-  notes: Email and/or telephone exactly as the Capital Market Authority (UAE) publishes them on its own
+  notes: 'Email and/or telephone exactly as the Capital Market Authority (UAE) publishes them on its own
     open-data register — not guessed, not pattern-inferred. Confirm who it belongs to before writing;
-    it may be a named individual rather than a general inbox.
+    it may be a named individual rather than a general inbox. ⚠ A personal free-mail address (compliance.menacapital@gmail.com)
+    was published for this firm on the regulator''s register and has been REMOVED as a contact route.
+    It is an individual''s private mailbox, not a business channel: cold-mailing it is poor practice and,
+    in the EU, hard to justify. The address remains on the public register if it is ever needed for verification.'
   source: Capital Market Authority (UAE) open-data register, company CP-0001723
 fit:
   score: 45
@@ -68,4 +71,10 @@ activities:
     -> ''Trading broker of OTC derivatives and currencies in the spot market; Trading broker in the international
     markets''. Every value here is as the regulator publishes it.'
   link: https://www.uaecma.gov.ae/en/open-data/licensed-companies
+- date: '2026-09-25'
+  type: research
+  summary: Removed a personal free-mail address as a contact route. A regulator publishing someone's Gmail
+    or Yahoo account does not make it a business channel, and an unsolicited sales email to a private
+    mailbox is the kind of touch that costs more than it earns.
+  link: null
 next_action: null

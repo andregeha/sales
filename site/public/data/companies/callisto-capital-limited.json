@@ -5,16 +5,22 @@
       "link": "https://www.adgm.com/public-registers/fsra",
       "summary": "Appeared as a new entry in the FSRA public register of financial firms (ADGM). Licence 250071, authorised 2026-02-03, Managing Assets. Detected by the automated register diff; every field here is as the register publishes it and nothing has been inferred. Not yet researched or enriched. Registered address (per the FSRA): United Arab Emirates, Abu Dhabi, Reem Island, Office 2906, Suite 302, Floor 29, Sky Tower, Shams Abu Dhabi",
       "type": "research"
+    },
+    {
+      "date": "2026-09-25",
+      "link": null,
+      "summary": "Removed a personal free-mail address as a contact route. A regulator publishing someone's Gmail or Yahoo account does not make it a business channel, and an unsolicited sales email to a private mailbox is the kind of touch that costs more than it earns.",
+      "type": "research"
     }
   ],
   "city": "Abu Dhabi",
   "contacts": [
     {
-      "email": "normanuhde@yahoo.com",
+      "email": null,
       "language": "en",
       "linkedin": null,
       "name": "Callisto Capital Limited — contact published on the FSRA register",
-      "notes": "Email and/or telephone exactly as the FSRA publishes them on its own public register — not guessed, not pattern-inferred. ⚠ The address the regulator holds is often a named individual's work address rather than a general inbox; check who it belongs to before writing, and treat it as a real person.",
+      "notes": "Email and/or telephone exactly as the FSRA publishes them on its own public register — not guessed, not pattern-inferred. ⚠ The address the regulator holds is often a named individual's work address rather than a general inbox; check who it belongs to before writing, and treat it as a real person. ⚠ A personal free-mail address (normanuhde@yahoo.com) was published for this firm on the regulator's register and has been REMOVED as a contact route. It is an individual's private mailbox, not a business channel: cold-mailing it is poor practice and, in the EU, hard to justify. The address remains on the public register if it is ever needed for verification.",
       "phone": "+971 52367 7944",
       "role": "unknown",
       "source": "FSRA public register, https://www.adgm.com/public-registers/fsra/firms/financial-firms/callisto-capital-limited-250071",
@@ -30,7 +36,7 @@
     "score": 73
   },
   "has_contact_route": true,
-  "has_email": true,
+  "has_email": false,
   "has_linkedin": false,
   "has_phone": true,
   "legal_name": null,
@@ -64,6 +70,6 @@
     "fsra"
   ],
   "trigger": "new licence granted 2026-02-03 (231 days ago), no incumbent to displace (20)",
-  "updated": "2026-09-22",
+  "updated": "2026-09-25",
   "website": null
 }

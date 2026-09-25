@@ -11,16 +11,22 @@
       "link": "https://www.uaecma.gov.ae/en/open-data/licensed-companies",
       "summary": "Register change detected by the automated Capital Market Authority (UAE) open-data register of licensed companies diff. authorised activities changed: 'Trading broker in the international markets' -> 'Trading broker of OTC derivatives and currencies in the spot market; Trading broker in the international markets'. Every value here is as the regulator publishes it.",
       "type": "research"
+    },
+    {
+      "date": "2026-09-25",
+      "link": null,
+      "summary": "Removed a personal free-mail address as a contact route. A regulator publishing someone's Gmail or Yahoo account does not make it a business channel, and an unsolicited sales email to a private mailbox is the kind of touch that costs more than it earns.",
+      "type": "research"
     }
   ],
   "city": "Dubai",
   "contacts": [
     {
-      "email": "compliance.menacapital@gmail.com",
+      "email": null,
       "language": "en",
       "linkedin": null,
       "name": "MENA CAPITAL FINANCIAL MARKETS L.L.C — contact published on the Capital Market Authority (UAE) register",
-      "notes": "Email and/or telephone exactly as the Capital Market Authority (UAE) publishes them on its own open-data register — not guessed, not pattern-inferred. Confirm who it belongs to before writing; it may be a named individual rather than a general inbox.",
+      "notes": "Email and/or telephone exactly as the Capital Market Authority (UAE) publishes them on its own open-data register — not guessed, not pattern-inferred. Confirm who it belongs to before writing; it may be a named individual rather than a general inbox. ⚠ A personal free-mail address (compliance.menacapital@gmail.com) was published for this firm on the regulator's register and has been REMOVED as a contact route. It is an individual's private mailbox, not a business channel: cold-mailing it is poor practice and, in the EU, hard to justify. The address remains on the public register if it is ever needed for verification.",
       "phone": "971-556828999",
       "role": "unknown",
       "source": "Capital Market Authority (UAE) open-data register, company CP-0001723",
@@ -36,7 +42,7 @@
     "score": 45
   },
   "has_contact_route": true,
-  "has_email": true,
+  "has_email": false,
   "has_linkedin": false,
   "has_phone": true,
   "legal_name": null,
@@ -70,6 +76,6 @@
     "cma-uae"
   ],
   "trigger": "licence granted 2025-07-30, still early-stage but not brand new (12)",
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "website": null
 }

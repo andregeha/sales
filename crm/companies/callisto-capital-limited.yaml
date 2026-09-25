@@ -29,18 +29,22 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-25'
 contacts:
 - name: Callisto Capital Limited — contact published on the FSRA register
   title: General enquiries
   role: unknown
-  email: normanuhde@yahoo.com
+  email: null
   phone: +971 52367 7944
   linkedin: null
   language: en
-  notes: Email and/or telephone exactly as the FSRA publishes them on its own public register — not guessed,
-    not pattern-inferred. ⚠ The address the regulator holds is often a named individual's work address
+  notes: 'Email and/or telephone exactly as the FSRA publishes them on its own public register — not guessed,
+    not pattern-inferred. ⚠ The address the regulator holds is often a named individual''s work address
     rather than a general inbox; check who it belongs to before writing, and treat it as a real person.
+    ⚠ A personal free-mail address (normanuhde@yahoo.com) was published for this firm on the regulator''s
+    register and has been REMOVED as a contact route. It is an individual''s private mailbox, not a business
+    channel: cold-mailing it is poor practice and, in the EU, hard to justify. The address remains on
+    the public register if it is ever needed for verification.'
   source: FSRA public register, https://www.adgm.com/public-registers/fsra/firms/financial-firms/callisto-capital-limited-250071
 fit:
   score: 73
@@ -60,4 +64,10 @@ activities:
     address (per the FSRA): United Arab Emirates, Abu Dhabi, Reem Island, Office 2906, Suite 302, Floor
     29, Sky Tower, Shams Abu Dhabi'
   link: https://www.adgm.com/public-registers/fsra
+- date: '2026-09-25'
+  type: research
+  summary: Removed a personal free-mail address as a contact route. A regulator publishing someone's Gmail
+    or Yahoo account does not make it a business channel, and an unsolicited sales email to a private
+    mailbox is the kind of touch that costs more than it earns.
+  link: null
 next_action: null
