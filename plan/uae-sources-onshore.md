@@ -276,3 +276,30 @@ population even if it were not.
 - Exact reconciliation between the UAE CMA's live register total (322, measured) and any headline
   figure the site's own statistics dashboard might show -- the dashboard renders via chart widgets
   we did not decode, so no second figure was actually obtained to compare against.
+
+---
+
+## ⚠ Correction, 2026-09-25 — CBUAE is NOT open to us
+
+This file ranks **CBUAE** second and describes `GET centralbank.ae/umbraco/api/CBuaeregister/Get`
+as a "fully open JSON API, 267 institutions measured". **That does not reproduce.** Probed today
+with our own `base.USER_AGENT`:
+
+| Request | Result |
+|---|---|
+| `/umbraco/api/CBuaeregister/Get`, honest UA | **HTTP 403** |
+| same, plus the page's own Referer/Origin | **HTTP 400** |
+| `centralbank.ae/en/` — the plain homepage | **HTTP 403** |
+
+The whole domain refuses an honestly-identified client, homepage included. That is site-wide bot
+protection, and per this workspace's standing rule we do not defeat it — no browser-identity
+spoofing, no header rotation.
+
+The earlier measurement was most likely taken through a fetch path that presents as a mainstream
+browser. ⚠ **A source that only answers a browser is not a source we can schedule**, and recording
+it as "build second" would send someone to build a connector that 403s on its first run.
+
+**Consequence, and it matters for Andre's "don't miss a bank RFP":** UAE **onshore** banks remain
+unreadable. We hold 40 UAE banks from DIFC, ADGM and the onshore CMA; CBUAE licenses roughly 60. We
+cannot enumerate the difference, and a bank we do not know exists is a bank whose RFP we cannot
+watch for.
