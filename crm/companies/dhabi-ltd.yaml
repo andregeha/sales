@@ -29,7 +29,7 @@ tags:
 - adgm
 - fsra
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-09-25'
 contacts:
 - name: Dhabi LTD — contact published on the FSRA register
   title: General enquiries
@@ -60,4 +60,10 @@ activities:
 
     ADGM Square, Al Maryah Island'
   link: https://www.adgm.com/public-registers/fsra
+- date: '2026-09-25'
+  type: research
+  summary: ⚠ The website on this record (dhabi.com) fails DNS resolution — it is not a live site. Left
+    in place rather than deleted because it came from the register and may be a transcription of what
+    the firm filed, but it is not a working route and the firm's identity is unresolved.
+  link: null
 next_action: null

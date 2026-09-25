@@ -5,7 +5,7 @@ country: Saudi Arabia
 city: null
 segment: bank
 regulator: SAMA (Saudi Central Bank)
-website: https://www.sama.gov.sa/ar-SA/Pages/default.aspx
+website: null
 linkedin: null
 size:
   aum: null
@@ -17,7 +17,7 @@ source:
   detail: 'SAMA (Saudi Central Bank) register of licensed banks (https://www.sama.gov.sa/en-US/supervision/licenseentities/pages/default.aspx);
     licence 73. Snapshot: crm/registers/sama-saudi/2026-09-25.json.'
   date: '2026-09-25'
-status: nurture
+status: qualified
 stage: identified
 owner: Andre Geha
 tags:
@@ -33,11 +33,13 @@ contacts: []
 fit:
   score: 43
   reasoning: 'Fit 40/60: priority segment bank (20) + priority market Saudi Arabia (15) + regulated by
-    SAMA (Saudi Central Bank) (5). Trigger 0/25: no licence date published, so no datable trigger. Access
-    3/15: generic company contact published on the register (3). Scored automatically from the SAMA (Saudi
-    Central Bank) register of licensed banks at first sighting. Fit points are awarded only where the
-    register itself states the fact; anything it is silent on scores zero rather than being assumed. Enrich
-    before outreach.'
+    SAMA (Saudi Central Bank) (5). Trigger 20/25: a brand-new SAMA-licensed digital bank — a joint venture
+    of Ajlan & Bros and QNB announced September 2025. A bank that has just been licensed and not yet launched
+    is selecting its core systems now, with no incumbent to displace [found during the bank procurement
+    sweep, 2026-09-25]. Access 3/15: generic company contact published on the register (3). Scored automatically
+    from the SAMA (Saudi Central Bank) register of licensed banks at first sighting. Fit points are awarded
+    only where the register itself states the fact; anything it is silent on scores zero rather than being
+    assumed. Enrich before outreach.'
   disqualified_reason: null
 activities:
 - date: '2026-09-25'
@@ -46,4 +48,15 @@ activities:
     73, Digital Banks. Detected by the automated register diff; every field here is as the register publishes
     it and nothing has been inferred. Not yet researched or enriched.
   link: https://www.sama.gov.sa/en-US/supervision/licenseentities/pages/default.aspx
+- date: '2026-09-25'
+  type: research
+  summary: Removed a wrong website. The record pointed at sama.gov.sa — the regulator's own site, not
+    the bank's. That is the register's link, captured as if it were the firm's, and it would have sent
+    outreach to the central bank.
+  link: null
+- date: '2026-09-25'
+  type: research
+  summary: 'Trigger recorded: newly SAMA-licensed digital bank (Ajlan & Bros / QNB JV, announced Sept
+    2025), plausibly still choosing core systems.'
+  link: null
 next_action: null
